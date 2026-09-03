@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia de España - 2º Bachillerato LOMLOE</title>
+    <style>
+        :root {
+            --primary-dark: #0f172a;
+            --primary: #1e293b;
+            --primary-light: #3b82f6;
+            --bg-main: #f8fafc;
+            --card-bg: #ffffff;
+            --text-dark: #1e293b;
+            --text-muted: #64748b;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-dark);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        header {
+            width: 100%;
+            max-width: 1100px;
+            margin-bottom: 30px;
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            color: white;
+            padding: 45px 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.4rem;
+            margin-bottom: 12px;
+        }
+
+        header p {
+            color: #94a3b8;
+            font-size: 1.25rem;
+        }
+
+        /* Banner de Imagen Central */
+        .banner-central {
+            width: 100%;
+            max-width: 1100px;
+            background: white;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+            overflow: hidden;
+        }
+
+        /* Contenedor adaptativo del banner con imagen de fondo */
+        .banner-placeholder {
+            width: 100%;
+            height: 320px;
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.9), rgba(30, 41, 59, 0.7)), url('./portada-historia.png') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .banner-placeholder-content {
+            max-width: 750px;
+        }
+
+        .banner-placeholder h3 {
+            font-size: 1.8rem;
+            margin-bottom: 12px;
+            color: #ffffff;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+            border-bottom: 2px solid var(--primary-light);
+            display: inline-block;
+            padding-bottom: 6px;
+        }
+
+        .banner-placeholder p {
+            font-size: 1.1rem;
+            color: #e2e8f0;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+            font-weight: 500;
+        }
+
+        /* Grid de Temas */
+        .container {
+            width: 100%;
+            max-width: 1100px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.06);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #e2e8f0;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+        }
+
+        .card-header {
+            background-color: var(--primary);
+            color: white;
+            padding: 20px;
+            font-weight: bold;
+            font-size: 1.15rem;
+        }
+
+        .card-header.active-header {
+            background-color: #1e3a8a;
+            border-bottom: 3px solid var(--primary-light);
+        }
+
+        .card-header.inactive {
+            background-color: #475569;
+        }
+
+        .card-body {
+            padding: 22px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card-body p {
+            color: #475569;
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-light);
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 6px;
+            text-align: center;
+            font-weight: bold;
+            transition: background-color 0.2s;
+            font-size: 0.95rem;
+        }
+
+        .btn:hover {
+            background-color: #2563eb;
+        }
+
+        .btn.disabled {
+            background-color: #cbd5e1;
+            color: #94a3b8;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+
+        footer {
+            margin-top: auto;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            text-align: center;
+            max-width: 800px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Historia de España</h1>
+        <p>Aula Virtual de Lectura Fácil • Preparación 2º Bachillerato LOMLOE</p>
+    </header>
+
+    <!-- Banner Central de la Portada -->
+    <div class="banner-central">
+        <div class="banner-placeholder">
+            <div class="banner-placeholder-content">
+                <h3>España en los siglos XIX y XX</h3>
+                <p>Un viaje visual e interactivo a través de las transformaciones políticas, sociales y económicas que forjaron la España contemporánea.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        
+        <!-- Bloque 0: Metodología -->
+        <div class="card">
+            <div class="card-header active-header">
+                🧭 Bloque 0: Metodología Histórica
+            </div>
+            <div class="card-body">
+                <p>Introducción al conocimiento histórico. Descubre el oficio del historiador, las ciencias auxiliares, la medición del tiempo, la crítica de fuentes y las pautas para elaborar trabajos de investigación y comentarios de examen.</p>
+                <a href="tema0.html" class="btn">Empezar Bloque 0</a>
+            </div>
+        </div>
+
+        <!-- Bloque I -->
+        <div class="card" style="opacity: 0.85;">
+            <div class="card-header inactive">
+                ⚖️ Bloque I: La Construcción del Estado Liberal
+            </div>
+            <div class="card-body">
+                <p>Estudia el fin del absolutismo, la implantación del liberalismo en España, las constituciones del siglo XIX, los cambios económicos, la desamortización y los conflictos carlistas.</p>
+                <a href="#" class="btn disabled">Próximamente</a>
+            </div>
+        </div>
+
+        <!-- Bloque II -->
+        <div class="card" style="opacity: 0.85;">
+            <div class="card-header inactive">
+                👑 Bloque II: La Restauración Borbónica
+            </div>
+            <div class="card-body">
+                <p>El sistema político diseñado por Cánovas del Castillo, la alternancia pacífica de partidos, la Constitución de 1876, la crisis del 98 y la pérdida de las últimas colonias de ultramar.</p>
+                <a href="#" class="btn disabled">Próximamente</a>
+            </div>
+        </div>
+
+        <!-- Bloque III -->
+        <div class="card" style="opacity: 0.85;">
+            <div class="card-header inactive">
+                ⚡ Bloque III: La Quiebra de la Restauración y la Dictadura
+            </div>
+            <div class="card-body">
+                <p>La crisis del turnismo parlamentario, los conflictos sociales, la Guerra de Marruecos, el golpe de Estado y la Dictadura del general Miguel Primo de Rivera.</p>
+                <a href="#" class="btn disabled">Próximamente</a>
+            </div>
+        </div>
+
+        <!-- Bloque IV -->
+        <div class="card" style="opacity: 0.85;">
+            <div class="card-header inactive">
+                ✊ Bloque IV: La Segunda República y la Guerra Civil
+            </div>
+            <div class="card-body">
+                <p>La proclamación del régimen republicano, el reformismo del bienio social-azañista, el bienio radical-cedista, el Frente Popular y el desarrollo del conflicto armado de 1936-1939.</p>
+                <a href="#" class="btn disabled">Próximamente</a>
+            </div>
+        </div>
+
+        <!-- Bloque V -->
+        <div class="card" style="opacity: 0.85;">
+            <div class="card-header inactive">
+                🔒 Bloque V: La Dictadura Franquista
+            </div>
+            <div class="card-body">
+                <p>La institucionalización del régimen de Franco, la posguerra y la autarquía, el desarrollismo de los años sesenta, el cambio social, la oposición política y el final de la dictadura.</p>
+                <a href="#" class="btn disabled">Próximamente</a>
+            </div>
+        </div>
+
+        <!-- Bloque VI -->
+        <div class="card" style="opacity: 0.85;">
+            <div class="card-header inactive">
+                🗳️ Bloque VI: La Transición Española
+            </div>
+            <div class="card-body">
+                <p>El desmantelamiento de las instituciones franquistas, el consenso político, la Ley para la Reforma Política, las elecciones de 1977, la Constitución de 1978 y la consolidación de la democracia.</p>
+                <a href="#" class="btn disabled">Próximamente</a>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Este portal está diseñado siguiendo pautas de accesibilidad y metodología de Lectura Fácil para asegurar la comprensión de todo el alumnado de la asignatura Historia de España de 2º de Bachillerato.</p>
+    </footer>
+
+</body>
+</html>
+
