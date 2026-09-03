@@ -35,11 +35,11 @@
 
         header {
             width: 100%;
-            max-width: 1100px;
+            max-width: 1150px;
             margin-bottom: 30px;
             background: linear-gradient(135deg, #1e293b, #0f172a);
             color: white;
-            padding: 35px 20px;
+            padding: 30px;
             border-radius: 12px;
             box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
             text-align: center;
@@ -55,36 +55,44 @@
             font-size: 1.15rem;
         }
 
-        /* Contenedor de la Imagen Portada */
-        .contenedor-imagen {
+        /* DISEÑO DE DOBLE COLUMNA (Estilo Geografía ESO) */
+        .main-layout {
+            display: grid;
+            grid-template-columns: 350px 1fr;
+            gap: 30px;
             width: 100%;
-            max-width: 1100px;
+            max-width: 1150px;
             margin-bottom: 40px;
+        }
+
+        /* Columna Izquierda: Imagen de Portada Fija */
+        .columna-imagen {
+            background: var(--card-bg);
             border-radius: 12px;
             overflow: hidden;
             box-shadow: 0 4px 12px rgba(0,0,0,0.08);
             border: 1px solid #e2e8f0;
-            background-color: #e2e8f0; /* Fondo de carga gris suave */
+            height: fit-content;
+            position: sticky;
+            top: 20px;
         }
 
-        .imagen-portada {
+        .columna-imagen img {
             width: 100%;
             height: auto;
-            max-height: 380px;
-            object-fit: cover;
             display: block;
+            object-fit: cover;
         }
 
-        /* Grid de Temas */
-        .container {
-            width: 100%;
-            max-width: 1100px;
+        /* Columna Derecha: El Grid de Bloques */
+        .columna-bloques {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-            margin-bottom: 40px;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 20px;
+            align-content: start;
         }
 
+        /* Tarjetas de los Bloques */
         .card {
             background: var(--card-bg);
             border-radius: 12px;
@@ -104,9 +112,9 @@
         .card-header {
             background-color: var(--primary);
             color: white;
-            padding: 18px;
+            padding: 16px;
             font-weight: bold;
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             text-align: center;
             border-bottom: 1px solid #334155;
         }
@@ -140,7 +148,7 @@
             text-align: center;
             font-weight: bold;
             transition: background-color 0.2s;
-            font-size: 1rem;
+            font-size: 0.95rem;
             box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2);
         }
 
@@ -168,6 +176,20 @@
             border-top: 1px solid #e2e8f0;
             width: 100%;
         }
+
+        /* Responsive para Móviles y Tabletas */
+        @media (max-width: 850px) {
+            .main-layout {
+                grid-template-columns: 1fr; /* Una sola columna en móvil */
+                gap: 20px;
+            }
+            .columna-imagen {
+                position: relative;
+                top: 0;
+                max-width: 450px;
+                margin: 0 auto;
+            }
+        }
     </style>
 </head>
 <body>
@@ -177,82 +199,87 @@
         <p>Aula Virtual de Lectura Fácil • 2º Bachillerato LOMLOE</p>
     </header>
 
-    <!-- Imagen Central de la Portada (Sin descripciones ni textos encima) -->
-    <div class="contenedor-imagen">
-        <img src="portada-historia.png" alt="España Contemporánea - Siglos XIX y XX" class="imagen-portada">
-    </div>
-
-    <!-- Cajas con los Bloques y Enlaces -->
-    <div class="container">
+    <!-- Contenedor de doble columna -->
+    <div class="main-layout">
         
-        <!-- Bloque 0: Metodología -->
-        <div class="card">
-            <div class="card-header active-header">
-                🧭 Bloque 0: Metodología Histórica
-            </div>
-            <div class="card-body">
-                <a href="tema0.html" class="btn">Empezar Bloque 0</a>
-            </div>
+        <!-- Columna Izquierda: Imagen de Portada -->
+        <div class="columna-imagen">
+            <img src="portada-historia.png" alt="España Contemporánea" id="foto-portada">
         </div>
 
-        <!-- Bloque I -->
-        <div class="card" style="opacity: 0.85;">
-            <div class="card-header inactive">
-                ⚖️ Bloque I: La Construcción del Estado Liberal
+        <!-- Columna Derecha: Bloques LOMLOE -->
+        <div class="columna-bloques">
+            
+            <!-- Bloque 0: Metodología -->
+            <div class="card">
+                <div class="card-header active-header">
+                    🧭 Bloque 0: Metodología Histórica
+                </div>
+                <div class="card-body">
+                    <a href="tema0.html" class="btn">Empezar Bloque 0</a>
+                </div>
             </div>
-            <div class="card-body">
-                <a href="#" class="btn disabled">Próximamente</a>
-            </div>
-        </div>
 
-        <!-- Bloque II -->
-        <div class="card" style="opacity: 0.85;">
-            <div class="card-header inactive">
-                👑 Bloque II: La Restauración Borbónica
+            <!-- Bloque I -->
+            <div class="card" style="opacity: 0.85;">
+                <div class="card-header inactive">
+                    ⚖️ Bloque I: La Construcción del Estado Liberal
+                </div>
+                <div class="card-body">
+                    <a href="#" class="btn disabled">Próximamente</a>
+                </div>
             </div>
-            <div class="card-body">
-                <a href="#" class="btn disabled">Próximamente</a>
-            </div>
-        </div>
 
-        <!-- Bloque III -->
-        <div class="card" style="opacity: 0.85;">
-            <div class="card-header inactive">
-                ⚡ Bloque III: La Quiebra de la Restauración y la Dictadura
+            <!-- Bloque II -->
+            <div class="card" style="opacity: 0.85;">
+                <div class="card-header inactive">
+                    👑 Bloque II: La Restauración Borbónica
+                </div>
+                <div class="card-body">
+                    <a href="#" class="btn disabled">Próximamente</a>
+                </div>
             </div>
-            <div class="card-body">
-                <a href="#" class="btn disabled">Próximamente</a>
-            </div>
-        </div>
 
-        <!-- Bloque IV -->
-        <div class="card" style="opacity: 0.85;">
-            <div class="card-header inactive">
-                ✊ Bloque IV: La Segunda República y la Guerra Civil
+            <!-- Bloque III -->
+            <div class="card" style="opacity: 0.85;">
+                <div class="card-header inactive">
+                    ⚡ Bloque III: La Quiebra de la Restauración
+                </div>
+                <div class="card-body">
+                    <a href="#" class="btn disabled">Próximamente</a>
+                </div>
             </div>
-            <div class="card-body">
-                <a href="#" class="btn disabled">Próximamente</a>
-            </div>
-        </div>
 
-        <!-- Bloque V -->
-        <div class="card" style="opacity: 0.85;">
-            <div class="card-header inactive">
-                🔒 Bloque V: La Dictadura Franquista
+            <!-- Bloque IV -->
+            <div class="card" style="opacity: 0.85;">
+                <div class="card-header inactive">
+                    ✊ Bloque IV: La Segunda República y Guerra Civil
+                </div>
+                <div class="card-body">
+                    <a href="#" class="btn disabled">Próximamente</a>
+                </div>
             </div>
-            <div class="card-body">
-                <a href="#" class="btn disabled">Próximamente</a>
-            </div>
-        </div>
 
-        <!-- Bloque VI -->
-        <div class="card" style="opacity: 0.85;">
-            <div class="card-header inactive">
-                🗳️ Bloque VI: La Transición Española
+            <!-- Bloque V -->
+            <div class="card" style="opacity: 0.85;">
+                <div class="card-header inactive">
+                    🔒 Bloque V: La Dictadura Franquista
+                </div>
+                <div class="card-body">
+                    <a href="#" class="btn disabled">Próximamente</a>
+                </div>
             </div>
-            <div class="card-body">
-                <a href="#" class="btn disabled">Próximamente</a>
+
+            <!-- Bloque VI -->
+            <div class="card" style="opacity: 0.85;">
+                <div class="card-header inactive">
+                    🗳️ Bloque VI: La Transición Española
+                </div>
+                <div class="card-body">
+                    <a href="#" class="btn disabled">Próximamente</a>
+                </div>
             </div>
+
         </div>
 
     </div>
