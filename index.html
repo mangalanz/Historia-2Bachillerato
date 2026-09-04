@@ -82,7 +82,13 @@
             color: var(--text-dark);
             transition: all 0.2s ease;
             box-shadow: 0 2px 4px rgba(0,0,0,0.02);
-        }
+        } 
+        /* Efecto hover para bloques desbloqueados generales */
+.enlace-bloque:not(.disabled):hover {
+    background-color: #f1f5f9;
+    border-color: var(--primary-vibrant);
+    transform: translateX(6px);
+}
 
         /* Bloque Activo (Bloque 0) con el Azul Intenso */
         .enlace-bloque.active {
@@ -199,31 +205,31 @@
 
     <div class="portal-container">
         
-        <!-- COLUMNA IZQUIERDA: Bloques de Contenidos (Estilo Geografía ESO) -->
+       <!-- COLUMNA IZQUIERDA: Bloques de Contenidos -->
         <nav class="sidebar-bloques">
             <div class="sidebar-titulo">Bloques LOMLOE</div>
 
-            <!-- Bloque 0 (ACTIVO) -->
-           <a href="tema0.html" class="enlace-bloque active">
-                <span>🧭 Bloque 0: Metodología histórica</span>
+            <!-- Bloque 0 (DESBLOQUEADO - Disponible para repaso) -->
+            <a href="tema0.html" class="enlace-bloque">
+                <span>🧭 Bloque 0: Metodología</span>
+                <span class="badge-estado" style="background-color: #10b981; color: white;">Abierto</span>
+            </a>
+
+            <!-- Bloque I (DESBLOQUEADO - DESTACADO ACTIVO) -->
+            <a href="bloque1_tema1.html" class="enlace-bloque active">
+                <span>⚖️ Bloque I: Estado Liberal</span>
                 <span class="badge-estado">Entrar</span>
             </a>
 
-            <!-- Bloque I -->
+            <!-- Bloque II (Restauración Borbónica - Bloqueado temporalmente) -->
             <a href="#" class="enlace-bloque disabled">
-                <span>⚖️ Bloque I: Construcción del Estado Liberal</span>
-                <span class="badge-estado">🔒</span>
-            </a>
-
-            <!-- Bloque II -->
-            <a href="#" class="enlace-bloque disabled">
-                <span>👑 Bloque II: La Restauración</span>
+                <span>👑 Bloque II: Restauración</span>
                 <span class="badge-estado">🔒</span>
             </a>
 
             <!-- Bloque III -->
             <a href="#" class="enlace-bloque disabled">
-                <span>⚡ Bloque III: Crisis de la Restauración y Dictadura Primo de Rivera</span>
+                <span>⚡ Bloque III: Dictadura Primo de Rivera</span>
                 <span class="badge-estado">🔒</span>
             </a>
 
@@ -235,13 +241,13 @@
 
             <!-- Bloque V -->
             <a href="#" class="enlace-bloque disabled">
-                <span>🔒 Bloque V: La Dictadura franquista</span>
+                <span>🔒 Bloque V: Franquismo</span>
                 <span class="badge-estado">🔒</span>
             </a>
 
             <!-- Bloque VI -->
             <a href="#" class="enlace-bloque disabled">
-                <span>🗳️ Bloque VI:  La Transición española </span>
+                <span>🗳️ Bloque VI: Transición</span>
                 <span class="badge-estado">🔒</span>
             </a>
         </nav>
