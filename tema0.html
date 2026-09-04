@@ -47,20 +47,22 @@
         body {
             background-color: var(--bg-main);
             color: var(--text-dark);
-            display: flex;
             min-height: 100vh;
         }
 
-        /* Barra de navegación lateral */
+        /* Barra de navegación lateral fija a la izquierda */
         aside {
             width: 300px;
             background-color: var(--primary-dark);
             color: white;
             padding: 25px;
             position: fixed;
+            top: 0;
+            left: 0;
             height: 100vh;
             overflow-y: auto;
             border-right: 1px solid #334155;
+            z-index: 100;
         }
 
         aside h1 {
@@ -114,12 +116,11 @@
             box-shadow: 0 4px 10px rgba(37, 99, 235, 0.15);
         }
 
-        /* Contenido de la Web */
+        /* Contenido de la Web (Desplazado a la derecha de la barra lateral) */
         main {
             margin-left: 300px;
             padding: 40px;
-            width: calc(100% - 300px);
-            max-width: 1050px;
+            max-width: 1100px;
         }
 
         /* Encabezado Alegre con tonos suaves en verde */
@@ -149,12 +150,13 @@
         /* Contenedor de la foto de cabecera del tema */
         .cabecera-ilustrada {
             width: 100%;
-            height: 180px; /* Altura ideal para un banner horizontal */
+            height: 200px; /* Altura ideal para un banner horizontal */
             border-radius: 12px;
             overflow: hidden;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
             border: 1px solid #e2e8f0;
             margin-bottom: 35px;
+            background-color: #f1f5f9;
         }
 
         .cabecera-ilustrada img {
@@ -351,11 +353,8 @@
             margin-bottom: 8px;
         }
 
-        /* Responsive */
+        /* Responsive para tabletas y móviles */
         @media (max-width: 900px) {
-            body {
-                flex-direction: column;
-            }
             aside {
                 width: 100%;
                 height: auto;
@@ -401,18 +400,18 @@
 
         <!-- Nueva Imagen de Cabecera en la carpeta img/ -->
         <div class="cabecera-ilustrada">
-            <img src="img/libros-antiguos.png" alt="Libros antiguos y lomos historiográficos de consulta">
+            <img src="img/libros-antiguos.png" alt="Libros antiguos y lomos de libros de historia de consulta">
         </div>
 
         <!-- SECCIÓN 1 -->
         <section id="tema1">
             <h2>1. El Concepto de Historia y Corrientes Historiográficas</h2>
-            <p>La <strong>Historia</strong> es la ciencia que se ocupa del estudio de las sociedades humanas, analizando sus transformaciones (los cambios) y sus elementos de continuidad (lo que se mantiene igual a lo largo del tiempo) [Doc 3, Drive 2]. No consiste en memorizar fechas sin sentido, sino en analizar las causas, el desarrollo y las consecuencias de los acontecimientos en un lugar y momento concretos [Drive 2].</p>
+            <p>La <strong>Historia</strong> es la ciencia que se ocupa del estudio de las sociedades humanas, analizando sus transformaciones (los cambios) y sus elementos de continuidad (lo que se mantiene igual a lo largo del tiempo). No consiste en memorizar fechas sin sentido, sino en analizar las causas, el desarrollo y las consecuencias de los acontecimientos en un lugar y momento concretos.</p>
 
             <div class="caja-colores glosario">
                 <h4>💡 Glosario de Conceptos Clave</h4>
-                <p>• <strong>Ciencia histórica:</strong> Una ciencia con una doble dimensión: es <em>científica</em> (porque busca pruebas reales de forma ordenada) y es <em>narrativa</em> (porque describe y explica lo descubierto con palabras claras) [Doc 3].</p>
-                <p>• <strong>Empatía histórica:</strong> El esfuerzo del investigador para "meterse en la piel" de las personas del pasado, logrando comprender su forma de pensar, sus miedos, sus límites cotidianos y los motivos de sus decisiones, sin juzgarles con las ideas de hoy [Doc 3].</p>
+                <p>• <strong>Ciencia histórica:</strong> Una ciencia con una doble dimensión: es <em>científica</em> (porque busca pruebas reales de forma ordenada) y es <em>narrativa</em> (porque describe y explica lo descubierto con palabras claras).</p>
+                <p>• <strong>Empatía histórica:</strong> El esfuerzo del investigador para "meterse en la piel" de las personas del pasado, logrando comprender su forma de pensar, sus miedos, sus límites cotidianos y los motivos de sus decisiones, sin juzgarles con las ideas de hoy.</p>
             </div>
 
             <h3>¿Cómo ha evolucionado la forma de estudiar la Historia?</h3>
@@ -421,28 +420,28 @@
             <details>
                 <summary>📜 Periodo clásico (Hasta principios del siglo XX)</summary>
                 <div class="contenido-desplegado">
-                    <p>Los historiadores de esta época se limitaban a realizar una <strong>narración descriptiva</strong> de grandes acontecimientos políticos, militares, diplomáticos y religiosos [Doc 3]. Su centro de interés eran las hazañas individuales de los grandes personajes (reyes, militares, papas, ministros, nobles) [Doc 3].</p>
+                    <p>Los historiadores de esta época se limitaban a realizar una <strong>narración descriptiva</strong> de grandes acontecimientos políticos, militares, diplomáticos y religiosos. Su centro de interés eran las hazañas individuales de los grandes personajes (reyes, militares, papas, ministros, nobles).</p>
                 </div>
             </details>
 
             <details>
                 <summary>🇩🇪 El Historicismo (Siglo XIX)</summary>
                 <div class="contenido-desplegado">
-                    <p>Corriente liderada por el historiador alemán <strong>Leopold von Ranke</strong> [Doc 3]. Defendía que el único objetivo de la Historia era "mostrar lo que realmente ocurrió" tal cual, sin intentar explicar el porqué de las cosas ni interpretarlas [Doc 3].</p>
+                    <p>Corriente liderada por el historiador alemán <strong>Leopold von Ranke</strong>. Defendía que el único objetivo de la Historia era "mostrar lo que realmente ocurrió" tal cual, sin intentar explicar el porqué de las cosas ni interpretarlas.</p>
                 </div>
             </details>
 
             <details>
                 <summary>🇫🇷 La Escuela de Annales (Principios del siglo XX)</summary>
                 <div class="contenido-desplegado">
-                    <p>Fundada por los franceses <strong>Lucien Febvre y Marc Bloch</strong> [Doc 3]. Revolucionó el estudio del pasado al proponer una perspectiva mucho más amplia: para entender la historia no bastaba con la política, había que interrelacionar la economía, la sociedad, la demografía y la cultura de toda la población, no solo de los reyes [Doc 3].</p>
+                    <p>Fundada por los franceses <strong>Lucien Febvre y Marc Bloch</strong>. Revolucionó el estudio del pasado al proponer una perspectiva mucho más amplia: para entender la historia no bastaba con la política, había que interrelacionar la economía, la sociedad, la demografía y la cultura de toda la población, no solo de los reyes.</p>
                 </div>
             </details>
 
             <details>
                 <summary>🛠️ El Marxismo o Concepción Materialista</summary>
                 <div class="contenido-desplegado">
-                    <p>Opuestos radicalmente al historicismo clásico [Doc 3]. Los historiadores marxistas defienden que la Historia es, en esencia, la suma de los intentos de las clases sociales de cambiar las estructuras económicas y sociales mediante la <strong>lucha de clases</strong> [Doc 3].</p>
+                    <p>Opuestos radicalmente al historicismo clásico. Los historiadores marxistas defienden que la Historia es, en esencia, la suma de los intentos de las clases sociales de cambiar las estructuras económicas y sociales mediante la <strong>lucha de clases</strong>.</p>
                 </div>
             </details>
         </section>
@@ -450,51 +449,51 @@
         <!-- SECCIÓN 2 -->
         <section id="tema2">
             <h2>2. Factores que influyen en la Historia (Espacio y Tiempo)</h2>
-            <p>Cualquier hecho histórico se desarrolla siempre dentro de dos coordenadas fundamentales: el <strong>espacio</strong> y el <strong>tiempo</strong> [Doc 3, Drive 2].</p>
+            <p>Cualquier hecho histórico se desarrolla siempre dentro de dos coordenadas fundamentales: el <strong>espacio</strong> y el <strong>tiempo</strong>.</p>
 
             <div class="caja-colores factores">
                 <h4>🗺️ Coordenada A: El Espacio Geográfico</h4>
-                <p>Es el territorio físico que ocupa una sociedad en un momento dado [Doc 3]. Al historiador le interesan sus límites, clima, recursos (tierras fértiles, yacimientos minerales, plantas, animales) y cómo se distribuye la población en él [Doc 3]. Existen dos teorías sobre cómo influye la geografía en el ser humano:</p>
+                <p>Es el territorio físico que ocupa una sociedad en un momento dado. Al historiador le interesan sus límites, clima, recursos (tierras fértiles, yacimientos minerales, plantas, animales) y cómo se distribuye la población en él. Existen dos teorías sobre cómo influye la geografía en el ser humano:</p>
                 <ul>
-                    <li><strong>Determinismo geográfico:</strong> Afirma que el ser humano depende totalmente del medio físico [Doc 3]. Cree que a una misma causa geográfica siempre corresponde el mismo efecto social [Doc 3].</li>
-                    <li><strong>Posibilismo geográfico:</strong> Sostiene que el medio ofrece opciones, pero que el ser humano tiene voluntad y capacidad tecnológica para modificar y adaptarse al entorno geográfico [Doc 3].</li>
+                    <li><strong>Determinismo geográfico:</strong> Afirma que el ser humano depende totalmente del medio físico. Cree que a una misma causa geográfica siempre corresponde el mismo efecto social.</li>
+                    <li><strong>Posibilismo geográfico:</strong> Sostiene que el medio ofrece opciones, pero que el ser humano tiene voluntad y capacidad tecnológica para modificar y adaptarse al entorno geográfico.</li>
                 </ul>
             </div>
 
             <!-- Caja de Relaciones Temporales (Color rosa destacado) -->
             <div class="caja-colores tiempo">
                 <h4>⏳ Coordenada B: Las Relaciones Temporales</h4>
-                <p>El tiempo en la Historia es un flujo continuo que nunca se detiene, donde conviven los cambios rápidos con cosas que permanecen estables [Doc 3, Drive 2]. Para ordenar los hechos históricos de forma lógica, distinguimos tres relaciones clave:</p>
+                <p>El tiempo en la Historia es un flujo continuo que nunca se detiene, donde conviven los cambios rápidos con cosas que permanecen estables. Para ordenar los hechos históricos de forma lógica, distinguimos tres relaciones clave:</p>
                 <ul>
-                    <li><strong>Hechos Sincrónicos:</strong> Sucesos que ocurren al mismo tiempo y que dependen el uno del otro (por ejemplo: la Guerra de la Independencia de España y la creación de la Constitución de 1812) [Doc 3].</li>
-                    <li><strong>Hechos Contemporáneos:</strong> Sucesos que ocurren en la misma fecha pero que no tienen ninguna relación entre sí (por ejemplo: la revolución de 1868 en España y el inicio de la era Meiji en Japón) [Doc 3].</li>
-                    <li><strong>Hechos Diacrónicos:</strong> Acontecimientos que ocurren en épocas diferentes pero que tienen una relación directa de causa-efecto (por ejemplo: la conquista del espacio en el siglo XX es consecuencia del progreso tecnológico nacido con la Revolución Industrial en el siglo XIX) [Doc 3].</li>
+                    <li><strong>Hechos Sincrónicos:</strong> Sucesos que ocurren al mismo tiempo y que dependen el uno del otro (por ejemplo: la Guerra de la Independencia de España y la creación de la Constitución de 1812).</li>
+                    <li><strong>Hechos Contemporáneos:</strong> Sucesos que ocurren en la misma fecha pero que no tienen ninguna relación entre sí (por ejemplo: la revolución de 1868 en España y el inicio de la era Meiji en Japón).</li>
+                    <li><strong>Hechos Diacrónicos:</strong> Acontecimientos que ocurren en épocas diferentes pero que tienen una relación directa de causa-efecto (por ejemplo: la conquista del espacio en el siglo XX es consecuencia del progreso tecnológico nacido con la Revolución Industrial en el siglo XIX).</li>
                 </ul>
             </div>
 
             <h3>El ritmo de los cambios: ¿Evolución o Revolución?</h3>
             <ul>
-                <li>Hay <strong>evolución</strong> cuando las transformaciones sociales se producen a un ritmo muy lento y progresivo [Doc 3, Drive 2].</li>
-                <li>Una <strong>revolución</strong> es una transformación radical, muy profunda y rápida, que suele desarrollarse de manera violenta [Doc 3]. Puede ser de carácter político, económico, social, científico, religioso o artístico [Doc 3].</li>
+                <li>Hay <strong>evolución</strong> cuando las transformaciones sociales se producen a un ritmo muy lento y progresivo.</li>
+                <li>Una <strong>revolución</strong> es una transformación radical, muy profunda y rápida, que suele desarrollarse de manera violenta. Puede ser de carácter político, económico, social, científico, religioso o artístico.</li>
             </ul>
         </section>
 
         <!-- SECCIÓN 3 -->
         <section id="tema3">
             <h2>3. El Método de Investigación Histórica</h2>
-            <p>Los historiadores trabajan siguiendo un <strong>método científico riguroso</strong> para asegurarse de que su reconstrucción del pasado es imparcial y empírica, a pesar de que siempre exista cierta subjetividad [Doc 3, Drive 2]. Este método consta de tres fases obligatorias:</p>
+            <p>Los historiadores trabajan siguiendo un <strong>método científico riguroso</strong> para asegurarse de que su reconstrucción del pasado es imparcial y empírica, a pesar de que siempre exista cierta subjetividad. Este método consta de tres fases obligatorias:</p>
             
             <ol>
-                <li><strong>Fase 1: Formulación de hipótesis:</strong> Son suposiciones teóricas iniciales y provisionales que el historiador plantea basándose en su primer conocimiento del tema [Doc 3]. Sirven como punto de partida para la investigación [Doc 3].</li>
-                <li><strong>Fase 2: Recopilación y análisis de datos:</strong> Se buscan activamente todas las fuentes históricas posibles [Doc 3, Drive 2]. La información se ordena, se analiza críticamente y se contrasta con las hipótesis planteadas en la Fase 1 para ver si eran correctas [Doc 3, Drive 2].</li>
-                <li><strong>Fase 3: Redacción y publicación de conclusiones:</strong> Se redactan de forma lógica y ordenada los resultados obtenidos, los cuales pueden confirmar, desmentir o modificar la hipótesis original [Doc 3, Drive 2].</li>
+                <li><strong>Fase 1: Formulación de hipótesis:</strong> Son suposiciones teóricas iniciales y provisionales que el historiador plantea basándose en su primer conocimiento del tema. Sirven como punto de partida para la investigación.</li>
+                <li><strong>Fase 2: Recopilación y análisis de datos:</strong> Se buscan activamente todas las fuentes históricas posibles. La información se ordena, se analiza críticamente y se contrasta con las hipótesis planteadas en la Fase 1 para ver si eran correctas.</li>
+                <li><strong>Fase 3: Redacción y publicación de conclusiones:</strong> Se redactan de forma lógica y ordenada los resultados obtenidos, los cuales pueden confirmar, desmentir o modificar la hipótesis original.</li>
             </ol>
         </section>
 
         <!-- SECCIÓN 4 -->
         <section id="tema4">
             <h2>4. Las Ciencias Auxiliares</h2>
-            <p>Como la Historia estudia todos los ámbitos del ser humano (político, económico, social y cultural), necesita la ayuda de otras ciencias para poder interpretar correctamente las pistas del pasado [Doc 3, Drive 2]. A estas ciencias se las conoce como <strong>Ciencias Auxiliares</strong> [Doc 3, Drive 2].</p>
+            <p>Como la Historia estudia todos los ámbitos del ser humano (político, económico, social y cultural), necesita la ayuda de otras ciencias para poder interpretar correctamente las pistas del pasado. A estas ciencias se las conoce como <strong>Ciencias Auxiliares</strong>.</p>
 
             <div class="caja-colores auxiliares">
                 <h4>🛠️ Ciencias Especializadas para el Historiador</h4>
@@ -502,40 +501,40 @@
                 
                 <div class="grid-auxiliares">
                     <div class="tarjeta-auxiliar">
-                        <strong>Diplomática:</strong> Estudia las actas y documentos oficiales de la época medieval [Doc 3].
+                        <strong>Diplomática:</strong> Estudia las actas y documentos oficiales de la época medieval.
                     </div>
                     <div class="tarjeta-auxiliar">
-                        <strong>Numismática:</strong> Analiza las monedas y medallas de la antigüedad [Doc 3].
+                        <strong>Numismática:</strong> Analiza las monedas y medallas de la antigüedad.
                     </div>
                     <div class="tarjeta-auxiliar">
-                        <strong>Arqueología:</strong> Descubre y analiza restos materiales de la actividad humana [Doc 3, Drive 2].
+                        <strong>Arqueología:</strong> Descubre y analiza restos materiales de la actividad humana.
                     </div>
                     <div class="tarjeta-auxiliar">
-                        <strong>Epigrafía:</strong> Investiga e interpreta las inscripciones en piedra o metal [Doc 3].
+                        <strong>Epigrafía:</strong> Investiga e interpreta las inscripciones en piedra o metal.
                     </div>
                     <div class="tarjeta-auxiliar">
-                        <strong>Paleografía/Paleología:</strong> Descifra las escrituras y letras antiguas [Doc 3, Drive 2].
+                        <strong>Paleografía/Paleología:</strong> Descifra las escrituras y letras antiguas.
                     </div>
                     <div class="tarjeta-auxiliar">
-                        <strong>Papirología:</strong> Analiza los manuscritos redactados sobre papiros [Doc 3].
+                        <strong>Papirología:</strong> Analiza los manuscritos redactados sobre papiros.
                     </div>
                     <div class="tarjeta-auxiliar">
-                        <strong>Heráldica:</strong> Estudia escudos de armas y blasones de familias nobles [Doc 3].
+                        <strong>Heráldica:</strong> Estudia escudos de armas y blasones de familias nobles.
                     </div>
                     <div class="tarjeta-auxiliar">
-                        <strong>Sigilografía:</strong> Analiza los sellos usados para autenticar documentos reales o papales [Doc 3].
+                        <strong>Sigilografía:</strong> Analiza los sellos usados para autenticar documentos reales o papales.
                     </div>
                     <div class="tarjeta-auxiliar">
-                        <strong>Cronología:</strong> Permite datar con precisión los hechos históricos en el tiempo [Doc 3].
+                        <strong>Cronología:</strong> Permite datar con precisión los hechos históricos en el tiempo.
                     </div>
                 </div>
 
                 <h3 style="color:#6d28d9; margin-top: 20px;">Otras ciencias de apoyo contemporáneo</h3>
                 <p>Para analizar periodos más recientes, la historia se apoya en:</p>
                 <ul>
-                    <li><strong>Geografía:</strong> Permite localizar físicamente los hechos y evaluar el impacto del relieve en la sociedad [Doc 3, Drive 2].</li>
-                    <li><strong>Filología:</strong> Ayuda a interpretar la evolución de las lenguas y su uso social [Doc 3].</li>
-                    <li><strong>Sociología, Economía, Demografía y Estadística:</strong> Aportan herramientas científicas para estudiar las dinámicas sociales, monetarias, de población y flujos económicos cuantitativos [Doc 3, Drive 2].</li>
+                    <li><strong>Geografía:</strong> Permite localizar físicamente los hechos y evaluar el impacto del relieve en la sociedad.</li>
+                    <li><strong>Filología:</strong> Ayuda a interpretar la evolución de las lenguas y su uso social.</li>
+                    <li><strong>Sociología, Economía, Demografía y Estadística:</strong> Aportan herramientas científicas para estudiar las dinámicas sociales, monetarias, de población y flujos económicos cuantitativos.</li>
                 </ul>
             </div>
         </section>
@@ -543,20 +542,20 @@
         <!-- SECCIÓN 5 -->
         <section id="tema5">
             <h2>5. La Medición del Tiempo y las Edades de la Historia</h2>
-            <p>Medir el tiempo es vital en la Historia [Drive 2]. No todas las culturas lo miden igual, pero todas eligen un hecho muy importante como punto de partida de su <strong>era</strong> [Drive 2]:</p>
+            <p>Medir el tiempo es vital en la Historia. No todas las culturas lo miden igual, pero todas eligen un hecho muy importante como punto de partida de su <strong>era</strong>:</p>
 
             <ul>
-                <li><strong>Era Cristiana:</strong> Su punto de partida es el nacimiento de Cristo (año 1) [Drive 2]. Los sucesos anteriores se marcan como <em>a.C.</em> (antes de Cristo) y los posteriores como <em>d.C.</em> (después de Cristo) [Drive 2].</li>
-                <li><strong>Era Musulmana:</strong> Comienza en el año 622 d.C. con la Hégira (la huida de Mahoma de La Meca a Medina) [Drive 2].</li>
-                <li><strong>Era Judía:</strong> Comienza en el 3760 a.C., fecha mítica de la creación del mundo según su tradición [Drive 2].</li>
-                <li><strong>Era China:</strong> Se inicia en el año 2697 a.C., con el nacimiento de su primer emperador [Drive 2].</li>
+                <li><strong>Era Cristiana:</strong> Su punto de partida es el nacimiento de Cristo (año 1). Los sucesos anteriores se marcan como <em>a.C.</em> (antes de Cristo) y los posteriores como <em>d.C.</em> (después de Cristo).</li>
+                <li><strong>Era Musulmana:</strong> Comienza en el año 622 d.C. con la Hégira (la huida de Mahoma de La Meca a Medina).</li>
+                <li><strong>Era Judía:</strong> Comienza en el 3760 a.C., fecha mítica de la creación del mundo según su tradición.</li>
+                <li><strong>Era China:</strong> Se inicia en el año 2697 a.C., con el nacimiento del primer emperador.</li>
             </ul>
 
             <h3>Unidades básicas de medida:</h3>
-            <p>• <strong>Lustro:</strong> 5 años | • <strong>Década:</strong> 10 años | • <strong>Siglo:</strong> 100 años | • <strong>Milenio:</strong> 1000 años [Drive 2].</p>
+            <p>• <strong>Lustro:</strong> 5 años | • <strong>Década:</strong> 10 años | • <strong>Siglo:</strong> 100 años | • <strong>Milenio:</strong> 1000 años.</p>
 
             <h3>Las Grandes Edades de la Historia</h3>
-            <p>Para facilitar el estudio del pasado, los historiadores dividen el tiempo en grandes periodos caracterizados por una misma cultura, sociedad o forma de pensar [Drive 2]:</p>
+            <p>Para facilitar el estudio del pasado, los historiadores dividen el tiempo en grandes periodos caracterizados por una misma cultura, sociedad o forma de pensar:</p>
 
             <!-- Ruta corregida a la carpeta img/ -->
             <img src="img/linea-tiempo.png" alt="Eje Cronológico de la Historia" class="imagen-educativa">
@@ -565,11 +564,11 @@
             <details>
                 <summary>🪨 Prehistoria (Desde hace 5 millones de años hasta 3.500 a.C.)</summary>
                 <div class="contenido-desplegado">
-                    <p>Comienza con la aparición de los primeros homínidos y termina con la invención de la escritura [Drive 2]. Se divide en:</p>
+                    <p>Comienza con la aparición de los primeros homínidos y termina con la invención de la escritura. Se divide en:</p>
                     <ul>
-                        <li><strong>Paleolítico (Edad de Piedra Tallada):</strong> Ser humano nómada, cazador y recolector, sociedad igualitaria [Drive 2].</li>
-                        <li><strong>Neolítico (Edad de Piedra Pulida):</strong> Nace la agricultura y la ganadería [Drive 2]. El hombre se hace productor, sedentario y surgen poblados con organización social compleja [Drive 2].</li>
-                        <li><strong>Edad de los Metales:</strong> Nace la metalurgia (Cobre, Bronce y Hierro) [Drive 2].</li>
+                        <li><strong>Paleolítico (Edad de Piedra Tallada):</strong> Ser humano nómada, cazador y recolector, sociedad igualitaria.</li>
+                        <li><strong>Neolítico (Edad de Piedra Pulida):</strong> Nace la agricultura y la ganadería. El hombre se hace productor, sedentario y surgen poblados con organización social compleja.</li>
+                        <li><strong>Edad de los Metales:</strong> Nace la metalurgia (Cobre, Bronce y Hierro).</li>
                     </ul>
                 </div>
             </details>
@@ -577,32 +576,32 @@
             <details>
                 <summary>🏛️ Edad Antigua (3.500 a.C. hasta el siglo V d.C.)</summary>
                 <div class="contenido-desplegado">
-                    <p>Empieza con la invención de la escritura y termina con la caída del Imperio Romano de Occidente en el año 476 d.C. [Drive 2].</p>
-                    <p><strong>Características:</strong> Nacimiento de grandes imperios y ciudades organizadas [Drive 2]. Sociedad desigual basada en la esclavitud [Drive 2].</p>
+                    <p>Empieza con la invención de la escritura y termina con la caída del Imperio Romano de Occidente en el año 476 d.C.</p>
+                    <p><strong>Características:</strong> Nacimiento de grandes imperios y ciudades organizadas. Sociedad desigual basada en la esclavitud.</p>
                 </div>
             </details>
 
             <details>
                 <summary>🏰 Edad Media (Siglo V d.C. hasta el siglo XV d.C.)</summary>
                 <div class="contenido-desplegado">
-                    <p>Se extiende desde la caída de Roma (476 d.C.) hasta el descubrimiento de América (1492 d.C.) [Drive 2].</p>
-                    <p><strong>Características:</strong> Época de castillos y catedrales [Drive 2]. Gran esplendor de la civilización musulmana [Drive 2]. La población abandona las ciudades y pasa a vivir y trabajar en el campo (sociedad feudal) [Drive 2].</p>
+                    <p>Se extiende desde la caída de Roma (476 d.C.) hasta el descubrimiento de América (1492 d.C.).</p>
+                    <p><strong>Características:</strong> Época de castillos y catedrales. Gran esplendor de la civilización musulmana. La población abandona las ciudades y pasa a vivir y trabajar en el campo (sociedad feudal).</p>
                 </div>
             </details>
 
             <details>
                 <summary>⛵ Edad Moderna (Siglo XV d.C. hasta el siglo XVIII d.C.)</summary>
                 <div class="contenido-desplegado">
-                    <p>Empieza en 1492 d.C. y finaliza con el estallido de la Revolución Francesa en 1789 d.C. [Drive 2].</p>
-                    <p><strong>Características:</strong> Grandes avances y exploraciones geográficas [Drive 2]. Nace la imprenta de Gutenberg (difusión de la cultura) y ocurren sangrientas guerras religiosas en Europa [Drive 2].</p>
+                    <p>Empieza en 1492 d.C. y finaliza con el estallido de la Revolución Francesa en 1789 d.C.</p>
+                    <p><strong>Características:</strong> Grandes avances y exploraciones geográficas. Nace la imprenta de Gutenberg (difusión de la cultura) y ocurren sangrientas guerras religiosas en Europa.</p>
                 </div>
             </details>
 
             <details>
                 <summary>🏭 Edad Contemporánea (Desde finales del siglo XVIII hasta el presente)</summary>
                 <div class="contenido-desplegado">
-                    <p>Se inicia con la Revolución Francesa (1789 d.C.) hasta nuestros días [Drive 2].</p>
-                    <p><strong>Características:</strong> Aparece la Revolución Industrial y las grandes fábricas [Drive 2]. Desarrollo masivo de la ciencia, la tecnología y el transporte [Drive 2]. Nacimiento de los sistemas políticos democráticos modernos [Drive 2].</p>
+                    <p>Se inicia con la Revolución Francesa (1789 d.C.) hasta nuestros días.</p>
+                    <p><strong>Características:</strong> Aparece la Revolución Industrial y las grandes fábricas. Desarrollo masivo de la ciencia, la tecnología y el transporte. Nacimiento de los sistemas políticos democráticos modernos.</p>
                 </div>
             </details>
         </section>
@@ -610,21 +609,21 @@
         <!-- SECCIÓN 6 -->
         <section id="tema6">
             <h2>6. Las Fuentes Históricas y el Análisis de Pruebas</h2>
-            <p>Las <strong>fuentes históricas</strong> son todos los documentos, testimonios u objetos materiales que nos transmiten información sobre el pasado [Doc 3, Drive 2]. A más reciente sea un suceso, más fuentes tendremos para investigarlo [Doc 3, Drive 2].</p>
+            <p>Las <strong>fuentes históricas</strong> son todos los documentos, testimonios u objetos materiales que nos transmiten información sobre el pasado. A más reciente sea un suceso, más fuentes tendremos para investigarlo.</p>
 
             <!-- Ruta corregida a la carpeta img/ -->
             <img src="img/arbol-fuentes.png" alt="Clasificación de las Fuentes Históricas" class="imagen-educativa">
             <p class="caption">Imagen 2: El Árbol de las Fuentes Históricas. Memoriza la diferencia entre fuentes primarias (hechas en el momento) y secundarias (estudios posteriores).</p>
 
             <h3>¿Cómo se clasifican las fuentes?</h3>
-            <p>Para no confundirnos, los historiadores clasifican las fuentes en tres categorías [Doc 3, Drive 2]:</p>
+            <p>Para no confundirnos, los historiadores clasifican las fuentes en tres categorías:</p>
 
             <details>
                 <summary>🔍 A) Según su ORIGEN (La clasificación más utilizada)</summary>
                 <div class="contenido-desplegado">
                     <ul>
-                        <li><strong>Fuentes Primarias (Directas):</strong> Son los materiales originales creados por los protagonistas y testigos en la misma época en la que sucedieron los hechos (por ejemplo: la momia de un faraón, las cartas de Cristóbal Colón o una ley antigua) [Doc 3, Drive 2].</li>
-                        <li><strong>Fuentes Secundarias (Indirectas / Historiográficas):</strong> Son libros, enciclopedias o estudios escritos por historiadores actuales después de analizar y procesar las fuentes primarias [Doc 3, Drive 2].</li>
+                        <li><strong>Fuentes Primarias (Directas):</strong> Son los materiales originales creados por los protagonistas y testigos en la misma época en la que sucedieron los hechos (por ejemplo: la momia de un faraón, las cartas de Cristóbal Colón o una ley antigua).</li>
+                        <li><strong>Fuentes Secundarias (Indirectas / Historiográficas):</strong> Son libros, enciclopedias o estudios escritos por historiadores actuales después de analizar y procesar las fuentes primarias.</li>
                     </ul>
                 </div>
             </details>
@@ -633,13 +632,13 @@
                 <summary>📂 B) Según su SOPORTE FÍSICO o naturaleza</summary>
                 <div class="contenido-desplegado">
                     <ul>
-                        <li><strong>Escritas:</strong> Documentos públicos oficiales (leyes, actas) o privados (diarios, cartas personales, periódicos, actas notariales) [Doc 3, Drive 2].</li>
-                        <li><strong>Materiales/Arqueológicas:</strong> Objetos físicos (herramientas, ropa, monedas antiguas, armas, ruinas de edificios o esqueletos) [Doc 3, Drive 2].</li>
-                        <li><strong>Gráficas/Imágenes:</strong> Pinturas, grabados antiguos, carteles de propaganda y fotografías de la época [Doc 3, Drive 2].</li>
-                        <li><strong>Orales:</strong> Testimonios con voz grabada o transmitidos por boca a boca (entrevistas, canciones populares, leyendas) [Doc 3, Drive 2].</li>
-                        <li><strong>Audiovisuales:</strong> Películas, grabaciones de televisión, documentales o vídeos en formato digital (soporte propio del siglo XX) [Doc 3].</li>
-                        <li><strong>Estadísticas:</strong> Datos numéricos agrupados para mostrar evoluciones cuantitativas (tablas de natalidad, gráficos) [Doc 3].</li>
-                        <li><strong>Cartográficas:</strong> Representaciones en mapas, ya sean del espacio en el momento del suceso (sincrónicas) o de su evolución histórica (diacrónicas) [Doc 3].</li>
+                        <li><strong>Escritas:</strong> Documentos públicos oficiales (leyes, actas) o privados (diarios, cartas personales, periódicos, actas notariales).</li>
+                        <li><strong>Materiales/Arqueológicas:</strong> Objetos físicos (herramientas, ropa, monedas antiguas, armas, ruinas de edificios o esqueletos).</li>
+                        <li><strong>Gráficas/Imágenes:</strong> Pinturas, grabados antiguos, carteles de propaganda y fotografías de la época.</li>
+                        <li><strong>Orales:</strong> Testimonios con voz grabada o transmitidos por boca a boca (entrevistas, canciones populares, leyendas).</li>
+                        <li><strong>Audiovisuales:</strong> Películas, grabaciones de televisión, documentales o vídeos en formato digital (soporte propio del siglo XX).</li>
+                        <li><strong>Estadísticas:</strong> Datos numéricos agrupados para mostrar evoluciones cuantitativas (tablas de natalidad, gráficos).</li>
+                        <li><strong>Cartográficas:</strong> Representaciones en mapas, ya sean del espacio en el momento del suceso (sincrónicas) o de su evolución histórica (diacrónicas).</li>
                     </ul>
                 </div>
             </details>
@@ -648,24 +647,24 @@
                 <summary>🎯 C) Según su CONTENIDO específico</summary>
                 <div class="contenido-desplegado">
                     <ul>
-                        <li><strong>Históricas:</strong> Crónicas y narraciones del pasado [Drive 2]. | <strong>Jurídicas:</strong> Leyes, normas, códigos de justicia, tratados internacionales [Drive 2].</li>
-                        <li><strong>Periodísticas:</strong> Noticias y periódicos contemporáneos de los hechos [Drive 2]. | <strong>Personales:</strong> Diarios de vida privados, cartas privadas o testamentos familiares [Drive 2].</li>
-                        <li><strong>Políticas:</strong> Discursos oficiales, proclamas militares, programas de partidos [Drive 2]. | <strong>Sociales/Económicas:</strong> Informes financieros, censos de población, memorias de producción [Drive 2].</li>
+                        <li><strong>Históricas:</strong> Crónicas y narraciones del pasado. | <strong>Jurídicas:</strong> Leyes, normas, códigos de justicia, tratados internacionales.</li>
+                        <li><strong>Periodísticas:</strong> Noticias y periódicos contemporáneos de los hechos. | <strong>Personales:</strong> Diarios de vida privados, cartas privadas o testamentos familiares.</li>
+                        <li><strong>Políticas:</strong> Discursos oficiales, proclamas militares, programas de partidos. | <strong>Sociales/Económicas:</strong> Informes financieros, censos de población, memorias de producción.</li>
                     </ul>
                 </div>
             </details>
 
             <div class="caja-colores critica">
                 <h4>⚠️ El Control de Calidad: La Crítica de Fuentes</h4>
-                <p>Un historiador riguroso nunca acepta un documento sin antes verificar si es verídico y auténtico mediante dos análisis fundamentales [Doc 3]:</p>
+                <p>Un historiador riguroso nunca acepta un documento sin antes verificar si es verídico y auténtico mediante dos análisis fundamentales:</p>
                 <ul>
-                    <li><strong>1. Crítica de Procedencia:</strong> Sirve para identificar al autor, datar la fuente en su año exacto (estudiando el soporte, el tipo de letra o la tinta) y determinar el lugar geográfico y social de origen del texto [Doc 3].
+                    <li><strong>1. Crítica de Procedencia:</strong> Sirve para identificar al autor, datar la fuente en su año exacto (estudiando el soporte, el tipo de letra o la tinta) y determinar el lugar geográfico y social de origen del texto.
                         <ul>
-                            <li><em>Crítica Externa:</em> Analiza la parte física del documento y se apoya en las Ciencias Auxiliares para verificar si los materiales son reales o es una imitación de otra época [Doc 3].</li>
-                            <li><em>Crítica Interna:</em> Analiza el contenido para averiguar las intenciones reales del autor, detectar sesgos, mentiras interesadas o censuras de la época [Doc 3].</li>
+                            <li><em>Crítica Externa:</em> Analiza la parte física del documento y se apoya en las Ciencias Auxiliares para verificar si los materiales son reales o es una imitación de otra época.</li>
+                            <li><em>Crítica Interna:</em> Analiza el contenido para averiguar las intenciones reales del autor, detectar sesgos, mentiras interesadas o censuras de la época.</li>
                         </ul>
                     </li>
-                    <li><strong>2. Crítica de Restitución:</strong> Analiza la forma externa detalladamente para comprobar si el documento ha sido manipulado, borrado, retocado o falsificado posteriormente, intentando descubrir cómo era el manuscrito original del autor [Doc 3].</li>
+                    <li><strong>2. Crítica de Restitución:</strong> Analiza la forma externa detalladamente para comprobar si el documento ha sido manipulado, borrado, retocado o falsificado posteriormente, intentando descubrir cómo era el manuscrito original del autor.</li>
                 </ul>
             </div>
         </section>
@@ -673,22 +672,22 @@
         <!-- SECCIÓN 7 -->
         <section id="tema7">
             <h2>7. Guía Paso a Paso para realizar un Trabajo de Investigación</h2>
-            <p>Si tienes que hacer un trabajo académico escrito para clase, sigue estas pautas formales paso a paso para evitar el plagio y lograr una presentación excelente de nivel de Bachillerato [Doc 3]:</p>
+            <p>Si tienes que hacer un trabajo académico escrito para clase, sigue estas pautas formales paso a paso para evitar el plagio y lograr una presentación excelente de nivel de Bachillerato:</p>
 
             <div class="caja-colores investigacion">
                 <h4>📝 Lista de Tareas para Investigar como un Profesional</h4>
                 <ol>
-                    <li><strong>Paso 1: Búsqueda exhaustiva:</strong> Busca información relacionada con tu tema utilizando diversas fuentes (páginas web fiables, libros de texto, prensa o mapas) [Doc 3].</li>
-                    <li><strong>Paso 2: Lectura atenta y toma de notas:</strong> Lee despacio la información encontrada y anota en un cuaderno o documento digital las ideas principales [Doc 3].</li>
-                    <li><strong>Paso 3: Contraste de información:</strong> Analiza críticamente la información y contrástala entre diferentes autores para ver si coinciden o si hay contradicciones [Doc 3].</li>
-                    <li><strong>Paso 4: Selección de contenidos:</strong> Quédate únicamente con los datos más valiosos y de mayor importancia para tu tema, desechando lo irrelevante [Doc 3].</li>
-                    <li><strong>Paso 5: Elaboración de un esquema base:</strong> Estructura tu trabajo en un esquema ordenado con breves títulos y apartados numerados que usarás como guía de redacción [Doc 3].</li>
-                    <li><strong>Paso 6: Redacción final (¡Sin copiar y pegar!):</strong> Escribe el trabajo exponiendo las conclusiones de forma ordenada, clara, coherente y precisa [Doc 3]. No copies textos de internet de forma literal. Si pones una frase exacta de un autor, colócala siempre entre comillas ("...") y cita de dónde la has sacado [Doc 3].</li>
-                    <li><strong>Paso 7: Cuidado de la presentación formal:</strong> Tu trabajo debe incluir de manera obligatoria [Doc 3]:
+                    <li><strong>Paso 1: Búsqueda exhaustiva:</strong> Busca información relacionada con tu tema utilizando diversas fuentes (páginas web fiables, libros de texto, prensa o mapas).</li>
+                    <li><strong>Paso 2: Lectura atenta y toma de notas:</strong> Lee despacio la información encontrada y anota en un cuaderno o documento digital las ideas principales.</li>
+                    <li><strong>Paso 3: Contraste de información:</strong> Analiza críticamente la información y contrástala entre diferentes autores para ver si coinciden o si hay contradicciones.</li>
+                    <li><strong>Paso 4: Selección de contenidos:</strong> Quédate únicamente con los datos más valiosos y de mayor importancia para tu tema, desechando lo irrelevante.</li>
+                    <li><strong>Paso 5: Elaboración de un esquema base:</strong> Estructura tu trabajo en un esquema ordenado con breves títulos y apartados numerados que usarás como guía de redacción.</li>
+                    <li><strong>Paso 6: Redacción final (¡Sin copiar y pegar!):</strong> Escribe el trabajo exponiendo las conclusiones de forma ordenada, clara, coherente y precisa. No copies textos de internet de forma literal. Si pones una frase exacta de un autor, colócala siempre entre comillas ("...") y cita de dónde la has sacado.</li>
+                    <li><strong>Paso 7: Cuidado de la presentación formal:</strong> Tu trabajo debe incluir de manera obligatoria:
                         <ul>
-                            <li><strong>Portada formal:</strong> Título llamativo del trabajo, tu nombre completo, curso, asignatura, fecha y nombre del profesor a quien va dirigido [Doc 3].</li>
-                            <li><strong>Índice:</strong> Páginas ordenadas de cada sección para que el lector pueda localizar el contenido [Doc 3].</li>
-                            <li><strong>Bibliografía ordenada:</strong> Lista de libros, revistas y enlaces web consultados, indicando siempre: el autor, título, editorial y año de publicación [Doc 3].</li>
+                            <li><strong>Portada formal:</strong> Título llamativo del trabajo, tu nombre completo, curso, asignatura, fecha y nombre del profesor a quien va dirigido.</li>
+                            <li><strong>Índice:</strong> Páginas ordenadas de cada sección para que el lector pueda localizar el contenido.</li>
+                            <li><strong>Bibliografía ordenada:</strong> Lista de libros, revistas y enlaces web consultados, indicando siempre: el autor, título, editorial y año de publicación.</li>
                         </ul>
                     </li>
                 </ol>
@@ -698,39 +697,39 @@
         <!-- SECCIÓN 8 -->
         <section id="tema8">
             <h2>8. Fichas de Comentario de Examen (Paso a Paso)</h2>
-            <p>Usa estos esquemas simplificados para preparar tus exámenes oficiales de Historia [Doc 2, Doc 3]:</p>
+            <p>Usa estos esquemas simplificados para preparar tus exámenes oficiales de Historia:</p>
 
             <details>
                 <summary>📝 Comentario de un Texto Histórico</summary>
                 <div class="contenido-desplegado">
-                    <p><strong>1. Identificar el Documento:</strong> Indica su naturaleza [Doc 2]:</p>
+                    <p><strong>1. Identificar el Documento:</strong> Indica su naturaleza:</p>
                     <ul>
-                        <li><em>Literario:</em> Si es una obra literaria, cartas personales, memorias, artículos de prensa subjetivos o diarios [Doc 2].</li>
-                        <li><em>Jurídico:</em> Si recoge derechos, deberes o leyes oficiales articuladas (constituciones, decretos, tratados internacionales) [Doc 2].</li>
-                        <li><em>Circunstancial:</em> Producto directo de un hecho del momento (discursos, manifiestos militares, proclamas) [Doc 2].</li>
-                        <li><em>Historiográfico:</em> Texto escrito por un historiador moderno analizando el pasado [Doc 2].</li>
+                        <li><em>Literario:</em> Si es una obra literaria, cartas personales, memorias, artículos de prensa subjetivos o diarios.</li>
+                        <li><em>Jurídico:</em> Si recoge derechos, deberes o leyes oficiales articuladas (constituciones, decretos, tratados internacionales).</li>
+                        <li><em>Circunstancial:</em> Producto directo de un hecho del momento (discursos, manifiestos militares, proclamas).</li>
+                        <li><em>Historiográfico:</em> Texto escrito por un historiador moderno analizando el pasado.</li>
                     </ul>
-                    <p><strong>2. Encuadre Histórico:</strong> Señala la fecha (cronología), el autor (importancia de su personaje), y el destinatario (público o privado, individual o colectivo) [Doc 2].</p>
-                    <p><strong>3. Análisis de Contenido:</strong> Explica las ideas principales y secundarias sin repetir frases textuales del escrito [Doc 2].</p>
-                    <p><strong>4. Relación Histórica:</strong> Conecta el texto con las causas y consecuencias del tema estudiado en clase [Doc 2].</p>
-                    <p><strong>5. Valoración Crítica:</strong> Reflexiona sobre su veracidad, posibles sesgos del autor y su utilidad real para comprender el pasado [Doc 2, Doc 3].</p>
+                    <p><strong>2. Encuadre Histórico:</strong> Señala la fecha (cronología), el autor (importancia de su personaje), y el destinatario (público o privado, individual o colectivo).</p>
+                    <p><strong>3. Análisis de Contenido:</strong> Explica las ideas principales y secundarias sin repetir frases textuales del escrito.</p>
+                    <p><strong>4. Relación Histórica:</strong> Conecta el texto con las causas y consecuencias del tema estudiado en clase.</p>
+                    <p><strong>5. Valoración Crítica:</strong> Reflexiona sobre su veracidad, posibles sesgos del autor y su utilidad real para comprender el pasado.</p>
                 </div>
             </details>
 
             <details>
                 <summary>🗺️ Comentario de un Mapa Histórico</summary>
                 <div class="contenido-desplegado">
-                    <p><strong>1. Encuadre básico:</strong> Di el título del mapa, el año representado, la escala y su proyección geográfica [Doc 2].</p>
-                    <p><strong>2. Tipo de Mapa:</strong> Clasifícalo según su contenido [Doc 2]:</p>
+                    <p><strong>1. Encuadre básico:</strong> Di el título del mapa, el año representado, la escala y su proyección geográfica.</p>
+                    <p><strong>2. Tipo de Mapa:</strong> Clasifícalo según su contenido:</p>
                     <ul>
-                        <li><em>Político-administrativo:</em> Fronteras territoriales de los estados antiguos [Doc 2].</li>
-                        <li><em>Militar:</em> Campañas de batallas, frentes de guerra o movimientos de ejércitos [Doc 2].</li>
-                        <li><em>Económico:</em> Rutas comerciales, líneas de ferrocarril o desamortizaciones de tierras [Doc 2].</li>
-                        <li><em>Demográfico:</em> Densidades o movimientos migratorios de población [Doc 2].</li>
-                        <li><em>Electoral:</em> Distribución del voto o influencia de partidos políticos [Doc 2].</li>
+                        <li><em>Político-administrativo:</em> Fronteras territoriales de los estados antiguos.</li>
+                        <li><em>Militar:</em> Campañas de batallas, frentes de guerra o movimientos de ejércitos.</li>
+                        <li><em>Económico:</em> Rutas comerciales, líneas de ferrocarril o desamortizaciones de tierras.</li>
+                        <li><em>Demográfico:</em> Densidades o movimientos migratorios de población.</li>
+                        <li><em>Electoral:</em> Distribución del voto o influencia de partidos políticos.</li>
                     </ul>
-                    <p><strong>3. Análisis de Leyenda:</strong> Describe los colores, flechas y símbolos cartográficos de la leyenda [Doc 3].</p>
-                    <p><strong>4. Explicación Histórica y Valoración:</strong> Explica qué proceso histórico se plasma en el mapa y evalúa si la información es completa o inexacta en comparación con tus apuntes [Doc 2, Doc 3].</p>
+                    <p><strong>3. Análisis de Leyenda:</strong> Describe los colores, flechas y símbolos cartográficos de la leyenda.</p>
+                    <p><strong>4. Explicación Histórica y Valoración:</strong> Explica qué proceso histórico se plasma en el mapa y evalúa si la información es completa o inexacta en comparación con tus apuntes.</p>
                 </div>
             </details>
 
@@ -738,11 +737,11 @@
                 <summary>🖼️ Comentario de una Imagen o Cartel</summary>
                 <div class="contenido-desplegado">
                     <ol>
-                        <li><strong>Datos básicos:</strong> Año en que se hizo, autor, destinatarios y dónde se publicó originalmente [Doc 2].</li>
-                        <li><strong>Tipología:</strong> Clasifica su tema (electoral-propagandístico, social, militar, religioso o cultural) [Doc 2].</li>
-                        <li><strong>Estructura Visual:</strong> Composición (relación de elementos), Encuadre (punto de vista del fotógrafo o dibujante) y Color (uso para ambientar la realidad) [Doc 2].</li>
-                        <li><strong>Descripción detallada:</strong> Describe lo que ves en primer plano, al fondo, de lo general a lo particular o de izquierda a derecha [Doc 3].</li>
-                        <li><strong>Mensaje central:</strong> Analiza las ideas principales que transmite la imagen y relaciónalas con el contexto y la posible existencia de censura estatal [Doc 3].</li>
+                        <li><strong>Datos básicos:</strong> Año en que se hizo, autor, destinatarios y dónde se publicó originalmente.</li>
+                        <li><strong>Tipología:</strong> Clasifica su tema (electoral-propagandístico, social, militar, religioso o cultural).</li>
+                        <li><strong>Estructura Visual:</strong> Composición (relación de elementos), Encuadre (punto de vista del fotógrafo o dibujante) y Color (uso para ambientar la realidad).</li>
+                        <li><strong>Descripción detallada:</strong> Describe lo que ves en primer plano, al fondo, de lo general a lo particular o de izquierda a derecha.</li>
+                        <li><strong>Mensaje central:</strong> Analiza las ideas principales que transmite la imagen y relaciónalas con el contexto y la posible existencia de censura estatal.</li>
                     </ol>
                 </div>
             </details>
@@ -750,16 +749,16 @@
             <details>
                 <summary>📊 Comentario de una Gráfica o Tabla de Datos</summary>
                 <div class="contenido-desplegado">
-                    <p><strong>1. Presentación:</strong> Identifica el título, el periodo cronológico abarcado y las unidades de medida (porcentajes, miles, millones) [Doc 2].</p>
-                    <p><strong>2. Análisis Estadístico:</strong> Observa la tendencia general de los datos. Señala los incrementos, descensos, años con picos máximos y mínimos, o si se mantiene constante [Doc 2].</p>
-                    <p><strong>3. Interpretación y Contexto:</strong> Explica el motivo de las fluctuaciones de los números basándote en los procesos históricos (por ejemplo: si la natalidad cae debido a una guerra o epidemia) [Doc 2].</p>
-                    <p><strong>4. Valoración:</strong> Explica qué aporta esta gráfica al conocimiento de la época y sugiere otras fuentes para contrastar sus datos [Doc 2].</p>
+                    <p><strong>1. Presentación:</strong> Identifica el título, el periodo cronológico abarcado y las unidades de medida (porcentajes, miles, millones).</p>
+                    <p><strong>2. Análisis Estadístico:</strong> Observa la tendencia general de los datos. Señala los incrementos, descensos, años con picos máximos y mínimos, o si se mantiene constante.</p>
+                    <p><strong>3. Interpretación y Contexto:</strong> Explica el motivo de las fluctuaciones de los números basándote en los procesos históricos (por ejemplo: si la natalidad cae debido a una guerra o epidemia).</p>
+                    <p><strong>4. Valoración:</strong> Explica qué aporta esta gráfica al conocimiento de la época y sugiere otras fuentes para contrastar sus datos.</p>
                 </div>
             </details>
         </section>
     </main>
 
-    <!-- Script de Navegación Dinámica -->
+    <!-- Script de Navegación Dinámica (Corregido y blindado para navegadores estrictos) -->
     <script>
         const links = document.querySelectorAll('aside nav ul li a');
         const sections = document.querySelectorAll('main section');
@@ -768,7 +767,8 @@
             let current = '';
             sections.forEach(section => {
                 const sectionTop = section.offsetTop;
-                if (pageYOffset >= (sectionTop - 180)) {
+                // Uso correcto de window.scrollY para evitar ReferenceError en modo estricto
+                if (window.scrollY >= (sectionTop - 200)) {
                     current = section.getAttribute('id');
                 }
             });
@@ -782,4 +782,4 @@
         });
     </script>
 </body>
-</html>
+</html>,TargetFile:/workspace/scratch/tema0.html}
