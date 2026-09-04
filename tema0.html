@@ -6,15 +6,22 @@
     <title>Bloque 0: Introducción al Conocimiento Histórico</title>
     <style>
         :root {
+            /* Azul más intenso y vibrante para elementos interactivos */
+            --primary-intense: #1e40af; /* Azul real oscuro */
+            --primary-vibrant: #2563eb; /* Azul brillante */
             --primary-dark: #0f172a;
             --primary: #1e293b;
-            --primary-light: #3b82f6;
             --bg-main: #f8fafc;
             --card-bg: #ffffff;
             --text-dark: #1e293b;
             --text-muted: #64748b;
             
-            /* Colores de las cajas de ayuda */
+            /* Tonos suaves en verde para el encabezado */
+            --header-bg: #f0fdf4; /* Fondo verde menta muy suave */
+            --header-border: #10b981; /* Borde verde esmeralda */
+            --header-text: #065f46; /* Texto verde bosque oscuro */
+
+            /* Colores de las cajas de ayuda del tema */
             --border-glosario: #0ea5e9;
             --bg-glosario: #f0f9ff;
             --border-auxiliar: #8b5cf6;
@@ -40,28 +47,31 @@
         body {
             background-color: var(--bg-main);
             color: var(--text-dark);
-            display: flex;
             min-height: 100vh;
         }
 
-        /* Barra de navegación lateral */
+        /* Barra de navegación lateral fija a la izquierda */
         aside {
             width: 300px;
             background-color: var(--primary-dark);
             color: white;
             padding: 25px;
             position: fixed;
+            top: 0;
+            left: 0;
             height: 100vh;
             overflow-y: auto;
             border-right: 1px solid #334155;
+            z-index: 100;
         }
 
         aside h1 {
-            font-size: 1.4rem;
+            font-size: 1.35rem;
             margin-bottom: 25px;
             color: #f8fafc;
-            border-bottom: 3px solid var(--primary-light);
+            border-bottom: 3px solid var(--primary-vibrant);
             padding-bottom: 12px;
+            text-align: center;
         }
 
         aside nav ul {
@@ -80,39 +90,80 @@
             padding: 10px 14px;
             border-radius: 6px;
             transition: all 0.2s ease;
+            font-weight: 500;
         }
 
+        /* Botón de volver a la portada */
+        aside nav ul li .btn-volver {
+            background-color: #334155;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+            border: 1px solid #475569;
+            margin-bottom: 15px;
+        }
+
+        aside nav ul li .btn-volver:hover {
+            background-color: var(--primary-vibrant);
+            border-color: var(--primary-vibrant);
+        }
+
+        /* Enlaces activos e interactivos en azul vibrante */
         aside nav ul li a:hover, aside nav ul li a.active {
-            background-color: var(--primary-light);
+            background-color: var(--primary-vibrant);
             color: white;
             font-weight: bold;
+            box-shadow: 0 4px 10px rgba(37, 99, 235, 0.15);
         }
 
-        /* Contenido de la Web */
+        /* Contenido de la Web (Desplazado a la derecha de la barra lateral) */
         main {
             margin-left: 300px;
             padding: 40px;
-            width: calc(100% - 300px);
-            max-width: 1050px;
+            max-width: 1100px;
         }
 
+        /* Encabezado Alegre con tonos suaves en verde */
         header {
             margin-bottom: 35px;
-            background: linear-gradient(135deg, #1e293b, #0f172a);
-            color: white;
-            padding: 30px;
+            background: linear-gradient(135deg, var(--header-bg), #e6fcf0);
+            border-left: 6px solid var(--header-border);
+            color: var(--header-text);
+            padding: 25px 35px;
             border-radius: 12px;
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 10px rgba(16, 185, 129, 0.08);
         }
 
         header h2 {
-            font-size: 1.8rem;
-            margin-bottom: 10px;
+            font-size: 1.9rem;
+            margin-bottom: 8px;
+            color: var(--header-text);
+            font-weight: 800;
         }
 
         header p {
-            color: #94a3b8;
-            font-size: 1.1rem;
+            color: #15803d; /* Verde intermedio legible */
+            font-size: 1.05rem;
+            font-weight: 500;
+        }
+
+        /* Contenedor de la foto de cabecera del tema */
+        .cabecera-ilustrada {
+            width: 100%;
+            height: 200px; /* Altura ideal para un banner horizontal */
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e2e8f0;
+            margin-bottom: 35px;
+            background-color: #f1f5f9;
+        }
+
+        .cabecera-ilustrada img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ajusta la imagen sin deformarla */
+            display: block;
         }
 
         section {
@@ -121,7 +172,7 @@
             border-radius: 12px;
             box-shadow: 0 1px 3px rgba(0,0,0,0.05);
             margin-bottom: 35px;
-            border-left: 6px solid var(--primary-light);
+            border-left: 6px solid var(--primary-vibrant); /* Cambiado a azul vibrante */
         }
 
         section h2 {
@@ -133,7 +184,7 @@
         }
 
         h3 {
-            color: var(--primary);
+            color: var(--primary-intense); /* Títulos intermedios en azul intenso */
             margin: 25px 0 12px 0;
             font-size: 1.25rem;
         }
@@ -230,7 +281,7 @@
 
         details[open] {
             background-color: white;
-            border-color: var(--primary-light);
+            border-color: var(--primary-vibrant);
         }
 
         summary {
@@ -302,11 +353,8 @@
             margin-bottom: 8px;
         }
 
-        /* Responsive */
+        /* Responsive para tabletas y móviles */
         @media (max-width: 900px) {
-            body {
-                flex-direction: column;
-            }
             aside {
                 width: 100%;
                 height: auto;
@@ -329,7 +377,7 @@
         <h1>🧭 Bloque 0</h1>
         <nav>
             <ul>
-                <li><a href="index.html" style="background-color: #334155; font-weight: bold; color: white;">🏠 Volver a Portada</a></li>
+                <li><a href="index.html" class="btn-volver">🏠 Volver a Portada</a></li>
                 <li style="margin-top: 15px;"><a href="#tema1" class="active">1. El Concepto de Historia</a></li>
                 <li><a href="#tema2">2. Factores de la Historia</a></li>
                 <li><a href="#tema3">3. El Método Científico</a></li>
@@ -344,10 +392,16 @@
 
     <!-- Contenido Principal -->
     <main>
+        <!-- Encabezado con tonos verdes suaves a juego con la Portada -->
         <header>
             <h2>Introducción al conocimiento histórico</h2>
-            <p>Bloque 0 - Conceptos, métodos de investigación y técnicas de trabajo de la asignatura.</p>
+            <p>Bloque 0 • Conceptos, métodos de investigación y técnicas de trabajo de la asignatura.</p>
         </header>
+
+        <!-- Nueva Imagen de Cabecera en la carpeta img/ -->
+        <div class="cabecera-ilustrada">
+            <img src="img/libros-antiguos.png" alt="Libros antiguos y lomos de libros de historia de consulta">
+        </div>
 
         <!-- SECCIÓN 1 -->
         <section id="tema1">
@@ -406,7 +460,7 @@
                 </ul>
             </div>
 
-            <!-- Caja de Relaciones Temporales (Corregida a color rosa) -->
+            <!-- Caja de Relaciones Temporales (Color rosa destacado) -->
             <div class="caja-colores tiempo">
                 <h4>⏳ Coordenada B: Las Relaciones Temporales</h4>
                 <p>El tiempo en la Historia es un flujo continuo que nunca se detiene, donde conviven los cambios rápidos con cosas que permanecen estables. Para ordenar los hechos históricos de forma lógica, distinguimos tres relaciones clave:</p>
@@ -494,16 +548,17 @@
                 <li><strong>Era Cristiana:</strong> Su punto de partida es el nacimiento de Cristo (año 1). Los sucesos anteriores se marcan como <em>a.C.</em> (antes de Cristo) y los posteriores como <em>d.C.</em> (después de Cristo).</li>
                 <li><strong>Era Musulmana:</strong> Comienza en el año 622 d.C. con la Hégira (la huida de Mahoma de La Meca a Medina).</li>
                 <li><strong>Era Judía:</strong> Comienza en el 3760 a.C., fecha mítica de la creación del mundo según su tradición.</li>
-                <li><strong>Era China:</strong> Se inicia en el año 2697 a.C., con el nacimiento de su primer emperador.</li>
+                <li><strong>Era China:</strong> Se inicia en el año 2697 a.C., con el nacimiento del primer emperador.</li>
             </ul>
 
             <h3>Unidades básicas de medida:</h3>
-            <p>• <strong>Lustro:</strong> 5 años | • <strong>Década:</strong> 10 años | • <strong>Siglo:</strong> 100 años (números romanos) | • <strong>Milenio:</strong> 1000 años.</p>
+            <p>• <strong>Lustro:</strong> 5 años | • <strong>Década:</strong> 10 años | • <strong>Siglo:</strong> 100 años | • <strong>Milenio:</strong> 1000 años.</p>
 
             <h3>Las Grandes Edades de la Historia</h3>
             <p>Para facilitar el estudio del pasado, los historiadores dividen el tiempo en grandes periodos caracterizados por una misma cultura, sociedad o forma de pensar:</p>
 
-            <img src="./linea-tiempo.png" alt="Eje Cronológico de la Historia" class="imagen-educativa">
+            <!-- Ruta corregida a la carpeta img/ -->
+            <img src="img/linea-tiempo.png" alt="Eje Cronológico de la Historia" class="imagen-educativa">
             <p class="caption">Imagen 1: Las Edades de la Historia. Observa los grandes cambios tecnológicos e históricos que sirven de frontera entre etapas.</p>
 
             <details>
@@ -521,7 +576,7 @@
             <details>
                 <summary>🏛️ Edad Antigua (3.500 a.C. hasta el siglo V d.C.)</summary>
                 <div class="contenido-desplegado">
-                    <p>Empieza con la invención de la escritura y termina con la caída del Imperio Romano de Occidente en el año 476 d.C..</p>
+                    <p>Empieza con la invención de la escritura y termina con la caída del Imperio Romano de Occidente en el año 476 d.C.</p>
                     <p><strong>Características:</strong> Nacimiento de grandes imperios y ciudades organizadas. Sociedad desigual basada en la esclavitud.</p>
                 </div>
             </details>
@@ -537,7 +592,7 @@
             <details>
                 <summary>⛵ Edad Moderna (Siglo XV d.C. hasta el siglo XVIII d.C.)</summary>
                 <div class="contenido-desplegado">
-                    <p>Empieza en 1492 d.C. y finaliza con el estallido de la Revolución Francesa en 1789 d.C..</p>
+                    <p>Empieza en 1492 d.C. y finaliza con el estallido de la Revolución Francesa en 1789 d.C.</p>
                     <p><strong>Características:</strong> Grandes avances y exploraciones geográficas. Nace la imprenta de Gutenberg (difusión de la cultura) y ocurren sangrientas guerras religiosas en Europa.</p>
                 </div>
             </details>
@@ -556,7 +611,8 @@
             <h2>6. Las Fuentes Históricas y el Análisis de Pruebas</h2>
             <p>Las <strong>fuentes históricas</strong> son todos los documentos, testimonios u objetos materiales que nos transmiten información sobre el pasado. A más reciente sea un suceso, más fuentes tendremos para investigarlo.</p>
 
-            <img src="./arbol-fuentes.png" alt="Clasificación de las Fuentes Históricas" class="imagen-educativa">
+            <!-- Ruta corregida a la carpeta img/ -->
+            <img src="img/arbol-fuentes.png" alt="Clasificación de las Fuentes Históricas" class="imagen-educativa">
             <p class="caption">Imagen 2: El Árbol de las Fuentes Históricas. Memoriza la diferencia entre fuentes primarias (hechas en el momento) y secundarias (estudios posteriores).</p>
 
             <h3>¿Cómo se clasifican las fuentes?</h3>
@@ -670,6 +726,7 @@
                         <li><em>Militar:</em> Campañas de batallas, frentes de guerra o movimientos de ejércitos.</li>
                         <li><em>Económico:</em> Rutas comerciales, líneas de ferrocarril o desamortizaciones de tierras.</li>
                         <li><em>Demográfico:</em> Densidades o movimientos migratorios de población.</li>
+                        <li><em>Electoral:</em> Distribución del voto o influencia de partidos políticos.</li>
                     </ul>
                     <p><strong>3. Análisis de Leyenda:</strong> Describe los colores, flechas y símbolos cartográficos de la leyenda.</p>
                     <p><strong>4. Explicación Histórica y Valoración:</strong> Explica qué proceso histórico se plasma en el mapa y evalúa si la información es completa o inexacta en comparación con tus apuntes.</p>
@@ -701,7 +758,7 @@
         </section>
     </main>
 
-    <!-- Script de Navegación Dinámica -->
+    <!-- Script de Navegación Dinámica (Corregido y blindado para navegadores estrictos) -->
     <script>
         const links = document.querySelectorAll('aside nav ul li a');
         const sections = document.querySelectorAll('main section');
@@ -710,7 +767,8 @@
             let current = '';
             sections.forEach(section => {
                 const sectionTop = section.offsetTop;
-                if (pageYOffset >= (sectionTop - 180)) {
+                // Uso correcto de window.scrollY para evitar ReferenceError en modo estricto
+                if (window.scrollY >= (sectionTop - 200)) {
                     current = section.getAttribute('id');
                 }
             });
@@ -724,4 +782,4 @@
         });
     </script>
 </body>
-</html>
+</html>,TargetFile:/workspace/scratch/tema0.html}
