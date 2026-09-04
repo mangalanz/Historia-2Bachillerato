@@ -1,4 +1,3 @@
-Copia este código y guárdalo en tu archivo index.html para actualizar tu portada:
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,13 +6,20 @@ Copia este código y guárdalo en tu archivo index.html para actualizar tu porta
     <title>Historia de España - 2º Bachillerato LOMLOE</title>
     <style>
         :root {
+            /* Azul más intenso y vibrante */
+            --primary-intense: #1e40af; /* Azul real oscuro */
+            --primary-vibrant: #2563eb; /* Azul brillante */
             --primary-dark: #0f172a;
-            --primary: #1e293b;
-            --primary-light: #3b82f6;
             --bg-main: #f8fafc;
             --card-bg: #ffffff;
             --text-dark: #1e293b;
             --text-muted: #64748b;
+            
+            /* Tonos suaves en verde para encabezados */
+            --header-bg: #f0fdf4; /* Fondo verde menta muy suave */
+            --header-border: #10b981; /* Borde verde esmeralda */
+            --header-text: #065f46; /* Texto verde bosque oscuro */
+            --header-accent: #34d399; /* Verde menta para detalles */
         }
 
         * {
@@ -32,7 +38,7 @@ Copia este código y guárdalo en tu archivo index.html para actualizar tu porta
             flex-direction: column;
         }
 
-        /* Estructura del Portal (Estilo Geografía 3º ESO) */
+        /* Estructura del Portal de doble columna (Estilo Geografía 3º ESO) */
         .portal-container {
             display: flex;
             flex: 1;
@@ -43,9 +49,9 @@ Copia este código y guárdalo en tu archivo index.html para actualizar tu porta
             gap: 30px;
         }
 
-        /* COLUMNA IZQUIERDA: Bloques sólo con el nombre (Sin descripción) */
+        /* COLUMNA IZQUIERDA: Bloques de contenidos (Menú lateral limpio) */
         .sidebar-bloques {
-            width: 330px;
+            width: 320px;
             display: flex;
             flex-direction: column;
             gap: 12px;
@@ -54,10 +60,10 @@ Copia este código y guárdalo en tu archivo index.html para actualizar tu porta
 
         .sidebar-titulo {
             font-size: 1.25rem;
-            color: var(--primary-dark);
+            color: var(--primary-intense);
             font-weight: bold;
             padding: 10px 5px;
-            border-bottom: 3px solid var(--primary-light);
+            border-bottom: 3px solid var(--primary-vibrant);
             margin-bottom: 10px;
             text-align: center;
             letter-spacing: 0.5px;
@@ -79,21 +85,21 @@ Copia este código y guárdalo en tu archivo index.html para actualizar tu porta
             box-shadow: 0 2px 4px rgba(0,0,0,0.02);
         }
 
-        /* Bloque Activo (Bloque 0) */
+        /* Bloque Activo (Bloque 0) con el Azul Intenso */
         .enlace-bloque.active {
-            background-color: #1e3a8a;
+            background-color: var(--primary-intense);
             color: white;
-            border-color: #1e3a8a;
-            box-shadow: 0 4px 12px rgba(30, 58, 138, 0.15);
+            border-color: var(--primary-intense);
+            box-shadow: 0 4px 12px rgba(30, 64, 175, 0.25);
         }
 
         .enlace-bloque.active:hover {
-            background-color: var(--primary-light);
-            border-color: var(--primary-light);
-            transform: translateX(5px);
+            background-color: var(--primary-vibrant);
+            border-color: var(--primary-vibrant);
+            transform: translateX(6px);
         }
 
-        /* Bloques Inactivos */
+        /* Bloques Inactivos con estilo discreto */
         .enlace-bloque.disabled {
             background-color: #f1f5f9;
             color: #94a3b8;
@@ -110,7 +116,7 @@ Copia este código y guárdalo en tu archivo index.html para actualizar tu porta
         }
 
         .enlace-bloque.active .badge-estado {
-            background-color: var(--primary-light);
+            background-color: var(--primary-vibrant);
             color: white;
         }
 
@@ -127,22 +133,27 @@ Copia este código y guárdalo en tu archivo index.html para actualizar tu porta
             gap: 25px;
         }
 
+        /* Encabezado Alegre con tonos suaves en verde */
         header {
-            background: linear-gradient(135deg, #1e293b, #0f172a);
-            color: white;
-            padding: 30px 40px;
+            background: linear-gradient(135deg, var(--header-bg), #e6fcf0);
+            border-left: 6px solid var(--header-border);
+            color: var(--header-text);
+            padding: 25px 35px;
             border-radius: 12px;
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 10px rgba(16, 185, 129, 0.08);
         }
 
         header h1 {
-            font-size: 2.2rem;
-            margin-bottom: 6px;
+            font-size: 2.1rem;
+            margin-bottom: 5px;
+            color: var(--header-text);
+            font-weight: 800;
         }
 
         header p {
-            color: #94a3b8;
+            color: #15803d; /* Verde intermedio legible */
             font-size: 1.1rem;
+            font-weight: 500;
         }
 
         /* Contenedor de la Imagen */
@@ -150,7 +161,7 @@ Copia este código y guárdalo en tu archivo index.html para actualizar tu porta
             width: 100%;
             border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
             border: 1px solid #e2e8f0;
             background-color: #f1f5f9;
         }
@@ -175,7 +186,7 @@ Copia este código y guárdalo en tu archivo index.html para actualizar tu porta
         /* Responsive para Móviles */
         @media (max-width: 900px) {
             .portal-container {
-                flex-direction: column-reverse; /* Imagen y cabecera arriba, bloques abajo en móvil */
+                flex-direction: column-reverse; /* Imagen arriba, menú abajo */
                 padding: 15px;
                 gap: 20px;
             }
@@ -189,7 +200,7 @@ Copia este código y guárdalo en tu archivo index.html para actualizar tu porta
 
     <div class="portal-container">
         
-        <!-- COLUMNA IZQUIERDA: Bloques de Contenidos (Sólo nombre) -->
+        <!-- COLUMNA IZQUIERDA: Bloques de Contenidos (Estilo Geografía ESO) -->
         <nav class="sidebar-bloques">
             <div class="sidebar-titulo">Bloques LOMLOE</div>
 
@@ -245,7 +256,8 @@ Copia este código y guárdalo en tu archivo index.html para actualizar tu porta
 
             <!-- Contenedor con la imagen horizontal limpia -->
             <div class="contenedor-foto">
-                <img src="./portada-historia2.png" alt="Historia de España contemporánea" id="imagen-principal">
+                <!-- Se añade un "rompe-cachés" aleatorio (?v=20260904) para saltarse la memoria del servidor de GitHub -->
+                <img src="portada-historia.png?v=20260904" alt="Historia de España contemporánea" id="imagen-principal">
             </div>
         </main>
 
