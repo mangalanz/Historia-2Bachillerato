@@ -637,13 +637,3 @@
     </script>
 </body>
 </html>
-📚 Para que lo hagas tú misma en otros temas: El truco en VS Code
-Si en el futuro estás editando tus temas en Visual Studio Code (ya sea local o a través de github.dev pulsando la tecla .), hay una forma manual facilísima de hacerlo tú misma usando Expresiones Regulares en el buscador:
-Presiona Ctrl + F (o Cmd + F en Mac) para abrir el buscador.
-Activa el botón de Expresiones Regulares (es un icono pequeño con las letras .* que está a la derecha de la barra de búsqueda).
-En el cuadro de búsqueda, escribe esto:
-(?<!\=)"([^"\n]+?)"
-(Esto busca palabras entre comillas dobles, pero ignora las comillas de las etiquetas HTML como class="..." o src="...").
-En el cuadro de reemplazo, escribe esto:
-<strong>$1</strong>
-Pulsa en Reemplazar todo y ¡listo! Habrás convertido todas las comillas de texto en elegantes negritas en un solo segundo sin romper nada de código.
