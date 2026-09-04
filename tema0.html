@@ -3,30 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bloque 0: Introducción al Conocimiento Histórico</title>
+    <title>Historia de España - 2º Bachillerato LOMLOE</title>
     <style>
         :root {
+            /* Azul más intenso y vibrante para elementos activos */
+            --primary-intense: #1e40af; /* Azul real oscuro */
+            --primary-vibrant: #2563eb; /* Azul brillante */
             --primary-dark: #0f172a;
-            --primary: #1e293b;
-            --primary-light: #3b82f6;
             --bg-main: #f8fafc;
             --card-bg: #ffffff;
             --text-dark: #1e293b;
             --text-muted: #64748b;
             
-            /* Colores de las cajas de ayuda */
-            --border-glosario: #0ea5e9;
-            --bg-glosario: #f0f9ff;
-            --border-auxiliar: #8b5cf6;
-            --bg-auxiliar: #f5f3ff;
-            --border-investigacion: #f59e0b;
-            --bg-investigacion: #fffbeb;
-            --border-critica: #ef4444;
-            --bg-critica: #fef2f2;
-            --border-factores: #10b981;
-            --bg-factores: #ecfdf5;
-            --border-tiempo: #ec4899;
-            --bg-tiempo: #fdf2f8;
+            /* Tonos suaves en verde para el encabezado */
+            --header-bg: #f0fdf4; /* Fondo verde menta muy suave */
+            --header-border: #10b981; /* Borde verde esmeralda */
+            --header-text: #065f46; /* Texto verde bosque oscuro */
         }
 
         * {
@@ -40,688 +32,238 @@
         body {
             background-color: var(--bg-main);
             color: var(--text-dark);
-            display: flex;
             min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
 
-        /* Barra de navegación lateral */
-        aside {
-            width: 300px;
-            background-color: var(--primary-dark);
-            color: white;
-            padding: 25px;
-            position: fixed;
-            height: 100vh;
-            overflow-y: auto;
-            border-right: 1px solid #334155;
+        /* Estructura del Portal de doble columna (Estilo Geografía 3º ESO) */
+        .portal-container {
+            display: flex;
+            flex: 1;
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 30px;
+            gap: 30px;
         }
 
-        aside h1 {
-            font-size: 1.4rem;
-            margin-bottom: 25px;
-            color: #f8fafc;
-            border-bottom: 3px solid var(--primary-light);
-            padding-bottom: 12px;
+        /* COLUMNA IZQUIERDA: Bloques de contenidos (Menú lateral limpio) */
+        .sidebar-bloques {
+            width: 320px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            flex-shrink: 0;
         }
 
-        aside nav ul {
-            list-style: none;
-        }
-
-        aside nav ul li {
+        .sidebar-titulo {
+            font-size: 1.25rem;
+            color: var(--primary-intense);
+            font-weight: bold;
+            padding: 10px 5px;
+            border-bottom: 3px solid var(--primary-vibrant);
             margin-bottom: 10px;
+            text-align: center;
+            letter-spacing: 0.5px;
         }
 
-        aside nav ul li a {
-            color: #cbd5e1;
+        .enlace-bloque {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 20px;
+            border-radius: 8px;
             text-decoration: none;
+            font-weight: 600;
             font-size: 0.95rem;
-            display: block;
-            padding: 10px 14px;
-            border-radius: 6px;
+            border: 1px solid #e2e8f0;
+            background-color: var(--card-bg);
+            color: var(--text-dark);
             transition: all 0.2s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
         }
 
-        aside nav ul li a:hover, aside nav ul li a.active {
-            background-color: var(--primary-light);
+        /* Bloque Activo (Bloque 0) con el Azul Intenso */
+        .enlace-bloque.active {
+            background-color: var(--primary-intense);
             color: white;
+            border-color: var(--primary-intense);
+            box-shadow: 0 4px 12px rgba(30, 64, 175, 0.25);
+        }
+
+        .enlace-bloque.active:hover {
+            background-color: var(--primary-vibrant);
+            border-color: var(--primary-vibrant);
+            transform: translateX(6px);
+        }
+
+        /* Bloques Inactivos con estilo discreto */
+        .enlace-bloque.disabled {
+            background-color: #f1f5f9;
+            color: #94a3b8;
+            cursor: not-allowed;
+            border-style: dashed;
+            opacity: 0.8;
+        }
+
+        .badge-estado {
+            font-size: 0.75rem;
+            padding: 3px 8px;
+            border-radius: 5px;
             font-weight: bold;
         }
 
-        /* Contenido de la Web */
-        main {
-            margin-left: 300px;
-            padding: 40px;
-            width: calc(100% - 300px);
-            max-width: 1050px;
-        }
-
-        header {
-            margin-bottom: 35px;
-            background: linear-gradient(135deg, #1e293b, #0f172a);
+        .enlace-bloque.active .badge-estado {
+            background-color: var(--primary-vibrant);
             color: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
         }
 
-        header h2 {
-            font-size: 1.8rem;
-            margin-bottom: 10px;
+        .enlace-bloque.disabled .badge-estado {
+            background-color: #cbd5e1;
+            color: #64748b;
+        }
+
+        /* COLUMNA CENTRAL Y DERECHA: Cabecera e Imagen */
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        /* Encabezado Alegre con tonos suaves en verde */
+        header {
+            background: linear-gradient(135deg, var(--header-bg), #e6fcf0);
+            border-left: 6px solid var(--header-border);
+            color: var(--header-text);
+            padding: 25px 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(16, 185, 129, 0.08);
+        }
+
+        header h1 {
+            font-size: 2.1rem;
+            margin-bottom: 5px;
+            color: var(--header-text);
+            font-weight: 800;
         }
 
         header p {
-            color: #94a3b8;
+            color: #15803d; /* Verde intermedio legible */
             font-size: 1.1rem;
+            font-weight: 500;
         }
 
-        section {
-            background: var(--card-bg);
-            padding: 35px;
+        /* Contenedor de la Imagen */
+        .contenedor-foto {
+            width: 100%;
             border-radius: 12px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-            margin-bottom: 35px;
-            border-left: 6px solid var(--primary-light);
-        }
-
-        section h2 {
-            color: var(--primary-dark);
-            font-size: 1.6rem;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #f1f5f9;
-            padding-bottom: 10px;
-        }
-
-        h3 {
-            color: var(--primary);
-            margin: 25px 0 12px 0;
-            font-size: 1.25rem;
-        }
-
-        p {
-            margin-bottom: 15px;
-            font-size: 1.05rem;
-            color: #334155;
-        }
-
-        /* Estilos de las cajas de colores adaptadas */
-        .caja-colores {
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
-            font-size: 1rem;
-        }
-
-        .caja-colores h4 {
-            margin-bottom: 10px;
-            font-size: 1.15rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .glosario {
-            background-color: var(--bg-glosario);
-            border-left: 5px solid var(--border-glosario);
-            color: #0369a1;
-        }
-
-        .auxiliares {
-            background-color: var(--bg-auxiliar);
-            border-left: 5px solid var(--border-auxiliar);
-            color: #6d28d9;
-        }
-
-        .investigacion {
-            background-color: var(--bg-investigacion);
-            border-left: 5px solid var(--border-investigacion);
-            color: #b45309;
-        }
-
-        .critica {
-            background-color: var(--bg-critica);
-            border-left: 5px solid var(--border-critica);
-            color: #c2410c;
-        }
-
-        .factores {
-            background-color: var(--bg-factores);
-            border-left: 5px solid var(--border-factores);
-            color: #047857;
-        }
-
-        .tiempo {
-            background-color: var(--bg-tiempo);
-            border-left: 5px solid var(--border-tiempo);
-            color: #9d174d;
-        }
-
-        /* Lista de Ciencias Auxiliares en Grid */
-        .grid-auxiliares {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-            gap: 15px;
-            margin-top: 15px;
-        }
-
-        .tarjeta-auxiliar {
-            background: white;
-            padding: 12px;
-            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
             border: 1px solid #e2e8f0;
-            box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+            background-color: #f1f5f9;
         }
 
-        .tarjeta-auxiliar strong {
-            color: var(--border-auxiliar);
-            display: block;
-            margin-bottom: 4px;
-        }
-
-        /* Desplegables de Lectura Estructurada */
-        details {
-            background-color: #f8fafc;
-            border: 1px solid #e2e8f0;
-            border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 14px;
-            transition: border-color 0.2s;
-        }
-
-        details[open] {
-            background-color: white;
-            border-color: var(--primary-light);
-        }
-
-        summary {
-            font-weight: 600;
-            font-size: 1.1rem;
-            color: var(--primary-dark);
-            cursor: pointer;
-            outline: none;
-            user-select: none;
-        }
-
-        details .contenido-desplegado {
-            margin-top: 12px;
-            padding-top: 12px;
-            border-top: 1px dashed #e2e8f0;
-        }
-
-        /* Tablas */
-        table {
+        .contenedor-foto img {
             width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-            font-size: 1rem;
-        }
-
-        th, td {
-            padding: 14px;
-            text-align: left;
-            border-bottom: 1px solid #e2e8f0;
-        }
-
-        th {
-            background-color: var(--primary);
-            color: white;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f8fafc;
-        }
-
-        /* Imágenes */
-        .imagen-educativa {
-            width: 100%;
-            max-width: 800px;
             height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-            margin: 25px auto;
             display: block;
-            border: 1px solid #e2e8f0;
+            object-fit: cover;
         }
 
-        .caption {
-            text-align: center;
-            font-size: 0.95rem;
+        footer {
+            margin-top: auto;
             color: var(--text-muted);
-            font-style: italic;
-            margin-top: -15px;
-            margin-bottom: 25px;
+            font-size: 0.85rem;
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #e2e8f0;
+            width: 100%;
         }
 
-        ul, ol {
-            padding-left: 25px;
-            margin-bottom: 15px;
-            font-size: 1.05rem;
-        }
-
-        li {
-            margin-bottom: 8px;
-        }
-
-        /* Responsive */
+        /* Responsive para Móviles */
         @media (max-width: 900px) {
-            body {
-                flex-direction: column;
+            .portal-container {
+                flex-direction: column-reverse; /* Imagen arriba, menú abajo */
+                padding: 15px;
+                gap: 20px;
             }
-            aside {
+            .sidebar-bloques {
                 width: 100%;
-                height: auto;
-                position: relative;
-                border-right: none;
-                border-bottom: 1px solid #334155;
-            }
-            main {
-                margin-left: 0;
-                width: 100%;
-                padding: 20px;
             }
         }
     </style>
 </head>
 <body>
 
-    <!-- Navegación Lateral -->
-    <aside>
-        <h1>🧭 Bloque 0</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html" style="background-color: #334155; font-weight: bold; color: white;">🏠 Volver a Portada</a></li>
-                <li style="margin-top: 15px;"><a href="#tema1" class="active">1. El Concepto de Historia</a></li>
-                <li><a href="#tema2">2. Factores de la Historia</a></li>
-                <li><a href="#tema3">3. El Método Científico</a></li>
-                <li><a href="#tema4">4. Ciencias Auxiliares</a></li>
-                <li><a href="#tema5">5. Medición del Tiempo</a></li>
-                <li><a href="#tema6">6. Las Fuentes y su Crítica</a></li>
-                <li><a href="#tema7">7. Trabajo de Investigación</a></li>
-                <li><a href="#tema8">8. Modelos para Examen</a></li>
-            </ul>
+    <div class="portal-container">
+        
+        <!-- COLUMNA IZQUIERDA: Bloques de Contenidos (Estilo Geografía ESO) -->
+        <nav class="sidebar-bloques">
+            <div class="sidebar-titulo">Bloques LOMLOE</div>
+
+            <!-- Bloque 0 (ACTIVO) -->
+            <a href="tema0.html" class="enlace-bloque active">
+                <span>🧭 Bloque 0: Metodología histórica</span>
+                <span class="badge-estado">Entrar</span>
+            </a>
+
+            <!-- Bloque I -->
+            <a href="#" class="enlace-bloque disabled">
+                <span>⚖️ Bloque I: Construcción del Estado Liberal</span>
+                <span class="badge-estado">🔒</span>
+            </a>
+
+            <!-- Bloque II -->
+            <a href="#" class="enlace-bloque disabled">
+                <span>👑 Bloque II: La Restauración</span>
+                <span class="badge-estado">🔒</span>
+            </a>
+
+            <!-- Bloque III -->
+            <a href="#" class="enlace-bloque disabled">
+                <span>⚡ Bloque III: Crisis de la Restauración y Dictadura Primo de Rivera</span>
+                <span class="badge-estado">🔒</span>
+            </a>
+
+            <!-- Bloque IV -->
+            <a href="#" class="enlace-bloque disabled">
+                <span>✊ Bloque IV: II República y Guerra Civil</span>
+                <span class="badge-estado">🔒</span>
+            </a>
+
+            <!-- Bloque V -->
+            <a href="#" class="enlace-bloque disabled">
+                <span>🔒 Bloque V: La Dictadura franquista</span>
+                <span class="badge-estado">🔒</span>
+            </a>
+
+            <!-- Bloque VI -->
+            <a href="#" class="enlace-bloque disabled">
+                <span>🗳️ Bloque VI:  La Transición española </span>
+                <span class="badge-estado">🔒</span>
+            </a>
         </nav>
-    </aside>
 
-    <!-- Contenido Principal -->
-    <main>
-        <header>
-            <h2>Introducción al conocimiento histórico</h2>
-            <p>Bloque 0 - Conceptos, métodos de investigación y técnicas de trabajo de la asignatura.</p>
-        </header>
+        <!-- COLUMNA CENTRAL Y DERECHA: Cabecera e Imagen Central -->
+        <main class="main-content">
+            <header>
+                <h1>Historia de España</h1>
+                <p>Aula Virtual de Repaso • 2º Bachillerato</p>
+            </header>
 
-        <!-- SECCIÓN 1 -->
-        <section id="tema1">
-            <h2>1. El Concepto de Historia y Corrientes Historiográficas</h2>
-            <p>La <strong>Historia</strong> es la ciencia que se ocupa del estudio de las sociedades humanas, analizando sus transformaciones (los cambios) y sus elementos de continuidad (lo que se mantiene igual a lo largo del tiempo). No consiste en memorizar fechas sin sentido, sino en analizar las causas, el desarrollo y las consecuencias de los acontecimientos en un lugar y momento concretos.</p>
-
-            <div class="caja-colores glosario">
-                <h4>💡 Glosario de Conceptos Clave</h4>
-                <p>• <strong>Ciencia histórica:</strong> Una ciencia con una doble dimensión: es <em>científica</em> (porque busca pruebas reales de forma ordenada) y es <em>narrativa</em> (porque describe y explica lo descubierto con palabras claras).</p>
-                <p>• <strong>Empatía histórica:</strong> El esfuerzo del investigador para "meterse en la piel" de las personas del pasado, logrando comprender su forma de pensar, sus miedos, sus límites cotidianos y los motivos de sus decisiones, sin juzgarles con las ideas de hoy.</p>
+            <!-- Contenedor con la imagen horizontal limpia (ruta corregida a la carpeta img) -->
+            <div class="contenedor-foto">
+                <img src="img/portada-historia.png?v=20260904" alt="Historia de España contemporánea" id="imagen-principal">
             </div>
+        </main>
 
-            <h3>¿Cómo ha evolucionado la forma de estudiar la Historia?</h3>
-            <p>La forma de escribir la historia (llamada <strong>historiografía</strong>) ha cambiado mucho a lo largo de los siglos:</p>
+    </div>
 
-            <details>
-                <summary>📜 Periodo clásico (Hasta principios del siglo XX)</summary>
-                <div class="contenido-desplegado">
-                    <p>Los historiadores de esta época se limitaban a realizar una <strong>narración descriptiva</strong> de grandes acontecimientos políticos, militares, diplomáticos y religiosos. Su centro de interés eran las hazañas individuales de los grandes personajes (reyes, militares, papas, ministros, nobles).</p>
-                </div>
-            </details>
+    <footer>
+        Diseño adaptado bajo pautas de accesibilidad y metodología de Lectura Fácil para asegurar la comprensión de todo el alumnado de 2º de Bachillerato.
+    </footer>
 
-            <details>
-                <summary>🇩🇪 El Historicismo (Siglo XIX)</summary>
-                <div class="contenido-desplegado">
-                    <p>Corriente liderada por el historiador alemán <strong>Leopold von Ranke</strong>. Defendía que el único objetivo de la Historia era "mostrar lo que realmente ocurrió" tal cual, sin intentar explicar el porqué de las cosas ni interpretarlas.</p>
-                </div>
-            </details>
-
-            <details>
-                <summary>🇫🇷 La Escuela de Annales (Principios del siglo XX)</summary>
-                <div class="contenido-desplegado">
-                    <p>Fundada por los franceses <strong>Lucien Febvre y Marc Bloch</strong>. Revolucionó el estudio del pasado al proponer una perspectiva mucho más amplia: para entender la historia no bastaba con la política, había que interrelacionar la economía, la sociedad, la demografía y la cultura de toda la población, no solo de los reyes.</p>
-                </div>
-            </details>
-
-            <details>
-                <summary>🛠️ El Marxismo o Concepción Materialista</summary>
-                <div class="contenido-desplegado">
-                    <p>Opuestos radicalmente al historicismo clásico. Los historiadores marxistas defienden que la Historia es, en esencia, la suma de los intentos de las clases sociales de cambiar las estructuras económicas y sociales mediante la <strong>lucha de clases</strong>.</p>
-                </div>
-            </details>
-        </section>
-
-        <!-- SECCIÓN 2 -->
-        <section id="tema2">
-            <h2>2. Factores que influyen en la Historia (Espacio y Tiempo)</h2>
-            <p>Cualquier hecho histórico se desarrolla siempre dentro de dos coordenadas fundamentales: el <strong>espacio</strong> y el <strong>tiempo</strong>.</p>
-
-            <div class="caja-colores factores">
-                <h4>🗺️ Coordenada A: El Espacio Geográfico</h4>
-                <p>Es el territorio físico que ocupa una sociedad en un momento dado. Al historiador le interesan sus límites, clima, recursos (tierras fértiles, yacimientos minerales, plantas, animales) y cómo se distribuye la población en él. Existen dos teorías sobre cómo influye la geografía en el ser humano:</p>
-                <ul>
-                    <li><strong>Determinismo geográfico:</strong> Afirma que el ser humano depende totalmente del medio físico. Cree que a una misma causa geográfica siempre corresponde el mismo efecto social.</li>
-                    <li><strong>Posibilismo geográfico:</strong> Sostiene que el medio ofrece opciones, pero que el ser humano tiene voluntad y capacidad tecnológica para modificar y adaptarse al entorno geográfico.</li>
-                </ul>
-            </div>
-
-            <!-- Caja de Relaciones Temporales (Corregida a color rosa) -->
-            <div class="caja-colores tiempo">
-                <h4>⏳ Coordenada B: Las Relaciones Temporales</h4>
-                <p>El tiempo en la Historia es un flujo continuo que nunca se detiene, donde conviven los cambios rápidos con cosas que permanecen estables. Para ordenar los hechos históricos de forma lógica, distinguimos tres relaciones clave:</p>
-                <ul>
-                    <li><strong>Hechos Sincrónicos:</strong> Sucesos que ocurren al mismo tiempo y que dependen el uno del otro (por ejemplo: la Guerra de la Independencia de España y la creación de la Constitución de 1812).</li>
-                    <li><strong>Hechos Contemporáneos:</strong> Sucesos que ocurren en la misma fecha pero que no tienen ninguna relación entre sí (por ejemplo: la revolución de 1868 en España y el inicio de la era Meiji en Japón).</li>
-                    <li><strong>Hechos Diacrónicos:</strong> Acontecimientos que ocurren en épocas diferentes pero que tienen una relación directa de causa-efecto (por ejemplo: la conquista del espacio en el siglo XX es consecuencia del progreso tecnológico nacido con la Revolución Industrial en el siglo XIX).</li>
-                </ul>
-            </div>
-
-            <h3>El ritmo de los cambios: ¿Evolución o Revolución?</h3>
-            <ul>
-                <li>Hay <strong>evolución</strong> cuando las transformaciones sociales se producen a un ritmo muy lento y progresivo.</li>
-                <li>Una <strong>revolución</strong> es una transformación radical, muy profunda y rápida, que suele desarrollarse de manera violenta. Puede ser de carácter político, económico, social, científico, religioso o artístico.</li>
-            </ul>
-        </section>
-
-        <!-- SECCIÓN 3 -->
-        <section id="tema3">
-            <h2>3. El Método de Investigación Histórica</h2>
-            <p>Los historiadores trabajan siguiendo un <strong>método científico riguroso</strong> para asegurarse de que su reconstrucción del pasado es imparcial y empírica, a pesar de que siempre exista cierta subjetividad. Este método consta de tres fases obligatorias:</p>
-            
-            <ol>
-                <li><strong>Fase 1: Formulación de hipótesis:</strong> Son suposiciones teóricas iniciales y provisionales que el historiador plantea basándose en su primer conocimiento del tema. Sirven como punto de partida para la investigación.</li>
-                <li><strong>Fase 2: Recopilación y análisis de datos:</strong> Se buscan activamente todas las fuentes históricas posibles. La información se ordena, se analiza críticamente y se contrasta con las hipótesis planteadas en la Fase 1 para ver si eran correctas.</li>
-                <li><strong>Fase 3: Redacción y publicación de conclusiones:</strong> Se redactan de forma lógica y ordenada los resultados obtenidos, los cuales pueden confirmar, desmentir o modificar la hipótesis original.</li>
-            </ol>
-        </section>
-
-        <!-- SECCIÓN 4 -->
-        <section id="tema4">
-            <h2>4. Las Ciencias Auxiliares</h2>
-            <p>Como la Historia estudia todos los ámbitos del ser humano (político, económico, social y cultural), necesita la ayuda de otras ciencias para poder interpretar correctamente las pistas del pasado. A estas ciencias se las conoce como <strong>Ciencias Auxiliares</strong>.</p>
-
-            <div class="caja-colores auxiliares">
-                <h4>🛠️ Ciencias Especializadas para el Historiador</h4>
-                <p>Estas disciplinas ayudan directamente a descifrar y dar autenticidad a los documentos antiguos:</p>
-                
-                <div class="grid-auxiliares">
-                    <div class="tarjeta-auxiliar">
-                        <strong>Diplomática:</strong> Estudia las actas y documentos oficiales de la época medieval.
-                    </div>
-                    <div class="tarjeta-auxiliar">
-                        <strong>Numismática:</strong> Analiza las monedas y medallas de la antigüedad.
-                    </div>
-                    <div class="tarjeta-auxiliar">
-                        <strong>Arqueología:</strong> Descubre y analiza restos materiales de la actividad humana.
-                    </div>
-                    <div class="tarjeta-auxiliar">
-                        <strong>Epigrafía:</strong> Investiga e interpreta las inscripciones en piedra o metal.
-                    </div>
-                    <div class="tarjeta-auxiliar">
-                        <strong>Paleografía/Paleología:</strong> Descifra las escrituras y letras antiguas.
-                    </div>
-                    <div class="tarjeta-auxiliar">
-                        <strong>Papirología:</strong> Analiza los manuscritos redactados sobre papiros.
-                    </div>
-                    <div class="tarjeta-auxiliar">
-                        <strong>Heráldica:</strong> Estudia escudos de armas y blasones de familias nobles.
-                    </div>
-                    <div class="tarjeta-auxiliar">
-                        <strong>Sigilografía:</strong> Analiza los sellos usados para autenticar documentos reales o papales.
-                    </div>
-                    <div class="tarjeta-auxiliar">
-                        <strong>Cronología:</strong> Permite datar con precisión los hechos históricos en el tiempo.
-                    </div>
-                </div>
-
-                <h3 style="color:#6d28d9; margin-top: 20px;">Otras ciencias de apoyo contemporáneo</h3>
-                <p>Para analizar periodos más recientes, la historia se apoya en:</p>
-                <ul>
-                    <li><strong>Geografía:</strong> Permite localizar físicamente los hechos y evaluar el impacto del relieve en la sociedad.</li>
-                    <li><strong>Filología:</strong> Ayuda a interpretar la evolución de las lenguas y su uso social.</li>
-                    <li><strong>Sociología, Economía, Demografía y Estadística:</strong> Aportan herramientas científicas para estudiar las dinámicas sociales, monetarias, de población y flujos económicos cuantitativos.</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- SECCIÓN 5 -->
-        <section id="tema5">
-            <h2>5. La Medición del Tiempo y las Edades de la Historia</h2>
-            <p>Medir el tiempo es vital en la Historia. No todas las culturas lo miden igual, pero todas eligen un hecho muy importante como punto de partida de su <strong>era</strong>:</p>
-
-            <ul>
-                <li><strong>Era Cristiana:</strong> Su punto de partida es el nacimiento de Cristo (año 1). Los sucesos anteriores se marcan como <em>a.C.</em> (antes de Cristo) y los posteriores como <em>d.C.</em> (después de Cristo).</li>
-                <li><strong>Era Musulmana:</strong> Comienza en el año 622 d.C. con la Hégira (la huida de Mahoma de La Meca a Medina).</li>
-                <li><strong>Era Judía:</strong> Comienza en el 3760 a.C., fecha mítica de la creación del mundo según su tradición.</li>
-                <li><strong>Era China:</strong> Se inicia en el año 2697 a.C., con el nacimiento de su primer emperador.</li>
-            </ul>
-
-            <h3>Unidades básicas de medida:</h3>
-            <p>• <strong>Lustro:</strong> 5 años | • <strong>Década:</strong> 10 años | • <strong>Siglo:</strong> 100 años (números romanos) | • <strong>Milenio:</strong> 1000 años.</p>
-
-            <h3>Las Grandes Edades de la Historia</h3>
-            <p>Para facilitar el estudio del pasado, los historiadores dividen el tiempo en grandes periodos caracterizados por una misma cultura, sociedad o forma de pensar:</p>
-
-            <img src="./linea-tiempo.png" alt="Eje Cronológico de la Historia" class="imagen-educativa">
-            <p class="caption">Imagen 1: Las Edades de la Historia. Observa los grandes cambios tecnológicos e históricos que sirven de frontera entre etapas.</p>
-
-            <details>
-                <summary>🪨 Prehistoria (Desde hace 5 millones de años hasta 3.500 a.C.)</summary>
-                <div class="contenido-desplegado">
-                    <p>Comienza con la aparición de los primeros homínidos y termina con la invención de la escritura. Se divide en:</p>
-                    <ul>
-                        <li><strong>Paleolítico (Edad de Piedra Tallada):</strong> Ser humano nómada, cazador y recolector, sociedad igualitaria.</li>
-                        <li><strong>Neolítico (Edad de Piedra Pulida):</strong> Nace la agricultura y la ganadería. El hombre se hace productor, sedentario y surgen poblados con organización social compleja.</li>
-                        <li><strong>Edad de los Metales:</strong> Nace la metalurgia (Cobre, Bronce y Hierro).</li>
-                    </ul>
-                </div>
-            </details>
-
-            <details>
-                <summary>🏛️ Edad Antigua (3.500 a.C. hasta el siglo V d.C.)</summary>
-                <div class="contenido-desplegado">
-                    <p>Empieza con la invención de la escritura y termina con la caída del Imperio Romano de Occidente en el año 476 d.C..</p>
-                    <p><strong>Características:</strong> Nacimiento de grandes imperios y ciudades organizadas. Sociedad desigual basada en la esclavitud.</p>
-                </div>
-            </details>
-
-            <details>
-                <summary>🏰 Edad Media (Siglo V d.C. hasta el siglo XV d.C.)</summary>
-                <div class="contenido-desplegado">
-                    <p>Se extiende desde la caída de Roma (476 d.C.) hasta el descubrimiento de América (1492 d.C.).</p>
-                    <p><strong>Características:</strong> Época de castillos y catedrales. Gran esplendor de la civilización musulmana. La población abandona las ciudades y pasa a vivir y trabajar en el campo (sociedad feudal).</p>
-                </div>
-            </details>
-
-            <details>
-                <summary>⛵ Edad Moderna (Siglo XV d.C. hasta el siglo XVIII d.C.)</summary>
-                <div class="contenido-desplegado">
-                    <p>Empieza en 1492 d.C. y finaliza con el estallido de la Revolución Francesa en 1789 d.C..</p>
-                    <p><strong>Características:</strong> Grandes avances y exploraciones geográficas. Nace la imprenta de Gutenberg (difusión de la cultura) y ocurren sangrientas guerras religiosas en Europa.</p>
-                </div>
-            </details>
-
-            <details>
-                <summary>🏭 Edad Contemporánea (Desde finales del siglo XVIII hasta el presente)</summary>
-                <div class="contenido-desplegado">
-                    <p>Se inicia con la Revolución Francesa (1789 d.C.) hasta nuestros días.</p>
-                    <p><strong>Características:</strong> Aparece la Revolución Industrial y las grandes fábricas. Desarrollo masivo de la ciencia, la tecnología y el transporte. Nacimiento de los sistemas políticos democráticos modernos.</p>
-                </div>
-            </details>
-        </section>
-
-        <!-- SECCIÓN 6 -->
-        <section id="tema6">
-            <h2>6. Las Fuentes Históricas y el Análisis de Pruebas</h2>
-            <p>Las <strong>fuentes históricas</strong> son todos los documentos, testimonios u objetos materiales que nos transmiten información sobre el pasado. A más reciente sea un suceso, más fuentes tendremos para investigarlo.</p>
-
-            <img src="./arbol-fuentes.png" alt="Clasificación de las Fuentes Históricas" class="imagen-educativa">
-            <p class="caption">Imagen 2: El Árbol de las Fuentes Históricas. Memoriza la diferencia entre fuentes primarias (hechas en el momento) y secundarias (estudios posteriores).</p>
-
-            <h3>¿Cómo se clasifican las fuentes?</h3>
-            <p>Para no confundirnos, los historiadores clasifican las fuentes en tres categorías:</p>
-
-            <details>
-                <summary>🔍 A) Según su ORIGEN (La clasificación más utilizada)</summary>
-                <div class="contenido-desplegado">
-                    <ul>
-                        <li><strong>Fuentes Primarias (Directas):</strong> Son los materiales originales creados por los protagonistas y testigos en la misma época en la que sucedieron los hechos (por ejemplo: la momia de un faraón, las cartas de Cristóbal Colón o una ley antigua).</li>
-                        <li><strong>Fuentes Secundarias (Indirectas / Historiográficas):</strong> Son libros, enciclopedias o estudios escritos por historiadores actuales después de analizar y procesar las fuentes primarias.</li>
-                    </ul>
-                </div>
-            </details>
-
-            <details>
-                <summary>📂 B) Según su SOPORTE FÍSICO o naturaleza</summary>
-                <div class="contenido-desplegado">
-                    <ul>
-                        <li><strong>Escritas:</strong> Documentos públicos oficiales (leyes, actas) o privados (diarios, cartas personales, periódicos, actas notariales).</li>
-                        <li><strong>Materiales/Arqueológicas:</strong> Objetos físicos (herramientas, ropa, monedas antiguas, armas, ruinas de edificios o esqueletos).</li>
-                        <li><strong>Gráficas/Imágenes:</strong> Pinturas, grabados antiguos, carteles de propaganda y fotografías de la época.</li>
-                        <li><strong>Orales:</strong> Testimonios con voz grabada o transmitidos por boca a boca (entrevistas, canciones populares, leyendas).</li>
-                        <li><strong>Audiovisuales:</strong> Películas, grabaciones de televisión, documentales o vídeos en formato digital (soporte propio del siglo XX).</li>
-                        <li><strong>Estadísticas:</strong> Datos numéricos agrupados para mostrar evoluciones cuantitativas (tablas de natalidad, gráficos).</li>
-                        <li><strong>Cartográficas:</strong> Representaciones en mapas, ya sean del espacio en el momento del suceso (sincrónicas) o de su evolución histórica (diacrónicas).</li>
-                    </ul>
-                </div>
-            </details>
-
-            <details>
-                <summary>🎯 C) Según su CONTENIDO específico</summary>
-                <div class="contenido-desplegado">
-                    <ul>
-                        <li><strong>Históricas:</strong> Crónicas y narraciones del pasado. | <strong>Jurídicas:</strong> Leyes, normas, códigos de justicia, tratados internacionales.</li>
-                        <li><strong>Periodísticas:</strong> Noticias y periódicos contemporáneos de los hechos. | <strong>Personales:</strong> Diarios de vida privados, cartas privadas o testamentos familiares.</li>
-                        <li><strong>Políticas:</strong> Discursos oficiales, proclamas militares, programas de partidos. | <strong>Sociales/Económicas:</strong> Informes financieros, censos de población, memorias de producción.</li>
-                    </ul>
-                </div>
-            </details>
-
-            <div class="caja-colores critica">
-                <h4>⚠️ El Control de Calidad: La Crítica de Fuentes</h4>
-                <p>Un historiador riguroso nunca acepta un documento sin antes verificar si es verídico y auténtico mediante dos análisis fundamentales:</p>
-                <ul>
-                    <li><strong>1. Crítica de Procedencia:</strong> Sirve para identificar al autor, datar la fuente en su año exacto (estudiando el soporte, el tipo de letra o la tinta) y determinar el lugar geográfico y social de origen del texto.
-                        <ul>
-                            <li><em>Crítica Externa:</em> Analiza la parte física del documento y se apoya en las Ciencias Auxiliares para verificar si los materiales son reales o es una imitación de otra época.</li>
-                            <li><em>Crítica Interna:</em> Analiza el contenido para averiguar las intenciones reales del autor, detectar sesgos, mentiras interesadas o censuras de la época.</li>
-                        </ul>
-                    </li>
-                    <li><strong>2. Crítica de Restitución:</strong> Analiza la forma externa detalladamente para comprobar si el documento ha sido manipulado, borrado, retocado o falsificado posteriormente, intentando descubrir cómo era el manuscrito original del autor.</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- SECCIÓN 7 -->
-        <section id="tema7">
-            <h2>7. Guía Paso a Paso para realizar un Trabajo de Investigación</h2>
-            <p>Si tienes que hacer un trabajo académico escrito para clase, sigue estas pautas formales paso a paso para evitar el plagio y lograr una presentación excelente de nivel de Bachillerato:</p>
-
-            <div class="caja-colores investigacion">
-                <h4>📝 Lista de Tareas para Investigar como un Profesional</h4>
-                <ol>
-                    <li><strong>Paso 1: Búsqueda exhaustiva:</strong> Busca información relacionada con tu tema utilizando diversas fuentes (páginas web fiables, libros de texto, prensa o mapas).</li>
-                    <li><strong>Paso 2: Lectura atenta y toma de notas:</strong> Lee despacio la información encontrada y anota en un cuaderno o documento digital las ideas principales.</li>
-                    <li><strong>Paso 3: Contraste de información:</strong> Analiza críticamente la información y contrástala entre diferentes autores para ver si coinciden o si hay contradicciones.</li>
-                    <li><strong>Paso 4: Selección de contenidos:</strong> Quédate únicamente con los datos más valiosos y de mayor importancia para tu tema, desechando lo irrelevante.</li>
-                    <li><strong>Paso 5: Elaboración de un esquema base:</strong> Estructura tu trabajo en un esquema ordenado con breves títulos y apartados numerados que usarás como guía de redacción.</li>
-                    <li><strong>Paso 6: Redacción final (¡Sin copiar y pegar!):</strong> Escribe el trabajo exponiendo las conclusiones de forma ordenada, clara, coherente y precisa. No copies textos de internet de forma literal. Si pones una frase exacta de un autor, colócala siempre entre comillas ("...") y cita de dónde la has sacado.</li>
-                    <li><strong>Paso 7: Cuidado de la presentación formal:</strong> Tu trabajo debe incluir de manera obligatoria:
-                        <ul>
-                            <li><strong>Portada formal:</strong> Título llamativo del trabajo, tu nombre completo, curso, asignatura, fecha y nombre del profesor a quien va dirigido.</li>
-                            <li><strong>Índice:</strong> Páginas ordenadas de cada sección para que el lector pueda localizar el contenido.</li>
-                            <li><strong>Bibliografía ordenada:</strong> Lista de libros, revistas y enlaces web consultados, indicando siempre: el autor, título, editorial y año de publicación.</li>
-                        </ul>
-                    </li>
-                </ol>
-            </div>
-        </section>
-
-        <!-- SECCIÓN 8 -->
-        <section id="tema8">
-            <h2>8. Fichas de Comentario de Examen (Paso a Paso)</h2>
-            <p>Usa estos esquemas simplificados para preparar tus exámenes oficiales de Historia:</p>
-
-            <details>
-                <summary>📝 Comentario de un Texto Histórico</summary>
-                <div class="contenido-desplegado">
-                    <p><strong>1. Identificar el Documento:</strong> Indica su naturaleza:</p>
-                    <ul>
-                        <li><em>Literario:</em> Si es una obra literaria, cartas personales, memorias, artículos de prensa subjetivos o diarios.</li>
-                        <li><em>Jurídico:</em> Si recoge derechos, deberes o leyes oficiales articuladas (constituciones, decretos, tratados internacionales).</li>
-                        <li><em>Circunstancial:</em> Producto directo de un hecho del momento (discursos, manifiestos militares, proclamas).</li>
-                        <li><em>Historiográfico:</em> Texto escrito por un historiador moderno analizando el pasado.</li>
-                    </ul>
-                    <p><strong>2. Encuadre Histórico:</strong> Señala la fecha (cronología), el autor (importancia de su personaje), y el destinatario (público o privado, individual o colectivo).</p>
-                    <p><strong>3. Análisis de Contenido:</strong> Explica las ideas principales y secundarias sin repetir frases textuales del escrito.</p>
-                    <p><strong>4. Relación Histórica:</strong> Conecta el texto con las causas y consecuencias del tema estudiado en clase.</p>
-                    <p><strong>5. Valoración Crítica:</strong> Reflexiona sobre su veracidad, posibles sesgos del autor y su utilidad real para comprender el pasado.</p>
-                </div>
-            </details>
-
-            <details>
-                <summary>🗺️ Comentario de un Mapa Histórico</summary>
-                <div class="contenido-desplegado">
-                    <p><strong>1. Encuadre básico:</strong> Di el título del mapa, el año representado, la escala y su proyección geográfica.</p>
-                    <p><strong>2. Tipo de Mapa:</strong> Clasifícalo según su contenido:</p>
-                    <ul>
-                        <li><em>Político-administrativo:</em> Fronteras territoriales de los estados antiguos.</li>
-                        <li><em>Militar:</em> Campañas de batallas, frentes de guerra o movimientos de ejércitos.</li>
-                        <li><em>Económico:</em> Rutas comerciales, líneas de ferrocarril o desamortizaciones de tierras.</li>
-                        <li><em>Demográfico:</em> Densidades o movimientos migratorios de población.</li>
-                    </ul>
-                    <p><strong>3. Análisis de Leyenda:</strong> Describe los colores, flechas y símbolos cartográficos de la leyenda.</p>
-                    <p><strong>4. Explicación Histórica y Valoración:</strong> Explica qué proceso histórico se plasma en el mapa y evalúa si la información es completa o inexacta en comparación con tus apuntes.</p>
-                </div>
-            </details>
-
-            <details>
-                <summary>🖼️ Comentario de una Imagen o Cartel</summary>
-                <div class="contenido-desplegado">
-                    <ol>
-                        <li><strong>Datos básicos:</strong> Año en que se hizo, autor, destinatarios y dónde se publicó originalmente.</li>
-                        <li><strong>Tipología:</strong> Clasifica su tema (electoral-propagandístico, social, militar, religioso o cultural).</li>
-                        <li><strong>Estructura Visual:</strong> Composición (relación de elementos), Encuadre (punto de vista del fotógrafo o dibujante) y Color (uso para ambientar la realidad).</li>
-                        <li><strong>Descripción detallada:</strong> Describe lo que ves en primer plano, al fondo, de lo general a lo particular o de izquierda a derecha.</li>
-                        <li><strong>Mensaje central:</strong> Analiza las ideas principales que transmite la imagen y relaciónalas con el contexto y la posible existencia de censura estatal.</li>
-                    </ol>
-                </div>
-            </details>
-
-            <details>
-                <summary>📊 Comentario de una Gráfica o Tabla de Datos</summary>
-                <div class="contenido-desplegado">
-                    <p><strong>1. Presentación:</strong> Identifica el título, el periodo cronológico abarcado y las unidades de medida (porcentajes, miles, millones).</p>
-                    <p><strong>2. Análisis Estadístico:</strong> Observa la tendencia general de los datos. Señala los incrementos, descensos, años con picos máximos y mínimos, o si se mantiene constante.</p>
-                    <p><strong>3. Interpretación y Contexto:</strong> Explica el motivo de las fluctuaciones de los números basándote en los procesos históricos (por ejemplo: si la natalidad cae debido a una guerra o epidemia).</p>
-                    <p><strong>4. Valoración:</strong> Explica qué aporta esta gráfica al conocimiento de la época y sugiere otras fuentes para contrastar sus datos.</p>
-                </div>
-            </details>
-        </section>
-    </main>
-
-    <!-- Script de Navegación Dinámica -->
-    <script>
-        const links = document.querySelectorAll('aside nav ul li a');
-        const sections = document.querySelectorAll('main section');
-
-        window.addEventListener('scroll', () => {
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                if (pageYOffset >= (sectionTop - 180)) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            links.forEach(a => {
-                a.classList.remove('active');
-                if (a.getAttribute('href') === `#${current}`) {
-                    a.classList.add('active');
-                }
-            });
-        });
-    </script>
 </body>
 </html>
