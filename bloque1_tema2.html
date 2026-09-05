@@ -2,579 +2,176 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bloque I - Tema 2: La Construcción del Estado Liberal: El Reinado de Isabel II (1833 - 1868)</title>
+    <title>Tema 2: Reinado de Isabel II</title>
+    
+    <!-- 1️⃣ AQUÍ SE ABRE EL DISEÑO (TODO TU CSS VA AQUÍ DENTRO) -->
     <style>
-        :root {
-            /* Colores corporativos alegres y vibrantes */
-            --primary-intense: #1e40af; /* Azul real oscuro */
-            --primary-vibrant: #2563eb; /* Azul brillante */
-            --primary-dark: #0f172a;
-            --primary: #1e293b;
-            --bg-main: #f8fafc;
-            --card-bg: #ffffff;
-            --text-dark: #1e293b;
-            --text-muted: #64748b;
-            
-            /* Tonos suaves en verde para el encabezado */
-            --header-bg: #f0fdf4; /* Fondo verde menta muy suave */
-            --header-border: #10b981; /* Borde verde esmeralda */
-            --header-text: #065f46; /* Texto verde bosque oscuro */
-
-            /* Cajas didácticas */
-            --border-glosario: #0ea5e9;
-            --bg-glosario: #f0f9ff;
-            --border-investigacion: #f59e0b;
-            --bg-investigacion: #fffbeb;
-            --border-critica: #ef4444;
-            --bg-critica: #fef2f2;
-            --border-factores: #10b981;
-            --bg-factores: #ecfdf5;
+        body { 
+            background-color: var(--bg-main); 
+            color: var(--text-dark); 
+            min-height: 100vh; 
         }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-        }
-
-        body {
-            background-color: var(--bg-main);
-            color: var(--text-dark);
-            min-height: 100vh;
-        }
-
-        /* Barra de navegación lateral fija a la izquierda */
-        aside {
-            width: 300px;
-            background-color: var(--primary-dark);
-            color: white;
-            padding: 25px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 100vh;
-            overflow-y: auto;
-            border-right: 1px solid #334155;
-            z-index: 100;
-        }
-
-        aside h1 {
-            font-size: 1.25rem;
-            margin-bottom: 25px;
-            color: #f8fafc;
-            border-bottom: 3px solid var(--primary-vibrant);
-            padding-bottom: 12px;
-            text-align: center;
-        }
-
-        aside nav ul {
-            list-style: none;
-        }
-
-        aside nav ul li {
-            margin-bottom: 10px;
-        }
-
-        aside nav ul li a {
-            color: #cbd5e1;
-            text-decoration: none;
-            font-size: 0.95rem;
-            display: block;
-            padding: 10px 14px;
-            border-radius: 6px;
-            transition: all 0.2s ease;
-            font-weight: 500;
-        }
-
-        /* Botón de volver a la portada (ESTILOS RESTAURADOS) */
-        aside nav ul li .btn-volver {
-            background-color: #334155;
-            color: #ffffff;
-            font-weight: bold;
-            text-align: center;
-            border: 1px solid #475569;
-            margin-bottom: 15px;
-            display: block;
-            padding: 10px 14px;
-            border-radius: 6px;
-            transition: all 0.2s ease;
-            text-decoration: none;
-        }
-
-        aside nav ul li .btn-volver:hover {
-            background-color: var(--primary-vibrant);
-            border-color: var(--primary-vibrant);
-        }
-
-        /* Enlaces activos e interactivos en azul vibrante */
-        aside nav ul li a:hover, aside nav ul li a.active {
-            background-color: var(--primary-vibrant);
-            color: white;
-            font-weight: bold;
-            box-shadow: 0 4px 10px rgba(37, 99, 235, 0.15);
-        }
-
-        /* Contenido de la Web */
-        main {
-            margin-left: 300px;
-            padding: 40px;
-            max-width: 1100px;
-        }
-
-        /* Encabezado Alegre con tonos suaves en verde */
-        header {
-            margin-bottom: 35px;
-            background: linear-gradient(135deg, var(--header-bg), #e6fcf0);
-            border-left: 6px solid var(--header-border);
-            color: var(--header-text);
-            padding: 25px 35px;
-            border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(16, 185, 129, 0.08);
-        }
-
-        header h2 {
-            font-size: 1.8rem;
-            margin-bottom: 8px;
-            color: var(--header-text);
-            font-weight: 800;
-        }
-
-        header p {
-            color: #15803d;
-            font-size: 1.05rem;
-            font-weight: 500;
-        }
-
-        /* Cabecera ilustrada horizontal (Eje cronológico adaptativo sin cortes) */
-        .cabecera-ilustrada {
-            width: 100%;
-            height: auto;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-            border: 1px solid #e2e8f0;
-            margin-bottom: 35px;
-            background-color: #f1f5f9;
-        }
-
-        .cabecera-ilustrada img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        section {
-            background: var(--card-bg);
-            padding: 35px;
-            border-radius: 12px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-            margin-bottom: 35px;
-            border-left: 6px solid var(--primary-vibrant);
-        }
-
-        section h2 {
-            color: var(--primary-dark);
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #f1f5f9;
-            padding-bottom: 10px;
-        }
-
-        h3 {
-            color: var(--primary-intense);
-            margin: 25px 0 12px 0;
-            font-size: 1.25rem;
-        }
-
-        p {
-            margin-bottom: 15px;
-            font-size: 1.05rem;
-            color: #334155;
-            text-align: justify;
-        }
-
-        /* Cajas de colores */
-        .caja-colores {
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
-            font-size: 1rem;
-        }
-
-        .caja-colores h4 {
-            margin-bottom: 10px;
-            font-size: 1.15rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .glosario {
-            background-color: var(--bg-glosario);
-            border-left: 5px solid var(--border-glosario);
-            color: #0369a1;
-        }
-
-        .investigacion {
-            background-color: var(--bg-investigacion);
-            border-left: 5px solid var(--border-investigacion);
-            color: #b45309;
-        }
-
-        .critica {
-            background-color: var(--bg-critica);
-            border-left: 5px solid var(--border-critica);
-            color: #c2410c;
-        }
-
-        .factores {
-            background-color: var(--bg-factores);
-            border-left: 5px solid var(--border-factores);
-            color: #047857;
-        }
-
-        /* Desplegables de Lectura Estructurada */
-        details {
-            background-color: #f8fafc;
-            border: 1px solid #e2e8f0;
-            border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 14px;
-            transition: border-color 0.2s;
-        }
-
-        details[open] {
-            background-color: white;
-            border-color: var(--primary-vibrant);
-        }
-
-        summary {
-            font-weight: 600;
-            font-size: 1.1rem;
-            color: var(--primary-dark);
-            cursor: pointer;
-            outline: none;
-            user-select: none;
-        }
-
-        details .contenido-desplegado {
-            margin-top: 12px;
-            padding-top: 12px;
-            border-top: 1px dashed #e2e8f0;
-        }
-
-        /* Imágenes educativas adaptativas */
-        .imagen-educativa {
-            width: 100%;
-            max-width: 800px;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-            margin: 25px auto;
-            display: block;
-            border: 1px solid #e2e8f0;
-        }
-
-        .caption {
-            text-align: center;
-            font-size: 0.95rem;
-            color: var(--text-muted);
-            font-style: italic;
-            margin-top: -15px;
-            margin-bottom: 25px;
-        }
-
-        ul, ol {
-            padding-left: 25px;
-            margin-bottom: 15px;
-            font-size: 1.05rem;
-        }
-
-        li {
-            margin-bottom: 8px;
-            color: #334155;
-        }
-
-        /* Responsive */
-        @media (max-width: 900px) {
-            aside {
-                width: 100%;
-                height: auto;
-                position: relative;
-                border-right: none;
-                border-bottom: 1px solid #334155;
-            }
-            main {
-                margin-left: 0;
-                width: 100%;
-                padding: 20px;
-            }
-        }
-    </style>
-</head>
-        body {
-            background-color: var(--bg-main);
-            color: var(--text-dark);
-            min-height: 100vh;
-        }
-
-        <!-- Navegación Lateral de Bloque (Tema 2) -->
-    <aside>
-        <h1>⚖️ Bloque I: Estado Liberal</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="btn-volver">🏠 Volver a Portada</a></li>
-                <!-- Botón de regreso al Tema anterior -->
-                <li><a href="bloque1_tema1.html" style="color: #60a5fa; border: 1px dashed #334155; margin-bottom: 15px;">⬅️ Volver al Tema 1</a></li>
-                
-                <!-- Navegación Interna de Isabel II -->
-                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 10px 14px 5px 14px; font-weight: bold; border-bottom: 1px solid #334155; margin-bottom: 8px;">📍 Secciones del Tema 2</li>
-                <li><a href="#tema1" class="active">1. Primera Guerra Carlista</a></li>
-                <li><a href="#tema2">2. Época de las Regencias</a></li>
-                <li><a href="#tema3">3. Reinado de Isabel II</a></li>
-                
-                <!-- Resto de Temas del Bloque I -->
-                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 20px 14px 5px 14px; font-weight: bold; border-bottom: 1px solid #334155; margin-bottom: 8px;">📖 Temas del Bloque</li>
-                <li><a href="#" style="opacity:0.5; cursor:not-allowed;">🔒 Tema 3: Sexenio (Próximamente)</a></li>
-            </ul>
-        </nav>
-    </aside>
 
         /* Botón de volver a la portada */
-        aside nav ul li .btn-volver {
-            background-color: #334155;
-            color: #ffffff;
-            font-weight: bold;
-            text-align: center;
-            border: 1px solid #475569;
-            margin-bottom: 15px;
+        aside nav ul li .btn-volver { 
+            background-color: #334155; 
+            color: #ffffff; 
+            font-weight: bold; 
+            text-align: center; 
+            border: 1px solid #475569; 
+            margin-bottom: 15px; 
+        }
+        aside nav ul li .btn-volver:hover { 
+            background-color: var(--primary-vibrant); 
+            border-color: var(--primary-vibrant); 
         }
 
-        aside nav ul li .btn-volver:hover {
-            background-color: var(--primary-vibrant);
-            border-color: var(--primary-vibrant);
-        }
-
-        /* Enlaces activos e interactivos en azul vibrante */
-        aside nav ul li a:hover, aside nav ul li a.active {
-            background-color: var(--primary-vibrant);
-            color: white;
-            font-weight: bold;
-            box-shadow: 0 4px 10px rgba(37, 99, 235, 0.15);
+        /* Enlaces activos e interactivos */
+        aside nav ul li a:hover, aside nav ul li a.active { 
+            background-color: var(--primary-vibrant); 
+            color: white; 
+            font-weight: bold; 
+            box-shadow: 0 4px 10px rgba(37, 99, 235, 0.15); 
         }
 
         /* Contenido de la Web */
-        main {
-            margin-left: 300px;
-            padding: 40px;
-            max-width: 1100px;
+        main { 
+            margin-left: 300px; 
+            padding: 40px; 
+            max-width: 1100px; 
         }
 
         /* Encabezado Alegre con tonos suaves en verde */
-        header {
-            margin-bottom: 35px;
-            background: linear-gradient(135deg, var(--header-bg), #e6fcf0);
-            border-left: 6px solid var(--header-border);
-            color: var(--header-text);
-            padding: 25px 35px;
-            border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(16, 185, 129, 0.08);
+        header { 
+            margin-bottom: 35px; 
+            background: linear-gradient(135deg, var(--header-bg), #e6fcf0); 
+            border-left: 6px solid var(--header-border); 
+            color: var(--header-text); 
+            padding: 25px 35px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 10px rgba(16, 185, 129, 0.08); 
+        }
+        header h2 { 
+            font-size: 1.8rem; 
+            margin-bottom: 8px; 
+            color: var(--header-text); 
+            font-weight: 800; 
+        }
+        header p { 
+            color: #15803d; 
+            font-size: 1.05rem; 
+            font-weight: 500; 
         }
 
-        header h2 {
-            font-size: 1.8rem;
-            margin-bottom: 8px;
-            color: var(--header-text);
-            font-weight: 800;
+        /* Cabecera ilustrada horizontal */
+        .cabecera-ilustrada { 
+            width: 100%; 
+            height: auto; 
+            border-radius: 12px; 
+            overflow: hidden; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); 
+            border: 1px solid #e2e8f0; 
+            margin-bottom: 35px; 
+            background-color: #f1f5f9; 
+        }
+        .cabecera-ilustrada img { 
+            width: 100%; 
+            height: auto; 
+            display: block; 
         }
 
-        header p {
-            color: #15803d;
-            font-size: 1.05rem;
-            font-weight: 500;
+        section { 
+            background: var(--card-bg); 
+            padding: 35px; 
+            border-radius: 12px; 
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05); 
+            margin-bottom: 35px; 
+            border-left: 6px solid var(--primary-vibrant); 
         }
-
-        /* Cabecera ilustrada horizontal (Eje cronológico) */
-        .cabecera-ilustrada {
-            width: 100%;
-            height: auto;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-            border: 1px solid #e2e8f0;
-            margin-bottom: 35px;
-            background-color: #f1f5f9;
+        section h2 { 
+            color: var(--primary-dark); 
+            font-size: 1.5rem; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #f1f5f9; 
+            padding-bottom: 10px; 
         }
-
-        .cabecera-ilustrada img {
-            width: 100%;
-            height: auto;
-            display: block;
+        h3 { 
+            color: var(--primary-intense); 
+            margin: 25px 0 12px 0; 
+            font-size: 1.25rem; 
         }
-
-        section {
-            background: var(--card-bg);
-            padding: 35px;
-            border-radius: 12px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-            margin-bottom: 35px;
-            border-left: 6px solid var(--primary-vibrant);
-        }
-
-        section h2 {
-            color: var(--primary-dark);
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #f1f5f9;
-            padding-bottom: 10px;
-        }
-
-        h3 {
-            color: var(--primary-intense);
-            margin: 25px 0 12px 0;
-            font-size: 1.25rem;
-        }
-
-        p {
-            margin-bottom: 15px;
-            font-size: 1.05rem;
-            color: #334155;
-            text-align: justify;
+        p { 
+            margin-bottom: 15px; 
+            font-size: 1.05rem; 
+            color: #334155; 
+            text-align: justify; 
         }
 
         /* Cajas de colores */
-        .caja-colores {
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
-            font-size: 1rem;
+        .caja-colores { 
+            padding: 20px; 
+            border-radius: 8px; 
+            margin: 20px 0; 
+            font-size: 1rem; 
         }
-
-        .caja-colores h4 {
-            margin-bottom: 10px;
-            font-size: 1.15rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
+        .caja-colores h4 { 
+            margin-bottom: 10px; 
+            font-size: 1.15rem; 
+            display: flex; 
+            align-items: center; 
+            gap: 8px; 
         }
-
-        .glosario {
-            background-color: var(--bg-glosario);
-            border-left: 5px solid var(--border-glosario);
-            color: #0369a1;
+        .glosario { 
+            background-color: var(--bg-glosario); 
+            border-left: 5px solid var(--border-glosario); 
+            color: #0369a1; 
         }
-
-        .investigacion {
-            background-color: var(--bg-investigacion);
-            border-left: 5px solid var(--border-investigacion);
-            color: #b45309;
+        .investigacion { 
+            background-color: var(--bg-investigacion); 
+            border-left: 5px solid var(--border-investigacion); 
+            color: #b45309; 
         }
-
-        .critica {
-            background-color: var(--bg-critica);
-            border-left: 5px solid var(--border-critica);
-            color: #c2410c;
+        .critica { 
+            background-color: var(--bg-critica); 
+            border-left: 5px solid var(--border-critica); 
+            color: #c2410c; 
         }
-
-        .factores {
-            background-color: var(--bg-factores);
-            border-left: 5px solid var(--border-factores);
-            color: #047857;
-        }
-
-        /* Desplegables de Lectura Estructurada */
-        details {
-            background-color: #f8fafc;
-            border: 1px solid #e2e8f0;
-            border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 14px;
-            transition: border-color 0.2s;
-        }
-
-        details[open] {
-            background-color: white;
-            border-color: var(--primary-vibrant);
-        }
-
-        summary {
-            font-weight: 600;
-            font-size: 1.1rem;
-            color: var(--primary-dark);
-            cursor: pointer;
-            outline: none;
-            user-select: none;
-        }
-
-        details .contenido-desplegado {
-            margin-top: 12px;
-            padding-top: 12px;
-            border-top: 1px dashed #e2e8f0;
-        }
-
-        /* Imágenes */
-        .imagen-educativa {
-            width: 100%;
-            max-width: 800px;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-            margin: 25px auto;
-            display: block;
-            border: 1px solid #e2e8f0;
-        }
-
-        .caption {
-            text-align: center;
-            font-size: 0.95rem;
-            color: var(--text-muted);
-            font-style: italic;
-            margin-top: -15px;
-            margin-bottom: 25px;
-        }
-
-        ul, ol {
-            padding-left: 25px;
-            margin-bottom: 15px;
-            font-size: 1.05rem;
-        }
-
-        li {
-            margin-bottom: 8px;
-            color: #334155;
-        }
-
-        /* Responsive */
-        @media (max-width: 900px) {
-            aside {
-                width: 100%;
-                height: auto;
-                position: relative;
-                border-right: none;
-                border-bottom: 1px solid #334155;
-            }
-            main {
-                margin-left: 0;
-                width: 100%;
-                padding: 20px;
-            }
+        .factores { 
+            background-color: var(--bg-factores); 
+            border-left: 5px solid var(--border-factores); 
         }
     </style>
+    <!-- 1️⃣ AQUÍ SE CIERRA EL DISEÑO -->
 </head>
 <body>
 
-    <!-- Navegación Lateral de Bloque -->
+    <!-- 2️⃣ MENÚ LATERAL (ESTRUCTURA HTML DE TU NAVEGACIÓN) -->
     <aside>
-        <h1>⚖️ Bloque I: Estado Liberal</h1>
         <nav>
             <ul>
-                <li><a href="index.html" class="btn-volver">🏠 Volver a Portada</a></li>
-                <li style="margin-top: 15px;"><a href="bloque1_tema1.html">1. Antiguo Régimen vs Liberalismo</a></li>
-                <li><a href="#tema1" class="active">2. El Reinado de Isabel II</a></li>
-                <li><a href="#" style="opacity:0.5; cursor:not-allowed;">🔒 Tema 3: Sexenio (Próximamente)</a></li>
+                <li>
+                    <a href="#portada" class="btn-volver">🏠 Volver a Portada</a>
+                </li>
+                <li>
+                    <strong>⚖️ Bloque I: Estado Liberal</strong>
+                </li>
+                <li>
+                    <a href="#tema1">⬅️ Volver al Tema 1</a>
+                </li>
+                <li>
+                    <strong>📍 Secciones del Tema 2</strong>
+                    <ul>
+                        <li><a href="#guerra-carlista">1. Primera Guerra Carlista</a></li>
+                        <li><a href="#regencias">2. Época de las Regencias</a></li>
+                        <li><a href="#reinado-isabel">3. Reinado de Isabel II</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>📖 Temas del Bloque</strong>
+                    <ul>
+                        <li style="color: #94a3b8;">🔒 Tema 3: Sexenio (Próximamente)</li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </aside>
