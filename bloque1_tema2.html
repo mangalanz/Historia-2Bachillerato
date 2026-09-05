@@ -97,6 +97,11 @@
             text-align: center;
             border: 1px solid #475569;
             margin-bottom: 15px;
+            display: block;
+            padding: 10px 14px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            text-decoration: none;
         }
 
         aside nav ul li .btn-volver:hover {
@@ -312,15 +317,25 @@
 </head>
 <body>
 
-    <!-- Navegación Lateral de Bloque -->
+    <!-- Navegación Lateral de Bloque (Tema 2) -->
     <aside>
         <h1>⚖️ Bloque I: Estado Liberal</h1>
         <nav>
             <ul>
                 <li><a href="index.html" class="btn-volver">🏠 Volver a Portada</a></li>
-                <li style="margin-top: 15px;"><a href="bloque1_tema1.html">1. Antiguo Régimen vs Liberalismo</a></li>
-                <li><a href="#tema1" class="active">2. El Reinado de Isabel II</a></li>
-                <li><a href="#" style="opacity:0.5; cursor:not-allowed;">🔒 Tema 3: Sexenio (Próximamente)</a></li>
+                <!-- Botón de regreso al Tema anterior -->
+                <li><a href="bloque1_tema1.html" style="color: #60a5fa; border: 1px dashed #334155; margin-bottom: 15px; display: block; padding: 10px 14px; border-radius: 6px; text-decoration: none; font-weight: 500;">⬅️ Volver al Tema 1</a></li>
+                
+                <!-- Navegación Interna de Isabel II -->
+                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 10px 14px 5px 14px; font-weight: bold; border-bottom: 1px solid #334155; margin-bottom: 8px;">📍 Secciones del Tema 2</li>
+                <li><a href="#tema1" class="active">1. Primera Guerra Carlista</a></li>
+                <li><a href="#tema2">2. Época de las Regencias</a></li>
+                <li><a href="#tema3">3. Reinado de Isabel II</a></li>
+                
+                <!-- Resto de Temas del Bloque I -->
+                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 20px 14px 5px 14px; font-weight: bold; border-bottom: 1px solid #334155; margin-bottom: 8px;">📖 Temas del Bloque</li>
+                <!-- ¡NUEVO ENLACE DESBLOQUEADO AL TEMA 3! -->
+                <li><a href="bloque1_tema3.html" style="color: #60a5fa; border: 1px dashed var(--primary-vibrant); margin-bottom: 8px; display: block; padding: 10px 14px; border-radius: 6px; text-decoration: none;">➡️ Ir al Tema 3: Sexenio</a></li>
             </ul>
         </nav>
     </aside>
@@ -340,30 +355,30 @@
         <!-- SECCIÓN 1 -->
         <section id="tema1">
             <h2>1. La Cuestión Sucesoria y la Primera Guerra Carlista (1833 - 1840)</h2>
-            <p>La definitiva implantación del liberalismo institucional en España se produjo de manera paradójica, vinculada a un conflicto sucesorio dinástico de hondo calado. En mayo de 1830, al anunciarse el embarazo de la cuarta esposa del rey <em>Fernando VII</em>, la reina <em>María Cristina de Borbón</em>, el monarca promulgó la <em>Pragmática Sanción</em>, un decreto que derogaba formalmente la <em>Ley Sálica</em> francesa implantada en 1713 por Felipe V. Esta norma impedía el ascenso de las mujeres al trono, por lo que su abolición aseguraba el camino de la Corona a la primogénita del monarca, la futura reina <em>Isabel II</em>, nacida en octubre de 1830.</p>
+            <p>La definitiva implantación del liberalismo institucional en España se produjo de manera paradójica, vinculada a un conflicto sucesorio dinástico de hondo calado. En mayo de 1830, al anunciarse el embarazo de la cuarta esposa del rey <em>Fernando VII</em>, la reina <em>María Cristina de Borbón</em>, el monarca promulgó la <em>Pragmática Sanción</em>, un decreto que derogaba formalmente la <em>Ley Sálica</em> francesa implantada en 1713 por Felipe V. Esta norma impedía el acceso de las mujeres al trono, por lo que su abolición aseguraba el camino de la Corona a la primogénita del monarca, la futura reina <em>Isabel II</em>, nacida en octubre de 1830.</p>
 
             <p>Esta decisión marginó de la sucesión al hermano del soberano, el infante <em>Carlos María Isidro de Borbón</em>, quien aglutinaba en torno a sí a los sectores absolutistas más intransigentes del reino. Tras el fracaso realista de forzar la anulación de la medida durante la grave crisis de salud del rey en los <em>Sucesos de La Granja</em> de 1832, el fallecimiento de <em>Fernando VII</em> el 29 de septiembre de 1833 desencadenó la insurrección absolutista. Dos días después, mediante el <em>Manifiesto de Abrantes</em>, el pretendiente reclamaba legítimamente la Corona como Carlos V, encendiendo la mecha de la <em>Primera Guerra Carlista</em> (1833 - 1840).</p>
 
             <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin: 25px 0;">
                 <div style="flex: 1; min-width: 280px; text-align: center;">
                     <img src="img/retrato-isabel-casado.png" alt="Retrato de Isabel II niña" class="imagen-educativa">
-                    <p><em>Imagen 1: Retrato oficial de Isabel II niña de corta edad vestida de gala con corona, por Juan Antonio Casado del Alisal. Extraído de tema_04 La construcción del estado liberal (1833 - 1868).pdf.</em></p>
+                    <p><em>Imagen 1: Retrato oficial de Isabel II niña de corta edad vestida de gala con corona, por Juan Antonio Casado del Alisal.</em></p>
                 </div>
                 <div style="flex: 1; min-width: 200px; text-align: center;">
                     <img src="img/escudo-isabel-toisón.png" alt="Escudo con Toisón de Oro" class="imagen-educativa" style="max-width: 200px;">
-                    <p><em>Imagen 2: Escudo de armas simplificado de la monarquía isabelina rodeado por el Toisón de Oro. Procedente del manual TEMA 2_EL REINADO DE ISABEL II.pptx.</em></p>
+                    <p><em>Imagen 2: Escudo de armas simplificado de la monarquía isabelina rodeado por el Toisón de Oro.</em></p>
                 </div>
             </div>
 
             <p>La contienda armada trascendió el plano puramente dinástico para convertirse en un <strong>choque ideológico y social entre dos modelos incompatibles de civilización</strong>:</p>
 
             <ul>
-                <li><strong>El Bando Carlista:</strong> Articulado bajo el lema tradicionalista de <strong>Dios, Patria y Fueros</strong>. Defendía la <strong>legitimidad absolutista de don Carlos</strong>, la <strong>preeminencia institucional de la Iglesia</strong>, el <strong>mantenimiento de la sociedad estamental</strong> y de las <strong>estructuras agrarias de origen feudal</strong>, así como la <strong>conservación de los fueros particularistas</strong> regionales vasco-navarros. Socialmente se asentaba sobre el <strong>bajo clero rural</strong>, la <strong>pequeña nobleza agraria</strong> y una <strong>amplia base de campesinos propietarios, artesanos y arrendatarios</strong>, recelosos de los nuevos tributos estatales y de la privatización de tierras promovida por las reformas de libre mercado burguesas. Geográficamente predomino en el medio rural del País Vasco, Navarra, el Maestrazgo castellonense, el Bajo Aragón y el prepirineo catalán.</li>
+                <li><strong>El Bando Carlista:</strong> Articulado bajo el lema tradicionalista de <strong>Dios, Patria y Fueros</strong>. Defendía la <strong>legitimidad absolutista de don Carlos</strong>, la <strong>preeminencia institucional de la Iglesia</strong>, el <strong>mantenimiento de la sociedad estamental</strong> y de las <strong>estructuras agrarias de origen feudal</strong>, así como la <strong>conservación de los fueros particularistas</strong> regionales vasco-navarros. Socialmente se asentaba sobre el <strong>bajo clero rural</strong>, la <strong>pequeña nobleza agraria</strong> y una <strong>amplia base de campesinos propietarios, artesanos y arrendatarios</strong>, recelosos de los nuevos tributos estatales y de la privatización de tierras promovida por las reformas de libre mercado burguesas. Geográficamente predominó en el medio rural del País Vasco, Navarra, el Maestrazgo castellonense, el Bajo Aragón y el prepirineo catalán.</li>
                 <li><strong>El Bando Isabelino o Cristino:</strong> Integrado de forma original por la <strong>alta nobleza terrateniente</strong>, las <strong>esferas de la administración pública</strong>, la <strong>jerarquía militar profesional</strong> y la <strong>cúpula eclesiástica</strong>. No obstante, para asegurar la victoria militar frente al carlismo, la regente se vio abocada a negociar el respaldo de la <strong>burguesía industrial y financiera</strong> y de las <strong>clases populares urbanas</strong>, accediendo a cambio a las demandas de desmantelamiento definitivo del Antiguo Régimen y abolición del absolutismo.</li>
             </ul>
 
             <img src="img/militares-regencias.png" alt="Soldados isabelinos y carlistas" class="imagen-educativa">
-            <p class="caption"><em>Imagen 3: Ilustración de época que detalla la indumentaria y uniformes oficiales de los oficiales y cuerpos del ejército regular y de la milicia. Procedente del manual TEMA 2_EL REINADO DE ISABEL II.pptx.</em></p>
+            <p class="caption"><em>Imagen 3: Ilustración de época que detalla la indumentaria y uniformes oficiales de los oficiales y cuerpos del ejército regular y de la milicia.</em></p>
 
             <h3>Fases Militares del Conflicto</h3>
             <p>La contienda armada, librada con extraordinaria crudeza y represalias masivas en ambos contendientes, se desarrolló en <strong>tres grandes periodos cronológicos peninsulares</strong>:</p>
@@ -383,20 +398,20 @@
             </details>
 
             <details>
-                <summary>🤝 Tercera Etapa (1837 - 1840): División interna y Convenio de Vergara</summary>
+                <summary>🤝 Tercera Etapa (1837 - 1839): División interna y Convenio de Vergara</summary>
                 <div class="contenido-desplegado">
-                    <p>El agotamiento material fracturó la cohesión interna del carlismo, dividiendo a sus partidarios entre <strong>transaccionistas</strong> (proclives a pactar un armisticio honorable) e <strong>intransigentes</strong> o apostólicos. Finalmente, el general carlista transaccionista <em>Rafael Maroto</em> acordó la paz con el general liberal <em>Baldomero Espartero</em>, sellando el histórico <em>Convenio de Vergara</em> (o <em>Abrazo de Vergara</em>) el 31 de agosto de 1839. El tratado preveía la <strong>integración de la oficialidad carlista</strong> en el ejército real y el <strong>compromiso ministerial de recomendar a las Cortes el mantenimiento o modificación de los fueros</strong> tradicionales. Únicamente las partidas intransigentes del general <em>Ramón Cabrera</em> (el Tigre del Maestrazgo) resistieron heroicamente en el este peninsular hasta su definitiva derrota en Morella en 1840.</p>
+                    <p>El agotamiento material fracturó la cohesión interna del carlismo, dividiendo a sus partidarios entre <strong>transaccionistas</strong> (proclives a pactar un armisticio honorable) e <strong>intransigentes</strong> o apostólicos. Finalmente, el general carlista transaccionista <em>Rafael Maroto</em> acordó la paz con el general liberal <em>Baldomero Espartero</em>, sellando el histórico <em>Convenio de Vergara</em> (o <em>Abrazo de Vergara</em>) el 31 de agosto de 1839. El tratado preveía la <strong>integración de la oficialidad carlista</strong> en el ejército real y el <strong>compromiso de respetar o modificar los fueros</strong> tradicionales vasco-navarros. Únicamente las partidas intransigentes del general <em>Ramón Cabrera</em> (el Tigre del Maestrazgo) resistieron heroicamente en el este peninsular hasta su definitiva derrota en Morella en 1840.</p>
                 </div>
             </details>
 
             <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin: 25px 0;">
                 <div style="flex: 1; min-width: 250px; text-align: center;">
-                    <img src="img/retirada-zumalacarregui.png" alt=" Zumalacárregui herido" class="imagen-educativa">
-                    <p><em>Imagen 4: Litografía decimonónica que representa a Zumalacárregui herido, siendo evacuado a hombros por sus soldados durante el sitio a la plaza de Bilbao. Obtenida de TEMA 2_EL REINADO DE ISABEL II.pptx.</em></p>
+                    <img src="img/retirada-zumalacarregui.png" alt="Zumalacárregui herido" class="imagen-educativa">
+                    <p><em>Imagen 4: Litografía coloreada que representa el traslado a hombros de Zumalacárregui herido en el asedio de Bilbao.</em></p>
                 </div>
                 <div style="flex: 1; min-width: 250px; text-align: center;">
                     <img src="img/abrazo-vergara.png" alt="Abrazo de Vergara" class="imagen-educativa">
-                    <p><em>Imagen 5: Grabado del abrazo histórico entre los generales Espartero y Maroto en 1839, símbolo del final de la guerra civil. Procedente de TEMA 2_EL REINADO DE ISABEL II.pptx.</em></p>
+                    <p><em>Imagen 5: Grabado del abrazo histórico entre los generales Espartero y Maroto en 1839, símbolo del final de la guerra civil.</em></p>
                 </div>
             </div>
 
@@ -412,7 +427,7 @@
             <p>La minoría de edad de <em>Isabel II</em> obligó al establecimiento de un periodo transitorio de regencias, protagonizado inicialmente por la reina madre, <em>María Cristina de Borbón</em>, y posteriormente por el militar más laureado del país, el progresista <em>Baldomero Espartero</em>. En esta década vertiginosa se consumó el desmantelamiento legislativo de las instituciones jurídicas y señoriales del Antiguo Régimen.</p>
 
             <img src="img/mapa-guerras-carlistas.png" alt="Mapa de la guerra carlista" class="imagen-educativa">
-            <p class="caption"><em>Imagen 6: Cartografía de la península Ibérica que delimita los focos de insurrección carlista y el itinerario de las expediciones militares de Carlos V. Fuente: tema_04 La construcción del estado liberal (1833 - 1868).pdf.</em></p>
+            <p class="caption"><em>Imagen 6: Cartografía de la península Ibérica que delimita los focos de insurrección carlista y el itinerario de las expediciones militares de Carlos V.</em></p>
 
             <h3>2.1. La Regencia de María Cristina de Borbón (1833 - 1840)</h3>
             <p>La gestión gubernamental de la reina gobernadora se dividió en <strong>tres periodos de profunda agitación doctrinal y legislativa</strong>:</p>
@@ -422,7 +437,7 @@
             </ul>
 
             <img src="img/mapa-javier-burgos.png" alt="División provincial de Javier de Burgos" class="imagen-educativa">
-            <p class="caption"><em>Imagen 7: Mapa oficial de la división de provincias de España aprobada en 1833 por Javier de Burgos. Extraído del documento tema_04 La construcción del estado liberal (1833 - 1868).pdf.</em></p>
+            <p class="caption"><em>Imagen 7: Mapa oficial de la división de provincias de España aprobada en 1833 por Javier de Burgos.</em></p>
 
             <ul>
                 <li><strong>La Ruptura Liberal y el Gobierno Progresista (1835 - 1837):</strong> El Estatuto de 1834 no satisfizo a los liberales avanzados o progresistas, desatándose motines urbanos populares dirigidos por las clases medias y la *Milicia Nacional*. Estas revueltas, caracterizadas por asaltos e incendios de conventos y la quema de la fábrica textil *Bonaplata* de Barcelona, obligaron a la reina a entregar el gabinete al progresista <em>Juan Álvarez Mendizábal</em>. Para financiar la contienda civil y sanear la colapsada Hacienda pública, Mendizábal puso en marcha en 1836 la célebre <em>Desamortización de Mendizábal</em>, ratificada en ley en julio de 1837. El decreto dispuso la <strong>nacionalización y posterior venta en pública subasta de los bienes rústicos y urbanos del clero regular</strong> (monasterios y conventos exclaustrados). La destitución del primer ministro por presiones de la regente desató la sublevación militar popular de la <em>Sargentada de La Granja</em> en agosto de 1836, donde un grupo de sargentos de la guardia real forzó a la regente a restablecer la Constitución de 1812 y entregar el poder a los progresistas de <em>José María Calatrava</em>.</li>
@@ -431,11 +446,11 @@
             <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin: 25px 0;">
                 <div style="flex: 1; min-width: 250px; text-align: center;">
                     <img src="img/retrato-mendizabal.png" alt="Retrato de Mendizábal" class="imagen-educativa" style="max-width: 300px;">
-                    <p><em>Imagen 8: Retrato oficial al óleo del político liberal progresista Juan Álvarez Mendizábal, promotor de la desamortización eclesiástica de 1836. Fuente: TEMA 2_EL REINADO DE ISABEL II.pptx.</em></p>
+                    <p><em>Imagen 8: Retrato oficial al óleo del político liberal progresista Juan Álvarez Mendizábal, promotor de la desamortización eclesiástica de 1836.</em></p>
                 </div>
                 <div style="flex: 1; min-width: 300px; text-align: center;">
                     <img src="img/mapa-desamortizacion-mendizabal.png" alt="Mapa desamortización" class="imagen-educativa">
-                    <p><em>Imagen 9: Mapa de la península que representa por provincias el valor de venta total en millones de reales de los bienes de la Iglesia desamortizados. Fuente: tema_04 La construcción del estado liberal (1833 - 1868).pdf.</em></p>
+                    <p><em>Imagen 9: Mapa de la península que representa por provincias el valor de venta total en millones de reales de los bienes de la Iglesia desamortizados.</em></p>
                 </div>
             </div>
 
@@ -459,7 +474,7 @@
             </ol>
 
             <ul>
-                <li><strong>El Trienio Moderado y la caída de la Regente (1837 - 1840):</strong> Tras la aprobación de la Constitución de 1837, los moderados vencieron en las elecciones e intentaron limitar el alcance progresista municipal aprobando la restrictiva *Ley de Ayuntamientos de 1840*. Esta norma retiraba a los vecinos el derecho de elegir de forma directa a sus regidores, otorgando la facultad de nombramiento de alcaldes al Gobierno central. La sanción y firma de esta ley por la reina <em>María Cristina</em> provocó el estallido de un movimiento insurreccional encabezado por Juntas revolucionarias provinciales y la Milicia Nacional. Antes que claudicar ante las demandas del partido progresista, la regente prefirió dimitir y partir al exilio en París en octubre de 1840, cediendo la regencia al militar más prestigioso y carismático de la nación.</li>
+                <li><strong>El Trienio Moderado y la caída de la Regente (1837 - 1840):</strong> Tras la aprobación de la Constitución de 1837, los moderados vencieron en las elecciones e intentaron limitar el alcance progresista municipal aprobando la restrictiva *Ley de Ayuntamientos de 1840*. Esta norma retiraba a los vecinos el derecho de elegir de forma directa a sus regidores, otorgando la facultad de nombramiento de alcaldes al Gobierno central. La sanción y firma de esta ley por la reina <em>María Cristina</em> de Borbón provocó el estallido de un movimiento insurreccional encabezado por Juntas revolucionarias provinciales y la Milicia Nacional. Antes que claudicar ante las demandas del partido progresista, la regente prefirió dimitir y partir al exilio en París en octubre de 1840, cediendo la regencia al militar más prestigioso y carismático de la nación.</li>
             </ul>
 
             <hr style="border: none; border-top: 1px dashed #e2e8f0; margin: 30px 0;">
@@ -468,14 +483,14 @@
             <p>El general <em>Baldomero Espartero</em>, aclamado por las clases populares como el pacificador de España y líder natural del progresismo, asumió la regencia unipersonal del reino. No obstante, su talante militarista le llevó a gobernar de espaldas al Parlamento, apoyándose exclusivamente en una camarilla de militares fieles denominados despectivamente los <strong>ayacuchos</strong> por la oposición moderada.</p>
 
             <img src="img/retrato-espartero.png" alt="Retrato del general Espartero" class="imagen-educativa" style="max-width: 320px;">
-            <p class="caption"><em>Imagen 10: Retrato oficial al óleo del general Baldomero Espartero, conde de Luchana y duque de la Victoria. Fuente: tema_04 La construcción del estado liberal (1833 - 1868).pdf.</em></p>
+            <p class="caption"><em>Imagen 10: Retrato oficial al óleo del general Baldomero Espartero, conde de Luchana y duque de la Victoria.</em></p>
 
             <p>Su política económica, caracterizada por la reactivación de la venta de bienes eclesiásticos (lo que provocó la ruptura formal con el Vaticano y la expulsión del nuncio apostólico), desató su ruina política en el otoño de 1842. Con el propósito de ratificar un <strong>tratado de libre comercio de signo librecambista con Gran Bretaña</strong>, Espartero propuso rebajar sustancialmente los aranceles aduaneros a los tejidos ingleses. La burguesía industrial de Cataluña y el proletariado textil de Barcelona interpretaron el acuerdo como una condena de muerte para la viabilidad de sus fábricas y puestos de trabajo, protagonizando una gran rebelión urbana.</p>
 
             <p><em>Espartero</em> reaccionó ordenando el bombardeo militar indiscriminado de la ciudad desde el castillo de Montjuic, lo que destruyó cientos de viviendas, se cobró la vida de civiles y hundió definitivamente su popularidad, uniendo a progresistas y moderados en un frente común de oposición. En julio de 1843, el general moderado <em>Ramón María de Narváez</em> encabezó un pronunciamiento que batió a las fuerzas leales al regente en Torrejón de Ardoz, forzando la huida de Espartero al exilio en Londres. Para solventar el vacío de poder sin designar otro regente, <strong>las Cortes adelantaron la mayoría de edad de Isabel II</strong>, quien comenzó su reinado personal con apenas trece años de edad y una total falta de formación política.</p>
 
             <img src="img/bombardeo-barcelona.png" alt="Bombardeo de Barcelona de 1842" class="imagen-educativa">
-            <p class="caption"><em>Imagen 11: Grabado histórico del bombardeo de Barcelona ordenado por el regente Espartero en otoño de 1842 para sofocar el motín social catalán. Fuente: TEMA 2_EL REINADO DE ISABEL II.pptx.</em></p>
+            <p class="caption"><em>Imagen 11: Grabado histórico del bombardeo de Barcelona ordenado por el regente Espartero en otoño de 1842 para sofocar el motín social catalán.</em></p>
         </section>
 
         <!-- SECCIÓN 3 -->
@@ -498,25 +513,25 @@
             </div>
 
             <h3>3.1. La Década Moderada (1844 - 1854)</h3>
-            <p>Tras la caída de Espartero y un breve periodo de transición con <em>González Bravo</em> (quien disolvió formalmente la Milicia Nacional), los moderados se hicieron con las riendas del poder. El general <em>Ramón María de Narváez</em>, espadón fuerte de la oligarquía burguesa, asumió la presidencia, poniendo en marcha una <strong>monumental labor legislativa encaminada a erigir un Estado centralizado, seguro y centralizado</strong>:</p>
+            <p>Tras la caída de Espartero y un breve periodo de transición con <em>González Bravo</em> (quien no dudó en disolver de forma temporal la Milicia Nacional), los moderados se hicieron con las riendas del poder. El general <em>Ramón María de Narváez</em>, espadón fuerte de la oligarquía burguesa, asumió la presidencia, poniendo en marcha una <strong>monumental labor legislativa encaminada a erigir un Estado centralizado, seguro y centralizado</strong>:</p>
 
             <img src="img/retrato-narvaez.png" alt="Retrato del general Narváez" class="imagen-educativa" style="max-width:320px;">
-            <p class="caption"><em>Imagen 12: Retrato fotográfico hacia 1860 de la reina Isabel II de Borbón en la corte de Madrid. Fuente: TEMA 2_EL REINADO DE ISABEL II.pptx.</em></p>
+            <p class="caption"><em>Imagen 12: Retrato fotográfico hacia 1860 de la reina Isabel II de Borbón en la corte de Madrid.</em></p>
 
             <ul>
-                <li><strong>La Constitución de 1845:</strong> Máxima expresión jurídica de la doctrina del moderantismo. El texto declaraba la <strong>soberanía compartida entre la Corona y las Cortes</strong> (concediendo a la reina un inmenso poder político: nombramiento y destitución libre de ministros, veto absoluto e iniciativa de ley), organizaba un parlamento bicameral con un <strong>Senado vitalicio de designación regia</strong> reservado a las élites aristocráticas, limitaba con severidad los derechos de reunión y prensa, y restringía el cuerpo electoral mediante un <strong>sufragio censitario extremo que solo permitía votar al 1%</strong> de la población adinerada de la nación.</li>
+                <li><strong>La Constitución de 1845:</strong> Máxima expresión jurídica de la doctrina del moderantismo. El texto consagró la <strong>Soberanía compartida entre las Cortes y el Rey</strong> (concediendo a la reina un inmenso poder político: nombramiento y destitución libre de ministros, veto absoluto e iniciativa de ley), organizó un parlamento bicameral con un <strong>Senado vitalicio de designación regia</strong> reservado a las élites aristocráticas, limitó con severidad los derechos de reunión y prensa, y restringió el cuerpo electoral mediante un <strong>sufragio censitario extremo que solo permitía votar al 1%</strong> de la población adinerada de la nación.</li>
                 <li><strong>La Creación de la Guardia Civil (1844):</strong> Diseñada por el militar y aristócrata <em>Duque de Ahumada</em> como una fuerza armada profesional e institucionalizada para aplicar la ley, vigilar las comunicaciones y velar por la seguridad de la propiedad privada y las personas, esencialmente en el medio rural (combatiendo con eficacia el bandolerismo).</li>
             </ul>
 
             <img src="img/guardia-civil-1845.png" alt="Cuerpo de la Guardia Civil en 1845" class="imagen-educativa" style="max-width: 300px;">
-            <p class="caption"><em>Imagen 13: Ilustración de los primeros guardias civiles con su indumentaria reglamentaria en el año 1845. Fuente: TEMA 2_EL REINADO DE ISABEL II.pptx.</em></p>
+            <p class="caption"><em>Imagen 13: Ilustración de los primeros guardias civiles con su indumentaria reglamentaria en el año 1845.</em></p>
 
             <ul>
                 <li><strong>La Reforma Tributaria de Mon-Santillán (1845):</strong> Diseñada por <em>Alejandro Mon</em> y <em>Ramón Santillán</em> para modernizar la maltrecha Hacienda pública. Consistió en refundir el enrevesado e ineficaz sistema fiscal del Antiguo Régimen en un conjunto unificado y racional de <strong>contribuciones directas e indirectas</strong>, estableciendo el impuesto sobre consumos de primera necesidad para paliar el déficit fiscal general.</li>
                 <li><strong>El Concordato de 1851:</strong> Tratado internacional con el Vaticano que restableció las relaciones de España con la Santa Sede. El papa reconoció de forma definitiva la legitimidad dinástica de <em>Isabel II</em> y la validez de las tierras ya desamortizadas a cambio de que el Estado proclamara la <strong>Unidad Católica del país</strong>, se comprometiera al sostenimiento económico del clero mediante el <strong>presupuesto de culto y clero</strong>, y otorgara a la Iglesia la competencia inspectora e instructora de la educación nacional.</li>
-                <li><strong>La Reorganización Administrativa Local (1845):</strong> Una restrictiva *Ley de Ayuntamientos* anuló la autonomía municipal, estableciendo que el alcalde de los municipios mayores de 2.000 habitantes y capitales de provincia era designado por la propia Corona, quedando el resto bajo control directo del Gobernador Civil provincial.</li>
+                <li><strong>La Reorganización Administrativa Local (1845):</strong> Una restrictiva *Ley de Ayuntamientos* la cual anuló la autonomía municipal, estableciendo que el alcalde de los municipios mayores de 2.000 habitantes y capitales de provincia era designado por la propia Corona, quedando el resto bajo control directo del Gobernador Civil provincial.</li>
             </ul>
-         
+
             <p>La estabilidad de la década moderada se quebró tras la deriva autoritaria de <em>Juan Bravo Murillo</em> en 1852, quien pretendió reformar la Constitución para instaurar una <strong>dictadura tecnocrática</strong> gobernando por decreto y postergando indefinidamente a las Cortes parlamentarias. La oposición de las propias facciones del moderantismo provocó su caída, desatando acusaciones de severa corrupción administrativa por la concesión de licencias del ferrocarril.</p>
 
             <hr style="border: none; border-top: 1px dashed #e2e8f0; margin: 30px 0;">
@@ -525,7 +540,7 @@
             <p>En junio de 1854, una facción de militares moderados y descontentos liderados por los generales <em>Leopoldo O'Donnell</em> y <em>Dulce</em> se pronunció en Vicálvaro en la célebre <em>Vicalvarada</em>. Ante el empate militar, la insurgencia se unió al general <em>Francisco Serrano</em> y lanzaron el <em>Manifiesto de Manzanares</em>. La proclama, redactada brillantemente por Cánovas del Castillo, prometía reformas progresistas de regeneración liberal (bajada de tributos, Milicia Nacional y descentralización municipal), desatando insurrecciones urbanas populares en Madrid, Barcelona, Valencia y Valladolid.</p>
 
             <img src="img/obras-canal.png" alt="Obras públicas en el reinado" class="imagen-educativa">
-            <p class="caption"><em>Imagen 15: Grabado del siglo XIX que documenta las espectaculares obras de ingeniería hidráulica para el Canal de Isabel II e infraestructuras del ferrocarril. Fuente: TEMA 2_EL REINADO DE ISABEL II.pptx.</em></p>
+            <p class="caption"><em>Imagen 14: Grabado del siglo XIX que documenta las espectaculares obras de ingeniería hidráulica para el Canal de Isabel II e infraestructuras del ferrocarril.</em></p>
 
             <p>La agitación forzó a la reina a entregar el gabinete al anciano líder progresista <em>Baldomero Espartero</em>, instaurándose el *Bienio Progresista* (1854 - 1856). El nuevo Gobierno impulsó reformas económicas claves de signo industrializador:</p>
 
@@ -552,11 +567,11 @@
             <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin: 25px 0;">
                 <div style="flex: 1; min-width: 250px; text-align: center;">
                     <img src="img/batalla-tetuan.png" alt="Batalla de Tetuán" class="imagen-educativa">
-                    <p><em>Imagen 16: Lienzo histórico conmemorativo de la Batalla de Tetuán de Mariano Fortuny, exaltando las operaciones militares de la Unión Liberal en el norte de África. Fuente: tema_04 La construcción del estado liberal (1833 - 1868).pdf.</em></p>
+                    <p><em>Imagen 15: Lienzo histórico conmemorativo de la Batalla de Tetuán de Mariano Fortuny, exaltando las operaciones militares de la Unión Liberal en el norte de África.</em></p>
                 </div>
                 <div style="flex: 1; min-width: 250px; text-align: center;">
                     <img src="img/asalto-saigon.png" alt="Infantería de Marina en Saigón" class="imagen-educativa">
-                    <p><em>Imagen 17: Grabado de época que ilustra a las fuerzas de la infantería española asaltando las murallas de Saigón durante la campaña de Indochina. Fuente: TEMA 2_EL REINADO DE ISABEL II.pptx.</em></p>
+                    <p><em>Imagen 16: Grabado de época que ilustra a las fuerzas de la infantería española asaltando las murallas de Saigón durante la campaña de Indochina.</em></p>
                 </div>
             </div>
 
@@ -569,8 +584,8 @@
                 <li><strong>El Pacto de Ostende y la Caída de la Reina (1868):</strong> La muerte de <em>Leopoldo O'Donnell</em> en noviembre de 1867 y de <em>Ramón María de Narváez</em> en abril de 1868 dejó a la Corona en el aislamiento absoluto. En agosto de 1866, progresistas, demócratas y republicanos habían sellado el <em>Pacto de Ostende</em> en Bélgica para deponer del trono a <em>Isabel II</em>. El 18 de septiembre de 1868 se produjo el estallido militar del almirante <em>Topete</em> y el general <em>Juan Prim</em> en Cádiz, triunfando con asombrosa facilidad el pronunciamiento de la revolución de <em>La Gloriosa</em>. Tras la definitiva derrota de los isabelinos en la batalla del Puente de Alcolea, <em>Isabel II</em> se exilió en Francia el 30 de septiembre de 1868, derribándose la monarquía moderada y abriendo paso al Sexenio Democrático.</li>
             </ul>
 
-            <img src="img/caica-la-gloriosa.png" alt="Alegoría de la Gloriosa" class="imagen-educativa">
-            <p class="caption"><em>Imagen 18: Izquierda, grabado alegórico del triunfo de la revolución del 29 de septiembre de 1868. Derecha, caricatura satírica de la reina huyendo con sus maletas hacia el exilio. Extraída de tema_04 La construcción del estado liberal (1833 - 1868).pdf.</em></p>
+            <img src="img/caida-la-gloriosa.png" alt="Alegoría de la Gloriosa" class="imagen-educativa">
+            <p class="caption"><em>Imagen 17: Izquierda, grabado alegórico del triunfo de la revolución del 29 de septiembre de 1868. Derecha, caricatura satírica de la reina huyendo con sus maletas hacia el exilio.</em></p>
         </section>
     </main>
 
