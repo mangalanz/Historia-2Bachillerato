@@ -1,8 +1,8 @@
 # 🧭 Web Didáctica de Metodología e Introducción a la Historia
 
-Este proyecto consiste en una **página web interactiva y accesible** diseñada bajo las pautas de **Lectura Fácil**. Su objetivo principal es servir de apoyo y guía de estudio para los alumnos de **2º de Bachillerato**, especialmente aquellos que presentan dificultades de comprensión lectora, de aprendizaje o de atención, ayudándoles a asimilar de forma visual los contenidos metodológicos y prácticos de la asignatura de Historia de España.
+Este proyecto consiste en una <em>página web interactiva y accesible</em> diseñada bajo las pautas de <em>Lectura Fácil</em>. Su objetivo principal es servir de apoyo y guía de estudio para los alumnos de <em>2º de Bachillerato</em>, especialmente aquellos que presentan dificultades de comprensión lectora, de aprendizaje o de atención, ayudándoles a asimilar de forma visual los contenidos metodológicos y prácticos de la asignatura de Historia de España.
 
-El recurso está completamente preparado para ser alojado de forma gratuita en **GitHub Pages**.
+El recurso está completamente preparado para ser alojado de forma gratuita en <em>GitHub Pages</em>.
 
 ---
 
@@ -22,15 +22,15 @@ Para que la página funcione correctamente, debes mantener la siguiente estructu
 
 La web cubre el temario completo de introducción metodológica de 2º de Bachillerato basándose de forma rigurosa en el currículo académico:
 
-1. **El Concepto de Historia e Historiografía:** Explicación de la dimensión científica de la disciplina y las principales corrientes de pensamiento (Historicismo, Escuela de Annales y Materialismo Histórico).
-2. **Factores del Hecho Histórico (Espacio y Tiempo):** Teorías sobre el relieve (Determinismo vs. Posibilismo) y las relaciones temporales (Sincronía, Diacronía, Evolución y Revolución).
-3. **El Método de Investigación Histórica:** Las tres fases científicas obligatorias (Hipótesis, Análisis de datos y Conclusiones).
-4. **Ciencias Auxiliares:** Glosario interactivo con las 9 disciplinas clásicas (Diplomática, Numismática, Arqueología, Epigrafía, Paleografía, Papirología, Heráldica, Sigilografía y Cronología) y el apoyo de ciencias sociales modernas.
-5. **La Medición del Tiempo:** Explicación de las eras cronológicas del mundo (Era Cristiana, Musulmana, Judía y China) y las unidades de tiempo.
-6. **Las Grandes Edades de la Historia:** Desarrollo sintético desde la Prehistoria (Paleolítico, Neolítico, Edad de los Metales) hasta la Edad Contemporánea.
-7. **Las Fuentes Históricas y su Crítica:** Clasificación de fuentes (por origen, soporte y contenido) y fases del control de calidad histórico (Crítica de procedencia y Crítica de restitución).
-8. **Guía de Trabajo de Investigación:** Un manual de 7 pasos prácticos para guiar al alumno en la elaboración de trabajos escolares, evitando el plagio y cuidando los aspectos formales (portada, índice, bibliografía).
-9. **Fichas de Comentario Oficiales de Examen:** Plantillas paso a paso, redactadas de forma muy accesible, para entrenar el comentario de:
+1. <em>El Concepto de Historia e Historiografía:</em> Explicación de la dimensión científica de la disciplina y las principales corrientes de pensamiento (Historicismo, Escuela de Annales y Materialismo Histórico).
+2. <em>Factores del Hecho Histórico (Espacio y Tiempo):</em> Teorías sobre el relieve (Determinismo vs. Posibilismo) y las relaciones temporales (Sincronía, Diacronía, Evolución y Revolución).
+3. <em>El Método de Investigación Histórica:</em> Las tres fases científicas obligatorias (Hipótesis, Análisis de datos y Conclusiones).
+4. <em>Ciencias Auxiliares:</em> Glosario interactivo con las 9 disciplinas clásicas (Diplomática, Numismática, Arqueología, Epigrafía, Paleografía, Papirología, Heráldica, Sigilografía y Cronología) y el apoyo de ciencias sociales modernas.
+5. <em>La Medición del Tiempo:</em> Explicación de las eras cronológicas del mundo (Era Cristiana, Musulmana, Judía y China) y las unidades de tiempo.
+6. <em>Las Grandes Edades de la Historia:</em> Desarrollo sintético desde la Prehistoria (Paleolítico, Neolítico, Edad de los Metales) hasta la Edad Contemporánea.
+7. <em>Las Fuentes Históricas y su Crítica:</em> Clasificación de fuentes (por origen, soporte y contenido) y fases del control de calidad histórico (Crítica de procedencia y Crítica de restitución).
+8. <em>Guía de Trabajo de Investigación:</em> Un manual de 7 pasos prácticos para guiar al alumno en la elaboración de trabajos escolares, evitando el plagio y cuidando los aspectos formales (portada, índice, bibliografía).
+9. <em>Fichas de Comentario Oficiales de Examen:</em> Plantillas paso a paso, redactadas de forma muy accesible, para entrenar el comentario de:
    * Textos Históricos (literarios, jurídicos, circunstanciales o historiográficos).
    * Mapas Históricos (políticos, militares, económicos, demográficos o electorales).
    * Imágenes o Carteles (estructura visual, composición y mensaje).
@@ -42,19 +42,19 @@ La web cubre el temario completo de introducción metodológica de 2º de Bachil
 
 Sigue estas sencillas instrucciones para que tus alumnos puedan acceder a la web online desde sus móviles o tabletas:
 
-1. **Crea un repositorio en GitHub:**
+1. <em>Crea un repositorio en GitHub:</em>
    * Inicia sesión en tu cuenta de GitHub.
-   * Haz clic en el botón **New** (Nuevo repositorio).
-   * Nómbralo (por ejemplo: `historia-facil`) y asegúrate de marcarlo como **Public** (Público).
-2. **Sube los archivos:**
+   * Haz clic en el botón <em>New</em> (Nuevo repositorio).
+   * Nómbralo (por ejemplo: `historia-facil`) y asegúrate de marcarlo como <em>Public</em> (Público).
+2. <em>Sube los archivos:</em>
    * Sube a la raíz del repositorio el archivo `index.html` que creaste.
    * Sube las imágenes `linea-tiempo.png` y `arbol-fuentes.png` en esa misma carpeta raíz (sin meterlas en subcarpetas).
-3. **Activa GitHub Pages:**
-   * Entra en la pestaña **Settings** (Configuración) de tu repositorio.
-   * En el menú lateral izquierdo, haz clic en **Pages**.
-   * En el apartado "Build and deployment" -> "Branch", cambia `None` por **`main`** (o `master`) y deja la carpeta en `/ (root)`.
-   * Haz clic en el botón **Save** (Guardar).
-4. **¡Listo!**
+3. <em>Activa GitHub Pages:</em>
+   * Entra en la pestaña <em>Settings</em> (Configuración) de tu repositorio.
+   * En el menú lateral izquierdo, haz clic en <em>Pages</em>.
+   * En el apartado "Build and deployment" -> "Branch", cambia `None` por <em>`main`</em> (o `master`) y deja la carpeta en `/ (root)`.
+   * Haz clic en el botón <em>Save</em> (Guardar).
+4. <em>¡Listo!</em>
    * En un par de minutos, refresca la página de Settings. Verás un banner en la parte superior con un enlace azul (ej. `https://tu-usuario.github.io/historia-facil/`). 
    * Ese es el enlace que puedes compartir directamente con tus alumnos.
 
@@ -63,9 +63,9 @@ Sigue estas sencillas instrucciones para que tus alumnos puedan acceder a la web
 ## 🛡️ Adaptación Pedagógica (Lectura Fácil)
 
 Este recurso aplica metodologías específicas de accesibilidad cognitiva:
-* **Estructura jerárquica clara:** Uso de menús laterales fijos y secciones bien delimitadas.
-* **Información bajo demanda:** Los conceptos más complejos o densos se ocultan tras menús desplegables (`<details>`) para que el estudiante dosifique el esfuerzo de lectura y evite la fatiga cognitiva.
-* **Glosarios y advertencias visuales:** Uso de cajas de texto con colores suaves que identifican de forma unívoca los conceptos clave, las ciencias auxiliares o las instrucciones críticas de examen.
+* <em>Estructura jerárquica clara:</em> Uso de menús laterales fijos y secciones bien delimitadas.
+* <em>Información bajo demanda:</em> Los conceptos más complejos o densos se ocultan tras menús desplegables (`<details>`) para que el estudiante dosifique el esfuerzo de lectura y evite la fatiga cognitiva.
+* <em>Glosarios y advertencias visuales:</em> Uso de cajas de texto con colores suaves que identifican de forma unívoca los conceptos clave, las ciencias auxiliares o las instrucciones críticas de examen.
 
 ---
 
