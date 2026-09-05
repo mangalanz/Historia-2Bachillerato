@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloque I - Tema 3: El Sexenio Democrático (1868 - 1874)</title>
+    <style>
+        :root {
+            /* Colores corporativos alegres y vibrantes */
+            --primary-intense: #1e40af; /* Azul real oscuro */
+            --primary-vibrant: #2563eb; /* Azul brillante */
+            --primary-dark: #0f172a;
+            --primary: #1e293b;
+            --bg-main: #f8fafc;
+            --card-bg: #ffffff;
+            --text-dark: #1e293b;
+            --text-muted: #64748b;
+            
+            /* Tonos suaves en verde para el encabezado */
+            --header-bg: #f0fdf4; /* Fondo verde menta muy suave */
+            --header-border: #10b981; /* Borde verde esmeralda */
+            --header-text: #065f46; /* Texto verde bosque oscuro */
+
+            /* Cajas didácticas */
+            --border-glosario: #0ea5e9;
+            --bg-glosario: #f0f9ff;
+            --border-investigacion: #f59e0b;
+            --bg-investigacion: #fffbeb;
+            --border-critica: #ef4444;
+            --bg-critica: #fef2f2;
+            --border-factores: #10b981;
+            --bg-factores: #ecfdf5;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-dark);
+            min-height: 100vh;
+        }
+
+        /* Barra de navegación lateral fija a la izquierda */
+        aside {
+            width: 300px;
+            background-color: var(--primary-dark);
+            color: white;
+            padding: 25px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            overflow-y: auto;
+            border-right: 1px solid #334155;
+            z-index: 100;
+        }
+
+        aside h1 {
+            font-size: 1.25rem;
+            margin-bottom: 25px;
+            color: #f8fafc;
+            border-bottom: 3px solid var(--primary-vibrant);
+            padding-bottom: 12px;
+            text-align: center;
+        }
+
+        aside nav ul {
+            list-style: none;
+        }
+
+        aside nav ul li {
+            margin-bottom: 10px;
+        }
+
+        aside nav ul li a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 0.95rem;
+            display: block;
+            padding: 10px 14px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            font-weight: 500;
+        }
+
+        /* Botón de volver a la portada */
+        aside nav ul li .btn-volver {
+            background-color: #334155;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+            border: 1px solid #475569;
+            margin-bottom: 15px;
+            display: block;
+            padding: 10px 14px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            text-decoration: none;
+        }
+
+        aside nav ul li .btn-volver:hover {
+            background-color: var(--primary-vibrant);
+            border-color: var(--primary-vibrant);
+        }
+
+        /* Enlaces activos e interactivos en azul vibrante */
+        aside nav ul li a:hover, aside nav ul li a.active {
+            background-color: var(--primary-vibrant);
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(37, 99, 235, 0.15);
+        }
+
+        /* Contenido de la Web */
+        main {
+            margin-left: 300px;
+            padding: 40px;
+            max-width: 1100px;
+        }
+
+        /* Encabezado Alegre con tonos suaves en verde */
+        header {
+            margin-bottom: 35px;
+            background: linear-gradient(135deg, var(--header-bg), #e6fcf0);
+            border-left: 6px solid var(--header-border);
+            color: var(--header-text);
+            padding: 25px 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(16, 185, 129, 0.08);
+        }
+
+        header h2 {
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+            color: var(--header-text);
+            font-weight: 800;
+        }
+
+        header p {
+            color: #15803d;
+            font-size: 1.05rem;
+            font-weight: 500;
+        }
+
+        /* Cabecera ilustrada horizontal (Eje cronológico) */
+        .cabecera-ilustrada {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e2e8f0;
+            margin-bottom: 35px;
+            background-color: #f1f5f9;
+        }
+
+        .cabecera-ilustrada img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        section {
+            background: var(--card-bg);
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            margin-bottom: 35px;
+            border-left: 6px solid var(--primary-vibrant);
+        }
+
+        section h2 {
+            color: var(--primary-dark);
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #f1f5f9;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: var(--primary-intense);
+            margin: 25px 0 12px 0;
+            font-size: 1.25rem;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+            color: #334155;
+            text-align: justify;
+        }
+
+        /* Cajas de colores */
+        .caja-colores {
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-size: 1rem;
+        }
+
+        .caja-colores h4 {
+            margin-bottom: 10px;
+            font-size: 1.15rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .glosario {
+            background-color: var(--bg-glosario);
+            border-left: 5px solid var(--border-glosario);
+            color: #0369a1;
+        }
+
+        .investigacion {
+            background-color: var(--bg-investigacion);
+            border-left: 5px solid var(--border-investigacion);
+            color: #b45309;
+        }
+
+        .critica {
+            background-color: var(--bg-critica);
+            border-left: 5px solid var(--border-critica);
+            color: #c2410c;
+        }
+
+        .factores {
+            background-color: var(--bg-factores);
+            border-left: 5px solid var(--border-factores);
+            color: #047857;
+        }
+
+        /* Desplegables de Lectura Estructurada */
+        details {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 14px;
+            transition: border-color 0.2s;
+        }
+
+        details[open] {
+            background-color: white;
+            border-color: var(--primary-vibrant);
+        }
+
+        summary {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--primary-dark);
+            cursor: pointer;
+            outline: none;
+            user-select: none;
+        }
+
+        details .contenido-desplegado {
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px dashed #e2e8f0;
+        }
+
+        /* Imágenes */
+        .imagen-educativa {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            margin: 25px auto;
+            display: block;
+            border: 1px solid #e2e8f0;
+        }
+
+        .caption {
+            text-align: center;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-top: -15px;
+            margin-bottom: 25px;
+        }
+
+        ul, ol {
+            padding-left: 25px;
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #334155;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            aside {
+                width: 100%;
+                height: auto;
+                position: relative;
+                border-right: none;
+                border-bottom: 1px solid #334155;
+            }
+            main {
+                margin-left: 0;
+                width: 100%;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navegación Lateral de Bloque (Tema 3) -->
+    <aside>
+        <h1>⚖️ Bloque I: Estado Liberal</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="btn-volver">🏠 Volver a Portada</a></li>
+                <!-- Botones de regreso a los Temas anteriores -->
+                <li><a href="bloque1_tema1.html" style="color: #60a5fa; border: 1px dashed #334155; margin-bottom: 5px; display: block; padding: 8px 14px; border-radius: 6px; text-decoration: none; font-weight: 500;">⬅️ Volver al Tema 1</a></li>
+                <li><a href="bloque1_tema2.html" style="color: #60a5fa; border: 1px dashed #334155; margin-bottom: 15px; display: block; padding: 8px 14px; border-radius: 6px; text-decoration: none; font-weight: 500;">⬅️ Volver al Tema 2</a></li>
+                
+                <!-- Navegación Interna de este Tema -->
+                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 10px 14px 5px 14px; font-weight: bold; border-bottom: 1px solid #334155; margin-bottom: 8px;">📍 Secciones del Tema 3</li>
+                <li><a href="#tema1" class="active">1. La Revolución de 1868</a></li>
+                <li><a href="#tema2">2. Gobierno y Constitución de 1869</a></li>
+                <li><a href="#tema3">3. El Reinado de Amadeo I</a></li>
+                <li><a href="#tema4">4. La Primera República</a></li>
+                <li><a href="#tema5">5. Los Inicios del Movimiento Obrero</a></li>
+                
+                <!-- Resto de Temas del Bloque I -->
+                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 20px 14px 5px 14px; font-weight: bold; border-bottom: 1px solid #334155; margin-bottom: 8px;">📖 Temas del Bloque</li>
+                <li><a href="bloque1_tema3.html" class="active">3. El Sexenio Democrático</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Contenido Principal -->
+    <main>
+        <header>
+            <h2>Tema 3: El Sexenio Revolucionario o Democrático (1868 - 1874)</h2>
+            <p>El primer ensayo de democracia contemporánea en España: de la caída de la dinastía borbónica al colapso del proyecto republicano federal.</p>
+        </header>
+
+        <!-- Cabecera ilustrada: Eje cronológico del Sexenio -->
+        <div class="cabecera-ilustrada">
+            <img src="img/eje-sexenio.png" alt="Eje Cronológico del Sexenio Democrático">
+        </div>
+
+        <!-- SECCIÓN 1 -->
+        <section id="tema1">
+            <h2>1. La Revolución de 1868: La Gloriosa</h2>
+            <p>El 19 de septiembre de 1868 se produjo un alzamiento militar en la bahía de Cádiz que derribó de forma definitiva el régimen autoritario isabelino. El pronunciamiento fue encabezado por el almirante de la armada <em>Juan Bautista Topete</em>, secundado por los generales de prestigio <em>Juan Prim</em> y <em>Francisco Serrano</em>, quienes lanzaron un manifiesto bajo el célebre lema de <em>Viva España con honra</em>, exigiendo acabar con la venalidad administrativa y la injerencia política cortesana.</p>
+
+            <img src="img/prim-serrano-topete.png" alt="Generales líderes de la Gloriosa" class="imagen-educativa">
+            <p class="caption"><em>Imagen 1: Ilustración conmemorativa de época con los retratos de los generales y jefes militares que encabezaron el pronunciamiento de la revolución democrática.</em></p>
+
+            <p>La rapidísima propagación de la rebelión armada por toda la geografía española se vio impulsada por una <strong>conjunción de profundos descontentos estructurales</strong>:</p>
+
+            <ul>
+                <li><strong>La Aguda Depresión Económica de 1866:</strong> Coincidió con la primera gran crisis del sistema de libre mercado internacional de signo capitalista. En España afectó a la <strong>Hacienda Pública y al sector financiero</strong> debido a la <strong>baja rentabilidad de las inversiones del ferrocarril</strong> por la debilidad de tráfico, provocando la **quiebra de compañías ferroviarias y el hundimiento de la Bolsa de Madrid**. Asimismo, la Guerra de Secesión norteamericana encareció el precio del algodón en bruto, desatando el **cierre de fábricas textiles en Cataluña** y el consecuente desempleo masivo de obreros. A esto se unió una **grave crisis de subsistencia** por malas cosechas de trigo consecutivas que disparó el precio del pan un 67%, provocando motines de hambre populares en las ciudades.</li>
+                <li><strong>El Agotamiento Político Moderado:</strong> El general <em>Ramón María de Narváez</em> gobernó con un autoritarismo extremo, persiguiendo militarmente a los opositores e ignorando sistemáticamente el juego del Parlamento nacional. Ante la imposibilidad de acceder al poder por vías legales, los partidos de la oposición (progresistas, demócratas y republicanos, dirigidos por <em>Juan Prim</em>) firmaron en Bélgica el histórico <em>Pacto de Ostende</em> en agosto de 1866, comprometiéndose a deponer del trono a la reina <em>Isabel II</em> de España y elegir el futuro régimen del país mediante Cortes electas por sufragio universal.</li>
+                <li><strong>La Impopularidad Personal de la Reina:</strong> La desafección de las masas hacia la corona de <em>Isabel II</em> se alimentaba de la escandalosa influencia cortesana del padre <em>Antonio María Claret</em>, confesor real, o de sor <em>Patrocinio</em> (la monja de las llagas).</li>
+            </ul>
+
+            <img src="img/mapa-la-gloriosa.png" alt="Mapa de la Revolución del 68" class="imagen-educativa">
+            <p class="caption"><em>Imagen 2: Cartografía peninsular que delimita los focos de insurrección popular, la formación de Juntas revolucionarias y el trayecto de los ejércitos sublevados en 1868.</em></p>
+
+            <p>La resistencia armada de las fuerzas gubernamentales se desmoronó tras la aplastante derrota de los ejércitos isabelinos en la batalla del <em>Puente de Alcolea</em> (Córdoba) el 28 de septiembre de 1868 frente a las tropas dirigidas por el general <em>Serrano</em>. Al quedarse sin apoyos en la oficialidad militar, <em>Isabel II</em> de España, que veraneaba en la localidad vizcaína de Lequeitio, se vio obligada a huir de forma inmediata al exilio en Francia, poniendo fin a la monarquía moderada.</p>
+
+            <div class="caja-colores critica">
+                <h4>⚠️ El Freno Revolucionario y el Poder de Base Popular</h4>
+                <p>Durante los primeros días del triunfo insurreccional, los ciudadanos organizados en Juntas revolucionarias locales reclamaron la implantación de reformas radicales (la disolución del catolicismo de Estado, la **abolición definitiva del impuesto sobre consumos** y la **supresión del sistema forzoso de reclutamiento militar o quintas**). Sin embargo, el primer paso del nuevo Gobierno provisional fue controlar la deriva armada mediante la disolución de estas Juntas y el desarme progresivo de la Milicia Nacional, dejando claro que el objetivo prioritario era un cambio dinástico de signo burgués y no una revolución popular de carácter social.</p>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2 -->
+        <section id="tema2">
+            <h2>2. El Gobierno Provisional y la Constitución de 1869</h2>
+            <p>Tras la huida de la reina, se constituyó un nuevo Gobierno provisional presidido por el general <em>Francisco Serrano</em> (unionista), con el general <em>Juan Prim</em> (progresista) al frente del Ministerio de la Guerra y destacadas figuras liberales como <em>Práxedes Mateo Sagasta</em> en Gobernación. Este gabinete convocó de inmediato elecciones a Cortes constituyentes.</p>
+
+            <img src="img/gobierno-provisional-1869.png" alt="Fotografía del Gobierno Provisional de 1869" class="imagen-educativa">
+            <p class="caption"><em>Imagen 3: Retrato fotográfico histórico de estudio con los miembros integrantes del primer gabinete del Gobierno provisional en Madrid.</em></p>
+
+            <p>Las elecciones de enero de 1869 marcaron un hito histórico al celebrarse por primera vez mediante el sistema de **sufragio universal masculino directo** para varones mayores de 25 años, ampliando el cuerpo electoral a casi cuatro millones de votantes. El escrutinio deparó una holgada mayoría a la coalición de partidos gubernamentales (progresistas y unionistas), partidaria de mantener la monarquía parlamentaria como forma de Estado, frente a un bloque opositor de sesenta y nueve diputados republicanos federales y un sector residual de carlistas.</p>
+
+            <p>Las nuevas Cortes redactaron y aprobaron la <em>Constitución de 1869</em>, proclamada solemnemente el 1 de junio. Es unánimemente considerada como **la carta magna más avanzada y democrática del constitucionalismo español del siglo XIX**:</p>
+
+            <div class="caja-colores factores">
+                <h4>📜 Pilares Doctrinales de la Constitución de 1869</h4>
+                <ul>
+                    <li><strong>Soberanía Nacional de Base Popular:</strong> El poder reside de manera neta y exclusiva en el pueblo de la Nación, del cual emanan de forma democrática todos los poderes del Estado.</li>
+                    <li><strong>Monarquía Democrática y Parlamentaria:</strong> Se consagra que la Corona es un mero símbolo del Estado, limitándose drásticamente las prerrogativas del rey, quien carece de poder ejecutivo real (aplicando la fórmula política de **El rey reina, pero no gobierna**).</li>
+                    <li><strong>División Estricta de Poderes:</strong> El legislativo recae en exclusiva en unas Cortes bicamerales (Congreso y Senado, ambos electivos); el ejecutivo queda depositado en el Consejo de Ministros; y el judicial se reserva a tribunales independientes, instaurando el acceso a la judicatura mediante un transparente **sistema de oposiciones** para erradicar el viejo nepotismo.</li>
+                    <li><strong>Tabla Monumental de Derechos y Libertades:</strong> Por primera vez se reconocieron plenamente libertades individuales básicas de residencia, enseñanza, expresión de ideas, correspondencia de correos y la **libertad absoluta de reunión y asociación**.</li>
+                    <li><strong>Libertad de Culto Religioso:</strong> Se garantizó por ley el ejercicio público y privado de cualquier confesión en territorio español, aunque el Estado asumió el compromiso fiscal de sostener económicamente el culto católico.</li>
+                </ul>
+            </div>
+
+            <img src="img/portada-constitucion-1869.png" alt="Portada Oficial de la Constitución de 1869" class="imagen-educativa" style="max-width:320px;">
+            <p class="caption"><em>Imagen 4: Facsímil ilustrado con el diseño de portada de la primera Constitución democrática e de la nación española.</em></p>
+
+            <h3>Las Reformas de Renovación Económica</h3>
+            <p>El ministro de Hacienda del gabinete, <em>Laureano Figuerola</em>, emprendió una profunda reorganización legislativa destinada a asentar una economía plenamente capitalista y librecambista, superando el proteccionismo isabelino:</p>
+
+            <ul>
+                <li><strong>La Creación de la Peseta (1869):</strong> Se aprobó un decreto que establecía la <strong>peseta como unidad monetaria única</strong> y oficial para todo el Estado (equivalente a cuatro reales tradicionales), unificando el caótico sistema de cambio mercantil nacional.</li>
+                <li><strong>La Ley General de Bases Arancelarias (1869):</strong> Redujo sustancialmente los viejos aranceles proteccionistas que encarecían la importación de mercancías extranjeras. La medida desató de inmediato la oposición frontal de la burguesía industrial de Cataluña y de los productores de cereal de Castilla, que temían perder su monopolio agrario nacional.</li>
+                <li><strong>La Ley de Minas de 1871:</strong> Para sanear la asfixiante deuda pública del Estado de más de 22.000 millones de reales, el Gobierno decretó lo que se denominó popularmente como la **desamortización del subsuelo**, vendiendo o concediendo ricas explotaciones mineras (como el yacimiento de Riotinto o Almadén) a consorcios y compañías privadas (principalmente de capital británico y francés), reactivando la actividad de exportación de metales industriales.</li>
+            </ul>
+
+            <img src="img/peseta-1869.png" alt="Moneda de una peseta de 1869" class="imagen-educativa" style="max-width: 250px;">
+            <p class="caption"><em>Imagen 5: Acuñación oficial de la primera pieza de plata de una peseta emitida por el Gobierno provisional de la revolución en el año 1869.</em></p>
+        </section>
+
+        <!-- SECCIÓN 3 -->
+        <section id="tema3">
+            <h2>3. El Reinado de Amadeo I de Saboya (1871 - 1873)</h2>
+            <p>Aprobada la Constitución que definía a España como una monarquía constitucional, las Cortes nombraron al general <em>Francisco Serrano</em> como regente nacional, mientras el general <em>Juan Prim</em> asumió la presidencia del gabinete con el cometido exclusivo de emprender una compleja búsqueda internacional de un candidato al trono entre las cancillerías de las potencias de Europa.</p>
+
+            <p>Tras estudiar y descartar múltiples candidaturas, <em>Prim</em> se decantó firmemente por el príncipe italiano <em>Amadeo de Saboya</em>, duque de Aosta e hijo del rey Víctor Manuel II de Italia. <em>Amadeo I</em> presentaba excelentes credenciales a ojos de los progresistas: procedía de una dinastía con enorme prestigio liberal y ostentaba una concepción profundamente constitucional de la Corona. En noviembre de 1870, las Cortes aprobaron su designación monárquica por una holgada mayoría parlamentaria.</p>
+
+            <img src="img/retrato-amadeo.png" alt="Retrato oficial de Amadeo I de Saboya" class="imagen-educativa" style="max-width:320px;">
+            <p class="caption"><em>Imagen 6: Retrato oficial al óleo del soberano constitucional Amadeo I de Saboya vistiendo su uniforme de gala de Capitán General de la nación.</em></p>
+
+            <p>Sin embargo, la andadura constitucional del nuevo monarca nació herida de muerte. El 27 de diciembre de 1870, apenas tres días antes del desembarco del rey en el puerto de Cartagena, el general <em>Juan Prim</em> sufrió un trágico atentado con disparos de trabuco en la madrileña calle del Turco de Madrid, falleciendo a causa de la sobrevenida infección de las heridas. <em>Amadeo I</em> desembarcó desolado y desamparado de su principal valedor y estratega militar político en la península, teniendo como primer acto oficial la asistencia a la capilla ardiente de su mentor en la capital.</p>
+
+            <img src="img/asesinato-prim.png" alt="Atentado de la calle del Turco" class="imagen-educativa">
+            <p class="caption"><em>Imagen 7: Ilustración del misterioso atentado que le costó la vida a Juan Prim en el madrileño carruaje oficial de la calle del Turco en diciembre de 1870.</em></p>
+
+            <h3>El Frente General de Rechazo Social y Político</h3>
+            <p>El difícil reinado de <em>Amadeo de Saboya</em> (1871-1873) transcurrió en un clima de parálisis institucional y **extrema fragmentación e inestabilidad política**, viéndose cercado por un amplio abanico de enemigos:</p>
+
+            <ul>
+                <li><strong>Los Moderados o Alfonsinos:</strong> Fieles partidarios de los Borbones que iniciaron una tenaz campaña para preparar la futura candidatura del príncipe Alfonso, hijo de la derrocada reina. La estrategia fue dirigida con maestría civil por <em>Antonio Cánovas del Castillo</em>, quien atrajo a las filas alfonsinas a la gran burguesía financiera de la nación.</li>
+                <li><strong>La Iglesia Católica:</strong> Totalmente opuesta al nuevo régimen por la libertad de cultos y, especialmente, por el decreto gubernamental impulsado por <em>Prim</em> que obligaba a los sacerdotes a jurar obediencia y fidelidad a la Constitución de 1869 para mantener sus haberes estatales.</li>
+                <li><strong>La Alta Burguesía Industrial y Agraria:</strong> Alarmada por la política fiscal de aranceles librecambistas que amenazaba sus mercados de exportación textil e importación de materias primas y, sobre todo, por la discusión parlamentaria de las leyes sociales del Sexenio, tales como la **abolición definitiva de la esclavitud en las plantaciones de Cuba**, el **control del trabajo infantil en la industria** y la creación de jurados mixtos para resolver conflictos mercantiles obreros.</li>
+                <li><strong>La III Guerra Carlista (1872-1876):</strong> Ante el desengaño por la dinastía extranjera de Saboya, el pretendiente absolutista Carlos VII (heredero de don Carlos) lideró un gran alzamiento armado en la primavera de 1872. El carlismo llegó a dominar amplias zonas de montaña del País Vasco, Navarra y Aragón, llegando a estructurar un **Estado alternativo tradicionalista** con su propio reclutamiento militar regular, su servicio de correos y la acuñación de moneda.</li>
+                <li><strong>El Conflicto Colonial de Cuba:</strong> La **Guerra de los Diez Años** (iniciada en octubre de 1868 tras el grito de Yara proclamado por el criollo <em>Carlos Manuel de Céspedes</em>) se convirtió en una sangría de hombres y recursos. Los insurgentes cubanos demandaban la independencia nacional, contando de manera velada con el apoyo geopolítico e industrial de los Estados Unidos.</li>
+            </ul>
+
+            <img src="img/capilla-ardiente-prim.png" alt="Amadeo I ante el cadáver de Prim" class="imagen-educativa">
+            <p class="caption"><em>Imagen 8: Lienzo histórico conmemorativo que plasma la escena de la visita del rey Amadeo ante la tumba de su protector en la basílica de Atocha.</em></p>
+
+            <p>Agotado por el desmoronamiento de la propia coalición gubernamental de progresistas y unionistas y la hostilidad del estamento de oficiales del arma de artillería, <em>Amadeo de Saboya</em> redactó su definitiva renuncia irrevocable al trono de España el 10 de febrero de 1873. En un célebre y amargo manifiesto dirigido al Congreso, el rey italiano lamentó que los peores males del país no procedieran de enemigos exteriores, sino de la propia lucha fraticida y ambiciones personales de sus propios partidos nacionales.</p>
+        </section>
+
+        <!-- SECCIÓN 4 -->
+        <section id="tema4">
+            <h2>4. La Primera República Española (febrero 1873 - enero 1874)</h2>
+            <p>El 11 de febrero de 1873, el Congreso y el Senado, reunidos de manera extraordinaria en asamblea parlamentaria ante el vacío institucional de la monarquía, asumieron la soberanía del Estado y **proclamaron de forma mayoritaria la Primera República**. La decisión fue de carácter pragmático, concebida por una amplia mayoría monárquica del Congreso para ganar tiempo para la causa de los Borbones y frenar temporalmente la revolución social.</p>
+
+            <img src="img/republica-alegoria.png" alt="Alegoría de la República" class="imagen-educativa" style="max-width:320px;">
+            <p class="caption"><em>Imagen 9: Litografía satírica alegórica de la Niña Bonita de la revista satírica de La Flaca, representando el nacimiento de la primera experiencia republicana.</em></p>
+
+            <p>La nueva República nació en un clima de asfixia y aislamiento internacional absoluta (siendo únicamente reconocida por las administraciones de los Estados Unidos y la Confederación Suiza), y deparó una **inmensa inestabilidad interna**, reflejada en la sucesión de **cuatro presidentes en apenas once meses de mandato**:</p>
+
+            <details>
+                <summary>👤 1. Estanislao Figueras (Febrero - Junio de 1873): La debilidad original</summary>
+                <div class="contenido-desplegado">
+                    <p>Fue el primer jefe del poder ejecutivo republicano. Figueras intentó gobernar con el concurso de una débil coalición de progresistas avanzados y demócratas, viéndose forzado a aplicar de forma apresurada la abolición del odiado impuesto indirecto de consumos y decretando el cese temporal del reclutamiento por quintas militares. Sin embargo, al quedarse sin fondos fiscales para el pago de los haberes a los funcionarios, deparando motines campesinos recurrentes, Figueras dimitió y abandonó la presidencia.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>👤 2. Francisco Pi i Margall (Junio - Julio de 1873): El proyecto federal y la insurrección cantonal</summary>
+                <div class="contenido-desplegado">
+                    <p>Las Cortes constituyentes proclamaron la **República Federal** el 7 de junio de 1873 bajo la presidencia del brillante intelectual y escritor catalán <em>Francisco Pi i Margall</em>. Este diseñó el **Proyecto de Constitución Federal de 1873**, que no llegó a entrar formalmente en vigor. El texto establecía un Estado descentralizado integrado por **diecisiete Estados autónomos** (incluyendo el territorio colonial de Cuba), con plena soberanía legislativa, administrativa y financiera, y consagraba la separación estricta de la Iglesia y el Estado.</p>
+                    <p>Sin embargo, la impaciencia de los sectores republicanos federales intransigentes (que consideraban lentas las reformas de las Cortes en Madrid) y la influencia del anarquismo desataron en julio de 1873 el estallido de la **Insurrección Cantonal**. De forma espontánea se proclamaron cantones independientes dotados de gobiernos autónomos, milicias ciudadanas y moneda propia en localidades como Cartagena, Valencia, Alicante, Málaga, Sevilla y Cádiz. El cantón de **Cartagena** se convirtió en el foco de resistencia de mayor envergadura gracias al control de las instalaciones de su arsenal naval y de la flota fondeada en su puerto. Ante el desbordamiento de la insurrección cantonal y su rechazo personal a reprimir por la fuerza armada de los fusiles la rebelión popular, <em>Pi i Margall</em> renunció en julio de 1873.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>👤 3. Nicolás Salmerón (Julio - Septiembre de 1873): El restablecimiento del orden</summary>
+                <div class="contenido-desplegado">
+                    <p>Sustituyó en la presidencia a Pi i Margall con un compromiso firme de restaurar el orden civil alterado. Salmerón confirió plenos poderes a los generales del ejército regular (como los generales <em>Manuel Pavía</em> o <em>Arsenio Martínez Campos</em>) para doblegar militarmente los cantones. El ejército de la República sofocó rápidamente la resistencia de los cantones, exceptuando la plaza fuerte de Cartagena. No obstante, el regreso victorioso del estamento militar convirtió a los jefes de armas en los únicos árbitros sociales de la estabilidad. En septiembre, Salmerón presentó su renuncia irrevocable al sentirse **moralmente incapaz de firmar las condenas a muerte** por fusilamiento dictadas por la jurisdicción militar de los tribunales de guerra contra los cabecillas de la insurrección cantonal.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>👤 4. Emilio Castelar (Septiembre - Diciembre de 1873): El giro autoritario unitario</summary>
+                <div class="contenido-desplegado">
+                    <p>Máximo exponente del republicanismo unitario y conservador, Castelar asumió el poder ejecutivo bajo el firme lema rector de **orden, autoridad y gobierno**. Gobernó con las Cortes clausuradas de forma dictatorial, decretando el **Estado de Sitio**, suspendiendo temporalmente las garantías constitucionales individuales, militarizando la Guardia Civil y reorganizando con dureza los cuerpos armados de artillería del ejército para reprimir los focos activos de desorden social y agrario en las provincias.</p>
+                </div>
+            </details>
+
+            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin: 25px 0;">
+                <div style="flex: 1; min-width: 250px; text-align: center;">
+                    <img src="img/caricatura-flaca-federalismo.png" alt="Federalismo de la Flaca" class="imagen-educativa">
+                    <p><em>Imagen 10: Ilustración satírica de Pi i Margall acorralado e incapaz de conciliar el desatado federalismo regional de la nación.</em></p>
+                </div>
+                <div style="flex: 1; min-width: 250px; text-align: center;">
+                    <img src="img/pavia-cortes.png" alt="Golpe de Estado de Pavía" class="imagen-educativa">
+                    <p><em>Imagen 11: Grabado decimonónico del general Manuel Pavía disolviendo las Cortes constituyentes en el palacio del Congreso en enero de 1874.</em></p>
+                </div>
+            </div>
+
+            <h3>La República Conservadora de Serrano y el Colapso Final</h3>
+            <p>El 2 de enero de 1874 se reabrieron las sesiones de las Cortes. Al reanudarse los debates, la coalición parlamentaria republicana de izquierda infligió una dura derrota por votos de censura contra el primer ministro conservador <em>Emilio Castelar</em>, abriendo de forma inmediata el paso a un gobierno republicano federal de signo radical.</p>
+
+            <p>Para impedir este desenlace, durante la madrugada del 3 de enero de 1874, el capitán general de Castilla la Nueva, <em>Manuel Pavía</em>, encabezó un fulminante **golpe de Estado militar**. Las fuerzas del ejército regular y de la Guardia Civil irrumpieron a tiros de fusilería en el palacio del Congreso, forzando la disolución de las Cortes de la República de manera violenta.</p>
+
+            <p>Tras el golpe de Pavía, se constituyó un régimen autoritario de carácter provisional presidido por el veterano general <em>Francisco Serrano</em>. Esta **dictadura de Serrano** suspendió el vigor de la Constitución de 1869, clausuró el Parlamento nacional de forma indefinida, ilegalizó por real decreto las asociaciones e internacionalistas obreras y persiguió toda disidencia con mano militar.</p>
+
+            <p>La inestabilidad militar y la parálisis hacendística pavimentaron la causa de los partidarios del príncipe Borbón, alentada por el político <em>Antonio Cánovas del Castillo</em>. El 1 de diciembre de 1874, el heredero firmó el histórico **Manifiesto de Sandhurst**, prometiendo la instauración de una monarquía constitucional y católica. Finalmente, el 29 de diciembre de 1874, el general <em>Arsenio Martínez Campos</em> protagonizó un **pronunciamiento militar en Sagunto** proclamando rey de España a <em>Alfonso XII</em>, dando inicio al periodo de la Restauración.</p>
+        </section>
+
+        <!-- SECCIÓN 5 -->
+        <section id="tema5">
+            <h2>5. Los Inicios del Movimiento Obrero Español</h2>
+            <p>La definitiva disolución de los privilegios estamentales del Antiguo Régimen y la expansión del libre mercado liberal consolidaron en España una nueva estructura social de clases: la **sociedad de clases contemporánea**. En ella, la posición de los individuos dejaba de venir fijada por nacimiento y pasaba a depender de la propiedad del capital o del mérito profesional individual.</p>
+
+            <p>Sin embargo, bajo esta igualdad legal teórica, las condiciones de vida y de trabajo de la **inmensa base popular agraria e industrial eran de extrema miseria**:</p>
+
+            <ul>
+                <li><strong>El Proletariado Industrial:</strong> Concentrado mayoritariamente en los núcleos fabriles textiles de Cataluña y la siderurgia del País Vasco. Los obreros contemporáneos (muchos de ellos descendientes de campesinos desposeídos por las desamortizaciones) sufrían **jornadas laborales asfixiantes de 12 a 14 horas diarias**, salarios ínfimos de subsistencia y un **despido libre absoluto** sin protección social alguna frente a accidentes o enfermedad. Este contraste insultante con la opulenta burguesía industrial desató el estallido de la protesta obrera colectiva.</li>
+                <li><strong>El Proletariado Rural o Jornalero:</strong> Principalmente asentado en los latifundios de la mitad sur peninsular. Los jornaleros (privados del derecho de disfrute tradicional de las tierras comunales municipales tras las desamortizaciones de <em>Mendizábal</em> y <em>Madoz</em>) dependían de salarios estacionales bajísimos y de la voluntad de los grandes terratenientes, sufriendo hambrunas y miseria estructural crónicas.</li>
+            </ul>
+
+            <img src="img/embarque-voluntarios.png" alt="Embarque de voluntarios en el puerto de Cádiz" class="imagen-educativa">
+            <p class="caption"><em>Imagen 12: Grabado del puerto de Cádiz mostrando la emotiva despedida de los reclutas que partían hacia el frente colonial.</em></p>
+
+            <p>Durante la primera mitad del siglo XIX, la lucha obrera careció de una conciencia colectiva organizada, estando las asociaciones profesionales prohibidas y catalogadas por el código penal como un **delito directo**. Las protestas se reducían a breves brotes de revueltas luditas (consistentes en la destrucción física de las nuevas máquinas de hilar y tejer de las fábricas al considerarlas causantes del paro de las familias, como el incendio de la fábrica barcelonesa de <em>Bonaplata</em> en 1835). La primera cooperativa de ayuda mutua se fundó en 1840 con la denominación de la <em>Sociedad de Tejedores de Barcelona</em>, concebida para recaudar pequeños subsidios de auxilio.</p>
+
+            <h3>El Impacto de la Revolución y el Internacionalismo de la AIT</h3>
+            <p>La Constitución democrática de 1869 y el clima de libertades de la revolución del Sexenio trajeron por primera vez en España la **completa libertad de asociación de los trabajadores**, propiciando el despertar y la rápida expansión organizada de las fuerzas obreras colectivas. De forma paralela, la **Asociación Internacional de Trabajadores (AIT)** se introdujo de manera oficial en la península:</p>
+
+            <ul>
+                <li><strong>La Corriente Anarquista:</strong> En el invierno de 1868 desembarcó el enviado personal de Bakunin, el activista italiano <em>Giuseppe Fanelli</em>. Este organizó los dos primeros núcleos de la AIT en Madrid y Barcelona, sentando los cimientos de la futura **Federación de Trabajadores de la Región Española**. El anarquismo (defensor de la supresión del Estado y de cualquier autoridad jerárquica) predominó ampliamente entre el proletariado textil de Cataluña y el campesinado jornalero de Andalucía y Valencia.</li>
+                <li><strong>La Corriente Socialista o Marxista:</strong> De signo marxista y orientada por el yerno de Marx, <em>Paul Lafargue</em>, quien se refugió en España tras el colapso de la Comuna de París en 1871. Su facción defendía la **conquista del poder político por los trabajadores** para fundar un Estado de clase obrero contemporáneo. La corriente socialista predominó en los núcleos metalúrgicos y mineros de Madrid, Vizcaya y Asturias, y culminó con la posterior fundación del **Partido Socialista Obrero Español (PSOE)** en mayo de 1879 por <em>Pablo Iglesias</em> en Madrid, y de la **Unión General de Trabajadores (UGT)** en 1888.</li>
+            </ul>
+
+            <div class="caja-colores glosario">
+                <h4>💡 Glosario del Periodo</h4>
+                <p>• <strong>Ludismo:</strong> Movimiento popular y espontáneo de protesta de los obreros que destruía la maquinaria fabril como forma de lucha por el empleo.</p>
+                <p>• <strong>Quintas:</strong> Reclutamiento para el Ejército mediante sorteo que permitía a las familias adineradas librar a sus hijos pagando una elevada redención económica.</p>
+            </div>
+
+            <p>Toda esta efervescencia organizada del movimiento obrero se vio cortada de raíz en enero de 1874 tras la disolución militar del Parlamento a manos del general Pavía. El régimen autoritario de Serrano decretó de inmediato la **ilegalización absoluta de todas las secciones de la AIT**, prohibiendo las publicaciones de los sindicatos y forzando a los líderes de la federación a la clandestinidad.</p>
+        </section>
+    </main>
+
+    <!-- Script de Navegación Dinámica -->
+    <script>
+        const links = document.querySelectorAll('aside nav ul li a');
+        const sections = document.querySelectorAll('main section');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (window.scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            links.forEach(a => {
+                a.classList.remove('active');
+                if (a.getAttribute('href') === `#${current}`) {
+                    a.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
