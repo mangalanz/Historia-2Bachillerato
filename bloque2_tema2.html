@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloque II - Tema 2: El Nacimiento de los Nacionalismos y la Crisis de 1898</title>
+    <style>
+        :root {
+            --primary-intense: #1e40af;
+            --primary-vibrant: #2563eb;
+            --primary-dark: #0f172a;
+            --primary: #1e293b;
+            --bg-main: #f8fafc;
+            --card-bg: #ffffff;
+            --text-dark: #1e293b;
+            --text-muted: #64748b;
+            
+            --header-bg: #f0fdf4;
+            --header-border: #10b981;
+            --header-text: #065f46;
+
+            --border-glosario: #0ea5e9;
+            --bg-glosario: #f0f9ff;
+            --border-investigacion: #f59e0b;
+            --bg-investigacion: #fffbeb;
+            --border-critica: #ef4444;
+            --bg-critica: #fef2f2;
+            --border-factores: #10b981;
+            --bg-factores: #ecfdf5;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-dark);
+            min-height: 100vh;
+        }
+
+        aside {
+            width: 300px;
+            background-color: var(--primary-dark);
+            color: white;
+            padding: 25px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            overflow-y: auto;
+            border-right: 1px solid #334155;
+            z-index: 100;
+        }
+
+        aside h1 {
+            font-size: 1.25rem;
+            margin-bottom: 25px;
+            color: #f8fafc;
+            border-bottom: 3px solid var(--primary-vibrant);
+            padding-bottom: 12px;
+            text-align: center;
+        }
+
+        aside nav ul {
+            list-style: none;
+        }
+
+        aside nav ul li {
+            margin-bottom: 10px;
+        }
+
+        aside nav ul li a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 0.95rem;
+            display: block;
+            padding: 10px 14px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            font-weight: 500;
+        }
+
+        aside nav ul li .btn-volver {
+            background-color: #334155;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+            border: 1px solid #475569;
+            margin-bottom: 15px;
+            display: block;
+            padding: 10px 14px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            text-decoration: none;
+        }
+
+        aside nav ul li .btn-volver:hover {
+            background-color: var(--primary-vibrant);
+            border-color: var(--primary-vibrant);
+        }
+
+        aside nav ul li a:hover, aside nav ul li a.active {
+            background-color: var(--primary-vibrant);
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(37, 99, 235, 0.15);
+        }
+
+        main {
+            margin-left: 300px;
+            padding: 40px;
+            max-width: 1100px;
+        }
+
+        header {
+            margin-bottom: 35px;
+            background: linear-gradient(135deg, var(--header-bg), #e6fcf0);
+            border-left: 6px solid var(--header-border);
+            color: var(--header-text);
+            padding: 25px 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(16, 185, 129, 0.08);
+        }
+
+        header h2 {
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+            color: var(--header-text);
+            font-weight: 800;
+        }
+
+        header p {
+            color: #15803d;
+            font-size: 1.05rem;
+            font-weight: 500;
+        }
+
+        section {
+            background: var(--card-bg);
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            margin-bottom: 35px;
+            border-left: 6px solid var(--primary-vibrant);
+        }
+
+        section h2 {
+            color: var(--primary-dark);
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #f1f5f9;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: var(--primary-intense);
+            margin: 25px 0 12px 0;
+            font-size: 1.25rem;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+            color: #334155;
+            text-align: justify;
+        }
+
+        /* CONTENEDOR DE IMAGEN (ANTI-SOLAPAMIENTO) */
+        .tarjeta-imagen {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 20px 0 30px 0;
+            text-align: center;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            display: block;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tarjeta-imagen img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            margin-bottom: 12px;
+            display: inline-block;
+        }
+
+        .tarjeta-imagen .caption {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            font-style: italic;
+            margin: 0;
+            line-height: 1.4;
+            display: block;
+        }
+
+        /* FILAS DE IMÁGENES COMPATIBLES (ADAPTATIVAS) */
+        .fila-imagenes {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0 30px 0;
+        }
+
+        .fila-imagenes .tarjeta-imagen {
+            flex: 1;
+            min-width: 250px;
+            margin: 0;
+        }
+
+        .caja-colores {
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-size: 1rem;
+        }
+
+        .caja-colores h4 {
+            margin-bottom: 10px;
+            font-size: 1.15rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .factores {
+            background-color: var(--bg-factores);
+            border-left: 5px solid var(--border-factores);
+            color: #047857;
+        }
+
+        .investigacion {
+            background-color: var(--bg-investigacion);
+            border-left: 5px solid var(--border-investigacion);
+            color: #b45309;
+        }
+
+        details {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 14px;
+        }
+
+        details[open] {
+            background-color: white;
+            border-color: var(--primary-vibrant);
+        }
+
+        summary {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--primary-dark);
+            cursor: pointer;
+            outline: none;
+            user-select: none;
+        }
+
+        details .contenido-desplegado {
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px dashed #e2e8f0;
+        }
+
+        ul {
+            padding-left: 25px;
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #334155;
+        }
+
+        /* POPUPS INTERACTIVOS */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(4px);
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal.show {
+            display: flex;
+        }
+
+        .modal-content {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            max-width: 650px;
+            width: 90%;
+            max-height: 85vh;
+            overflow-y: auto;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            border-left: 6px solid var(--border-investigacion);
+            position: relative;
+            animation: modalFadeIn 0.3s ease-out;
+        }
+
+        @keyframes modalFadeIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-muted);
+        }
+
+        .modal-close:hover {
+            color: var(--border-critica);
+        }
+
+        .btn-interactivo {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            margin: 8px 0;
+            border: none;
+        }
+
+        .btn-anecdota {
+            background-color: var(--bg-investigacion);
+            border: 1px solid var(--border-investigacion);
+            color: #b45309;
+        }
+
+        .btn-anecdota:hover {
+            background-color: var(--border-investigacion);
+            color: white;
+        }
+
+        .btn-texto {
+            background-color: var(--bg-factores);
+            border: 1px solid var(--border-factores);
+            color: #047857;
+        }
+
+        .btn-texto:hover {
+            background-color: var(--border-factores);
+            color: white;
+        }
+
+        .btn-video {
+            background-color: var(--bg-glosario);
+            border: 1px solid var(--border-glosario);
+            color: #0369a1;
+        }
+
+        .btn-video:hover {
+            background-color: var(--border-glosario);
+            color: white;
+        }
+
+        .texto-modal {
+            font-size: 0.95rem;
+            color: #334155;
+            background-color: #f8fafc;
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px solid #e2e8f0;
+            white-space: pre-wrap;
+            margin-top: 10px;
+            text-align: justify;
+        }
+
+        @media (max-width: 900px) {
+            aside {
+                width: 100%;
+                height: auto;
+                position: relative;
+                border-right: none;
+                border-bottom: 1px solid #334155;
+            }
+            main {
+                margin-left: 0;
+                width: 100%;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navegación Lateral -->
+    <aside>
+        <h1>⚖️ Bloque II: La Restauración</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="btn-volver">🏠 Volver a Portada</a></li>
+                
+                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 10px 14px 5px 14px; font-weight: bold; border-bottom: 1px solid #334155; margin-bottom: 8px;">📍 Temas del Bloque II</li>
+                <li><a href="bloque2_tema1.html">1. El Sistema Canovista</a></li>
+                <li><a href="#tema2" class="active">2. Los Nacionalismos y el 98</a></li>
+                <li><a href="bloque2_tema3.html">3. Industrialización y Obrero</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Contenido Principal -->
+    <main>
+        <header>
+            <h2>Tema 2: El Nacimiento de los Nacionalismos y la Crisis de 1898</h2>
+            <p>La articulación de las identidades políticas catalana, vasca y gallega frente al centralismo del sistema, y el trauma moral de la pérdida de Ultramar.</p>
+        </header>
+
+        <div class="tarjeta-imagen" style="margin-top: 0;">
+            <img src="img/eje-cronologico-restauracion.png" alt="Eje Cronológico de los Nacionalismos y la Crisis de Ultramar">
+            <span class="caption">Eje cronológico que enmarca la evolución política de los regionalismos y el conflicto de 1898</span>
+        </div>
+
+        <!-- SECCIÓN 1 -->
+        <section id="origen">
+            <h2>1. El Surgimiento de los Nacionalismos Periféricos</h2>
+            <p>A finales del siglo XIX, la pretensión del régimen de la **Restauración** de imponer un **modelo de Estado centralizado y una cultura uniforme** provocó una reacción defensiva en varias regiones de España. Este fenómeno, liderado de forma destacada por la burguesía de las zonas más industrializadas del país, cuestionó la existencia de una única nación española y reivindicó el derecho al **autogobierno** basándose en realidades diferenciales como la lengua, la cultura, las costumbres y los derechos históricos o fueros.</p>
+
+            <!-- VÍDEO EXPLICATIVO DEL SURGIMIENTO DE LOS NACIONALISMOS -->
+            <div style="margin: 15px 0; text-align: center;">
+                <a href="https://www.youtube.com/watch?v=QtpLfnlA2qM" target="_blank" class="btn-interactivo btn-video">🎬 Vídeo 1: Ver el surgimiento de los nacionalismos catalán y vasco ➡️</a>
+            </div>
+
+            <div class="caja-colores factores">
+                <h4>🧠 Causas de la Aparición de las Identidades Regionales</h4>
+                <ul>
+                    <li><strong>El centralismo político:</strong> La estructura ministerial e institucional diseñada por *Antonio Cánovas del Castillo* ignoraba las particularidades regionales de la periferia.</li>
+                    <li><strong>El desarrollo industrial desigual:</strong> Cataluña y el País Vasco experimentaron un despegue económico e industrial muy superior al del resto de la Península, consolidando burguesías dinámicas que no se sentían representadas por las élites agrarias de Madrid.</li>
+                    <li><strong>El romanticismo cultural:</strong> La corriente europea del romanticismo impulsó la recuperación lingüística e histórica de los territorios con lenguas vernáculas propias.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2 -->
+        <section id="catalanismo">
+            <h2>2. El Nacionalismo Catalán</h2>
+            <p>La defensa del catalanismo político se construyó de manera progresiva a lo largo de varias etapas fundamentales, partiendo de un origen puramente literario hasta consolidarse como la **fuerza política hegemónica** en Cataluña a principios del siglo XX.</p>
+
+            <div class="fila-imagenes">
+                <div class="tarjeta-imagen">
+                    <img src="img/senyera-cataluna.png" alt="La Senyera, bandera de Cataluña" style="max-height: 180px;">
+                    <span class="caption">La bandera tradicional catalana (La Senyera)</span>
+                </div>
+                <div class="tarjeta-imagen">
+                    <img src="img/prat-de-la-riba.png" alt="Enric Prat de la Riba" style="max-height: 180px;">
+                    <span class="caption">Enric Prat de la Riba, uno de los teóricos fundamentales del catalanismo</span>
+                </div>
+            </div>
+
+            <h3>La Evolución del Catalanismo</h3>
+            <ul>
+                <li><strong>La Renaixença (década de 1830):</strong> Un movimiento intelectual, literario y apolítico enfocado exclusivamente en la **recuperación y dignificación de la lengua y cultura catalanas** tras siglos de postergación desde los *Decretos de Nueva Planta*.</li>
+                <li><strong>El catalanismo político de Valentí Almirall:</strong> Republicano federalista que fundó en 1882 el *Centre Català* para aglutinar a los partidarios de la autonomía regional. En 1885 redactó y presentó a *Alfonso XII* el célebre *Memorial de Agravios*, denunciando la opresión económica de Cataluña y reclamando medidas proteccionistas para su industria.</li>
+                <li><strong>La Unió Catalanista y las Bases de Manresa (1892):</strong> Organización de corte conservador y católico que aprobó el documento de las *Bases de Manresa*, un proyecto confederal que reclamaba el **autogobierno pleno**, unas Cortes propias y la cooficialidad del catalán.</li>
+                <li><strong>La Lliga Regionalista (1901):</strong> Partido político fundado por *Enric Prat de la Riba* y *Francesc Cambó*. Representaba a la burguesía industrial y combinaba la reclamación de la autonomía política catalana con la **defensa férrea de los intereses arancelarios** de los industriales ante el gobierno de Madrid.</li>
+            </ul>
+
+            <!-- BOTÓN INTERACTIVO: MEMORIAL DE AGRAVIOS -->
+            <div style="margin: 15px 0;">
+                <button class="btn-interactivo btn-texto" onclick="openPopup('pop-agravios')">📜 Documento: El Memorial de Agravios (1885)</button>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 3 -->
+        <section id="vasquismo">
+            <h2>3. El Nacionalismo Vasco</h2>
+            <p>A diferencia del modelo catalán, el nacionalismo vasco nació en la década de 1890 como una **reacción defensiva y profundamente conservadora** frente a dos acontecimientos que alteraron de forma drástica la fisionomía de las provincias vascas.</p>
+
+            <div class="fila-imagenes">
+                <div class="tarjeta-imagen">
+                    <img src="img/ikurrina.png" alt="La Ikurriña, bandera del País Vasco" style="max-height: 180px;">
+                    <span class="caption">La Ikurriña, bandera oficial vasca diseñada por los hermanos Arana</span>
+                </div>
+                <div class="tarjeta-imagen">
+                    <img src="img/caricatura-sabino-arana.png" alt="Caricatura de Sabino Arana" style="max-height: 180px;">
+                    <span class="caption">Ilustración que representa el rechazo ideológico de Sabino Arana a la inmigración obrera</span>
+                </div>
+            </div>
+
+            <h3>Los Factores Desencadenantes</h3>
+            <ul>
+                <li><strong>La supresión de los fueros (1876):</strong> Como castigo por la derrota del bando carlista en la *Tercera Guerra Carlista*, el gobierno de Cánovas abolió el régimen foral tradicional, obligando a las provincias vascas a pagar impuestos y aportar soldados al Estado, aunque se concedió cierta autonomía fiscal mediante los **conciertos económicos**.</li>
+                <li><strong>La rápida industrialización y la inmigración:</strong> La explotación de las minas de hierro y el auge siderúrgico en Vizcaya atrajeron a miles de trabajadores de otras regiones de España (denominados despectivamente como *maketos* por los nacionalistas), lo que fue percibido por los sectores tradicionales como una **amenaza de disolución de la cultura y valores tradicionales vascos**.</li>
+            </ul>
+
+            <div class="fila-imagenes">
+                <div class="tarjeta-imagen">
+                    <img src="img/escudo-provincias-vascas.png" alt="Escudo tradicional de las provincias vascas" style="max-height: 180px;">
+                    <span class="caption">Escudo histórico con las armas tradicionales de los territorios forales vascos</span>
+                </div>
+                <div class="tarjeta-imagen">
+                    <img src="img/laurak-bat.png" alt="Escudo Laurak Bat" style="max-height: 180px;">
+                    <span class="caption">Escudo Laurak Bat, que simboliza la unión federal de los territorios de Euskadi</span>
+                </div>
+            </div>
+
+            <h3>La Ideología de Sabino Arana</h3>
+            <p>El padre del nacionalismo vasco fue *Sabino Arana Goiri*, quien fundó en 1895 el **Partido Nacionalista Vasco (PNV)** bajo el lema de *«Dios y Ley Vieja»* (*Jaungoikoa eta Lege Zarra*). Su doctrina original se articulaba en torno a los siguientes principios:</p>
+            <ul>
+                <li><strong>La independencia de Euskadi:</strong> Planteaba la secesión y la confederación de los siete territorios históricos vascos de ambos lados de los Pirineos.</li>
+                <li><strong>La defensa de la raza vasca:</strong> Afirmaba la pureza racial del pueblo vasco y rechazaba los matrimonios mixtos y la influencia de los inmigrantes españoles, a los que acusaba de traer el laicismo y el socialismo.</li>
+                <li><strong>El integrismo católico:</strong> Propugnaba la subordinación absoluta de la política a la doctrina y moral de la Iglesia católica.</li>
+                <li><strong>Idealización del mundo rural:</strong> Mitificaba el caserío tradicional y las costumbres agrarias frente a la degradación urbana e industrial.</li>
+            </ul>
+
+            <!-- BOTÓN INTERACTIVO: EL PENSAMIENTO DE SABINO ARANA -->
+            <div style="margin: 15px 0;">
+                <button class="btn-interactivo btn-anecdota" onclick="openPopup('pop-arana')">🕵️‍♂️ Analiza: ¿Qué somos? El polémico texto de Sabino Arana (1895)</button>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 4 -->
+        <section id="gallego">
+            <h2>4. El Regionalismo Gallego</h2>
+            <p>En Galicia, el movimiento identitario fue **más tardío y de carácter eminentemente cultural**, debido a la ausencia de una burguesía industrial significativa y a la persistencia de una estructura social fundamentalmente rural y campesina.</p>
+
+            <div class="fila-imagenes">
+                <div class="tarjeta-imagen">
+                    <img src="img/rosalia-de-castro.png" alt="Rosalía de Castro" style="max-height: 180px;">
+                    <span class="caption">Rosalía de Castro, poetisa y símbolo de la identidad literaria gallega</span>
+                </div>
+                <div class="tarjeta-imagen">
+                    <img src="img/bandera-galicia.png" alt="Bandera de Galicia" style="max-height: 180px;">
+                    <span class="caption">La bandera tradicional con la banda azul de Galicia</span>
+                </div>
+            </div>
+
+            <p>El punto de partida fue el **Rexurdimento (mediados del siglo XIX)**, un movimiento de revalorización cultural y literaria de la lengua gallega, cuya máxima figura fue la poetisa *Rosalía de Castro*. Con el tiempo, intelectuales como *Alfredo Brañas* comenzaron a denunciar que el **atraso económico y la emigración masiva de los campesinos** gallegos eran consecuencia de la postergación política y del centralismo del Estado.</p>
+        </section>
+
+        <!-- SECCIÓN 5 -->
+        <section id="crisis98">
+            <h2>5. El Desastre del 98 y el Clímax de la Crisis</h2>
+            <p>La pérdida de las últimas posesiones coloniales de España en América y Asia (*Cuba*, *Puerto Rico* y *Filipinas*) en 1898, conocida históricamente como el **Desastre del 98**, sumió al régimen de la Restauración en una profunda crisis moral, política e ideológica, que actuó como el **detonante definitivo de los nacionalismos periféricos**.</p>
+
+            <div class="fila-imagenes">
+                <div class="tarjeta-imagen">
+                    <img src="img/mapa-cuba.png" alt="Mapa de Cuba" style="max-height: 180px;">
+                    <span class="caption">Mapa de la isla de Cuba, foco del conflicto colonial</span>
+                </div>
+                <div class="tarjeta-imagen">
+                    <img src="img/soldados-cuba.png" alt="Soldados españoles en Cuba" style="max-height: 180px;">
+                    <span class="caption">Soldados del contingente español destacados en la manigua cubana</span>
+                </div>
+            </div>
+
+            <p>A pesar del acuerdo pacífico de la *Paz de Zanjón* en 1878, la administración colonial española **incumplió sistemáticamente las reformas políticas prometidas** (como la autonomía administrativa o la representación libre en las Cortes). Esto, unido al rígido arancel proteccionista que obligaba a Cuba a comprar productos españoles caros en lugar de comerciar libremente con Estados Unidos, propició el estallido en 1895 del grito de independencia liderado por *José Martí*.</p>
+
+            <div class="fila-imagenes">
+                <div class="tarjeta-imagen">
+                    <img src="img/soldados-mambises.png" alt="Soldados mambises cubanos" style="max-height: 180px;">
+                    <span class="caption">Soldados mambises de la guerrilla cubana equipados con machetes</span>
+                </div>
+                <div class="tarjeta-imagen">
+                    <img src="img/uss-maine.png" alt="Acorazado USS Maine" style="max-height: 180px;">
+                    <span class="caption">El acorazado estadounidense USS Maine, cuya explosión sirvió de pretexto para la guerra</span>
+                </div>
+            </div>
+
+            <p>La intervención directa de la potencia emergente de Estados Unidos, tras la sospechosa explosión del acorazado *USS Maine* en La Habana en febrero de 1898, liquidó la resistencia española en una guerra fulminante que se decidió en el mar con la destrucción de la armada en Santiago de Cuba y Cavite (Filipinas). Por el *Tratado de París* (diciembre de 1898), España se vio obligada a ceder *Puerto Rico*, *Filipinas* y *Guam* a Estados Unidos, reconociendo la independencia de *Cuba*.</p>
+
+            <div class="fila-imagenes">
+                <div class="tarjeta-imagen">
+                    <img src="img/ultimos-filipinas-baler.png" alt="Defensa de Baler" style="max-height: 180px;">
+                    <span class="caption">Ilustración de la numantina resistencia de los soldados españoles en la iglesia de Baler</span>
+                </div>
+                <div class="tarjeta-imagen">
+                    <img src="img/supervivientes-baler.png" alt="Supervivientes de Baler" style="max-height: 180px;">
+                    <span class="caption">Fotografía histórica de los supervivientes del sitio de Baler a su regreso a Barcelona</span>
+                </div>
+            </div>
+
+            <div class="caja-colores factores">
+                <h4>📉 El Impacto Nacional del "Desastre del 98"</h4>
+                <ul>
+                    <li><strong>La crisis de la conciencia moral:</strong> Surgió un hondo pesimismo intelectual sobre el futuro de España, encauzado por la **Generación del 98** (*Miguel de Unamuno*, *Pío Baroja*, *Antonio Machado*) y el **Regeneracionismo** de *Joaquín Costa* (*«escuela, despensa y siete llaves al sepulcro del Cid»*).</li>
+                    <li><strong>La devaluación del prestigio del Estado:</strong> Las burguesías periféricas catalana y vasca comprendieron que el sistema de la Restauración era ineficaz y corrupto, decidiendo desvincular sus intereses económicos y políticos del gobierno de Madrid y apostar decididamente por el **nacionalismo de autogobierno**.</li>
+                    <li><strong>La repatriación de capitales:</strong> Como paradoja económica, la pérdida de Ultramar obligó a los indianos a regresar con sus fortunas, lo que supuso una **inyección masiva de liquidez** que financió la banca moderna y la industria nacional en los inicios del siglo XX.</li>
+                </ul>
+            </div>
+
+            <!-- BOTÓN INTERACTIVO: EL TRATADO DE PARÍS -->
+            <div style="margin: 15px 0; text-align: center;">
+                <button class="btn-interactivo btn-texto" onclick="openPopup('pop-tratado')">📜 Documento: El Tratado de Paz de París (10 de diciembre de 1898)</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- VENTANAS EMERGENTES (POPUPS INTERACTIVOS / MODALS) -->
+
+    <!-- POPUP 1: MEMORIAL DE AGRAVIOS -->
+    <div id="pop-agravios" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closePopup('pop-agravios')">&times;</span>
+            <h3 style="color: #047857; margin-top: 0;">📜 El Memorial de Agravios (1885)</h3>
+            <p>Extracto literal de la reclamación de las clases industriales catalanas presentada a Alfonso XII:</p>
+            <div class="texto-modal">"Señor: Se nos priva del derecho de usar nuestra lengua oficial fuera de los ámbitos de la conversación familiar; se nos tilda de malos españoles por amar nuestra tierra y nuestra historia; y cuando pretendemos defender nuestro trabajo frente a las mercancías extranjeras que arruinan nuestras fábricas, se nos trata como a mendigos que piden limosna.
+
+No queremos, Señor, la separación del resto de España. Queremos que el Estado respete nuestra lengua, nuestras costumbres y nuestras leyes, y que proteja nuestro esfuerzo industrial, pues una Cataluña fuerte y próspera será siempre el mejor sostén de una España verdaderamente libre e integradora..."</div>
+        </div>
+    </div>
+
+    <!-- POPUP 2: SABINO ARANA -->
+    <div id="pop-arana" class="modal" style="border-left-color: var(--border-critica);">
+        <div class="modal-content" style="border-left-color: var(--border-critica);">
+            <span class="modal-close" onclick="closePopup('pop-arana')">&times;</span>
+            <h3 style="color: var(--border-critica); margin-top: 0;">🕵️‍♂️ Sabino Arana: ¿Qué somos? (1895)</h3>
+            <p>Análisis crítico de los fragmentos doctrinarios del fundador del PNV:</p>
+            <div class="texto-modal">"La fisonomía del bizkaino es inteligente y noble; la del español, inexpresiva y adusta. El bizkaino es de andar apuesto y varonil; el español, o no sabe andar o si es apuesto es de tipo femenil. El bizkaino es inteligente y hábil para toda clase de trabajos; el español es corto de inteligencia y carece de maña para los trabajos más sencillos.
+
+El bizkaino es laborioso (ved labradas sus montañas hasta la cumbre); el español, perezoso y vago (contemplad sus inmensas llanuras desprovistas en absoluto de vegetación). El bizkaino no vale para servir, ha nacido para ser señor ('etxejaun'); el español no ha nacido más que para ser vasallo y siervo.
+
+El bizkaino es digno, a veces con exceso, y si cae en la indigencia, capaz de dejarse morir de hambre antes de pedir limosna... Interrogad al bizkaino qué es lo que quiere y os dirá 'trabajo el día laborable e iglesia el día festivo'; haced lo mismo con los españoles y os contestarán 'pan y toros' un día y otro también.
+
+Decid, pues, ahora si el bizkaino es español por su tipo, carácter y costumbres."</div>
+        </div>
+    </div>
+
+    <!-- POPUP 3: TRATADO DE PARÍS -->
+    <div id="pop-tratado" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closePopup('pop-tratado')">&times;</span>
+            <h3 style="color: #047857; margin-top: 0;">📜 El Tratado de Paz de París (10 de diciembre de 1898)</h3>
+            <p>Las cláusulas del final oficial del Imperio español firmadas en París:</p>
+            <div class="texto-modal">"Art. 1º. España renuncia a todo derecho de soberanía y propiedad sobre Cuba. En atención a que dicha isla, cuando sea evacuada por España, va a ser ocupada por los Estados Unidos, estos asumen y cumplirán las obligaciones que el derecho internacional impone sobre ocupación militar.
+
+Art. 2º. España cede a los Estados Unidos la isla de Puerto Rico y las demás que ahora están bajo su soberanía en las Indias Occidentales, y la isla de Guam en el archipiélago de las Marianas.
+
+Art. 3º. España cede a los Estados Unidos el archipiélago conocido por las Islas Filipinas... Los Estados Unidos pagarán a España la suma de veinte millones de dólares dentro de los tres meses siguientes al canje de ratificaciones del presente Tratado."</div>
+        </div>
+    </div>
+
+    <!-- Script de Navegación -->
+    <script>
+        const links = document.querySelectorAll('aside nav ul li a');
+        const sections = document.querySelectorAll('main section');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (window.scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            links.forEach(a => {
+                a.classList.remove('active');
+                if (a.getAttribute('href') === `#${current}`) {
+                    a.classList.add('active');
+                }
+            });
+        });
+
+        function openPopup(id) {
+            document.getElementById(id).classList.add('show');
+        }
+
+        function closePopup(id) {
+            document.getElementById(id).classList.remove('show');
+        }
+
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.classList.remove('show');
+            }
+        }
+    </script>
+</body>
+</html>
