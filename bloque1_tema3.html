@@ -32,7 +32,7 @@
             --bg-factores: #ecfdf5;
         }
 
-        * {
+        <em> {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
@@ -46,7 +46,7 @@
             min-height: 100vh;
         }
 
-        /* Barra de navegación lateral fija a la izquierda */
+        /</em> Barra de navegación lateral fija a la izquierda <em>/
         aside {
             width: 300px;
             background-color: var(--primary-dark);
@@ -89,7 +89,7 @@
             font-weight: 500;
         }
 
-        /* Botón de volver a la portada */
+        /</em> Botón de volver a la portada <em>/
         aside nav ul li .btn-volver {
             background-color: #334155;
             color: #ffffff;
@@ -109,7 +109,7 @@
             border-color: var(--primary-vibrant);
         }
 
-        /* Enlaces activos e interactivos en azul vibrante */
+        /</em> Enlaces activos e interactivos en azul vibrante <em>/
         aside nav ul li a:hover, aside nav ul li a.active {
             background-color: var(--primary-vibrant);
             color: white;
@@ -117,14 +117,14 @@
             box-shadow: 0 4px 10px rgba(37, 99, 235, 0.15);
         }
 
-        /* Contenido de la Web */
+        /</em> Contenido de la Web <em>/
         main {
             margin-left: 300px;
             padding: 40px;
             max-width: 1100px;
         }
 
-        /* Encabezado Alegre con tonos suaves en verde */
+        /</em> Encabezado Alegre con tonos suaves en verde <em>/
         header {
             margin-bottom: 35px;
             background: linear-gradient(135deg, var(--header-bg), #e6fcf0);
@@ -148,7 +148,7 @@
             font-weight: 500;
         }
 
-        /* Cabecera ilustrada horizontal */
+        /</em> Cabecera ilustrada horizontal <em>/
         .cabecera-ilustrada {
             width: 100%;
             height: auto;
@@ -196,7 +196,7 @@
             text-align: justify;
         }
 
-        /* Cajas de colores */
+        /</em> Cajas de colores <em>/
         .caja-colores {
             padding: 20px;
             border-radius: 8px;
@@ -236,16 +236,16 @@
             color: #047857;
         }
 
-        /* --- ESTILADO DE TARJETA DE IMAGEN INTEGRADA (ANTI-SOLAPAMIENTO) --- */
+        /</em> --- ESTILADO DE TARJETA DE IMAGEN INTEGRADA (ANTI-SOLAPAMIENTO) --- <em>/
         .tarjeta-imagen {
             background-color: #f8fafc;
             border: 1px solid #e2e8f0;
             border-radius: 8px;
             padding: 16px;
-            margin: 20px 0 30px 0; /* Margen inferior amplio para asegurar el flujo de bloque */
+            margin: 20px 0 30px 0; /</em> Margen inferior amplio para asegurar el flujo de bloque <em>/
             text-align: center;
             box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-            display: block; /* Evita que flote u oculte elementos de texto */
+            display: block; /</em> Evita que flote u oculte elementos de texto <em>/
             position: relative;
             overflow: hidden;
         }
@@ -255,7 +255,7 @@
             height: auto;
             border-radius: 6px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-            margin-bottom: 12px; /* Espacio fijo entre la imagen y el texto inferior */
+            margin-bottom: 12px; /</em> Espacio fijo entre la imagen y el texto inferior <em>/
             display: inline-block;
         }
 
@@ -268,7 +268,29 @@
             display: block;
         }
 
-        /* Desplegables de Lectura Estructurada */
+        /</em> Fila de imágenes homogénea (mismo tamaño para todas) <em>/
+        .fila-imagenes {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 25px 0;
+        }
+
+        .fila-imagenes .tarjeta-imagen {
+            flex: 1 1 280px;
+            max-width: 340px;
+            margin: 0;
+        }
+
+        .fila-imagenes .tarjeta-imagen img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+
+        /</em> Desplegables de Lectura Estructurada <em>/
         details {
             background-color: #f8fafc;
             border: 1px solid #e2e8f0;
@@ -309,23 +331,23 @@
             color: #334155;
         }
 
-        /* --- ESTILOS PARA POPUPS INTERACTIVOS (MODALS) --- */
+        /</em> --- ESTILOS PARA POPUPS INTERACTIVOS (MODALS) --- <em>/
         .modal {
-            display: none; /* Oculto por defecto */
+            display: none; /</em> Oculto por defecto <em>/
             position: fixed;
-            z-index: 2000; /* Por encima de la barra lateral */
+            z-index: 2000; /</em> Por encima de la barra lateral <em>/
             left: 0;
             top: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(15, 23, 42, 0.6); /* Fondo oscuro */
-            backdrop-filter: blur(4px); /* Desenfoque estético */
+            background-color: rgba(15, 23, 42, 0.6); /</em> Fondo oscuro <em>/
+            backdrop-filter: blur(4px); /</em> Desenfoque estético <em>/
             align-items: center;
             justify-content: center;
         }
 
         .modal.show {
-            display: flex; /* Se muestra mediante JS */
+            display: flex; /</em> Se muestra mediante JS <em>/
         }
 
         .modal-content {
@@ -361,7 +383,7 @@
             color: var(--border-critica);
         }
 
-        /* Botones de acción didáctica */
+        /</em> Botones de acción didáctica <em>/
         .btn-interactivo {
             display: inline-flex;
             align-items: center;
@@ -424,7 +446,7 @@
             text-align: justify;
         }
 
-        /* Responsive */
+        /</em> Responsive */
         @media (max-width: 900px) {
             aside {
                 width: 100%;
@@ -491,8 +513,8 @@
             <h3>A. Las Causas del Estallido Revolucionario</h3>
             <p>El colapso del sistema no fue un hecho aislado, sino que coincidió con una confluencia de factores críticos acumulados en los años previos:</p>
             <ul>
-                <li><strong>La profunda crisis económica (1866):</strong> Se manifestó de forma trágica a nivel financiero (por la escasa rentabilidad de la burbuja especulativa del ferrocarril), industrial (con el encarecimiento del algodón por la Guerra de Secesión norteamericana que paralizó el textil catalán) y de subsistencias (por malas cosechas de trigo que causaron un encarecimiento del pan del 67% y hambruna).</</li>
-                <li><strong>La parálisis del modelo político moderado:</strong> Las prácticas corruptas y dictatoriales de los últimos ministros de Isabel II (Narváez y González Bravo) dejaron fuera del juego a los progresistas y demócratas, quienes firmaron en el verano de 1866 el **Pacto de Ostende** en Bélgica para derrocar el trono borbónico.</li>
+                <li><strong>La profunda crisis económica (1866):</strong> Se manifestó de forma trágica a nivel financiero (por la escasa rentabilidad de la burbuja especulativa del ferrocarril), industrial (con el encarecimiento del algodón por la Guerra de Secesión norteamericana que paralizó el textil catalán) y de subsistencias (por malas cosechas de trigo que causaron un encarecimiento del pan del 67% y hambruna).</li>
+                <li><strong>La parálisis del modelo político moderado:</strong> Las prácticas corruptas y dictatoriales de los últimos ministros de Isabel II (Narváez y González Bravo) dejaron fuera del juego a los progresistas y demócratas, quienes firmaron en el verano de 1866 el <em>Pacto de Ostende</em> en Bélgica para derrocar el trono borbónico.</li>
                 <li><strong>La impopularidad de la reina:</strong> La influencia de la camarilla palaciega (sor Patrocinio, la «monja de las llagas», y el confesor padre Claret) terminó por deslegitimar por completo la institución real.</li>
             </ul>
 
@@ -503,7 +525,7 @@
 
             <!-- VÍDEO COMPLEMENTARIO: LA REVOLUCIÓN DE 1868 -->
             <div style="margin: 15px 0; text-align: center;">
-                <a href="https://www.youtube.com/watch?v=sl_HIOIwSYA" target="_blank" class="btn-interactivo btn-video">🎬 Vídeo 1: Ver explicación animada sobre la Revolución de septiembre de 1868 (ArteHistoria) ➡️</a>
+                <a href="https://www.youtube.com/watch?v=lM0ZWqbvPH0" target="_blank" class="btn-interactivo btn-video">🎬 Vídeo 1: Ver explicación animada sobre la Revolución de septiembre de 1868 (ArteHistoria) ➡️</a>
             </div>
 
             <h3>B. Desarrollo y Triunfo del Pronunciamiento</h3>
@@ -536,8 +558,8 @@
             <p>Para sanear el caótico estado de la Hacienda pública y contentar los intereses comerciales de la burguesía que había apoyado el alzamiento, el gobierno impulsó una serie de innovadoras medidas liberales:</p>
             <ul>
                 <li>Se adoptó por decreto la <strong>Peseta (octubre de 1868)</strong> como la unidad monetaria nacional única, suprimiendo los antiguos reales.</li>
-                <li>Se redactó el **Arancel Figuerola (1869)** para rebajar los aranceles y abrir el mercado español al librecambismo comercial internacional.</li>
-                <li>Se promulgó la **Ley de Minas de 1871** para subastar yacimientos a empresas extranjeras y conseguir ingresos inmediatos con los que saldar la deuda.</li>
+                <li>Se redactó el <em>Arancel Figuerola (1869)</em> para rebajar los aranceles y abrir el mercado español al librecambismo comercial internacional.</li>
+                <li>Se promulgó la <em>Ley de Minas de 1871</em> para subastar yacimientos a empresas extranjeras y conseguir ingresos inmediatos con los que saldar la deuda.</li>
             </ul>
 
             <div class="tarjeta-imagen">
@@ -572,35 +594,35 @@
         <!-- SECCIÓN 3 -->
         <section id="tema3">
             <h2>3. La Monarquía Democrática de Amadeo I de Saboya (1871-1873)</h2>
-            <p>Como la Constitución establecía un régimen de monarquía democrática pero los Borbones estaban excluidos por ley, el general Serrano asumió una Regencia nacional mientras el general **Juan Prim** recorría las cancillerías europeas para buscar un rey con credenciales liberales.</p>
+            <p>Como la Constitución establecía un régimen de monarquía democrática pero los Borbones estaban excluidos por ley, el general Serrano asumió una Regencia nacional mientras el general <em>Juan Prim</em> recorría las cancillerías europeas para buscar un rey con credenciales liberales.</p>
 
             <div class="tarjeta-imagen">
                 <img src="img/se-colocan-reyes.png" alt="Caricatura Se colocan reyes de La Flaca">
                 <span class="caption">Imagen 6: Caricatura satírica de la revista «La Flaca» ironizando sobre la búsqueda de un rey en Europa</span>
             </div>
 
-            <p>El elegido de Prim fue el joven príncipe italiano **Amadeo de Saboya** (hijo del rey Víctor Manuel II de Italia, artífice de la unificación peninsular y adalid de la democracia constitucional en Europa). Las Cortes aprobaron su designación en noviembre de 1870 por amplia mayoría.</p>
+            <p>El elegido de Prim fue el joven príncipe italiano <em>Amadeo de Saboya</em> (hijo del rey Víctor Manuel II de Italia, artífice de la unificación peninsular y adalid de la democracia constitucional en Europa). Las Cortes aprobaron su designación en noviembre de 1870 por amplia mayoría.</p>
 
             <!-- VÍDEO COMPLEMENTARIO: EL REINADO DE AMADEO I -->
             <div style="margin: 15px 0; text-align: center;">
-                <a href="https://www.youtube.com/watch?v=FAxmicLPK0g" target="_blank" class="btn-interactivo btn-video">🎬 Vídeo 2: Ver documental explicativo sobre el reinado de Amadeo de Saboya ➡️</a>
+                <a href="https://youtu.be/uAEm7MBx29s" target="_blank" class="btn-interactivo btn-video">🎬 Vídeo 2: Ver documental explicativo sobre el reinado de Amadeo de Saboya ➡️</a>
             </div>
 
             <h3>A. Un Trágico Comienzo: El Asesinato del General Prim</h3>
-            <p>El 30 de diciembre de 1870, justo el mismo día que Amadeo I ponía un pie en Cartagena, el general progresista **Juan Prim fue tiroteado y asesinado en la madrileña calle del Turco**. Sin la guía intelectual y la fuerza armada del prestigioso militar, Amadeo I se encontró huérfano de apoyos políticos y sociales nada más aterrizar en la capital.</p>
+            <p>El 30 de diciembre de 1870, justo el mismo día que Amadeo I ponía un pie en Cartagena, el general progresista <em>Juan Prim fue tiroteado y asesinado en la madrileña calle del Turco</em>. Sin la guía intelectual y la fuerza armada del prestigioso militar, Amadeo I se encontró huérfano de apoyos políticos y sociales nada más aterrizar en la capital.</p>
 
-            <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; margin: 25px 0;">
-                <div style="flex: 1; min-width: 250px; max-width: 320px;">
-                    <img src="img/amadeo-saboya.png" alt="Retrato de Amadeo I" class="imagen-educativa" style="margin: 0 auto;">
-                    <p class="caption"><em>Imagen 7: Retrato oficial del rey Amadeo I de Saboya</em></p>
+            <div class="fila-imagenes">
+                <div class="tarjeta-imagen">
+                    <img src="img/amadeo-saboya.png" alt="Retrato de Amadeo I">
+                    <span class="caption">Imagen 7: Retrato oficial del rey Amadeo I de Saboya</span>
                 </div>
-                <div style="flex: 1; min-width: 250px; max-width: 320px;">
-                    <img src="img/atentado-prim.png" alt="Tiroteo en la calle del Turco" class="imagen-educativa" style="margin: 0 auto;">
-                    <p class="caption"><em>Imagen 8: Grabado pictórico del tiroteo a la carroza de Prim</em></p>
+                <div class="tarjeta-imagen">
+                    <img src="img/atentado-prim.png" alt="Tiroteo en la calle del Turco">
+                    <span class="caption">Imagen 8: Grabado pictórico del tiroteo a la carroza de Prim</span>
                 </div>
-                <div style="flex: 1; min-width: 250px; max-width: 320px;">
-                    <img src="img/amadeo-tumba-prim.png" alt="Amadeo ante el cadáver de Prim" class="imagen-educativa" style="margin: 0 auto;">
-                    <p class="caption"><em>Imagen 9: Amadeo I velando el cuerpo momificado de Prim en Madrid</em></p>
+                <div class="tarjeta-imagen">
+                    <img src="img/amadeo-tumba-prim.png" alt="Amadeo ante el cadáver de Prim">
+                    <span class="caption">Imagen 9: Amadeo I velando el cuerpo momificado de Prim en Madrid</span>
                 </div>
             </div>
 
@@ -619,17 +641,16 @@
             </ul>
 
             <h3>C. El Problema Colonial: La Guerra de los Diez Años en Cuba (1868-1878)</h3>
-            <p>Iniciada tras el **Grito de Yara** en octubre de 1868 por el criollo *Carlos Manuel de Céspedes*, representó el primer enfrentamiento armado directo de liberación nacional cubano contra las fuerzas realistas españolas. La burguesía y los terratenientes locales impidieron reformas como la abolición de la esclavitud para no ver devaluada su propiedad.</p>
+            <p>Iniciada tras el <em>Grito de Yara</em> en octubre de 1868 por el criollo <em>Carlos Manuel de Céspedes</em>, representó el primer enfrentamiento armado directo de liberación nacional cubano contra las fuerzas realistas españolas. La burguesía y los terratenientes locales impidieron reformas como la abolición de la esclavitud para no ver devaluada su propiedad.</p>
 
-            <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; margin: 25px 0;">
-                <div style="flex: 1; min-width: 250px; max-width: 320px;">
-                    <img src="img/carlos-manuel-cespedes.png" alt="Retrato Carlos Manuel de Céspedes" class="imagen-educativa" style="margin: 0 auto;">
-                    <p class="caption"><em>Imagen 10: Retrato oficial de Carlos Manuel de Céspedes</em></p>
+            <div class="fila-imagenes">
+                <div class="tarjeta-imagen">
+                    <img src="img/carlos-manuel-cespedes.png" alt="Retrato Carlos Manuel de Céspedes">
+                    <span class="caption">Imagen 10: Retrato oficial de Carlos Manuel de Céspedes</span>
                 </div>
-                <!-- VOLUNTARIOS DE CUBA PLACED EXACTLY BELOW CUBA PARAGRAPH -->
-                <div style="flex: 1; min-width: 300px; max-width: 450px;">
-                    <img src="img/voluntarios-cuba.png" alt="Embarque de los voluntarios para Cuba" class="imagen-educativa" style="margin: 0 auto;">
-                    <p class="caption"><em>Imagen 11: Grabado del embarque de voluntarios civiles que partían a Cuba en el puerto de Cádiz</em></p>
+                <div class="tarjeta-imagen">
+                    <img src="img/voluntarios-cuba.png" alt="Embarque de los voluntarios para Cuba">
+                    <span class="caption">Imagen 11: Grabado del embarque de voluntarios civiles que partían a Cuba en el puerto de Cádiz</span>
                 </div>
             </div>
 
@@ -644,7 +665,7 @@
         <!-- SECCIÓN 4 -->
         <section id="tema4">
             <h2>4. La Primera República Española (1873 - 1874)</h2>
-            <p>Ese mismo 11 de febrero de 1873, ante la abdicación regia y sin margen de maniobra para buscar una nueva monarquía extranjera, las Cortes se reunieron en sesión conjunta para proclamar la **Primera República Española**.</p>
+            <p>Ese mismo 11 de febrero de 1873, ante la abdicación regia y sin margen de maniobra para buscar una nueva monarquía extranjera, las Cortes se reunieron en sesión conjunta para proclamar la <em>Primera República Española</em>.</p>
 
             <div class="tarjeta-imagen">
                 <img src="img/alegoria-republica.png" alt="Alegoría de La Niña Bonita de La Flaca">
@@ -655,49 +676,49 @@
 
             <!-- VÍDEO COMPLEMENTARIO: LA PRIMERA REPÚBLICA -->
             <div style="margin: 15px 0; text-align: center;">
-                <a href="https://www.youtube.com/watch?v=Yp97D3QW4W8" target="_blank" class="btn-interactivo btn-video">🎬 Vídeo 3: Ver documental didáctico sobre los acontecimientos de la Primera República ➡️</a>
+                <a href="https://www.youtube.com/watch?v=NiW6ymcrcfU" target="_blank" class="btn-interactivo btn-video">🎬 Vídeo 3: Ver documental didáctico sobre los acontecimientos de la Primera República ➡️</a>
             </div>
 
             <h3>A. Los Desafíos Armados y el Estallido Cantonalista</h3>
-            <p>La República Federal del segundo presidente, *Francisco Pi y Margall*, intentó establecer un Estado dividido en 17 estados autónomos descentralizados (entre ellos Cuba). No obstante, los republicanos radicales e internacionalistas anarquistas vieron lentas las reformas e impusieron la democracia directa proclamando **cantones independientes** (Cartagena, Sevilla, Málaga, Valencia, etc.).</p>
+            <p>La República Federal del segundo presidente, <em>Francisco Pi y Margall</em>, intentó establecer un Estado dividido en 17 estados autónomos descentralizados (entre ellos Cuba). No obstante, los republicanos radicales e internacionalistas anarquistas vieron lentas las reformas e impusieron la democracia directa proclamando <em>cantones independientes</em> (Cartagena, Sevilla, Málaga, Valencia, etc.).</p>
 
-            <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; margin: 25px 0;">
-                <div style="flex: 1; min-width: 250px; max-width: 380px;">
-                    <img src="img/republica-flaca.png" alt="Caricatura Pi i Margall" class="imagen-educativa" style="margin: 0 auto;">
-                    <p class="caption"><em>Imagen 13: Pi i Margall desbordado por los niños de las autonomías locales</em></p>
+            <div class="fila-imagenes">
+                <div class="tarjeta-imagen">
+                    <img src="img/republica-flaca.png" alt="Caricatura Pi i Margall">
+                    <span class="caption">Imagen 13: Pi i Margall desbordado por los niños de las autonomías locales</span>
                 </div>
-                <div style="flex: 1; min-width: 250px; max-width: 380px;">
-                    <img src="img/mapa-conflictos-republica.png" alt="Mapa de conflictos" class="imagen-educativa" style="margin: 0 auto;">
-                    <p class="caption"><em>Imagen 14: Focos territoriales del conflicto carlista y el estallido del cantonalismo</em></p>
+                <div class="tarjeta-imagen">
+                    <img src="img/mapa-conflictos-republica.png" alt="Mapa de conflictos">
+                    <span class="caption">Imagen 14: Focos territoriales del conflicto carlista y el estallido del cantonalismo</span>
                 </div>
             </div>
 
-            <p>La sublevación cantonal dividió irreversiblemente a la República. Pi y Margall dimitió por negarse a reprimir por las armas el cantón de Cartagena. Su sucesor, *Nicolás Salmerón*, usó al ejército, encomendando la represión a los generales moderados **Pavía** y **Martínez Campos**. No obstante, Salmerón dimitió al poco tiempo al sentirse moralmente incapaz de firmar las sentencias de muerte de los cabecillas de las insurrecciones.</p>
+            <p>La sublevación cantonal dividió irreversiblemente a la República. Pi y Margall dimitió por negarse a reprimir por las armas el cantón de Cartagena. Su sucesor, <em>Nicolás Salmerón</em>, usó al ejército, encomendando la represión a los generales moderados <em>Pavía</em> y <em>Martínez Campos</em>. No obstante, Salmerón dimitió al poco tiempo al sentirse moralmente incapaz de firmar las sentencias de muerte de los cabecillas de las insurrecciones.</p>
 
             <h3>B. El Giro Autoritario, el Golpe de Pavía y el Final del Sexenio</h3>
-            <p>El cuarto presidente, *Emilio Castelar*, suspendió las garantías constitucionales de inmediato y gobernó con el Congreso cerrado para reconducir el orden. El 3 de enero de 1874, ante la reapertura parlamentaria de las Cortes y la inminente moción de censura para colocar un gobierno federalista de izquierdas, el general **Manuel Pavía** entró con las fuerzas armadas y la Guardia Civil disolviendo las Cortes de un plumazo.</p>
+            <p>El cuarto presidente, <em>Emilio Castelar</em>, suspendió las garantías constitucionales de inmediato y gobernó con el Congreso cerrado para reconducir el orden. El 3 de enero de 1874, ante la reapertura parlamentaria de las Cortes y la inminente moción de censura para colocar un gobierno federalista de izquierdas, el general <em>Manuel Pavía</em> entró con las fuerzas armadas y la Guardia Civil disolviendo las Cortes de un plumazo.</p>
 
-            <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; margin: 25px 0;">
-                <div style="flex: 1; min-width: 250px; max-width: 380px;">
-                    <img src="img/general-pavia.png" alt="General Manuel Pavía" class="imagen-educativa" style="margin: 0 auto;">
-                    <p class="caption"><em>Imagen 15: Retrato fotográfico del general Manuel Pavía</em></p>
+            <div class="fila-imagenes">
+                <div class="tarjeta-imagen">
+                    <img src="img/general-pavia.png" alt="General Manuel Pavía">
+                    <span class="caption">Imagen 15: Retrato fotográfico del general Manuel Pavía</span>
                 </div>
-                <div style="flex: 1; min-width: 250px; max-width: 380px;">
-                    <img src="img/golpe-pavia.png" alt="Golpe de Pavía" class="imagen-educativa" style="margin: 0 auto;">
-                    <p class="caption"><em>Imagen 16: El general Manuel Pavía disolviendo las Cortes republicanas</em></p>
+                <div class="tarjeta-imagen">
+                    <img src="img/golpe-pavia.png" alt="Golpe de Pavía">
+                    <span class="caption">Imagen 16: El general Manuel Pavía disolviendo las Cortes republicanas</span>
                 </div>
             </div>
 
-            <p>Se constituyó una dictadura militar provisional dirigida por el general **Serrano**, pero la desestabilización ya era absoluta. Antonio Cánovas del Castillo redactó el **Manifiesto de Sandhurst (diciembre de 1874)** en el que el príncipe Alfonso prometía un régimen dinástico constitucional reconciliador. El 29 de diciembre de 1874, un pronunciamiento militar directo del general **Arsenio Martínez Campos** en Sagunto proclamó rey de España a *Alfonso XII*, cerrando para siempre la tortuosa experiencia democrática del Sexenio.</p>
+            <p>Se constituyó una dictadura militar provisional dirigida por el general <em>Serrano</em>, pero la desestabilización ya era absoluta. Antonio Cánovas del Castillo redactó el <em>Manifiesto de Sandhurst (diciembre de 1874)</em> en el que el príncipe Alfonso prometía un régimen dinástico constitucional reconciliador. El 29 de diciembre de 1874, un pronunciamiento militar directo del general <em>Arsenio Martínez Campos</em> en Sagunto proclamó rey de España a <em>Alfonso XII</em>, cerrando para siempre la tortuosa experiencia democrática del Sexenio.</p>
 
-            <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; margin: 25px 0;">
-                <div style="flex: 1; min-width: 220px; max-width: 260px;">
-                    <img src="img/canovas-del-castillo.png" alt="Antonio Cánovas del Castillo" class="imagen-educativa" style="margin: 0 auto;">
-                    <p class="caption"><em>Imagen 18: Antonio Cánovas del Castillo, ideólogo de la Restauración</em></p>
+            <div class="fila-imagenes">
+                <div class="tarjeta-imagen">
+                    <img src="img/canovas-del-castillo.png" alt="Antonio Cánovas del Castillo">
+                    <span class="caption">Imagen 18: Antonio Cánovas del Castillo, ideólogo de la Restauración</span>
                 </div>
-                <div style="flex: 1; min-width: 220px; max-width: 260px;">
-                    <img src="img/general-martinez-campos.png" alt="Arsenio Martínez Campos" class="imagen-educativa" style="margin: 0 auto;">
-                    <p class="caption"><em>Imagen 19: Retrato oficial del general Arsenio Martínez Campos</em></p>
+                <div class="tarjeta-imagen">
+                    <img src="img/general-martinez-campos.png" alt="Arsenio Martínez Campos">
+                    <span class="caption">Imagen 19: Retrato oficial del general Arsenio Martínez Campos</span>
                 </div>
             </div>
         </section>
