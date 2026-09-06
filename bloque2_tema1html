@@ -420,7 +420,7 @@
                 <li><a href="index.html" class="btn-volver">🏠 Volver a Portada</a></li>
                 
                 <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 10px 14px 5px 14px; font-weight: bold; border-bottom: 1px solid #334155; margin-bottom: 8px;">📍 Temas del Bloque II</li>
-                <li><a href="#tema1" class="active">1. El Sistema Canovista</a></li>
+                <li><a href="#origen" class="active">1. El Sistema Canovista</a></li>
                 <li><a href="bloque2_tema2.html">2. Industrialización y Obrero</a></li>
                 <li><a href="bloque2_tema3.html">3. Los Nacionalismos</a></li>
             </ul>
@@ -442,14 +442,14 @@
         <!-- SECCIÓN 1 -->
         <section id="origen">
             <h2>1. El Regreso de los Borbones al Trono</h2>
-            <p>El término **Restauración** se aplica al periodo de la historia de España caracterizado por la vuelta de los Borbones al trono de Madrid. Tras la accidentada andadura del Sexenio Democrático, el pronunciamiento militar del general *Arsenio Martínez Campos* en Sagunto el 29 de diciembre de 1874 proclamó a *Alfonso XII* como rey de España.</p>
+            <p>El término <strong>Restauración</strong> se aplica en España a la vuelta de los Borbones al trono. Tras la accidentada andadura del Sexenio Democrático, el pronunciamiento militar del general <em>Arsenio Martínez Campos</em> en Sagunto el 29 de diciembre de 1874 proclamó a <em>Alfonso XII</em> como rey de España.</p>
 
             <div class="tarjeta-imagen">
                 <img src="img/alfonso-xii-oficial.png" alt="Retrato oficial de Alfonso XII" style="max-height: 450px;">
                 <span class="caption">Retrato oficial de S.M. Don Alfonso XII de Borbón</span>
             </div>
 
-            <p>La vuelta de la monarquía fue sumamente rápida y contó con un enorme **deseo de pacificación nacional** debido a la inestabilidad de la Primera República. Días antes, el 1 de diciembre de 1874, el joven monarca había firmado el **Manifiesto de Sandhurst**, un documento redactado por *Antonio Cánovas del Castillo* que presentaba la monarquía constitucional, conservadora y católica como la única salida viable.</p>
+            <p>La vuelta de la monarquía fue sumamente rápida y contó con un enorme <strong>deseo de pacificación nacional</strong> debido a la inestabilidad de la Primera República. Días antes, el 1 de diciembre de 1874, el joven monarca había firmado el <em>Manifiesto de Sandhurst</em>, un documento redactado por <em>Antonio Cánovas del Castillo</em> que presentaba la monarquía constitucional, conservadora y católica como la única salida viable.</p>
 
             <!-- BOTÓN INTERACTIVO: MANIFIESTO DE SANDHURST -->
             <div style="margin: 15px 0;">
@@ -458,14 +458,14 @@
 
             <!-- VÍDEO EXPLICATIVO DEL COMIENZO DE LA RESTAURACIÓN -->
             <div style="margin: 15px 0; text-align: center;">
-                <a href="https://www.youtube.com/watch?v=sl_HIOIwSYA" target="_blank" class="btn-interactivo btn-video">🎬 Vídeo 1: Ver el Pronunciamiento de Sagunto y la llegada de Alfonso XII ➡️</a>
+                <a href="https://youtu.be/24kUhe0pSsA" target="_blank" class="btn-interactivo btn-video">🎬 Vídeo 1: Ver el Pronunciamiento de Sagunto y la llegada de Alfonso XII ➡️</a>
             </div>
         </section>
 
         <!-- SECCIÓN 2 -->
         <section id="constitucion">
             <h2>2. La Constitución de 1876 y las Bases del Sistema</h2>
-            <p>El verdadero cerebro del nuevo sistema político fue *Antonio Cánovas del Castillo*. El malagueño pretendía asentar las bases del **bipartidismo** y de un orden constitucional estable que impidiera el carácter excluyente de los moderados del reinado anterior y subordinase el ejército al poder civil.</p>
+            <p>El verdadero cerebro del nuevo sistema político fue <em>Antonio Cánovas del Castillo</em>. El político malagueño pretendía asentar las bases del <strong>bipartidismo</strong> y de un orden constitucional estable que impidiera el carácter excluyente de los moderados del reinado anterior y subordinase el ejército al poder civil.</p>
 
             <div class="fila-imagenes">
                 <div class="tarjeta-imagen">
@@ -478,18 +478,26 @@
                 </div>
             </div>
 
-            <p>El pilar jurídico del régimen fue la **Constitución de 1876**, la de mayor longevidad en la historia de España. Sus principales rasgos fueron:</p>
+            <p>El pilar jurídico del régimen fue la <em>Constitución de 1876</em>, la de mayor longevidad en la historia de España. Sus principales rasgos fueron:</p>
             <ul>
                 <li><strong>Soberanía compartida:</strong> Rechazaba la soberanía nacional al establecer que la potestad legislativa residía conjuntamente en las Cortes con el Rey.</li>
                 <li><strong>Amplias prerrogativas reales:</strong> El monarca ostentaba el poder ejecutivo, el mando supremo del ejército, y el derecho de convocar, suspender y disolver las Cortes de forma unilateral.</li>
-                <li><strong>Cortes bicamerales:</strong> Formadas por el Congreso de los Diputados (elegido por sufragio) y el Senado (órgano elitista donde dos tercios eran senadores vitalicios o por derecho propio).</li>
-                <li><strong>Indefinición del sufragio:</strong> La carta constitucional no definía el tipo de sufragio. Así, bajo la Ley Electoral de 1878 se implantó el **sufragio censitario**, hasta que en 1890 los liberales impusieron el **sufragio universal masculino**.</li>
+                <li><strong>Cortes bicamerales:</strong> Formadas por el Congreso de los Diputados (elegido por sufragio) y el Senado (donde dos tercios eran senadores vitalicios o por derecho propio).</li>
+                <li><strong>Indefinición del sufragio:</strong> La carta constitucional no definía el tipo de sufragio. Así, bajo el primer gobierno conservador se aprobó la <em>Ley Electoral de 1878</em> que estableció el <strong>sufragio censitario</strong> (limitado al 5% de la población de mayores contribuyentes), hasta que en 1890 los liberales impusieron el <strong>sufragio universal masculino</strong>.</li>
             </ul>
 
             <div class="tarjeta-imagen">
                 <img src="img/grafico-elecciones-1876.png" alt="Resultados Elecciones de 1876" style="max-height: 250px;">
                 <span class="caption">Composición del Congreso de los Diputados tras las elecciones constituyentes de 1876</span>
             </div>
+
+            <h3>Las Medidas Políticas del Gobierno Conservador (1875 - 1881)</h3>
+            <p>Durante la primera etapa de la Restauración, conocida como la "dictadura de Cánovas", el gobierno conservador actuó de manera autoritaria con el objetivo de consolidar la defensa del orden social y la propiedad privada. Entre sus principales disposiciones legislativas destacan:</p>
+            <ul>
+                <li><strong>Establecimiento de la censura previa (1875):</strong> Mediante un estricto control gubernamental sobre el orden público, se limitaron drásticamente las publicaciones de prensa y académicas.</li>
+                <li><strong>La restrictiva Ley de Imprenta de 1879:</strong> Clasificaba como delito grave cualquier manifestación o crítica dirigida contra la monarquía, el dogma católico o el propio sistema de la Restauración, lo que forzó el cierre de cabeceras de oposición.</li>
+                <li><strong>El Conflicto Universitario y la ILE:</strong> La aplicación de la censura en las aulas provocó la dimisión voluntaria y el cese forzoso de eminentes catedráticos universitarios como <em>Emilio Castelar</em>, <em>Gumersindo de Azcárate</em> o <em>Nicolás Salmerón</em>. Como respuesta directa de resistencia pedagógica, fundaron la laica y privada <em>Institución Libre de Enseñanza (ILE)</em> en 1876, bajo la dirección de <em>Francisco Giner de los Ríos</em>.</li>
+            </ul>
 
             <!-- BOTÓN INTERACTIVO: EL HUMOR DE CÁNOVAS -->
             <div style="margin: 15px 0;">
@@ -500,13 +508,13 @@
         <!-- SECCIÓN 3 -->
         <section id="turnismo">
             <h2>3. El Funcionamiento Electoral: Turnismo y Caciquismo</h2>
-            <p>Para asegurar la paz social, se organizó un sistema basado en la **alternancia regular** o **turno pacífico** de dos grandes fuerzas dinásticas, llamadas partidos de turno:</p>
+            <p>Para asegurar la estabilidad institucional, se organizó un sistema basado en la <strong>alternancia regular</strong> o <strong>turno pacífico</strong> de dos grandes fuerzas dinásticas, llamadas partidos de turno, inspirados en el parlamentarismo británico:</p>
             <ul>
-                <li><strong>El Partido Conservador:</strong> Liderado por *Antonio Cánovas del Castillo*, representaba la derecha tradicional y el orden católico, con el respaldo de la alta burguesía y la aristocracia.</li>
-                <li><strong>El Partido Liberal (o Fusionista):</strong> Dirigido por *Práxedes Mateo Sagasta*, aglutinaba a antiguos progresistas y unionistas de izquierda, defensores de reformas sociales más laicas.</li>
+                <li><strong>El Partido Conservador (o Liberal-Conservador):</strong> Liderado por <em>Antonio Cánovas del Castillo</em>, representaba la derecha tradicional y el orden católico, con el respaldo de la alta burguesía, la aristocracia y la jerarquía eclesiástica.</li>
+                <li><strong>El Partido Liberal (o Liberal-Fusionista):</strong> Dirigido por <em>Práxedes Mateo Sagasta</em>, aglutinaba a antiguos progresistas, unionistas de izquierda y republicanos moderados, defensores de reformas sociales más laicas.</li>
             </ul>
 
-            <p>Este sistema no dependía de la voluntad real de los electores, sino que las elecciones se manipulaban sistemáticamente desde el Ministerio de la Gobernación mediante el **encasillado** (la asignación previa de escaños) y la red de gobernadores civiles.</p>
+            <p>Este sistema no dependía de la voluntad real de los electores, sino que las elecciones se manipulaban sistemáticamente desde el Ministerio de la Gobernación mediante el <strong>encasillado</strong> (la asignación previa de escaños) y la red de gobernadores civiles, gobernando el partido que convocaba los comicios.</p>
 
             <div class="fila-imagenes">
                 <div class="tarjeta-imagen">
@@ -514,7 +522,7 @@
                     <span class="caption">Caricatura que denuncia la resurrección de fallecidos en el censo electoral</span>
                 </div>
                 <div class="tarjeta-imagen">
-                    <img src="img/caricatura-caciquismo-cura.png" alt="Caricatura caciquismo confesional">
+                    <img src="img/caricatura-caciquismo-cura.png" alt="Caricatura caciquismo coacción eclesiástica">
                     <span class="caption">Ilustración satírica sobre la coacción electoral clerical en los pueblos</span>
                 </div>
             </div>
@@ -529,21 +537,30 @@
 
             <!-- VÍDEO COMPLEMENTARIO SOBRE EL CACIQUISMO -->
             <div style="margin: 15px 0; text-align: center;">
-                <a href="https://www.youtube.com/watch?v=sl_HIOIwSYA" target="_blank" class="btn-interactivo btn-video">🎬 Vídeo 2: Ver explicación del mecanismo del caciquismo y el encasillado ➡️</a>
+                <a href="https://youtu.be/l38sOJwO5Dc" target="_blank" class="btn-interactivo btn-video">🎬 Vídeo 2: Ver explicación del mecanismo del caciquismo y el encasillado ➡️</a>
             </div>
         </section>
 
         <!-- SECCIÓN 4 -->
         <section id="regencia">
             <h2>4. La Regencia de María Cristina y el Pacto del Pardo (1885 - 1902)</h2>
-            <p>La prematura muerte de *Alfonso XII* por tuberculosis en noviembre de 1885 puso en serio peligro la estabilidad institucional del Estado al dejar como heredero a un niño póstumo. Para blindar el régimen, los líderes de ambos partidos firmaron el **Pacto del Pardo (1885)**.</p>
+            <p>La prematura muerte de <em>Alfonso XII</em> por tuberculosis en noviembre de 1885 puso en serio peligro la estabilidad institucional del Estado al dejar como heredero a un niño póstumo. Para blindar el régimen de presiones carlistas y republicanas, los líderes de ambos partidos firmaron el <em>Pacto del Pardo (1885)</em>.</p>
 
             <div class="tarjeta-imagen">
                 <img src="img/jura-regente-sorolla.png" alt="Juramento de María Cristina de Habsburgo">
                 <span class="caption">La reina María Cristina de Habsburgo jurando la Regencia ante las Cortes (Joaquín Sorolla)</span>
             </div>
 
-            <p>A través de este acuerdo político, se consolidó la regencia de *María Cristina de Habsburgo* y el "gobierno largo" de los liberales de *Sagasta* (1885-1890), durante el cual se sacaron adelante de forma pactada la **Ley de Asociaciones (1887)** y el **sufragio universal masculino (1890)**, cerrando las puertas a cualquier intento de rebelión carlista o republicana.</p>
+            <p>A través de este acuerdo político, se consolidó la regencia de <em>María Cristina de Habsburgo</em> y el llamado "gobierno largo" de los liberales de <em>Sagasta</em> (1885-1890). Durante este periodo de hegemonía liberal se sacaron adelante de forma pactada trascendentales reformas políticas y legislativas que ensancharon la base social del régimen:</p>
+            <ul>
+                <li><strong>La Ley de Asociaciones (1887):</strong> Eliminó la distinción administrativa entre partidos legales e ilegales, posibilitando la plena legalización de sindicatos obreros y de partidos de oposición (como el <em>PSOE</em> fundado por <em>Pablo Iglesias</em> en 1879, que pudo así salir de la clandestinidad).</li>
+                <li><strong>La libertad de cátedra, prensa y expresión (1887):</strong> Supuso la abolición práctica de la censura previa conservadora, permitiendo una mayor tolerancia y debate de ideas en universidades y cabeceras de prensa.</li>
+                <li><strong>La abolición definitiva de la esclavitud (1888):</strong> Completó de forma legal los compromisos que se habían retrasado sistemáticamente desde la <em>Paz de Zanjón (1878)</em>.</li>
+                <li><strong>La promulgación del nuevo Código Civil (1889):</strong> Unificó y sistematizó de manera uniforme el marco jurídico de los ciudadanos en todo el territorio nacional.</li>
+                <li><strong>La implantación del Sufragio Universal Masculino (1890):</strong> Marcó el fin de la restrictiva era del sufragio censitario. Al conceder el derecho a voto a todos los varones mayores de 25 años, el censo electoral de votantes potenciales se amplió exponencialmente de 800.000 a más de 5.000.000 de ciudadanos.</li>
+            </ul>
+
+            <p>A pesar del avance democrático que supuso el sufragio universal, la pervivencia del fraude electoral y la red de influencias caciquiles en la España rural impidieron una democratización real de las Cortes, aunque permitió a las facciones republicanas obtener representación en las principales capitales urbanas donde el control de los caciques era ineficaz.</p>
 
             <div class="tarjeta-imagen">
                 <img src="img/caricatura-pacto-pardo.png" alt="Caricatura Pacto del Pardo" style="max-height: 350px;">
