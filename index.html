@@ -9,13 +9,15 @@
             /* Paleta de colores vibrante y alegre */
             --primary-intense: #1e40af; /* Azul real oscuro */
             --primary-vibrant: #2563eb; /* Azul brillante */
-            --primary-dark: #0f172a;
+            --primary-dark: #1e3a5f; /* Azul medio (antes era casi negro) */
             --primary: #1e293b;
             --bg-main: #f8fafc;
             --card-bg: #ffffff;
             --text-dark: #1e293b;
             --text-muted: #64748b;
-            
+            --nav-text: #e2e8f0;       /* Texto de enlaces, más claro para contraste */
+            --nav-text-muted: #94a3b8; /* Texto de categorías, más claro */
+
             /* Tonos suaves en verde para el encabezado */
             --header-bg: #f0fdf4; /* Fondo verde menta muy suave */
             --header-border: #10b981; /* Borde verde esmeralda */
@@ -46,9 +48,9 @@
             min-height: 100vh;
         }
 
-        /* Barra de navegación lateral fija a la izquierda */
+        /* Barra de navegación lateral fija a la izquierda (30% del ancho) */
         aside {
-            width: 300px;
+            width: 30%;
             background-color: var(--primary-dark);
             color: white;
             padding: 25px;
@@ -79,7 +81,7 @@
         }
 
         aside nav ul li a {
-            color: #cbd5e1;
+            color: var(--nav-text);
             text-decoration: none;
             font-size: 0.95rem;
             display: block;
@@ -96,9 +98,20 @@
             box-shadow: 0 4px 10px rgba(37, 99, 235, 0.15);
         }
 
-        /* Contenido de la Web */
+        aside nav ul li.categoria {
+            font-size: 0.8rem;
+            color: var(--nav-text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 15px 14px 5px 14px;
+            font-weight: bold;
+            border-bottom: 1px solid #475569;
+            margin-bottom: 8px;
+        }
+
+        /* Contenido de la Web (ajustado al 30% de la barra lateral) */
         main {
-            margin-left: 300px;
+            margin-left: 30%;
             padding: 40px;
             max-width: 1100px;
         }
@@ -151,14 +164,14 @@
             text-align: justify;
         }
 
-        /* CONTENEDOR DE IMAGEN CENTRAL (ANTI-SOLAPAMIENTO) */
+        /* CONTENEDOR DE IMAGEN CENTRAL (ANTI-SOLAPAMIENTO, AHORA MÁS GRANDE) */
         .tarjeta-imagen-central {
             background-color: #f8fafc;
             border: 1px solid #e2e8f0;
             border-radius: 12px;
             padding: 20px;
             margin: 25px auto 35px auto;
-            max-width: 500px;
+            max-width: 750px;
             text-align: center;
             box-shadow: 0 4px 12px rgba(0,0,0,0.05);
             display: block;
@@ -320,16 +333,16 @@
         <nav>
             <ul>
                 <li><a href="index.html" class="active">🏠 Portada Principal</a></li>
-                
-                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 15px 14px 5px 14px; font-weight: bold; border-bottom: 1px solid #334155; margin-bottom: 8px;">🛠️ Introducción</li>
+
+                <li class="categoria">🛠️ Introducción</li>
                 <li><a href="tema0.html">Tema 0: Fuentes y Método</a></li>
-                
-                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 15px 14px 5px 14px; font-weight: bold; border-bottom: 1px solid #334155; margin-bottom: 8px;">📖 Bloque I: Estado Liberal</li>
+
+                <li class="categoria">📖 Bloque I: Estado Liberal</li>
                 <li><a href="bloque1_tema1.html">Tema 1: Cortes de Cádiz</a></li>
                 <li><a href="bloque1_tema2.html">Tema 2: Estado Liberal</a></li>
                 <li><a href="bloque1_tema3.html">Tema 3: El Sexenio</a></li>
-                
-                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 15px 14px 5px 14px; font-weight: bold; border-bottom: 1px solid #334155; margin-bottom: 8px;">📖 Bloque II: Restauración</li>
+
+                <li class="categoria">📖 Bloque II: Restauración</li>
                 <li><a href="bloque2_tema1.html">Tema 1: La Restauración</a></li>
             </ul>
         </nav>
@@ -343,20 +356,10 @@
         </header>
 
         <section>
-            <h2>¡Hola! Te damos la bienvenida al aula digital</h2>
-            <p>Este espacio digital interactivo está diseñado especialmente para ayudarte a repasar, asimilar y comprender de forma amena los contenidos curriculares oficiales de <strong>Historia de España</strong> de 2º de Bachillerato y prepararte de forma sobresaliente para las pruebas de acceso a la universidad (<strong>EBAU / EvAU</strong>).</p>
-            
-            <p>Utiliza la <strong>barra lateral de navegación izquierda</strong> para saltar cómodamente entre las distintas unidades didácticas y bloques temáticos. Cada página contiene apuntes interactivos, resúmenes limpios, grabados históricos y esquemas adaptados para evitar la fatiga visual de los alumnos.</p>
-
             <!-- IMAGEN CENTRAL CON CONTENEDOR SEGURO ANTI-SOLAPAMIENTO -->
             <div class="tarjeta-imagen-central">
                 <img src="img/portada-historia.png" alt="Portada">
                 <span class="caption">portada alusiva a la historia de España</span>
-            </div>
-
-            <div class="caja-colores factores">
-                <h4>🧠 Nuestro Método: Accesibilidad y Claridad</h4>
-                <p>La información está estructurada de forma jerárquica y limpia en páginas independientes. Hemos evitado diseños desordenados o textos flotantes que tapen las imágenes. Al final de cada tema, dispones de un banco de preguntas XML para practicar y autoevaluarte.</p>
             </div>
 
             <!-- BOTÓN INTERACTIVO CURIOSO -->
