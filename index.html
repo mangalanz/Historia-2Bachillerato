@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Historia de España - Portada y Tema 0: Introducción y Metodología</title>
+    <title>Historia de España - Portada Principal (2º de Bachillerato)</title>
     <style>
         :root {
-            /* Paleta de colores corporativa, alegre y de alta legibilidad */
+            /* Paleta de colores vibrante y alegre */
             --primary-intense: #1e40af; /* Azul real oscuro */
             --primary-vibrant: #2563eb; /* Azul brillante */
             --primary-dark: #0f172a;
@@ -17,9 +17,9 @@
             --text-muted: #64748b;
             
             /* Tonos suaves en verde para el encabezado */
-            --header-bg: #f0fdf4; /* Fondo verde menta suave */
+            --header-bg: #f0fdf4; /* Fondo verde menta muy suave */
             --header-border: #10b981; /* Borde verde esmeralda */
-            --header-text: #065f46; /* Texto verde bosque */
+            --header-text: #065f46; /* Texto verde bosque oscuro */
 
             /* Cajas didácticas */
             --border-glosario: #0ea5e9;
@@ -62,7 +62,7 @@
         }
 
         aside h1 {
-            font-size: 1.2rem;
+            font-size: 1.25rem;
             margin-bottom: 25px;
             color: #f8fafc;
             border-bottom: 3px solid var(--primary-vibrant);
@@ -103,7 +103,7 @@
             max-width: 1100px;
         }
 
-        /* Encabezado con tonos suaves en verde */
+        /* Encabezado Alegre con dejes verdes */
         header {
             margin-bottom: 35px;
             background: linear-gradient(135deg, var(--header-bg), #e6fcf0);
@@ -133,54 +133,49 @@
             border-radius: 12px;
             box-shadow: 0 1px 3px rgba(0,0,0,0.05);
             margin-bottom: 35px;
-            border-left: 6px solid var(--primary-vibrant);
+            text-align: center;
         }
 
         section h2 {
             color: var(--primary-dark);
-            font-size: 1.5rem;
-            margin-bottom: 20px;
+            font-size: 1.6rem;
+            margin-bottom: 15px;
             border-bottom: 2px solid #f1f5f9;
             padding-bottom: 10px;
         }
 
-        h3 {
-            color: var(--primary-intense);
-            margin: 25px 0 12px 0;
-            font-size: 1.25rem;
-        }
-
         p {
             margin-bottom: 15px;
-            font-size: 1.05rem;
+            font-size: 1.1rem;
             color: #334155;
             text-align: justify;
         }
 
-        /* TARJETA DE IMAGEN (ANTI-SOLAPAMIENTO) */
-        .tarjeta-imagen {
+        /* CONTENEDOR DE IMAGEN CENTRAL (ANTI-SOLAPAMIENTO) */
+        .tarjeta-imagen-central {
             background-color: #f8fafc;
             border: 1px solid #e2e8f0;
-            border-radius: 8px;
-            padding: 16px;
-            margin: 20px 0 30px 0;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 25px auto 35px auto;
+            max-width: 500px;
             text-align: center;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
             display: block;
             position: relative;
             overflow: hidden;
         }
 
-        .tarjeta-imagen img {
-            max-width: 100%;
+        .tarjeta-imagen-central img {
+            width: 100%;
             height: auto;
-            border-radius: 6px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-            margin-bottom: 12px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            margin-bottom: 15px;
             display: inline-block;
         }
 
-        .tarjeta-imagen .caption {
+        .tarjeta-imagen-central .caption {
             font-size: 0.95rem;
             color: var(--text-muted);
             font-style: italic;
@@ -189,38 +184,20 @@
             display: block;
         }
 
-        /* Cajas de colores */
         .caja-colores {
-            padding: 20px;
+            padding: 22px;
             border-radius: 8px;
-            margin: 20px 0;
-            font-size: 1rem;
+            margin: 25px 0;
+            font-size: 1.05rem;
+            text-align: left;
         }
 
         .caja-colores h4 {
             margin-bottom: 10px;
-            font-size: 1.15rem;
+            font-size: 1.2rem;
             display: flex;
             align-items: center;
             gap: 8px;
-        }
-
-        .glosario {
-            background-color: var(--bg-glosario);
-            border-left: 5px solid var(--border-glosario);
-            color: #0369a1;
-        }
-
-        .investigacion {
-            background-color: var(--bg-investigacion);
-            border-left: 5px solid var(--border-investigacion);
-            color: #b45309;
-        }
-
-        .critica {
-            background-color: var(--bg-critica);
-            border-left: 5px solid var(--border-critica);
-            color: #c2410c;
         }
 
         .factores {
@@ -229,48 +206,7 @@
             color: #047857;
         }
 
-        /* Desplegables de Lectura Estructurada */
-        details {
-            background-color: #f8fafc;
-            border: 1px solid #e2e8f0;
-            border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 14px;
-            transition: border-color 0.2s;
-        }
-
-        details[open] {
-            background-color: white;
-            border-color: var(--primary-vibrant);
-        }
-
-        summary {
-            font-weight: 600;
-            font-size: 1.1rem;
-            color: var(--primary-dark);
-            cursor: pointer;
-            outline: none;
-            user-select: none;
-        }
-
-        details .contenido-desplegado {
-            margin-top: 12px;
-            padding-top: 12px;
-            border-top: 1px dashed #e2e8f0;
-        }
-
-        ul, ol {
-            padding-left: 25px;
-            margin-bottom: 15px;
-            font-size: 1.05rem;
-        }
-
-        li {
-            margin-bottom: 8px;
-            color: #334155;
-        }
-
-        /* MODALS / POPUPS INTERACTIVOS */
+        /* POPUPS INTERACTIVOS */
         .modal {
             display: none;
             position: fixed;
@@ -315,7 +251,6 @@
             font-size: 1.5rem;
             cursor: pointer;
             color: var(--text-muted);
-            transition: color 0.2s;
         }
 
         .modal-close:hover {
@@ -326,14 +261,14 @@
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            padding: 8px 14px;
+            padding: 10px 18px;
             border-radius: 6px;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             font-weight: bold;
             cursor: pointer;
             transition: all 0.2s ease;
             text-decoration: none;
-            margin: 8px 0;
+            margin: 10px 0;
             border: none;
         }
 
@@ -348,17 +283,6 @@
             color: white;
         }
 
-        .btn-texto {
-            background-color: var(--bg-factores);
-            border: 1px solid var(--border-factores);
-            color: #047857;
-        }
-
-        .btn-texto:hover {
-            background-color: var(--border-factores);
-            color: white;
-        }
-
         .texto-modal {
             font-size: 0.95rem;
             color: #334155;
@@ -368,7 +292,6 @@
             border: 1px solid #e2e8f0;
             white-space: pre-wrap;
             margin-top: 10px;
-            line-height: 1.5;
             text-align: justify;
         }
 
@@ -391,272 +314,76 @@
 </head>
 <body>
 
-    <!-- Navegación Lateral -->
+    <!-- Barra de Navegación Lateral Fija (Controlador de Temas por Bloques) -->
     <aside>
-        <h1>📖 Portada e Introducción</h1>
+        <h1>🏛️ Portal de Historia</h1>
         <nav>
             <ul>
-                <!-- Menú de Navegación Interna de Tema 0 -->
-                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 10px 14px 5px 14px; font-weight: bold; border-bottom: 1px solid #334155; margin-bottom: 8px;">📍 Tema 0: Metodología</li>
-                <li><a href="#concepto" class="active">1. Concepto de Historia</a></li>
-                <li><a href="#factores">2. Espacio y Tiempo</a></li>
-                <li><a href="#metodo">3. Método Científico</a></li>
-                <li><a href="#auxiliares">4. Ciencias Auxiliares</a></li>
-                <li><a href="#fuentes">5. Las Fuentes y su Crítica</a></li>
-                <li><a href="#fichas">6. Fichas de Comentario</a></li>
-
-                <!-- Enlaces Rápidos a los Bloques del Curso -->
-                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 20px 14px 5px 14px; font-weight: bold; border-bottom: 1px solid #334155; margin-bottom: 8px;">📖 Bloque I: Estado Liberal</li>
+                <li><a href="index.html" class="active">🏠 Portada Principal</a></li>
+                
+                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 15px 14px 5px 14px; font-weight: bold; border-bottom: 1px solid #334155; margin-bottom: 8px;">🛠️ Introducción</li>
+                <li><a href="tema0.html">Tema 0: Fuentes y Método</a></li>
+                
+                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 15px 14px 5px 14px; font-weight: bold; border-bottom: 1px solid #334155; margin-bottom: 8px;">📖 Bloque I: Estado Liberal</li>
                 <li><a href="bloque1_tema1.html">Tema 1: Cortes de Cádiz</a></li>
-                <li><a href="bloque1_tema2.html">Tema 2: El Estado Liberal</a></li>
+                <li><a href="bloque1_tema2.html">Tema 2: Estado Liberal</a></li>
                 <li><a href="bloque1_tema3.html">Tema 3: El Sexenio</a></li>
-
-                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 20px 14px 5px 14px; font-weight: bold; border-bottom: 1px solid #334155; margin-bottom: 8px;">📖 Bloque II: Restauración</li>
-                <li><a href="bloque2_tema1.html">Tema 1: Sistema Canovista</a></li>
+                
+                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 15px 14px 5px 14px; font-weight: bold; border-bottom: 1px solid #334155; margin-bottom: 8px;">📖 Bloque II: Restauración</li>
+                <li><a href="bloque2_tema1.html">Tema 1: La Restauración</a></li>
             </ul>
         </nav>
     </aside>
 
-    <!-- Contenido Principal -->
+    <!-- Contenido Principal de la Portada -->
     <main>
         <header>
-            <h2>Geografía e Historia: Portada y Tema 0</h2>
-            <p>Guía Metodológica interactiva y práctica sobre el oficio de historiador, adaptada para 2º de Bachillerato bajo pautas de Lectura Fácil.</p>
+            <h2>Geografía e Historia: Historia de España</h2>
+            <p>Recurso Didáctico Interactivo </p>
         </header>
 
-        <!-- SECCIÓN DE BIENVENIDA -->
-        <section id="bienvenida" style="border-left-color: var(--header-border);">
+        <section>
             <h2>¡Hola! Te damos la bienvenida al aula digital</h2>
-            <p>Este espacio digital interactivo está diseñado especialmente para ayudarte a repasar, asimilar y comprender de forma amena los contenidos curriculares oficiales de **Historia de España** de 2º de Bachillerato y prepararte de forma excelente para las pruebas de acceso a la universidad (**EBAU / EvAU**).</p>
-            <p>En lugar de memorizar listas interminables de fechas, utilizaremos esta plataforma para ver el pasado como un fascinante proceso de causa y efecto. A través de este menú lateral, podrás navegar libremente por la **Introducción Metodológica (Tema 0)** o saltar a los apuntes de clase de los bloques posteriores.</p>
+            <p>Este espacio digital interactivo está diseñado especialmente para ayudarte a repasar, asimilar y comprender de forma amena los contenidos curriculares oficiales de <strong>Historia de España</strong> de 2º de Bachillerato y prepararte de forma sobresaliente para las pruebas de acceso a la universidad (<strong>EBAU / EvAU</strong>).</p>
             
+            <p>Utiliza la <strong>barra lateral de navegación izquierda</strong> para saltar cómodamente entre las distintas unidades didácticas y bloques temáticos. Cada página contiene apuntes interactivos, resúmenes limpios, grabados históricos y esquemas adaptados para evitar la fatiga visual de los alumnos.</p>
+
+            <!-- IMAGEN CENTRAL CON CONTENEDOR SEGURO ANTI-SOLAPAMIENTO -->
+            <div class="tarjeta-imagen-central">
+                <img src="img/portada-historia.png" alt="Portada">
+                <span class="caption">portada alusiva a la historia de España</span>
+            </div>
+
             <div class="caja-colores factores">
                 <h4>🧠 Nuestro Método: Accesibilidad y Claridad</h4>
-                <p>Para facilitar tu comprensión lectora y de atención, la información de cada tema se organiza con desplegables interactivos, pies de foto explicativos y esquemas visuales que evitan la fatiga cognitiva.</p>
-            </div>
-        </section>
-
-        <!-- SECCIÓN 1: EL CONCEPTO DE HISTORIA -->
-        <section id="concepto">
-            <h2>1. El Concepto de Historia y la Historiografía</h2>
-            <p>La **Historia** es la ciencia social que estudia y explica los acontecimientos humanos del pasado de forma rigurosa. Presenta una **doble dimensión**: una *dimensión científica* (basada en la búsqueda y comprobación de pruebas empíricas) y una *dimensión narrativa* (la explicación escrita y comprensible de esos procesos).</p>
-            
-            <p>A lo largo de los siglos, los historiadores han analizado el pasado desde diferentes perspectivas doctrinales o **corrientes historiográficas**:</p>
-
-            <details>
-                <summary>📜 El Historicismo del siglo XIX (Leopold von Ranke)</summary>
-                <div class="contenido-desplegado">
-                    <p>Esta corriente, liderada por el erudito alemán *Leopold von Ranke*, defendía que el único objetivo del historiador debe ser **mostrar el pasado tal cual ocurrió**, sin interpretaciones subjetivas ni juicios morales actuales. Su método se basaba en el análisis exhaustivo de los documentos oficiales del Estado y los grandes líderes políticos.</p>
-                </div>
-            </details>
-
-            <details>
-                <summary>🌾 La Escuela de los Annales del siglo XX (Marc Bloch y Lucien Febvre)</summary>
-                <div class="contenido-desplegado">
-                    <p>Fundada en Francia a principios del siglo XX por *Marc Bloch* y *Lucien Febvre*, esta corriente revolucionó la disciplina al proponer una **historia total e interdisciplinar**. En lugar de estudiar solo a reyes y batallas, defiende el análisis combinado de la economía, la sociedad, la cultura, la demografía y las mentalidades colectivas de la gente común.</p>
-                </div>
-            </details>
-
-            <details>
-                <summary>🛠️ El Marxismo o Concepción Materialista de la Historia</summary>
-                <div class="contenido-desplegado">
-                    <p>Formulada por *Karl Marx*, esta corriente sostiene que el verdadero **motor de la historia es la lucha de clases** provocada por las contradicciones en las estructuras económicas y los modos de producción. Analiza el pasado centrándose en el conflicto permanente entre opresores y oprimidos por la posesión de la riqueza material.</p>
-                </div>
-            </details>
-
-            <!-- BOTÓN INTERACTIVO: EMPATÍA HISTÓRICA -->
-            <div style="margin: 15px 0;">
-                <button class="btn-interactivo btn-anecdota" onclick="openPopup('pop-empatia')">🕵️‍♂️ Método: ¿Qué es la Empatía Histórica?</button>
-            </div>
-        </section>
-
-        <!-- SECCIÓN 2: ESPACIO Y TIEMPO -->
-        <section id="factores">
-            <h2>2. Factores del Hecho Histórico: Espacio y Tiempo</h2>
-            <p>Todo acontecimiento humano se desarrolla en unas coordenadas geográficas y temporales específicas. El historiador analiza estos dos factores de forma interrelacionada:</p>
-
-            <h3>A. El Espacio Geográfico: ¿Determinismo o Posibilismo?</h3>
-            <p>Para analizar el relieve y su influjo sobre el desarrollo de las sociedades del pasado, existen dos grandes teorías opuestas:</p>
-            <ul>
-                <li><strong>El Determinismo Geográfico:</strong> Teoría que asume que el ser humano depende plenamente de la geografía, afirmando que a una misma causa climática o de relieve siempre le corresponde mecánicamente el mismo efecto social o forma de gobierno.</li>
-                <li><strong>El Posibilismo Geográfico:</strong> Sostiene que el medio físico ofrece un abanico de posibilidades y desafíos, pero es el ser humano quien decide cómo superarlos, aprovecharlos o modificarlos mediante su voluntad y el progreso de su **nivel tecnológico**.</li>
-            </ul>
-
-            <h3>B. El Tiempo Histórico y sus Ritmos</h3>
-            <p>El discurrir del tiempo histórico no es lineal ni uniforme, sino que se divide bajo las siguientes categorías de análisis temporal:</p>
-
-            <details>
-                <summary>⏱️ Hechos Sincrónicos vs. Hechos Contemporáneos</summary>
-                <div class="contenido-desplegado">
-                    <p>Es muy común confundir estos dos términos temporales en los exámenes:</p>
-                    <ul>
-                        <li>Los <strong>Hechos Sincrónicos</strong> son aquellos sucesos simultáneos que acontecen al mismo tiempo y que mantienen una **estrecha relación de interdependencia mutua** (como el estallido de la Guerra de la Independencia en 1808 y la redacción de las Cortes de Cádiz de 1812 en España).</li>
-                        <li>Los <strong>Hechos Contemporáneos</strong> son aquellos acontecimientos que simplemente coinciden en una fecha del calendario, pero que **no guardan ninguna relación entre sí** (por ejemplo, la Revolución Gloriosa de 1868 en Madrid y el inicio de la era Meiji en Japón).</li>
-                    </ul>
-                </div>
-            </details>
-
-            <details>
-                <summary>🔄 Relaciones Diacrónicas: Causa y Efecto</summary>
-                <div class="contenido-desplegado">
-                    <p>La <strong>Diacronía</strong> analiza el desarrollo sucesivo de los acontecimientos a lo largo de épocas diferentes, buscando desentrañar cómo las estructuras del presente son consecuencia directa de procesos del pasado (por ejemplo, relacionar la Revolución Industrial del siglo XIX con el despegue tecnológico de la aviación del siglo XX).</p>
-                </div>
-            </details>
-
-            <details>
-                <summary>📈 Ritmos del Cambio: Evolución vs. Revolución</summary>
-                <div class="contenido-desplegado">
-                    <p>El ritmo de transformación de las sociedades puede ser:</p>
-                    <ul>
-                        <li><strong>Evolución:</strong> Cambios graduales, lentos y pacíficos que modifican la sociedad de forma progresiva a lo largo de décadas.</li>
-                        <li><strong>Revolución:</strong> Una transformación radical, súbita, rápida y frecuentemente violenta que rompe de golpe con todo el orden establecido anterior.</li>
-                    </ul>
-                </div>
-            </details>
-
-            <div class="tarjeta-imagen">
-                <img src="linea-tiempo.png" alt="Línea del tiempo y Grandes Edades de la Historia">
-                <span class="caption">Imagen 1: Eje cronológico general de las grandes edades de la humanidad desde la Prehistoria</span>
-            </div>
-        </section>
-
-        <!-- SECCIÓN 3: EL MÉTODO DE INVESTIGACIÓN HISTÓRICA -->
-        <section id="metodo">
-            <h2>3. El Método de Investigación Histórica</h2>
-            <p>La historia es una ciencia y, por tanto, el historiador no puede inventar el pasado ni recurrir a opiniones sin contrastar. Su trabajo científico exige seguir obligatoriamente estas **tres fases metodológicas** de investigación:</p>
-            <ol>
-                <li><strong>Fase de Hipótesis:</strong> Planteamiento inicial de preguntas y explicaciones provisionales lógicas sobre un problema histórico, que servirán de guía antes de recopilar los datos.</li>
-                <li><strong>Fase de Análisis de Datos:</strong> Búsqueda, recopilación, catalogación y examen crítico de todas las pruebas físicas y documentales que atestigüen los hechos del pasado.</li>
-                <li><strong>Fase de Conclusiones:</strong> Verificación de las hipótesis iniciales, redacción de los resultados demostrados científicamente y su comunicación comprensible a la sociedad.</li>
-            </ol>
-        </section>
-
-        <!-- SECCIÓN 4: CIENCIAS AUXILIARES -->
-        <section id="auxiliares">
-            <h2>4. Ciencias Auxiliares del Historiador</h2>
-            <p>El investigador del pasado no trabaja solo; requiere el apoyo de disciplinas científicas específicas que le ayudan a leer, datar y validar los restos materiales e inscripciones de la antigüedad. Este glosario didáctico detalla las **nueve disciplinas clásicas** de soporte instrumental:</p>
-
-            <div class="caja-colores glosario">
-                <h4>📜 Glosario de Ciencias Auxiliares Clásicas</h4>
-                <ul>
-                    <li><strong>Epigrafía:</strong> Descifra y analiza las inscripciones realizadas sobre materiales duros, como lápidas de piedra o placas de metal antiguo.</li>
-                    <li><strong>Paleografía:</strong> Descifra, lee y data la escritura antigua realizada sobre soportes blandos tradicionales (como el papiro, el pergamino o el papel medieval).</li>
-                    <li><strong>Diplomática:</strong> Estudia la estructura formal, el lenguaje y la autenticidad intrínseca de los diplomas y actas oficiales medievales firmados por papas o reyes.</li>
-                    <li><strong>Numismática:</strong> Estudia, clasifica y data las monedas, medallas y formas de pago metálicas de la antigüedad.</li>
-                    <li><strong>Arqueología:</strong> Recupera, analiza e interpreta los restos materiales, estructuras arquitectónicas y objetos exhumados de los yacimientos terrestres o marinos.</li>
-                    <li><strong>Heráldica:</strong> Descifra el origen, evolución y significado social de los escudos de armas de los linajes familiares y reinos.</li>
-                    <li><strong>Sigilografía:</strong> Estudia de forma analítica los sellos de cera, plomo o lacre utilizados para autenticar legalmente los documentos históricos antiguos.</li>
-                    <li><strong>Papirología:</strong> Se encarga de la conservación, desenrollado y traducción de escritos antiguos conservados en hojas de papiro.</li>
-                    <li><strong>Cronología:</strong> Se ocupa de registrar, medir y ordenar de forma exacta los acontecimientos históricos en el tiempo de manera lineal.</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- SECCIÓN 5: LAS FUENTES Y SU CRÍTICA -->
-        <section id="fuentes">
-            <h2>5. Las Fuentes Históricas y su Crítica Científica</h2>
-            <p>Las **fuentes históricas** son todos los restos, objetos, testimonios escritos u orales que nos han llegado del pasado y que sirven de materia prima al historiador. Se clasifican atendiendo a su procedencia y origen:</p>
-
-            <div class="tarjeta-imagen">
-                <img src="arbol-fuentes.png" alt="Árbol de Clasificación de las Fuentes Históricas">
-                <span class="caption">Imagen 2: Esquema explicativo sobre la tipología de las fuentes según su origen, naturaleza y soporte</span>
+                <p>La información está estructurada de forma jerárquica y limpia en páginas independientes. Hemos evitado diseños desordenados o textos flotantes que tapen las imágenes. Al final de cada tema, dispones de un banco de preguntas XML para practicar y autoevaluarte.</p>
             </div>
 
-            <h3>El Control de Calidad del Historiador: La Crítica de Fuentes</h3>
-            <p>Antes de dar por buena la información de un documento, el historiador le aplica un estricto examen científico dividido en tres fases críticas:</p>
-
-            <details>
-                <summary>🔍 Crítica de Procedencia (Externa y Formal)</summary>
-                <div class="contenido-desplegado">
-                    <p>Consiste en responder tres preguntas fundamentales: **¿Quién escribió el documento?**, **¿cuándo fue redactado?** y **¿dónde se originó?**. Esto permite enmarcar físicamente el documento en su contexto real.</p>
-                </div>
-            </details>
-
-            <details>
-                <summary>🧠 Crítica Interna (De Contenido e Intencionalidad)</summary>
-                <div class="contenido-desplegado">
-                    <p>Deconstruye el mensaje del texto para dilucidar **qué intenciones movían al autor** a escribirlo, qué sesgos políticos o socioeconómicos presenta, y si sus afirmaciones son verdaderas o contradictorias.</p>
-                </div>
-            </details>
-
-            <details>
-                <summary>🛠️ Crítica de Restitución (Rastreo del Manuscrito)</summary>
-                <div class="contenido-desplegado">
-                    <p>Analiza el recorrido físico del manuscrito a lo largo de los siglos para determinar si el texto ha sufrido alteraciones, censuras o manipulaciones de copistas, intentando **reconstruir la versión original** perdida.</p>
-                </div>
-            </details>
-        </section>
-
-        <!-- SECCIÓN 6: FICHAS DE COMENTARIO OFICIALES -->
-        <section id="fichas">
-            <h2>6. Fichas de Comentario Oficiales de Examen</h2>
-            <p>Para asegurar tu éxito en los exámenes de 2º de Bachillerato y en la **EBAU / EvAU**, utiliza estas plantillas didácticas interactivas paso a paso para entrenar tus comentarios prácticos:</p>
-
-            <details>
-                <summary>📝 Plantilla 1: Comentario de Textos Históricos</summary>
-                <div class="contenido-desplegado">
-                    <ol>
-                        <li><strong>Clasificación del texto:</strong> Determina el tipo de texto (jurídico si es una ley, literario si es una carta personal o memorias, o circunstancial si es una proclama o manifiesto), fecha de redacción y destinatario.</li>
-                        <li><strong>Análisis de ideas:</strong> Extrae la idea principal del texto y las secundarias explicándolas con tus palabras.</li>
-                        <li><strong>Contextualización histórica:</strong> Explica qué estaba pasando en España en el momento de redactarse ese documento, utilizando los apuntes teóricos de clase.</li>
-                    </ol>
-                </div>
-            </details>
-
-            <details>
-                <summary>🗺️ Plantilla 2: Comentario de Mapas Históricos</summary>
-                <div class="contenido-desplegado">
-                    <ol>
-                        <li><strong>Identificación formal:</strong> Señala el tipo de mapa (político, de operaciones militares, económico o de división provincial), su ámbito geográfico y la leyenda de colores.</li>
-                        <li><strong>Explicación del fenómeno:</strong> Describe qué proceso representa (por ejemplo, el avance del carlismo o las ventas de la desamortización) indicando qué provincias o regiones se vieron más afectadas.</li>
-                        <li><strong>Relación histórica:</strong> Explica el origen, las causas y los desenlaces históricos del fenómeno cartografiado.</li>
-                    </ol>
-                </div>
-            </details>
+            <!-- BOTÓN INTERACTIVO CURIOSO -->
+            <div style="margin: 20px 0;">
+                <button class="btn-interactivo btn-anecdota" onclick="openPopup('pop-bienvenida')">🕵️‍♂️ Descubre: ¿Por qué estudiamos las fuentes históricas?</button>
+            </div>
         </section>
     </main>
 
-    <!-- VENTANAS EMERGENTES (POPUPS INTERACTIVOS / MODALS) -->
-
-    <!-- POPUP TEMA 0: EMPATÍA HISTÓRICA -->
-    <div id="pop-empatia" class="modal">
+    <!-- VENTANA EMERGENTE (POPUP INTERACTIVO) -->
+    <div id="pop-bienvenida" class="modal">
         <div class="modal-content">
-            <span class="modal-close" onclick="closePopup('pop-empatia')">&times;</span>
-            <h3 style="color: #b45309; margin-top: 0;">🕵️‍♂️ El Método Histórico: ¿Qué es la Empatía Histórica?</h3>
-            <p>La herramienta mental imprescindible para evitar juzgar el pasado con ojos del presente:</p>
-            <div class="texto-modal">La **empatía histórica** (o compenetración del historiador) no consiste en "sentir simpatía" o justificar moralmente los crímenes o decisiones de los personajes de la antigüedad.
+            <span class="modal-close" onclick="closePopup('pop-bienvenida')">&times;</span>
+            <h3 style="color: #b45309; margin-top: 0;">🕵️‍♂️ Las huellas del pasado: ¿Qué son las fuentes históricas?</h3>
+            <p>La base científica sobre la que trabaja el investigador para reconstruir la verdad:</p>
+            <div class="texto-modal">Un historiador no puede inventar el pasado ni basarse en meras suposiciones subjetivas; cada afirmación debe estar estrictamente demostrada y fundamentada.
 
-Consiste en un riguroso esfuerzo científico y metodológico para **comprender el pensamiento, los miedos, las aspiraciones y las decisiones de las personas del pasado según sus propios condicionantes** económicos, culturales y de época. 
+Las fuentes históricas son todos los objetos, documentos, testimonios, imágenes y restos materiales que nos han llegado de épocas pasadas y que contienen información valiosa sobre cómo vivían las personas de aquel tiempo.
 
-Juzgar a una persona de la Edad Media o del siglo XIX utilizando exclusivamente la escala de valores democráticos de nuestro siglo XXI es un error metodológico básico llamado **anacronismo**, el mayor enemigo de la objetividad en el estudio científico de la Historia.</div>
+Se dividen de forma clásica en:
+- Fuentes Primarias: Aquellas elaboradas de forma simultánea a los acontecimientos históricos que narran (por ejemplo, la Constitución de 1812 o una carta original firmada por Cánovas del Castillo).
+- Fuentes Secundarias: Aquellas redactadas con posterioridad a los hechos utilizando fuentes primarias (por ejemplo, el manual de texto escolar, una enciclopedia moderna o el análisis de un historiador actual).</div>
         </div>
     </div>
 
-    <!-- Script de Popups y Navegación Dinámica -->
+    <!-- Script de Popups -->
     <script>
-        const links = document.querySelectorAll('aside nav ul li a');
-        const sections = document.querySelectorAll('main section');
-
-        window.addEventListener('scroll', () => {
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                if (window.scrollY >= (sectionTop - 250)) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            links.forEach(a => {
-                const href = a.getAttribute('href');
-                if (href.startsWith('#')) {
-                    a.classList.remove('active');
-                    if (href === `#${current}`) {
-                        a.classList.add('active');
-                    }
-                }
-            });
-        });
-
         function openPopup(id) {
             document.getElementById(id).classList.add('show');
         }
