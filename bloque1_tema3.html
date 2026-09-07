@@ -6,9 +6,9 @@
     <title>Bloque I - Tema 3: El Sexenio Revolucionario (1868 - 1874)</title>
     <style>
         :root {
-            /<em> Colores corporativos alegres y vibrantes </em>/
-            --primary-intense: #1e40af; /<em> Azul real oscuro </em>/
-            --primary-vibrant: #2563eb; /<em> Azul brillante </em>/
+            /* Colores corporativos alegres y vibrantes */
+            --primary-intense: #1e40af; /* Azul real oscuro */
+            --primary-vibrant: #2563eb; /* Azul brillante */
             --primary-dark: #0f172a;
             --primary: #1e293b;
             --bg-main: #f8fafc;
@@ -16,12 +16,12 @@
             --text-dark: #1e293b;
             --text-muted: #64748b;
             
-            /<em> Tonos suaves en verde para el encabezado </em>/
-            --header-bg: #f0fdf4; /<em> Fondo verde menta muy suave </em>/
-            --header-border: #10b981; /<em> Borde verde esmeralda </em>/
-            --header-text: #065f46; /<em> Texto verde bosque oscuro </em>/
+            /* Tonos suaves en verde para el encabezado */
+            --header-bg: #f0fdf4; /* Fondo verde menta muy suave */
+            --header-border: #10b981; /* Borde verde esmeralda */
+            --header-text: #065f46; /* Texto verde bosque oscuro */
 
-            /<em> Cajas didácticas </em>/
+            /* Cajas didácticas */
             --border-glosario: #0ea5e9;
             --bg-glosario: #f0f9ff;
             --border-investigacion: #f59e0b;
@@ -32,7 +32,7 @@
             --bg-factores: #ecfdf5;
         }
 
-        <em> {
+        * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
@@ -46,7 +46,7 @@
             min-height: 100vh;
         }
 
-        /<em> Barra de navegación lateral fija a la izquierda </em>/
+        /* Barra de navegación lateral fija a la izquierda */
         aside {
             width: 300px;
             background-color: var(--primary-dark);
@@ -89,7 +89,7 @@
             font-weight: 500;
         }
 
-        /<em> Botón de volver a la portada </em>/
+        /* Botón de volver a la portada */
         aside nav ul li .btn-volver {
             background-color: #334155;
             color: #ffffff;
@@ -109,7 +109,7 @@
             border-color: var(--primary-vibrant);
         }
 
-        /<em> Enlaces activos e interactivos en azul vibrante </em>/
+        /* Enlaces activos e interactivos en azul vibrante */
         aside nav ul li a:hover, aside nav ul li a.active {
             background-color: var(--primary-vibrant);
             color: white;
@@ -117,14 +117,14 @@
             box-shadow: 0 4px 10px rgba(37, 99, 235, 0.15);
         }
 
-        /<em> Contenido de la Web </em>/
+        /* Contenido de la Web */
         main {
             margin-left: 300px;
             padding: 40px;
             max-width: 1100px;
         }
 
-        /<em> Encabezado Alegre con tonos suaves en verde </em>/
+        /* Encabezado Alegre con tonos suaves en verde */
         header {
             margin-bottom: 35px;
             background: linear-gradient(135deg, var(--header-bg), #e6fcf0);
@@ -148,7 +148,7 @@
             font-weight: 500;
         }
 
-        /<em> Cabecera ilustrada horizontal </em>/
+        /* Cabecera ilustrada horizontal */
         .cabecera-ilustrada {
             width: 100%;
             height: auto;
@@ -196,7 +196,7 @@
             text-align: justify;
         }
 
-        /<em> Cajas de colores </em>/
+        /* Cajas de colores */
         .caja-colores {
             padding: 20px;
             border-radius: 8px;
@@ -236,16 +236,16 @@
             color: #047857;
         }
 
-        /<em> --- ESTILADO DE TARJETA DE IMAGEN INTEGRADA (ANTI-SOLAPAMIENTO) --- </em>/
+        /* --- ESTILADO DE TARJETA DE IMAGEN INTEGRADA (ANTI-SOLAPAMIENTO) --- */
         .tarjeta-imagen {
             background-color: #f8fafc;
             border: 1px solid #e2e8f0;
             border-radius: 8px;
             padding: 16px;
-            margin: 20px 0 30px 0; /<em> Margen inferior amplio para asegurar el flujo de bloque </em>/
+            margin: 20px 0 30px 0; /* Margen inferior amplio para asegurar el flujo de bloque */
             text-align: center;
             box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-            display: block; /<em> Evita que flote u oculte elementos de texto </em>/
+            display: block; /* Evita que flote u oculte elementos de texto */
             position: relative;
             overflow: hidden;
         }
@@ -255,7 +255,7 @@
             height: auto;
             border-radius: 6px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-            margin-bottom: 12px; /<em> Espacio fijo entre la imagen y el texto inferior </em>/
+            margin-bottom: 12px; /* Espacio fijo entre la imagen y el texto inferior */
             display: inline-block;
         }
 
@@ -268,7 +268,7 @@
             display: block;
         }
 
-        /<em> Fila de imágenes homogénea (mismo tamaño para todas) </em>/
+        /* Fila de imágenes homogénea (mismo tamaño para todas) */
         .fila-imagenes {
             display: flex;
             gap: 20px;
@@ -290,7 +290,7 @@
         }
 
 
-        /<em> Desplegables de Lectura Estructurada </em>/
+        /* Desplegables de Lectura Estructurada */
         details {
             background-color: #f8fafc;
             border: 1px solid #e2e8f0;
@@ -331,23 +331,23 @@
             color: #334155;
         }
 
-        /<em> --- ESTILOS PARA POPUPS INTERACTIVOS (MODALS) --- </em>/
+        /* --- ESTILOS PARA POPUPS INTERACTIVOS (MODALS) --- */
         .modal {
-            display: none; /<em> Oculto por defecto </em>/
+            display: none; /* Oculto por defecto */
             position: fixed;
-            z-index: 2000; /<em> Por encima de la barra lateral </em>/
+            z-index: 2000; /* Por encima de la barra lateral */
             left: 0;
             top: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(15, 23, 42, 0.6); /<em> Fondo oscuro </em>/
-            backdrop-filter: blur(4px); /<em> Desenfoque estético </em>/
+            background-color: rgba(15, 23, 42, 0.6); /* Fondo oscuro */
+            backdrop-filter: blur(4px); /* Desenfoque estético */
             align-items: center;
             justify-content: center;
         }
 
         .modal.show {
-            display: flex; /<em> Se muestra mediante JS </em>/
+            display: flex; /* Se muestra mediante JS */
         }
 
         .modal-content {
@@ -383,7 +383,7 @@
             color: var(--border-critica);
         }
 
-        /<em> Botones de acción didáctica </em>/
+        /* Botones de acción didáctica */
         .btn-interactivo {
             display: inline-flex;
             align-items: center;
@@ -446,7 +446,7 @@
             text-align: justify;
         }
 
-        /<em> Responsive </em>/
+        /* Responsive */
         @media (max-width: 900px) {
             aside {
                 width: 100%;
@@ -514,7 +514,7 @@
             <p>El colapso del sistema no fue un hecho aislado, sino que coincidió con una confluencia de factores críticos acumulados en los años previos:</p>
             <ul>
                 <li><strong>La profunda crisis económica (1866):</strong> Se manifestó de forma trágica a nivel financiero (por la escasa rentabilidad de la burbuja especulativa del ferrocarril), industrial (con el encarecimiento del algodón por la Guerra de Secesión norteamericana que paralizó el textil catalán) y de subsistencias (por malas cosechas de trigo que causaron un encarecimiento del pan del 67% y hambruna).</li>
-                <li><strong>La parálisis del modelo político moderado:</strong> Las prácticas corruptas y dictatoriales de los últimos ministros de Isabel II (Narváez y González Bravo) dejaron fuera del juego a los progresistas y demócratas, quienes firmaron en el verano de 1866 el <em>Pacto de Ostende</em> en Bélgica para derrocar el trono borbónico.</li>
+                <li><strong>La parálisis del modelo político moderado:</strong> Las prácticas corruptas y dictatoriales de los últimos ministros de Isabel II (Narváez y González Bravo) dejaron fuera del juego a los progresistas y demócratas, quienes firmaron en el verano de 1866 el <em>Pacto de Ostende* en Bélgica para derrocar el trono borbónico.</li>
                 <li><strong>La impopularidad de la reina:</strong> La influencia de la camarilla palaciega (sor Patrocinio, la «monja de las llagas», y el confesor padre Claret) terminó por deslegitimar por completo la institución real.</li>
             </ul>
 
