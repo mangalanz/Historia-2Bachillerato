@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloque III - Tema 2: Dictadura y Fin de la Restauración (1923 - 1931)</title>
+    
+    <style>
+        :root {
+            --primary-intense: #1e40af;
+            --primary-vibrant: #2563eb;
+            --primary-dark: #0f172a;
+            --primary: #1e293b;
+            --bg-main: #f8fafc;
+            --card-bg: #ffffff;
+            --text-dark: #1e293b;
+            --text-muted: #64748b;
+            
+            --header-bg: #f0fdf4;
+            --header-border: #10b981;
+            --header-text: #065f46;
+
+            --border-glosario: #0ea5e9;
+            --bg-glosario: #f0f9ff;
+            --border-investigacion: #f59e0b;
+            --bg-investigacion: #fffbeb;
+            --border-critica: #ef4444;
+            --bg-critica: #fef2f2;
+            --border-factores: #10b981;
+            --bg-factores: #ecfdf5;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-dark);
+            min-height: 100vh;
+        }
+
+        aside {
+            width: 300px;
+            background-color: var(--primary-dark);
+            color: white;
+            padding: 25px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            overflow-y: auto;
+            border-right: 1px solid #334155;
+            z-index: 100;
+        }
+
+        aside h1 {
+            font-size: 1.25rem;
+            margin-bottom: 25px;
+            color: #f8fafc;
+            border-bottom: 3px solid var(--primary-vibrant);
+            padding-bottom: 12px;
+            text-align: center;
+        }
+
+        aside nav ul {
+            list-style: none;
+        }
+
+        aside nav ul li {
+            margin-bottom: 10px;
+        }
+
+        aside nav ul li a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 0.95rem;
+            display: block;
+            padding: 10px 14px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            font-weight: 500;
+        }
+
+        aside nav ul li .btn-volver {
+            background-color: #334155;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+            border: 1px solid #475569;
+            margin-bottom: 15px;
+            display: block;
+            padding: 10px 14px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            text-decoration: none;
+        }
+
+        aside nav ul li .btn-volver:hover {
+            background-color: var(--primary-vibrant);
+            border-color: var(--primary-vibrant);
+        }
+
+        aside nav ul li a:hover, aside nav ul li a.active {
+            background-color: var(--primary-vibrant);
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(37, 99, 235, 0.15);
+        }
+
+        main {
+            margin-left: 300px;
+            padding: 40px;
+            max-width: 1100px;
+        }
+
+        header {
+            margin-bottom: 35px;
+            background: linear-gradient(135deg, var(--header-bg), #e6fcf0);
+            border-left: 6px solid var(--header-border);
+            color: var(--header-text);
+            padding: 25px 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(16, 185, 129, 0.08);
+        }
+
+        header h2 {
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+            color: var(--header-text);
+            font-weight: 800;
+        }
+
+        header p {
+            color: #15803d;
+            font-size: 1.05rem;
+            font-weight: 500;
+        }
+
+        section {
+            background: var(--card-bg);
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            margin-bottom: 35px;
+            border-left: 6px solid var(--primary-vibrant);
+        }
+
+        section h2 {
+            color: var(--primary-dark);
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #f1f5f9;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: var(--primary-intense);
+            margin: 25px 0 12px 0;
+            font-size: 1.25rem;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+            color: #334155;
+            text-align: justify;
+        }
+
+        /* CONTENEDOR DE IMAGEN (ANTI-SOLAPAMIENTO) */
+        .tarjeta-imagen {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 20px 0 30px 0;
+            text-align: center;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            display: block;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tarjeta-imagen img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            margin-bottom: 12px;
+            display: inline-block;
+        }
+
+        .tarjeta-imagen .caption {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            font-style: italic;
+            margin: 0;
+            line-height: 1.4;
+            display: block;
+        }
+
+        /* FILAS DE IMÁGENES COMPATIBLES (ADAPTATIVAS) */
+        .fila-imagenes {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0 30px 0;
+        }
+
+        .fila-imagenes .tarjeta-imagen {
+            flex: 1;
+            min-width: 250px;
+            margin: 0;
+        }
+
+        .caja-colores {
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-size: 1rem;
+        }
+
+        .caja-colores h4 {
+            margin-bottom: 10px;
+            font-size: 1.15rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .factores {
+            background-color: var(--bg-factores);
+            border-left: 5px solid var(--border-factores);
+            color: #047857;
+        }
+
+        .investigacion {
+            background-color: var(--bg-investigacion);
+            border-left: 5px solid var(--border-investigacion);
+            color: #b45309;
+        }
+
+        details {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 14px;
+        }
+
+        details[open] {
+            background-color: white;
+            border-color: var(--primary-vibrant);
+        }
+
+        summary {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--primary-dark);
+            cursor: pointer;
+            outline: none;
+            user-select: none;
+        }
+
+        details .contenido-desplegado {
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px dashed #e2e8f0;
+        }
+
+        ul {
+            padding-left: 25px;
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #334155;
+        }
+
+        /<em> POPUPS INTERACTIVOS </em>/
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(4px);
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal.show {
+            display: flex;
+        }
+
+        .modal-content {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            max-width: 650px;
+            width: 90%;
+            max-height: 85vh;
+            overflow-y: auto;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            border-left: 6px solid var(--border-investigacion);
+            position: relative;
+            animation: modalFadeIn 0.3s ease-out;
+        }
+
+        @keyframes modalFadeIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-muted);
+        }
+
+        .modal-close:hover {
+            color: var(--border-critica);
+        }
+
+        .btn-interactivo {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            margin: 8px 0;
+            border: none;
+        }
+
+        .btn-anecdota {
+            background-color: var(--bg-investigacion);
+            border: 1px solid var(--border-investigacion);
+            color: #b45309;
+        }
+
+        .btn-anecdota:hover {
+            background-color: var(--border-investigacion);
+            color: white;
+        }
+
+        .btn-texto {
+            background-color: var(--bg-factores);
+            border: 1px solid var(--border-factores);
+            color: #047857;
+        }
+
+        .btn-texto:hover {
+            background-color: var(--border-factores);
+            color: white;
+        }
+
+        .btn-video {
+            background-color: var(--bg-glosario);
+            border: 1px solid var(--border-glosario);
+            color: #0369a1;
+        }
+
+        .btn-video:hover {
+            background-color: var(--border-glosario);
+            color: white;
+        }
+
+        .texto-modal {
+            font-size: 0.95rem;
+            color: #334155;
+            background-color: #f8fafc;
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px solid #e2e8f0;
+            white-space: pre-wrap;
+            margin-top: 10px;
+            text-align: justify;
+        }
+
+        @media (max-width: 900px) {
+            aside {
+                width: 100%;
+                height: auto;
+                position: relative;
+                border-right: none;
+                border-bottom: 1px solid #334155;
+            }
+            main {
+                margin-left: 0;
+                width: 100%;
+                padding: 20px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- Navegación Lateral -->
+    <aside>
+        <h1>🏛️ Bloque III: Crisis de la Restauración</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="btn-volver">🏠 Volver a Portada</a></li>
+                
+                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 10px 14px 5px 14px; font-weight: bold; border-bottom: 1px solid #334155; margin-bottom: 8px;">📍 Secciones del Tema 2</li>
+                <li><a href="#origen" class="active">1. El Golpe y Directorio Militar</a></li>
+                <li><a href="#marruecos">2. El Desembarco de Alhucemas</a></li>
+                <li><a href="#directoriciov">3. Directorio Civil y Economía</a></li>
+                <li><a href="#oposicion">4. La Decadencia del Régimen</a></li>
+                <li><a href="#republica">5. Caída Real y Proclamación</a></li>
+
+                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 20px 14px 5px 14px; font-weight: bold; border-top: 1px solid #475569; margin-top: 25px; border-bottom: 1px solid #334155; margin-bottom: 8px;">📖 Temas del Bloque III</li>
+                <li><a href="bloque3_tema1.html">Tema 1: Crisis de la Restauración (1902-1923)</a></li>
+                <li><a href="bloque3_tema2.html" style="font-weight: bold; color: var(--primary-vibrant);">Tema 2: Dictadura y Fin de la Restauración (1923-1931)</a></li>
+                </ul>
+        </nav>
+    </aside>
+
+    <!-- Contenido Principal -->
+    <main>
+        <header>
+            <h2>Tema 2: La Dictadura y Fin de la Restauración (1923 - 1931)</h2>
+            <p>La clausura del parlamentarismo constitucional, el reformismo autoritario de los años veinte, el auge de la oposición y el derrumbe final de la institución monárquica.</p>
+        </header>
+
+        <div class="tarjeta-imagen" style="margin-top: 0;">
+            <img src="img/dictador-primo.png" alt="Miguel Primo de Rivera y Alfonso XIII">
+            <span class="caption">Imagen: El rey Alfonso XIII y el general Miguel Primo de Rivera junto a los generales del directorio militar tras tomar posesión de sus cargos (1923)</span>
+        </div>
+
+        <!-- SECCIÓN 1 -->
+        <section id="origen">
+            <h2>1. El Golpe de Estado de 1923 y el Directorio Militar (1923 - 1925)</h2>
+            <p>El 13 de septiembre de 1923, el capitán general de Cataluña, <em>Miguel Primo de Rivera</em>, encabezó un pronunciamiento militar que derribó al gobierno constitucional sin apenas resistencia y ante la indiferencia o aprobación tácita de la opinión pública. El rey <em>Alfonso XIII</em>, favorable a una salida autoritaria ante la debilidad parlamentaria y temeroso de las revelaciones del <em>Expediente Picasso</em> sobre Marruecos, sancionó inmediatamente el golpe entregándole la jefatura del Gobierno.</p>
+            <p>Durante la primera fase de la dictadura, conocida como el <strong>Directorio Militar (1923-1925)</strong>, el dictador gobernó como ministro único asistido por un consejo de generales. Las principales medidas represivas adoptadas para restablecer el orden público fueron:</p>
+            <ul>
+                <li><strong>Suspensión de las garantías constitucionales:</strong> La Constitución de 1876 quedó en suspenso, se disolvieron el Congreso y el Senado y se instauró una estricta censura en la prensa escrita y el correo privado.</li>
+                <li><strong>Militarización administrativa:</strong> Se destituyó a todos los ayuntamientos y diputaciones provinciales, sustituyendo a los gobernadores civiles por jefes militares y entregando la dirección de los municipios a juntas de vocales nombradas a dedo entre los mayores contribuyentes.</li>
+                <li><strong>Persecución del obrerismo revolucionario:</strong> Se persiguió y declaró fuera de la ley a los partidos comunistas y a la CNT anarquista, forzándolos a la clandestinidad, mientras que el PSOE y la UGT mantuvieron una actitud de neutralidad y colaboración tácita inicial con el régimen.</li>
+                <li><strong>Control de los nacionalismos periféricos:</strong> Se persiguió férreamente al nacionalismo vasco y catalán. Se prohibió el uso público de la lengua catalana, la sardana y la senyera, y se decretó la disolución de la Mancomunidad de Cataluña en 1925, calificando al regionalismo de idéntico al separatismo.</li>
+            </ul>
+
+            <div class="caja-colores factores">
+                <h4>🗳️ La Farsa del Partido Único: La Unión Patriótica</h4>
+                <p>Para intentar legitimar y dar una base social al nuevo régimen autoritario, Primo de Rivera fundó en 1924 la <strong>Unión Patriótica (UP)</strong>, un partido único de carácter personalista y corporativo. Carecía de programa ideológico definido y se fundamentaba en los principios católicos y de unidad nacional. Como milicia armada ciudadana auxiliar de apoyo a las fuerzas de seguridad, se extendió a todo el país el <strong>Somatén Nacional</strong>, que llegó a agrupar a más de 200.000 burgueses y propietarios voluntarios armados.</p>
+            </div>
+
+            <!-- VÍDEO COMPLEMENTARIO DE LA DICTADURA -->
+            <div style="margin: 20px 0; text-align: center;">
+                <p style="font-size: 0.95rem; color: var(--text-muted); font-style: italic; margin-bottom: 10px;">
+                    ¿Quieres analizar de cerca los acontecimientos del pronunciamiento de 1923 y el funcionamiento de su gobierno autoritario?
+                </p>
+                <a href="https://youtu.be/ryxFe02rSDU" target="_blank" class="btn-interactivo btn-video">
+                    🎬 Vídeo complementario: Ver extractos históricos de la Dictadura de Primo de Rivera ➡️
+                </a>
+            </div>
+
+            <!-- BOTÓN INTERACTIVO: MANIFIESTO GOLPE -->
+            <div style="margin: 15px 0; text-align: center;">
+                <button class="btn-interactivo btn-texto" onclick="openPopup('pop-golpe')">📜 Documento: El Manifiesto del Golpe de Estado de Primo de Rivera (13 de septiembre de 1923)</button>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2 -->
+        <section id="marruecos">
+            <h2>2. La Pacificación de Marruecos: El Desembarco de Alhucemas (1925)</h2>
+            <p>El gran éxito popular y político de la dictadura fue la resolución definitiva del problema marroquí, que desangraba las finanzas y la juventud del país desde principios de siglo. Aunque Primo de Rivera se había manifestado inicialmente partidario del abandono del protectorado africano, la presión de los coroneles africanistas (como <em>Francisco Franco</em> o <em>Sanjurjo</em>) y la audacia del líder rifeño <em>Abd-el-Krim</em> le llevaron a planificar una ofensiva militar.</p>
+
+            <div class="tarjeta-imagen">
+                <img src="img/desembarco-alhucemas.png" alt="Desembarco de Alhucemas de 1925">
+                <span class="caption">Imagen: Operaciones de desembarco de tropas españolas en la bahía de Alhucemas en septiembre de 1925</span>
+            </div>
+
+            <p>Al extender Abd-el-Krim la guerrilla rifeña a la zona del protectorado francés, España y Francia firmaron una alianza estratégica militar. El 8 de septiembre de 1925 se ejecutó el histórico <strong>Desembarco de Alhucemas</strong>. Se trató de una operación conjunta hispano-francesa a gran escala, la primera de la historia que coordinó fuerzas de tierra, mar y aire de forma planificada.</p>
+            <p>La operación fue un éxito total. La resistencia de las cabilas rifeñas fue pulverizada y Abd-el-Krim terminó rindiéndose a las tropas francesas en 1926. La pacificación de la zona restauró el honor herido del Ejército, reconcilió al régimen con las clases populares campesinas y los inversores burgueses, e impulsó la inmensa popularidad del dictador.</p>
+        </section>
+
+        <!-- SECCIÓN 3 -->
+        <section id="directoriciov">
+            <h2>3. El Directorio Civil y el Auge Intervencionista (1925 - 1930)</h2>
+            <p>Aprovechando su momento de máxima popularidad, Primo de Rivera sustituyó en diciembre de 1925 el Directorio Militar por el <strong>Directorio Civil</strong>, incorporando a destacados tecnócratas civiles como <em>José Calvo Sotelo</em> en el Ministerio de Hacienda o <em>Eduardo Aunós</em> en Trabajo, con el claro propósito de perpetuarse en el poder institucionalizando la dictadura.</p>
+            <p>Beneficiándose de la excelente coyuntura económica internacional de los <strong>felices años veinte</strong>, la dictadura puso en marcha un ambicioso programa de fomento industrial e infraestructuras, caracterizado por una fuerte nacionalización e intervencionismo estatal:</p>
+            <ul>
+                <li><strong>El plan de obras públicas:</strong> Se construyeron más de 5.000 kilómetros de carreteras, se ampliaron y renovaron las vías férreas y se crearon las <strong>Confederaciones Hidrográficas</strong> para el aprovechamiento agrario e hidroeléctrico de las cuencas fluviales mediante canales y embalses.</li>
+                <li><strong>Grandes monopolios del Estado:</strong> Se crearon monopolios nacionales para centralizar la recaudación y los servicios estratégicos: la Compañía Arrendataria del Monopolio de Petróleos (<em>CAMPSA</em>), la Compañía Telefónica Nacional de España (<em>CTNE</em>), Tabacalera y la Lotería Nacional, acumulando una deuda pública considerable.</li>
+                <li><strong>Paz laboral forzada:</strong> Se creó la <strong>Organización Corporativa Nacional</strong>, un sindicato de Estado integrado por patronos y obreros en comités paritarios que actuaban bajo el arbitraje del Estado, reduciendo de forma drástica las huelgas y desterrando el derecho de huelga. El ala mayoritaria del PSOE (liderada por <em>Largo Caballero</em>) colaboró estrechamente con estas instituciones corporativas, frente a la oposición minoritaria de <em>Indalecio Prieto</em>.</li>
+            </ul>
+
+            <div class="fila-imagenes">
+                <div class="tarjeta-imagen">
+                    <img src="img/exposicion-sevilla.png" alt="Exposición Iberoamericana de Sevilla de 1929">
+                    <span class="caption">Imagen: Plaza de España de Sevilla construida para la Exposición Iberoamericana de 1929</span>
+                </div>
+                <div class="tarjeta-imagen">
+                    <img src="img/exposicion-barcelona.png" alt="Exposición Universal de Barcelona de 1929">
+                    <span class="caption">Imagen: Palacios oficiales de Montjuïc construidos para la Exposición Universal de Barcelona de 1929</span>
+                </div>
+            </div>
+
+            <p>Para celebrar el éxito económico del régimen y ensalzar la modernización nacional, la dictadura organizó dos inmensos escaparates internacionales: la <strong>Exposición Iberoamericana de Sevilla</strong> y la <strong>Exposición Universal de Barcelona</strong> en 1929, que culminaron el boom material de los años veinte en España.</p>
+        </section>
+
+        <!-- SECCIÓN 4 -->
+        <section id="oposicion">
+            <h2>4. La Decadencia del Régimen y el Crecimiento de la Oposición</h2>
+            <p>A partir de 1928, el fracaso en el intento de institucionalizar el régimen de forma permanente mediante una nueva constitución corporativa (redactada por la Asamblea Nacional Consultiva en 1929 y rechazada por unanimidad) aceleró la decadencia de la dictadura. La oposición se fue estructurando firmemente en múltiples frentes:</p>
+            <ul>
+                <li><strong>Los intelectuales y la universidad:</strong> La imposición de la censura y el destierro del célebre rector y filósofo <em>Miguel de Unamuno</em> a Canarias provocaron masivas huelgas de estudiantes que se agruparon en el gran sindicato de la Federación Universitaria Española (<em>FUE</em>). Intelectuales como <em>Vicente Blasco Ibáñez</em> atacaron ferozmente al dictador desde el exilio.</li>
+                <li><strong>El propio ejército:</strong> Las decisiones arbitrarias de Primo de Rivera en los ascensos y la disolución del Cuerpo de Artillería provocaron pronunciamientos militares internos como la <em>Sanjuanada</em> en 1926.</li>
+                <li><strong>La izquierda y los sindicatos:</strong> El PSOE comenzó a desmarcarse del régimen a partir de 1928 ante la falta de libertades democráticas, mientras que en la clandestinidad anarquista, la CNT se radicalizó con la fundación en 1927 de la <strong>Federación Anarquista Ibérica (FAI)</strong>, de carácter revolucionario e insurreccional.</li>
+            </ul>
+
+            <div class="caja-colores investigacion">
+                <h4>📉 El Crack del 29 y el Colapso Financiero</h4>
+                <p>El estallido del crack económico mundial de 1929 contagió de inmediato a la frágil economía intervencionista española. Las deudas extraordinarias del Estado se hicieron insostenibles y la peseta se devaluó de forma masiva. El desempleo en las ciudades aumentó rápidamente, desatando una oleada de huelgas obreras que destruyeron el espejismo de la paz social del régimen.</p>
+                <p>Solo, enfermo y sin el respaldo del rey ni de la burguesía industrial o los mandos militares, el general <strong>Miguel Primo de Rivera presentó su dimisión el 28 de enero de 1930</strong>, exiliándose a París donde fallecería pocas semanas después.</p>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 5 -->
+        <section id="republica">
+            <h2>5. La Caída de la Monarquía y la Proclamación de la República (1930 - 1931)</h2>
+            <p>La caída del dictador puso al descubierto la extrema debilidad en que había quedado la monarquía a causa de la complicidad directa de Alfonso XIII con el golpe de 1923. El rey nombró de forma apresurada al general <em>Dámaso Berenguer</em> para pilotar la transición pacífica hacia la normalidad constitucional (etapa conocida jocosamente por la prensa como la <strong>"Dictablanda"</strong> por la debilidad de su censura e iniciativas).</p>
+            <p>La pasividad gubernamental fue aprovechada por la oposición. En agosto de 1930, representantes socialistas, republicanos y nacionalistas de izquierda firmaron el <em>Pacto de San Sebastián</em>, un frente común histórico destinado a derrocar la monarquía e instaurar una democracia. Se formó un Comité Revolucionario nacional dirigido por <em>Niceto Alcalá-Zamora</em> para coordinar un alzamiento cívico-militar.</p>
+
+            <div class="tarjeta-imagen">
+                <img src="img/proclamacion-republica.png" alt="Proclamación de la Segunda República">
+                <span class="caption">Imagen: Multitud concentrada en la Puerta del Sol de Madrid para celebrar la proclamación de la Segunda República el 14 de abril de 1931</span>
+            </div>
+
+            <p>Aunque la sublevación militar de Jaca en diciembre de 1930 fracasó y acabó con el fusilamiento de los capitanes <em>Fermín Galán</em> y <em>Ángel García Hernández</em>, la indignación popular desbordó al gobierno de Berenguer, quien dimitió en febrero de 1931. El almirante <em>Aznar</em> asumió el poder y, temeroso de unas elecciones generales, convocó en primer término <strong>elecciones municipales para el 12 de abril de 1931</strong>.</p>
+            <p>La campaña electoral fue planteada por la opinión pública como un auténtico <strong>plebiscito nacional a favor o en contra de la monarquía</strong>. Aunque en las zonas rurales controladas por el caciquismo vencieron los candidatos monárquicos, las candidaturas coaligadas republicano-socialistas arrasaron en 45 de las grandes capitales de provincia de España.</p>
+            <p>Ante la evidencia del veredicto popular de las ciudades, Alfonso XIII decidió renunciar al ejercicio de sus funciones reales para evitar un choque armado civil y huyó al exilio en Italia. El <em>14 de abril de 1931 se proclamó oficialmente la Segunda República Española</em>, haciéndose cargo del poder ejecutivo provisional el comité revolucionario del Pacto de San Sebastián.</p>
+        </section>
+        <!-- COPIAR Y PEGAR ESTE BLOQUE EN TU ARCHIVO LOCAL BLOQUE3_TEMA2.HTML -->
+<div class="tarjeta-imagen" style="margin: 25px 0 35px 0;">
+    <img src="img/esquema-dictadura-primo.png" alt="Esquema conceptual de la Dictadura de Primo de Rivera (1923-1930)" style="max-height: 480px; width: auto; max-width: 100%;">
+    <span class="caption">Imagen: Esquema conceptual y mapa mental de síntesis didáctica sobre las causas, fases gubernamentales, principales realizaciones económicas y el desarrollo de la oposición durante la Dictadura de <em>Miguel Primo de Rivera</em></span>
+</div>
+
+    </main>
+
+    <!-- POPUPS INTERACTIVOS (MODALS) -->
+
+    <!-- POPUP 1: GOLPE -->
+    <div id="pop-golpe" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closePopup('pop-golpe')">&times;</span>
+            <h3 style="color: #047857; margin-top: 0;">📜 El Manifiesto del Golpe de Estado de Primo de Rivera (13 de septiembre de 1923)</h3>
+            <p>La proclama del dictador dirigida al país justificando el fin del sistema constitucional de la Restauración:</p>
+            <div class="texto-modal">"Españoles: ha llegado para nosotros el momento, más temido que esperado, (...) de recoger las ansias, de atender el clamoroso requerimiento de cuantos, amando a la patria, no ven para ella otra salvación que libertarla de los profesionales de la política, de los que, por una u otra razón, nos ofrecen el cuadro de desdichas e inmoralidades que empezaron el año 98 y amenazan a España con un próximo fin trágico y deshonroso.
+
+La tupida red de la política de concupiscencia ha cogido en sus mallas, secuestrándola, hasta la voluntad real. Con frecuencia parecen pedir que gobiernen los que ellos dicen que no dejan gobernar (...).
+
+Pues bien, ahora vamos a recabar todas las responsabilidades y a gobernar nosotros u hombres civiles que representen nuestra moral y doctrina (...) Este movimiento es de hombres: el que no sienta la masculinidad completamente caracterizada, que espere en un rincón, sin perturbar los días buenos que para la patria esperamos. ¡Españoles! ¡Viva España y viva el Rey!"</div>
+        </div>
+    </div>
+
+    <!-- POPUP 2: ALFONSO XIII -->
+    <div id="pop-alfonso" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closePopup('pop-alfonso')">&times;</span>
+            <h3 style="color: #047857; margin-top: 0;">📜 Manifiesto de Suspensión de Funciones de Alfonso XIII (14 de abril de 1931)</h3>
+            <p>La carta pública enviada por el rey antes de marchar al exilio exterior:</p>
+            <div class="texto-modal">"Las elecciones celebradas el domingo me revelan claramente que no tengo hoy el amor de mi pueblo. Mi conciencia me dice que ese desvío no será definitivo, porque procuré siempre servir a España, puesto el único afán en el interés público hasta en las más críticas coyunturas.
+
+Un Rey puede equivocarse, y sin duda erré yo alguna vez pero sé bien que nuestra Patria se mostró en todo momento generosa ante las culpas sin malicia. Soy el Rey de todos los españoles, y también un español. Hallaría medios sobrados para mantener mis regias prerrogativas, en eficaz forcejeo con quienes las combaten. Pero, resueltamente, quiero apartarme de cuanto sea lanzar a un compatriota contra otro en fratricida guerra civil.
+
+No renuncio a ninguno de mis derechos, porque más que míos son depósito acumulado por la Historia, de cuya custodia ha de pedirme un día cuenta rigurosa. Espero a conocer la auténtica y adecuada expresión de la conciencia colectiva, y mientras habla la nación suspendo deliberadamente el ejercicio del Poder Real y me aparto de España, reconociéndola así como única señora de sus destinos."</div>
+        </div>
+    </div>
+
+    
+    <script>
+        const links = document.querySelectorAll('aside nav ul li a');
+        const sections = document.querySelectorAll('main section');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (window.scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            links.forEach(a => {
+                const href = a.getAttribute('href');
+                if (href.startsWith('#')) {
+                    a.classList.remove('active');
+                    if (href === `#${current}`) {
+                        a.classList.add('active');
+                    }
+                }
+            });
+        });
+
+        function openPopup(id) {
+            document.getElementById(id).classList.add('show');
+        }
+
+        function closePopup(id) {
+            document.getElementById(id).classList.remove('show');
+        }
+
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.classList.remove('show');
+            }
+        }
+    </script>
+
+</body>
+</html>
