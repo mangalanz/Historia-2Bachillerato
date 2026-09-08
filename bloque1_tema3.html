@@ -170,7 +170,6 @@
             text-align: justify;
         }
 
-        /* CONTENEDOR DE IMAGEN (ANTI-SOLAPAMIENTO) */
         .tarjeta-imagen {
             background-color: #f8fafc;
             border: 1px solid #e2e8f0;
@@ -202,7 +201,6 @@
             display: block;
         }
 
-        /* FILAS DE IMÁGENES COMPATIBLES (ADAPTATIVAS) */
         .fila-imagenes {
             display: flex;
             gap: 20px;
@@ -261,7 +259,6 @@
             color: #334155;
         }
 
-        /* POPUPS INTERACTIVOS (MODALS) */
         .modal {
             display: none;
             position: fixed;
@@ -397,10 +394,12 @@
             <ul>
                 <li><a href="index.html" class="btn-volver">🏠 Volver a Portada</a></li>
                 
-                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 10px 14px 5px 14px; font-weight: bold; border-bottom: 1px solid #334155; margin-bottom: 8px;">📍 Secciones</li>
-                <li><a href="#gloriosa" class="active">1. La Revolución de 1868</a></li>
-                <li><a href="#republica">2. La Primera República</a></li>
-                <li><a href="#sexenio-canarias">3. El Sexenio en Canarias</a></li>
+                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 10px 14px 5px 14px; font-weight: bold; border-bottom: 1px solid #334155; margin-bottom: 8px;">📍 Secciones del Tema 3</li>
+                <li><a href="#tema1" class="active">1. La Revolución del 68</a></li>
+                <li><a href="#tema2">2. Gobierno Provisional</a></li>
+                <li><a href="#tema3">3. El Reinado de Amadeo I</a></li>
+                <li><a href="#tema4">4. La Primera República</a></li>
+                <li><a href="#sexenio-canarias">5. El Sexenio en Canarias</a></li>
 
                 <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 20px 14px 5px 14px; font-weight: bold; border-top: 1px solid #475569; margin-top: 25px; border-bottom: 1px solid #334155; margin-bottom: 8px;">📖 Temas del Bloque I</li>
                 <li><a href="bloque1_tema1.html">Tema 1: Cortes de Cádiz</a></li>
@@ -422,70 +421,347 @@
     <main>
         <header>
             <h2>Tema 3: El Sexenio Revolucionario (1868 - 1874)</h2>
-            <p>La revolución de 1868, el diseño de la Constitución de 1869, la monarquía parlamentaria de Amadeo I, la proclamación de la Primera República, el cantonalismo y el despertar del obrerismo en Canarias.</p>
+            <p>El primer ensayo de democracia real en España: del destronamiento de Isabel II a la Primera República y el final de la experiencia parlamentaria.</p>
         </header>
 
-        <!-- SECCIÓN 1 -->
-        <section id="gloriosa">
-            <h2>1. La Revolución de 1868 y la Constitución de 1869</h2>
-            <p>El final del reinado de Isabel II estuvo marcado por una profunda crisis política, social y financiera (crisis de subsistencias y quiebras bursátiles). La oposición unificó sus fuerzas en el exilio firmando en Bélgica el <strong>Pacto de Ostende (1866)</strong>, por el que progresistas y demócratas acordaron derrocar de forma insurreccional a la monarquía isabelina y convocar Cortes elegidas por sufragio universal masculino.</p>
-            
-            <p>En septiembre de 1868 triunfó el pronunciamiento militar de Cádiz, conocido como <strong>"La Gloriosa"</strong>, de la mano del almirante Topete y los generales <em>Serrano</em> y <em>Prim</em>, bajo el lema revolucionario "¡España con honra!". Tras vencer a las tropas isabelinas en la batalla de Alcolea, la reina huyó al exilio, constituyéndose un Gobierno Provisional que impulsó la modernización laica del país.</p>
+        <!-- Cabecera ilustrada horizontal -->
+        <div class="tarjeta-imagen" style="margin-top: 0;">
+            <img src="img/eje-cronologico-sexenio.png" alt="Eje Cronológico del Sexenio Revolucionario">
+            <span class="caption">Eje cronológico que delimita las etapas fundamentales del Sexenio Democrático (1868 - 1874)</span>
+        </div>
 
-            <p>El mayor logro del Sexenio fue la promulgación de la progresista <strong>Constitución de 1869</strong>, considerada como la primera constitución plenamente democrática de España, cuyas bases fundamentales incluían:</p>
+        <!-- SECCIÓN 1 -->
+        <section id="tema1">
+            <h2>1. La Revolución de 1868 y la Caída de Isabel II</h2>
+            <p>El periodo conocido como el <strong>Sexenio Democrático</strong> comenzó con el estallido en septiembre de 1868 de una revuelta militar y popular denominada <strong>«La Gloriosa»</strong> (o la Septembrina). Esta sublevación desmanteló por completo el régimen moderado isabelino y obligó a la soberana a exiliarse en Francia. El colapso de la monarquía borbónica no fue un acontecimiento repentino, sino el resultado de una acumulación de factores críticos de orden económico, político y social que erosionaron irreversiblemente la legitimidad de Isabel II.</p>
+
+            <div class="tarjeta-imagen">
+                <img src="img/la-gloriosa.png" alt="Alegoría de La Gloriosa y la marcha de la reina">
+                <span class="caption">Imagen 1: Representación alegórica de La Gloriosa y el exilio de la reina Isabel II hacia tierras francesas</span>
+            </div>
+
+            <h3>Las Causas de la Crisis Revolucionaria de 1866</h3>
+            <p>A partir del año 1866, coincidiendo con la primera gran crisis del sistema de producción capitalista a escala internacional, España se vio asolada por una <strong>crisis económica multidimensional</strong> de graves consecuencias:</p>
             <ul>
-                <li><strong>Soberanía nacional y sufragio universal:</strong> Proclamación del derecho de voto para todos los varones de ambos hemisferios mayores de 25 años.</li>
-                <li><strong>Declaración de derechos:</strong> Libertad de cultos y tolerancia de cultos, inviolabilidad del domicilio y del correo, libertades de prensa, reunión y asociación de trabajadores.</li>
-                <li><strong>Monarquía parlamentaria de consenso:</strong> El rey ostentaba el poder ejecutivo, pero supeditado a la preeminencia de las Cortes.</li>
+                <li><strong>Crisis Financiera:</strong> Originada por el estallido de la burbuja especulativa en torno a las compañías de ferrocarriles. La escasa rentabilidad de las líneas tendidas debido a la baja demanda de viajeros y mercancías provocó el hundimiento de las acciones ferroviarias en bolsa, arrastrando a bancos y sociedades de crédito a la quiebra absoluta.</li>
+                <li><strong>Crisis Industrial:</strong> Afectó de forma primordial a la pujante industria textil de Cataluña. El encarecimiento drástico de la materia prima (el algodón en rama) debido al bloqueo de exportaciones provocado por la Guerra de Secesión norteamericana (1861-1865) provocó el cierre de numerosos talleres y fábricas medianas, disparando el desempleo obrero.</li>
+                <li><strong>Crisis de Subsistencias:</strong> Provocada por una sucesión de malas cosechas de trigo y alimentos básicos. La escasez disparó el precio del pan en un <strong>67%</strong>, sumiendo a las clases populares del campo andaluz y de las principales ciudades en el hambre, el desabastecimiento y la desesperación.</li>
             </ul>
+
+            <p>En el plano político, el sistema se encontraba bloqueado de forma dictatorial por el Partido Moderado. Los ministros moderados (Narváez y González Bravo) gobernaban al margen de las Cortes y reprimían con dureza militar cualquier atisbo de oposición. Progresistas y demócratas, viéndose marginados de las vías legales de participación, optaron por preparar un movimiento armado revolucionario, firmando en el verano de 1866 el histórico <strong>Pacto de Ostende</strong> en Bélgica, con el fin de derrocar a los Borbones y dejar en manos de unas Cortes electas por sufragio universal el destino nacional.</p>
+
+            <!-- BOTÓN INTERACTIVO: PACTO DE OSTENDE -->
+            <div style="margin: 15px 0; text-align: center;">
+                <button class="btn-interactivo btn-texto" onclick="openPopup('pop-ostende')">📜 Documento: El Pacto de Ostende (Bruselas, 1867)</button>
+            </div>
+
+            <p>Asimismo, influyó decisivamente la alarmante impopularidad de la reina Isabel II, cuya imagen pública estaba hundida debido a su ostentosa vida privada y la influencia de su camarilla palaciega íntima, integrada por personajes como su confesor el <em>padre Claret</em>, sor Patrocinio (la célebre <em>«monja de las llagas»</em> que alegaba estigmas milagrosos) y su favorito de la corte, Carlos Marfori, considerado el representante de la corrupción del régimen.</p>
+
+            <!-- VÍDEO COMPLEMENTARIO: LA REVOLUCIÓN DE 1868 -->
+            <div style="margin: 15px 0; text-align: center;">
+                <a href="https://www.youtube.com/watch?v=lM0ZWqbvPH0" target="_blank" class="btn-interactivo btn-video">🎬 Vídeo 1: Ver explicación animada sobre la Revolución de septiembre de 1868 (ArteHistoria) ➡️</a>
+            </div>
+
+            <h3>Desarrollo y Triunfo del Pronunciamiento</h3>
+            <p>El 19 de septiembre de 1868, el almirante unionista <strong>Juan Bautista Topete</strong> sublevó a la escuadra nacional anclada en la bahía de Cádiz, contando con el apoyo financiero de la burguesía mercantil e industrial interesada en restablecer los negocios. Al alzamiento militar se sumaron de inmediato el general unionista <strong>Francisco Serrano</strong> y el carismático general progresista <strong>Juan Prim</strong>, quien dirigió una emotiva arenga a los gaditanos bajo el lema del Frente Patriótico: <em>«¡Viva España con honra!»</em>.</p>
+
+            <div class="tarjeta-imagen">
+                <img src="img/mapa-revolucion-1868.png" alt="Mapa de la Revolución del 68">
+                <span class="caption">Imagen 2: Distribución de focos sublevados y ejércitos de la Revolución de 1868</span>
+            </div>
+
+            <!-- BOTÓN INTERACTIVO: MANIFIESTO VIVA ESPAÑA CON HONRA -->
+            <div style="margin: 15px 0; text-align: center;">
+                <button class="btn-interactivo btn-texto" onclick="openPopup('pop-honra')">📜 Documento: Manifiesto de la Junta Revolucionaria de Cádiz</button>
+            </div>
+
+            <p>Desde Cádiz, el levantamiento se extendió de forma imparable por toda la geografía española mediante la constitución de <strong>Juntas Revolucionarias locales</strong> en ciudades y pueblos de base popular que exigían el fin de los consumos y las quintas. El enfrentamiento de las fuerzas leales a la reina contra las columnas revolucionarias de Serrano se saldó con la victoria de estos últimos en la célebre <strong>Batalla del Puente de Alcolea</strong> (Córdoba). Al conocer la derrota y la falta de apoyos de los capitanes generales, Isabel II, que veraneaba en Lequeitio (Vizcaya), huyó el 30 de septiembre con rumbo a su definitivo exilio en París.</p>
         </section>
 
         <!-- SECCIÓN 2 -->
-        <section id="republica">
-            <h2>2. La Monarquía de Amadeo I y la Primera República Española</h2>
-            <p>La vacante en el trono obligó al general Prim a buscar un candidato regio que jurase la Constitución de 1869 de entre las dinastías democráticas europeas, eligiendo al príncipe italiano <em>Amadeo de Saboya</em>. Su breve reinado como <em>Amadeo I</em> (1871-1873) se inició de forma funesta con el atentado y muerte de su principal valedor, el general Juan Prim.</p>
-            
-            <p>La debilidad de Amadeo I, desbordado por el de las Guerras Carlistas (1872), la guerra de Cuba y el constante boicot de los militares monárquicos y de las Juntas republicanas, forzó su abdicación en febrero de 1873. Ante la parálisis de las instituciones, las Cortes Generales acordaron la proclamación de la <strong>Primera República Española (1873-1874)</strong>.</p>
+        <section id="tema2">
+            <h2>2. El Gobierno Provisional y la Constitución de 1869</h2>
+            <p>Una vez constituido el nuevo poder en Madrid, se formó un <strong>Gobierno Provisional</strong> presidido por el general unionista Serrano (con Prim en la cartera de Guerra, Sagasta en Gobernación y Laureano Figuerola en Hacienda). El gabinete se propuso la doble e inmediata misión de restablecer el orden público y dotar al Estado de un nuevo marco legal a través de la convocatoria de unas Cortes Constituyentes extraordinarias.</p>
 
-            <p>La nueva andadura republicana nació fuertemente dividida entre los partidarios de una República Unitaria y los de una República Federal (liderados por <em>Pi y Margall</em>). La andadura de la Primera República se truncó por el de la revolución de los cantones (el <strong>cantonalismo</strong> en Levante y Andalucía, donde múltiples municipios y provincias se proclamaban cantones soberanos e independientes contra el Gobierno), el auge carlista y la inestabilidad. Un pronunciamiento militar en Sagunto liderado por el general Martínez Campos restauró el orden e inauguró la Restauración en diciembre de 1874.</p>
+            <div class="tarjeta-imagen">
+                <img src="img/gobierno-provisional-1869.png" alt="Ministros del Gobierno Provisional">
+                <span class="caption">Imagen 3: Los ministros integrantes del Gobierno Provisional de 1869 (fotografía de J. Laurent)</span>
+            </div>
+
+            <p>Las primeras y drásticas medidas del Gobierno Provisional consistieron en <strong>desarmar la Milicia Nacional</strong> y ordenar la disolución de las Juntas Revolucionarias de base popular. De esta manera, Serrano y Prim dejaban bien patente a la burguesía y a los inversores internacionales que la revolución tenía por objeto derrocar a los Borbones y modernizar la economía capitalista, pero en ningún caso permitir una transformación social radical o un ataque contra el derecho de propiedad privada.</p>
+
+            <h3>A. Las Reformas Económicas y Financieras: Nace la Peseta</h3>
+            <p>Para sanear el caótico estado de la Hacienda pública, lastrada por una deuda acumulada que superaba los <strong>22.000 millones de reales</strong> y los préstamos contraídos con la banca extranjera, el ministro de Hacienda Laureano Figuerola impulsó reformas estructurales clave de corte librecambista:</p>
+            <ul>
+                <li>Se decretó en octubre de 1868 la creación de la <strong>Peseta</strong> como unidad monetaria unificada nacional, sustituyendo los antiguos reales y escudos y facilitando la inserción de España en los mercados internacionales.</li>
+                <li>Se decretó la polémica <strong>Ley de Minas de 1871</strong> (considerada una desamortización del subsuelo), que vendió las concesiones de explotación de los ricos yacimientos mineros (como Riotinto en Huelva o Almadén en Ciudad Real) a consorcios y compañías extranjeras para conseguir ingresos inmediatos y saldar las deudas financieras de la Corona.</li>
+                <li>Se aprobó el <strong>Arancel Figuerola (1869)</strong>, una medida librecambista avanzada que rebajó de forma sustancial las tasas arancelarias exteriores. Ello desató la indignación armada de los industriales textiles de Cataluña y de los grandes productores de cereal de Castilla, que veían peligrar su tradicional control proteccionista sobre el mercado peninsular.</li>
+                <li>Se introdujo la <strong>contribución personal</strong>, un impuesto directo que gravaba proporcionalmente a cada ciudadano según sus ingresos y rentas declaradas, combatiendo la evasión fiscal.</li>
+            </ul>
+
+            <div class="tarjeta-imagen">
+                <img src="img/primera-peseta.png" alt="Moneda de una peseta de 1869">
+                <span class="caption">Imagen 4: Anverso y reverso de la primera peseta acuñada bajo el Gobierno Provisional de 1869</span>
+            </div>
+
+            <h3>B. La Constitución Democrática de 1869</h3>
+            <p>En enero de 1869 se celebraron elecciones generales a Cortes Constituyentes mediante el sufragio universal masculino directo para varones mayores de 25 años. De los 351 escaños elegidos en unas Cortes bicamerales, la coalición gubernamental defensora de una monarquía democrática obtuvo una victoria arrolladora (progresistas -159 diputados-, unionistas -69- y demócratas -20-), frente a la firme oposición de los republicanos federales de Pi y Margall (69), los carlistas tradicionales (18) e isabelinos moderados (14).</p>
+
+            <div class="tarjeta-imagen">
+                <img src="img/promulgacion-constitucion-1869.png" alt="Frontispicio Constitución de 1869">
+                <span class="caption">Imagen 5: Frontispicio oficial impreso para la promulgación de la Constitución de 1869</span>
+            </div>
+
+            <!-- BOTÓN INTERACTIVO: EXTRACTOS CONSTITUCIÓN 1869 -->
+            <div style="margin: 15px 0; text-align: center;">
+                <button class="btn-interactivo btn-texto" onclick="openPopup('pop-const1869')">📜 Documento: Extractos del articulado democrático de 1869</button>
+            </div>
+
+            <div class="caja-colores factores">
+                <h4>🏛️ Características Básicas de la Carta Magna del 69</h4>
+                <ul>
+                    <li><strong>Soberanía Nacional de Base Popular:</strong> Se rompe con el derecho divino. El poder emana exclusivamente de la Nación de ciudadanos representados en las Cortes.</li>
+                    <li><strong>Declaración de Derechos Individuales Plenos:</strong> Se regulan con rango constitucional las libertades de opinión, imprenta, educación, la inviolabilidad del correo y del domicilio, y por primera vez en nuestra historia contemporánea, el derecho a la libre asociación y reunión de los trabajadores.</li>
+                    <li><strong>Separación Iglesia-Estado y Libertad de Cultos:</strong> Se introduce el libre ejercicio público o privado de cualquier culto para extranjeros y españoles de confesión alternativa, aunque el Estado mantiene el compromiso financiero de sufragar los gastos de la Iglesia Católica como transacción con los moderados.</li>
+                    <li><strong>Monarquía Democrática de Consenso:</strong> El rey ostenta el poder ejecutivo a través de sus ministros gubernamentales, pero limitándose a un papel simbólico y parlamentario (<em>«el rey reina pero no gobierna»</em>). El poder supremo legislativo recae en las Cortes de forma incuestionable.</li>
+                </ul>
+            </div>
         </section>
 
         <!-- SECCIÓN 3 -->
-        <section id="sexenio-canarias">
-            <h2>3. El Sexenio Revolucionario en Canarias: Republicanismo y Obrerismo</h2>
-            <p>La revolución democrática de 1868 abrió un periodo de extraordinario dinamismo de las corrientes políticas alternativas en el archipiélago canario. La fisionomía de las ciudades insulares se vio sacudida por la laicización escolar, las libertades individuales y la movilización popular.</p>
+        <section id="tema3">
+            <h2>3. La Monarquía Democrática de Amadeo I de Saboya (1871-1873)</h2>
+            <p>Proclamada la Constitución de 1869 en la que se definía a España como una monarquía constitucional y democrática, pero estando los Borbones excluidos por ley, las Cortes establecieron una Regencia nacional que recayó en el general unionista Francisco Serrano, mientras que el general <strong>Juan Prim</strong> asumió la jefatura de Gobierno y el encargo supremo de buscar un monarca de dinastía de talante liberal por las cancillerías europeas.</p>
 
-            <p>El <strong>republicanismo</strong> se consolidó en Canarias como un activo fenómeno urbano con una enorme base de masas entre las clases populares, obreras y la pequeña burguesía [983]. Sus proclamas y protestas se dirigían de forma vehemente contra:</p>
+            <div class="tarjeta-imagen">
+                <img src="img/se-colocan-reyes.png" alt="Caricatura Se colocan reyes de La Flaca">
+                <span class="caption">Imagen 6: Caricatura satírica de la revista «La Flaca» ironizando sobre la búsqueda de un rey en Europa</span>
+            </div>
+
+            <p>Tras descartar a candidatos impopulares (como el duque de Montpensier, cuñado de la reina exiliada, o candidatos de las casas de Hohenzollern y de Portugal), las Cortes eligieron en noviembre de 1870 al príncipe italiano <strong>Amadeo de Saboya</strong>. Amadeo, hijo del artífice de la unificación italiana Víctor Manuel II, pertenecía a una dinastía de marcado carácter liberal y democrático que encajaba de forma idónea en el modelo constitucional del 69.</p>
+
+            <!-- VÍDEO COMPLEMENTARIO: EL REINADO DE AMADEO I -->
+            <div style="margin: 15px 0; text-align: center;">
+                <a href="https://youtu.be/uAEm7MBx29s" target="_blank" class="btn-interactivo btn-video">🎬 Vídeo 2: Ver documental explicativo sobre el reinado de Amadeo de Saboya ➡️</a>
+            </div>
+
+            <h3>A. Un Trágico Comienzo: El Asesinato del General Prim</h3>
+            <p>El reinado democrático nació marcado por la fatalidad. El 30 de diciembre de 1870, justo el mismo día en que Amadeo de Saboya desembarcaba en el puerto de Cartagena, se enteró de que su principal valedor y protector político, el general <strong>Juan Prim</strong>, había fallecido en Madrid víctima de una infección de heridas tras haber sido emboscado y tiroteado por asaltantes armados con trabucos tres días antes en la nevada calle del Turco. Sin la guía intelectual y la fuerza armada del general Prim, el monarca italiano se encontró completamente huérfano de apoyos políticos y deparó un aislamiento irremediable en la capital.</p>
+
+            <div class="fila-imagenes">
+                <div class="tarjeta-imagen">
+                    <img src="img/amadeo-saboya.png" alt="Retrato de Amadeo I">
+                    <span class="caption">Imagen 7: Retrato oficial del rey Amadeo I de Saboya</span>
+                </div>
+                <div class="tarjeta-imagen">
+                    <img src="img/atentado-prim.png" alt="Tiroteo en la calle del Turco">
+                    <span class="caption">Imagen 8: Grabado pictórico del tiroteo a la carroza de Prim</span>
+                </div>
+                <div class="tarjeta-imagen">
+                    <img src="img/amadeo-tumba-prim.png" alt="Amadeo ante el cadáver de Prim">
+                    <span class="caption">Imagen 9: Amadeo I velando el cuerpo de Prim en Madrid</span>
+                </div>
+            </div>
+
+            <!-- BOTÓN INTERACTIVO: EL MISTERIO DE LA MUERTE DE PRIM -->
+            <div style="margin: 15px 0; text-align: center;">
+                <button class="btn-interactivo btn-anecdota" onclick="openPopup('pop-prim')">🕵️♂️ Curiosidad: El Misterioso Informe Forense del Asesinato de Prim</button>
+            </div>
+
+            <h3>B. Un Reinado en Constante Oposición Multilateral</h3>
+            <p>A pesar de su innegable buena voluntad constitucional y respeto a las leyes, el rey Amadeo I se topó de forma inmediata con un frente de hostilidad total de todos los estamentos de la sociedad:</p>
             <ul>
-                <li>La abolición de las injustas <strong>quintas de reclutamiento militar</strong>, que eximían a los ricos del servicio militar a cambio de un pago al Estado [983].</li>
-                <li>La supresión de los impopulares <strong>impuestos indirectos de consumos</strong>, tributos indirectos que encarecían el pan y los productos básicos de primera necesidad [983].</li>
-                <li>La abolición definitiva de la Corona y la monarquía tradicional [983].</li>
+                <li><strong>La Iglesia Católica y el Clero:</strong> Se opusieron firmemente al monarca por jurar una constitución laica que establecía la libertad de cultos y por pertenecer a la casa de Saboya, dinastía que acababa de expropiar y disolver los Estados Pontificios del Papa en Roma para unificar Italia.</li>
+                <li><strong>Los Republicanos Federales:</strong> Reclamaban reformas de calado social mucho más radicales, considerando la monarquía democrática como un simple sucedáneo conservador.</li>
+                <li><strong>La Oligarquía y los Terratenientes (Alfonsinos):</strong> Dirigidos por el sagaz político conservador <strong>Antonio Cánovas del Castillo</strong>, boicotearon de forma sutil al monarca ganando adeptos y fortunas de la alta burguesía azucarera a favor de la causa de restauración dinástica de Alfonso XII, hijo de Isabel II.</li>
+                <li><strong>La Gran Burguesía Comercial e Industrial:</strong> Retiró el apoyo a los ministros demócratas a causa de los decretos para abolir la esclavitud en ultramar y regular tímidamente el trabajo infantil, sintiendo amenazados sus intereses de propiedad de esclavos y fábricas.</li>
+                <li><strong>El estallido de la Tercera Guerra Carlista (1872-1876):</strong> Los partidarios del pretendiente absolutista Carlos VII iniciaron un gran levantamiento armado foralista y tradicionalista en el País Vasco, Navarra y áreas rurales del Maestrazgo y Cataluña, forzando al monarca a movilizar ejércitos en el norte peninsular.</li>
+            </ul>
+
+            <h3>C. El Problema Colonial: La Guerra de los Diez Años en Cuba (1868-1878)</h3>
+            <p>En octubre de 1868, el rico terrateniente y criollo cubano <strong>Carlos Manuel de Céspedes</strong> proclamó el célebre <strong>Grito de Yara</strong> (<em>«¡Viva Cuba libre!»</em>), dando inicio a la primera guerra de independencia cubana. Céspedes emitió un manifiesto de carácter marcadamente antiesclavista, anticolonialista y de liberación nacional americana, liberando de forma inmediata a los esclavos de sus propias plantaciones azucareras para sumarlos a las fuerzas revolucionarias insurrectas. El bando realista e integrista azucarero de la isla bloqueó militarmente cualquier reforma progresista que pretendiera decretar la Corona en favor de la abolición civil, provocando una guerra de desgaste sangrienta y desgarradora que lastró la economía de la metrópoli durante una década.</p>
+
+            <div class="fila-imagenes">
+                <div class="tarjeta-imagen" style="max-width: 300px;">
+                    <img src="img/carlos-manuel-cespedes.png" alt="Retrato Carlos Manuel de Céspedes">
+                    <span class="caption">Imagen 10: Retrato oficial de Carlos Manuel de Céspedes</span>
+                </div>
+                <div class="tarjeta-imagen" style="max-width: 400px;">
+                    <img src="img/voluntarios-cuba.png" alt="Embarque de los voluntarios para Cuba">
+                    <span class="caption">Imagen 11: Grabado del embarque de voluntarios civiles que partían a Cuba en el puerto de Cádiz</span>
+                </div>
+            </div>
+
+            <p>La inestabilidad fue tan galopante que en dos años de reinado se sucedieron <strong>seis gobiernos efímeros y tres elecciones generales</strong> incapaces de restablecer el consenso parlamentario de las facciones liberales divididas. Harto ante la ingobernabilidad, el constante boicot del cuerpo de artillería militar y la insurrección en las Antillas y el norte, Amadeo I presentó su irrevocable abdicación y renuncia al trono español el 11 de febrero de 1873, volviendo de inmediato a su natal Italia.</p>
+
+            <!-- BOTÓN INTERACTIVO: RENUNCIA DE AMADEO -->
+            <div style="margin: 15px 0; text-align: center;">
+                <button class="btn-interactivo btn-texto" onclick="openPopup('pop-renuncia')">📜 Documento: La Carta de Renuncia al Trono de Amadeo I (1873)</button>
+            </div>
+
+        </section>
+
+        <!-- SECCIÓN 4 -->
+        <section id="tema4">
+            <h2>4. La Primera República Española (1873 - 1874)</h2>
+            <p>El mismo 11 de febrero de 1873, ante la abdicación de Amadeo de Saboya y sin margen de maniobra para buscar un nuevo rey en las cancillerías de una Europa predominantemente monárquica y conservadora, el Congreso y el Senado se reunieron en sesión parlamentaria conjunta para proclamar la <strong>Primera República Española</strong>, siendo aprobada la resolución por una amplia mayoría circunstancial de 258 votos a favor y 32 en contra. Para presidir el primer gobierno republicano fue elegido el federalista moderado <strong>Estanislao Figueras</strong>.</p>
+
+            <div class="tarjeta-imagen">
+                <img src="img/alegoria-republica.png" alt="Alegoría de La Niña Bonita de La Flaca">
+                <span class="caption">Imagen 12: Litografía satírica «La Niña Bonita» representando la llegada de la República</span>
+            </div>
+
+            <p>Se trató de un nacimiento político de extrema debilidad institucional, puesto que la mayoría parlamentaria que votó a favor del nuevo régimen republicano estaba integrada en realidad por diputados monárquicos encubiertos que únicamente pretendían ganar tiempo y falsear las Juntas para organizar de manera pacífica el definitivo retorno alfonsino de los Borbones. Esta nula fe de los gobernantes deparó una inestabilidad brutal en todo el país, que se manifestó en el <strong>aislamiento diplomático internacional</strong> (la República española solo fue reconocida formalmente por los Estados Unidos y la Confederación Suiza) y en una dramática sucesión de <strong>cuatro presidentes del gobierno en apenas once meses de mandato</strong> (Figueras, Pi y Margall, Salmerón y Castelar).</p>
+
+            <!-- VÍDEO COMPLEMENTARIO: LA PRIMERA REPÚBLICA -->
+            <div style="margin: 15px 0; text-align: center;">
+                <a href="https://www.youtube.com/watch?v=NiW6ymcrcfU" target="_blank" class="btn-interactivo btn-video">🎬 Vídeo 3: Ver documental didáctico sobre los acontecimientos de la Primera República ➡️</a>
+            </div>
+
+            <h3>A. Los Desafíos Armados de la República y el Estallido del Cantonalismo</h3>
+            <p>Tras la dimisión de Figueras, el gobierno del país pasó a manos de <strong>Francisco Pi y Margall</strong>, eminente ideólogo del federalismo quien convocó Cortes Constituyentes extraordinarias para debatir el <strong>Proyecto de Constitución Federal de 1873</strong>. Este ambicioso texto definía que la Nación española estaba integrada por 17 Estados federados soberanos (incluyendo de igual a igual a la isla de Cuba), estructurando el poder en tres niveles independientes: el municipio soberano, el Estado regional autónomo y el Estado federal de coordinación exterior. El texto reconocía la estricta separación Iglesia-Estado, la libertad religiosa plena, la abolición definitiva de la esclavitud en las colonias y la supresión de las quintas.</p>
+
+            <div class="fila-imagenes">
+                <div class="tarjeta-imagen">
+                    <img src="img/republica-flaca.png" alt="Caricatura Pi i Margall">
+                    <span class="caption">Imagen 13: Pi i Margall desbordado por los niños de las autonomías locales</span>
+                </div>
+                <div class="tarjeta-imagen">
+                    <img src="img/mapa-conflictos-republica.png" alt="Mapa de conflictos">
+                    <span class="caption">Imagen 14: Focos territoriales del conflicto carlista y el estallido del cantonalismo</span>
+                </div>
+            </div>
+
+            <p>Sin embargo, los republicanos radicales intransigentes y los núcleos obreros anarquistas de la <strong>AIT (Asociación Internacional de Trabajadores)</strong> consideraron que el ritmo de reformas de Pi y Margall era excesivamente lento y decretaron de forma unilateral e insurreccional el estallido de la <strong>revolución cantonal</strong> en julio de 1873. En ciudades y municipios de Levante y Andalucía (Cartagena, Sevilla, Málaga, Cádiz, Valencia, Algeciras) se proclamaron <strong>cantones independientes soberanos</strong> que acuñaban su propia moneda, emitían leyes locales y declaraban la guerra al gobierno central, fracturando de manera definitiva el régimen republicano.</p>
+
+            <p>Al negarse a reprimir por las armas la rebelión de los cantones populares para evitar un derramamiento de sangre civil, Pi y Margall dimitió, asumiendo la presidencia el moderado <strong>Nicolás Salmerón</strong>, quien optó por suspender las negociaciones y ordenar al ejército regular sofocar las insurrecciones cantonales por la fuerza, confiando las campañas de asedio a generales conservadores de prestigio como Serrano, Pavía y Martínez Campos. Salmerón dimitió a principios de septiembre tras declararse moralmente incapaz de firmar las sentencias de muerte impuestas por los tribunales militares contra los líderes cantonalistas.</p>
+
+            <h3>B. El Giro Autoritario de Castelar, el Golpe de Pavía y la Restauración</h3>
+            <p>La presidencia del ejecutivo recayó entonces en el republicano unitario conservador <strong>Emilio Castelar</strong>, quien gobernó bajo el lema del orden y la autoridad nacional. Castelar consiguió de las Cortes plenos poderes de excepción, clausuró provisionalmente el Congreso de los Diputados para neutralizar a la oposición federal de izquierdas y reorganizó las fuerzas del ejército para acabar con la insurrección carlista en el norte y la resistencia heroica y numantina del cantón fortificado de <strong>Cartagena</strong>.</p>
+
+            <div class="fila-imagenes">
+                <div class="tarjeta-imagen">
+                    <img src="img/general-pavia.png" alt="General Manuel Pavía">
+                    <span class="caption">Imagen 15: Retrato fotográfico del general Manuel Pavía</span>
+                </div>
+                <div class="tarjeta-imagen">
+                    <img src="img/golpe-pavia.png" alt="Golpe de Pavía">
+                    <span class="caption">Imagen 16: El general Manuel Pavía disolviendo las Cortes republicanas</span>
+                </div>
+            </div>
+
+            <p>El 3 de enero de 1874 se reabrieron solemnemente las Cortes Generales. Al confirmarse que Castelar había perdido una moción de confianza parlamentaria y que se disponía a formarse un gabinete de federalistas de izquierda partidarios del modelo cantonal, el capitán general de Castilla la Nueva, <strong>Manuel Pavía</strong>, penetró con la fuerza armada militar y destacamentos de la Guardia Civil en el Congreso de los Diputados, disolviendo las Cortes de un plumazo y dando inicio al fin fáctico de la República Federal.</p>
+
+            <p>Pavía entregó de forma provisional la jefatura del Estado al general unionista <strong>Serrano</strong>, quien instauró una dictadura autoritaria: suspendió de inmediato las garantías constitucionales del 69, disolvió de forma definitiva el parlamento democrático y decretó la <strong>ilegalización y persecución de la AIT y de las sociedades obreras</strong> en las calles. Durante el año de dictadura militar de Serrano, el político conservador Antonio Cánovas del Castillo preparó la restauración borbónica, redactando el <strong>Manifiesto de Sandhurst (diciembre de 1874)</strong> en el que el joven príncipe Borbón prometía establecer una monarquía dinástica constitucional, conservadora y plenamente católica capaz de asegurar la estabilidad social y la propiedad de la burguesía terrateniente.</p>
+
+            <div class="fila-imagenes">
+                <div class="tarjeta-imagen" style="max-width: 300px;">
+                    <img src="img/canovas-del-castillo.png" alt="Antonio Cánovas del Castillo">
+                    <span class="caption">Imagen 18: Antonio Cánovas del Castillo, ideólogo de la Restauración</span>
+                </div>
+                <div class="tarjeta-imagen" style="max-width: 300px;">
+                    <img src="img/general-martinez-campos.png" alt="Arsenio Martínez Campos">
+                    <span class="caption">Imagen 19: Retrato oficial del general Arsenio Martínez Campos</span>
+                </div>
+            </div>
+
+            <p>Finalmente, el 29 de diciembre de 1874, un pronunciamiento militar directo del general moderado <strong>Arsenio Martínez Campos</strong> en la localidad de Sagunto (Valencia) proclamó de forma solemne rey de España a <strong>Alfonso XII</strong>, disolviendo los últimos focos republicanos y abriendo paso a la larga etapa contemporánea de la <strong>Restauración canovista</strong>.</p>
+        </section>
+
+        <!-- SECCIÓN 5 -->
+        <section id="sexenio-canarias">
+            <h2>5. El Sexenio Revolucionario en Canarias: Republicanismo y Obrerismo</h2>
+            <p>El triunfo de la Revolución de Septiembre de 1868, conocida popularmente como «La Gloriosa», abrió en el archipiélago canario un periodo de extraordinario dinamismo de las corrientes políticas alternativas y del despertar del obrerismo organizado de las islas. La fisionomía social y cultural de las principales ciudades costeras (Santa Cruz de Tenerife y Las Palmas de Gran Canaria) se vio profundamente alterada por el clima de libertades de la Constitución de 1869, la laicización escolar y el auge del asociacionismo popular.</p>
+
+            <p>El <strong>republicanismo federal</strong> se consolidó en Canarias como un activo e influyente fenómeno urbano de masas con un fuerte arraigo popular entre la pequeña burguesía, los artesanos y los trabajadores de los puertos comerciales. Sus proclamas doctrinales se alzaban de forma vehemente contra tres grandes injusticias del sistema político tradicional:</p>
+            <ul>
+                <li>La abolición del injusto sistema de las <strong>quintas de reclutamiento militar</strong>, un método desigual de reclutamiento forzoso que enviaba a los hijos de las clases populares a combatir de forma trágica en las guerras de Cuba, mientras eximía de forma legal a los hijos de las familias ricas que pagaban la cantidad de redención en metálico al Estado.</li>
+                <li>La supresión definitiva de los impopulares <strong>impuestos indirectos de consumos</strong>, gravámenes estatales indirectos sobre la harina, el aceite, el jabón y el pan de consumo básico, los cuales asfixiaban de forma alarmante la subsistencia diaria de los obreros portuarios y jornaleros del campo.</li>
+                <li>La supresión definitiva del trono borbónico y el establecimiento de un nuevo modelo republicano democrático.</li>
             </ul>
 
             <div class="caja-colores factores">
                 <h4>🇨🇦 Nicolás Estévanez y el Ensayo Cantonal Canario (1873)</h4>
-                <p>Durante la Primera República, sobresalió con fuerza la figura del tinerfeño <em>Nicolás Estévanez y Murphy</em>, un destacado político e intelectual republicano federal progresista que llegó a ser nombrado <strong>Ministro de la Gobernación</strong> del Gobierno central de la República en Madrid [983, 984].</p>
-                <p>Para encauzar y solucionar democráticamente el pleito insular provocado por la provincia única de 1833, Estévanez propuso de forma pionera la división y reorganización federal de Canarias mediante la creación de <strong>dos cantones federales soberanos</strong> (el Cantón de las islas orientales y el Cantón de las islas occidentales) que dirimirían de forma autónoma sus propios asuntos y se coordinarían de igual a igual, sentando las bases del federalismo y la descentralización regional canaria [984].</p>
-                <p>Asimismo, cabe resaltar que bajo el clima de libertades de la Constitución de 1869, comenzaron a fundarse en Las Palmas y Santa Cruz las primeras <strong>sociedades de socorros mutuos</strong> y asociaciones obreras urbanas de trabajadores tipógrafos, panaderos y portuarios, marcando el nacimiento de la concienciación y autoorganización de la clase obrera en las islas [984].</p>
+                <p>Durante los años de la Primera República Española, cobró un extraordinario protagonismo la figura del tinerfeño <strong>Nicolás Estévanez y Murphy</strong>, un brillante político, militar e intelectual republicano federal progresista que llegó a ser nombrado <strong>Ministro de la Gobernación</strong> del Gobierno central de la República en Madrid. Estévanez defendía de manera pionera la necesidad de abolir el centralismo autoritario metropolitano que ahogaba el progreso regional.</p>
+                <p>Para solucionar de forma pacífica y democrática el pleito insular de la provincia única de Javier de Burgos de 1833 —que enfrentaba a las burguesías de Gran Canaria y Tenerife por la capitalidad—, Estévanez propuso el <strong>Ensayo Cantonal Canario en 1873</strong>. Su plan consistía en reorganizar federalmente al archipiélago mediante la proclamación de <strong>dos cantones federales soberanos</strong> (el Cantón de las islas orientales y el Cantón de las islas occidentales). Cada uno de ellos administraría con plena autonomía económica y civil sus asuntos territoriales, sentando las bases históricas del federalismo y la descentralización moderna en Canarias.</p>
+                <p>Asimismo, cabe resaltar que bajo el amparo de libertades individuales del Sexenio, se fundaron en Las Palmas y en Santa Cruz las primeras <strong>sociedades de socorros mutuos</strong> y las primigenias asociaciones obreras urbanas de trabajadores panaderos, tipógrafos, tabaqueros y portuarios, marcando el nacimiento de la concienciación social, la ayuda mutua y la autoorganización de la clase obrera en las islas frente a las duras condiciones salariales de la época.</p>
             </div>
 
             <!-- BOTÓN INTERACTIVO: NICOLAS ESTEVANEZ -->
             <div style="margin: 15px 0; text-align: center;">
                 <button class="btn-interactivo btn-texto" onclick="openPopup('pop-estevanez')">📜 Documento: Nicolás Estévanez y el Manifiesto Cantonal (1873)</button>
             </div>
+
         </section>
     </main>
 
-    <!-- POPUPS INTERACTIVOS -->
+    <!-- VENTANAS EMERGENTES (MODALS / POPUPS) -->
+
+    <!-- POPUP TEMA 3.1: PACTO DE OSTENDE -->
+    <div id="pop-ostende" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closePopup('pop-ostende')">&times;</span>
+            <h3 style="color: #047857; margin-top: 0;">📜 El Pacto de Ostende (Bruselas, 1867)</h3>
+            <p>El acuerdo de coalición clandestino destinado a derrocar el trono borbónico de Isabel II:</p>
+            <div class="texto-modal">"1º Que el objeto y bandera de la revolución en España es la caída de los Borbones en España.\n\n2º Que siendo para los demócratas un principio esencial de su dogma político el sufragio universal, y admitiendo los progresistas el derecho moderno constituyente del plebiscito, la base para la inteligencia de los partidos fuera que por un plebiscito (...) o por unas Cortes Constituyentes elegidas por sufragio universal, se decidiría la forma de gobierno que se habría de establecer en España (...)\nHasta que así se decidiera, había de ser absoluta la libertad de imprenta, y sin ninguna limitación del derecho de reunión, para que la opinión nacional pudiese ilustrarse y organizarse convenientemente (...)."</div>
+        </div>
+    </div>
+
+    <!-- POPUP TEMA 3.2: VIVA ESPAÑA CON HONRA -->
+    <div id="pop-honra" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closePopup('pop-honra')">&times;</span>
+            <h3 style="color: #047857; margin-top: 0;">📜 Manifiesto «Viva España con Honra» (19 de septiembre de 1868)</h3>
+            <p>Extracto literal de la proclama lanzada en la bahía de Cádiz por los generales conspiradores:</p>
+            <div class="texto-modal">"Españoles: La ciudad de Cádiz, puesta en armas con toda su provincia, con la armada que yace en su puerto y todo el departamento marítimo de la Península, declara solemnemente que niega su obediencia al gobierno que reside en Madrid, segura de que es leal intérprete de todos los ciudadanos...\n\nQueremos que un Gobierno Provisional de la revolución, y después de él, unas Cortes Constituyentes elegidas por sufragio universal, asuman la dirección de la Nación y definan su camino soberano, con plena libertad de prensa y de asociación, sin cortapisas de tiranos ni camarillas que deshonren nuestro suelo...\n¡Viva la Libertad! ¡Viva la Soberanía Nacional! ¡Viva España con honra!"</div>
+        </div>
+    </div>
+
+    <!-- POPUP TEMA 3.3: CONSTITUCIÓN DE 1869 -->
+    <div id="pop-const1869" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closePopup('pop-const1869')">&times;</span>
+            <h3 style="color: #047857; margin-top: 0;">📜 Extractos de la Constitución de 1869</h3>
+            <p>Los principales hitos del articulado de carácter profundamente democrático y reformista:</p>
+            <div class="texto-modal">"- Art. 2º. Ningún español ni extranjero podrá ser detenido ni preso sino por causa de delito.\n- Art. 3º. Todo detenido será puesto en libertad o entregado a la autoridad judicial dentro de las 24 horas siguientes al acto de su detención.\n- Art. 21. La Nación se obliga a mantener el culto y los ministros de la religión católica. El ejercicio público o privado de cualquiera otro culto queda garantizado a todos los extranjeros residentes en España, sin más limitaciones que las reglas universales de la moral y del derecho. Si algunos españoles profesaren otra religión que la católica, es aplicable a los mismos todo lo dispuesto en el párrafo anterior.\n- Art. 32. La soberanía reside esencialmente en la nación, de la cual emanan todos los poderes.\n- Art. 33. La forma de Gobierno de la Nación española es la Monarquía."</div>
+        </div>
+    </div>
+
+    <!-- POPUP TEMA 3.4: EL MISTERIO DE LA MUERTE DE PRIM -->
+    <div id="pop-prim" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closePopup('pop-prim')">&times;</span>
+            <h3 style="color: #047857; margin-top: 0;">🕵️♂️ El Misterioso Informe Forense del Asesinato de Prim</h3>
+            <p>Un enigma histórico sobre el fin del general Juan Prim:</p>
+            <div class="tarjeta-imagen" style="margin: 15px 0;">
+                <img src="img/causas-muerte-prim.png" alt="Causas muerte de Prim">
+                <span class="caption" style="color: var(--text-dark);">Infografía sobre las causas físicas y el análisis forense del cuerpo momificado de Juan Prim</span>
+            </div>
+            <div class="texto-modal">El 27 de diciembre de 1870, el coche de caballos de Juan Prim fue emboscado en la nevada calle del Turco de Madrid por varios asaltantes armados con trabucos. El general sobrevivió al asalto, pero recibió abundantes impactos de bala en el hombro y la mano izquierda. La versión oficial afirmó que falleció tres días después a causa de una septicemia de la infección de las heridas.\n\nNo obstante, la reciente autopsia forense realizada por la Universidad Camilo José Cela en el cuerpo momificado de Prim ha arrojado dudas espectaculares: su espalda no muestra cicatrices quirúrgicas que apoyen las curas oficiales, el dedo que supuestamente le amputó el cirujano fue en realidad arrancado por un impacto de bala directo y, sobre todo, se han detectado marcas de surcos profundos de correa en el cuello que indican que el militar progresista pudo morir por estrangulación en su propio lecho de convalecencia.</div>
+        </div>
+    </div>
+
+    <!-- POPUP TEMA 3.5: CARTA DE RENUNCIA DE AMADEO I -->
+    <div id="pop-renuncia" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closePopup('pop-renuncia')">&times;</span>
+            <h3 style="color: #047857; margin-top: 0;">📜 Carta de Renuncia al Trono de Amadeo de Saboya (1873)</h3>
+            <p>La proclama con la que el soberano devolvió la corona al Congreso ante la Asamblea Nacional:</p>
+            <div class="texto-modal">"Dos años largos hace que ciño la Corona de España y España vive en constante lucha, viendo cada día más lejana la era de paz y de ventura que tan ardientemente anhelo. Si fuesen extranjeros los enemigos de su dicha, entonces, al frente de estos soldados tan valientes como sufridos, sería el primero en combatirlos, pero todos los que, con la espada, con la pluma, con la palabra agravan y perpetran los males de la nación, son españoles.\n\nTodos invocan el dulce nombre de la patria, todos pelean y se agitan por su bien; y entre el fragor del combate, entre el confuso, atronador y contradictorio clamor de los partidos, entre tantas y tan opuestas manifestaciones de la opinión pública, es imposible atinar cuál es la verdadera y más imposible todavía hallar el remedio para tamaños males. Lo he buscado ávidamente dentro de la ley y no lo he hallado. Fuera de la ley no ha de buscarlo quien ha prometido observarla..."</div>
+        </div>
+    </div>
+
+    <!-- POPUP TEMA 3.6: NICOLÁS ESTÉVANEZ -->
     <div id="pop-estevanez" class="modal">
         <div class="modal-content">
             <span class="modal-close" onclick="closePopup('pop-estevanez')">&times;</span>
             <h3 style="color: #0369a1; margin-top: 0;">📜 Las Proclamas Cantonales de Nicolás Estévanez (1873)</h3>
             <p>El pensamiento de este ilustre e influyente político republicano canario en pro de una descentralización cantonal federal:</p>
-            <div class="texto-modal">"Españoles de Canarias: la República Federal que hoy nace en las Cortes no es una mera fórmula teórica centralizadora, sino la de la soberanía civil a sus legítimos poseedores: los pueblos de todas las regiones de nuestra Patria. En las islas, el pleito insular por la capitalidad única de 1833 ha desgarrado la convivencia social de nuestros cabildos y ciudades.\n\nLa solución no radica en mantener la hegemonía forzada de Santa Cruz sobre Las Palmas, ni viceversa, sino en la abolición definitiva del centralismo provincial mediante la proclamación de dos Cantones Federales soberanos e independientes en su administración interna, pero indisolublemente unidos en un pacto común para la defensa y grandeza del Archipiélago."</div>
+            <div class="texto-modal">"Españoles de Canarias: la República Federal que hoy nace en las Cortes no es una mera fórmula teórica centralizadora, sino la devolución de la soberanía civil a sus legítimos poseedores: los pueblos de todas las regiones de nuestra Patria. En las islas, el pleito insular por la capitalidad única de 1833 ha desgarrado la convivencia social de nuestros cabildos y ciudades.\n\nLa solución no radica en mantener la hegemonía forzada de Santa Cruz sobre Las Palmas, ni viceversa, sino en la abolición definitiva del centralismo provincial mediante la proclamación de dos Cantones Federales soberanos e independientes en su administración interna, pero indisolublemente unidos en un pacto común para la defensa y grandeza del Archipiélago."</div>
         </div>
     </div>
 
+    <!-- Script de Navegación Dinámica y Popups -->
     <script>
         const links = document.querySelectorAll('aside nav ul li a');
         const sections = document.querySelectorAll('main section');
@@ -510,14 +786,17 @@
             });
         });
 
+        // Funciones para modals (popups)
         function openPopup(id) {
             document.getElementById(id).classList.add('show');
         }
 
+        // Función para cerrar modals
         function closePopup(id) {
             document.getElementById(id).classList.remove('show');
         }
 
+        // Cerrar al hacer clic fuera del modal
         window.onclick = function(event) {
             if (event.target.classList.contains('modal')) {
                 event.target.classList.remove('show');
