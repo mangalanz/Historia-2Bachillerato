@@ -576,11 +576,33 @@
                 <li><strong>Los Afrancesados:</strong> Intelectuales, altos funcionarios y parte de la nobleza que apoyaron a <em>José I</em>, convencidos de que las reformas ilustradas de los franceses eran la única vía pacífica para modernizar España.</li>
                 <li><strong>El Frente Patriótico:</strong> La inmensa mayoría de la población (clero, nobleza, ilustrados y liberales) que se opuso a la ocupación y defendió la soberanía y la vuelta de <em>Fernando VII</em>.</li>
             </ul>
+            <!-- NUEVO ENLACE DE VÍDEO CORREGIDO -->
+            <div style="margin: 15px 0; text-align: center;">
+                <a href="https://www.youtube.com/watch?v=gH73_Q3yUoY" target="_blank" class="btn-interactivo btn-video">🎬 Ver vídeo explicativo sobre la Guerra de Guerrillas ➡️</a>
+            </div>
 
             <h3>El Levantamiento del 2 de Mayo de 1808</h3>
             <p>Ante la inminente salida del palacio de los últimos miembros de la familia real hacia Francia, el 2 de mayo de 1808 estalló una rebelión popular espontánea en Madrid. Los madrileños se enfrentaron a las patrullas francesas. A la resistencia popular se sumaron militares españoles del cuartel de Moncloa dirigidos por <em>Daoíz</em> y <em>Velarde</em>.</p>
 
             <p>La sublevación fue duramente reprimida por el general francés <em>Murat</em>, quien ordenó el fusilamiento sistemático de cientos de rebeldes en la colina de la Moncloa y el Paseo del Prado durante la noche del 2 y la madrugada del 3 de mayo, inmortalizado por <em>Francisco de Goya</em>. La noticia de la masacre extendió la rebelión armada por toda España.</p>
+
+<!-- ======================================================================= -->
+<!-- INICIO DE LA INTEGRACIÓN: CANARIAS ANTE LA CRISIS DE 1808 (TEMA 1)       -->
+<!-- ======================================================================= -->
+<div class="caja-colores factores">
+    <h4>🇮🇨 Canarias ante la Crisis de 1808: La Junta Suprema de Canarias</h4>
+    <p>El archipiélago canario no llegó a ser ocupado militarmente por las tropas de Napoleón, pero al conocerse los trágicos sucesos de la península en el verano de 1808, se reaccionó con idéntico espíritu patriótico de resistencia. En San Cristóbal de La Laguna (Tenerife) se constituyó la histórica <strong>Junta Suprema de Canarias</strong>, con el fin de organizar la defensa militar, mantener el orden civil e institucional y asegurar la lealtad al rey cautivo Fernando VII .</p>
+    <p>La constitución de la Junta Suprema de Canarias no estuvo exenta de fuertes tensiones geopolíticas internas. Inicialmente, la Junta fue reconocida por casi la totalidad de los cabildos insulares, con la marcada excepción del cabildo de Gran Canaria, que optó de forma insumisa por organizarse por su cuenta creando un cabildo independiente (el Cabildo Permanente de Gran Canaria) en 1809, avivando de forma temprana las disputas y rivalidades territoriales del enconado <strong>pleito insular</strong>, aunque finalmente terminó unificándose al resto en la Junta común para salvaguardar la causa nacional .</p>
+    <p>Asimismo, cabe resaltar la participación activa de <strong>numerosos voluntarios canarios</strong> que marcharon a combatir en los diversos frentes armados de la península . De igual manera, tras la resonante victoria española en la <em>Batalla de Bailén</em> en julio de 1808, un importante contingente de <strong>soldados franceses hechos prisioneros</strong> fueron enviados y confinados en Canarias, distribuyéndose entre Gran Canaria y Tenerife, donde muchos de ellos permanecieron de forma pacífica y decidieron establecerse definitivamente en las islas una vez finalizada la contienda .</p>
+</div>
+
+<!-- Botón interactivo que acciona el Popup de la Junta de Canarias -->
+<div style="margin: 15px 0; text-align: center;">
+    <button class="btn-interactivo btn-texto" onclick="openPopup('pop-junta-canarias')">📜 Documento: El Manifiesto de la Junta Suprema de Canarias (1808)</button>
+</div>
+<!-- ======================================================================= -->
+<!-- FIN DE LA INTEGRACIÓN: CANARIAS ANTE LA CRISIS DE 1808                  -->
+<!-- ======================================================================= -->
 
             <!-- BOTÓN INTERACTIVO: TESTIMONIO 2 DE MAYO -->
             <div style="margin: 15px 0; text-align: center;">
@@ -860,6 +882,24 @@
             <div class="texto-modal">"A las diez de la mañana han comenzado a atacar a los franceses que se encontraban en las calles, a pedradas y cuchilladas. En un abrir y cerrar de ojos la Guardia Imperial hizo uso de las armas. Durante cuatro a cinco horas persiguió a los sediciosos en las calles a cañonazos y tiros de fusil. De cuatrocientos a quinientos han muerto. Se han detenido aproximadamente a cien, que estaban armados con piedras y cuchillos, entre los cuales había algunos curas y algunos jóvenes aturdidos que tomaron parte en el asunto. Las tropas españolas se han quedado tranquilas o han secundado a los franceses. La mayoría de los españoles ricos y de los ministros españoles han hecho todo lo posible por apaciguar la sedición y salvar a los franceses, lo que ha disminuido considerablemente el número de víctimas."</div>
         </div>
     </div>
+    
+<!-- ======================================================================= -->
+<!-- INICIO POP-UP: VENTANA EMERGENTE DE LA JUNTA SUPREMA DE CANARIAS        -->
+<!-- ======================================================================= -->
+<div id="pop-junta-canarias" class="modal">
+    <div class="modal-content">
+        <span class="modal-close" onclick="closePopup('pop-junta-canarias')">&times;</span>
+        <h3 style="color: #b45309; margin-top: 0;">📜 El Manifiesto de la Junta Suprema de Canarias (1808)</h3>
+        <p>Proclama y llamamiento patriótico a la unificación civil y militar emitido desde San Cristóbal de La Laguna ante la invasión napoleónica:</p>
+        <div class="texto-modal">"Canarios: el sagrado e indisoluble deber de defender a nuestra Patria y la soberanía del amado rey don Fernando VII ha unificado los corazones de todos los habitantes del Archipiélago. La Junta Suprema de Canarias, constituida en esta ciudad de La Laguna con el consenso unánime de los representantes de las islas, asume la sagrada responsabilidad de gobernar y organizar las fuerzas militares para repeler al tirano usurpador que asola el suelo patrio.
+
+Españoles de Canarias: no reconozcáis otra autoridad que la legítima de las leyes de este reino. Aunque distantes de la lucha en la península, nuestras islas no cejarán en sus sacrificios comunes. No permitáis que el insularismo o las disensiones de cabildo dividan lo que el honor nacional y el peligro común exigen mantener en férrea unión."</div>
+    </div>
+</div>
+<!-- ======================================================================= -->
+<!-- FIN POP-UP: VENTANA EMERGENTE DE LA JUNTA SUPREMA DE CANARIAS           -->
+<!-- ======================================================================= -->
+
 
     <!-- POPUP TEMA 1.3: EXTRACTO DE LA CONSTITUCIÓN DE 1812 -->
     <div id="pop-constitucion" class="modal">
