@@ -1,106 +1,175 @@
 <!DOCTYPE html>
 <html lang="es">
-@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bloque I - Tema 1: La Crisis del Antiguo Régimen (1788 - 1833)</title>
     <title>Bloque I - Tema 1: La Crisis del Antiguo Régimen y las Cortes de Cádiz (1808 - 1833)</title>
     <style>
         :root {
-            /* Colores corporativos alegres y vibrantes */
-            --primary-intense: #1e40af; /* Azul real oscuro */
-            --primary-vibrant: #2563eb; /* Azul brillante */
             --primary-intense: #1e40af;
             --primary-vibrant: #2563eb;
             --primary-dark: #0f172a;
             --primary: #1e293b;
             --bg-main: #f8fafc;
-@ -16,12 +15,10 @@
+            --card-bg: #ffffff;
             --text-dark: #1e293b;
             --text-muted: #64748b;
             
-            /* Tonos suaves en verde para el encabezado */
-            --header-bg: #f0fdf4; /* Fondo verde menta muy suave */
-            --header-border: #10b981; /* Borde verde esmeralda */
-            --header-text: #065f46; /* Texto verde bosque oscuro */
             --header-bg: #f0fdf4;
             --header-border: #10b981;
             --header-text: #065f46;
 
-            /* Cajas didácticas */
             --border-glosario: #0ea5e9;
             --bg-glosario: #f0f9ff;
             --border-investigacion: #f59e0b;
-@ -46,7 +43,6 @@
+            --bg-investigacion: #fffbeb;
+            --border-critica: #ef4444;
+            --bg-critica: #fef2f2;
+            --border-factores: #10b981;
+            --bg-factores: #ecfdf5;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-dark);
             min-height: 100vh;
         }
 
-        /* Barra de navegación lateral fija a la izquierda */
         aside {
             width: 300px;
             background-color: var(--primary-dark);
-@ -89,7 +85,6 @@
+            color: white;
+            padding: 25px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            overflow-y: auto;
+            border-right: 1px solid #334155;
+            z-index: 100;
+        }
+
+        aside h1 {
+            font-size: 1.25rem;
+            margin-bottom: 25px;
+            color: #f8fafc;
+            border-bottom: 3px solid var(--primary-vibrant);
+            padding-bottom: 12px;
+            text-align: center;
+        }
+
+        aside nav ul {
+            list-style: none;
+        }
+
+        aside nav ul li {
+            margin-bottom: 10px;
+        }
+
+        aside nav ul li a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 0.95rem;
+            display: block;
+            padding: 10px 14px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
             font-weight: 500;
         }
 
-        /* Botón de volver a la portada */
         aside nav ul li .btn-volver {
             background-color: #334155;
             color: #ffffff;
-@ -109,7 +104,6 @@
+            font-weight: bold;
+            text-align: center;
+            border: 1px solid #475569;
+            margin-bottom: 15px;
+            display: block;
+            padding: 10px 14px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            text-decoration: none;
+        }
+
+        aside nav ul li .btn-volver:hover {
+            background-color: var(--primary-vibrant);
             border-color: var(--primary-vibrant);
         }
 
-        /* Enlaces activos e interactivos en azul vibrante */
         aside nav ul li a:hover, aside nav ul li a.active {
             background-color: var(--primary-vibrant);
             color: white;
-@ -117,14 +111,12 @@
+            font-weight: bold;
             box-shadow: 0 4px 10px rgba(37, 99, 235, 0.15);
         }
 
-        /* Contenido de la Web */
         main {
             margin-left: 300px;
             padding: 40px;
             max-width: 1100px;
         }
 
-        /* Encabezado Alegre con tonos suaves en verde */
         header {
             margin-bottom: 35px;
             background: linear-gradient(135deg, var(--header-bg), #e6fcf0);
-@ -148,24 +140,6 @@
-            font-weight: 500;
-        }
-
-        /* Cabecera ilustrada horizontal (Eje cronológico adaptativo sin cortes) */
-        .cabecera-ilustrada {
-            width: 100%;
-            height: auto;
+            border-left: 6px solid var(--header-border);
+            color: var(--header-text);
+            padding: 25px 35px;
             border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-            border: 1px solid #e2e8f0;
-            margin-bottom: 35px;
-            background-color: #f1f5f9;
+            box-shadow: 0 4px 10px rgba(16, 185, 129, 0.08);
         }
 
-        .cabecera-ilustrada img {
-            width: 100%;
-            height: auto;
-            display: block;
+        header h2 {
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+            color: var(--header-text);
+            font-weight: 800;
+        }
+
+        header p {
+            color: #15803d;
+            font-size: 1.05rem;
+            font-weight: 500;
         }
 
         section {
             background: var(--card-bg);
             padding: 35px;
-@ -196,7 +170,53 @@
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            margin-bottom: 35px;
+            border-left: 6px solid var(--primary-vibrant);
+        }
+
+        section h2 {
+            color: var(--primary-dark);
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #f1f5f9;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: var(--primary-intense);
+            margin: 25px 0 12px 0;
+            font-size: 1.25rem;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+            color: #334155;
             text-align: justify;
         }
 
-        /* Cajas de colores */
         /* CONTENEDOR DE IMAGEN (ANTI-SOLAPAMIENTO) */
         .tarjeta-imagen {
             background-color: #f8fafc;
@@ -151,14 +220,18 @@
         .caja-colores {
             padding: 20px;
             border-radius: 8px;
-@ -212,10 +232,10 @@
+            margin: 20px 0;
+            font-size: 1rem;
+        }
+
+        .caja-colores h4 {
+            margin-bottom: 10px;
+            font-size: 1.15rem;
+            display: flex;
+            align-items: center;
             gap: 8px;
         }
 
-        .glosario {
-            background-color: var(--bg-glosario);
-            border-left: 5px solid var(--border-glosario);
-            color: #0369a1;
         .factores {
             background-color: var(--bg-factores);
             border-left: 5px solid var(--border-factores);
@@ -166,28 +239,29 @@
         }
 
         .investigacion {
-@ -227,67 +247,10 @@
+            background-color: var(--bg-investigacion);
+            border-left: 5px solid var(--border-investigacion);
+            color: #b45309;
+        }
+
         .critica {
             background-color: var(--bg-critica);
             border-left: 5px solid var(--border-critica);
-            color: #c2410c;
             color: #b91c1c;
         }
 
-        .factores {
-            background-color: var(--bg-factores);
-            border-left: 5px solid var(--border-factores);
-            color: #047857;
+        .glosario {
+            background-color: var(--bg-glosario);
+            border-left: 5px solid var(--border-glosario);
+            color: #0369a1;
         }
 
-        /* Desplegables de Lectura Estructurada */
         details {
             background-color: #f8fafc;
             border: 1px solid #e2e8f0;
             border-radius: 8px;
             padding: 16px;
             margin-bottom: 14px;
-            transition: border-color 0.2s;
         }
 
         details[open] {
@@ -210,50 +284,26 @@
             border-top: 1px dashed #e2e8f0;
         }
 
-        /* Imágenes educativas adaptativas */
-        .imagen-educativa {
-            width: 100%;
-            max-width: 800px;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-            margin: 25px auto;
-            display: block;
-            border: 1px solid #e2e8f0;
-        }
-
-        .caption {
-            text-align: center;
-            font-size: 0.95rem;
-            color: var(--text-muted);
-            font-style: italic;
-            margin-top: -15px;
-            margin-bottom: 25px;
-        }
-
-        ul, ol {
         ul {
             padding-left: 25px;
             margin-bottom: 15px;
             font-size: 1.05rem;
-@ -298,23 +261,23 @@
+        }
+
+        li {
+            margin-bottom: 8px;
             color: #334155;
         }
 
-        /* --- ESTILOS PARA POPUPS INTERACTIVOS (MODALS) --- */
         /* POPUPS INTERACTIVOS (MODALS) */
         .modal {
-            display: none; /* Oculto por defecto */
             display: none;
             position: fixed;
-            z-index: 2000; /* Por encima de la barra lateral */
             z-index: 2000;
             left: 0;
             top: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(15, 23, 42, 0.6); /* Fondo oscuro */
-            backdrop-filter: blur(4px); /* Desenfoque estético */
             background-color: rgba(15, 23, 42, 0.6);
             backdrop-filter: blur(4px);
             align-items: center;
@@ -261,99 +311,148 @@
         }
 
         .modal.show {
-            display: flex; /* Se muestra mediante JS */
             display: flex;
         }
 
         .modal-content {
-@ -343,14 +306,12 @@
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            max-width: 650px;
+            width: 90%;
+            max-height: 85vh;
+            overflow-y: auto;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            border-left: 6px solid var(--border-investigacion);
+            position: relative;
+            animation: modalFadeIn 0.3s ease-out;
+        }
+
+        @keyframes modalFadeIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 20px;
             font-size: 1.5rem;
             cursor: pointer;
             color: var(--text-muted);
-            transition: color 0.2s;
         }
 
         .modal-close:hover {
             color: var(--border-critica);
         }
 
-        /* Botones de acción didáctica */
         .btn-interactivo {
             display: inline-flex;
             align-items: center;
-@ -406,14 +367,11 @@
+            gap: 8px;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            margin: 8px 0;
+            border: none;
+        }
+
+        .btn-anecdota {
+            background-color: var(--bg-investigacion);
+            border: 1px solid var(--border-investigacion);
+            color: #b45309;
+        }
+
+        .btn-anecdota:hover {
+            background-color: var(--border-investigacion);
+            color: white;
+        }
+
+        .btn-texto {
+            background-color: var(--bg-factores);
+            border: 1px solid var(--border-factores);
+            color: #047857;
+        }
+
+        .btn-texto:hover {
+            background-color: var(--border-factores);
+            color: white;
+        }
+
+        .btn-video {
+            background-color: var(--bg-glosario);
+            border: 1px solid var(--border-glosario);
+            color: #0369a1;
+        }
+
+        .btn-video:hover {
+            background-color: var(--border-glosario);
+            color: white;
+        }
+
+        .texto-modal {
+            font-size: 0.95rem;
+            color: #334155;
+            background-color: #f8fafc;
             padding: 15px;
             border-radius: 6px;
             border: 1px solid #e2e8f0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             white-space: pre-wrap;
             margin-top: 10px;
-            line-height: 1.5;
             text-align: justify;
         }
 
-        /* Responsive */
         @media (max-width: 900px) {
             aside {
                 width: 100%;
-@ -432,28 +390,30 @@
+                height: auto;
+                position: relative;
+                border-right: none;
+                border-bottom: 1px solid #334155;
+            }
+            main {
+                margin-left: 0;
+                width: 100%;
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Navegación Lateral de Bloque (Tema 1 Activo) -->
     <!-- Navegación Lateral -->
     <aside>
         <h1>⚖️ Bloque I: Estado Liberal</h1>
-        <h1>🏛️ Bloque I: Estado Liberal</h1>
         <nav>
-            <ul><!-- ========================================== -->
-                <!-- INICIO DE NAVEGACIÓN UNIFICADA DE BLOQUES  -->
-                <!-- ========================================== -->
-                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 15px 14px 5px 14px; font-weight: bold; border-top: 1px solid #475569; margin-top: 25px; border-bottom: 1px solid #334155; margin-bottom: 8px;">📖 Introducción</li>
-                <li><a href="tema0.html" id="nav-tema0">Tema 0: Introducción</a></li>
-                
-                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 15px 14px 5px 14px; font-weight: bold; border-top: 1px solid #475569; margin-top: 15px; border-bottom: 1px solid #334155; margin-bottom: 8px;">📖 Bloque I: Estado Liberal</li>
-                <li><a href="bloque1_tema1.html" id="nav-b1t1">Tema 1: Cortes de Cádiz</a></li>
-                <li><a href="bloque1_tema2.html" id="nav-b1t2">Tema 2: Estado Liberal</a></li>
-                <li><a href="bloque1_tema3.html" id="nav-b1t3">Tema 3: El Sexenio</a></li>
             <ul>
                 <li><a href="index.html" class="btn-volver">🏠 Volver a Portada</a></li>
                 
-                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 15px 14px 5px 14px; font-weight: bold; border-top: 1px solid #475569; margin-top: 15px; border-bottom: 1px solid #334155; margin-bottom: 8px;">📖 Bloque II: La Restauración</li>
-                <li><a href="bloque2_tema1.html" id="nav-b2t1">Tema 1: La Restauración</a></li>
-                <li><a href="bloque2_tema2.html" id="nav-b2t2">Tema 2: Los Nacionalismos</a></li>
-                <li><a href="bloque2_tema3.html" id="nav-b2t3">Tema 3: Industrialización y Obrero</a></li>
-                <!-- ========================================== -->
-                <!-- FIN DE NAVEGACIÓN UNIFICADA DE BLOQUES     -->
-                <!-- ========================================== -->
-                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 10px 14px 5px 14px; font-weight: bold; border-bottom: 1px solid #334155; margin-bottom: 8px;">📍 Secciones</li>
-                <li><a href="#crisis1808" class="active">1. Crisis y Guerra de 1808</a></li>
-                <li><a href="#cortescadiz">2. Cortes y Constitución 1812</a></li>
-                <li><a href="#fernandovii">3. El Reinado de Fernando VII</a></li>
-
-                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 20px 14px 5px 14px; font-weight: bold; border-top: 1px solid #475569; margin-top: 25px; border-bottom: 1px solid #334155; margin-bottom: 8px;">📖 Temas del Bloque I</li>
-                <li><a href="bloque1_tema1.html" style="font-weight: bold; color: var(--primary-vibrant);">Tema 1: Cortes de Cádiz</a></li>
-                <li><a href="bloque1_tema2.html">Tema 2: Estado Liberal</a></li>
-                <li><a href="bloque1_tema3.html">Tema 3: El Sexenio</a></li>
-
-                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 15px 14px 5px 14px; font-weight: bold; border-top: 1px solid #475569; margin-top: 15px; border-bottom: 1px solid #334155; margin-bottom: 8px;">📚 Otros Bloques</li>
-                <li><a href="tema0.html">Tema 0: Introducción</a></li>
-                <li><a href="bloque2_tema1.html">Bloque II: La Restauración</a></li>
-                <li><a href="bloque3_tema1.html">Bloque III: Alfonso XIII y Dictadura</a></li>
-                <li><a href="bloque4_tema1.html">Bloque IV: Segunda República y Guerra</a></li>
-                <li><a href="bloque5_tema1.html">Bloque V: Franquismo</a></li>
-                <li><a href="bloque6_tema1.html">Bloque VI: Transición y Democracia</a></li>
+                <!-- Navegación Interna del Tema Actual -->
+                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 10px 14px 5px 14px; font-weight: bold; border-bottom: 1px solid #334155; margin-bottom: 8px;">📍 Secciones del Tema 1</li>
+                <li><a href="#tema1" class="active">1. Antiguo Régimen vs. Liberalismo</a></li>
+                <li><a href="#tema2">2. El Reinado de Carlos IV</a></li>
+                <li><a href="#tema3">3. La Guerra de la Independencia</a></li>
+                <li><a href="#tema4">4. Las Cortes de Cádiz</a></li>
+                <li><a href="#tema5">5. El Reinado de Fernando VII</a></li>
+                <li><a href="#tema6">6. Emancipación de América</a></li>
+                
+                <!-- Saltos entre Temas del Bloque I -->
+                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 20px 14px 5px 14px; font-weight: bold; border-bottom: 1px solid #334155; margin-bottom: 8px;">📖 Temas del Bloque</li>
+                <li><a href="bloque1_tema2.html" style="color: #cbd5e1; margin-bottom: 8px; display: block; padding: 10px 14px; border-radius: 6px; text-decoration: none;">➡️ Ir al Tema 2: Estado Liberal</a></li>
+                <li><a href="bloque1_tema3.html" style="color: #cbd5e1; margin-bottom: 8px; display: block; padding: 10px 14px; border-radius: 6px; text-decoration: none;">➡️ Ir al Tema 3: Sexenio</a></li>
             </ul>
         </nav>
     </aside>
-@ -461,447 +421,80 @@
+
     <!-- Contenido Principal -->
     <main>
         <header>
             <h2>Tema 1: La Crisis del Antiguo Régimen (1788 - 1833)</h2>
             <p>La transición de España hacia la Edad Contemporánea: de la monarquía absoluta al primer intento de revolución liberal.</p>
-            <h2>Tema 1: La Crisis del Antiguo Régimen y las Cortes de Cádiz (1808 - 1833)</h2>
-            <p>La quiebra de la monarquía absoluta, la gloriosa Guerra de la Independencia, la obra legislativa y revolucionaria de Cádiz y el accidentado reinado de Fernando VII.</p>
         </header>
 
         <!-- Cabecera ilustrada con tu Eje Cronológico horizontal adaptativo -->
@@ -366,8 +465,10 @@
             <h2>1. Antiguo Régimen versus Liberalismo</h2>
             <p>El periodo comprendido entre 1788 y 1833 representa para España el choque frontal entre dos mundos y modelos de sociedad opuestos. Por un lado, las viejas estructuras del <strong>Antiguo Régimen</strong>, que se resisten a desaparecer; por otro, la propuesta del <strong>Liberalismo</strong>, que busca transformar a los antiguos vasallos en ciudadanos de pleno derecho y establecer una sociedad moderna e industrial.</p>
 
-            <img src="img/antiguo-regimen-vs-liberalismo.png" alt="Esquema Antiguo Régimen vs Liberalismo" class="imagen-educativa">
-            <p class="caption"><em>Imagen 1: Comparación de los modelos político, social y económico del Antiguo Régimen frente al Liberalismo (Esquema didáctico por Daniel Gómez Valle).</em></p>
+            <div class="tarjeta-imagen">
+                <img src="img/antiguo-regimen-vs-liberalismo.png" alt="Esquema Antiguo Régimen vs Liberalismo">
+                <span class="caption">Imagen 1: Comparación de los modelos político, social y económico del Antiguo Régimen frente al Liberalismo (Esquema didáctico por Daniel Gómez Valle).</span>
+            </div>
 
             <p>Para comprender la profundidad de este cambio histórico que sentará las bases del siglo XIX español, analizamos las diferencias esenciales entre ambos sistemas en tres ámbitos:</p>
 
@@ -389,46 +490,43 @@
             <h2>2. El Reinado de Carlos IV (1788-1808) y el Colapso de la Monarquía</h2>
             <p>En 1788 falleció <em>Carlos III</em> y ascendió al trono su hijo, <em>Carlos IV</em>. Bajo su reinado se inició el desmoronamiento de las estructuras del Antiguo Régimen en España. Con <em>Carlos IV</em> fracasaron las políticas de reforma ilustradas iniciadas en tiempos de su padre, arrastradas por frecuentes crisis internacionales, la bancarrota económica y las luchas por el control de la Corona.</p>
 
-            <img src="img/carlos-iv.png" alt="Retrato de Carlos IV" class="imagen-educativa" style="max-width:320px;">
-            <p class="caption"><em>Imagen 2: Retrato del monarca Carlos IV de Borbón (Detalle de la obra de Francisco de Goya).</em></p>
-        <section id="crisis1808">
-            <h2>1. La Crisis de 1808 y la Guerra de la Independencia</h2>
-            <p>El reinado de <em>Carlos IV</em> (1788-1808) marcó el inicio de la crisis del Antiguo Régimen en España. La política exterior española estuvo condicionada por el estallido de la Revolución Francesa y la posterior ascensión de <em>Napoleón Bonaparte</em>. El todopoderoso valido <em>Manuel Godoy</em> firmó en 1807 el <em>Tratado de Fontainebleau</em>, que autorizaba el paso de las tropas francesas por el territorio peninsular con el pretexto de invadir de forma conjunta el reino de Portugal.</p>
-            
-            <p>Sin embargo, la presencia del ejército imperial francés fue percibida pronto como una invasión real. El descontento de los sectores aristocráticos y del propio príncipe de Asturias desembocó en el <strong>Motín de Aranjuez</strong> en marzo de 1808, que forzó la destitución de Godoy y la abdicación de Carlos IV en su hijo <em>Fernando VII</em>. Aprovechando las disensiones de la familia real, Napoleón los atrajo a territorio francés, forzando de forma expeditiva las célebres <strong>Abdicaciones de Bayona</strong> en mayo de 1808, por las que el trono de España fue entregado a su hermano <em>José I Bonaparte</em>.</p>
+            <div class="tarjeta-imagen" style="max-width:360px; margin: 20px auto;">
+                <img src="img/carlos-iv.png" alt="Retrato de Carlos IV">
+                <span class="caption">Imagen 2: Retrato del monarca Carlos IV de Borbón (Detalle de la obra de Francisco de Goya).</span>
+            </div>
 
             <h3>El Impacto de la Revolución Francesa (1789)</h3>
             <p>El estallido de la <em>Revolución Francesa</em> en 1789 conmocionó a la corte española. Ante el temor de que las ideas liberales se propagaran por España, el Secretario de Estado, <em>conde de Floridablanca</em>, ordenó el cierre absoluto de las fronteras con Francia (el llamado <strong>cordón sanitario</strong>), prohibió la entrada de libros e impresos franceses y reactivó el tribunal de la <em>Inquisición</em> para vigilar y censurar las publicaciones.</p>
-            <p>Ante la ocupación extranjera y el secuestro de las instituciones, el <strong>2 de mayo de 1808</strong> estalló un violento levantamiento popular en Madrid que fue reprimido con extrema dureza por el general Murat. Este acontecimiento supuso el estallido de la <strong>Guerra de la Independencia (1808-1814)</strong>. La resistencia civil frente al invasor francés se vertebró de forma revolucionaria a través de la creación de múltiples <em>Juntas Locales y Provinciales</em> que asumieron la soberanía civil y militar ante la acefalía estatal.</p>
 
             <!-- BOTÓN INTERACTIVO: ORDEN CIRCULAR 1791 -->
-            <div style="margin: 15px 0;">
+            <div style="margin: 15px 0; text-align: center;">
                 <button class="btn-interactivo btn-texto" onclick="openPopup('pop-circular')">📜 Texto histórico: La Orden Circular del 5 de enero de 1791</button>
-            <div class="caja-colores factores">
-                <h4>🇮🇨 Canarias ante la Crisis de 1808: La Junta Suprema de Canarias</h4>
-                <p>El archipiélago canario no llegó a ser ocupado militarmente por las tropas de Napoleón, pero al conocerse los trágicos sucesos de la península en el verano de 1808, se reaccionó con idéntico espíritu patriótico de resistencia. En San Cristóbal de La Laguna (Tenerife) se constituyó la histórica <strong>Junta Suprema de Canarias</strong>, con el fin de organizar la defensa militar, mantener el orden civil e institucional y asegurar la lealtad al rey cautivo Fernando VII [978, 1183].</p>
-                <p>La constitución de la Junta Suprema de Canarias no estuvo exenta de fuertes tensiones geopolíticas internas. Inicialmente, la Junta fue reconocida por casi la totalidad de los cabildos insulares, con la marcada excepción del cabildo de Gran Canaria, que optó de forma insumisa por organizarse por su cuenta creando un cabildo independiente (el Cabildo Permanente de Gran Canaria) en 1809, avivando de forma temprana las disputas y rivalidades territoriales del enconado <strong>pleito insular</strong>, aunque finalmente terminó unificándose al resto en la Junta común para salvaguardar la causa nacional [978].</p>
-                <p>Asimismo, cabe resaltar la participación activa de <strong>numerosos voluntarios canarios</strong> que marcharon a combatir en los diversos frentes armados de la península [978]. De igual manera, tras la resonante victoria española en la <em>Batalla de Bailén</em> en julio de 1808, un importante contingente de <strong>soldados franceses hechos prisioneros</strong> fueron enviados y confinados en Canarias, distribuyéndose entre Gran Canaria y Tenerife, donde muchos de ellos permanecieron de forma pacífica y decidieron establecerse definitivamente en las islas una vez finalizada la contienda [978].</p>
             </div>
 
             <p><em>Floridablanca</em> fue relevado por el <em>conde de Aranda</em>, quien intentó mantener una postura de neutralidad frente a la posible guerra contra la Francia revolucionaria y republicana. Sin embargo, tras la ejecución en la guillotina del rey Borbón francés <em>Luis XVI</em> en 1793, España dio un giro drástico y declaró la guerra a la República Francesa, iniciándose la <em>Guerra de la Convención</em> (1793-1795).</p>
 
             <h3>El Ascenso de Manuel Godoy y la Guerra de la Convención</h3>
-            <p><em>Carlos IV</em> confió la dirección del gobierno a <em>Manuel Godoy</em>, un joven de corps que se convirtió de forma fulminante en primer ministro y valido del rey. <em>Godoy</em> firmó con Gran Bretaña su adhesión a la coalición antifrancesa. Sin embargo, el ejército español regular deparó una notable ineficacia y las tropas de la Convención francesa invadieron el norte peninsular (País Vasco, Navarra y Cataluña).</p>
+            <p><em>Carlos IV</em> confió la dirección del gobierno a <em>Manuel Godoy</em>, un joven de corps que se convirtió de forma fulminante en primer ministro y valido del rey. <em>Godoy</em> firmó con Gran Bretaña su adhesión a la coalición antifrancesa. Sin embargo, el ejército español deparó una notable ineficacia y las tropas de la Convención francesa invadieron el norte peninsular (País Vasco, Navarra y Cataluña).</p>
 
-            <img src="img/guerra-convencion.png" alt="Mapa de la Guerra de la Convención" class="imagen-educativa">
-            <p class="caption"><em>Imagen 3: Mapa de operaciones de la Guerra de la Convención (1793-1795). Las tropas francesas cruzaron los Pirineos y penetraron en tierras españolas.</em></p>
+            <div class="tarjeta-imagen">
+                <img src="img/guerra-convencion.png" alt="Mapa de la Guerra de la Convención">
+                <span class="caption">Imagen 3: Mapa de operaciones de la Guerra de la Convención (1793-1795). Las tropas francesas cruzaron los Pirineos y penetraron en tierras españolas.</span>
+            </div>
 
             <p>Para frenar el avance francés, <em>Godoy</em> se vio obligado a firmar la <em>Paz de Basilea</em> (1795), por la que España recuperaba sus territorios peninsulares ocupados a cambio de <strong>ceder a Francia la isla de Santo Domingo</strong> y otorgar concesiones comerciales. Este deparó a <em>Godoy</em> el título de <strong>Príncipe de la Paz</strong>.</p>
 
-            <img src="img/la-guerra-contra-francia.png" alt="Esquema de la Guerra de la Convención" class="imagen-educativa">
-            <p class="caption"><em>Imagen 4: Esquema metodológico de las causas, frentes y efectos de la Guerra contra la Francia Revolucionaria.</em></p>
+            <div class="tarjeta-imagen">
+                <img src="img/la-guerra-contra-francia.png" alt="Esquema de la Guerra de la Convención">
+                <span class="caption">Imagen 4: Esquema metodológico de las causas, frentes y efectos de la Guerra contra la Francia Revolucionaria.</span>
+            </div>
 
             <h3>La Alianza con Francia y el desastre de Trafalgar (1805)</h3>
             <p>En 1796, mediante el <em>Tratado de San Ildefonso</em>, <em>Godoy</em> dio un vuelco radical a la política exterior española y optó por la alianza con la Francia revolucionaria para hacer frente a la amenaza británica en las colonias americanas. Esta sumisión de España a los planes de <em>Napoleón</em> tuvo consecuencias desastrosas:</p>
 
-            <img src="img/batalla-trafalgar.png" alt="Batalla de Trafalgar" class="imagen-educativa">
-            <p class="caption"><em>Imagen 5: Ilustración didáctica de la Batalla de Trafalgar (1805), donde la escuadra británica impuso su superioridad naval.</em></p>
+            <div class="tarjeta-imagen">
+                <img src="img/batalla-trafalgar.png" alt="Batalla de Trafalgar">
+                <span class="caption">Imagen 5: Ilustración didáctica de la Batalla de Trafalgar (1805), donde la escuadra británica impuso su superioridad naval.</span>
+            </div>
 
             <ul>
                 <li><strong>Tratados de San Ildefonso (1796-1800):</strong> En el *Segundo Tratado de San Ildefonso*, <strong>España cedió a Francia la Luisiana</strong> a cambio de salvaguardar territorios de sus familiares en Italia.</li>
@@ -442,18 +540,17 @@
             <div class="caja-colores critica">
                 <h4>⚠️ Crisis de la Hacienda y Desamortización de 1798</h4>
                 <p>La interrupción del comercio americano por el bloqueo británico disparó el déficit del Estado. Para conseguir recursos urgentes para la Hacienda Real, <em>Godoy</em> puso en marcha la <strong>desamortización de 1798</strong>, expropiando y vendiendo en pública subasta las propiedades agrícolas vinculadas al clero (bienes de <strong>manos muertas</strong>). Esta medida no logró salvar las cuentas del Estado pero sí granjeó a <em>Godoy</em> la oposición de la nobleza, de la Iglesia y del propio príncipe heredero <em>Fernando</em>.</p>
-            <!-- BOTÓN INTERACTIVO: JUNTA SUPREMA CANARIAS -->
-            <div style="margin: 15px 0; text-align: center;">
-                <button class="btn-interactivo btn-texto" onclick="openPopup('pop-junta-canarias')">📜 Documento: El Manifiesto de la Junta Suprema de Canarias (1808)</button>
             </div>
 
             <h3>Fontainebleau y el Motín de Aranjuez (1808)</h3>
             <p>En 1807, <em>Godoy</em> firmó con <em>Napoleón</em> el <em>Tratado de Fontainebleau</em>, que autorizaba a los ejércitos napoleónicos a atravesar España para invadir conjuntamente Portugal. Con esta excusa, las tropas francesas penetraron en la Península y ocuparon ciudades clave (Barcelona, Pamplona, San Sebastián). El tratado contemplaba una cláusula de reparto por la que <strong>Portugal se dividiría en tres partes, una de ellas para Manuel Godoy como principado personal</strong>. Alarmado ante lo que parecía una invasión real, <em>Godoy</em> decidió trasladar a la familia real hacia el sur, con la intención de viajar a Andalucía y embarcar hacia América.</p>
 
-            <p>Al difundirse el rumor del viaje, el 18 de marzo de 1808 estalló el <em>Motín de Aranjuez</em>. Se trató de una revuelta aparentemente popular pero dirigida y financiada en la sombra por la alta nobilidad del <strong>Partido Fernandino</strong>. La multitud asaltó el palacio de <em>Godoy</em> y obligó a <em>Carlos IV</em> a destituir a su valido y a <strong>abdicar en su primogénito, Fernando VII</strong>.</p>
+            <p>Al de el rumor del viaje, el 18 de marzo de 1808 estalló el <em>Motín de Aranjuez</em>. Se trató de una revuelta aparentemente popular pero dirigida y financiada en la sombra por la alta nobilidad del <strong>Partido Fernandino</strong>. La multitud asaltó el palacio de <em>Godoy</em> y obligó a <em>Carlos IV</em> a destituir a su valido y a <strong>abdicar en su primogénito, Fernando VII</strong>.</p>
 
-            <img src="img/motin-aranjuez.png" alt="Asalto popular del Motín de Aranjuez" class="imagen-educativa">
-            <p class="caption"><em>Imagen 6: Pintura histórica del estallido del Motín de Aranjuez frente al palacio de Manuel Godoy en marzo de 1808.</em></p>
+            <div class="tarjeta-imagen">
+                <img src="img/motin-aranjuez.png" alt="Asalto popular del Motín de Aranjuez">
+                <span class="caption">Imagen 6: Pintura histórica del estallido del Motín de Aranjuez frente al palacio de Manuel Godoy en marzo de 1808.</span>
+            </div>
         </section>
 
         <!-- SECCIÓN 3 -->
@@ -465,46 +562,43 @@
             <p>En las <em>Abdicaciones de Bayona</em>, <em>Napoleón</em> obligó a <em>Fernando VII</em> a renunciar al trono a favor de <em>Carlos IV</em>, y a este a ceder todos sus derechos a la corona de España directamente al emperador francés a cambio de dinero y tierras. <em>Napoleón</em> nombró a su hermano mayor, <em>José I Bonaparte</em>, rey de España, y promulgó el <em>Estatuto de Bayona</em> (1808), una carta otorgada reformista que establecía una monarquía limitada y reconocía la igualdad jurídica de los españoles.</p>
 
             <!-- BOTÓN INTERACTIVO: ABDICACIONES DE BAYONA -->
-            <div style="margin: 15px 0;">
+            <div style="margin: 15px 0; text-align: center;">
                 <button class="btn-interactivo btn-texto" onclick="openPopup('pop-bayona')">📜 Documento: Las renuncias feudales de Bayona (1808)</button>
             </div>
 
-            <img src="img/boney-at-bayonne.png" alt="Boney at Bayonne blowing a Spanish Bubble" class="imagen-educativa">
-            <p class="caption"><em>Imagen 7: Caricatura satírica británica de Isaac Cruikshank sobre las abdicaciones de Bayona, donde Napoleón sopla una burbuja con la corona española.</em></p>
+            <div class="tarjeta-imagen">
+                <img src="img/boney-at-bayonne.png" alt="Boney at Bayonne blowing a Spanish Bubble">
+                <span class="caption">Imagen 7: Caricatura satírica británica de Isaac Cruikshank sobre las abdicaciones de Bayona, donde Napoleón sopla una burbuja con la corona española.</span>
+            </div>
 
             <p>Para la mayoría de los españoles, la nueva monarquía era ilegítima y extranjera. El país se dividió socialmente:</p>
-        <!-- SECCIÓN 2 -->
-        <section id="cortescadiz">
-            <h2>2. Las Cortes de Cádiz y la Constitución de 1812</h2>
-            <p>La asunción de la soberanía por parte de las Juntas Provinciales culminó en la formación de la <em>Junta Suprema Central</em>, que asumió el gobierno provisional del país. Ante el empuje militar francés, la Junta Suprema Central se refugió en la sitiada ciudad de Cádiz y traspasó el poder a un <em>Consejo de Regencia</em>, el cual convocó la reunión de unas <strong>Cortes Generales y Extraordinarias</strong> en 1810.</p>
-            
-            <p>A diferencia de las tradicionales Cortes estamentales del Antiguo Régimen, la asamblea reunida en Cádiz se constituyó de forma unicameral como un órgano representativo de la nación española, asumiendo la <strong>soberanía nacional</strong> y declarando la igualdad de derechos de todos los ciudadanos de ambos hemisferios. En las Cortes de Cádiz convivieron tres grandes tendencias ideológicas:</p>
             <ul>
-                <li><strong>Los Afrancesados:</strong> Intelectuales, altos funcionarios y parte de la nobilidad que apoyaron a <em>José I</em>, convencidos de que las reformas ilustradas de los franceses eran la única vía pacífica para modernizar España.</li>
+                <li><strong>Los Afrancesados:</strong> Intelectuales, altos funcionarios y parte de la nobleza que apoyaron a <em>José I</em>, convencidos de que las reformas ilustradas de los franceses eran la única vía pacífica para modernizar España.</li>
                 <li><strong>El Frente Patriótico:</strong> La inmensa mayoría de la población (clero, nobleza, ilustrados y liberales) que se opuso a la ocupación y defendió la soberanía y la vuelta de <em>Fernando VII</em>.</li>
-                <li><strong>Los absolutistas o "serviles":</strong> Partidarios de mantener intacto el poder absoluto del rey y la estructura estamental tradicional.</li>
-                <li><strong>Los jovellanistas:</strong> Defensores de un reformismo moderado basado en la tradición histórica y las antiguas leyes medievales españolas.</li>
-                <li><strong>Los liberales:</strong> Partidarios de una ruptura revolucionaria con el Antiguo Régimen, promoviendo libertades individuales, la limitación constitucional de la Corona y la creación de un nuevo marco democrático representativo.</li>
             </ul>
 
-                      <h3>El Levantamiento del 2 de Mayo de 1808</h3>
+            <h3>El Levantamiento del 2 de Mayo de 1808</h3>
             <p>Ante la inminente salida del palacio de los últimos miembros de la familia real hacia Francia, el 2 de mayo de 1808 estalló una rebelión popular espontánea en Madrid. Los madrileños se enfrentaron a las patrullas francesas. A la resistencia popular se sumaron militares españoles del cuartel de Moncloa dirigidos por <em>Daoíz</em> y <em>Velarde</em>.</p>
 
             <p>La sublevación fue duramente reprimida por el general francés <em>Murat</em>, quien ordenó el fusilamiento sistemático de cientos de rebeldes en la colina de la Moncloa y el Paseo del Prado durante la noche del 2 y la madrugada del 3 de mayo, inmortalizado por <em>Francisco de Goya</em>. La noticia de la masacre extendió la rebelión armada por toda España.</p>
 
             <!-- BOTÓN INTERACTIVO: TESTIMONIO 2 DE MAYO -->
-            <div style="margin: 15px 0;">
+            <div style="margin: 15px 0; text-align: center;">
                 <button class="btn-interactivo btn-anecdota" onclick="openPopup('pop-oficial')">📜 Testimonio: Carta de un oficial francés sobre el 2 de mayo de 1808</button>
             </div>
 
             <h3>Las Fases de la Guerra de la Independencia</h3>
             <p>La <em>Guerra de la Independencia</em> se convirtió en un conflicto internacional (entre las fuerzas francesas y la alianza anglo-española del duque de <em>Wellington</em>), en una guerra civil (patriotas contra afrancesados) y en un proceso revolucionario político plasmado en las Cortes de Cádiz. Provocó una enorme catástrofe humana, con una cifra estimada de <strong>medio millón de muertos</strong> sobre una población peninsular de apenas 11 millones de habitantes.</p>
 
-            <img src="img/mapa-guerra-independencia.png" alt="Mapa general de la Guerra de la Independencia" class="imagen-educativa">
-            <p class="caption"><em>Imagen 8: Cartografía didáctica con los frentes, asedios, guerrillas y trayectos militares de la Guerra de la Independencia.</em></p>
+            <div class="tarjeta-imagen">
+                <img src="img/mapa-guerra-independencia.png" alt="Mapa general de la Guerra de la Independencia">
+                <span class="caption">Imagen 8: Cartografía didáctica con los frentes, asedios, guerrillas y trayectos militares de la Guerra de la Independencia.</span>
+            </div>
 
-            <img src="img/esquema-guerra.png" alt="Esquema General de la Guerra de la Independencia" class="imagen-educativa">
-            <p class="caption"><em>Imagen 9: Esquema conceptual de las tres grandes fases de la Guerra de la Independencia (Daniel Gómez Valle).</em></p>
+            <div class="tarjeta-imagen">
+                <img src="img/esquema-guerra.png" alt="Esquema General de la Guerra de la Independencia">
+                <span class="caption">Imagen 9: Esquema conceptual de las tres grandes frentes de la Guerra de la Independencia (Daniel Gómez Valle).</span>
+            </div>
 
             <details>
                 <summary>🛡️ Primera Fase (Mayo - Noviembre de 1808): Resistencia inicial</summary>
@@ -520,16 +614,16 @@
                     <p><em>Napoleón</em> intervino personalmente en España al frente de la Grande Armée, un colosal ejército de 250.000 de soldados veteranos profesionales. Tras derrotar a las fuerzas españolas, recuperó Madrid y reinstaló a su hermano en el trono. Las tropas francesas ocuparon casi toda la Península, exceptuando la cercada ciudad de <strong>Cádiz</strong>, libre gracias a su posición y al apoyo de la flota británica.</p>
                     <p><strong>La Guerra de Guerrillas:</strong> Ante la imposibilidad de derrotar a los franceses en campo abierto, el pueblo se organizó en pequeñas partidas locales de civiles armados dirigidas por líderes como <em>Espoz y Mina</em>, <em>Juan Martín El Empecinado</em> o el <em>Cura Merino</em>. Las guerrillas asaltaban convoyes, destruían las líneas de suministro y hostigaban por sorpresa, obligando al ejército invasor a dispersarse e impidiéndole un control efectivo del territorio.</p>
                 </div>
-                  <div style="margin: 15px 0; text-align: center;">
-                <a href="https://www.youtube.com/watch?v=gH73_Q3yUoY" target="_blank" class="btn-interactivo btn-video">🎬 Ver vídeo de humor sobre la Guerra de Guerrillas (RTVE) ➡️</a>
-            </div>
+                <div style="margin: 15px 0; text-align: center;">
+                    <a href="https://www.youtube.com/watch?v=gH73_Q3yUoY" target="_blank" class="btn-interactivo btn-video">🎬 Ver vídeo de humor sobre la Guerra de Guerrillas (RTVE) ➡️</a>
+                </div>
             </details>
 
             <details>
                 <summary>🇬🇧 Tercera Fase (Julio de 1812 - 1814): La ofensiva anglo-española</summary>
                 <div class="contenido-desplegado">
                     <p>En 1812, <em>Napoleón</em> se vio obligado a retirar a miles de soldados veteranos de la Península para su catastrófica campaña militar en Rusia. Los ejércitos españoles, estrechamente apoyados por las tropas inglesas del general <em>Wellington</em> (enviado para proteger Portugal), lanzaron una gran contraofensiva.</p>
-                    <p>Tras la decisiva victoria en la <em>Batalla de Arapiles</em> (Salamanca) en 1812, <em>José I</em> huyó de Madrid. El repliegue de los franceses se consumó tras las derrotas en las batallas de <em>Vitoria</em> y <em>San Marcial</em> (1813). <em>Napoleón</em>, acorralado en múltiples frentes en Europa, firmó con <em>Fernando VII</em> el <em>Tratado de Valençay</em> (diciembre de 1813), restituyéndole la Corona española de forma incondicional.</p>
+                    <p>Tras la decisiva victoria en la <em>Batalla de Arapiles</em> (Salamanca) en 1812, <em>José I</em> huyó de Madrid. El de los franceses se consumó tras las derrotas en las batallas de <em>Vitoria</em> y <em>San Marcial</em> (1813). <em>Napoleón</em>, acorralado en múltiples frentes en Europa, firmó con <em>Fernando VII</em> el <em>Tratado de Valençay</em> (diciembre de 1813), restituyéndole la Corona española de forma incondicional.</p>
                 </div>
             </details>
         </section>
@@ -537,19 +631,21 @@
         <!-- SECCIÓN 4 -->
         <section id="tema4">
             <h2>4. Las Cortes de Cádiz y la Constitución de 1812</h2>
-            <p>La de la familia real de España y la invasión napoleónica generaron un absoluto <strong>vacío de poder</strong> en las zonas sublevadas. Los ciudadanos patriotas se organizaron de forma espontánea y crearon <strong>Juntas locales e independientes</strong> asumidas por representantes influyentes del clero, la nobleza y las clases medias. Para unificar la resistencia, se creó la <strong>Junta Central Suprema</strong>.</p>
+            <p>La de la familia real de España y la invasión napoleónica generaron un absoluto <strong>vacío de poder</strong> en las Jelas sublevadas. Los ciudadanos patriotas se organizaron de forma espontánea y crearon <strong>Juntas locales e independientes</strong> asumidas por representantes influyentes del clero, la nobleza y las clases medias. Para unificar la resistencia, se creó la <strong>Junta Central Suprema</strong>.</p>
 
-            <p>Ante el avance imparable de las tropas francesas en 1810, los miembros de la Junta Suprema Central tuvieron que refugiarse en Cádiz, la única ciudad que se mantenía independiente del control invasor gracias al apoyo de la marina inglesa. La Junta decidió disolverse en enero de 1810, traspasando el poder de forma temporal a un <strong>Consejo de Regencia</strong> de cinco miembros, el cual convocó la reunión de las <strong>Cortes Generales y Extraordinarias</strong>.</p>
+            <p>Ante el avance imparable de las tropas francesas en 1810, los miembros de la Junta Suprema Central tuvieron que refugiarse en Cádiz, la única ciudad que se mantenía independiente del control invasor gracias al apoyo de la marina inglesa. La Junta decidió disolverse en enero de 1810, traspasando el de forma temporal a un <strong>Consejo de Regencia</strong> de cinco miembros, el cual convocó la reunión de las <strong>Cortes Generales y Extraordinarias</strong>.</p>
 
-            <img src="img/procedencia-diputados.png" alt="Procedencia de los diputados de las Cortes" class="imagen-educativa">
-            <p class="caption"><em>Imagen 10: Mapa con el origen territorial de los diputados que formaron las Cortes gaditanas.</em></p>
+            <div class="tarjeta-imagen">
+                <img src="img/procedencia-diputados.png" alt="Procedencia de los diputados de las Cortes">
+                <span class="caption">Imagen 10: Mapa con el origen territorial de los diputados que formaron las Cortes gaditanas.</span>
+            </div>
 
             <p>A diferencia de las Cortes históricas tradicionales, divididas en estamentos feudales, los diputados liberales consiguieron un éxito revolucionario: las Cortes de Cádiz se abrieron en septiembre de 1810 en la Isla de León (San Fernando) como una <strong>asamblea única unicameral</strong>, donde cada diputado ostentaba la representación de toda la nación y su voto valía por igual. En la sesión inaugural del 24 de septiembre de 1810, firmaron su primer decreto proclamando que la soberanía residía en la Nación de forma natural e irrenunciable.</p>
 
             <h3>Composición de las Cortes y Corrientes de Opinión</h3>
             <p>La dificultad para viajar en tiempos de guerra hizo que muchos diputados de las provincias ocupadas no pudieran llegar a Cádiz, siendo sustituidos por suplentes que residían en la ciudad gaditana. Esto deparó una <strong>composición de mayoría liberal y burguesa</strong>. De los más de 270 diputados, el grupo profesional más numeroso estaba integrado por <strong>eclesiásticos (90 diputados)</strong>, seguidos de abogados (56) y funcionarios (49). La presencia de la alta nobleza (14) y de las clases populares agrarias era irrelevante o nula.</p>
 
-            <p>Entre los diputados se perfilaron tres corrientes ideológicas de opinión:</p>
+            <p>Entre los diputados se perfilaron tres corrientes de opinión:</p>
             <ol>
                 <li><strong>Los Liberales:</strong> Defensores de reformas revolucionarias de inspiración francesa y partidarios de otorgar la soberanía exclusiva a las Cortes nacionales. Estuvieron representados por grandes oradores civiles y clérigos como <em>Agustín de Argüelles</em> (padre de la constitución), el <em>conde de Toreno</em>, y el extremeño <em>Diego Muñoz Torrero</em>.</li>
                 <li><strong>Los Jovellanistas o Renovadores:</strong> Liderados de forma intelectual por <em>Gaspar Melchor de Jovellanos</em>, abogaban por un régimen intermedio y una soberanía compartida entre el rey y unas Cortes estamentales históricas.</li>
@@ -557,10 +653,12 @@
             </ol>
 
             <h3>La Constitución de 1812 (La Pepa)</h3>
-            <p>El 19 de marzo de 1812, las Cortes extraordinarias promulgaron la primera constitución liberal de la historia de España, conocida popularmente como <em>La Pepa</em>. Sus <strong>384 minuciosos artículos</strong> estructuraron un nuevo marco político y social. Para presentarse como candidato a diputado era requisito constitucional <strong>poseer una renta anual procedente de bienes propios</strong>.</p>
+            <p>El 19 de marzo de 1812, las Cortes extraordinarias promulgaron la primera constitución liberal de la historia de España, conocida popularmente como <em>La Pepa</em>. Sus <strong>384 de artículos</strong> estructuraron un nuevo marco político y social. Para presentarse como candidato a diputado era requisito constitucional <strong>poseer una renta anual procedente de bienes propios</strong>.</p>
 
-            <img src="img/esquema-constitucion-1812.png" alt="Distribución de Poderes de la Constitución de 1812" class="imagen-educativa">
-            <p class="caption"><em>Imagen 11: Esquema organizativo de la distribución de poderes legislativo, ejecutivo y judicial según la Constitución de 1812.</em></p>
+            <div class="tarjeta-imagen">
+                <img src="img/esquema-constitucion-1812.png" alt="Distribución de Poderes de la Constitución de 1812">
+                <span class="caption">Imagen 11: Esquema organizativo de la distribución de poderes legislativo, ejecutivo y judicial según la Constitución de 1812.</span>
+            </div>
 
             <!-- BOTÓN INTERACTIVO: EXTRACTO CONSTITUCIÓN 1812 -->
             <div style="margin: 15px 0; text-align: center;">
@@ -580,17 +678,11 @@
 
             <h3>La Acción Legislativa de Cádiz: El Fin del Antiguo Régimen</h3>
             <p>Además de redactar la Constitución de 1812, los diputados gaditanos aprobaron leyes de calado socioeconómico destinadas a demoler el feudalismo tradicional de raíz:</p>
-            <p>El mayor logro legislativo de esta asamblea revolucionaria fue la redacción y aprobación de la primera carta magna de nuestra historia contemporánea: la <strong>Constitución de 1812</strong>, solemnemente proclamada el 19 de marzo de 1812 y popularmente bautizada como "La Pepa". Sus principios fundamentales fueron:</p>
             <ul>
-                <li><strong>Supresión del Régimen Señorial:</strong> Se abolieron en 1811 los derechos feudales de vasallaje y los señoríos jurisdiccionales. No obstante, la nobleza conservó casi todos sus bienes raíces porque sus viejas posesiones señoriales territoriales fueron convertidas legalmente en títulos de propiedad privada.</li>
+                <li><strong>Supresión del Régimen Señorial:</strong> Se abolieron en 1811 los derechos de vasallaje y los señoríos jurisdiccionales. No obstante, la nobleza conservó casi todos sus bienes raíces porque sus viejas posesiones señoriales territoriales fueron convertidas legalmente en títulos de propiedad privada.</li>
                 <li><strong>Abolición de los Mayorazgos y Desamortización de 1812:</strong> Se decretó la libre venta de la propiedad y se expropiaron las tierras de los afrancesados considerados traidores, las de las órdenes militares disueltas y la mitad de los bienes municipales con el fin de hacer frente a la deuda del Estado.</li>
                 <li><strong>Abolición definitiva del tribunal de la Inquisición:</strong> Las Cortes decretaron el fin de la Inquisición por considerarla incompatible con los derechos y libertades recogidos en la Constitución.</li>
-                <li><strong>Impulso del Mercado Libre:</strong> Se decretó la abolición absoluta de los restrictivos gremios artesanales para dar paso a la libertad económica, de industria y contratos, y se suprimieron los privilegios medievales de la ganadería trashumante de la Mesta sobre la agricultura.</li>
-                <li><strong>Soberanía nacional y monarquía parlamentaria:</strong> El poder supremo residía en la nación de ciudadanos libres, reduciendo de forma irreversible las prerrogativas legislativas y ejecutivas de la Corona.</li>
-                <li><strong>División de poderes estricta:</strong> El poder legislativo correspondía de forma exclusiva a las Cortes Unicamerales; el ejecutivo recaía en el rey y sus ministros; y el judicial se confiaba a tribunales independientes.</li>
-                <li><strong>Confesionalidad católica del Estado:</strong> Como concesión a los sectores eclesiásticos conservadores, la Constitución declaró a la religión católica como la única oficial y verdadera de la nación española.</li>
-                <li><strong>Declaración amplia de derechos:</strong> Reconocimiento de la igualdad ante la ley, abolición de los señoríos feudales, inviolabilidad del domicilio, derecho de propiedad, supresión de la tortura y libertad de prensa.</li>
-                <li><strong>Sufragio universal masculino indirecto:</strong> Todos los varones mayores de edad disponían del derecho al voto a través de juntas de parroquia, de partido y de provincia.</li>
+                <li><strong>Impulso del Mercado Libre:</strong> Se decretó la abolición absoluta de los restrictivos gremios artesanales para dar paso a la libertad de industria y contratos, y se suprimieron los privilegios medievales de la ganadería trashumante de la Mesta sobre la agricultura.</li>
             </ul>
         </section>
 
@@ -599,12 +691,14 @@
             <h2>5. El Reinado de Fernando VII (1814-1833)</h2>
             <p>Mitificado por el pueblo llano durante el exilio como <strong>el Deseado</strong>, el regreso de <em>Fernando VII</em> reabrió de forma violenta el choque político e institucional entre las viejas estructuras absolutistas del Antiguo Régimen y las nuevas aspiraciones del Liberalismo contemporáneo.</p>
 
-            <img src="img/esquema-reinado-fernando.png" alt="Esquema General del Reinado de Fernando VII" class="imagen-educativa">
-            <p class="caption"><em>Imagen 12: Las tres grandes etapas políticas que vertebran el reinado de Fernando VII (Daniel Gómez Valle).</em></p>
+            <div class="tarjeta-imagen">
+                <img src="img/esquema-reinado-fernando.png" alt="Esquema General del Reinado de Fernando VII">
+                <span class="caption">Imagen 12: Las tres grandes etapas que vertebran el reinado de Fernando VII (Daniel Gómez Valle).</span>
+            </div>
 
             <!-- BOTÓN INTERACTIVO: CURIOSIDAD FERNANDO VII -->
             <div style="margin: 15px 0; text-align: center;">
-                <a href="https://www.abc.es/espana/20150326/abci-problema-genital-fernando-201503251934.html" target="_blank" class="btn-interactivo btn-video">🕵️‍♂️ Curiosidad: La malformación íntima de Fernando VII (ABC) ➡️</a>
+                <a href="https://www.abc.es/espana/20150326/abci-problema-genital-fernando-201503251934.html" target="_blank" class="btn-interactivo btn-video">🕵️♂️ Curiosidad: La malformación íntima de Fernando VII (ABC) ➡️</a>
             </div>
 
             <details>
@@ -624,11 +718,11 @@
                         <button class="btn-interactivo btn-texto" onclick="openPopup('pop-decreto')">📜 Documento: Real Decreto del 4 de mayo de 1814 (Decreto de Valencia)</button>
                     </div>
 
-                    <p>Restableció de inmediato las instituciones tradicionales del Antiguo Régimen (Inquisición, Consejos señoriales, gremios, Mesta, privilegios fiscales nobiliarios y devolución de tierras expropiadas a la Iglesia). Asimismo, abolió la libertad de imprenta decretando el cierre total de las publicaciones de corte independiente.</p>
+                    <p>Restableció de inmediato las instituciones tradicionales del Antiguo Régimen (Inquisición, Consejos señoriales, gremios, Mesta, privilegios fiscales nobiliarios y devolución de tierras expropiadas a la Iglesia). Asimismo, abolió la libertad de imprenta decretando el cierre total de las publicaciones.</p>
                     
                     <p><strong>La crisis fiscal de la Corona y los Pronunciamientos:</strong></p>
-                    <p>La represión estatal fue implacable contra los liberales y afrancesados, obligando al exilio de más de <strong>12.000 familias</strong> de liberales y afrancesados hacia Londres o París. Paralelamente, el país pasaba por extremas dificultades financieras: la guerra había destruido las cosechas y la industria, mientras que el inicio de la emancipación en América mermó los ingresos de la Corona. Los sucesivos de Hacienda intentaron realizar reformas moderadas imponiendo tributos sobre la nobleza y el clero, pero estas propuestas fueron rechazadas por las presiones de la camarilla cortesana que rodeaba al monarca.</p>
-                    <p>El malestar fue capitalizado por oficiales liberales descontentos que, apoyados por sociedades masónicas secretas, recurrieron a la forma clásica de protesta del siglo XIX en España: el <strong>pronunciamiento militar</strong>:</p>
+                    <p>La represión estatal fue implacable contra los liberales y afrancesados, obligando al exilio de más de <strong>12.000 familias</strong> hacia Londres o París. Paralelamente, el país pasaba por extremas dificultades financieras: la guerra había destruido las cosechas y la industria, mientras que el inicio de la emancipación en América mermó los ingresos de la Corona. Los sucesivos ministros de Hacienda intentaron realizar reformas moderadas imponiendo tributos sobre la nobleza y el clero, pero estas propuestas fueron rechazadas por las presiones de la camarilla cortesana que rodeaba al monarca.</p>
+                    <p>El malestar fue capitalizado por oficiales liberales descontentos que, apoyados por sociedades masónicas secretas, recurrieron a la forma clásica de pronunciamiento militar:</p>
                     <ul>
                         <li>El pronunciamiento de <em>Xavier Mina</em> y <em>Espoz y Mina</em> en Pamplona (1814), que fracasó obligándoles a huir.</li>
                         <li>El levantamiento de <em>Juan Díaz Porlier</em> en La Coruña (1815), héroe de guerra ejecutado en la horca tras fracasar.</li>
@@ -644,9 +738,9 @@
                     <p>El 1 de enero de 1820 triunfó la sublevación del teniente coronel <em>Rafael del Riego</em> al frente de las tropas acantonadas en Las Cabezas de San Juan (Sevilla), que esperaban con temor ser embarcadas rumbo a América. Riego proclamó la Constitución de 1812. Ante la pasividad militar del resto de guarniciones, <em>Fernando VII</em> capituló y juró de forma obligada la Constitución de Cádiz: "Marchemos francamente, y yo el primero, por la senda constitucional".</p>
                     
                     <p><strong>Reforma e inestabilidad del Trienio:</strong></p>
-                    <p>Durante el Trienio se recuperó la obra legislativa de Cádiz: amnistía para presos políticos, disolución definitiva de la Inquisición, eliminación de aduanas interiores, abolición gremial y desamortización de monasterios eclesiásticos. Sin embargo, los liberales se dividieron internamente en dos facciones doctrinarias:</p>
+                    <p>Durante el Trienio se recuperó la obra legislativa de Cádiz: amnistía para presos políticos, disolución de la Inquisición, eliminación de aduanas interiores, abolición gremial y desamortización de monasterios eclesiásticos. Sin embargo, los liberales se dividieron internamente en dos facciones doctrinarias:</p>
                     <ul>
-                        <li><strong>Moderados o Doceañistas:</strong> Partidarios de reformas suaves respetuosas con la tradición, querían de conceder más poder al monarca y crear una cámara parlamentaria aristocrática de próceres (soberanía compartida). <em>Martínez de la Rosa</em> fue su personalidad más notable.</li>
+                        <li><strong>Moderados o Doceañistas:</strong> Partidarios de reformas suaves respetuosas con la tradición, querían de conceder más poder al monarca y crear una cámara parlamentaria de próceres (soberanía compartida). <em>Martínez de la Rosa</em> fue su personalidad más notable.</li>
                         <li><strong>Exaltados o Veinteañistas:</strong> Defendían reformas radicales basadas en la agitación popular en clubes políticos y la estricta aplicación de la Constitución de 1812. Su líder fue <em>Evaristo San Miguel</em> y ganaron las elecciones en 1822 con <em>Riego</em> al frente de las Cortes.</li>
                     </ul>
                     <p><strong>La invasión de los Cien Mil Hijos de San Luis:</strong></p>
@@ -658,12 +752,12 @@
             <details>
                 <summary>⛓️ La Década Ominosa (1823-1833)</summary>
                 <div class="contenido-desplegado">
-                    <p>La vuelta al absolutismo reabrió una feroz represión contra los partidarios de las ideas liberales. Se disolvió formalmente el Ejército español y unos 22.000 de soldados franceses permanecieron en el país hasta 1828 para garantizar la estabilidad del trono. Asimismo, se acometió una depuración de funcionarios públicos y docentes.</p>
+                    <p>La vuelta al absolutismo reabrió una feroz represión contra los partidarios de las ideas liberales. Se disolvió formalmente el Ejército y unos 22.000 de soldados franceses permanecieron en el país hasta 1828 para garantizar la estabilidad del trono. Asimismo, se acometió una depuración de funcionarios públicos y docentes.</p>
                     <p>Muchos de ellos como los generales <em>Riego</em> o <em>Torrijos</em> fueron ejecutados. En 1831, el general <em>José María de Torrijos</em> desembarcó en Málaga con la intención de realizar un pronunciamiento clandestino, siendo capturado y ejecutado de inmediato junto a sus 48 compañeros, entre los que figuraba el extremeño <em>Francisco Fernández Golfín</em>. Ese mismo año, la granadina <em>Mariana Pineda</em> fue ejecutada públicamente a garrote vil por el delito de bordar una bandera liberal. Hubo un censo de 286 mujeres liberales exiliadas por la represión. <em>Cayetano Ripoll</em>, maestro valenciano, fue la última víctima legal de las Juntas de Fe en 1826.</p>
                     
                     <p><strong>El Reformismo Moderado Económico:</strong></p>
-                    <p>La pérdida definitiva de las ricas colonias de América obligó a <em>Fernando VII</em> a abordar reformas materiales moderadas para paliar la bancarrota económica. El ministro de Hacienda, <em>Luis López Ballesteros</em>, implementó medidas de calado administrativo: reorganizó las cuentas del Estado fijando un estricto presupuesto anual público, promulgó un código de comercio y creó la Bolsa de Madrid (1831) y el Banco de San Fernando.</p>
-                    <p>Este tímido reformismo y la de <em>Fernando VII</em> a reestablecer formalmente la Inquisición desataron el descontento y hostilidad del sector más intransigente y ultraabsolutista de la corte, que se levantó militarmente en Cataluña en 1827 en la revuelta de los <em>Malcontents</em> (Agraviados) exigiendo un absolutismo puro. Estos ultraconservadores se agruparon ideológicamente en torno al hermano del monarca, el infante <em>Carlos María de Borbón</em>, candidato natural ante la falta inicial de herederos de <em>Fernando VII</em>.</p>
+                    <p>La pérdida definitiva de las ricas colonias de América obligó a <em>Fernando VII</em> a abordar reformas materiales moderadas para paliar la bancarrota económica. El ministro de Hacienda, <em>Luis López Ballesteros</em>, implementó medidas de calado administrativo: reorganizó las cuentas del Estado fijando un estricto presupuesto anual, promulgó un código de comercio y creó la Bolsa de Madrid (1831) y el Banco de San Fernando.</p>
+                    <p>Este tímido reformismo y la negativa de <em>Fernando VII</em> a reestablecer formalmente la Inquisición desataron el descontento y hostilidad del sector más intransigente y ultraabsolutista de la corte, que se levantó militarmente en Cataluña en 1827 en la revuelta de los <em>Malcontents</em> (Agraviados) exigiendo un absolutismo puro. Estos ultraconservadores se agruparon ideológicamente en torno al hermano del monarca, el infante <em>Carlos María de Borbón</em>, candidato natural ante la falta de herederos de <em>Fernando VII</em>.</p>
                     
                     <p><strong>El Conflicto Sucesorio y Dinástico (1830-1833):</strong></p>
                     <p>En 1830, el nacimiento de la princesa <em>Isabel</em> (hija del monarca y su cuarta esposa, <em>María Cristina de Borbón</em>) deparó un vuelco en la sucesión. Hasta ese momento imperaba la Ley Sálica que impedía reinar a las mujeres, pero <em>Fernando VII</em> derogó esta limitación dinástica mediante la publicación de la <em>Pragmática Sanción</em>, abriendo el camino al trono a su hija.</p>
@@ -677,13 +771,15 @@
             <h2>6. La Emancipación de las Colonias Americanas</h2>
             <p>Aprovechando el vacío de poder en España provocado por la invasión de <em>Napoleón</em> y la crisis de la Corona, los criollos americanos iniciaron de forma paralela un gran proceso independentista que culminó en la década de 1820 con la total independencia de la América hispana, exceptuando las Antillas (Cuba y Puerto Rico) y las Filipinas en Asia.</p>
 
-            <img src="img/causas-independencia.png" alt="Causas de la Independencia de América" class="imagen-educativa">
-            <p class="caption"><em>Imagen 13: Cuadro didáctico con el análisis de las causas internas y externas del proceso emancipador.</em></p>
+            <div class="tarjeta-imagen">
+                <img src="img/causas-independencia.png" alt="Causas de la Independencia de América">
+                <span class="caption">Imagen 13: Cuadro didáctico con el análisis de las causas internas y externas del proceso emancipador.</span>
+            </div>
 
             <h3>Causas del movimiento independentista</h3>
             <ul>
                 <li><strong>El descontento de las élites criollas:</strong> Los criollos representaban el grupo social más próspero económicamente. Sin embargo, tenían prohibido por ley el acceso a los principales cargos políticos y administrativos coloniales, reservados exclusivamente a peninsulares elegidos por Madrid.</li>
-                <li><strong>Monopolio y restricciones comerciales:</strong> La rígida política de comercio de España obligaba a las colonias a comercializar únicamente con la metrópoli, perjudicando los intereses de la burguesía criolla que buscaba comerciar libremente con potencias de mayor dinamismo industrial como Gran Bretaña.</li>
+                <li><strong>Monopolio y restricciones comerciales:</strong> La rígida política de comercio de España obligaba a las colonias a comercializar únicamente con la metrópoli, perjudicando los intereses de la burguesía criolla que buscaba comercializar libremente con potencias de mayor dinamismo industrial como Gran Bretaña.</li>
                 <li><strong>La influencia ideológica y ejemplos de libertad:</strong> La difusión de las ideas de libertad e igualdad del Liberalismo y la Ilustración, el ejemplo de la Independencia de los Estados Unidos (1776) y la Revolución Francesa sirvieron como ejemplo e impulso moral.</li>
                 <li><strong>La debilidad militar hispana:</strong> Las derrotas navales del cabo de San Vicente y de Trafalgar destruyeron la armada de la Corona española, imposibilitando la defensa y la comunicación efectiva de las colonias.</li>
             </ul>
@@ -693,34 +789,27 @@
             <h3>Fases de las Guerras de Independencia</h3>
             <p>La emancipación se extendió por todo el continente, impulsada por campañas militares y dividida en tres grandes fases históricas:</p>
 
-            <img src="img/fases-independencia.png" alt="Fases del Proceso de Independencia" class="imagen-educativa">
-            <p class="caption"><em>Imagen 14: Mapa cronológico de las grandes campañas militares libertadoras por Sudamérica.</em></p>
+            <div class="tarjeta-imagen">
+                <img src="img/fases-independencia.png" alt="Fases del Proceso de Independencia">
+                <span class="caption">Imagen 14: Mapa cronológico de las grandes campañas militares libertadoras por Sudamérica.</span>
+            </div>
 
             <ol>
                 <li><strong>La Etapa de las Juntas (1808-1814):</strong> Ante el vacío de poder creado por la contienda peninsular contra <em>Napoleón</em>, se formaron de forma espontánea ricas Juntas de Gobierno leales a <em>Fernando VII</em> en Buenos Aires, Santiago de Chile, Bogotá y Caracas. Sin embargo, los criollos sustituyeron a los peninsulares y pronto aprovecharon para virar hacia declaraciones explícitas de independencia, proclamándose la de Paraguay y de las Provincias Unidas del Río de la Plata.</li>
                 <li><strong>La Reacción Absolutista (1814-1820):</strong> Tras regresar al poder absoluto, el gobierno de <em>Fernando VII</em>, en vez de proponer acuerdos autonómicos, respondió militarmente con la expedición militar de un ejército de 10.000 hombres, reconquistando temporalmente los focos de resistencia. No obstante, la intransigencia alimentó la causa independentista. El general <em>José de San Martín</em> atravesó los Andes, derrotó a los españoles en la batalla de <em>Chacabuco</em> (1817) y selló la independencia de Chile (1818).</li>
-                <li><strong>La Ofensiva Aliada Final (1820-1824):</strong> El triunfo del pronunciamiento liberal de <em>Rafael del Riego</em> en España en 1820 interrumpió el envío de refuerzos militares a América. Los criollos realistas de México se pasaron al bando independentista, logrando <em>Agustín de Iturbide</em> independizar México en 1821. En el norte de Sudamérica, <em>Simón Bolívar</em> derrotó de forma decisiva a los realistas en las batallas de <em>Boyacá</em> (1819) y <em>Carabobo</em> (1821), fundando la Gran Colombia.
+                <li><strong>La Ofensiva Aliada Final (1820-1824):</strong> El triunfo del pronunciamiento liberal de <em>Rafael del Riego</em> en España en 1820 interrumpió el envío de de refuerzos militares a América. Los criollos realistas de México se pasaron al bando independentista, logrando <em>Agustín de Iturbide</em> independizar México en 1821. En el norte de Sudamérica, <em>Simón Bolívar</em> derrotó de forma decisiva a los realistas en las batallas de <em>Boyacá</em> (1819) y <em>Carabobo</em> (1821), fundando la Gran Colombia.
                     <!-- BOTÓN INTERACTIVO: CARTA DE JAMAICA -->
                     <button class="btn-interactivo btn-texto" onclick="openPopup('pop-jamaica')">📜 Documento: La Carta de Jamaica de Simón Bolívar (1815)</button>
-                    Finalmente, la contienda concluyó en el sur tras la gran victoria de las tropas dirigidas por el general Sucre en la decisiva <em>Batalla de Ayacucho</em> (1824), desmoronando definitivamente el poder español en el continente.
+                    Finalmente, la contienda concluyó en el sur tras la gran victoria de las de dirigidas por el general Sucre en la decisiva <em>Batalla de Ayacucho</em> (1824), desmoronando definitivamente el poder español en el continente.
                 </li>
             </ol>
-        <!-- SECCIÓN 3 -->
-        <section id="fernandovii">
-            <h2>3. El Reinado de Fernando VII (1814 - 1833)</h2>
-            <p>Tras la firma del <em>Tratado de Valençay</em> en 1813, Napoleón devolvió el trono a <em>Fernando VII</em>. Su reinado supuso un constante conflicto entre las fuerzas absolutistas y las corrientes liberales que pugnaban por implantar el nuevo modelo constitucional, dividiéndose en tres etapas cronológicas:</p>
-            
-            <h3>A. El Sexenio Absolutista (1814-1820)</h3>
-            <p>Al regresar a España, Fernando VII recibió el apoyo del general Elío y de un centenar de diputados absolutistas plasmado en el <em>Manifiesto de los Persas</em>. El monarca promulgó el Real Decreto del 4 de mayo de 1814, por el cual abolió la Constitución de 1812 y toda la obra legislativa de Cádiz, restaurando de inmediato el <strong>absolutismo</strong>. Los liberales y reformistas fueron perseguidos, encarcelados o forzados al exilio. Ante la parálisis del Gobierno, los opositores recurrieron a la vía del <strong>pronunciamiento militar</strong>, una insurrección armada de mandos liberales apoyada por sociedades secretas.</p>
 
-            <img src="img/esquema-independencia.png" alt="Esquema Resumen Independencias" class="imagen-educativa">
-            <p class="caption"><em>Imagen 15: Esquema de síntesis histórica de las causas, procesos y consecuencias de las independencias (Daniel Gómez Valle).</em></p>
-            <h3>B. El Trienio Liberal (1820-1823)</h3>
-            <p>En enero de 1820, el pronunciamiento del teniente coronel <em>Rafael del Riego</em> en Cabezas de San Juan (Sevilla) triunfó gracias al apoyo de las juntas constituidas en las principales ciudades. Fernando VII se vio obligado a jurar de forma célebre la Constitución de 1812. Durante este periodo de libertades, el liberalismo se dividió entre los moderados o "doceañistas" (partidarios de reformas lentas con la Corona) y los exaltados o "veinteañistas" (partidarios de reformas radicales). Las potencias europeas unificadas en la <em>Santa Alianza</em> decidieron intervenir en España para restaurar el orden tradicional absoluto, encomendando la campaña al ejército francés de los <strong>Cien Mil Hijos de San Luis (1823)</strong>.</p>
+            <div class="tarjeta-imagen">
+                <img src="img/esquema-independencia.png" alt="Esquema Resumen Independencias">
+                <span class="caption">Imagen 15: Esquema de síntesis histórica de las causas, procesos y consecuencias de las independencias (Daniel Gómez Valle).</span>
+            </div>
 
-            <p>Para 1826, España había perdido la totalidad de sus colonias americanas, exceptuando Cuba, Puerto Rico y las Filipinas. En 1823, el presidente estadounidense James Monroe formuló la Doctrina Monroe (bajo el lema de "América para los americanos"), proclamando de forma implícita su intención geopolítica de sustituir el viejo dominio colonial español en beneficio de los intereses de los Estados Unidos.</p>
-            <h3>C. La Década Ominosa y la Crisis Sucesoria (1823-1833)</h3>
-            <p>La restauración del absolutismo militar abrió paso a una cruenta represión de los liberales y oficiales insurrectos (fusilamiento de Torrijos y ejecución de Riego). El final del periodo estuvo marcado por el drama sucesorio. El rey derogó la tradicional Ley Sálica francesa mediante la <strong>Pragmática Sanción de 1830</strong>, permitiendo que su hija <em>Isabel II</em> heredase el trono. Los sectores ultraabsolutistas rechazaron la Pragmática agrupándose en torno al infante <em>Carlos María Isidro</em>, hermano del rey, dando nacimiento al movimiento bélico del <strong>carlismo</strong> tras el fallecimiento de Fernando VII en septiembre de 1833.</p>
+            <p>Para 1826, España había perdido la totalidad de sus colonias americanas, exceptuando Cuba, Puerto Rico y las Filipinas. En 1823, el presidente estadounidense James Monroe formuló la Doctrina Monroe (bajo el lema de "América para los americanos"), proclamando de forma implícita su intención geopolítica de sustituir el viejo dominio colonial español en beneficio de los de los Estados Unidos.</p>
         </section>
     </main>
 
@@ -735,16 +824,14 @@
             <div class="texto-modal">"Prohíbo la introducción y curso en estos mis reinos y señoríos de cualesquiera papeles sediciosos y contrarios a la fidelidad y a la tranquilidad pública, y al bien y fidelidad de mis vasallos: y en su consecuencia mando, que cualquiera persona que tuviere, o a cuyas manos llegare carta o papel impreso o manuscrito de esta especie, los presente a la respectiva Justicia, diciendo y nombrando el sujeto que se le haya entregado o dirigido, si lo supiere o conociere; pena de que no haciéndolo así, y justificándose por tener, comunicar o extender tales cartas o papeles, será castigado y procesado por el crimen de infidencia; debiendo la Justicia remitir al mi Consejo los papeles que se les presentaren, denunciaren o aprehendieren (...)."</div>
         </div>
     </div>
-  <!-- POPUP TEMA 1.1: CURIOSIDAD DE LAS NARANJAS (1801) - CORREGIDO -->
+
+    <!-- POPUP TEMA 1.1: CURIOSIDAD DE LAS NARANJAS -->
     <div id="pop-naranjas" class="modal">
         <div class="modal-content" style="border-left-color: #f59e0b;">
             <span class="modal-close" onclick="closePopup('pop-naranjas')">&times;</span>
             <h3 style="color: #b45309; margin-top: 0;">🍊 El ramo de la discordia (1801)</h3>
-            
-            <!-- LLAMADA A LA IMAGEN LOCAL -->
             <img src="img/guerra-naranjas.png" alt="Ilustración de la Guerra de las Naranjas" style="width: 100%; max-width: 400px; height: auto; border-radius: 8px; display: block; margin: 15px auto; border: 1px solid #e2e8f0;">
             <p style="text-align: center; font-size: 0.9rem; margin-top: -10px; margin-bottom: 15px; color: var(--text-muted); font-style: italic;"><em>Imagen de la sátira popular sobre la entrega de naranjas a la reina María Luisa de Parma.</em></p>
-
             <p>Este breve conflicto militar, que enfrentó a España con Portugal por la presión francesa, duró apenas <strong>dieciocho días</strong>.</p>
             <p>Su peculiar nombre se originó por un hecho satírico: tras la conquista de la plaza portuguesa de Elvas, las tropas de <em>Manuel Godoy</em> recogieron unas ramas cargadas de naranjas. Éste se las hizo llegar de inmediato a su supuesta amante, la reina <em>María Luisa de Parma</em>, esposa de <em>Carlos IV</em>, desatando feroces burlas y coplas humorísticas populares por las calles de Madrid.</p>
         </div>
@@ -760,9 +847,7 @@
 "Mi venerado padre y señor: Para dar a Vuestra Majestad una prueba de mi amor, de mi obediencia y de mi sumisión, y para acceder a los deseos que me ha manifestado reiteradas veces, renuncio mi corona en favor de Vuestra Majestad, deseando que pueda gozarla por muchos años. Recomiendo a Vuestra Majestad las personas que me han servido desde el 19 de marzo."
 
 <strong>De Carlos IV en Napoleón Bonaparte:</strong>
-"Su Majestad el rey Carlos, que no ha tenido en toda su vida otra mira que la felicidad de sus vasallos... ha resuelto ceder todos sus derechos al trono de España y de las Indias a Su Majestad el emperador Napoleón, como el único que, en el estado a que han llegado las cosas, puede restablecer el orden; entendiéndose que dicha cesión sólo ha de tener efecto para hacer gozar a sus vasallos de las condiciones siguientes:
-1°. La integridad del reino será mantenida: el príncipe que el emperador Napoleón juzgue debe colocar en el trono de España será independiente...
-2°. La religión católica, apostólica y romana será la única en España."</div>
+"Su Majestad el rey Carlos, que no ha tenido en toda su vida otra mira que la felicidad de sus vasallos... ha resuelto ceder todos sus derechos al trono de España y de las Indias a Su Majestad el emperador Napoleón, como el único que, en el estado a que han llegado las cosas, puede restablecer el orden; entendiéndose que dicha cesión sólo ha de tener efecto para hacer gozar a sus vasallos de las condiciones siguientes: 1°. La integridad del reino será mantenida: el príncipe que el emperador Napoleón juzgue debe colocar en el trono de España será independiente... 2°. La religión católica, apostólica y romana será la única en España."</div>
         </div>
     </div>
 
@@ -784,29 +869,18 @@
             <p>Selección de los artículos principales para analizar en clase:</p>
             <div class="texto-modal">"Las Cortes Generales y extraordinarias de la Nación española, decretan la siguiente Constitución:
 
-- Art. 1. La nación española es la reunión de todos los españoles de ambos hemisferios.
-- Art. 2. La nación española es libre e independiente, no es ni puede ser patrimonio de ninguna familia ni persona.
-- Art. 3. La soberanía reside esencialmente en la nación, y por lo mismo pertenece a ésta exclusivamente el derecho de establecer sus leyes fundamentales.
-- Art. 4. La nación está obligada a conservar y proteger con leyes sabias y justas la libertad civil, la propiedad y los demás derechos legítimos de todos los individuos que la componen...
-- Art. 8. También está obligado todo español, sin distinción alguna, a contribuir en proporción de sus haberes para los gastos del Estado...
-- Art. 12. La religión de la Nación española es y será perpetuamente la católica, apostólica, romana, única verdadera. La Nación la protege por leyes sabias y justas, y prohíbe el ejercicio de cualquier otra...
-- Art. 14. El Gobierno de la Nación española es una monarquía moderada hereditaria.
-- Art. 15. La potestad de hacer las leyes reside en la Cortes con el rey.
-- Art. 16. La potestad de hacer ejecutar las leyes reside en el rey.
-- Art. 17. La potestad de aplicar las leyes en las causas civiles y criminales reside en los tribunales establecidos por la ley...
-- Art. 34. Para la elección de los diputados de Cortes se celebrarán juntas electorales de parroquia, de partido y de provincia...
-- Art. 366. En todos los pueblos de la Monarquía se establecerán escuelas de primeras letras, en las que se enseñará a los niños a leer, escribir y contar, y el catecismo de la religión católica..."</div>
-        </div>
-    </div>
-
-    <!-- POPUP TEMA 1.4: EL MANIFIESTO DE LOS PERSAS (1814) -->
-    <div id="pop-persas" class="modal">
-        <div class="modal-content">
-            <span class="modal-close" onclick="closePopup('pop-persas')">&times;</span>
-            <h3 style="color: #047857; margin-top: 0;">📜 El Manifiesto de los Persas (12 de abril de 1814)</h3>
-            <p>El escrito en el que los realistas incitaron a <em>Fernando VII</em> a suspender el orden constitucional:</p>
-            <div class="texto-modal">"La monarquía absoluta es una obra de la razón y de la inteligencia; está subordinada a la ley divina, a la justicia y a las reglas fundamentales del Estado; fue establecida por derechos de conquista o por la sumisión voluntaria de los primeros hombres que eligieron a sus Reyes (...). Ha sido necesario que el poder soberano fuera absoluto para prescribir a los súbditos todo lo que mira al interés común y obligar a la obediencia a los que se niegan a ella.
-El deseo que debemos pedir es que se proceda a celebrar Cortes con la solemnidad y en la forma en la que se celebraron las antiguas, que se suspendan los efectos de la Constitución y decretos dictados en Cádiz, y que las nuevas Cortes tomen en consideración su nulidad."</div>
+*  Art. 1. La nación española es la reunión de todos los españoles de ambos hemisferios.
+*  Art. 2. La nación española es libre e independiente, no es ni puede ser patrimonio de ninguna familia ni persona.
+*  Art. 3. La soberanía reside esencialmente en la nación, y por lo mismo pertenece a ésta exclusivamente el derecho de establecer sus leyes fundamentales.
+*  Art. 4. La nación está obligada a conservar y proteger con leyes sabias y justas la libertad civil, la propiedad y los demás derechos legítimos de todos los individuos que la componen...
+*  Art. 8. También está obligado todo español, sin distinción alguna, a contribuir en proporción de sus haberes para los gastos del Estado...
+*  Art. 12. La religión de la Nación española es y será perpetuamente la católica, apostólica, romana, única verdadera. La Nación la protege por leyes sabias y justas, y prohíbe el ejercicio de cualquier otra...
+*  Art. 14. El Gobierno de la Nación española es una monarquía moderada hereditaria.
+*  Art. 15. La potestad de hacer las leyes reside en la Cortes con el rey.
+*  Art. 16. La potestad de hacer ejecutar las leyes reside en el rey.
+*  Art. 17. La potestad de aplicar las leyes en las causas civiles y criminales reside en los tribunales establecidos por la ley...
+*  Art. 34. Para la elección de los diputados de Cortes se celebrarán juntas electorales de parroquia, de partido y de provincia...
+*  Art. 366. En todos los pueblos de la Monarquía se establecerán escuelas de primeras letras, en las que se enseñará a los niños a leer, escribir y contar, y el catecismo de la religión católica..."</div>
         </div>
     </div>
 
@@ -816,25 +890,29 @@ El deseo que debemos pedir es que se proceda a celebrar Cortes con la solemnidad
             <span class="modal-close" onclick="closePopup('pop-decreto')">&times;</span>
             <h3 style="color: #047857; margin-top: 0;">📜 Real Decreto del 4 de mayo de 1814</h3>
             <p>El decreto mediante el cual <em>Fernando VII</em> declaró nula la labor legislativa de Cádiz y restableció el absolutismo:</p>
-            <div class="texto-modal">"Declaro que mi Real ánimo es no solamente no jurar ni acceder a dicha Constitución ni a Decreto alguno de las Cortes (...) sino el de declarar aquella Constitución y tales decretos nulos y de ningún valor y efecto, ahora, ni en tiempo alguno, como si no hubiesen pasado jamás tales actos y se quitasen de en medio del tiempo.
+            <div class="texto-modal">"Declaro que mi Real ánimo es no solamente no jurar ni acceder a dicha Constitución ni a Decreto alguno de las Cortes (...) sino el de declarar aquella Constitución y tales decretos nulos y de ningún valor y efecto, ahora, ni en tiempo alguno, como si no hubiesen pasado jamás tales actos y se quitasen de en medio del tiempo. Y como el que quisiese sostenerlos atentaría contra las prerrogativas de mi soberanía (...) declaro reo de lesa majestad a quien osare o intentase, y que como a tal, se le imponga la pena de vida (...)."</div>
+        </div>
+    </div>
 
-Y como el que quisiese sostenerlos atentaría contra las prerrogativas de mi soberanía (...) declaro reo de lesa majestad a quien osare o intentase, y que como a tal, se le imponga la pena de vida (...)."</div>
+    <!-- POPUP TEMA 1.4: MANIFIESTO DE LOS PERSAS (1814) -->
+    <div id="pop-persas" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closePopup('pop-persas')">&times;</span>
+            <h3 style="color: #047857; margin-top: 0;">📜 El Manifiesto de los Persas (12 de abril de 1814)</h3>
+            <p>La exposición con la que diputados absolutistas animaron al rey a abolir la obra de Cádiz:</p>
+            <div class="texto-modal">"Era costumbre en los antiguos persas pasar cinco días en anarquía después del fallecimiento de su rey, a fin de que la experiencia de los asesinatos, robos y otras desgracias les obligase a ser más fieles a su sucesor. Para serlo España a Vuestra Majestad no necesitaba igual ensayo en los seis años de su cautiverio (...).
+
+El deseo que debemos pedir es que se proceda a celebrar Cortes con la solemnidad y en la forma en la que se celebraron las antiguas, que se suspendan los efectos de la Constitución y decretos dictados en Cádiz, y que las nuevas Cortes tomen en consideración su nulidad."</div>
         </div>
     </div>
 
     <!-- POPUP TEMA 1.5: LA CARTA DE JAMAICA (1815) -->
     <div id="pop-jamaica" class="modal">
-    <!-- POPUPS INTERACTIVOS -->
-    <div id="pop-junta-canarias" class="modal">
         <div class="modal-content">
             <span class="modal-close" onclick="closePopup('pop-jamaica')">&times;</span>
             <h3 style="color: #047857; margin-top: 0;">📜 La Carta de Jamaica de Simón Bolívar (1815)</h3>
             <p>La proclama del Libertador justificando la ruptura definitiva con la corona española:</p>
             <div class="texto-modal">"El lazo que unía a España y América está cortado (...). Más grande es el odio que nos inspira la Península que el mar que nos separa de ella (...). No somos indios ni europeos, sino una especie media entre los legítimos propietarios del país y los usurpadores españoles: en suma, siendo nosotros americanos por nacimiento y nuestros derechos los de Europa, tenemos que disputar éstos a los del país y mantenernos en él contra la invasión de los invasores."</div>
-            <span class="modal-close" onclick="closePopup('pop-junta-canarias')">&times;</span>
-            <h3 style="color: #b45309; margin-top: 0;">📜 El Manifiesto de la Junta Suprema de Canarias (1808)</h3>
-            <p>Proclama y llamamiento patriótico a la unificación civil y militar emitido desde San Cristóbal de La Laguna ante la invasión napoleónica:</p>
-            <div class="texto-modal">"Canarios: el sagrado e indisoluble deber de defender a nuestra Patria y la soberanía del amado rey don Fernando VII ha unificado los corazones de todos los habitantes del Archipiélago. La Junta Suprema de Canarias, constituida en esta ciudad de La Laguna con el consenso unánime de los representantes de las islas, asume la sagrada responsabilidad de gobernar y organizar las fuerzas militares para repeler al tirano usurpador que asola el suelo patrio.\n\nEspañoles de Canarias: no reconozcáis otra autoridad que la legítima de las leyes de este reino. Aunque distantes de la lucha en la península, nuestras islas no cejarán en sus sacrificios comunes. No permitáis que el insularismo o las disensiones de cabildo dividan lo que el honor nacional y el peligro común exigen mantener en férrea unión."</div>
         </div>
     </div>
 
@@ -842,13 +920,17 @@ Y como el que quisiese sostenerlos atentaría contra las prerrogativas de mi sob
     <script>
         const links = document.querySelectorAll('aside nav ul li a');
         const sections = document.querySelectorAll('main section');
-@ -916,14 +509,16 @@ Y como el que quisiese sostenerlos atentaría contra las prerrogativas de mi sob
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (window.scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
             });
 
             links.forEach(a => {
-                a.classList.remove('active');
-                if (a.getAttribute('href') === `#${current}`) {
-                    a.classList.add('active');
                 const href = a.getAttribute('href');
                 if (href && href.startsWith('#')) {
                     a.classList.remove('active');
@@ -864,3 +946,15 @@ Y como el que quisiese sostenerlos atentaría contra las prerrogativas de mi sob
             document.getElementById(id).classList.add('show');
         }
 
+        function closePopup(id) {
+            document.getElementById(id).classList.remove('show');
+        }
+
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.classList.remove('show');
+            }
+        }
+    </script>
+</body>
+</html>
