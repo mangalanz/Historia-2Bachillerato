@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bloque I - Tema 2: La Construcción del Estado Liberal (1833 - 1868)</title>
+    <title>Bloque I - Tema 2: La Conflictiva Construcción del Estado Liberal (1833 - 1868)</title>
     <style>
         :root {
-            /* Colores corporativos alegres y vibrantes */
-            --primary-intense: #1e40af; /* Azul real oscuro */
-            --primary-vibrant: #2563eb; /* Azul brillante */
+            --primary-intense: #1e40af;
+            --primary-vibrant: #2563eb;
             --primary-dark: #0f172a;
             --primary: #1e293b;
             --bg-main: #f8fafc;
@@ -16,12 +15,10 @@
             --text-dark: #1e293b;
             --text-muted: #64748b;
             
-            /* Tonos suaves en verde para el encabezado */
-            --header-bg: #f0fdf4; /* Fondo verde menta muy suave */
-            --header-border: #10b981; /* Borde verde esmeralda */
-            --header-text: #065f46; /* Texto verde bosque oscuro */
+            --header-bg: #f0fdf4;
+            --header-border: #10b981;
+            --header-text: #065f46;
 
-            /* Cajas didácticas */
             --border-glosario: #0ea5e9;
             --bg-glosario: #f0f9ff;
             --border-investigacion: #f59e0b;
@@ -46,7 +43,6 @@
             min-height: 100vh;
         }
 
-        /* Barra de navegación lateral fija a la izquierda */
         aside {
             width: 300px;
             background-color: var(--primary-dark);
@@ -89,7 +85,6 @@
             font-weight: 500;
         }
 
-        /* Botón de volver a la portada */
         aside nav ul li .btn-volver {
             background-color: #334155;
             color: #ffffff;
@@ -109,7 +104,6 @@
             border-color: var(--primary-vibrant);
         }
 
-        /* Enlaces activos e interactivos en azul vibrante */
         aside nav ul li a:hover, aside nav ul li a.active {
             background-color: var(--primary-vibrant);
             color: white;
@@ -117,14 +111,12 @@
             box-shadow: 0 4px 10px rgba(37, 99, 235, 0.15);
         }
 
-        /* Contenido de la Web */
         main {
             margin-left: 300px;
             padding: 40px;
             max-width: 1100px;
         }
 
-        /* Encabezado Alegre con tonos suaves en verde */
         header {
             margin-bottom: 35px;
             background: linear-gradient(135deg, var(--header-bg), #e6fcf0);
@@ -146,24 +138,6 @@
             color: #15803d;
             font-size: 1.05rem;
             font-weight: 500;
-        }
-
-        /* Cabecera ilustrada horizontal */
-        .cabecera-ilustrada {
-            width: 100%;
-            height: auto;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-            border: 1px solid #e2e8f0;
-            margin-bottom: 35px;
-            background-color: #f1f5f9;
-        }
-
-        .cabecera-ilustrada img {
-            width: 100%;
-            height: auto;
-            display: block;
         }
 
         section {
@@ -196,7 +170,53 @@
             text-align: justify;
         }
 
-        /* Cajas de colores */
+        /* CONTENEDOR DE IMAGEN (ANTI-SOLAPAMIENTO) */
+        .tarjeta-imagen {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 20px 0 30px 0;
+            text-align: center;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            display: block;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tarjeta-imagen img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            margin-bottom: 12px;
+            display: inline-block;
+        }
+
+        .tarjeta-imagen .caption {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            font-style: italic;
+            margin: 0;
+            line-height: 1.4;
+            display: block;
+        }
+
+        /* FILAS DE IMÁGENES COMPATIBLES (ADAPTATIVAS) */
+        .fila-imagenes {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0 30px 0;
+        }
+
+        .fila-imagenes .tarjeta-imagen {
+            flex: 1;
+            min-width: 250px;
+            margin: 0;
+        }
+
         .caja-colores {
             padding: 20px;
             border-radius: 8px;
@@ -212,10 +232,10 @@
             gap: 8px;
         }
 
-        .glosario {
-            background-color: var(--bg-glosario);
-            border-left: 5px solid var(--border-glosario);
-            color: #0369a1;
+        .factores {
+            background-color: var(--bg-factores);
+            border-left: 5px solid var(--border-factores);
+            color: #047857;
         }
 
         .investigacion {
@@ -227,67 +247,10 @@
         .critica {
             background-color: var(--bg-critica);
             border-left: 5px solid var(--border-critica);
-            color: #c2410c;
+            color: #b91c1c;
         }
 
-        .factores {
-            background-color: var(--bg-factores);
-            border-left: 5px solid var(--border-factores);
-            color: #047857;
-        }
-
-        /* Desplegables de Lectura Estructurada */
-        details {
-            background-color: #f8fafc;
-            border: 1px solid #e2e8f0;
-            border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 14px;
-            transition: border-color 0.2s;
-        }
-
-        details[open] {
-            background-color: white;
-            border-color: var(--primary-vibrant);
-        }
-
-        summary {
-            font-weight: 600;
-            font-size: 1.1rem;
-            color: var(--primary-dark);
-            cursor: pointer;
-            outline: none;
-            user-select: none;
-        }
-
-        details .contenido-desplegado {
-            margin-top: 12px;
-            padding-top: 12px;
-            border-top: 1px dashed #e2e8f0;
-        }
-
-        /* Imágenes educativas adaptativas */
-        .imagen-educativa {
-            width: 100%;
-            max-width: 800px;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-            margin: 25px auto;
-            display: block;
-            border: 1px solid #e2e8f0;
-        }
-
-        .caption {
-            text-align: center;
-            font-size: 0.95rem;
-            color: var(--text-muted);
-            font-style: italic;
-            margin-top: -15px;
-            margin-bottom: 25px;
-        }
-
-        ul, ol {
+        ul {
             padding-left: 25px;
             margin-bottom: 15px;
             font-size: 1.05rem;
@@ -298,23 +261,23 @@
             color: #334155;
         }
 
-        /* --- ESTILOS PARA POPUPS INTERACTIVOS (MODALS) --- */
+        /* POPUPS INTERACTIVOS (MODALS) */
         .modal {
-            display: none; /* Oculto por defecto */
+            display: none;
             position: fixed;
-            z-index: 2000; /* Por encima de la barra lateral */
+            z-index: 2000;
             left: 0;
             top: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(15, 23, 42, 0.6); /* Fondo oscuro */
-            backdrop-filter: blur(4px); /* Desenfoque estético */
+            background-color: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(4px);
             align-items: center;
             justify-content: center;
         }
 
         .modal.show {
-            display: flex; /* Se muestra mediante JS */
+            display: flex;
         }
 
         .modal-content {
@@ -343,14 +306,12 @@
             font-size: 1.5rem;
             cursor: pointer;
             color: var(--text-muted);
-            transition: color 0.2s;
         }
 
         .modal-close:hover {
             color: var(--border-critica);
         }
 
-        /* Botones de acción didáctica */
         .btn-interactivo {
             display: inline-flex;
             align-items: center;
@@ -406,14 +367,11 @@
             padding: 15px;
             border-radius: 6px;
             border: 1px solid #e2e8f0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             white-space: pre-wrap;
             margin-top: 10px;
-            line-height: 1.5;
             text-align: justify;
         }
 
-        /* Responsive */
         @media (max-width: 900px) {
             aside {
                 width: 100%;
@@ -432,24 +390,30 @@
 </head>
 <body>
 
-    <!-- Navegación Lateral de Bloque (Tema 2 Activo) -->
+    <!-- Navegación Lateral -->
     <aside>
-        <h1>⚖️ Bloque I: Estado Liberal</h1>
+        <h1>🏛️ Bloque I: Estado Liberal</h1>
         <nav>
             <ul>
                 <li><a href="index.html" class="btn-volver">🏠 Volver a Portada</a></li>
                 
-                <!-- Navegación Interna del Tema Actual -->
-                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 10px 14px 5px 14px; font-weight: bold; border-bottom: 1px solid #334155; margin-bottom: 8px;">📍 Secciones del Tema 2</li>
-                <li><a href="#tema1" class="active">1. El Problema Sucesorio</a></li>
-                <li><a href="#tema2">2. Época de las Regencias</a></li>
-                <li><a href="#tema3">3. El Reinado de Isabel II</a></li>
-                <li><a href="#tema4">4. Moderados y Progresistas</a></li>
-                
-                <!-- Saltos entre Temas del Bloque I -->
-                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 20px 14px 5px 14px; font-weight: bold; border-bottom: 1px solid #334155; margin-bottom: 8px;">📖 Temas del Bloque</li>
-                <li><a href="bloque1_tema1.html" style="color: #cbd5e1; margin-bottom: 8px; display: block; padding: 10px 14px; border-radius: 6px; text-decoration: none;">⬅️ Volver al Tema 1</a></li>
-                <li><a href="bloque1_tema3.html" style="color: #cbd5e1; margin-bottom: 8px; display: block; padding: 10px 14px; border-radius: 6px; text-decoration: none;">➡️ Ir al Tema 3: Sexenio</a></li>
+                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 10px 14px 5px 14px; font-weight: bold; border-bottom: 1px solid #334155; margin-bottom: 8px;">📍 Secciones</li>
+                <li><a href="#isabelii" class="active">1. El Reinado de Isabel II</a></li>
+                <li><a href="#desamortiza">2. Las Desamortizaciones</a></li>
+                <li><a href="#puertosfrancos">3. Puertos Francos y Cochinilla</a></li>
+
+                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 20px 14px 5px 14px; font-weight: bold; border-top: 1px solid #475569; margin-top: 25px; border-bottom: 1px solid #334155; margin-bottom: 8px;">📖 Temas del Bloque I</li>
+                <li><a href="bloque1_tema1.html">Tema 1: Cortes de Cádiz</a></li>
+                <li><a href="bloque1_tema2.html" style="font-weight: bold; color: var(--primary-vibrant);">Tema 2: Estado Liberal</a></li>
+                <li><a href="bloque1_tema3.html">Tema 3: El Sexenio</a></li>
+
+                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 15px 14px 5px 14px; font-weight: bold; border-top: 1px solid #475569; margin-top: 15px; border-bottom: 1px solid #334155; margin-bottom: 8px;">📚 Otros Bloques</li>
+                <li><a href="tema0.html">Tema 0: Introducción</a></li>
+                <li><a href="bloque2_tema1.html">Bloque II: La Restauración</a></li>
+                <li><a href="bloque3_tema1.html">Bloque III: Alfonso XIII y Dictadura</a></li>
+                <li><a href="bloque4_tema1.html">Bloque IV: Segunda República y Guerra</a></li>
+                <li><a href="bloque5_tema1.html">Bloque V: Franquismo</a></li>
+                <li><a href="bloque6_tema1.html">Bloque VI: Transición y Democracia</a></li>
             </ul>
         </nav>
     </aside>
@@ -457,414 +421,72 @@
     <!-- Contenido Principal -->
     <main>
         <header>
-            <h2>Tema 2: La Construcción del Estado Liberal (1833 - 1868)</h2>
-            <p>La consolidación del parlamentarismo en España: el tortuoso reinado de Isabel II bajo la alternancia de las facciones liberales.</p>
+            <h2>Tema 2: La Conflictiva Construcción del Estado Liberal (1833 - 1868)</h2>
+            <p>La transición política del reinado de Isabel II, las guerras carlistas, el impacto socioeconómico de las desamortizaciones liberales, el pleito insular y la implantación de la Ley de Puertos Francos.</p>
         </header>
 
-        <!-- Cabecera ilustrada horizontal -->
-        <div class="cabecera-ilustrada">
-            <img src="img/eje-cronologico-isabel.png" alt="Eje Cronológico del Reinado de Isabel II y Regencias">
-            <p style="text-align: center; font-size: 0.85rem; margin: 10px 0; color: var(--text-muted); font-style: italic;">
-                <em>Eje cronológico de la construcción del Estado liberal en el reinado de Isabel II</em>
-            </p>
-        </div>
-
         <!-- SECCIÓN 1 -->
-        <section id="tema1">
-            <h2>1. El Conflicto Sucesorio y la Primera Guerra Carlista</h2>
-            <p>A la muerte de <em>Fernando VII</em> en septiembre de 1833, la proclamación de su hija <em>Isabel II</em>, de apenas tres años de edad, desató una cruenta guerra civil que duraría siete años. No se trató únicamente de un conflicto dinástico familiar por la Corona; en el fondo, representó el choque definitivo entre los defensores del <strong>absolutismo</strong> (bando carlista) y los partidarios del <strong>nuevo régimen liberal</strong> (bando cristino o isabelino).</p>
- <!-- VÍDEO 1:La construcción del Estado liberal -->
-            <div style="margin: 15px 0; text-align: center;">
-                <a href="https://www.youtube.com/watch?v=hnoVMhoe1xY" target="_blank" class="btn-interactivo btn-video">🎬 Vídeo 1: Ver explicación resumen sobre el reinado de Isabel II ➡️</a>
-            </div>
-            <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; margin: 25px 0;">
-                <div style="flex: 1; min-width: 250px; max-width: 300px;">
-                    <img src="img/isabel-ii-nina.png" alt="Retrato de Isabel II de niña" class="imagen-educativa">
-                    
-                    <p class="caption"><em>Imagen 1: Retrato de Isabel II de niña (José Esquivel)</em></p>
-                </div>
-                <div style="flex: 1; min-width: 250px; max-width: 300px;">
-                    <img src="img/carlos-maria-isidro.png" alt="Carlos María Isidro de Borbón" class="imagen-educativa">
-                    
-                    <p class="caption"><em>Imagen 2: Carlos María Isidro de Borbón y Parma</em></p>
-                </div>
-            </div>
+        <section id="isabelii">
+            <h2>1. El Reinado de Isabel II y el Choque Moderado-Progresista</h2>
+            <p>La construcción del Estado liberal en España se consolidó durante el convulso reinado de <em>Isabel II</em> (1833-1868). La minoría de edad de la reina estuvo marcada por las regencias de su madre, <em>María Cristina de Borbón</em>, y posteriormente del carismático general progresista <em>Baldomero Espartero</em>. En esta etapa estalló la <strong>Primera Guerra Carlista (1833-1840)</strong>, un sangriento conflicto dinástico e ideológico que enfrentó a los partidarios del absolutismo carlista frente al bando isabelino, que debió aliarse definitivamente con los liberales para defender el trono de la infanta.</p>
+            
+            <p>Una vez declarada la mayoría de edad de Isabel II en 1843, el juego político de la Restauración del de la Corona quedó monopolizado por la alternancia inestable y excluyente de dos grandes partidos liberales:</p>
+            <ul>
+                <li><strong>El Partido Moderado:</strong> Liderado por el general <em>Ramón María de Narváez</em>. Defendía el orden social riguroso, el sufragio censitario muy restringido, la soberanía compartida (Rey-Cortes) y la limitación de libertades plasmados en la conservadora <strong>Constitución de 1845</strong>.</li>
+                <li><strong>El Partido Progresista:</strong> Liderado por políticos como <em>Mendizábal</em> o <em>Espartero</em>. Promovía el sufragio censitario más amplio, la soberanía nacional exclusiva, el fortalecimiento de la Milicia Nacional, y una mayor descentralización municipal de la <strong>Constitución de 1837</strong> y de la <em>Constitución Non Nata de 1856</em>.</li>
+            </ul>
 
-            <h3>El Origen Dinástico: La Pragmática Sanción</h3>
-            <p>En mayo de 1830 se anunciaba el embarazo de la cuarta esposa del monarca, <em>María Cristina de Borbón</em>. Un mes antes, Fernando VII había promulgado la <strong>Pragmática Sanción</strong>, derogando la Ley Sálica de 1713 que impedía el acceso de las mujeres al trono. Al nacer la infanta <em>Isabel</em> en octubre de 1830, el hermano del rey, el infante <em>Carlos María Isidro</em>, vio cerrado su camino a la herencia legítima y se declaró en rebelión.</p>
-
-            <!-- BOTÓN INTERACTIVO: MANIFIESTO DE ABRANTES -->
-            <div style="margin: 15px 0;">
-                <button class="btn-interactivo btn-texto" onclick="openPopup('pop-abrantes')">📜 Documento: El Manifiesto de Abrantes (1 de octubre de 1833)</button>
-            </div>
-
-            <!-- VÍDEO 2: LA PRIMERA GUERRA CARLISTA -->
-            <div style="margin: 15px 0; text-align: center;">
-                <a href="https://www.youtube.com/watch?v=TlpbwlpKr5A" target="_blank" class="btn-interactivo btn-video">🎬 Vídeo 2: Ver explicación animada sobre la Primera Guerra Carlista (ArteHistoria) ➡️</a>
-            </div>
-
-            <img src="img/mapa-guerra-carlista.png" alt="Mapa de la Primera Guerra Carlista" class="imagen-educativa">
-            <p class="caption"><em>Imagen 3: Mapa de operaciones e influencia de la Primera Guerra Carlista</em></p>
-
-            <p>El carlismo se estructuró bajo el lema de <strong>«Dios, Patria, Fueros, Rey»</strong>, concentrando sus apoyos sociales en las zonas rurales del País Vasco, Navarra, el Maestrazgo y el campo catalán. El bando isabelino, por su parte, debió pactar con la burguesía y los sectores liberales de las ciudades para garantizar el trono, iniciándose así la demolición definitiva del Antiguo Régimen.</p>
-
-            <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; margin: 25px 0;">
-                <div style="flex: 1; min-width: 250px; max-width: 300px;">
-                    <img src="img/zumalacarregui.png" alt="General Zumalacárregui" class="imagen-educativa">
-                    <p class="caption"><em>Imagen 4: Retrato de Tomás de Zumalacárregui, estratega carlista</em></p>
-                </div>
-                <div style="flex: 1; min-width: 250px; max-width: 400px;">
-                    <img src="img/abrazo-vergara.png" alt="El Abrazo de Vergara" class="imagen-educativa">
-                    <p class="caption"><em>Imagen 5: Recreación histórica del Abrazo de Vergara (1839)</em></p>
-                </div>
-            </div>
-
-            <!-- BOTÓN INTERACTIVO: CONVENIO DE VERGARA -->
-            <div style="margin: 15px 0;">
-                <button class="btn-interactivo btn-texto" onclick="openPopup('pop-vergara')">🤝 Documento: El Convenio de Vergara (1839)</button>
+            <div class="caja-colores factores">
+                <h4>🏛️ El Pleito Insular en Canarias (1833 - 1840)</h4>
+                <p>En el plano administrativo territorial de Canarias, el acontecimiento más trascendental y conflictivo de la época se desencadenó a raíz de la reforma provincial de <strong>Javier de Burgos de 1833</strong>, que organizó a España bajo una rígida estructura de 49 provincias. Para el archipiélago canario se decretó la creación de una <strong>única provincia</strong> con su capitalidad en la ciudad de Santa Cruz de Tenerife [981].</p>
+                <p>Esta decisión marginó del poder provincial a la burguesía comercial y terrateniente de Gran Canaria, avivando de forma dramática el histórico conflicto del <strong>pleito insular</strong>. El resentimiento y rivalidad entre las dos grandes capitales costeras bloqueaba de forma sistemática la toma de acuerdos de orden económico y fiscal. Desde el año 1840, los representantes grancanarios optaron por una vía de confrontación institucional reivindicando abiertamente ante las Cortes Generales en Madrid la división provincial del archipiélago en dos provincias independientes [982].</p>
             </div>
         </section>
 
         <!-- SECCIÓN 2 -->
-        <section id="tema2">
-            <h2>2. Época de las Regencias (1833 - 1843)</h2>
-            <p>Dada la minoría de edad de <em>Isabel II</em>, el poder del Estado fue asumido sucesivamente por dos regentes: la Reina Madre, <em>María Cristina de Borbón</em> (1833-1840), y el héroe militar progresista, el general <em>Baldomero Espartero</em> (1840-1843).</p>
+        <section id="desamortiza">
+            <h2>2. Las Desamortizaciones Liberales: Mendizábal y Madoz</h2>
+            <p>La gran transformación estructural y económica emprendida por el liberalismo español se articuló a través de los decretos de <strong>desamortización</strong>, que consistían en la expropiación estatal de tierras vinculadas en régimen de "manos muertas" (bienes eclesiásticos y municipales inalienables) y su posterior venta en pública subasta a particulares, con el fin de sanear las arcas fiscales, financiar las guerras coloniales o el trazado ferroviario y consolidar una burguesía agrícola aliada al trono:</p>
+            
+            <ul>
+                <li><strong>La Desamortización de Mendizábal (1836):</strong> Sancionada por el ministro de Hacienda progresista Juan Álvarez Mendizábal, expropió y vendió los bienes agrícolas y patrimoniales del <strong>clero regular</strong> (órdenes religiosas de monjes y frailes).</li>
+                <li><strong>La Desamortización de Madoz (1855):</strong> Promulgada por Pascual Madoz en el Bienio Progresista, afectó de forma primordial a los <strong>bienes de comunes y propios</strong> pertenecientes a los ayuntamientos municipales, destinando el dinero al fomento industrial del ferrocarril.</li>
+            </ul>
 
-            <!-- VÍDEO 3: LA ÉPOCA DE LAS REGENCIAS -->
-            <div style="margin: 15px 0; text-align: center;">
-                <a href="https://www.youtube.com/watch?v=i8NGXKXQTxQ&t=242s" target="_blank" class="btn-interactivo btn-video">🎬 Vídeo 3: Ver explicación didáctica de la Época de las Regencias (1833-1843) ➡️</a>
-            </div>
-
-            <h3>A. La Regencia de María Cristina de Borbón (1833-1840)</h3>
-            <p>La regente nombró inicialmente un gobierno de transición de Cea Bermúdez, bajo el cual se llevó a cabo la división provincial uniforme del país ideada por el ministro de Fomento, <em>Javier de Burgos</em>, en 1833. Posteriormente, llamó al gobierno a un liberal moderado, <em>Francisco Martínez de la Rosa</em>, quien elaboró el <strong>Estatuto Real de 1834</strong>, una carta otorgada muy restrictiva en la que solo votaban 16.000 varones.</p>
-
-            <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; margin: 25px 0;">
-                <div style="flex: 1; min-width: 250px; max-width: 320px;">
-                    <img src="img/division-provincial.png" alt="División Provincial de Javier de Burgos" class="imagen-educativa">
-                    
-                    <p class="caption"><em>Imagen 6: Mapa provincial de Javier de Burgos (1833)</em></p>
-                </div>
-                <div style="flex: 1; min-width: 250px; max-width: 240px;">
-                    <img src="img/martinez-de-la-rosa.png" alt="Retrato de Martínez de la Rosa" class="imagen-educativa">
-                    
-                    <p class="caption"><em>Imagen 7: Francisco Martínez de la Rosa, autor del Estatuto Real</em></p>
-                </div>
-                <div style="flex: 1; min-width: 250px; max-width: 320px;">
-                    <img src="img/estamento-proceres.png" alt="Estamento de Próceres" class="imagen-educativa">
-                    
-                    <p class="caption"><em>Imagen 8: Inauguración del Estamento de Próceres por la regente María Cristina</em></p>
-                </div>
-            </div>
-
-            <div class="caja-colores factores">
-                <h4>💵 La Desamortización de Mendizábal (1836)</h4>
-                <p>Ante la urgencia de financiar la Guerra Carlista y sanear la deuda del Estado, el ministro progresista <em>Juan Álvarez de Mendizábal</em> decretó la nacionalización y venta en pública subasta de los bienes raíces de la Iglesia católica (clero regular), exclaustrando a más de 30.000 monjes y clausurando un millar de conventos.</p>
-                
-                <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; margin: 15px 0;">
-                    <div style="flex: 1; min-width: 200px; max-width: 230px;">
-                        <img src="img/retrato-mendizabal.png" alt="Juan Álvarez de Mendizábal" class="imagen-educativa">
-                        <p class="caption" style="color: var(--text-dark);"><em>Imagen 9: Juan Álvarez de Mendizábal, ministro de Hacienda</em></p>
-                    </div>
-                    <div style="flex: 1; min-width: 250px; max-width: 350px;">
-                        <img src="img/mapas-desamortizacion-mendizabal.png" alt="Mapa Desamortización Mendizábal" class="imagen-educativa">
-                        <p class="caption" style="color: var(--text-dark);"><em>Imagen 10: Mapa provincial de las ventas de la desamortización eclesiástica de Mendizábal</em></p>
-                    </div>
-                </div>
-
-                <!-- BOTÓN INTERACTIVO: DECRETO DE MENDIZÁBAL -->
-                <button class="btn-interactivo btn-texto" onclick="openPopup('pop-mendizabal')">📜 Documento: Real Decreto de Desamortización del 19 de febrero de 1836</button>
-            </div>
-
-            <!-- VÍDEO 4: LA DESAMORTIZACIÓN DE MENDIZÁBAL -->
-            <div style="margin: 15px 0; text-align: center;">
-                <a href="https://www.youtube.com/watch?v=x962yF0wgik&pp=ygUgbGEgZGVzYW1vcnRpemFjaW9uIGRlIG1lbmRpemFiYWw%3D" target="_blank" class="btn-interactivo btn-video">🎬 Vídeo 4: Ver explicación detallada sobre la Desamortización de Mendizábal ➡️</a>
-            </div>
-
-            <p>La oposición de los moderados a las medidas de Mendizábal forzó su dimisión, lo que provocó en agosto de 1836 la <strong>Sargentada de la Granja</strong>. Los sargentos forzaron a la regente a restablecer la Constitución de 1812 y convocar elecciones constituyentes, redactándose la <strong>Constitución de 1837</strong>.</p>
-
-            <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; margin: 25px 0;">
-                <div style="flex: 1; min-width: 250px; max-width: 350px;">
-                    <img src="img/sargentada-la-granja.png" alt="Sargentada de La Granja" class="imagen-educativa">
-                    <p class="caption"><em>Imagen 11: Pintura histórica de la Sargentada de La Granja (1836)</em></p>
-                </div>
-                <div style="flex: 1; min-width: 250px; max-width: 350px;">
-                    <img src="img/esquema-constitucion-1837.png" alt="Esquema Constitución de 1837" class="imagen-educativa">
-                    <p class="caption"><em>Imagen 12: Esquema organizativo de poderes en la Constitución de 1837</em></p>
-                </div>
-            </div>
-
-            <!-- BOTÓN INTERACTIVO: CONSTITUCIÓN 1837 -->
-            <div style="margin: 15px 0; text-align: center;">
-                <button class="btn-interactivo btn-texto" onclick="openPopup('pop-const1837')">📜 Documento: Extracto de la Constitución de 1837</button>
-            </div>
-
-            <!-- VÍDEO 5: LA SARGENTADA DE LA GRANJA -->
-            <div style="margin: 15px 0; text-align: center;">
-                <a href="https://www.youtube.com/watch?v=aH28flH8Bug" target="_blank" class="btn-interactivo btn-video">🎬 Vídeo 5: Ver vídeo sobre la Sargentada de La Granja y la Constitución de 1837 ➡️</a>
-            </div>
-
-            <h3>B. La Regencia del General Espartero (1840-1843)</h3>
-            <p>La oposición de la reina regente a la progresista <em>Ley de Ayuntamientos</em> la obligó a exiliarse. El general progresista <em>Baldomero Espartero</em> asumió una regencia caracterizada por un marcado centralismo militarista. Su firma de un tratado comercial de librecambio con Inglaterra desató una sublevación industrial en Barcelona, sofocada mediante un <strong>bombardeo militar indiscriminado de la ciudad desde Montjuic en 1842</strong>, destruyendo unas 400 casas y hundiendo para siempre su popularidad.</p>
-
-            <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; margin: 25px 0;">
-                <div style="flex: 1; min-width: 250px; max-width: 320px;">
-                    <img src="img/espartero-derrotado.png" alt="Espartero despidiéndose" class="imagen-educativa">
-                    <p class="caption"><em>Imagen 13: El general Baldomero Espartero despidiéndose de la Milicia Nacional</em></p>
-                </div>
-                <div style="flex: 1; min-width: 250px; max-width: 400px;">
-                    <img src="img/bombardeo-barcelona.png" alt="Bombardeo de Barcelona" class="imagen-educativa">
-                    <p class="caption"><em>Imagen 14: Ilustración histórica del bombardeo de Barcelona de 1842</em></p>
-                </div>
-            </div>
+            <p>La aplicación de estas leyes en Canarias consolidó y aumentó el poder económico y social de la <strong>burguesía terrateniente y mercantil</strong>, de procedencia tanto local como extranjera (con un importante peso de casas mercantiles de origen británico), que adquirieron las mejores tierras desamortizadas [988, 989]. En contrapartida, las desamortizaciones <strong>no solucionaron el problema social del campesinado</strong>, que al perder el derecho de usufructo y explotación libre de las tierras comunales eclesiásticas y consistoriales sufrieron un drástico empeoramiento de sus condiciones de vida y subsistencia, viéndose forzados a trabajar en régimen de arrendamientos abusivos o como peones jornaleros con salarios de miseria [989].</p>
         </section>
 
         <!-- SECCIÓN 3 -->
-        <section id="tema3">
-            <h2>3. El Reinado Efectivo de Isabel II (1843 - 1868)</h2>
-            <p>Tras derrocar a <em>Espartero</em>, las Cortes adelantaron la mayoría de edad de <em>Isabel II</em>, quien comenzó a gobernar con solo 13 años mostrando una inquebrantable preferencia por los líderes del Partido Moderado.</p>
+        <section id="puertosfrancos">
+            <h2>3. El Régimen de Puertos Francos y el Ciclo de la Cochinilla</h2>
+            <p>A mediados del siglo XIX, la economía canaria experimentó una profunda renovación estructural que la desvinculó parcialmente de la rigidez proteccionista imperante en la metrópoli peninsular, gracias a la conjunción de dos factores determinantes:</p>
 
-            <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; margin: 25px 0;">
-                <div style="flex: 1; min-width: 200px; max-width: 240px;">
-                    <img src="img/retrato-narvaez.png" alt="Ramón María Narváez" class="imagen-educativa">
-                    
-                    <p class="caption"><em>Imagen 15: Ramón María Narváez, líder del Partido Moderado</em></p>
-                </div>
-                <div style="flex: 1; min-width: 200px; max-width: 240px;">
-                    <img src="img/retrato-odonnell.png" alt="Leopoldo O'Donnell" class="imagen-educativa">
-                    
-                    <p class="caption"><em>Imagen 16: Leopoldo O'Donnell, creador de la Unión Liberal</em></p>
-                </div>
-                <div style="flex: 1; min-width: 200px; max-width: 240px;">
-                    <img src="img/retrato-serrano.png" alt="Francisco Serrano" class="imagen-educativa">
-                    
-                    <p class="caption"><em>Imagen 17: Francisco Serrano, militar y político clave</em></p>
-                </div>
+            <div class="caja-colores investigacion">
+                <h4>🚢 El Real Decreto de Puertos Francos de 1852</h4>
+                <p>En el año 1852, durante el reinado personal de Isabel II, el presidente del Gobierno central, el conservador <strong>Juan Bravo Murillo</strong>, instituyó en Canarias la histórica <strong>Ley de Puertos Francos</strong> [730, 271, 1183]. Esta medida de corte liberal eliminaba las tasas arancelarias para todas las mercancías importadas y exportadas en el archipiélago. El sistema de franquicias convirtió a los puertos canarios (especialmente el Puerto de La Luz en Las Palmas y el Puerto de Santa Cruz) en plataformas logísticas atlánticas estratégicas para el abastecimiento, carboneo y reparación de buques de las potencias de la expansión colonial europea en África y Asia, atrayendo de forma masiva capital extranjero e impulsando el asentamiento de una poderosa e influyente colonia de comerciantes y navieros británicos [993, 994].</p>
             </div>
 
-            <h3>A. La Década Moderada (1844-1854) y la Constitución de 1845</h3>
-            <p>Bajo el mando del general <em>Ramón María Narváez</em>, se instauró un régimen oligárquico de tintes autoritarios y centralistas plasmado en la <strong>Constitución de 1845</strong> (soberanía compartida y sufragio restringido al 1% de la población más rica).</p>
+            <p>En paralelo, la agricultura de exportación conoció un espectacular boom gracias al monocultivo de la <strong>cochinilla</strong>, un insecto criado en las plantaciones de tuneras del que se extraía un rico tinte natural rojo de gran demanda para la de la industria textil europea [889]. El auge exportador enriqueció sustancialmente a la burguesía mercantil, pero demostró una preocupante vulnerabilidad estructural [889].</p>
 
-            <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; margin: 25px 0;">
-                <div style="flex: 1; min-width: 250px; max-width: 350px;">
-                    <img src="img/retrato-ahumada.png" alt="Duque de Ahumada" class="imagen-educativa">
-                    <p class="caption"><em>Imagen 18: Duque de Ahumada, fundador de la Guardia Civil (1844)</em></p>
-                </div>
-                <div style="flex: 1; min-width: 250px; max-width: 350px;">
-                    <img src="img/esquema-constitucion-1845.png" alt="Esquema Constitución de 1845" class="imagen-educativa">
-                    
-                    <p class="caption"><em>Imagen 19: Estructura de poderes de la Constitución de 1845</em></p>
-                </div>
-            </div>
+            <p>A partir del año 1870, el descubrimiento industrial y comercialización europea de los colorantes químicos artificiales provocó el hundimiento fulminante del mercado, desatando la dramática <strong>crisis de la cochinilla</strong> [850, 990]. La catástrofe agraria sumió a las islas en el desabastecimiento de alimentos de primera necesidad, paro generalizado en el campo y hambrunas periódicas, forzando a decenas de miles de campesinos y jornaleros desposeídos a iniciar una colosal y dramática corriente migratoria de exiliados de la miseria (los <strong>indianos</strong>) con rumbo a Cuba y Venezuela en busca de subsistencia [850, 990].</p>
 
-            <!-- VÍDEO 6: LA DÉCADA MODERADA -->
+            <!-- BOTÓN INTERACTIVO: PUERTOS FRANCOS -->
             <div style="margin: 15px 0; text-align: center;">
-                <a href="https://www.youtube.com/watch?v=FAxmicLPK0g" target="_blank" class="btn-interactivo btn-video">🎬 Vídeo 6: Ver explicación sobre la Década Moderada y sus Reformas ➡️</a>
-            </div>
-
-            <p>Durante esta etapa se fundó la <strong>Guardia Civil (1844)</strong> y se suprimió la Milicia Nacional progresista. También se reformó el sistema tributario unificándolo en impuestos directos e indirectos gracias a la <em>Reforma de Mon-Santillán (1845)</em>, y se firmó un Concordato con el Vaticano.</p>
-
-            <!-- BOTÓN INTERACTIVO: CONCORDATO 1851 -->
-            <div style="margin: 15px 0;">
-                <button class="btn-interactivo btn-texto" onclick="openPopup('pop-concordato')">📜 Documento: El Concordato con la Santa Sede de 1851</button>
-            </div>
-
-            <p>La inestabilidad ministerial fue muy acusada. El autoritarismo de los moderados alcanzó su apogeo con <em>Bravo Murillo</em> en 1852, quien intentó sin éxito transformar el Estado en una dictadura tecnocrática que gobernara por decreto.</p>
-
-            <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; margin: 25px 0;">
-                <div style="flex: 1; min-width: 220px; max-width: 260px;">
-                    <img src="img/retrato-montemolin.png" alt="Carlos VI Conde de Montemolín" class="imagen-educativa">
-                    
-                    <p class="caption"><em>Imagen 20: Carlos VI, conde de Montemolín (2ª Guerra Carlista)</em></p>
-                </div>
-                <div style="flex: 1; min-width: 220px; max-width: 260px;">
-                    
-                    <img src="img/retrato-bravo-murillo.png" alt="Juan Bravo Murillo" class="imagen-educativa">
-                    <p class="caption"><em>Imagen 21: Juan Bravo Murillo, ministro de Hacienda y Fomento</em></p>
-                </div>
-            </div>
-
-            <h3>B. El Bienio Progresista (1854-1856)</h3>
-            <p>La deriva dictatorial moderada provocó un pronunciamiento militar del general <em>Leopoldo O'Donnell</em> en Vicálvaro en 1854. El movimiento se radicalizó tras la publicación del <strong>Manifiesto de Manzanares</strong>, impulsando una gran revuelta popular.</p>
-
-            <!-- BOTÓN INTERACTIVO: MANIFIESTO DE MANZANARES -->
-            <div style="margin: 15px 0;">
-                <button class="btn-interactivo btn-texto" onclick="openPopup('pop-manzanares')">📜 Documento: El Manifiesto de Manzanares (7 de julio de 1854)</button>
-            </div>
-
-            <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; margin: 25px 0;">
-                <div style="flex: 1; min-width: 250px; max-width: 350px;">
-                    <img src="img/bienio-progresista.png" alt="O'Donnell y Espartero en Vicálvaro" class="imagen-educativa">
-                    
-                    <p class="caption"><em>Imagen 22: O'Donnell y Espartero proclaman el triunfo de la Vicalvarada (1854)</em></p>
-                </div>
-                <div style="flex: 1; min-width: 250px; max-width: 350px;">
-                    <img src="img/revolucion-1854.png" alt="Revolución de 1854 en la Puerta del Sol" class="imagen-educativa">
-                    
-                    <p class="caption"><em>Imagen 23: Pintura histórica de la Revolución de 1854 en la Puerta del Sol</em></p>
-                </div>
-            </div>
-
-            <p>Durante el Bienio se promulgó la <strong>Ley General de Ferrocarriles (1855)</strong> y el ministro de Hacienda <em>Pascual Madoz</em> sacó a la luz su ley de desamortización civil, afectando muy especialmente a las tierras de propios y comunales de los ayuntamientos.</p>
-
-            <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; margin: 25px 0;">
-                <div style="flex: 1; min-width: 250px; max-width: 380px;">
-                    <img src="img/mapa-desamortizacion-madoz.png" alt="Mapa Desamortización Madoz" class="imagen-educativa">
-                    
-                    <p class="caption"><em>Imagen 24: Mapa provincial del valor de las ventas de la desamortización civil de Madoz (1855)</em></p>
-                </div>
-                <div style="flex: 1; min-width: 250px; max-width: 380px;">
-                    <img src="img/red-ferroviaria.png" alt="Red Ferroviaria Española" class="imagen-educativa">
-                    
-                    <p class="caption"><em>Imagen 25: Trazado radial de la red ferroviaria construida tras la ley del 55</em></p>
-                </div>
-            </div>
-
-            <!-- VÍDEO 7: EL BIENIO PROGRESISTA Y MADOZ -->
-            <div style="margin: 15px 0; text-align: center;">
-                <a href="https://www.youtube.com/watch?v=sl_HIOIwSYA" target="_blank" class="btn-interactivo btn-video">🎬 Vídeo 7: Ver documental sobre el Bienio Progresista y la desamortización de Madoz ➡️</a>
-            </div>
-
-            <h3>C. La Crisis del Final del Régimen Isabelino (1856-1868)</h3>
-            <p>Tras la caída de <em>Espartero</em>, se alternaron en el gobierno los moderados de <em>Narváez</em> y la de centro fundada por <em>O'Donnell</em> (la <em>Unión Liberal</em>), que acometió expediciones coloniales de prestigio en la <em>Guerra de Marruecos</em> (toma de Tetuán) y la expedición a Cochinchina.</p>
-
-            <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; margin: 25px 0;">
-                <div style="flex: 1; min-width: 250px; max-width: 320px;">
-                    <img src="img/congreso-1854.png" alt="Congreso de los Diputados, 1854" class="imagen-educativa">
-                    
-                    <p class="caption"><em>Imagen 26: El Congreso de los Diputados de Madrid (1854)</em></p>
-                </div>
-                <div style="flex: 1; min-width: 250px; max-width: 400px;">
-                    <img src="img/batalla-tetuan.png" alt="Batalla de Tetuán" class="imagen-educativa">
-                    
-                    <p class="caption"><em>Imagen 27: Pintura de la Batalla de Tetuán de Mariano Fortuny</em></p>
-                </div>
-            </div>
-
-            <p>La inestabilidad política y el autoritarismo gubernamental moderado (fusilamientos de sargentos en el cuartel de San Gil y la represión estudiantil de la <strong>Noche de San Daniel</strong>) se unieron a la desastrosa crisis económica y financiera internacional de 1866. Las sucesivas muertes de <em>O'Donnell</em> y <em>Narváez</em> dejaron a la reina aislada, lo que propició el pacto opositor de Ostende para su definitivo derrocamiento.</p>
-
-            <img src="img/sargentos-san-gil.png" alt="Fusilamientos de los Sargentos de San Gil" class="imagen-educativa" style="max-width: 500px;">
-            <p class="caption"><em>Imagen 28: Ilustración histórica de los fusilamientos de los sargentos en el cuartel de San Gil (1866)</em></p>
-
-            <!-- BOTÓN INTERACTIVO: NOCHE DEL MATADERO -->
-            <div style="margin: 15px 0;">
-                <button class="btn-interactivo btn-anecdota" onclick="openPopup('pop-matadero')">🕵️‍♂️ Curiosidad: La trágica Noche de San Daniel (10 de abril de 1865)</button>
-            </div>
-        </section>
-
-        <!-- SECCIÓN 4 -->
-        <section id="tema4">
-            <h2>4. Diferencias Ideológicas entre Moderados y Progresistas</h2>
-            <p>Este cuadro didáctico sintetiza la división de las dos fuerzas políticas dinásticas que gobernaron a lo largo de toda esta etapa:</p>
-
-            <div class="caja-colores factores">
-                <h4>👥 Comparativa Doctrinal (Oligarquía vs. Clases Medias)</h4>
-                <ul>
-                    <li><strong>Partido Moderado (Narváez):</strong> Defendían la <strong>Soberanía Compartida</strong> (Cortes con el Rey), limitaban con rigor las libertades individuales, abogaban por un sufragio censitario extremadamente restringido (1% de los ricos) y el nombramiento estatal directo de alcaldes de los ayuntamientos. Su base social eran la alta nobleza, terratenientes y jerarquías eclesiásticas.</li>
-                    <li><strong>Partido Progresista (Espartero/Prim):</strong> Defendían la <strong>Soberanía Nacional</strong> como única fuente de legitimidad, querían el sometimiento de los ministros al control parlamentario de las Cortes, un sufragio censitario masculino más amplio (2,4%), la Milicia Nacional voluntaria y la libre elección municipal de los alcaldes por parte de los vecinos. Su base eran las clases medias urbanas.</li>
-                </ul>
+                <button class="btn-interactivo btn-texto" onclick="openPopup('pop-puertos-francos')">📜 Documento: Bravo Murillo y la Exposición de Motivos de los Puertos Francos (1852)</button>
             </div>
         </section>
     </main>
 
-    <!-- VENTANAS EMERGENTES (POPUPS INTERACTIVOS / MODALS) -->
-
-    <!-- POPUP TEMA 2.1: MANIFIESTO DE ABRANTES (1833) -->
-    <div id="pop-abrantes" class="modal">
+    <!-- POPUPS INTERACTIVOS -->
+    <div id="pop-puertos-francos" class="modal">
         <div class="modal-content">
-            <span class="modal-close" onclick="closePopup('pop-abrantes')">&times;</span>
-            <h3 style="color: #047857; margin-top: 0;">📜 El Manifiesto de Abrantes (1 de octubre de 1833)</h3>
-            <p>La proclama con la que el infante Don Carlos María Isidro se autoproclamó rey de España:</p>
-            <div class="texto-modal">"La religión, la observancia y el cumplimiento de la ley fundamental de sucesión y la singular obligación de defender los derechos imprescriptibles de mis hijos (...) me esfuerzan a sostener y defender la corona de España del violento despojo que de ella me ha causado una sanción tan ilegal como destructora de la ley que legítimamente y sin alteración debe ser perpetuada.
-
-Desde el fatal instante en que murió mi caro hermano (...) creí se habían dictado en mi defensa las providencias oportunas para mi reconocimiento; y si hasta aquel momento habría sido traidor el que lo hubiese intentado, ahora será el que no jure mis banderas (...). Encargo encarecidamente la unión, la paz y la perfecta caridad. No parezco yo el sentimiento de que los católicos españoles que me aman, maten, injurien, roben ni cometan el más mínimo exceso (...).
-
-Don Carlos V (Carlos María Isidro de Borbón)"</div>
+            <span class="modal-close" onclick="closePopup('pop-puertos-francos')">&times;</span>
+            <h3 style="color: #047857; margin-top: 0;">📜 La Exposición de Motivos de los Puertos Francos (1852)</h3>
+            <p>El histórico documento firmado por Juan Bravo Murillo decretando la exención de aranceles para Canarias:</p>
+            <div class="texto-modal">"Señora: El Gobierno de Vuestra Majestad, consciente de la angustiosa y excepcional coyuntura de penuria que aqueja a las Islas Canarias debido a su aislamiento de los mercados nacionales y la escasez de recursos agrarios, estima indispensable la adopción de medidas extraordinarias que eviten su ruina material e impulsen su comercio exterior.\n\nCanarias, por su de paso y de escala universal en las rutas transatlánticas, está llamada a ser un puerto de escala universal indispensable para las escuadras de todas las naciones del orbe. Declarar sus puertos francos de todo arancel y tributación comercial es el único método fidedigno para atraer capitales exteriores, abaratar el sustento de sus habitantes y asegurar su inserción definitiva y próspera en la corriente del comercio atlántico."</div>
         </div>
     </div>
 
-    <!-- POPUP TEMA 2.1: CONVENIO DE VERGARA (1839) -->
-    <div id="pop-vergara" class="modal">
-        <div class="modal-content">
-            <span class="modal-close" onclick="closePopup('pop-vergara')">&times;</span>
-            <h3 style="color: #047857; margin-top: 0;">🤝 El Convenio de Vergara (1839)</h3>
-            <p>Extracto literal del acuerdo de paz que puso fin a la primera guerra civil carlista en el norte:</p>
-            <div class="texto-modal">"Art. 1. El capitán general don Baldomero Espartero recomendará con interés al Gobierno el cumplimiento de su oferta de comprometerse formalmente a proponer a las Cortes la concesión o modificación de los fueros.
-
-Art. 2. Serán reconocidos los empleo, grados y condecoraciones de los generales, jefes, oficiales y demás individuos dependientes del Ejército del teniente general don Rafael Maroto (...) defendiendo la constitución de 1837, el trono de Isabel II y la regencia de su augusta madre (...)."</div>
-        </div>
-    </div>
-
-    <!-- POPUP TEMA 2.2: DECRETO DE MENDIZÁBAL (1836) -->
-    <div id="pop-mendizabal" class="modal">
-        <div class="modal-content">
-            <span class="modal-close" onclick="closePopup('pop-mendizabal')">&times;</span>
-            <h3 style="color: #047857; margin-top: 0;">📜 Real Decreto de Desamortización (19 de febrero de 1836)</h3>
-            <p>La exposición y articulado con la que <em>Mendizábal</em> argumentó la venta de las tierras eclesiásticas:</p>
-            <div class="texto-modal">"Señora, vender la masa de bienes que han venido a ser propiedad de la Nación, no es tan sólo cumplir una promesa solemne y dar una garantía positiva a la deuda nacional, es abrir una fuente abundantísima de felicidad pública; vivificar una riqueza muerta, desobstruir los canales de la industria y de la circulación...
-
-Artículo 1°. Quedan declarados en venta desde ahora todos los bienes raíces de cualquier clase que hubiesen pertenecido a las comunidades y corporaciones religiosas extinguidas, y los demás que hayan sido adjudicados a la nación por cualquier título o motivo, y también todos los que en adelante lo fueren desde el acto de su adjudicación."</div>
-        </div>
-    </div>
-
-    <!-- POPUP TEMA 2.2: CONSTITUCIÓN DE 1837 -->
-    <div id="pop-const1837" class="modal">
-        <div class="modal-content">
-            <span class="modal-close" onclick="closePopup('pop-const1837')">&times;</span>
-            <h3 style="color: #047857; margin-top: 0;">📜 Extracto de la Constitución de 1837</h3>
-            <p>Los principales pilares jurídicos del progresismo reformista moderado del 37:</p>
-            <div class="texto-modal">"- Art. 2º. Todos los españoles pueden imprimir y publicar libremente sus ideas sin previa censura, con sujeción a las leyes. La calificación de los delitos de imprenta corresponde exclusivamente a los jurados.
-
-- Art. 7º. No puede ser detenido, ni preso, ni separado de su domicilio ningún español, ni allanada su casa, sino en los casos y en la forma que las leyes prescriban.
-
-- Art. 11. La Nación se obliga a mantener el culto y los ministros de la religión católica que profesan los españoles.
-
-- Art. 12. La potestad de hacer las leyes reside en las Cortes con el Rey.
-
-- Art. 13. Las Cortes se componen de dos Cuerpos Colegisladores, iguales en facultades: el Senado y el Congreso de Diputados."</div>
-        </div>
-    </div>
-
-    <!-- POPUP TEMA 2.3: CONCORDATO DE 1851 -->
-    <div id="pop-concordato" class="modal">
-        <div class="modal-content">
-            <span class="modal-close" onclick="closePopup('pop-concordato')">&times;</span>
-            <h3 style="color: #047857; margin-top: 0;">📜 El Concordato de 1851 con el Vaticano</h3>
-            <p>El acuerdo oficial con el Papa de Roma para compensar a la Iglesia tras la desamortización:</p>
-            <div class="texto-modal">"Art. 1. La religión católica, apostólica, romana, que con exclusión de cualquier otro culto continúa siendo la única de la nación española (...).
-
-Art. 2. En su consecuencia, la instrucción de las universidades, colegios, seminarios y escuelas públicas o privadas de cualquier clase, será en todo conforme a la doctrina de la religión católica (...).
-
-Art. 41. Además la Iglesia tendrá derecho de adquirir por cualquier título legítimo, y su propiedad y todo lo que posee ahora o adquiriese en adelante será solemnemente respetado (...)."</div>
-        </div>
-    </div>
-
-    <!-- POPUP TEMA 2.3: MANIFIESTO DE MANZANARES (1854) -->
-    <div id="pop-manzanares" class="modal">
-        <div class="modal-content">
-            <span class="modal-close" onclick="closePopup('pop-manzanares')">&times;</span>
-            <h3 style="color: #047857; margin-top: 0;">📜 El Manifiesto de Manzanares (7 de julio de 1854)</h3>
-            <p>La proclama redactada para movilizar a la población civil tras la Vicalvarada:</p>
-            <div class="texto-modal">"Españoles: La entusiasta acogida que va encontrando en los pueblos el ejército liberal; el esfuerzo de los soldados que le componen, tan heroicamente mostrado en los campos de Vicálvaro; el aplauso con que en todas partes ha sido recibida la noticia de nuestro patriótico alzamiento, aseguran desde ahora el triunfo de la libertad y de las leyes, que hemos jurado defender...
-
-Nosotros queremos la conservación del Trono, pero sin camarilla que lo deshonre, queremos la práctica rigurosa de las leyes fundamentales, mejorándolas, sobre todo la ley electoral y la de imprenta; queremos la rebaja de los impuestos, fundada en una estricta economía; queremos que se respeten en los empleos militares y civiles la antigüedad y el merecimiento; queremos arrancar a los pueblos de la centralización que los devora, dándoles la independencia local necesaria para que conserven y aumenten sus intereses propios; y como garantía de todo esto queremos y plantearemos bajo sólidas bases la Milicia nacional...
-
-El general en jefe del ejército constitucional, Leopoldo O'Donnell."</div>
-        </div>
-    </div>
-
-    <!-- POPUP TEMA 2.3: LA NOCHE DE SAN DANIEL (1865) -->
-    <div id="pop-matadero" class="modal" style="border-left-color: var(--border-critica);">
-        <div class="modal-content" style="border-left-color: var(--border-critica);">
-            <span class="modal-close" onclick="closePopup('pop-matadero')">&times;</span>
-            <h3 style="color: var(--border-critica); margin-top: 0;">🕵️‍♂️ La Noche de San Daniel (1865)</h3>
-            <p>Un trágico episodio que ilustra la extrema represión autoritaria gubernamental moderada:</p>
-            <div class="texto-modal">"En 1865 tuvieron lugar graves incidentes en la Universidad de Madrid, conocidos como la noche del matadero, y que se iniciaron a raíz de un artículo de Emilio Castelar, profesor de ideología republicana. El texto ironizaba sobre la venta de bienes de la Corona por parte de la reina, dejando patente que los consideraba como propios y no como bienes nacionales.
-
-El gobierno destituyó a Castelar de su cátedra, provocando la protesta del rector y de los estudiantes, que se manifestaron ante la Puerta del Sol madrileña. Los manifestantes fueron violentamente reprimidos por la Guardia Civil, con el trágico resultado de nueve estudiantes muertos y más de cien heridos. Semejante desenlace incrementó enormemente la impopularidad de Narváez en la capital."</div>
-        </div>
-    </div>
-
-    <!-- Script de Navegación Dinámica y Popups -->
     <script>
         const links = document.querySelectorAll('aside nav ul li a');
         const sections = document.querySelectorAll('main section');
@@ -879,14 +501,16 @@ El gobierno destituyó a Castelar de su cátedra, provocando la protesta del rec
             });
 
             links.forEach(a => {
-                a.classList.remove('active');
-                if (a.getAttribute('href') === `#${current}`) {
-                    a.classList.add('active');
+                const href = a.getAttribute('href');
+                if (href && href.startsWith('#')) {
+                    a.classList.remove('active');
+                    if (href === `#${current}`) {
+                        a.classList.add('active');
+                    }
                 }
             });
         });
 
-        // Funciones para modals (popups)
         function openPopup(id) {
             document.getElementById(id).classList.add('show');
         }

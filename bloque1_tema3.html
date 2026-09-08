@@ -6,9 +6,8 @@
     <title>Bloque I - Tema 3: El Sexenio Revolucionario (1868 - 1874)</title>
     <style>
         :root {
-            /* Colores corporativos alegres y vibrantes */
-            --primary-intense: #1e40af; /* Azul real oscuro */
-            --primary-vibrant: #2563eb; /* Azul brillante */
+            --primary-intense: #1e40af;
+            --primary-vibrant: #2563eb;
             --primary-dark: #0f172a;
             --primary: #1e293b;
             --bg-main: #f8fafc;
@@ -16,12 +15,10 @@
             --text-dark: #1e293b;
             --text-muted: #64748b;
             
-            /* Tonos suaves en verde para el encabezado */
-            --header-bg: #f0fdf4; /* Fondo verde menta muy suave */
-            --header-border: #10b981; /* Borde verde esmeralda */
-            --header-text: #065f46; /* Texto verde bosque oscuro */
+            --header-bg: #f0fdf4;
+            --header-border: #10b981;
+            --header-text: #065f46;
 
-            /* Cajas didácticas */
             --border-glosario: #0ea5e9;
             --bg-glosario: #f0f9ff;
             --border-investigacion: #f59e0b;
@@ -46,7 +43,6 @@
             min-height: 100vh;
         }
 
-        /* Barra de navegación lateral fija a la izquierda */
         aside {
             width: 300px;
             background-color: var(--primary-dark);
@@ -89,7 +85,6 @@
             font-weight: 500;
         }
 
-        /* Botón de volver a la portada */
         aside nav ul li .btn-volver {
             background-color: #334155;
             color: #ffffff;
@@ -109,7 +104,6 @@
             border-color: var(--primary-vibrant);
         }
 
-        /* Enlaces activos e interactivos en azul vibrante */
         aside nav ul li a:hover, aside nav ul li a.active {
             background-color: var(--primary-vibrant);
             color: white;
@@ -117,14 +111,12 @@
             box-shadow: 0 4px 10px rgba(37, 99, 235, 0.15);
         }
 
-        /* Contenido de la Web */
         main {
             margin-left: 300px;
             padding: 40px;
             max-width: 1100px;
         }
 
-        /* Encabezado Alegre con tonos suaves en verde */
         header {
             margin-bottom: 35px;
             background: linear-gradient(135deg, var(--header-bg), #e6fcf0);
@@ -146,24 +138,6 @@
             color: #15803d;
             font-size: 1.05rem;
             font-weight: 500;
-        }
-
-        /* Cabecera ilustrada horizontal */
-        .cabecera-ilustrada {
-            width: 100%;
-            height: auto;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-            border: 1px solid #e2e8f0;
-            margin-bottom: 35px;
-            background-color: #f1f5f9;
-        }
-
-        .cabecera-ilustrada img {
-            width: 100%;
-            height: auto;
-            display: block;
         }
 
         section {
@@ -196,7 +170,53 @@
             text-align: justify;
         }
 
-        /* Cajas de colores */
+        /* CONTENEDOR DE IMAGEN (ANTI-SOLAPAMIENTO) */
+        .tarjeta-imagen {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 20px 0 30px 0;
+            text-align: center;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            display: block;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tarjeta-imagen img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            margin-bottom: 12px;
+            display: inline-block;
+        }
+
+        .tarjeta-imagen .caption {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            font-style: italic;
+            margin: 0;
+            line-height: 1.4;
+            display: block;
+        }
+
+        /* FILAS DE IMÁGENES COMPATIBLES (ADAPTATIVAS) */
+        .fila-imagenes {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0 30px 0;
+        }
+
+        .fila-imagenes .tarjeta-imagen {
+            flex: 1;
+            min-width: 250px;
+            margin: 0;
+        }
+
         .caja-colores {
             padding: 20px;
             border-radius: 8px;
@@ -212,10 +232,10 @@
             gap: 8px;
         }
 
-        .glosario {
-            background-color: var(--bg-glosario);
-            border-left: 5px solid var(--border-glosario);
-            color: #0369a1;
+        .factores {
+            background-color: var(--bg-factores);
+            border-left: 5px solid var(--border-factores);
+            color: #047857;
         }
 
         .investigacion {
@@ -227,100 +247,10 @@
         .critica {
             background-color: var(--bg-critica);
             border-left: 5px solid var(--border-critica);
-            color: #c2410c;
+            color: #b91c1c;
         }
 
-        .factores {
-            background-color: var(--bg-factores);
-            border-left: 5px solid var(--border-factores);
-            color: #047857;
-        }
-
-        /* --- ESTILADO DE TARJETA DE IMAGEN INTEGRADA (ANTI-SOLAPAMIENTO) --- */
-        .tarjeta-imagen {
-            background-color: #f8fafc;
-            border: 1px solid #e2e8f0;
-            border-radius: 8px;
-            padding: 16px;
-            margin: 20px 0 30px 0; /* Margen inferior amplio para asegurar el flujo de bloque */
-            text-align: center;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-            display: block; /* Evita que flote u oculte elementos de texto */
-            position: relative;
-            overflow: hidden;
-        }
-
-        .tarjeta-imagen img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 6px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-            margin-bottom: 12px; /* Espacio fijo entre la imagen y el texto inferior */
-            display: inline-block;
-        }
-
-        .tarjeta-imagen .caption {
-            font-size: 0.95rem;
-            color: var(--text-muted);
-            font-style: italic;
-            margin: 0;
-            line-height: 1.4;
-            display: block;
-        }
-
-        /* Fila de imágenes homogénea (mismo tamaño para todas) */
-        .fila-imagenes {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin: 25px 0;
-        }
-
-        .fila-imagenes .tarjeta-imagen {
-            flex: 1 1 280px;
-            max-width: 340px;
-            margin: 0;
-        }
-
-        .fila-imagenes .tarjeta-imagen img {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-        }
-
-
-        /* Desplegables de Lectura Estructurada */
-        details {
-            background-color: #f8fafc;
-            border: 1px solid #e2e8f0;
-            border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 14px;
-            transition: border-color 0.2s;
-        }
-
-        details[open] {
-            background-color: white;
-            border-color: var(--primary-vibrant);
-        }
-
-        summary {
-            font-weight: 600;
-            font-size: 1.1rem;
-            color: var(--primary-dark);
-            cursor: pointer;
-            outline: none;
-            user-select: none;
-        }
-
-        details .contenido-desplegado {
-            margin-top: 12px;
-            padding-top: 12px;
-            border-top: 1px dashed #e2e8f0;
-        }
-
-        ul, ol {
+        ul {
             padding-left: 25px;
             margin-bottom: 15px;
             font-size: 1.05rem;
@@ -331,23 +261,23 @@
             color: #334155;
         }
 
-        /* --- ESTILOS PARA POPUPS INTERACTIVOS (MODALS) --- */
+        /* POPUPS INTERACTIVOS (MODALS) */
         .modal {
-            display: none; /* Oculto por defecto */
+            display: none;
             position: fixed;
-            z-index: 2000; /* Por encima de la barra lateral */
+            z-index: 2000;
             left: 0;
             top: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(15, 23, 42, 0.6); /* Fondo oscuro */
-            backdrop-filter: blur(4px); /* Desenfoque estético */
+            background-color: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(4px);
             align-items: center;
             justify-content: center;
         }
 
         .modal.show {
-            display: flex; /* Se muestra mediante JS */
+            display: flex;
         }
 
         .modal-content {
@@ -376,14 +306,12 @@
             font-size: 1.5rem;
             cursor: pointer;
             color: var(--text-muted);
-            transition: color 0.2s;
         }
 
         .modal-close:hover {
             color: var(--border-critica);
         }
 
-        /* Botones de acción didáctica */
         .btn-interactivo {
             display: inline-flex;
             align-items: center;
@@ -439,14 +367,11 @@
             padding: 15px;
             border-radius: 6px;
             border: 1px solid #e2e8f0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             white-space: pre-wrap;
             margin-top: 10px;
-            line-height: 1.5;
             text-align: justify;
         }
 
-        /* Responsive */
         @media (max-width: 900px) {
             aside {
                 width: 100%;
@@ -465,24 +390,30 @@
 </head>
 <body>
 
-    <!-- Navegación Lateral de Bloque (Tema 3 Activo) -->
+    <!-- Navegación Lateral -->
     <aside>
-        <h1>⚖️ Bloque I: Estado Liberal</h1>
+        <h1>🏛️ Bloque I: Estado Liberal</h1>
         <nav>
             <ul>
                 <li><a href="index.html" class="btn-volver">🏠 Volver a Portada</a></li>
                 
-                <!-- Navegación Interna del Tema Actual -->
-                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 10px 14px 5px 14px; font-weight: bold; border-bottom: 1px solid #334155; margin-bottom: 8px;">📍 Secciones del Tema 3</li>
-                <li><a href="#tema1" class="active">1. La Revolución del 68</a></li>
-                <li><a href="#tema2">2. Gobierno Provisional</a></li>
-                <li><a href="#tema3">3. El Reinado de Amadeo I</a></li>
-                <li><a href="#tema4">4. La Primera República</a></li>
-                
-                <!-- Saltos entre Temas del Bloque I -->
-                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 20px 14px 5px 14px; font-weight: bold; border-bottom: 1px solid #334155; margin-bottom: 8px;">📖 Temas del Bloque</li>
-                <li><a href="bloque1_tema2.html" style="color: #cbd5e1; margin-bottom: 8px; display: block; padding: 10px 14px; border-radius: 6px; text-decoration: none;">⬅️ Volver al Tema 2</a></li>
-                <li><a href="index.html" style="color: #cbd5e1; margin-bottom: 8px; display: block; padding: 10px 14px; border-radius: 6px; text-decoration: none;">🏠 Ir a Portada Principal</a></li>
+                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 10px 14px 5px 14px; font-weight: bold; border-bottom: 1px solid #334155; margin-bottom: 8px;">📍 Secciones</li>
+                <li><a href="#gloriosa" class="active">1. La Revolución de 1868</a></li>
+                <li><a href="#republica">2. La Primera República</a></li>
+                <li><a href="#sexenio-canarias">3. El Sexenio en Canarias</a></li>
+
+                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 20px 14px 5px 14px; font-weight: bold; border-top: 1px solid #475569; margin-top: 25px; border-bottom: 1px solid #334155; margin-bottom: 8px;">📖 Temas del Bloque I</li>
+                <li><a href="bloque1_tema1.html">Tema 1: Cortes de Cádiz</a></li>
+                <li><a href="bloque1_tema2.html">Tema 2: Estado Liberal</a></li>
+                <li><a href="bloque1_tema3.html" style="font-weight: bold; color: var(--primary-vibrant);">Tema 3: El Sexenio</a></li>
+
+                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 15px 14px 5px 14px; font-weight: bold; border-top: 1px solid #475569; margin-top: 15px; border-bottom: 1px solid #334155; margin-bottom: 8px;">📚 Otros Bloques</li>
+                <li><a href="tema0.html">Tema 0: Introducción</a></li>
+                <li><a href="bloque2_tema1.html">Bloque II: La Restauración</a></li>
+                <li><a href="bloque3_tema1.html">Bloque III: Alfonso XIII y Dictadura</a></li>
+                <li><a href="bloque4_tema1.html">Bloque IV: Segunda República y Guerra</a></li>
+                <li><a href="bloque5_tema1.html">Bloque V: Franquismo</a></li>
+                <li><a href="bloque6_tema1.html">Bloque VI: Transición y Democracia</a></li>
             </ul>
         </nav>
     </aside>
@@ -491,315 +422,70 @@
     <main>
         <header>
             <h2>Tema 3: El Sexenio Revolucionario (1868 - 1874)</h2>
-            <p>El primer ensayo de democracia real en España: del destronamiento de Isabel II a la Primera República y el final de la experiencia parlamentaria.</p>
+            <p>La revolución de 1868, el diseño de la Constitución de 1869, la monarquía parlamentaria de Amadeo I, la proclamación de la Primera República, el cantonalismo y el despertar del obrerismo en Canarias.</p>
         </header>
 
-        <!-- Cabecera ilustrada horizontal -->
-        <div class="tarjeta-imagen" style="margin-top: 0;">
-            <img src="img/eje-cronologico-sexenio.png" alt="Eje Cronológico del Sexenio Revolucionario">
-            <span class="caption">Eje cronológico que delimita las etapas fundamentales del Sexenio Democrático (1868 - 1874)</span>
-        </div>
-
         <!-- SECCIÓN 1 -->
-        <section id="tema1">
-            <h2>1. La Revolución de 1868 y la Caída de Isabel II</h2>
-            <p>El periodo conocido como el <strong>Sexenio Democrático</strong> comenzó con el estallido en septiembre de 1868 de una revuelta militar y popular denominada <strong>«La Gloriosa»</strong>. Esta sublevación desmanteló por completo el régimen moderado isabelino y obligó a la soberana a exiliarse en Francia.</p>
+        <section id="gloriosa">
+            <h2>1. La Revolución de 1868 y la Constitución de 1869</h2>
+            <p>El final del reinado de Isabel II estuvo marcado por una profunda crisis política, social y financiera (crisis de subsistencias y quiebras bursátiles). La oposición unificó sus fuerzas en el exilio firmando en Bélgica el <strong>Pacto de Ostende (1866)</strong>, por el que progresistas y demócratas acordaron derrocar de forma insurreccional a la monarquía isabelina y convocar Cortes elegidas por sufragio universal masculino.</p>
+            
+            <p>En septiembre de 1868 triunfó el pronunciamiento militar de Cádiz, conocido como <strong>"La Gloriosa"</strong>, de la mano del almirante Topete y los generales <em>Serrano</em> y <em>Prim</em>, bajo el lema revolucionario "¡España con honra!". Tras vencer a las tropas isabelinas en la batalla de Alcolea, la reina huyó al exilio, constituyéndose un Gobierno Provisional que impulsó la modernización laica del país.</p>
 
-            <div class="tarjeta-imagen">
-                <img src="img/la-gloriosa.png" alt="Alegoría de La Gloriosa y la marcha de la reina">
-                <span class="caption">Imagen 1: Representación alegórica de La Gloriosa y el exilio de la reina Isabel II</span>
-            </div>
-
-            <h3>A. Las Causas del Estallido Revolucionario</h3>
-            <p>El colapso del sistema no fue un hecho aislado, sino que coincidió con una confluencia de factores críticos acumulados en los años previos:</p>
+            <p>El mayor logro del Sexenio fue la promulgación de la progresista <strong>Constitución de 1869</strong>, considerada como la primera constitución plenamente democrática de España, cuyas bases fundamentales incluían:</p>
             <ul>
-                <li><strong>La profunda crisis económica (1866):</strong> Se manifestó de forma trágica a nivel financiero (por la escasa rentabilidad de la burbuja especulativa del ferrocarril), industrial (con el encarecimiento del algodón por la Guerra de Secesión norteamericana que paralizó el textil catalán) y de subsistencias (por malas cosechas de trigo que causaron un encarecimiento del pan del 67% y hambruna).</li>
-                <li><strong>La parálisis del modelo político moderado:</strong> Las prácticas corruptas y dictatoriales de los últimos ministros de Isabel II (Narváez y González Bravo) dejaron fuera del juego a los progresistas y demócratas, quienes firmaron en el verano de 1866 el <em>Pacto de Ostende* en Bélgica para derrocar el trono borbónico.</li>
-                <li><strong>La impopularidad de la reina:</strong> La influencia de la camarilla palaciega (sor Patrocinio, la «monja de las llagas», y el confesor padre Claret) terminó por deslegitimar por completo la institución real.</li>
+                <li><strong>Soberanía nacional y sufragio universal:</strong> Proclamación del derecho de voto para todos los varones de ambos hemisferios mayores de 25 años.</li>
+                <li><strong>Declaración de derechos:</strong> Libertad de cultos y tolerancia de cultos, inviolabilidad del domicilio y del correo, libertades de prensa, reunión y asociación de trabajadores.</li>
+                <li><strong>Monarquía parlamentaria de consenso:</strong> El rey ostentaba el poder ejecutivo, pero supeditado a la preeminencia de las Cortes.</li>
             </ul>
-
-            <!-- BOTÓN INTERACTIVO: PACTO DE OSTENDE -->
-            <div style="margin: 15px 0;">
-                <button class="btn-interactivo btn-texto" onclick="openPopup('pop-ostende')">📜 Documento: El Pacto de Ostende (Bruselas, 1867)</button>
-            </div>
-
-            <!-- VÍDEO COMPLEMENTARIO: LA REVOLUCIÓN DE 1868 -->
-            <div style="margin: 15px 0; text-align: center;">
-                <a href="https://www.youtube.com/watch?v=lM0ZWqbvPH0" target="_blank" class="btn-interactivo btn-video">🎬 Vídeo 1: Ver explicación animada sobre la Revolución de septiembre de 1868 (ArteHistoria) ➡️</a>
-            </div>
-
-            <h3>B. Desarrollo y Triunfo del Pronunciamiento</h3>
-            <p>El 19 de septiembre de 1868, el almirante unionista <strong>Juan Bautista Topete</strong> sublevó la escuadra anclada en Cádiz. Al movimiento se unieron con rapidez el general unionista <strong>Francisco Serrano</strong> y el progresista <strong>Juan Prim</strong>, quien lanzó a los gaditanos la célebre proclama de «¡Viva España con honra!».</p>
-
-            <div class="tarjeta-imagen">
-                <img src="img/mapa-revolucion-1868.png" alt="Mapa de la Revolución del 68">
-                <span class="caption">Imagen 2: Distribución de focos sublevados y ejércitos de la Revolución de 1868</span>
-            </div>
-
-            <!-- BOTÓN INTERACTIVO: MANIFIESTO VIVA ESPAÑA CON HONRA -->
-            <div style="margin: 15px 0;">
-                <button class="btn-interactivo btn-texto" onclick="openPopup('pop-honra')">📜 Documento: Manifiesto de la Junta Revolucionaria de Cádiz</button>
-            </div>
-
-            <p>La victoria definitiva se consagró tras la derrota de las tropas realistas isabelinas en la <strong>batalla del Puente de Alcolea</strong> (Córdoba) a finales de septiembre, precipitando la salida de Isabel II hacia su exilio en París de forma definitiva.</p>
         </section>
 
         <!-- SECCIÓN 2 -->
-        <section id="tema2">
-            <h2>2. El Gobierno Provisional y la Constitución de 1869</h2>
-            <p>Una vez constituido el nuevo poder en Madrid, se formó un <strong>Gobierno Provisional</strong> presidido por el general Serrano (junto a Prim en la cartera de Guerra y Sagasta en la de Gobernación) encargado de encauzar las aspiraciones revolucionarias y organizar los nuevos comicios por sufragio universal.</p>
+        <section id="republica">
+            <h2>2. La Monarquía de Amadeo I y la Primera República Española</h2>
+            <p>La vacante en el trono obligó al general Prim a buscar un candidato regio que jurase la Constitución de 1869 de entre las dinastías democráticas europeas, eligiendo al príncipe italiano <em>Amadeo de Saboya</em>. Su breve reinado como <em>Amadeo I</em> (1871-1873) se inició de forma funesta con el atentado y muerte de su principal valedor, el general Juan Prim.</p>
+            
+            <p>La debilidad de Amadeo I, desbordado por el de las Guerras Carlistas (1872), la guerra de Cuba y el constante boicot de los militares monárquicos y de las Juntas republicanas, forzó su abdicación en febrero de 1873. Ante la parálisis de las instituciones, las Cortes Generales acordaron la proclamación de la <strong>Primera República Española (1873-1874)</strong>.</p>
 
-            <div class="tarjeta-imagen">
-                <img src="img/gobierno-provisional-1869.png" alt="Ministros del Gobierno Provisional">
-                <span class="caption">Imagen 3: Los ministros integrantes del Gobierno Provisional de 1869 (fotografía de J. Laurent)</span>
-            </div>
-
-            <h3>A. Las Reformas Económicas: Nace la Peseta</h3>
-            <p>Para sanear el caótico estado de la Hacienda pública y contentar los intereses comerciales de la burguesía que había apoyado el alzamiento, el gobierno impulsó una serie de innovadoras medidas liberales:</p>
-            <ul>
-                <li>Se adoptó por decreto la <strong>Peseta (octubre de 1868)</strong> como la unidad monetaria nacional única, suprimiendo los antiguos reales.</li>
-                <li>Se redactó el <em>Arancel Figuerola (1869)</em> para rebajar los aranceles y abrir el mercado español al librecambismo comercial internacional.</li>
-                <li>Se promulgó la <em>Ley de Minas de 1871</em> para subastar yacimientos a empresas extranjeras y conseguir ingresos inmediatos con los que saldar la deuda.</li>
-            </ul>
-
-            <div class="tarjeta-imagen">
-                <img src="img/primera-peseta.png" alt="Moneda de una peseta de 1869">
-                <span class="caption">Imagen 4: Anverso y reverso de la primera peseta acuñada bajo el Gobierno Provisional de 1869</span>
-            </div>
-
-            <h3>B. La Constitución Democrática de 1869</h3>
-            <p>Las elecciones de 1869 a Cortes Constituyentes por sufragio universal masculino (más de 4 millones de electores en un hito histórico) otorgaron la mayoría a los partidos dinásticos liberales, quienes redactaron la <strong>Constitución de 1869</strong>, consagrada como el texto más liberal y progresista del siglo XIX español.</p>
-
-            <div class="tarjeta-imagen">
-                <img src="img/promulgacion-constitucion-1869.png" alt="Frontispicio Constitución de 1869">
-                <span class="caption">Imagen 5: Frontispicio oficial impreso para la promulgación de la Constitución de 1869</span>
-            </div>
-
-            <!-- BOTÓN INTERACTIVO: EXTRACTOS CONSTITUCIÓN 1869 -->
-            <div style="margin: 15px 0; text-align: center;">
-                <button class="btn-interactivo btn-texto" onclick="openPopup('pop-const1869')">📜 Documento: Extractos del articulado democrático de 1869</button>
-            </div>
-
-            <div class="caja-colores factores">
-                <h4>🏛️ Características Básicas de la Carta Magna del 69</h4>
-                <ul>
-                    <li><strong>Soberanía Nacional de Base Popular:</strong> La legitimidad reside exclusivamente en el pueblo español ("del cual emanan todos los poderes") y no en el monarca.</li>
-                    <li><strong>Derechos Individuales Plenos:</strong> Se regulan con rango constitucional las libertades de opinión, imprenta, educación, domicilio, correo y por primera vez en la historia, el derecho a la libre asociación y reunión (germen del sindicalismo).</li>
-                    <li><strong>Libertad de Cultos:</strong> Se rompe el monopolio católico permitiendo el libre ejercicio de otras religiones, aunque el Estado mantiene el compromiso económico de sufragar el clero nacional.</li>
-                    <li><strong>Monarquía Parlamentaria:</strong> El rey se limita a la jefatura simbólica del Estado ("el rey reina pero no gobierna") y el poder ejecutivo recae enteramente en el Gobierno.</li>
-                </ul>
-            </div>
+            <p>La nueva andadura republicana nació fuertemente dividida entre los partidarios de una República Unitaria y los de una República Federal (liderados por <em>Pi y Margall</em>). La andadura de la Primera República se truncó por el de la revolución de los cantones (el <strong>cantonalismo</strong> en Levante y Andalucía, donde múltiples municipios y provincias se proclamaban cantones soberanos e independientes contra el Gobierno), el auge carlista y la inestabilidad. Un pronunciamiento militar en Sagunto liderado por el general Martínez Campos restauró el orden e inauguró la Restauración en diciembre de 1874.</p>
         </section>
 
         <!-- SECCIÓN 3 -->
-        <section id="tema3">
-            <h2>3. La Monarquía Democrática de Amadeo I de Saboya (1871-1873)</h2>
-            <p>Como la Constitución establecía un régimen de monarquía democrática pero los Borbones estaban excluidos por ley, el general Serrano asumió una Regencia nacional mientras el general <em>Juan Prim</em> recorría las cancillerías europeas para buscar un rey con credenciales liberales.</p>
+        <section id="sexenio-canarias">
+            <h2>3. El Sexenio Revolucionario en Canarias: Republicanismo y Obrerismo</h2>
+            <p>La revolución democrática de 1868 abrió un periodo de extraordinario dinamismo de las corrientes políticas alternativas en el archipiélago canario. La fisionomía de las ciudades insulares se vio sacudida por la laicización escolar, las libertades individuales y la movilización popular.</p>
 
-            <div class="tarjeta-imagen">
-                <img src="img/se-colocan-reyes.png" alt="Caricatura Se colocan reyes de La Flaca">
-                <span class="caption">Imagen 6: Caricatura satírica de la revista «La Flaca» ironizando sobre la búsqueda de un rey en Europa</span>
-            </div>
-
-            <p>El elegido de Prim fue el joven príncipe italiano <em>Amadeo de Saboya</em> (hijo del rey Víctor Manuel II de Italia, artífice de la unificación peninsular y adalid de la democracia constitucional en Europa). Las Cortes aprobaron su designación en noviembre de 1870 por amplia mayoría.</p>
-
-            <!-- VÍDEO COMPLEMENTARIO: EL REINADO DE AMADEO I -->
-            <div style="margin: 15px 0; text-align: center;">
-                <a href="https://youtu.be/uAEm7MBx29s" target="_blank" class="btn-interactivo btn-video">🎬 Vídeo 2: Ver documental explicativo sobre el reinado de Amadeo de Saboya ➡️</a>
-            </div>
-
-            <h3>A. Un Trágico Comienzo: El Asesinato del General Prim</h3>
-            <p>El 30 de diciembre de 1870, justo el mismo día que Amadeo I ponía un pie en Cartagena, el general progresista <em>Juan Prim fue tiroteado y asesinado en la madrileña calle del Turco</em>. Sin la guía intelectual y la fuerza armada del prestigioso militar, Amadeo I se encontró huérfano de apoyos políticos y sociales nada más aterrizar en la capital.</p>
-
-            <div class="fila-imagenes">
-                <div class="tarjeta-imagen">
-                    <img src="img/amadeo-saboya.png" alt="Retrato de Amadeo I">
-                    <span class="caption">Imagen 7: Retrato oficial del rey Amadeo I de Saboya</span>
-                </div>
-                <div class="tarjeta-imagen">
-                    <img src="img/atentado-prim.png" alt="Tiroteo en la calle del Turco">
-                    <span class="caption">Imagen 8: Grabado pictórico del tiroteo a la carroza de Prim</span>
-                </div>
-                <div class="tarjeta-imagen">
-                    <img src="img/amadeo-tumba-prim.png" alt="Amadeo ante el cadáver de Prim">
-                    <span class="caption">Imagen 9: Amadeo I velando el cuerpo momificado de Prim en Madrid</span>
-                </div>
-            </div>
-
-            <!-- BOTÓN INTERACTIVO: EL MISTERIO DE LA MUERTE DE PRIM -->
-            <div style="margin: 15px 0; text-align: center;">
-                <button class="btn-interactivo btn-anecdota" onclick="openPopup('pop-prim')">🕵️‍♂️ Curiosidad: El Misterioso Informe Forense del Asesinato de Prim</button>
-            </div>
-
-            <h3>B. Un Reinado en Constante Oposición</h3>
-            <p>La inestabilidad del reinado de Amadeo I vino de la mano de un frente de rechazo total de todos los sectores de la vida pública:</p>
+            <p>El <strong>republicanismo</strong> se consolidó en Canarias como un activo fenómeno urbano con una enorme base de masas entre las clases populares, obreras y la pequeña burguesía [983]. Sus proclamas y protestas se dirigían de forma vehemente contra:</p>
             <ul>
-                <li><strong>La Iglesia Católica:</strong> Se opuso al rey porque la coalición liberal de Prim había desamortizado bienes y obligaba a los sacerdotes a jurar obediencia a la Constitución del 69.</li>
-                <li><strong>La Gran Burguesía:</strong> Le retiró el favor a raíz de la tímida regulación del trabajo infantil y los proyectos para abolir la esclavitud en Cuba y Puerto Rico.</li>
-                <li><strong>Los Alfonsinos (Cánovas del Castillo):</strong> Empezaron a organizar un movimiento pacífico y terrateniente a favor de Alfonso, el hijo de Isabel II, captando apoyos entre los moderados del Congreso.</li>
-                <li><strong>La insurrección militar carlista (III Guerra Carlista, 1872-1876):</strong> Liderados por Carlos VII, revivieron el conflicto foral controlando amplios valles rurales en el norte.</li>
+                <li>La abolición de las injustas <strong>quintas de reclutamiento militar</strong>, que eximían a los ricos del servicio militar a cambio de un pago al Estado [983].</li>
+                <li>La supresión de los impopulares <strong>impuestos indirectos de consumos</strong>, tributos indirectos que encarecían el pan y los productos básicos de primera necesidad [983].</li>
+                <li>La abolición definitiva de la Corona y la monarquía tradicional [983].</li>
             </ul>
 
-            <h3>C. El Problema Colonial: La Guerra de los Diez Años en Cuba (1868-1878)</h3>
-            <p>Iniciada tras el <em>Grito de Yara</em> en octubre de 1868 por el criollo <em>Carlos Manuel de Céspedes</em>, representó el primer enfrentamiento armado directo de liberación nacional cubano contra las fuerzas realistas españolas. La burguesía y los terratenientes locales impidieron reformas como la abolición de la esclavitud para no ver devaluada su propiedad.</p>
-
-            <div class="fila-imagenes">
-                <div class="tarjeta-imagen">
-                    <img src="img/carlos-manuel-cespedes.png" alt="Retrato Carlos Manuel de Céspedes">
-                    <span class="caption">Imagen 10: Retrato oficial de Carlos Manuel de Céspedes</span>
-                </div>
-                <div class="tarjeta-imagen">
-                    <img src="img/voluntarios-cuba.png" alt="Embarque de los voluntarios para Cuba">
-                    <span class="caption">Imagen 11: Grabado del embarque de voluntarios civiles que partían a Cuba en el puerto de Cádiz</span>
-                </div>
+            <div class="caja-colores factores">
+                <h4>🇨🇦 Nicolás Estévanez y el Ensayo Cantonal Canario (1873)</h4>
+                <p>Durante la Primera República, sobresalió con fuerza la figura del tinerfeño <em>Nicolás Estévanez y Murphy</em>, un destacado político e intelectual republicano federal progresista que llegó a ser nombrado <strong>Ministro de la Gobernación</strong> del Gobierno central de la República en Madrid [983, 984].</p>
+                <p>Para encauzar y solucionar democráticamente el pleito insular provocado por la provincia única de 1833, Estévanez propuso de forma pionera la división y reorganización federal de Canarias mediante la creación de <strong>dos cantones federales soberanos</strong> (el Cantón de las islas orientales y el Cantón de las islas occidentales) que dirimirían de forma autónoma sus propios asuntos y se coordinarían de igual a igual, sentando las bases del federalismo y la descentralización regional canaria [984].</p>
+                <p>Asimismo, cabe resaltar que bajo el clima de libertades de la Constitución de 1869, comenzaron a fundarse en Las Palmas y Santa Cruz las primeras <strong>sociedades de socorros mutuos</strong> y asociaciones obreras urbanas de trabajadores tipógrafos, panaderos y portuarios, marcando el nacimiento de la concienciación y autoorganización de la clase obrera en las islas [984].</p>
             </div>
 
-            <p>Harto de las intrigas, las guerras en el norte y la insurrección en las Antillas, Amadeo de Saboya presentó su irrevocable renuncia a la corona el 11 de febrero de 1873.</p>
-
-            <!-- BOTÓN INTERACTIVO: RENUNCIA DE AMADEO -->
-            <div style="margin: 15px 0;">
-                <button class="btn-interactivo btn-texto" onclick="openPopup('pop-renuncia')">📜 Documento: La Carta de Renuncia al Trono de Amadeo I (1873)</button>
-            </div>
-        </section>
-
-        <!-- SECCIÓN 4 -->
-        <section id="tema4">
-            <h2>4. La Primera República Española (1873 - 1874)</h2>
-            <p>Ese mismo 11 de febrero de 1873, ante la abdicación regia y sin margen de maniobra para buscar una nueva monarquía extranjera, las Cortes se reunieron en sesión conjunta para proclamar la <em>Primera República Española</em>.</p>
-
-            <div class="tarjeta-imagen">
-                <img src="img/alegoria-republica.png" alt="Alegoría de La Niña Bonita de La Flaca">
-                <span class="caption">Imagen 12: Litografía satírica «La Niña Bonita» representando la llegada de la República</span>
-            </div>
-
-            <p>Se trató de un nacimiento político sumamente débil, puesto que la mayoría de los diputados que votaron el régimen eran monárquicos encubiertos que únicamente buscaban ganar tiempo para propiciar el retorno alfonsino. Esta falta de fe causó una galopante inestabilidad, sucediéndose <strong>cuatro presidentes en apenas once meses de mandato</strong> (Figueras, Pi y Margall, Salmerón y Castelar).</p>
-
-            <!-- VÍDEO COMPLEMENTARIO: LA PRIMERA REPÚBLICA -->
+            <!-- BOTÓN INTERACTIVO: NICOLAS ESTEVANEZ -->
             <div style="margin: 15px 0; text-align: center;">
-                <a href="https://www.youtube.com/watch?v=NiW6ymcrcfU" target="_blank" class="btn-interactivo btn-video">🎬 Vídeo 3: Ver documental didáctico sobre los acontecimientos de la Primera República ➡️</a>
-            </div>
-
-            <h3>A. Los Desafíos Armados y el Estallido Cantonalista</h3>
-            <p>La República Federal del segundo presidente, <em>Francisco Pi y Margall</em>, intentó establecer un Estado dividido en 17 estados autónomos descentralizados (entre ellos Cuba). No obstante, los republicanos radicales e internacionalistas anarquistas vieron lentas las reformas e impusieron la democracia directa proclamando <em>cantones independientes</em> (Cartagena, Sevilla, Málaga, Valencia, etc.).</p>
-
-            <div class="fila-imagenes">
-                <div class="tarjeta-imagen">
-                    <img src="img/republica-flaca.png" alt="Caricatura Pi i Margall">
-                    <span class="caption">Imagen 13: Pi i Margall desbordado por los niños de las autonomías locales</span>
-                </div>
-                <div class="tarjeta-imagen">
-                    <img src="img/mapa-conflictos-republica.png" alt="Mapa de conflictos">
-                    <span class="caption">Imagen 14: Focos territoriales del conflicto carlista y el estallido del cantonalismo</span>
-                </div>
-            </div>
-
-            <p>La sublevación cantonal dividió irreversiblemente a la República. Pi y Margall dimitió por negarse a reprimir por las armas el cantón de Cartagena. Su sucesor, <em>Nicolás Salmerón</em>, usó al ejército, encomendando la represión a los generales moderados <em>Pavía</em> y <em>Martínez Campos</em>. No obstante, Salmerón dimitió al poco tiempo al sentirse moralmente incapaz de firmar las sentencias de muerte de los cabecillas de las insurrecciones.</p>
-
-            <h3>B. El Giro Autoritario, el Golpe de Pavía y el Final del Sexenio</h3>
-            <p>El cuarto presidente, <em>Emilio Castelar</em>, suspendió las garantías constitucionales de inmediato y gobernó con el Congreso cerrado para reconducir el orden. El 3 de enero de 1874, ante la reapertura parlamentaria de las Cortes y la inminente moción de censura para colocar un gobierno federalista de izquierdas, el general <em>Manuel Pavía</em> entró con las fuerzas armadas y la Guardia Civil disolviendo las Cortes de un plumazo.</p>
-
-            <div class="fila-imagenes">
-                <div class="tarjeta-imagen">
-                    <img src="img/general-pavia.png" alt="General Manuel Pavía">
-                    <span class="caption">Imagen 15: Retrato fotográfico del general Manuel Pavía</span>
-                </div>
-                <div class="tarjeta-imagen">
-                    <img src="img/golpe-pavia.png" alt="Golpe de Pavía">
-                    <span class="caption">Imagen 16: El general Manuel Pavía disolviendo las Cortes republicanas</span>
-                </div>
-            </div>
-
-            <p>Se constituyó una dictadura militar provisional dirigida por el general <em>Serrano</em>, pero la desestabilización ya era absoluta. Antonio Cánovas del Castillo redactó el <em>Manifiesto de Sandhurst (diciembre de 1874)</em> en el que el príncipe Alfonso prometía un régimen dinástico constitucional reconciliador. El 29 de diciembre de 1874, un pronunciamiento militar directo del general <em>Arsenio Martínez Campos</em> en Sagunto proclamó rey de España a <em>Alfonso XII</em>, cerrando para siempre la tortuosa experiencia democrática del Sexenio.</p>
-
-            <div class="fila-imagenes">
-                <div class="tarjeta-imagen">
-                    <img src="img/canovas-del-castillo.png" alt="Antonio Cánovas del Castillo">
-                    <span class="caption">Imagen 18: Antonio Cánovas del Castillo, ideólogo de la Restauración</span>
-                </div>
-                <div class="tarjeta-imagen">
-                    <img src="img/general-martinez-campos.png" alt="Arsenio Martínez Campos">
-                    <span class="caption">Imagen 19: Retrato oficial del general Arsenio Martínez Campos</span>
-                </div>
+                <button class="btn-interactivo btn-texto" onclick="openPopup('pop-estevanez')">📜 Documento: Nicolás Estévanez y el Manifiesto Cantonal (1873)</button>
             </div>
         </section>
     </main>
 
-    <!-- VENTANAS EMERGENTES (POPUPS INTERACTIVOS / MODALS) -->
-
-    <!-- POPUP TEMA 3.1: PACTO DE OSTENDE -->
-    <div id="pop-ostende" class="modal">
+    <!-- POPUPS INTERACTIVOS -->
+    <div id="pop-estevanez" class="modal">
         <div class="modal-content">
-            <span class="modal-close" onclick="closePopup('pop-ostende')">&times;</span>
-            <h3 style="color: #047857; margin-top: 0;">📜 El Pacto de Ostende (Bruselas, 1867)</h3>
-            <p>El acuerdo de coalición clandestino destinado a derrocar el trono borbónico de Isabel II:</p>
-            <div class="texto-modal">"1º Que el objeto y bandera de la revolución en España es la caída de los Borbones en España.
-
-2º Que siendo para los demócratas un principio esencial de su dogma político el sufragio universal, y admitiendo los progresistas el derecho moderno constituyente del plebiscito, la base para la inteligencia de los partidos fuera que por un plebiscito (...) o por unas Cortes Constituyentes elegidas por sufragio universal, se decidiría la forma de gobierno que se habría de establecer en España (...) 
-
-Hasta que así se decidiera, había de ser absoluta la libertad de imprenta, y sin ninguna limitación del derecho de reunión, para que la opinión nacional pudiese ilustrarse y organizarse convenientemente (...)."</div>
+            <span class="modal-close" onclick="closePopup('pop-estevanez')">&times;</span>
+            <h3 style="color: #0369a1; margin-top: 0;">📜 Las Proclamas Cantonales de Nicolás Estévanez (1873)</h3>
+            <p>El pensamiento de este ilustre e influyente político republicano canario en pro de una descentralización cantonal federal:</p>
+            <div class="texto-modal">"Españoles de Canarias: la República Federal que hoy nace en las Cortes no es una mera fórmula teórica centralizadora, sino la de la soberanía civil a sus legítimos poseedores: los pueblos de todas las regiones de nuestra Patria. En las islas, el pleito insular por la capitalidad única de 1833 ha desgarrado la convivencia social de nuestros cabildos y ciudades.\n\nLa solución no radica en mantener la hegemonía forzada de Santa Cruz sobre Las Palmas, ni viceversa, sino en la abolición definitiva del centralismo provincial mediante la proclamación de dos Cantones Federales soberanos e independientes en su administración interna, pero indisolublemente unidos en un pacto común para la defensa y grandeza del Archipiélago."</div>
         </div>
     </div>
 
-    <!-- POPUP TEMA 3.1: VIVA ESPAÑA CON HONRA -->
-    <div id="pop-honra" class="modal">
-        <div class="modal-content">
-            <span class="modal-close" onclick="closePopup('pop-honra')">&times;</span>
-            <h3 style="color: #047857; margin-top: 0;">📜 Manifiesto «Viva España con Honra» (19 de septiembre de 1868)</h3>
-            <p>Extracto literal de la proclama lanzada en la bahía de Cádiz por los generales conspiradores:</p>
-            <div class="texto-modal">"Españoles: La ciudad de Cádiz, puesta en armas con toda su provincia, con la armada que yace en su puerto y todo el departamento marítimo de la Península, declara solemnemente que niega su obediencia al gobierno que reside en Madrid, segura de que es leal intérprete de todos los ciudadanos...
-
-Queremos que un Gobierno Provisional de la revolución, y después de él, unas Cortes Constituyentes elegidas por sufragio universal, asuman la dirección de la Nación y definan su camino soberano, con plena libertad de prensa y de asociación, sin cortapisas de tiranos ni camarillas que deshonren nuestro suelo...
-
-¡Viva la Libertad! ¡Viva la Soberanía Nacional! ¡Viva España con honra!"</div>
-        </div>
-    </div>
-
-    <!-- POPUP TEMA 3.2: CONSTITUCIÓN DE 1869 -->
-    <div id="pop-const1869" class="modal">
-        <div class="modal-content">
-            <span class="modal-close" onclick="closePopup('pop-const1869')">&times;</span>
-            <h3 style="color: #047857; margin-top: 0;">📜 Extractos de la Constitución de 1869</h3>
-            <p>Los principales hitos del articulado de carácter profundamente democrático y reformista:</p>
-            <div class="texto-modal">"- Art. 2º. Ningún español ni extranjero podrá ser detenido ni preso sino por causa de delito.
-- Art. 3º. Todo detenido será puesto en libertad o entregado a la autoridad judicial dentro de las 24 horas siguientes al acto de su detención.
-- Art. 21. La Nación se obliga a mantener el culto y los ministros de la religión católica. El ejercicio público o privado de cualquiera otro culto queda garantizado a todos los extranjeros residentes en España, sin más limitaciones que las reglas universales de la moral y del derecho. Si algunos españoles profesaren otra religión que la católica, es aplicable a los mismos todo lo dispuesto en el párrafo anterior.
-- Art. 32. La soberanía reside esencialmente en la nación, de la cual emanan todos los poderes.
-- Art. 33. La forma de Gobierno de la Nación española es la Monarquía."</div>
-        </div>
-    </div>
-
-    <!-- POPUP TEMA 3.3: EL ASESINATO DE PRIM -->
-    <div id="pop-prim" class="modal" style="border-left-color: var(--border-critica);">
-        <div class="modal-content" style="border-left-color: var(--border-critica);">
-            <span class="modal-close" onclick="closePopup('pop-prim')">&times;</span>
-            <h3 style="color: var(--border-critica); margin-top: 0;">🕵️‍♂️ El Misterioso Informe del Magnicidio del General Prim</h3>
-            <p>Análisis de las verdaderas causas físicas de la muerte del presidente en su domicilio:</p>
-            
-            <!-- POP-UP AUTOS-AUTOPLAY / IMAGE CORRESPONDING TO USER'S REQUEST -->
-            <div class="tarjeta-imagen" style="margin: 15px 0;">
-                <img src="img/causas-muerte-prim.png" alt="Causas muerte de Prim">
-                <span class="caption" style="color: var(--text-dark);">Infografía sobre las causas físicas y el análisis forense del cuerpo momificado de Juan Prim</span>
-            </div>
-
-            <div class="texto-modal">El 27 de diciembre de 1870, el coche de caballos de Juan Prim fue emboscado en la nevada calle del Turco de Madrid por varios asaltantes armados con trabucos. El general sobrevivió al asalto, pero recibió abundantes impactos de bala en el hombro y la mano izquierda. La versión oficial afirmó que falleció tres días después a causa de una septicemia derivada de la infección de las heridas.
-
-No obstante, la reciente autopsia forense realizada por la Universidad Camilo José Cela en el cuerpo momificado de Prim ha arrojado dudas espectaculares: su espalda no muestra cicatrices quirúrgicas que apoyen las curas oficiales, el dedo que supuestamente le amputó el cirujano fue en realidad arrancado por un impacto de bala directo y, sobre todo, se han detectado marcas de surcos profundos de correa en el cuello que indican que el militar progresista pudo morir por estrangulación en su propio lecho de convalecencia.</div>
-        </div>
-    </div>
-
-    <!-- POPUP TEMA 3.3: RENUNCIA DE AMADEO I -->
-    <div id="pop-renuncia" class="modal">
-        <div class="modal-content">
-            <span class="modal-close" onclick="closePopup('pop-renuncia')">&times;</span>
-            <h3 style="color: #047857; margin-top: 0;">📜 Carta de Renuncia al Trono de Amadeo de Saboya (1873)</h3>
-            <p>La proclama con la que el soberano devolvió la corona al Congreso ante la Asamblea Nacional:</p>
-            <div class="texto-modal">"Dos años largos hace que ciño la Corona de España y España vive en constante lucha, viendo cada día más lejana la era de paz y de ventura que tan ardientemente anhelo. Si fuesen extranjeros los enemigos de su dicha, entonces, al frente de estos soldados tan valientes como sufridos, sería el primero en combatirlos, pero todos los que, con la espada, con la pluma, con la palabra agravan y perpetran los males de la nación, son españoles.
-
-Todos invocan el dulce nombre de la patria, todos pelean y se agitan por su bien; y entre el fragor del combate, entre el confuso, atronador y contradictorio clamor de los partidos, entre tantas y tan opuestas manifestaciones de la opinión pública, es imposible atinar cuál es la verdadera y más imposible todavía hallar el remedio para tamaños males. Lo he buscado ávidamente dentro de la ley y no lo he hallado. Fuera de la ley no ha de buscarlo quien ha prometido observarla..."</div>
-        </div>
-    </div>
-
-    <!-- Script de Navegación Dinámica y Popups -->
     <script>
         const links = document.querySelectorAll('aside nav ul li a');
         const sections = document.querySelectorAll('main section');
@@ -814,14 +500,16 @@ Todos invocan el dulce nombre de la patria, todos pelean y se agitan por su bien
             });
 
             links.forEach(a => {
-                a.classList.remove('active');
-                if (a.getAttribute('href') === `#${current}`) {
-                    a.classList.add('active');
+                const href = a.getAttribute('href');
+                if (href && href.startsWith('#')) {
+                    a.classList.remove('active');
+                    if (href === `#${current}`) {
+                        a.classList.add('active');
+                    }
                 }
             });
         });
 
-        // Funciones para modals (popups)
         function openPopup(id) {
             document.getElementById(id).classList.add('show');
         }

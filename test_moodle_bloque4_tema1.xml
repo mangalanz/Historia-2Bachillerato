@@ -1,0 +1,1599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/top/Bloque IV/Tema 1</text>
+    </category>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T1_Q01_Elecciones_Municipales_1931</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué carácter adquirieron las elecciones municipales del 12 de abril de 1931 en España?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Las candidaturas republicano-socialistas convirtieron las elecciones en un plebiscito popular contra la monarquía de Alfonso XIII, triunfando rotundamente en 41 de las 50 capitales de provincia.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Un plebiscito nacional a favor o en contra de la permanencia de la monarquía borbónica.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Las candidaturas republicano-socialistas plantearon la consulta como un plebiscito contra la Corona, que resultó en un vuelco político en las capitales.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Una votación corporativa estamental para elegir a los senadores del reino.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Eran elecciones municipales universales masculinas, no estamentales.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Un referéndum de ratificación de la dictablanda del almirante Aznar.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Fue planteado como una consulta municipal con trascendencia constituyente nacional.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Un sufragio censitario restringido para la burguesía de las grandes ciudades.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Las elecciones municipales se rigieron por sufragio universal masculino.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T1_Q02_Proclamacion_Republica_Eibar</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué localidad proclamó la Segunda República en primer lugar la mañana del 14 de abril de 1931?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: La localidad guipuzcoana de Éibar fue la primera de toda España en izar la bandera tricolor y proclamar oficialmente el nuevo régimen la mañana del 14 de abril de 1931.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Éibar (Guipúzcoa).</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Éibar fue pionera al proclamar la Segunda República las primeras horas de la mañana.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Madrid.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La capital proclamó la República por la tarde, tras conocerse los sucesos en la periferia.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Barcelona.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Barcelona proclamó el nuevo régimen por la tarde, donde además Francesc Macià planteó la República Catalana.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Sevilla.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Sevilla proclamó la República a lo largo de la tarde, siguiendo el curso general.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T1_Q03_Manifiesto_Alfonso_XIII</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué justificación dio el rey Alfonso XIII en su manifiesto de exilio al apartarse de España en abril de 1931?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: En su manifiesto oficial, Alfonso XIII declaró que suspendía deliberadamente el ejercicio del poder real y se apartaba de España para evitar lanzar a sus compatriotas a una fratricida guerra civil.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Querer evitar lanzar a un compatriota contra otro en una fratricida guerra civil.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! El monarca justificó su exilio bajo la premisa de salvaguardar la paz civil ante el rechazo manifestado en las urnas.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Una renuncia solemne e irrevocable a todos sus derechos dinásticos históricos.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El rey especificó de forma explícita que no renunciaba a ninguno de sus derechos sucesorios.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Una orden directa de deponer las armas a las Juntas Militares de Defensa.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. No existían Juntas de Defensa activas y la orden fue la suspensión de sus prerrogativas.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La exigencia de celebrar elecciones parlamentarias por sufragio femenino inmediato.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El rey se limitó a apartarse de España dejando el destino de la nación en la soberanía popular.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T1_Q04_Constitucion_1931_Art1</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Cómo define el artículo primero de la Constitución de 1931 al Estado español?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: El artículo 1 de la Constitución de 1931 define a España de forma progresista como una 'República democrática de trabajadores de todas las clases que se organiza en régimen de Libertad y de Justicia'.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Una República democrática de trabajadores de todas las clases.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Es la definición textual plasmada por las Cortes Constituyentes en su primer artículo.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Un Estado social y democrático de Derecho bajo la Monarquía parlamentaria.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Esta definición corresponde a la Constitución actual de 1978.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Una confederación de regiones ibéricas unidas por el catolicismo de Estado.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El Estado de 1931 se configuró como integral y estrictamente laico.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Un Estado corporativo nacional-sindicalista bajo unidad de mando.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Esta definición responde al posterior Catecismo Patriótico del régimen franquista.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T1_Q05_Cortes_Unicamerales_1931</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué estructura parlamentaria adoptó la Constitución de la Segunda República?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: La Constitución de 1931 rompió con el bicameralismo tradicional e instauró unas Cortes unicamerales compuestas únicamente por el Congreso de los Diputados, elegidos por sufragio universal.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Un Parlamento unicameral constituido exclusivamente por el Congreso de los Diputados.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! El texto de 1931 suprimió el Senado para agilizar y democratizar el poder legislativo.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Un sistema bicameral de Congreso y Senado vitalicio.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El Senado fue abolido en esta Constitución.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Un régimen corporativo de tres tercios de representación estamental.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Esa estructura respondía a la posterior Democracia Orgánica de Franco.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Una Asamblea de Parlamentarios regionales sin poder nacional legislativo.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Las Cortes unicamerales poseían plena soberanía legislativa.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T1_Q06_Sufragio_Femenino_Debate</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué posturas enfrentó el debate parlamentario por el sufragio femenino en 1931?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Clara Campoamor defendió el voto femenino por justicia democrática e igualdad de derechos, mientras que Victoria Kent propuso retrasarlo provisionalmente por temor a que la influencia clerical hiciera que las mujeres votasen mayoritariamente a las derechas.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Clara Campoamor defendía la igualdad inmediata y Victoria Kent proponía aplazarlo por temor al voto conservador influido por la Iglesia.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Las dos únicas diputadas protagonizaron este histórico debate, aprobándose finalmente el voto el 1 de octubre de 1931.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Victoria Kent pedía el voto militar obligatorio y Clara Campoamor defendía restringirlo al estamento de las maestras de escuela.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Ambas debatían el derecho electoral general de la mujer, no del ejército o gremios.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La CEDA exigía el voto inmediato de la mujer y el PSOE en bloque abandonó el Congreso para evitar que se aprobara.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El voto fue apoyado por gran parte del PSOE y una minoría de derecha, mientras que Kent representaba la posición escéptica de izquierda.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Se acordó restringir el sufragio femenino exclusivamente a las elecciones municipales de 1933.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El sufragio aprobado fue universal y pleno para todas las consultas desde los 23 años.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T1_Q07_Reforma_Militar_Azaña</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Cuál fue la principal medida de Manuel Azaña para profesionalizar el Ejército en 1931?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Azaña promulgó la Ley de Retiro de la Oficialidad, permitiendo a los oficiales que no desearan prometer lealtad al régimen retirarse de forma voluntaria manteniendo su sueldo íntegro.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>La Ley de Retiro de la Oficialidad para reducir la macrocefalia y asegurar la lealtad al régimen.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Consiguió la reducción voluntaria de la oficialidad (entre 7.000 y 8.000 mandos) ofreciendo sueldo íntegro.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La disolución inmediata del cuerpo de la Guardia Civil sustituyéndola por el Somatén.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La Guardia Civil se mantuvo y se creó un nuevo cuerpo policial: la Guardia de Asalto.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La obligatoriedad de combatir en el Rif durante un plazo mínimo de cinco años.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Al contrario, las operaciones coloniales se racionalizaron y redujeron.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El nombramiento directo del general Francisco Franco como Jefe del Estado Mayor Central.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Franco vio cerrada su Academia Militar de Zaragoza y fue alejado, sintiendo profunda animadversión por Azaña.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T1_Q08_Academia_Militar_Zaragoza</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué repercusión tuvo el cierre de la Academia General Militar de Zaragoza en 1931?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: El cierre de la Academia de Zaragoza, vivero de los sectores más conservadores y golpistas del ejército dirigido por Francisco Franco, generó un enorme malestar y hostilidad militar hacia Manuel Azaña.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Generó una profunda hostilidad militar hacia Manuel Azaña por atentar contra los privilegios tradicionales del generalato.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! El cierre fue visto por los africanistas como una agresión directa al honor del Ejército.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Provocó la sublevación militar inmediata de las Juntas de Defensa andaluzas.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Las Juntas de Defensa ya no operaban y la rebelión de Sanjurjo no estalló hasta 1932.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Facilitó el regreso pacífico de los oficiales carlistas desterrados en Portugal.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Los carlistas tradicionales continuaron oponiéndose al nuevo régimen liberal.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Fue aplaudido de forma unánime por el general africanista Emilio Mola en sus circulares.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Mola criticó con dureza las reformas de Azaña, afirmando que intentaban 'triturar' al Ejército.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T1_Q09_Guardia_Asalto_1932</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué cuerpo policial creó la Segunda República en 1932 como fuerza de orden público?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: La Segunda República fundó el cuerpo de la Guardia de Asalto en 1932 para que sirviera como fuerza antidisturbios armada de probada disciplina y fidelidad a las instituciones republicanas.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>La Guardia de Asalto.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Fue creada para intervenir en conflictos urbanos sin recurrir a la represión desproporcionada del ejército.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El Somatén.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El Somatén era una milicia cívica rural conservadora disuelta por el régimen republicano.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La Brigada de Investigación Social.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Esta fue la posterior policía política represiva creada por el régimen franquista.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Los Voluntarios de la República.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. No existía este cuerpo regular, los civiles se organizaron de forma voluntaria en milicias populares.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T1_Q10_Ley_Reforma_Agraria_1932</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué fines perseguía la Ley de Reforma Agraria aprobada en septiembre de 1932?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Pretendía expropiar los grandes latifundios deficientemente cultivados del centro y sur peninsular para entregárselos a los jornaleros sin tierras, erradicando la miseria rural y dinamizando el mercado industrial.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Expropiar latifundios deficientemente explotados para asentar familias jornaleras y crear una clase media agraria.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! El fin del latifundismo buscaba justicia social y reactivar la economía mediante propietarios de clase media.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Confiscar de forma retroactiva las tierras de todos los pequeños campesinos arrendatarios.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Se expropiaba a grandes latifundistas y terratenientes, respetando las propiedades modestas.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Colectivizar de manera forzosa el 100% de la producción industrial y del trigo nacional.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Esto correspondía a las pretensiones anarquistas posteriores, no a la ley gubernamental.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Obligar a los ayuntamientos a privatizar los montes comunes de aprovechamiento municipal.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Esto corresponde a la desamortización de Madoz de 1855, no a la reforma de 1932.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T1_Q11_IRA_Fracaso_Agrario</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué factores determinaron la lentitud y los limitados resultados de la reforma agraria?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Los limitados asentamientos campesinos (unas 12.000 familias frente a las 60.000 previstas) se debieron a la complejidad técnica de la ley, la falta de presupuesto gubernamental y la resistencia de los propietarios.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>La complejidad técnica, la falta de presupuesto y la obstrucción de los propietarios de tierras.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Estos tres factores paralizaron la labor del Instituto de la Reforma Agraria (IRA).</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La entrega indiscriminada de las tierras directamente al clero secular andaluz.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La Iglesia se opuso a la República y se secularizaron sus bienes, no se le entregaron.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La invasión espontánea del archipiélago canario por barcos de la Legión Cóndor.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Esto es anacrónico, la Legión Cóndor actuó en la posterior Guerra Civil.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El rechazo absoluto de la CNT a permitir el cultivo del millo y de las papas.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Los campesinos querían tierras, su malestar radicaba en el ritmo exasperadamente lento de la ley.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T1_Q12_Reforma_Religiosa_Art26</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué determinaba la legislación laica de la República y el artículo 26 de la Constitución?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: El artículo 26 declaró la no confesionalidad del Estado, eliminó el presupuesto estatal para el clero, aprobó el matrimonio civil y el divorcio, disolvió la Compañía de Jesús y prohibió enseñar a las órdenes religiosas.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>La no confesionalidad del Estado, fin del presupuesto de clero, matrimonio civil, divorcio y disolución de los Jesuitas.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Estas radicales medidas laicistas provocaron un hondo rechazo en el bando católico conservador.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El establecimiento del catolicismo como religión oficial única del Estado español.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Esa fue la base del posterior nacionalcatolicismo del régimen de Franco.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La cesión obligatoria de todas las catedrales al Sindicato Español Universitario.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Esta afirmación carece de sentido histórico.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El destierro forzoso del cardenal Vidal y Barraquer de las diócesis de Cataluña.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Al contrario, el cardenal Vidal mantuvo un tono conciliador con las autoridades, a diferencia del combativo cardenal Segura.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T1_Q13_Ley_Congregaciones_1933</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué límite impuso la Ley de Congregaciones Religiosas de mayo de 1933?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: La Ley de Congregaciones limitó los bienes de las órdenes religiosas y les prohibió de forma expresa dedicarse al comercio, la industria y la educación en las aulas.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Prohibió a las órdenes religiosas dedicarse a la enseñanza escolar.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Buscaba terminar con la enorme influencia que las congregaciones católicas ejercían sobre el adoctrinamiento juvenil.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Ordenó la detención inmediata de todos los sacerdotes de las zonas rurales andaluzas.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El culto continuaba estando permitido de forma privada, no se detuvo al clero por su fe.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Privó del sufragio activo a los obispos católicos monárquicos.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Los clérigos conservaban sus derechos civiles individuales, incluido el voto.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Declaró la disolución total del sindicato obrero católico vasco.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Las agrupaciones sindicales gozaban de plena libertad de asociación.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T1_Q14_Estatuto_Nuria_1932</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Cómo se resolvió la cuestión territorial de Cataluña en 1932?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: El Estatuto de Nuria de Cataluña fue plebiscitado mayoritariamente por los catalanes y ratificado en las Cortes de Madrid en septiembre de 1932, creándose la Generalitat catalana.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Se aprobó el Estatuto de Autonomía de Nuria, instituyéndose el autogobierno de la Generalitat.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Fue el primer estatuto de autonomía exitoso de la historia de España, concediéndose competencias sociales y culturales.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Se disolvió de forma armada el Parlamento de Barcelona por el general Batet.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Esto ocurrió tras los sucesos de 1898 o en la revolución de 1934, no en 1932.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Se obligó a la Generalitat a integrarse en la federación de comunidades andaluzas.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Cataluña obtuvo su autogobierno propio unilateral.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Se retrasó la ratificación legislativa por el veto absoluto de los diputados del PSOE.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El PSOE y la conjunción apoyaron con fuerza el proyecto federal.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T1_Q15_Estatutos_Vasco_Gallego</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Por qué se demoraron los Estatutos de Autonomía del País Vasco y Galicia?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: El vasco (Estatuto de Estella) se retrasó por considerarse en exceso confesional y tradicionalista frente a la Constitución, aprobándose ya en plena guerra civil (octubre de 1936), mientras que el gallego vio cortada su ratificación por el golpe militar.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>El vasco se demoró por su carácter confesional y tradicionalista y el gallego vio interrumpido su trámite por el estallido de la guerra.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! El choque ideológico con la laica Constitución de 1931 frenó el estatuto del PNV en las Cortes.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Fueron vetados de inmediato por el presidente de la República Alcalá-Zamora.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El presidente no obstaculizó los procesos autonómicos constitucionales.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Ambos territorios renunciaron voluntariamente por el auge de las misiones pedagógicas.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Las misiones pedagógicas eran iniciativas culturales del Ministerio de Instrucción Pública, no políticas autonómicas.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Sanjurjo ordenó encarcelar a José Antonio Aguirre tras asaltar las Cortes en 1932.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Sanjurjo fracasó en su golpe de Sevilla y fue apresado, sin intervenir en el norte.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T1_Q16_Misiones_Pedagogicas</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿En qué consistió la labor cultural de las misiones pedagógicas de la Segunda República?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Las misiones pedagógicas llevaron de forma ambulante libros, bibliotecas, proyecciones de cine, música y obras de teatro (como La Barraca de Federico García Lorca) a las zonas rurales más atrasadas y humildes.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Campañas culturales ambulantes de intelectuales y estudiantes para llevar el arte, libros y teatro al campesinado.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Buscaba extender la cultura democrática y el conocimiento a los sectores marginados del campo.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Misiones evangelizadoras del clero católico rural financiadas por el Ministerio de la Guerra.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Las misiones eran estrictamente laicas e institucionales, no religiosas.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Escuelas de formación de comisarios de guerra para el PCE dirigidos por Dolores Ibárruri.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Su carácter era cultural y artístico, no político o revolucionario militante.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Comités locales para confiscar y quemar las novelas escritas por autores realistas.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Al contrario, fundaron más de 10.000 bibliotecas escolares ricas en literatura.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T1_Q17_Leyes_Laborales_Largo</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué reformas de contenido social impulsó Francisco Largo Caballero desde el Ministerio de Trabajo?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Largo Caballero reguló los convenios colectivos, implantó los jurados mixtos de arbitraje obrero-patronal obligatorio y estableció la jornada laboral máxima de 40 horas semanales en el campo.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Jurados mixtos obligatorios, regulación de convenios colectivos y jornada laboral de 40 horas en el campo.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Estas avanzadas leyes sociales y laborales contaron con la hostilidad feroz de la patronal y terratenientes.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La supresión absoluta del derecho de huelga y la disolución de la UGT y la CNT.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Estas fueron las medidas del posterior Fuero del Trabajo del régimen franquista.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La obligatoriedad de que los jornaleros se afiliaran al partido fascista de las JONS.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Las JONS eran un partido minoritario extremista de derecha opuesto al socialismo.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La nacionalización de las minas asturianas de hulla sin indemnizar a las familias burguesas.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Esto correspondía a pretensiones insurreccionales anarquistas, no a las leyes del Ministerio.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T1_Q18_Sanjurjada_1932</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué acontecimiento protagonizó el general José Sanjurjo en agosto de 1932 contra las reformas?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Sanjurjo encabezó un intento de golpe de Estado militar desde Sevilla (la Sanjurjada) opuesto a las reformas (ejército, Iglesia, Estatuto de Cataluña), el cual fracasó con facilidad por falta de apoyos.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Un intento de golpe de Estado militar fallido para frenar la andadura reformista del régimen.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Aunque triunfó fugazmente en Sevilla, fue fácilmente abortado, conmutándose la pena de muerte a Sanjurjo por prisión.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Un pronunciamiento republicano para restaurar la monarquía de Alfonso XIII en Jaca.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El pronunciamiento de Jaca fue prorrepublicano en 1930; Sanjurjo se rebelaba contra la República.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Un asalto anarquista al Congreso de los Diputados apoyado por el coronel Casado.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El coronel Casado actuó en 1939, al final de la Guerra Civil, no en 1932.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Un complot con la Legión Cóndor para invadir el protectorado español en Marruecos.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Esto es anacrónico, la Legión Cóndor intervino en la contienda de 1936.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T1_Q19_Casas_Viejas_1933</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué consecuencias políticas desataron los sucesos de Casas Viejas en enero de 1933?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: La trágica y cruenta represión de la insurrección anarquista en la aldea gaditana de Casas Viejas arruinó el prestigio moral de Manuel Azaña, rompiendo la coalición republicano-socialista y forzando elecciones.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Destruyeron el prestigio moral del Gobierno de Manuel Azaña, forzando su dimisión y convocatoria electoral.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! El escándalo desató duras críticas parlamentarias debilitando irreversiblemente la alianza gubernamental.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Provocaron la ilegalización de la CEDA y el destierro de Gil-Robles a Portugal.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La CEDA se fundó ese mismo año y resultó ganadora de las elecciones, no fue ilegalizada.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Implicaron la disolución de la Guardia de Asalto en todas las provincias rurales.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Las fuerzas policiales se mantuvieron activas e institucionales.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Forzaron la proclamación inmediata del Estatuto General del Estado Vasco.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El estatuto vasco continuó bloqueado y demorado en el Parlamento.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T1_Q20_Elecciones_1933_Resultado</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué giro político arrojaron las elecciones generales de noviembre de 1933?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Las elecciones generales de 1933 (las primeras en las que votaron las mujeres) dieron el triunfo al centro-derecha, con la CEDA de Gil-Robles (115 escaños) y el Partido Radical de Lerroux (102 escaños).</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>La victoria del centro-derecha, constituyéndose el Gobierno de Lerroux con el apoyo parlamentario de la CEDA.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Lerroux presidió el gabinete minoritario apoyado de forma externa por el partido mayoritario conservador.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La victoria arrolladora del Frente Popular de Manuel Azaña con mayoría absoluta socialista.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El Frente Popular no se formó y venció hasta febrero de 1936, las elecciones de 1933 fueron un duro revés para las izquierdas.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La abstención general de la mujer influida por los discursos de Clara Campoamor.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Las mujeres participaron masivamente; la izquierda las acusó de votar conservador por influencia clerical.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El hundimiento total de la monarquía de Alfonso XIII y la disolución de la Comunión Tradicionalista.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La monarquía ya había caído en 1931 y los carlistas se reorganizaron con fuerza en 1933.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T1_Q21_Politica_Rectificadora</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué medidas adoptó el Gobierno de Lerroux durante el bienio conservador (1933-1935)?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Se paralizó la reforma agraria devolviendo tierras a los Grandes de España, se redujo el presupuesto educativo, se indultó a los sublevados de 1932 y se aprobó financiación estatal para el clero católico rural.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>La paralización de las reformas agrarias y religiosas, reduciendo el presupuesto escolar e indultando a los golpistas.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Conocido como el bienio conservador, se rectificó gran parte de la obra legislativa anterior.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La expropiación acelerada de las tierras de la nobleza con el apoyo activo de la CNT.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La reforma del campo fue frenada de inmediato, irritando a las masas jornaleras.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La disolución forzosa de la Falange de José Antonio Primo de Rivera por el estraperlo.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La Falange operaba legalmente y el escándalo del estraperlo afectó al Partido Radical en 1935.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La proclamación federal de los Estatutos de Autonomía de Cataluña, Galicia y el País Vasco.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Los estatutos vasco y gallego siguieron paralizados y el estatuto catalán fue suspendido en 1934.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T1_Q22_Revolucion_Octubre_1934</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué desencadenó la Revolución de Octubre de 1934 y cómo fue sofocada?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: La entrada de tres ministros de la CEDA en el Gobierno fue vista por la izquierda como el inicio del fascismo. Provocó la Revolución de Octubre de 1934, cuyos focos de Asturias y Cataluña fueron reprimidos militarmente.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>El ingreso de tres ministros de la CEDA en el gabinete, provocando la revolución minera de Asturias y la rebelión de Companys en Cataluña.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Asturias vivió una auténtica revolución obrera (UHP) reprimida con gran dureza por la Legión, mientras Companys fue encarcelado tras proclamar el Estado Catalán.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El asesinato policial de José Calvo Sotelo por guardias de asalto afines al PSOE.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El asesinato de Calvo Sotelo ocurrió en julio de 1936, no en octubre de 1934.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La invasión masiva de Extremadura por jornaleros afiliados a la Confederación de Derechas.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Los jornaleros extremistas ocuparon tierras en la primavera de 1936 dirigidos por el Frente Popular.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El asalto de falangistas armados a las redacciones satíricas del Cu-Cut! en Barcelona.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El asalto al Cu-Cut! ocurrió en noviembre de 1905, bajo el reinado de Alfonso XIII.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T1_Q23_Consecuencias_Octubre_1934</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué consecuencias institucionales trajo el fracaso de la Revolución de 1934?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: El fracaso de la revolución llevó a la suspensión del Estatuto de Autonomía de Cataluña, el encarcelamiento del gobierno catalán y de miles de detenidos (unos 30.000) en todo el país y la consolidación de la CEDA.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>La suspensión del Estatuto de Cataluña, detención del gobierno autonómico y el encarcelamiento de miles de disidentes.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! La represión posterior endureció las políticas autoritarias de orden público del Gobierno.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El restablecimiento inmediato de la Constitución laica y la amnistía general para la CNT.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. No se amnistiaron presos de la huelga y se desmantelaron más reformas laicas, devolviéndose bienes a los Jesuitas.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El nombramiento directo de Manuel Azaña como nuevo presidente del Consejo de Ministros.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Azaña fue de hecho arrestado preventivamente en Barcelona tras sofocarse el alzamiento.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La disolución forzosa del Sindicato Vertical controlado por los falangistas.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El Sindicato Vertical fue un órgano posterior de la dictadura franquista.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T1_Q24_Escandalo_Estraperlo</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué escándalos de corrupción provocaron la crisis definitiva del Bienio Radical-Cedista en 1935?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: El escándalo del estraperlo (fraude del juego de la ruleta con sobornos a políticos) y el asunto Nombela hundieron el prestigio del Partido Radical de Lerroux, forzándose elecciones en febrero de 1936.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>El caso del estraperlo y el asunto de malversación de fondos de Nombela.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Los escándalos desarticularon la coalición Radicales-CEDA, obligando a Alcalá-Zamora a convocar elecciones.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El desvío ilegal de fondos del IRA para financiar la compra de tanques soviéticos.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El IRA carecía de presupuesto y la compra de armas rusas corresponde a la posterior Guerra Civil.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La revelación del pacto de libre comercio secreto acordado con Gran Bretaña por Azaña.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Azaña lideraba la oposición progresista y no participó de acuerdos mercantiles de libre comercio.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El fraude masivo del voto femenino controlado por el sindicato vasco de la Comunión.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. No existió tal fraude y las elecciones se rigieron con garantías constitucionales.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T1_Q25_Frente_Popular_1936</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué fuerzas constituyeron la coalición electoral del Frente Popular para las elecciones de 1936?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: La coalición del Frente Popular unificó a los partidos de izquierda: republicanos de izquierda (Azaña), socialistas (PSOE), comunistas (PCE, POUM) y el nacionalismo catalán (ERC).</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Los partidos republicanos de izquierda, socialistas, comunistas y el catalanismo de la Generalitat.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! La unión electoral buscaba amnistiar a los encarcelados de 1934 y reemprender la senda reformista.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La CEDA, los carlistas tradicionales y el partido conservador Renovación Española.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Estas fuerzas derechistas conformaron el antagónico Bloque Nacional.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El Partido Republicano Radical de Alejandro Lerroux junto a las Juntas de Ofensiva.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Lerroux sufrió un descalabro absoluto y las JONS se habían unificado en Falange.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El sindicato socialista de la UGT junto a la oficialidad africanista de Marruecos.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El ejército de África conspiraba abiertamente en la retaguardia contra las izquierdas.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T1_Q26_Victoria_Frente_Popular</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué resultados parlamentarios arrojaron las trascendentales elecciones del 16 de febrero de 1936?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: La victoria del Frente Popular fue rotunda en escaños (278 actas frente a 146 de la derecha) gracias a la ley electoral, aunque muy ajustada en votos de la opinión pública, dividiendo drásticamente el país.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>La victoria en escaños del Frente Popular, permitiéndole asumir la presidencia del Gobierno a Manuel Azaña.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Tras la victoria, Azaña ocupó la presidencia gubernamental y posteriormente fue investido presidente de la República.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El triunfo unánime de la coalición monárquica alfonsina liderada por José Calvo Sotelo.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Calvo Sotelo y el Bloque Nacional quedaron derrotados pasando a ejercer una durísima oposición parlamentaria.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La proclamación inmediata de la dictadura militar del general africanista Emilio Mola.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Mola era gobernador en Pamplona y planificaba de forma clandestina el golpe de Estado.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La dimisión forzosa de Niceto Alcalá-Zamora sustituido por el coronel Segismundo Casado.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Alcalá-Zamora continuó provisionalmente de presidente y Casado actuó en 1939.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T1_Q27_Actuaciones_Frente_Popular</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué medidas urgentes adoptó el Gobierno del Frente Popular en la primavera de 1936?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Se decretó la amnistía general para más de 30.000 presos políticos, se restituyó el Parlamento y Estatuto de Cataluña y se reanudó de forma acelerada la aplicación de la reforma agraria.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>La amnistía para los detenidos de 1934, restitución de la Generalitat de Cataluña y aceleración de la reforma agraria.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! El nuevo Gobierno de Casares Quiroga excarceló a los mineros asturianos y devolvió a Companys al poder catalán.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La ilegalización absoluta de la CNT y la disolución forzosa de la Guardia de Asalto.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Los anarquistas y las fuerzas policiales operaron libremente en este periodo.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El indulto incondicional para todos los falangistas detenidos por terrorismo callejero.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Al contrario, Falange fue ilegalizada y su líder José Antonio Primo de Rivera acabó encarcelado.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La expropiación sin indemnización de todos los templos y catedrales católicas.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. No se expropiaron templos de la Iglesia, aunque persistía un fuerte clima anticlerical.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T1_Q28_Agitacion_Social_1936</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué acontecimientos reflejan la extrema crispación social de la Primavera Trágica de 1936?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: La primavera de 1936 vivió un clima de gran agitación: huelgas urbanas constantes, incendios de templos por exaltados, ocupaciones espontáneas de tierras por jornaleros (como en Extremadura el 25 de marzo) y atentados de Falange.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Ocupaciones de fincas en Extremadura, quema de iglesias, huelgas generales y atentados falangistas.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! La polarización y la violencia callejera desbordaron la capacidad de mantener el orden público del Gobierno.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La firma de los Pactos de la Moncloa entre la UGT y los propietarios agrarios.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Los Pactos de la Moncloa corresponden a la posterior Transición en octubre de 1977.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La disolución de los batallones de voluntarios de la Legión Cóndor en Guipúzcoa.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La Legión Cóndor alemana no intervino en España hasta iniciarse la contienda bélica.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La amnistía general decretada por el rey Alfonso XIII desde su exilio de Roma.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El rey carecía de poder real en España y la amnistía fue decretada por las Cortes republicanas.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T1_Q29_Alejamiento_Generales</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué medida preventiva adoptó el Gobierno ante los rumores de conspiración militar?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Para alejar de los centros de poder a los mandos sospechosos de conspiración, destinó al general Emilio Mola a Navarra, al general Francisco Franco a Canarias y al general Manuel Goded a Baleares.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Trasladar de destino a los generales sospechosos: Mola a Navarra, Franco a Canarias y Goded a Baleares.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Esta medida gubernamental facilitó involuntariamente que Mola actuara como cerebro del complot ('El Director') desde Pamplona.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Ilegalizar a la Unión Militar Española conmutándoles la pena de cárcel por retiro de sueldo.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La UME actuó como organización clandestina planificando el alzamiento de forma oculta.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Pactar la entrega incondicional del protectorado español de Marruecos al rey Hassan II.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Hassan II reinó en Marruecos décadas después; el protectorado continuaba bajo control militar español.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Fusilar sumariamente a todos los oficiales del bando africanista contrarios al Frente Popular.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El Gobierno no fusiló a ningún militar antes del golpe; la represión sumaria de oficiales ocurrió iniciada la contienda.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T1_Q30_Detonante_Magnicidios</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué sucesos de julio de 1936 actuaron como detonante definitivo del alzamiento militar?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: El asesinato del teniente de asalto José Castillo por falangistas, respondido en cadena la madrugada del 13 de julio con el asesinato policial del líder de la oposición derechista, José Calvo Sotelo, unificó a los conspiradores.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>El asesinato del teniente Castillo respondido con el asesinato policial del líder monárquico José Calvo Sotelo.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! La muerte de Calvo Sotelo precipitó y justificó moralmente el estallido de la sublevación militar en Marruecos el 17 de julio.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La dimisión forzosa de Manuel Azaña sustituido por el socialista Francisco Largo Caballero.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Azaña se mantuvo en la presidencia y el Gobierno recaía en Santiago Casares Quiroga.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La invasión de las cuencas mineras asturianas por voluntarios de las Brigadas Internacionales.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Las Brigadas Internacionales acudieron en auxilio de la República tras iniciarse el conflicto.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El asalto de milicianos armados de la CNT al Cuartel de la Montaña de Madrid.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El asalto al Cuartel de la Montaña ocurrió tras estallar el golpe militar, no antes.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+</quiz>

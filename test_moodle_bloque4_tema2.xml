@@ -1,0 +1,1599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/top/Bloque IV/Tema 2</text>
+    </category>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T2_Q01_Estallido_Sublevacion</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Dónde y cuándo se inició la sublevación militar contra la Segunda República?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: La sublevación militar comenzó en Melilla (norte de África) el 17 de julio de 1936, extendiéndose a la Península los días 18 y 19 de julio bajo la dirección del general Mola.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>En Melilla el 17 de julio de 1936, al mando de las tropas del protectorado del norte de África.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! El alzamiento del ejército de África fue la señal para la rebelión coordinada en toda España.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>En las Palmas de Gran Canaria el 18 de julio de 1936, tras el vuelo de las Juntas de Defensa.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Franco voló desde Gran Canaria en el Dragon Rapide tras conocerse el inicio del golpe en Melilla.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>En el Cuartel de la Montaña de Madrid el 19 de julio de 1936 por el general Fanjul.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El alzamiento en Madrid ocurrió el 19 de julio, pero fracasó al ser cercado el cuartel por los milicianos.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>En Barcelona el 20 de julio de 1936 de la mano del general de asalto Batet.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El general Batet permaneció fiel a la legalidad y fue fusilado por los rebeldes; Goded dirigió el complot catalán y fracasó.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T2_Q02_Fracaso_Parcial_Golpe</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Por qué fracasó parcialmente el golpe de Estado militar en los grandes núcleos de población?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: El golpe militar fue frustrado en grandes urbes e industrias (Madrid, Barcelona, Valencia, Asturias) gracias a la rápida entrega de armas a las milicias populares de la CNT/UGT y la fidelidad de las fuerzas de seguridad.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Por la encarnizada resistencia popular de las milicias obreras y la fidelidad de parte de la policía y el ejército.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! El fracaso en someter las principales capitales industriales desató una contienda larga.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Por el abandono inmediato de España por el general Francisco Franco a bordo del Dragon Rapide.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Franco cruzó al protectorado precisamente para dirigir la letal columna africana hacia la Península.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Por el bloqueo naval de la Legión Cóndor alemana en el estrecho de Gibraltar.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Al contrario, la aviación italo-alemana ayudó a los sublevados a cruzar el estrecho.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Por la rendición incondicional del coronel Segismundo Casado en las Cortes de Valencia.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El coronel Casado protagonizó su golpe de Estado al final de la guerra en marzo de 1939.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T2_Q03_Division_Recursos</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué balance inicial de recursos poseía el bando republicano frente al sublevado en el verano de 1936?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: La República controlaba unos 14 millones de habitantes, las cuencas mineras, las principales zonas industriales y las reservas de oro del Banco de España, frente a unos 10,5 millones de habitantes y las principales regiones agrícolas de los sublevados.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>La República controlaba la industria, la minería y las reservas de oro, mientras los sublevados dominaban las regiones agrícolas.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Aunque la República tenía ventaja económica e industrial, adoleció de problemas de abastecimiento alimentario y desorganización militar.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Los sublevados controlaban las reservas monetarias de Moscú y la República dominaba el banco cerealista de Castilla.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Los términos están invertidos: el oro era republicano y el trigo castellano sublevado.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La República se financió con las donaciones de Juan March y los sublevados con las reservas del Banco de España.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El banquero Juan March y Alfonso XIII aportaron millones de dólares a los sublevados.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Ambos bandos contaban con idénticos recursos industriales y de tropas profesionales en filas.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El ejército profesional más letal (el de África) apoyaba al bando nacionalista.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T2_Q04_Retaguardia_Republicana_Caos</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué consecuencias políticas trajo el golpe militar en la retaguardia republicana las primeras semanas?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: El levantamiento provocó el colapso del aparato del Estado. El poder real quedó fragmentado en múltiples Juntas y Comités revolucionarios populares de carácter local, formados por sindicatos y partidos obreros.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>El colapso del Estado, asumiendo el poder real múltiples Comités y Juntas revolucionarias locales de sindicatos.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Los comités obreros decidieron de forma autónoma realizar colectivizaciones y controlar la vida cotidiana.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La unificación forzosa de todas las fuerzas políticas bajo la Jefatura Nacional de Largo Caballero.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Largo Caballero presidió un gobierno de concentración en septiembre de 1936, pero la fragmentación se mantuvo.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La ilegalización absoluta de la CNT y el POUM por decreto directo de Juan Negrín.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Negrín gobernó posteriormente y se alió con los comunistas, ilegalizándose el POUM tras los sucesos de 1937.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El sometimiento pacífico y voluntario de las milicias de asalto a la jurisdicción militar tradicional.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Al contrario, las milicias populares se resistieron inicialmente a disciplinarse y someterse a mandos regulares.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T2_Q05_Fragmentacion_Republicana_Guerra</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué dos corrientes políticas e ideológicas chocaron en la zona republicana sobre el desarrollo de la guerra?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Chocaron los partidarios de ganar la guerra primero fortaleciendo al Estado (PSOE moderado, republicanos y PCE) frente a los partidarios de priorizar la revolución social (anarquistas de la CNT y trotskistas del POUM).</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Los partidarios de ganar la guerra fortaleciendo al Estado frente a los partidarios de priorizar la revolución social.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Esta irreconciliable división fragmentó y debilitó gravemente la causa de la República.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Los carlistas partidarios de la monarquía foral frente a los falangistas defensores del fascismo totalitario.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Estas eran corrientes rivales del bando sublevado, no de la zona republicana.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Los demócratas partidarios del Comité de No Intervención frente a los comunistas prosoviéticos.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Ninguna fuerza republicana apoyó el Comité de No Intervención, que asfixió la defensa leal.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La oficialidad africanista defensora del orden civil frente a las milicias campesinas andaluzas.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Esto responde a la fractura inicial del golpe, no a las divisiones políticas republicanas.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T2_Q06_Sucesos_Mayo_1937</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué consecuencias trajeron los Sucesos de Mayo de 1937 en Barcelona?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Los Sucesos de Mayo de 1937 consistieron en un sangriento enfrentamiento armado en las calles de Barcelona entre comunistas y fuerzas estatales frente a anarquistas de la CNT y el POUM, saldándose con la derrota de estos últimos y la caída de Largo Caballero.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Un sangriento choque armado de izquierdas que liquidó la fuerza del POUM y forzó el gobierno centralizado de Negrín.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Los sucesos acabaron con la detención, tortura y asesinato de Andreu Nin, asumiendo Negrín la jefatura centralizada con apoyo del PCE.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El bombardeo artillado del Castillo de Montjuic por la aviación de la Legión Cóndor alemana.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La Legión Cóndor actuó contra frentes republicanos generales, no en las luchas intestinas de Barcelona.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El asalto de los milicianos del teniente Castillo a los puestos fronterizos del Pirineo.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El teniente Castillo falleció en julio de 1936, desatando la contienda, no en mayo de 1937.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La proclamación federal del Estatuto de Autonomía de Nuria ratificado por el general Batet.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El Estatuto de Nuria ya operaba desde 1932 y Batet permaneció fiel, siendo fusilado por los rebeldes.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T2_Q07_Retaguardia_Sublevada_Franco</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Cómo organizó el bando sublevado su estructura política y de mando militar?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Los principales jefes militares reunidos en Salamanca (septiembre de 1936) nombraron a Francisco Franco como Generalísimo de los ejércitos y Jefe del Gobierno del Estado con plenos poderes civiles y militares.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Centralizó todo el poder político y militar en la Jefatura Suprema del general Francisco Franco.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Franco acumuló plenos poderes e implantó una férrea disciplina militar sin corrientes discordantes.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Constituyó una Junta de Defensa pluripartidista presidida por el político conservador Gil-Robles.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La Junta de Defensa se disolvió tras investirse a Franco y Gil-Robles careció de relevancia política real en el bando nacional.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Sometió al ejército bajo la estricta tutela civil del partido tradicional de Renovación Española.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Al contrario, las fuerzas políticas civiles se sometieron por completo a la autoridad militar.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Declaró la monarquía absoluta hereditaria vitalicia en la persona de Don Juan de Borbón.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Franco postergó la restauración borbónica, convirtiendo el régimen en una dictadura personal vitalicia.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T2_Q08_Decreto_Unificacion_1937</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿En qué consistió el Decreto de Unificación de abril de 1937 dictado por Franco?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Obligó a fusionar a todas las fuerzas sublevadas (falangistas, carlistas o requetés y monárquicos) bajo un partido único totalitario: Falange Española Tradicionalista y de las JONS (FET y de las JONS), asumiendo él mismo la Jefatura.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>La fusión forzosa de falangistas, carlistas y monárquicos en el partido único de FET y de las JONS.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Consiguió la unificación absoluta y liquidó cualquier disidencia política o rivalidad en la zona sublevada.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La disolución del sindicato vertical vertical de la Central Nacional de CCOO.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Comisiones Obreras se fundó de forma clandestina en los años sesenta, no en 1937.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El destierro forzoso del general africanista Emilio Mola a la Comandancia de Canarias.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Mola dirigía el ejército del Norte y falleció de accidente en junio de 1937; Franco ya gobernaba.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La conmutación de penas de muerte para todos los oficiales de asalto fieles a la República.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Los tribunales militares (Consejos de Guerra) aplicaron fusilamientos sistemáticos a los leales.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T2_Q09_Papel_Iglesia_Catolica</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué papel desempeñó la jerarquía de la Iglesia católica en la zona sublevada?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: La Iglesia católica legitimó moralmente el golpe militar bautizándolo solemnemente como una 'Santa Cruzada contra el comunismo ateo' y recibiendo a cambio privilegios, presupuesto y el control moral y educativo.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Legitimó moralmente el alzamiento como una Santa Cruzada contra el marxismo, a cambio del monopolio moral y educativo.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! El nacionalcatolicismo unificó la fe con el patriotismo y derogó las leyes laicas de la República.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Se exilió pacíficamente a la nunciatura del Vaticano por las expropiaciones de Mendizábal.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Las desamortizaciones de Mendizábal son del siglo XIX; la Iglesia apoyó con fervor a Franco por la sangrienta persecución clerical en la zona republicana.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Pactó con los anarquistas de la FAI el mantenimiento de la liturgia laica en las escuelas.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La Iglesia condenó de forma absoluta el anarquismo y el comunismo.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Sometió de forma disciplinaria al Mando Económico Militar al presupuesto del clero regular.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. No existían tales dependencias presupuestarias institucionales en la contienda.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T2_Q10_No_Intervencion_Fracaso</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué consecuencias reales tuvo el Comité de No Intervención promovido por las democracias?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Perjudicó de forma asimétrica a la República al privarla del derecho de adquirir armas para defenderse, mientras que fue violado sistemáticamente por Alemania, Italia y la URSS que enviaron masiva ayuda militar.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Perjudicó gravemente a la República al tiempo que fue violado de manera sistemática por Alemania, Italia y la URSS.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! El pacto se convirtió en papel mojado, aislando diplomáticamente a la República leal.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Consiguió la retirada inmediata de las tropas de mercenarios marroquíes dirigidos por Yagüe.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Los regulares indígenas marroquíes continuaron combatiendo con el bando sublevado.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Forzó la amnistía general de todos los presos políticos recluidos en las playas de Francia.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El exilio en campos franceses (Argelès-sur-Mer) ocurrió al final de la guerra en 1939.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Estableció la entrega voluntaria de los yacimientos de fosfatos del Sáhara Occidental a España.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El conflicto colonial sahariano se desarrolló al final del franquismo en 1975.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T2_Q11_Ayuda_Eje_Sublevados</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué fuerzas y armamentos suministraron las potencias fascistas al bando sublevado?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: La Alemania nazi de Hitler aportó la Legión Cóndor de aviación y carros de combate; la Italia de Mussolini envió blindados y 73.000 soldados regulares del CTV; y Portugal colaboró con miles de combatientes voluntarios (Viriatos).</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>La Legión Cóndor alemana, 73.000 soldados italianos del CTV y combatientes voluntarios portugueses.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Esta masiva y coordinada inyección de tecnología, aviación y hombres fue vital para la victoria de Franco.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Las reservas del Banco de España custodiadas de fianza por el duque de Alba.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Las reservas monetarias se depositaron en Moscú en el bando republicano.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El flete secreto de cazas bombarderos franceses pilotados por voluntarios de la Legión de San Patricio.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Francia se abstuvo diplomáticamente en el Comité y los Viriatos eran portugueses, no franceses.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El Mando Económico de Canarias con los barcos de guerra de la compañía carbonera Woermann.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Esto carece de base en los frentes de la Guerra Civil.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T2_Q12_Ayuda_URSS_Republica</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿De qué manera financió y obtuvo armamento el Gobierno de la República?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Al verse asfixiada por las democracias, la República adquirió aviones, tanques y asesores de la Unión Soviética de Stalin, pagando la fianza y el coste mediante el depósito del 'oro de Moscú'.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Mediante la adquisición de material soviético pagado con las reservas de oro del Banco de España.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! El depósito de 510 toneladas de oro en Moscú costeo el material indispensable para defender Madrid.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>A través de las donaciones monetarias voluntarias del banquero Juan March.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Juan March aportó millones de dólares al bando de los sublevados.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Con los créditos preferenciales concedidos por la petrolera americana Texaco.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Texaco suministró millones de toneladas de petróleo a crédito a los sublevados de Franco.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Por el envío mercantil desinteresado de cazas de combate de la fuerza aérea alemana.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Alemania apoyaba militarmente a Franco mediante la Legión Cóndor.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T2_Q13_Brigadas_Internacionales</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué características definieron a las Brigadas Internacionales?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Fueron unos 40.000 combatientes voluntarios de 30 países (de ideología comunista o socialista) que acudieron en auxilio de la República contra el totalitarismo, entrenándose en la base estratégica de Albacete.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Voluntarios antifascistas de todo el mundo organizados con base central en Albacete.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Tuvieron un papel militar heroico en la defensa de Madrid a finales de 1936, retirándose en 1938.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Divisiones regulares de soldados de la Legión de San Patricio enviados por el Vaticano.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El Vaticano apoyó diplomáticamente a Franco y las brigadas eran de ideología obrera laica.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Grupos armados de voluntarios portugueses que combatieron con las columnas de Yagüe.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Estos voluntarios eran los Viriatos que apoyaban al bando nacionalista.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Mercenarios marroquíes reclutados para realizar el asalto al Cuartel de la Montaña.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Los mercenarios rifeños marroquíes (Regulares) combatían con Franco.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T2_Q14_Batalla_Jarama_Guadalajara</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué resultados arrojaron los intentos franquistas de cercar Madrid en 1937?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Los intentos de cercar la capital fracasaron consecutivamente en la batalla del Jarama (febrero de 1937) y la de Guadalajara (marzo de 1937), donde las tropas republicanas aplastaron a las divisiones italianas del CTV.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Fracasaron consecutivamente ante la exitosa resistencia republicana, destacando la victoria de Guadalajara.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! En Guadalajara, las Brigadas Internacionales y el Ejército Popular derrotaron rotundamente al CTV italiano.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Consiguieron la capitulación incondicional del coronel Casado dentro del furgón del Congreso.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Casado actuó al final del conflicto en 1939.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Permitieron la caída del cinturón de hierro defendido por las milicias del PNV.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El cinturón de hierro de Bilbao cayó en junio de 1937 en la Campaña del Norte.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Fueron suspendidas por la trágica muerte accidental del general José Sanjurjo.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Sanjurjo falleció en julio de 1936 en Estoril, al inicio de la sublevación.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T2_Q15_Campana_Norte_Guernica</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué estrategia militar adoptó Franco ante la resistencia de Madrid en la primavera de 1937?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Franco concentró el ataque en el Frente Norte (Vizcaya, Santander, Asturias) para adueñarse de los recursos siderúrgicos e industriales, bombardeando sistemáticamente poblaciones desarmadas como la villa histórica de Guernica.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Concentrar la ofensiva en la cornisa cantábrica para apoderarse de sus recursos industriales, bombardeando Guernica.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! La campaña del norte liquidó el frente cantábrico en octubre de 1937, cayendo recursos vitales en manos franquistas.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Iniciar un repliegue defensivo hacia las canteras de fosfatos del protectorado de Marruecos.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El avance fue continuo y de conquista territorial peninsular.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Pactar una tregua humanitaria mediada por el Comité de No Intervención en Albacete.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Franco rechazó las mediaciones y exigió siempre la rendición incondicional.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Lanzar una gran contraofensiva anfibia de transbordadores en las playas de Valencia.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La armada republicana dominaba inicialmente el mar y no se realizaron desembarcos allí.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T2_Q16_Ofensivas_Distraccion_Republicanas</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué ofensivas de distracción lanzó la República en 1937 para aliviar la presión sobre el norte?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: La República lanzó contraataques de distracción en Brunete (Madrid) en julio de 1937 y en Belchite (Zaragoza) en septiembre de 1937, pero ambas operaciones acabaron en fracasos y sin evitar la caída del Cantábrico.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Las batallas de Brunete y Belchite, que fracasaron en su objetivo de salvar el norte.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Aunque demostraron capacidad táctica inicial, no alteraron el curso de la campaña septentrional de Franco.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La Batalla del Ebro y la toma de la ciudad polar de Teruel.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Teruel se libró en el invierno de 1937-1938 y el Ebro en el verano de 1938, en fases posteriores.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El asalto de milicianos desarmados a las pistas de vuelo del Dragon Rapide.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El Dragon Rapide completó su trayecto al protectorado en julio de 1936.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La sublevación popular espontánea del trienio bolchevique andaluz.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El trienio bolchevique ocurrió de forma previa bajo el reinado de Alfonso XIII.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T2_Q17_Muertes_Accidentales_Generales</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué importantes mandos militares del bando sublevado fallecieron en accidentes aéreos?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: El general José Sanjurjo (jefe supremo de la conspiración) falleció en julio de 1936 en Estoril, y el general Emilio Mola (cerebro del complot, 'El Director') pereció en junio de 1937 en una colina de Burgos por la niebla.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>El general José Sanjurjo en julio de 1936 y el general Emilio Mola en junio de 1937.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Estas accidentadas muertes consolidaron el liderazgo unipersonal absoluto de Francisco Franco.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El general Queipo de Llano en Extremadura y el teniente coronel Juan Yagüe en Asturias.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Ambos sobrevivieron al conflicto militar, participando activamente en el régimen posterior.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El general Batet en Barcelona y el general Fanjul en el patio del cuartel de la Montaña.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Ambos generales fueron ejecutados por tribunales contrarios (Batet por rebeldes y Fanjul por leales).</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El general Miaja en la defensa de Madrid y el comandante de asalto Vicente Rojo.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Miaja sobrevivió y marchó al exilio; Vicente Rojo regresó a España en los años cincuenta.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T2_Q18_Ofensiva_Este_Teruel</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué consecuencias estratégicas trajo la Batalla de Teruel y la posterior ofensiva del este en 1938?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Tras reconquistar Teruel (tomada por la República en un durísimo invierno), Franco lanzó una ofensiva masiva que alcanzó el Mediterráneo por Vinaroz en abril de 1938, partiendo en dos la zona republicana y aislando Cataluña.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Las tropas franquistas alcanzaron el Mediterráneo en Vinaroz, partiendo en dos el territorio republicano.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! La división de la zona republicana aisló a Cataluña y supuso un durísimo golpe logístico para el Gobierno.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La República consiguió desatascar el asedio de Madrid unificando las columnas de Durruti.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Durruti falleció en noviembre de 1936 y la capital continuaba bajo un estricto asedio sublevado.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La rendición militar pacífica de la Generalitat liderada por Lluís Companys.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Companys continuó dirigiendo Cataluña hasta su colapso en 1939, exiliándose a Francia.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El bloqueo definitivo de la aviación fascista alemana de la Legión Cóndor en Guipúzcoa.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La aviación del Eje continuaba dominando los frentes, de forma decisiva en el posterior Ebro.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T2_Q19_Batalla_Ebro_Desastre</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué características definieron a la célebre y mortífera Batalla del Ebro?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Fue el enfrentamiento militar más largo, masivo y sangriento de la historia de España (julio-noviembre de 1938), planificado por el general Vicente Rojo. Tras seis meses de combate de desgaste ante el arrollador apoyo del Eje, el ejército de la República quedó prácticamente destruido.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>La batalla más larga y sangrienta de la guerra, culminando con el descalabro absoluto del ejército de la República.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! El descalabro en el Ebro dejó a Cataluña indefensa ante el avance final franquista.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Una victoria defensiva de las Brigadas Internacionales que consiguió reconectar Valencia con Madrid.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Al contrario, las Brigadas Internacionales se retiraron en este periodo y Cataluña continuó aislada.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Un levantamiento armado anarquista contra el gobierno prosoviético de Juan Negrín.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Negrín dirigió y financió el ataque que fue de carácter institucional militar regular.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Un desembarco táctico de divisiones de voluntarios portugueses en la bahía de Alhucemas.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El desembarco de Alhucemas ocurrió en 1925 bajo la dictadura de Primo de Rivera.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T2_Q20_Colapso_Cataluña_Exodo</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué trágico acontecimiento desató la caída de Barcelona en enero de 1939?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: La caída de Barcelona desató un colosal y dramático éxodo de refugiados exiliados (más de 400.000 personas) hacia la frontera de Francia, donde fueron internados en improvisados campos de concentración en las playas.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Un colosal éxodo de más de 400.000 refugiados exiliados que huyeron por el Pirineo hacia la frontera de Francia.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Los fugitivos padecieron penosas condiciones y desprecio, recluidos en playas como Argelès-sur-Mer.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La disolución del partido único de FET y de las JONS decretada por Manuel Fraga.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. FET y de las JONS se consolidó como el partido nacional totalitario único y Fraga actuó décadas después.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El magnicidio del presidente republicano Manuel Azaña a manos de agentes estalinistas.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Azaña se exilió a Francia donde falleció poco después por causas naturales, no fue asesinado.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La readmisión voluntaria de todos los docentes sancionados por los expedientes de depuración.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Al contrario, una vez tomado el territorio se aplicó una estricta política represiva de depuración.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T2_Q21_Resistencia_Negrin_Casado_Golpe</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué discrepancias dividieron al bando republicano en sus últimos meses de vida?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: El jefe del Gobierno Juan Negrín y los comunistas proponían continuar la resistencia armada esperando el estallido de la contienda mundial en Europa, mientras que el coronel Casado dio un golpe de Estado en Madrid buscando negociar la paz con Franco.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Negrín y el PCE defendían resistir hasta enlazar con la guerra europea frente al golpe del coronel Casado para pactar la paz.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! El golpe de Casado en marzo de 1939 desató luchas intestinas en Madrid; Franco rechazó los pactos exigiendo la rendición incondicional.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La CNT exigía la disolución del Congreso Constituyente para proclamar el comunismo libertario.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El Congreso unicameral ya estaba disuelto de facto y las instituciones al borde del colapso.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Los anarquistas querían entregar las reservas de oro al Vaticano para asegurar la amnistía general.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Las reservas de oro ya se habían gastado en material soviético en la URSS.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La Generalitat catalana se alió con los sublevados de Mola para deponer de inmediato a Casares Quiroga.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Mola había fallecido y Casares Quiroga renunció al inicio de la contienda en julio de 1936.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T2_Q22_Ultimo_Parte_Guerra</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué fecha oficial marcó el fin de la contienda bélica con el último parte firmado por Franco?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: El fin de la guerra civil española se decretó el 1 de abril de 1939, tras entrar las tropas franquistas en Madrid el 28 de marzo de 1939 sin hallar resistencia armada.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>El 1 de abril de 1939.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Ese día Franco firmó el famoso último parte de guerra en Burgos, inaugurándose una larga dictadura militar.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El 18 de julio de 1936.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El 18 de julio de 1936 de hecho marcó el inicio del golpe en la Península, no el final.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El 20 de noviembre de 1975.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Esta fue la fecha de la muerte del dictador Francisco Franco, cerrándose casi 40 años de dictadura.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El 6 de diciembre de 1978.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Este fue el día del referéndum nacional que ratificó la actual Constitución de la democracia española.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T2_Q23_Consecuencias_Demograficas</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué pérdidas demográficas directas e indirectas deparó la Guerra Civil?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Se calcula que las pérdidas demográficas directas e indirectas rondaron las 500.000 personas, sumando 145.000 caídos en combate, 135.000 víctimas de represión, ejecuciones y exilio masivo.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Alrededor de 500.000 muertos, sumando bajas de frentes, víctimas de represión y ejecuciones de posguerra.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! El impacto demográfico asoló a las familias españolas, con cientos de miles de exiliados permanentes.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Cerca de un millón de heridos militares repatriados desde los campamentos del Rif marroquí.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Los combatientes de reemplazo del Rif sufrieron el descalabro de Annual de 1921, no la contienda civil peninsular.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Unos 30.000 falangistas detenidos y fusilados de forma sistemática por el Gobierno de Negrín.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El POUM fue perseguido internamente y José Antonio fusilado, pero no existió tal cifra de represión de Falange.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Exclusivamente unas 12.000 bajas de jornaleros caídos en las huelgas agrarias andaluzas.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Las pérdidas afectaron a todas las provincias de frentes y retaguardia de la Península.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T2_Q24_Consecuencias_Económicas_Cartilla</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué consecuencias de signo económico asolaron a la población de la posguerra?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Destrucción de 250.000 viviendas, colapso de infraestructuras de transporte, pérdida del oro del Banco de España y hundimiento agrícola y ganadero, forzando la imposición de la cartilla de racionamiento.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Destrucción de viviendas, colapso del transporte, pérdida total de reservas monetarias e imposición de la cartilla de racionamiento.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Las severas penurias y la miseria forzaron a racionar los alimentos, no recuperándose la renta de 1936 hasta la década de los cincuenta.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La concesión de millonarias ayudas financieras del Plan Marshall americano por su anticomunismo.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. España fue excluida del Plan Marshall de 1948 por su naturaleza totalitaria y fascista asociada al Eje.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El despegue acelerado de exportaciones de calzados y tejidos hacia el mercado exterior europeo.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Las exportaciones cayeron al imponerse el modelo económico cerrado e ineficiente de la autarquía.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La adquisición estatal desinteresada de las minas de carbón y refinerías de la Unión Soviética.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Al contrario, las relaciones con la Unión Soviética quedaron rotas de forma absoluta al ganar Franco.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T2_Q25_Quiebra_Cultural_Edad_Plata</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué impacto moral y cultural supuso la victoria de Franco para la intelectualidad de España?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Supuso la destrucción total de la Edad de Plata de la cultura española, con el fusilamiento de Lorca, la muerte en prisión de Miguel Hernández y el exilio masivo de intelectuales, poetas y científicos.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>La destrucción de la Edad de Plata de la cultura, con fusilamientos, muertes en prisión y el exilio masivo de la intelectualidad.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Genios como Antonio Machado, Alberti, Pau Casals o Juan Ramón Jiménez sufrieron el amargo exilio sin retorno.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La unificación nacional laica del profesorado de escuela bajo la dirección de la nunciatura apostólica.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Se impuso el nacionalcatolicismo y se depuró de forma severa al magisterio laico, no se unificaron en libertad.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La creación voluntaria de la Escuela Moderna dirigida de forma pedagógica por Francisco Ferrer y Guardia.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Ferrer y Guardia fue ejecutado en Montjuic en 1909, décadas antes del estallido civil.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La consolidación de las misiones pedagógicas teatrales financiadas por las Juntas de Defensa.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Las misiones pedagógicas laicas de la República fueron canceladas y su espíritu científico erradicado de las aulas.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T2_Q26_Represion_Doble_Matiz</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué matiz diferenció la violencia en la retaguardia republicana frente a la retaguardia sublevada?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: La represión republicana fue ejercida principalmente por grupos descontrolados al calor del colapso del Estado, mientras que la represión franquista fue sistemática, institucionalizada y planificada directamente por el ejército para limpiar el territorio.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>La republicana fue espontánea y descontrolada por el colapso estatal, mientras que la franquista fue sistemática e institucionalizada por el ejército.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! El ejército sublevado aplicó de forma fría y planificada el terror y el fusilamiento para someter cualquier resistencia.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La republicana estuvo coordinada directamente por el Vaticano y la franquista por pistoleros descontrolados de la CNT.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El Vaticano apoyó a Franco y la CNT era de ideología anarquista, actuando en la zona republicana.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La republicana afectó únicamente a militares africanistas y la franquista a latifundistas de la aristocracia.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La represión leal persiguió a religiosos, terratenientes e Iglesia, mientras la rebelde fusiló a sindicalistas, maestros e izquierdistas.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La republicana se limitó a multas gubernamentales y la franquista a la conmutación de penas por amnistía general.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Ambas zonas padecieron fusilamientos y paseos muy cruentos en la retaguardia (terror rojo y terror blanco).</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T2_Q27_Plan_Militar_Mola</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿En qué consistía el plan táctico diseñado por el general Emilio Mola ('El Director') para el golpe?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: El plan de Mola consistía en un levantamiento escalonado, simultáneo y de una violencia extrema en todas las guarniciones militares comprometidas, que convergería con columnas directas hacia Madrid.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Un levantamiento simultáneo de las guarniciones militares con una represión en extremo violenta para converger hacia Madrid.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Mola dictó directrices secretas ordenando aplicar castigos ejemplares y sembrar el terror para estrangular la resistencia leal.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Un asalto pacífico al Congreso de los Diputados pactando la cesión de competencias forales con el PNV.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El plan no contemplaba pactos y pretendía estrangular de forma violenta las reivindicaciones obreras o separatistas.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Un repliegue ordenado de las tropas voluntarias de las Brigadas Internacionales hacia Albacete.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Las Brigadas Internacionales defendían la legalidad y lucharon activamente contra el golpe militar de Mola.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La expropiación municipal sin indemnización de todas las líneas férreas de la Compañía del Norte.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Esto no formaba parte del plan táctico militar conspirativo de Mola.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T2_Q28_Depuracion_Funcionarios</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué política sistemática aplicó el bando de Franco una vez que se apoderaba de una provincia?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Se implantó una estricta política de depuración del funcionariado y del magisterio escolar, exigiendo declaraciones de adhesión al régimen avaladas por el cura de la parroquia, el alcalde o la Guardia Civil.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>La depuración total de profesores, maestros, jueces y funcionarios públicos, exigiendo avales de su adhesión moral.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Decenas de miles de docentes fueron sancionados con la inhabilitación, privando a la escuela de posguerra del espíritu científico renovador.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La amnistía general para todos los presos políticos que prometieran incorporarse a las Juntas de Defensa.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. No se amnistiaron presos y las Juntas de Defensa militares eran anacrónicas.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La entrega voluntaria de los caladeros y minas de fosfatos del Sáhara Occidental a la CNT.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El territorio del Sáhara era administrado con rigor militar por España y la CNT fue proscrita e ilegalizada.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El fomento estatal de la educación laica, obligatoria y mixta de la Edad de Plata.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El laicismo de la Edad de Plata fue erradicado de las aulas, imponiéndose la rígida moral católica en las escuelas.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T2_Q29_Oro_Moscu_Fianza</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué fianza y coste pagó el Gobierno de la República por el suministro bélico soviético?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: La República pagó el material de guerra (aviones, tanques) trasladando secretamente 510 toneladas de oro en lingotes y monedas del Banco de España a la URSS, el controvertido 'oro de Moscú'.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>El envío secreto de 510 toneladas de oro en lingotes y monedas del Banco de España a la Unión Soviética.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! El material fue pagado al contado, consumiendo todos los recursos monetarios de la República y dejándola vulnerable en el mercado financiero.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Un tratado comercial librecambista cediendo la soberanía de la cuenca industrial catalana.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La industria catalana fue colectivizada y sirvió para la producción bélica leal, sin cederse al exterior.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La privatización extraordinaria de las compañías estatales de CAMPSA y Telefónica.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Estas compañías fueron de hecho monopolios creados de forma previa o privatizadas décadas después por el PP.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El depósito de las divisas y donaciones privadas aportadas por Alfonso XIII desde Roma.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Alfonso XIII financió y donó dinero al bando sublevado contrario a la República.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T2_Q30_Consecuencias_Morales_Franquismo</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué rasgo moral y político caracterizó la posguerra y dictadura del general Franco?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: El régimen de Franco nunca buscó la amnistía o reconciliación de los españoles y siempre recordó y celebró solemnemente su origen bélico como fuente exclusiva de su legitimación.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>La nula voluntad de reconciliación nacional, consagrándose la división estricta entre vencedores y vencidos.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! El régimen franquista basó su existencia en la legitimación bélica del triunfo del 1 de abril de 1939.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La amnistía general aprobada por las Cortes Constituyentes para los vencidos de las Brigadas.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. No se aprobaron amnistías y los vencidos sufrieron consejos de guerra, prisiones o el exilio.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El restablecimiento democrático pacífico de la Constitución republicana laica de 1931.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La Constitución democrática de 1931 fue proscrita, permaneciendo abolidas las libertades civiles casi 40 años.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La unificación nacional voluntaria de los partidos republicano-socialistas vascos en el Sabor.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Todos los partidos políticos y sindicatos leales fueron ilegalizados y duramente perseguidos.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+</quiz>

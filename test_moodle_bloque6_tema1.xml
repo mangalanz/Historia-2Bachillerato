@@ -1,0 +1,1599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/top/Bloque VI/Tema 1</text>
+    </category>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B6_T1_Q01_Arias_Navarro_Gobierno</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué características definieron el gobierno provisional de Carlos Arias Navarro tras la muerte de Franco?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: El primer gobierno de la monarquía presidido por Arias Navarro pretendía reformas mínimas y limitadas de continuidad franquista. Chocó con una oleada de huelgas y manifestaciones que demandaban amnistía, libertades y autonomías.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Reformas mínimas de continuidad franquista que chocaron con una oleada de huelgas y movilizaciones populares.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! La inmovilidad de Arias Navarro provocó fuertes protestas, forzando al monarca a destituirle en julio de 1976.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La legalización inmediata del PCE y la aprobación de la Constitución democrática.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Arias Navarro se opuso en rotundo a legalizar a los partidos de la oposición, en especial al PCE.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El inicio de la reconversión industrial concertada con el sindicato Comisiones Obreras.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La reconversión industrial ocurrió en los años ochenta bajo el gobierno socialista de Felipe González.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La firma del Tratado de Adhesión de España a la Comunidad Económica Europea.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. España no ingresó en la CEE hasta enero de 1986, de forma muy posterior.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B6_T1_Q02_Sucesos_Vitoria_1976</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué trascendencia tuvieron los Sucesos de Vitoria de marzo de 1976?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: La represión militar desproporcionada de una huelga general en Vitoria causó 5 obreros muertos y más de 150 heridos, evidenciando el agotamiento de Arias Navarro y forzando su posterior destitución por el rey.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Una dura represión policial contra una huelga que causó cinco obreros muertos, evidenciando el colapso del gobierno.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Los sucesos de Vitoria aceleraron el descontento de la Corona con Arias Navarro, abriendo las puertas a la reforma de Suárez.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La proclamación federal de los Estatutos de Autonomía de Cataluña y el País Vasco.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Los estatutos vasco y catalán no se plebiscitaron y aprobaron de forma democrática hasta 1979.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La legalización pacífica de los sindicatos tradicionales de la UGT y CCOO.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Los sindicatos tradicionales continuaban siendo ilegales y perseguidos en la calle en esta fecha.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El asalto de los militantes del MPAIAC a las dependencias del Cabildo de la Isleta.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El MPAIAC operaba de forma clandestina en Canarias y Argelia, sin intervenir en Vitoria.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B6_T1_Q03_Ley_Reforma_Politica</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Cuál fue la trascendencia de la Ley para la Reforma Política (LRP) de septiembre de 1976?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: La LRP reconoció la soberanía popular, los derechos fundamentales y propuso unas Cortes bicamerales elegidas por sufragio universal para redactar una Constitución, logrando desmontar el franquismo desde su propia legalidad.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Reconoció la soberanía popular y propuso elecciones por sufragio universal para redactar la Constitución.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Fue la herramienta jurídica clave timoneada por Fernández-Miranda para desmontar la dictadura desde la ley.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Consagró la jefatura vitalicia de Franco delegando la presidencia en Calvo Sotelo.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Franco había fallecido y la ley precisamente pretendía extinguir de forma pacífica las Leyes Fundamentales.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Ilegalizó de forma forzosa a las fuerzas obreras republicanas leales a la CEE.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Al contrario, la ley abrió el camino para el pluralismo de partidos y sindicatos.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Declaró al catolicismo confesional como religión oficial inmutable del Estado español.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La ley abrió el paso a un régimen democrático aconfesional que se consagró en 1978.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B6_T1_Q04_Harakiri_Cortes_Referendum</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Cómo se aprobó la Ley para la Reforma Política en las Cortes franquistas?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Suárez logró que las propias Cortes franquistas aprobaran la ley de su propia disolución (el 'harakiri' de las Cortes) por 425 votos a favor, ratificándose en referéndum en diciembre de 1976 con el 94% de apoyo popular.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Las propias Cortes franquistas votaron a favor de su disolución y el pueblo la ratificó en referéndum con un 94% de apoyo.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Este extraordinario proceso jurídico de la ley a la ley permitió desmantelar el franquismo de forma pacífica.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Fue impuesta por un golpe de Estado militar del general del norte Dámaso Berenguer.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Berenguer fue del reinado de Alfonso XIII en 1930, sin relación con el proceso de 1976.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Fue vetada por los procuradores falangistas en el furgón del coronel Tejero.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Tejero asaltó el Congreso de forma fallida en 1981, de forma posterior.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Se impuso por decreto regio unilateral de Juan Carlos I sin consulta popular alguna.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El rey apoyó la reforma, pero esta se sometió rigurosamente al referéndum nacional del 15 de diciembre.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B6_T1_Q05_Matanza_Atocha_1977</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué trágico acontecimiento sacudió la capital en enero de 1977 e impulsó la pacificación civil?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Un comando de extrema derecha ejecutó a cinco abogados laboralistas de CCOO/PCE en su despacho de Atocha. La repulsa popular en una gigantesca manifestación silenciosa y pacífica demostró la voluntad de reconciliación nacional de la sociedad.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>La matanza de Atocha, donde pistoleros ultraderechistas asesinaron a cinco abogados laboralistas, respondida con una manifestación pacífica.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! El entierro silencioso y coordinado por el PCE demostró serenidad y madurez democrática.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La explosión de una bomba colocada por ETA al paso del Dodge de Carrero Blanco.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Esto ocurrió de forma previa en diciembre de 1973 en la calle Claudio Coello.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Los fusilamientos masivos de militantes del FRAP en el patio de la modelo de Barcelona.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Los fusilamientos de miembros del FRAP y de ETA ocurrieron en septiembre de 1975 under Franco.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El asalto armado del Cuartel de la Montaña por fuerzas del general Mola.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Esto es anacrónico, ocurrió al inicio de la Guerra Civil de 1936.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B6_T1_Q06_Legalizacion_PCE_Militar</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Por qué fue tan controvertida y valiente la legalización del PCE por Adolfo Suárez en abril de 1977?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: La legalización del PCE (Sábado de Gloria, 1977) generó una altísima tensión en los sectores del generalato militar franquista. Para apaciguarles, Santiago Carrillo unificó al PCE aceptando la monarquía y la bandera nacional bicolor.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Provocó una altísima tensión militar, debiendo el líder comunista Santiago Carrillo aceptar la monarquía y la bandera nacional.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Esta audaz e imprevista medida de Suárez integró plenamente al comunismo de base en el consenso nacional.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Fue vetada de forma absoluta por el exiliado rey Alfonso XIII desde Italia.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El rey Alfonso XIII falleció décadas antes y Don Juan había cedido sus derechos dinásticos a Juan Carlos I.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Provocó el estallido militar inmediato del golpe de Estado del teniente coronel Milans del Bosch.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Milans del Bosch decretó el estado de guerra de forma fallida el 23 de febrero de 1981, no en 1977.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Forzó a los anarquistas de la CNT a fusionarse de forma obligatoria en el Sindicato de la Moncloa.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La CNT y sindicatos tradicionales fueron legalizados de forma independiente.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B6_T1_Q07_Derechos_Dinasticos_Juan</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Cómo se resolvió la cuestión de la legitimidad dinástica histórica de la Corona en 1977?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: La monarquía de Juan Carlos I carecía de legitimidad histórica al haber sido nombrado por Franco saltándose las normas sucesorias de la Casa Real. El problema se resolvió en mayo de 1977 cuando Don Juan cedió expresamente sus derechos dinásticos a su hijo.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Don Juan de Borbón cedió formalmente sus derechos dinásticos a su hijo el rey Juan Carlos I.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! De esta forma, el monarca unificaba en su persona la Jefatura del Estado y la de la Casa Real histórica.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El Vaticano revocó el Concordato de 1953 designando sucesor a Don Juan de Borbón.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El Concordato no intervenía en las sucesiones dinásticas y Don Juan renunció voluntariamente.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Las Cortes Constituyentes de la UCD proclamaron la República Federal cediendo la corona.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Se aprobó la monarquía parlamentaria como forma del Estado en la Constitución de 1978.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El coronel Antonio Tejero firmó la restauración absolutista bajo la bandera del Carlismo.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Tejero asaltó el Congreso de forma golpista y totalitaria, contrario a la corona democrática.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B6_T1_Q08_Elecciones_1977_Resultados</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué resultados arrojaron las primeras elecciones generales democráticas del 15 de junio de 1977?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: La Unión de Centro Democrático (UCD) organizada por Suárez resultó ganadora, seguida muy de cerca por el PSOE de Felipe González, que se erigió de forma sorpresiva como la fuerza hegemónica de la izquierda por delante del PCE.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Triunfo de la UCD de Adolfo Suárez, seguida del PSOE que se consolidó como líder hegemónico de la izquierda.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Alianza Popular (Fraga) y el PCE (Carrillo) obtuvieron resultados modestos e inferiores.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Victoria arrolladora con mayoría absoluta de Alianza Popular presidida por Manuel Fraga.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Alianza Popular quedó muy relegada como fuerza minoritaria conservadora de oposición.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El hundimiento total de la monarquía forzando a declarar el estado de guerra de Tejero.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Las elecciones consolidaron el proceso democrático y el golpe de Tejero fue posterior en 1981.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Mayoría parlamentaria absoluta de la coalición Frente Popular unificada con el PCE.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El Frente Popular es de la etapa de 1936; en 1977 las fuerzas concurrieron por separado.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B6_T1_Q09_Pactos_Moncloa_1977</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué fines y medidas consensuaron los Pactos de la Moncloa en octubre de 1977?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Ante la desastrosa inflación (superior al 26%), el paro y el déficit energético, Suárez unió a partidos, sindicatos y patronal para devaluar la peseta, moderar salarios, contener el gasto público y aprobar la reforma tributaria del IRPF.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Medidas económicas consensuadas para frenar la inflación, devaluar la peseta, moderar salarios y aprobar el IRPF.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Los pactos supusieron un esfuerzo histórico de consenso nacional indispensable para la paz social en la Transición.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La nacionalización de las canteras de fosfatos del Sáhara y el fin de los Puertos Francos canarios.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El Sáhara fue abandonado en 1975 y los Puertos Francos se mantuvieron como REF canario.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La privatización masiva de RENFE y el flete de bases militares norteamericanas de Rota.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. RENFE continuó siendo pública y las bases americanas de Rota se pactaron under Franco en 1953.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La conmutación de las deudas del estraperlo de CAMPSA cediendo el IVA al Vaticano.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Esto carece de base en los Pactos de la Moncloa; el IVA se creó en 1986 y el estraperlo es de posguerra.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B6_T1_Q10_Redaccion_Constitucion_Consenso</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Cómo se elaboró el borrador constitucional de 1978 en el Parlamento?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Una comisión de siete diputados (los 'padres de la Constitución') representativos de la pluralidad de fuerzas políticas (UCD, PSOE, AP, PCE y la minoría catalana) redactó el borrador bajo la llamada política de consenso.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Una comisión de siete diputados ('padres de la Constitución') que representaban la pluralidad ideológica parlamentaria.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! El consenso unificó criterios de izquierda y derecha, redactando un marco de convivencia estable.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Fue impuesta por un decreto-ley regio unilateral de Juan Carlos I sin debatir en Cortes.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Al contrario, las Cortes Constituyentes asumieron y debatieron el texto durante meses.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Fue un borrador secreto redactado por los asesores norteamericanos de la base de Rota.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Fue redactado en las Cortes españolas por diputados nacionales electos.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Se copió en bloque de la Constitución laica de la República de 1931 omitiendo las autonomías.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El texto de 1978 es original y consagraba el Estado de las Autonomías, ausente en 1931.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B6_T1_Q11_Padres_Constitucion_Nombres</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Quiénes fueron los denominados 'padres de la Constitución de 1978'?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Los siete diputados redactores fueron: Manuel Fraga (AP), Miguel Roca (Lliga/minoría catalana), Gregorio Peces-Barba (PSOE), Jordi Solé-Tura (PCE) y Gabriel Cisneros, Pedro Pérez-Llorca y Miguel Herrero de Miñón (UCD).</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Manuel Fraga, Miguel Roca, Peces-Barba, Solé-Tura, Cisneros, Pérez-Llorca y Herrero de Miñón.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Representaban a todas las corrientes parlamentarias de las Cortes (la minoría vasca renunció a participar).</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Adolfo Suárez, Felipe González, Santiago Carrillo, Marcelino Camacho, Don Juan y Tejero.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Estos eran líderes políticos o militares generales, no los siete redactores técnicos de la comisión.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Arias Navarro, Carrero Blanco, Fraga Iribarne, Calvo Sotelo, Fernández-Miranda y Franco.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Varios de ellos procedían de la dictadura o fallecieron antes de las elecciones constituyentes.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Nicolás Estévanez, Fernando Sagaseta, Antonio Cubillo, Gil Roldán y Juan Negrín.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Varios de estos nombres son de la historia y el independentismo canario contemporáneo.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B6_T1_Q12_Referendum_Constitucion_1978</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué fecha marcó la aprobación y ratificación popular de la actual Constitución?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: El texto constitucional fue aprobado por las Cortes y posteriormente ratificado por el pueblo español en un referéndum nacional celebrado el 6 de diciembre de 1978 con una abrumadora mayoría de votos.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>El 6 de diciembre de 1978.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Esta fecha de referéndum consagró el paso pleno a la monarquía parlamentaria y democracia española actual.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El 14 de abril de 1931.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Esta fue la fecha de la proclamación de la Segunda República.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El 20 de noviembre de 1975.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Esta fue la fecha del fallecimiento de Francisco Franco.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La madrugada del 23 de febrero de 1981.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Este fue el día del asalto armado de Tejero al Congreso de los Diputados.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B6_T1_Q13_Principios_Constitucion</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Cómo define el artículo primero de la Constitución de 1978 al Estado español?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: El artículo 1 define a España como un 'Estado social y democrático de Derecho' que propugna la libertad, la justicia, la igualdad y el pluralismo político, declarando la soberanía nacional en el pueblo y la monarquía parlamentaria.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Un Estado social y democrático de Derecho que adopta la monarquía parlamentaria como forma política.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Es la definición institucional inmutable que rige el orden constitucional actual.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Una República democrática de trabajadores de todas las clases que se organiza en régimen de libertad.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Esta definición corresponde al primer artículo de la Constitución republicana de 1931.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Un Estado confesional católico nacional-sindicalista bajo unidad de mando.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Esta definición responde al Catecismo Patriótico del posterior régimen franquista.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Una confederación de comunidades ibéricas sin asamblea legislativa bicameral.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La Constitución de 1978 consagra la indisoluble unidad nacional y Cortes bicamerales.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B6_T1_Q14_Estado_Autonomias_TituloVIII</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Cómo regula el Título VIII de la Constitución el modelo territorial de España?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: El Título VIII regula la descentralización del Estado, haciendo compatible la indisoluble unidad nacional con el derecho a la autonomía de las nacionalidades y regiones, constituyéndose entre 1979 y 1983 las 17 Comunidades Autónomas.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Establece la descentralización del Estado por medio de Comunidades Autónomas reguladas bajo Estatutos.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Este marco rompió de forma absoluta con el rígido e histórico centralismo uniformador de la dictadura.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Declara la soberanía federal absoluta e independiente de las provincias catalanas.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La Constitución consagra la patria común e indivisible de todos los españoles.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Obliga a las diputaciones de realengo canarias a fusionarse con el Mando de las JONS.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El Sindicato Vertical y las JONS desaparecieron con el franquismo, sin relación con el Título VIII.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Ilegaliza la creación de asambleas legislativas locales en los Cabildos.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Al contrario, las Comunidades Autónomas constituidas gozan de Parlamento legislativo y gobierno propio.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B6_T1_Q15_Estatuto_Canarias_1982</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Cómo se desarrolló y en qué año se aprobó el Estatuto de Autonomía de Canarias?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: La construcción autonómica canaria se demoró por la complejidad de salvaguardar el REF y el pleito de cabildos, aprobándose de forma definitiva en agosto de 1982 bajo el gobierno preautonómico de la Junta de Canarias.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Se aprobó en agosto de 1982, garantizando la representatividad de todas las islas en el Parlamento.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! El Estatuto fue acompañado de la LOTRACA para administrar competencias de primer nivel, similar a las nacionalidades históricas.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Se aprobó en la Constitución de Cádiz de 1812 por la Junta Suprema de Canarias.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La Constitución de Cádiz es decimonónica; el Estatuto autonómico canario es de 1982.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Fue vetado de inmediato por el dictador Franco tras su visita oficial de 1950.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Franco gobernaba de forma dictatorial centralista y el Estatuto es de la democracia posterior.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Se suspendió de forma armada tras los Sucesos de Sardina en 1968.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Los Sucesos de Sardina fueron protestas obreras, no autonómicas constitucionales.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B6_T1_Q16_Deterioro_UCD_1979</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué factores explican el rápido deterioro del segundo gobierno de la UCD (1979-1981)?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: El gobierno de la UCD sufrió una crisis profunda debido a las disensiones de sus familias internas, el azote de la crisis del petróleo y una brutal campaña de atentados terroristas de ETA (el bienio más mortífero).</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Las disensiones internas, la crisis económica del petróleo y la brutal campaña de terrorismo de ETA.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! El acoso del terrorismo de ETA cobró más de 170 muertos entre 1979 y 1980 (los años de plomo).</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La legalización de la Falange y el fusilamiento sumario del general Yagüe.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Yagüe ya había fallecido y la Falange operaba debilitada en democracia.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El desvío de las reservas de oro hacia el concordato de la base militar de Rota.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Varios de estos nombres son de la posguerra franquista de los años cincuenta.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La invasión civil pacífica del Sáhara Occidental organizada por el Frente Polisario.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Esto corresponde a la Marcha Verde de Hassan II sobre la colonia española en 1975.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B6_T1_Q17_Golpe_Estado_Tejero_23F</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué sucesos de gravedad asolaron las instituciones la tarde del 23 de febrero de 1981?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Durante el pleno de investidura de Leopoldo Calvo Sotelo, un grupo armado de guardias civiles comandado por Antonio Tejero asaltó el Congreso secuestrando a los diputados, mientras Milans del Bosch declaraba el estado de guerra.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>El asalto armado de Antonio Tejero al Congreso de los Diputados y la rebelión militar de Milans del Bosch en Valencia.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! El fallido golpe militar pretendía acabar de forma violenta con el naciente proceso democrático.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El asesinato policial de José Calvo Sotelo en la madrileña Puerta del Sol.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Esto ocurrió en julio de 1936 desatando la Guerra Civil, no en 1981.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El magnicidio del almirante Carrero Blanco al paso de su Dodge en la calle Claudio Coello.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Carrero Blanco fue asesinado por ETA en diciembre de 1973 under Franco.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La masacre de los abogados laboralistas en su despacho del bufete de Atocha.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La matanza de Atocha fue perpetrada por pistoleros de extrema derecha en enero de 1977.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B6_T1_Q18_Papel_Rey_23F</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué papel desempeñó el rey Juan Carlos I en la madrugada del 24 de febrero de 1981?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: El papel de la Corona fue decisivo en el fracaso del golpe. El rey se dirigió en directo por televisión nacional ordenando sumisión y la salvaguarda de la legalidad constitucional a los altos mandos militares.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Dirigirse en directo a los ciudadanos y ordenar a los generales sumisión a la legalidad y Constitución.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Su firme mensaje de radio y televisión desarmó la intentona golpista, triunfando la democracia.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Firmar el indulto incondicional de los golpistas carlistas de Jaca.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Los golpistas de Jaca fueron de 1930 y el rey no amnistió a Tejero, que fue juzgado y encarcelado.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Pactar el ingreso forzoso de la armada en las bases nucleares del Eje.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Esto carece de sentido en el contexto del 23-F de 1981.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Nombrar de forma provisional de presidente de las Cortes a Manuel Fraga Iribarne.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El presidente provisional de las Cortes continuaba y Fraga lideraba la oposición conservadora de AP.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B6_T1_Q19_Gobierno_Calvo_Sotelo_Leyes</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué polémicas medidas e hitos marcaron el breve gobierno de Leopoldo Calvo Sotelo (1981-1982)?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Calvo Sotelo promovió el ingreso de España en la OTAN (con la hostilidad del PSOE), aprobó la Ley del Divorcio (con la oposición de la Iglesia) y gestionó la tragedia sanitaria del envenenamiento de aceite de colza.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>El polémico ingreso de España en la OTAN, aprobación de la Ley del Divorcio y la tragedia del aceite de colza.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! El gobierno careció de estabilidad interna desintegrándose la UCD, lo que forzó el adelanto electoral.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La devaluación del euro, privatizaciones de CAMPSA y la universalización del IRPF.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El euro se adoptó en 2002, CAMPSA operó en monopolio franquista y el IRPF es de los Pactos de 1977.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La expropiación de las tierras andaluzas eximiendo del pago de aranceles a la CEE.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. No se expropiaron tierras y la entrada en la CEE fue posterior en 1986.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La disolución de los batallones de CCOO y la destitución de Adolfo Suárez de la UP.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. CCOO era un sindicato democrático libre y la UP desapareció con Primo de Rivera.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B6_T1_Q20_Victoria_Socialista_1982</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué trascendencia histórica tuvieron las elecciones generales de octubre de 1982?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: El PSOE de Felipe González y Alfonso Guerra obtuvo un triunfo arrollador de más de 10 millones de votos y la mayoría absoluta del Parlamento, demostrando la plena consolidación de la normalidad democrática.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>El triunfo arrollador con mayoría absoluta del PSOE de Felipe González, consagrando la alternancia pacífica.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Supuso la llegada al poder de las fuerzas de izquierda de oposición histórica al franquismo.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El hundimiento total de la UCD sustituida por las Juntas de Vocales de Tejero.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La UCD se hundió pero fue reemplazada por AP de Fraga en la oposición; Tejero estaba procesado en prisión.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La conmutación de la pena de muerte a los terroristas de ETA del atentado de Hipercor.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El pavoroso atentado de Hipercor fue posterior en 1987 y en democracia no rige la pena capital.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La proclamación de la República Federal tras la dimisión voluntaria del rey.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El sistema de monarquía parlamentaria se consolidó plenamente under la corona democrática.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B6_T1_Q21_Primer_Gobierno_PSOE_Reformas</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué duras reformas económicas y de calado social acometió el primer gobierno socialista?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: El PSOE de Felipe González aprobó un estricto plan de estabilización con la reconversión industrial (cierre de altos hornos y astilleros obsoletos que provocó huelgas), la LODE (1985) de educación y la despenalización parcial del aborto.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>La reconversión industrial con duros conflictos laborales, la LODE de educación y la ley del aborto.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Estas rigurosas reformas estructurales sanearon las finanzas estatales facilitando el ingreso en Europa.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La entrega unilateral del Sáhara Occidental a la marina comercial de Texaco.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El Sáhara fue entregado under Franco en 1975 y Texaco suministraba crudo.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La nacionalización sin indemnizar de los monopolios de Telefónica y de la Renfe.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Las empresas estatales continuaron operando de forma regular sin confiscaciones.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La devaluación forzosa del euro y la supresión de las cartillas de racionamiento.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El euro es de 2002 y el racionamiento se erradicó bajo la autarquía en 1952.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B6_T1_Q22_Ingreso_CEE_1986</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Cuándo ingresó España de forma oficial en la Comunidad Económica Europea (CEE)?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Tras el Tratado de Adhesión firmado en junio de 1985 con el consenso de todos los partidos, el 1 de enero de 1986 España se convertía en miembro de pleno derecho de la CEE (actual Unión Europea).</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>El 1 de enero de 1986.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Supuso la llegada de importantes fondos de cohesión que modernizaron las infraestructuras del Estado de bienestar.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El 14 de abril de 1931.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Esta fue la fecha de la proclamación de la Segunda República.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El 20 de noviembre de 1975.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Esta fue la fecha del fallecimiento del general Franco.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El 6 de diciembre de 1978.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Esta fue la fecha del referéndum de la Constitución.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B6_T1_Q23_Referendum_OTAN_1986</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué singularidad e incertidumbre rodeó el referéndum de la OTAN de marzo de 1986?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: El PSOE de Felipe González había liderado de forma previa la oposición al ingreso de España en la OTAN de Calvo Sotelo. Al gobernar, el PSOE de forma audaz cambió su postura pidiendo el 'sí' a la permanencia bajo tres condiciones (no integración militar, no nuclearización).</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>El cambio de postura del PSOE que solicitó de forma audaz el voto afirmativo bajo condiciones de no nuclearización.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! El 'sí' venció en el referéndum nacional de marzo de 1986, exceptuándose el rotundo rechazo en Cataluña, País Vasco y Canarias.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El veto absoluto impuesto por los mandos militares golpistas del general Mola.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El general Mola falleció en la Guerra Civil de 1936.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La conmutación de las deudas monetarias de las bases militares estadounidenses de Rota.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Las bases militares americanas continuaron operando under los acuerdos vigentes.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La exigencia de celebrar elecciones parlamentarias directas de comités de CCOO.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Las elecciones generales se rigen por la ley electoral constitucional democrática de forma regular.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B6_T1_Q24_Huelga_General_1988</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué acontecimiento social de gravedad fracturó las relaciones del Gobierno socialista con los sindicatos en 1988?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: La huelga general del 14 de diciembre de 1988 (14-D), convocada conjuntamente por CCOO y por la socialista UGT de forma pionera frente a un Gobierno del mismo signo político, paralizó el país con un enorme éxito de movilización.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>La huelga general del 14 de diciembre de 1988 de UGT y CCOO frente al Gobierno socialista.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! El gobierno respondió de forma conciliadora universalizando la sanidad gratuita y garantizando las pensiones públicas con el Pacto de Toledo.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El atentado terrorista de extrema derecha del bufete laboralista de Atocha.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La matanza de Atocha ocurrió al inicio de la Transición en enero de 1977, no en 1988.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La disolución de los batallones de la Legión Cóndor en las cuencas mineras de Asturias.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La Legión Cóndor alemana actuó en la Guerra Civil de 1936, anacrónica.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El secuestro armado de Miguel Ángel Blanco por patrullas de falangistas.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Miguel Ángel Blanco fue secuestrado y asesinado de forma trágica por ETA en julio de 1997.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B6_T1_Q25_Declive_Hegemonia_Socialista</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué factores precipitaron el declive y fin de los 13 años de hegemonía socialista (1993-1996)?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: El declive del PSOE se debió a las disensiones entre González y Guerra, la crisis económica mundial de 1992 (paro de 3 millones), escándalos de corrupción (Roldán, Rubio, Guerra) y la revelación de la guerra sucia del GAL.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Casos de corrupción personal, la recesión económica de 1992 y la revelación de la guerra sucia del GAL.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Estos escándalos dinamitaron la confianza ciudadana, ganando el PP de Aznar las elecciones de marzo de 1996.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La unificación forzosa del PCE en la alianza tradicional de la CEDA.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La CEDA era de la Segunda República y el PCE continuaba operando en la coalición de Izquierda Unida.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El secuestro masivo de las líneas de transportes de laIsleta por el MPAIAC.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El MPAIAC operaba de forma residual y Cubillo sufrió un atentado estatal en Argelia, sin relación.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La conmutación de las reservas monetarias del euro de la base militar de Rota.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El euro no se adoptó hasta 2002 y la base de Rota operaba de forma conjunta.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B6_T1_Q26_Aznar_Gobiernos_Euro</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué logros y acontecimientos marcaron los gobiernos del PP de José María Aznar (1996-2004)?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Aznar promovió el saneamiento fiscal, privatizó monopolios estatales, redujo el desempleo logrando la implantación del euro en 2002, pero sufrió contestación civil por la huelga general, el Prestige y el apoyo a la invasión de Irak en 2003.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>El saneamiento de las cuentas públicas, la implantación del euro en 2002 y las polémicas de Irak y el Prestige.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Su segunda legislatura con mayoría absoluta (2000-2004) aprobó polémicas leyes como la de Extranjería y la de Partidos.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La devaluación voluntaria de la peseta por el INI de López Rodó.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. López Rodó y el INI son del desarrollismo franquista, anacrónicos con el gobierno de Aznar.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La legalización pacífica de ETA y la entrega incondicional del Sáhara a Marruecos.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El Sáhara fue abandonado en 1975 y el terrorismo de ETA continuó operando de forma activa y violenta.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La universalización del IRPF pactada con el sindicato socialista de la UGT.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El IRPF se implantó en los comicios de la Transición de 1977, no under Aznar.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B6_T1_Q27_Atentados_11M_Atocha</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué trágico acontecimiento sacudió la campaña electoral y el final del gobierno del PP en marzo de 2004?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: El 11 de marzo de 2004, diez bombas estallaron en cuatro trenes de cercanías en la estación de Atocha de Madrid, provocando la muerte de 193 ciudadanos y una profunda crisis informativa por la atribución inicial del Gobierno a ETA frente a la pista de Al-Qaeda.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Los atentados yihadistas del 11-M de 2004 en Madrid, que provocaron 193 muertos y una profunda conmoción política.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! La gestión informativa y la guerra de atribuciones desataron manifestaciones que se tradujeron en la victoria electoral del PSOE de Zapatero.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El asalto de la extrema derecha militar del coronel Tejero al Congreso.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El asalto de Tejero al Congreso (23-F) ocurrió en febrero de 1981, de forma previa.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La masacre de los abogados laboralistas del PCE en las estaciones de Vitoria.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La matanza de los abogados de Atocha fue en enero de 1977, y los sucesos de Vitoria en marzo de 1976.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El secuestro armado del almirante Carrero Blanco al paso de su vehículo por la Isleta.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Carrero Blanco falleció en el atentado de ETA de diciembre de 1973 en Madrid, sin relación con Canarias.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B6_T1_Q28_Rodríguez_Zapatero_Derechos</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué leyes sociales y de derechos civiles marcaron los gobiernos de José Luis Rodríguez Zapatero (2004-2011)?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Zapatero retiró de inmediato las tropas de Irak, aprobó leyes de igualdad de género, violencia de género, el matrimonio entre personas del mismo sexo, la ley de Dependencia, y el fin pacífico de la actividad armada de ETA en octubre de 2011.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>La paridad, matrimonio igualitario, la ley de dependencia, y el fin definitivo de la actividad armada de ETA en 2011.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Su andadura reformista civil se vio mermada por el brutal azote de la crisis financiera mundial de las hipotecas basura de 2007.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La disolución forzosa del Sindicato Vertical controlado por el conde de Romanones.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Romanones es del reinado de Alfonso XIII y el Sindicato Vertical desapareció en la Transición.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La privatización de la red de CAMPSA y el fin de los aranceles de los Puertos Francos canarios.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. CAMPSA fue privatizada bajo el gobierno de Aznar de forma previa.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La conmutación de las deudas del IRPF pactada con la Confederación de Derechas Autónomas (CEDA).</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La CEDA es de la Segunda República (1933) y el IRPF opera de forma constitucional.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B6_T1_Q29_Mariano_Rajoy_Cataluna</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué desafíos territoriales e institucionales marcaron los gobiernos de Mariano Rajoy (2011-2018)?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Rajoy asumió duros ajustes fiscales por la crisis, presenció la abdicación de Juan Carlos I en Felipe VI en 2014, y tuvo que enfrentarse al auge del soberanismo catalán de Puigdemont, aplicando el artículo 155 de la Constitución en 2017.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>La abdicación regia en Felipe VI (2014) y la intervención de la autonomía de Cataluña bajo el artículo 155 en 2017.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Su ciclo concluyó de forma abrupta en mayo de 2018 tras aprobarse la moción de censura presentada por Pedro Sánchez.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La legalización de la guerrilla de los maquis y el fin definitivo del terrorismo del MPAIAC.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El maquis ya no operaba y el MPAIAC desapareció de forma previa en la Transición.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La devaluación de la peseta por el INI de los tecnócratas de la base militar de Rota.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La devaluación de la peseta es de 1959 y Rota operaba de forma conjunta, anacrónicos.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El asalto de Tejero al Congreso y la conmutación de las multas de la colza.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Tejero asaltó el Congreso en 1981 y el escándalo de la colza se juzgó en 1989.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B6_T1_Q30_Sánchez_Pedro_Coalicion</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué hitos caracterizan la andadura del gobierno de Pedro Sánchez (2018-2023)?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Sánchez asumió el poder tras la exitosa moción de censura en 2018, constituyendo en 2019 el primer gobierno de coalición contemporáneo con Unidas Podemos, debiendo gestionar la pandemia de COVID-19 en 2020 con el estado de alarma.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>La moción de censura en 2018, el primer gobierno de coalición y la gestión sanitaria de la pandemia de COVID-19.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! El gobierno de coalición se enfrentó también a la crisis energética derivada de la posterior guerra de Ucrania de 2022.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La unificación forzosa de CCOO y UGT en el Movimiento Nacional de Alianza Popular.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. CCOO y UGT operan de forma libre e independiente, y Alianza Popular fue refundada como el PP.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La cesión obligatoria de los Puertos Francos canarios a los barcos de guerra de la compañía Woermann.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Los Puertos Francos canarios se disolvieron en la CEE y Woermann fue decimonónica.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La conmutación de las multas del estraperlo de CAMPSA cediendo el IRPF al Vaticano.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El estraperlo es de posguerra, CAMPSA fue privatizada y el IRPF opera de forma regular.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+</quiz>

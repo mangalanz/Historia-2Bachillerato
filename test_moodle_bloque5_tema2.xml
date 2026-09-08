@@ -1,0 +1,1599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/top/Bloque V/Tema 2</text>
+    </category>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T2_Q01_Plan_Estabilizacion_1959</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué tres grandes ejes articuló el Plan de Estabilización Nacional de 1959?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: El Plan de Estabilización de 1959 se sustentó en tres ejes fundamentales: estabilización (recortes, limitación de créditos y salarios), liberalización interior (eliminación de organismos interventores) y liberalización exterior (apertura mercantil y devaluación de la peseta).</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Estabilización de la economía (recortes y congelación), liberalización interior y apertura exterior (devaluación de la peseta).</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! La devaluación de la peseta en casi un 50% con respecto al dólar estimuló de inmediato las exportaciones.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Privatización masiva de las Confederaciones Hidrográficas, flete del SEU y conmutación de las cartillas de racionamiento.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Varios de estos nombres son anacrónicos con el plan y el racionamiento se eliminó previamente en 1952.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Integración comercial plena en la CEE, adopción inmediata del euro y devaluación del arancel canario.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La CEE denegó la integración de España, el euro se implantó en 2002 y el arancel canario se rigió por el REF posterior.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Nacionalización forzosa de la banca privada catalana, elevación del gasto público e incremento de monopolios.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Al contrario, el plan persiguió abrir el mercado, liberalizar el comercio exterior y frenar el gasto público.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T2_Q02_Motores_Milagro_Economico</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué tres motores de divisas extranjeras hicieron posible el denominado 'Milagro Económico'?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: El desarrollismo se financió gracias a la entrada masiva de divisas procedentes de tres motores: el turismo de masas, la emigración de trabajadores a Europa que enviaban remesas y la masiva inversión de capital extranjero.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>El turismo de masas, las remesas enviadas por los emigrantes desde Europa y la inversión de capital extranjero.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Sin esta inyección continuada de divisas externas, el espectacular despegue industrial habría sido financieramente inviable.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El cultivo de la caña de azúcar, la exportación de la cochinilla andaluza y las donaciones de Juan March.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Varios de estos cultivos y aportaciones son del siglo XIX o previos al desarrollismo de los sesenta.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Los créditos preferenciales del Plan Marshall, el oro de Moscú y las compras agrarias francesas.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. España fue excluida del Plan Marshall, el oro de Moscú se gastó en la Guerra Civil y el comercio con Francia continuaba restringido.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Los fondos de cohesión de la CEE, las bases conjuntas de Rota y el REF canario de Puertos Francos.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Los fondos de la CEE son del ingreso español en 1986 y el REF es una ley fiscal posterior, no motores de divisas de los sesenta.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T2_Q03_Planes_Desarrollo_Lector</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué rasgos caracterizaron a los Planes de Desarrollo Económico y Social dirigidos por Laureano López Rodó?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: López Rodó dirigió tres planes cuatrienales de planificación indicativa para el sector privado, creando polos de desarrollo industrial en zonas rezagadas (Vigo, Huelva, Sevilla, Zaragoza, Burgos, Valladolid, Granada, La Coruña).</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Planificación indicativa, inversiones en infraestructuras básicas y creación de polos de desarrollo regional.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Aunque su rentabilidad fue limitada por la ineficacia de recursos, crearon valiosas infraestructuras de transportes y energía.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Nacionalización forzosa de todas las industrias textiles catalanas eximiéndolas del pago del IVA.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El IVA no se creó hasta el ingreso en la CEE en 1986 y el plan pretendía ayudar a las empresas privadas, no nacionalizarlas.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La privatización de la red ferroviaria de RENFE cediéndola al capital carbonero de las JONS.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. RENFE continuaba siendo pública y las JONS estaban disueltas en el Movimiento.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La conmutación de todas las deudas tributarias de los Grandes de España de Extremadura.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Esto carece de base en las directrices de los Planes de Desarrollo de López Rodó.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B4_T2_Q04_Transformacion_Demografica_Vaciada</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué transformaciones demográficas deparó el despegue económico de los años sesenta?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Se produjo un éxodo rural masivo de millones de personas desde el interior rural hacia las periferias urbanas industriales de Cataluña, País Vasco y Madrid (nacimiento de la 'España vaciada'), el 'baby boom' y la emigración hacia Europa.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>El éxodo rural masivo que vació el interior, el 'baby boom' de natalidad y la emigración laboral a Europa.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Los flujos migratorios internos afectaron a 2,5 millones de españoles, despoblándose comarcas agrícolas enteras.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La repatriación obligatoria de todos los canarios exiliados en Venezuela hacia laIsla de Lobos.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La Isla de Lobos es un parque natural despoblado y la emigración a Venezuela retornó parcialmente por la crisis cubana, sin relación.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La unificación nacional del Tercio de Familias en las Juntas de Vocales de Badajoz.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Estos son términos institucionales municipales de posguerra sin relación demográfica.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La inmigración masiva de trabajadores africanos para faenar en las empaquetadoras de plátanos.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. España continuaba siendo exportadora de mano de obra y la inmigración africana no comenzó hasta fines del siglo XX.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T2_Q05_Evolucion_Social_Consumo</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué elementos evidenciaron el nacimiento de la sociedad de consumo en los hogares de los años sesenta?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: El equipamiento doméstico con electrodomésticos (frigorífico, lavadora, televisor, teléfono) y la popularización del utilitario de gran éxito SEAT 600 representaron la andadura de la clase media urbana.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>El equipamiento de electrodomésticos (frigorífico, lavadora, televisión) y la popularización del SEAT 600.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! La modernización sociológica de consumo chocó con el inmovilismo civil del régimen dictatorial.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El racionamiento del pan mediante cartillas de racionamiento individuales de CAMPSA.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Las cartillas de racionamiento se eliminaron de forma previa en el año 1952.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La obligatoriedad de que los jóvenes se afiliaran al sindicato vertical del SEU.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El SEU falangista controlaba las universidades de forma coactiva, sin relación con el consumo doméstico.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La privatización de la red ferroviaria y la compra a crédito de la marca carbonera Woermann.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Varios de estos nombres son de la Restauración decimonónica canaria, anacrónicos.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T2_Q06_Ley_Prensa_Fraga_1966</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué cambios introdujo la Ley de Prensa e Imprenta de 1966 de Manuel Fraga?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: La Ley de Prensa de 1966 ('ley Fraga') eliminó de forma novedosa la rígida censura previa, pero mantuvo la represión sancionando administrativamente a autores o editores y decretando el secuestro de publicaciones discrepantes.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Eliminó la censura previa, pero mantuvo las limitaciones y sanciones, decretando el secuestro de publicaciones.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Los editores practicaron la 'autocensura' para evitar las multas o cierres definitivos por publicar ideas discrepantes.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Garantizó la plena libertad de expresión, opinión y manifestación pacífica en las universidades.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Las huelgas e ideas antifranquistas continuaron prohibidas de forma severa.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Ilegalizó de forma forzosa el partido único de FET y de las JONS por herético.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El Movimiento se unificó y se mantuvo como pilar de adorno doctrinal del Estado.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Autorizó la libre publicación de manifiestos republicanos redactados por Don Juan.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La corona franquista persiguió con fuerza las pretensiones de Don Juan de Borbón en la prensa.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T2_Q07_Ley_Organica_Estado_1967</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué trascendencia institucional tuvo la Ley Orgánica del Estado (LOE) de 1967?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: La Ley Orgánica del Estado (1967) culminó la fachada institucional del régimen, separando el cargo de presidente del Gobierno de la jefatura del Estado con poder ilimitado en la persona de Franco.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Separó el cargo de presidente del Gobierno de la Jefatura del Estado, que continuaba vitalicia en Franco.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Buscaba blindar y asegurar de forma jurídica la herencia institucional de la dictadura.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Estableció la amnistía general de todos los presos políticos del TOP.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. No se amnistiaron presos y el TOP continuó procesando a la disidencia sindical obrera.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Garantizó la soberanía popular unificando las Cortes en una sola asamblea por sufragio directo.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La representación continuaba basándose en el modelo restringido de la Democracia Orgánica.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Ilegalizó al sindicato de Comisiones Obreras (CCOO) y deportó a Marcelino Camacho.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. CCOO operaba clandestinamente y su represión continuó de forma regular, sin mencionarse en la ley.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T2_Q08_Escandalo_Matesa_1969</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué repercusiones políticas desató el Escándalo Matesa en 1969?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: El caso Matesa (fraude masivo de exportaciones ficticias de telares mecánicos por Juan Vilá Reyes) abrió una crisis gubernamental sin precedentes utilizada por los falangistas para golpear a los ministros tecnócratas del Opus Dei.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Un fraude de exportaciones ficticias de telares que provocó una crisis gubernamental y el posterior gobierno monocolor de Franco.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Franco resolvió de forma expeditiva la guerra entre familias falangistas y católicas destituyendo a Fraga y Solís e introduciendo más tecnócratas.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La detención y fusilamiento sumario del general africanista Emilio Mola en Burgos.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El general Mola falleció en un accidente de aviación en junio de 1937, mucho antes de este suceso.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El desvío ilegal de las reservas de oro del Banco de España hacia las arcas de la CEE.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El oro se había consumido en la Guerra Civil y España continuaba excluida de la CEE.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La disolución forzosa del sindicato vertical de la Central Nacional de CCOO.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El Sindicato Vertical (OSE) era oficial del régimen y CCOO operaba de forma clandestina e ilegal.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T2_Q09_Oposicion_Clandestina_PCE_Suresnes</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Cómo se organizó la oposición clandestina en el interior y exterior en los años sesenta y setenta?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Surgió el sindicato Comisiones Obreras (CCOO) con Marcelino Camacho, la unificación estudiantil de la FUE, y la unificación de la oposición moderada en Múnich (1962). En el exterior el PSOE se reorganizó en Suresnes (1974) con Felipe González.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>El nacimiento clandestino de CCOO, el Contubernio de Múnich, y la reorganización del PSOE en Suresnes con Felipe González.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Estas fuerzas unificaron esfuerzos, preparando bases de transición pacífica democrática.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La disolución del partido de las JONS y la entrega voluntaria de los caladeros saharianos al MPAIAC.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Varios de estos nombres son anacrónicos y carecen de relación de oposición coordinada.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La unificación forzosa de la CNT en la junta de defensa municipal de Badajoz.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La CNT operaba debilitada de forma ilegal y no participó de juntas oficiales locales del régimen.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La conmutación de penas del general Yagüe con la fianza aportada por Juan March.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Yagüe era oficial del bando vencedor y March aportó dinero de forma previa para financiar el golpe de 1936.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T2_Q10_Asesinato_Carrero_Blanco</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué trascendencia histórica tuvo el asesinato del almirante Luis Carrero Blanco el 20 de diciembre de 1973 por ETA?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Carrero Blanco (presidente del Gobierno y sucesor designado para mantener intacto el régimen tras la muerte de Franco) fue asesinado en Madrid por ETA. Su muerte rompió la continuidad inmovilista y aceleró la crisis del franquismo.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Rompió la continuidad inmovilista del régimen al eliminarse al sucesor designado por Franco.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Su asesinato aceleró la fractura interna entre franquistas aperturistas e inmovilistas del búnker.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Provocó la suspensión de los Puertos Francos canarios por orden directa del Mando Económico.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Los Puertos Francos canarios se reabrieron de hecho en 1960 de forma exitosa.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Forzó la amnistía general de todos los presos políticos de las Brigadas de No Intervención.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Al contrario, el régimen recrudeció la represión penal con Consejos de Guerra y ejecuciones.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Facilitó el ingreso de España en el Plan Marshall de reconstrucción económica.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El Plan Marshall ya se había extinguido y España continuaba marginada de la CEE.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T2_Q11_Conflicto_Sahara_Marcha_Verde</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Cómo se resolvió el conflicto del Sáhara Occidental y la Marcha Verde en noviembre de 1975?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: El rey Hassan II de Marruecos organizó la Marcha Verde (invasión civil pacífica) aprovechando la senilidad de Franco. El Gobierno de Arias Navarro claudicó firmando los Acuerdos Tripartitos de Madrid (14 de noviembre de 1975) entregando el territorio sin referéndum.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>España firmó el Acuerdo de Madrid, entregando el territorio del Sáhara a Marruecos y Mauritania sin el referéndum prometido.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Los Acuerdos de Madrid claudicaron ante Hassan II para evitar una guerra inútil, traicionando al pueblo saharaui del Frente Polisario.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La ONU ordenó intervenir de forma militar a la Legión Cóndor en defensa de las minas de Rota.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La Legión Cóndor fue una fuerza aérea alemana de la Guerra Civil y Rota era una base norteamericana en la Península.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Se concedió el derecho de autodeterminación e independencia mediante plebiscito en las canteras de la Isleta.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Varios de estos nombres son anacrónicos con el conflicto sahariano costero canario.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Se firmó una tregua humanitaria supervisada directamente por el sindicato vertical de CCOO.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. CCOO operaba clandestinamente y se oponía de forma radical a los Acuerdos de Madrid del régimen.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T2_Q12_Desarrollismo_Canarias_REF</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué espectacular transformación socioeconómica deparó el Desarrollismo en Canarias en los años sesenta?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Canarias experimentó la reapertura de los Puertos Francos en 1960 y un brutal boom del turismo de masas que reconfiguró el paisaje costero. El sector servicios y la construcción convirtieron a las islas en un gran polo que duplicó la población.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>La reapertura de los Puertos Francos en 1960 y un brutal boom del turismo de masas que duplicó la población.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! El sector servicios y la construcción sustituyeron el agro tradicional, reconfigurándose la costa canaria de forma espectacular.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La colectivización obligatoria de todos los cultivos de cochinilla liderada por Fernando Sagaseta.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Sagaseta fundó Canarias Libre de signo independentista, persiguiéndose por la policía sin colectivizar cultivos decimonónicos.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La cesión incondicional de los puertos de la Isleta y Triana a la Real Audiencia de Sevilla.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La Real Audiencia de Sevilla es un órgano judicial colonial decimonónico, anacrónico.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La disolución de los batallones de voluntarios de las Brigadas de No Intervención en el campo de Tefía.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Tefía fue un penal franquista represivo clausurado en los años sesenta.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T2_Q13_Independentismo_Canario_MPAIAC</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué organizaciones nacionalistas de oposición al franquismo surgieron en Canarias?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: En 1959 se fundó Canarias Libre, dirigida por Fernando Sagaseta, de signo de izquierda. En 1964 Antonio Cubillo fundó en Argelia el MPAIAC, de corte independentista, orientándose a la vía armada.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Canarias Libre de Fernando Sagaseta (1959) y el independentista MPAIAC de Antonio Cubillo (1964).</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! El MPAIAC de Antonio Cubillo defendía la independencia canaria mediante acciones de lucha armada clandestina.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La Junta de Defensa Provincial y el Mando de Cabildos de la Isleta.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Estos eran organismos de administración provincial tradicionales sin relación de oposición independentista.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La Comunión Tradicionalista Canaria de los hermanos Juan y Fernando León y Castillo.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Los hermanos León y Castillo fueron políticos liberales de la Restauración decimonónica.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Las empaquetadoras unificadas del tomate de las misiones pedagógicas de Eufemiano Fuentes.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Varios de estos nombres son de la burguesía decimonónica e industrial canaria, anacrónicos.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T2_Q14_Consecuencias_Abandono_Sahara_Canarias</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué traumático impacto supuso el abandono del Sáhara en 1975 para el archipiélago canario?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: La firma del Acuerdo de Madrid forzó el retorno precipitado de miles de familias canarias residentes en el Sáhara, destruyó la actividad pesquera canaria en el banco sahariano y convirtió a Canarias en frontera geopolítica.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>El retorno de miles de familias canarias de la colonia, la destrucción de la pesca en el banco sahariano y convertirse en frontera geopolítica.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Canarias sufrió las secuelas directas de la entrega del Sáhara por su proximidad geográfica al conflicto.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La privatización extraordinaria de las compañías de la carbonera alemana Woermann.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La compañía carbonera alemana operó de forma previa, anacrónica con el conflicto sahariano costero canario.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La conmutación de todas las multas del REF por mediación del conde de Romanones.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El conde de Romanones fue del reinado de Alfonso XIII, sin relación de administración fiscal en 1975.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La unificación nacional obligatoria de las tabaqueras de Eufemiano Fuentes en el sindicato CCOO.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. CCOO operaba clandestinamente y se opuso de forma radical a los Acuerdos de Madrid del régimen.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T2_Q15_Muerte_Franco_Fecha</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿En qué fecha falleció el general Francisco Franco Bahamonde y qué acontecimiento constitucional inmediato se aplicó?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Francisco Franco falleció el 20 de noviembre de 1975 tras una larga agonía. Dos días después, en cumplimiento de la Ley de Sucesión, Juan Carlos I de Borbón fue proclamado rey de España.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>El 20 de noviembre de 1975, proclamándose rey de España a Juan Carlos I de Borbón.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Se iniciaba de forma imprevista para los continuistas el camino de la Transición democrática.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El 1 de abril de 1939, promulgándose el Fuero del Trabajo corporativo de las JONS.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Esta fue la fecha del fin de la Guerra Civil y el Fuero del Trabajo es de 1938.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El 23 de febrero de 1981, asumiendo el poder el teniente coronel Antonio Tejero.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Este fue el día del fallido golpe de Estado del 23-F en el Congreso de los Diputados.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El 6 de diciembre de 1978, sancionándose la Constitución democrática ante las Cortes de Madrid.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Este fue el día del referéndum nacional que ratificó la actual Carta Magna.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T2_Q16_Tecnocratas_Opus_Dei</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué carácter tenían los ministros tecnócratas que asumieron la dirección económica en 1957?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Su perfil era más técnico y académico que ideológico tradicionales (muchos vinculados al Opus Dei), apostando por un pragmatismo económico (libre mercado, liberalización) pero manteniendo el inmovilismo político absoluto.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Perfil técnico y pragmático para liberalizar la economía, pero manteniendo un inmovilismo político estricto.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Su andadura demostró que la modernización económica de consumo no asimilaría políticamente el autoritarismo.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Militantes anarquistas de la CNT de Cataluña que expropiaron de forma masiva los latifundios.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Los tecnócratas procedían de familias acomodadas conservadoras e intelectuales opuestos de forma absoluta al anarquismo.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Oficiales africanistas de la Legión que restauraron las juntas de defensa de la Isleta.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Varios de estos nombres son tradicionales militares anacrónicos.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Gobernadores de la Real Audiencia canaria partidarios del laicismo de la Edad de Plata.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Eran católicos confesionales del Opus Dei y se opusieron de forma estricta al laicismo republicano.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T2_Q17_Balanza_Comercial_Remesas</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Cómo se compensaba el tradicional déficit comercial de la balanza de pagos española de los sesenta?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: La balanza comercial resultante continuaba siendo negativa (se importaba maquinaria, petróleo, patentes), viéndose compensada por los ingresos del turismo, las inversiones internacionales y las divisas o remesas enviadas por los emigrantes.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Se compensaba por los ingresos de turismo, las remesas de emigrantes y las inversiones de capital extranjero.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Estas tres fuentes aportaban un superávit decisivo que equilibraba la balanza final de pagos del Estado.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Se financiaba mediante presupuesto extraordinario del Comité de No Intervención de Albacete.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El Comité de No Intervención no existía y Albacete fue base militar en la Guerra Civil.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Por el depósito en fianza en Madrid del oro de Moscú rescatado de la Unión Soviética.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El oro se había consumido de fianza en la contienda civil peninal y no se recuperó.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>A través de las donaciones monetarias voluntarias del pretendiente Don Juan de Borbón.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Don Juan se encontraba en el exilio y no financió las cuentas del desarrollismo estatal.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T2_Q18_Polos_Desarrollo_Regionales</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿En qué ciudades consiguieron los Planes de Laureano López Rodó fundar polos de desarrollo?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Los polos de desarrollo industrial de López Rodó se fundaron en doce ciudades: Burgos, Huelva, Sevilla, Valladolid, Zaragoza, Córdoba, La Coruña, Vigo, Villagarcía de Arousa, Oviedo, Logroño y Granada.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>En doce ciudades rezagadas, destacando polos industriales como Huelva, Sevilla, Valladolid y Zaragoza.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Aunque de rentabilidad limitada, supuso un esfuerzo estatal para paliar los grandes desequilibrios regionales.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Exclusivamente en los enclaves litorales de las capitales de Gran Canaria y de Tenerife.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. En Canarias el desarrollismo se rigió por el boom turístico costero y el REF, no por polos de los Planes de Desarrollo.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>En las cuencas mineras de Asturias para exportar hulla al mercado petrolero soviético.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Las cuencas mineras asturianas sufrieron el declive de hulla tradicional, sin relación con los nuevos polos industriales.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>En el patio del cuartel de la Montaña de Madrid por orden de Martínez Anido.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Estos son nombres de la Guerra Civil y del pistolerismo de Barcelona de 1921.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T2_Q19_Ley_General_Educacion_1970</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué cambios de calado introdujo la Ley General de Educación (LGE) de 1970?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: La LGE de 1970 reorganizó de forma moderna todo el sistema escolar español, ampliando de forma decisiva la escolarización obligatoria y gratuita para todos los alumnos hasta los 14 años de edad.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Amplió la escolarización obligatoria y gratuita hasta los 14 años de edad en todo el país.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! La reforma educativa de Villar Palasí combatió con éxito las altas tasas de analfabetismo heredadas de posguerra.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Ilegalizó la enseñanza de los centros educativos pertenecientes a las congregaciones católicas.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Al contrario, las órdenes católicas siguieron abiertas y subvencionadas, consolidando la moral escolar.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Permitió la libre sindicación directa en las aulas bajo la Jefatura Nacional de CCOO.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. CCOO operaba clandestinamente y se prohibieron de forma estricta las huelgas o protestas escolares.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Sometió el presupuesto escolar a la amortización de la carbonera alemana Woermann.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Woermann operó en la Restauración decimonónica canaria, anacrónica con la ley de 1970.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T2_Q20_Contubernio_Munich_1962</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿En qué consistió el denominado 'Contubernio de Múnich' de junio de 1962?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Fue el IV Congreso del Movimiento Europeo reunido en Múnich en 1962, donde 118 delegados de la oposición española (interior y exilio) unificaron criterios exigiendo libertades democráticas y el fin de la dictadura.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Congreso opositor en Múnich que exigió libertades democráticas, bautizado de forma peyorativa por el régimen.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! El diario falangista Arriba ridiculizó y atacó el acontecimiento como un contubernio, desterrando Franco a los asistentes del interior.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La fusión forzosa de la Falange con los carlistas requetés en el partido FET de las JONS.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La unificación de FET y de las JONS fue decretada de forma previa por Franco en abril de 1937.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La invasión militar clandestina de Sidi Ifni organizada de fianza por el Frente Polisario.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El Frente Polisario actuó en el Sáhara Occidental en 1975, no en Múnich en 1962.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La tregua humanitaria del Mando Económico canario con la compañía petrolera Texaco.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El Mando Económico reguló de forma estricta los consumos de posguerra canarios, sin relación.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T2_Q21_Sindicalismo_Obrero_Clandestino_Camacho</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué central sindical de corte clandestino nació en los años sesenta liderando la oposición obrera?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Comisiones Obreras (CCOO) nació en la clandestinidad en 1964, liderada por Marcelino Camacho, unificando a activistas comunistas, católicos de base y opositores independientes hacia movilizaciones obreras.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Comisiones Obreras (CCOO) fundada de forma clandestina bajo el liderazgo de Marcelino Camacho.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! En las elecciones sindicales del Vertical de 1966 consiguieron infiltrarse y consolidarse como fuerza dirigente de protesta.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La Central de Trabajadores de la UGT unificada de forma forzosa en FET de las JONS.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La UGT operaba debilitada en el exilio y FET de las JONS era el partido único fascista del régimen.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La Confederación General de la Comunión Tradicionalista dirigida por Fernando Sagaseta.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Sagaseta fundó Canarias Libre de signo independentista, persiguiéndose por la policía.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El Sindicato Español Universitario (SEU) controlado de forma coactiva por el Opus Dei.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El SEU falangista controlaba las universidades de forma oficial y el Opus Dei suministró tecnócratas.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T2_Q22_Tardofranquismo_Crisis_73</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué impacto económico e internacional asestó la crisis final del régimen en 1973?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: La crisis energética mundial del petróleo de 1973 de la OPEP asoló la industria española y disparó el desempleo, la inflación y la agitación social en las calles en un momento en que Franco agonizaba.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>La crisis energética del petróleo de 1973, disparando el paro, la inflación y la agitación social.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Para evitar el descontento, Arias Navarro subvencionó artificialmente el crudo con dinero público, agotando las reservas.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La cesión obligatoria de los yacimientos de fosfatos de Rota al Mando de las JONS.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Rota era una base naval conjunta norteamericana y las JONS estaban disueltas en el Movimiento.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La pérdida irreversible de los caladeros saharianos del tomate de Eufemiano Fuentes.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Varios de estos nombres son de la burguesía decimonónica canaria, anacrónicos.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La exclusión total de los Puertos Francos canarios del Acuerdo Tripartito de Madrid.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El Acuerdo Tripartito entregó el Sáhara, sin relación directa con el REF canario.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T2_Q23_Recrudecimiento_Represivo_ TOP</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Cómo respondió el régimen franquista ante el avance de la oposición y el terrorismo en sus años finales?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: El franquismo endureció de forma brutal la represión: decretó estados de excepción permanente, juzgó delitos políticos civiles en el Tribunal de Orden Público (TOP) y aplicó la pena de muerte (como a Puig Antich en 1974 y fusilamientos de septiembre de 1975).</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Con dura represión, estados de excepción permanentes, juicios del TOP y con la aplicación de la pena de muerte.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Salvador Puig Antich fue ejecutado a garrote vil en 1974, desatando la condena unánime de la comunidad internacional.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Con amnistías generales incondicionales para todos los opositores de Múnich.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Las amnistías generales no se aprobaron hasta la Transición posterior en 1976.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Con la disolución forzosa del Sindicato Vertical controlado por los tecnócratas de la CEE.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El Sindicato fue disuelto en la Transición y España continuaba excluida de la CEE.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Con la convocatoria de elecciones libres por sufragio directo familiar de CCOO.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El sufragio y el sindicalismo obrero libre continuaron perseguidos de forma severa.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T2_Q24_Acuerdos_Tripartitos_Madrid_1975</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué claudicación diplomática selló la entrega del Sáhara Occidental en noviembre de 1975?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Ante la Marcha Verde marroquí y con Franco al borde de la muerte, el presidente Arias Navarro firmó los Acuerdos Tripartitos de Madrid (14 de noviembre de 1975), entregando de forma secreta la administración del Sáhara a Marruecos y Mauritania.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Los Acuerdos de Madrid que entregaron de forma secreta la administración de Sáhara a Marruecos y Mauritania.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Los acuerdos evitaron una confrontación militar directa, pero abandonaron al pueblo saharaui de su autodeterminación.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La conmutación de penas de muerte por Consejos de Guerra del general africanista Berenguer.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El general Berenguer operó en el Rif en 1921 y la represión continuaba aplicándose sumariamente.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La cesión obligatoria de los Puertos Francos canarios a la compañía petrolera Texaco.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Los Puertos Francos canarios se reabrieron de hecho de forma exitosa y Texaco era americana.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La disolución de los batallones de voluntarios de las Brigadas de No Intervención en el campo de Tefía.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Tefía fue un penal franquista de reclusión represiva, sin relación.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T2_Q25_La_Transicion_Inesperada_Camino</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Cómo abrió la muerte de Franco el camino hacia la Transición democrática en noviembre de 1975?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Con el fallecimiento del dictador el 20 de noviembre de 1975, expiró la dictadura personalista militar. En cumplimiento de la Ley de Sucesión, Juan Carlos I de Borbón asumió el trono como rey, defraudando los cálculos inmovilistas del búnker al apostar por reformar el régimen.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Al expirar la dictadura personalista militar, asumiendo el trono Juan Carlos I de Borbón en pro de la reforma.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! El monarca y sus inteligentes consejeros reformaron desde dentro lo que parecía irreformable, avanzando hacia la democracia pacífica.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La unificación forzosa de la CNT en la asamblea de diputados constituyentes de la CEDA.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La CEDA era un partido republicano conservador decimonónico, desmantelado décadas antes.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La entrega voluntaria de los caladeros saharianos a la compañía carbonera alemana Woermann.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Varios de estos nombres son de la Restauración decimonónica canaria, anacrónicos.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La conmutación de todas las deudas tributarias de los terratenientes de Extremadura.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La reforma agraria borrada no se recuperó y se mantuvo el status quo de posguerra.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T2_Q26_Cerrar_Cajas_Canarias</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Cómo afectó el modelo de la autarquía y el Mando Económico a Canarias en los años cuarenta?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: La autarquía impuso un rígido proteccionismo e intervencionismo perjudicial para el archipiélago al eliminar los beneficios históricos de la Ley de Puertos Francos, forzando racionamientos severos y contrabando.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Impuso un rígido intervencionismo perjudicial al eliminar los beneficios históricos de los Puertos Francos canarios.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Las islas padecieron hambrunas y racionamiento extremo dirigido por el Mando Económico Militar.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Permitió un espectacular despegue de la cochinilla financiada por la nunciatura apostólica del Vaticano.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El cultivo de la cochinilla es del siglo XIX y el Vaticano firmó el Concordato de forma posterior.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La unificación obligatoria de las tabaqueras de Eufemiano Fuentes en el sindicato CCOO.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. CCOO operaba clandestinamente y se oponía de forma radical al Movimiento.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La privatización de la red ferroviaria y la compra a crédito de la marca carbonera Woermann.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Varios de estos nombres son de la Restauración decimonónica canaria, anacrónicos.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T2_Q27_Desarrollismo_Turistico_Canario</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué características definieron al espectacular 'boom turístico' canario en los años sesenta y setenta?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: La reapertura de los Puertos Francos en 1960 y la devaluación de la peseta abrieron las islas al turismo masivo del sol y playa europeo. El sector servicios de la hostelería y la construcción reconfiguró de forma irreversible la costa canaria.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>La reapertura de Puertos Francos, devaluación de peseta, y un turismo masivo europeo de sol y playa que reconfiguró la costa.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Las zonas del sur canario (Playa del Inglés, sur de Tenerife) sufrieron una monumental transformación demográfica y constructiva.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La conmutación de todas las multas del REF por mediación del conde de Romanones.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El conde de Romanones fue del reinado de Alfonso XIII, sin relación de administración fiscal en los sesenta.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El desvío ilegal de fondos del Mando Económico para financiar los barcos de guerra británicos de Elder.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Elder era una compañía naviera y comercial de Gran Canaria, sin relación.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La disolución de los batallones de voluntarios de las misiones pedagógicas en el campo de Tefía.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Tefía fue un penal franquista de reclusión represiva, sin relación.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T2_Q28_Independentismo_Canario_MPAIAC_Cubillo</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué fines perseguía el MPAIAC fundado en Argelia por Antonio Cubillo en 1964?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: El Movimiento para la Autodeterminación e Independencia del Archipiélago Canario (MPAIAC) persiguió la independencia unilateral de Canarias respecto a España orientándose de forma clandestina hacia el terrorismo armado.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>La independencia unilateral de Canarias respecto a España orientándose hacia el terrorismo de lucha armada.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Antonio Cubillo dirigía las arengas radiofónicas desde Argelia desatando violencia clandestina.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La conmutación de las deudas agrarias de los campesinos de Arure y de la dehesa de Guriame.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Los levantamientos agrarios de Arure son del siglo XIX, anacrónicos con el independentismo.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La privatización de la Real Audiencia canaria cediéndola al capital carbonero de las JONS.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Varios de estos nombres son tradicionales de la Restauración decimonónica canaria, anacrónicos.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La unificación nacional obligatoria de las tabaqueras de Eufemiano Fuentes en el sindicato CCOO.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. CCOO operaba clandestinamente y se oponía de forma radical al independentismo.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T2_Q29_Caso_Matesa_Lucha_Familias</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Cómo desveló el Escándalo Matesa las tensiones entre las familias políticas del régimen?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: El caso Matesa en 1969 desveló la lucha política de poder entre los falangistas tradicionales (Fraga, Solís) y los ministros tecnócratas del Opus Dei (Navarro Rubio, Ullastres) ante la inminencia de la sucesión.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Desveló la lucha política de poder entre los falangistas tradicionales y los ministros tecnócratas del Opus Dei.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Los falangistas utilizaron la prensa liberalizada para desacreditar a los tecnócratas que ostentaban el poder económico.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Consiguió la conmutación de penas de muerte para los militares africanistas de las Juntas.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. No existían Juntas de Defensa activas y la represión militar continuaba aplicándose sumariamente.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La expropiación de las líneas ferroviarias del Sáhara Occidental en favor de la compañía Texaco.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El Sáhara no poseía líneas de ferrocarril extensas y Texaco suministraba petróleo a crédito.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La entrega voluntaria de los Puertos Francos canarios a la compañía carbonera alemana Woermann.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Woermann operó en la Restauración decimonónica canaria, anacrónica con el desarrollismo tardío.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T2_Q30_Sucesos_Sardina_Canarias</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué trascendencia histórica tuvieron los Sucesos de Sardina en el archipiélago canario?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Bajo la represión sistemática tardofranquista, los Sucesos de Sardina en Gran Canaria (1968) representaron la protesta obrera clandestina coordinada por el sindicato de CCOO y el PCE, siendo duramente sofocados con detenciones policiales.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>La protesta obrera clandestina coordinada por CCOO y el PCE, siendo duramente sofocada con detenciones policiales.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Se consagraron como el hito de movilización y despertar de la oposición democrática en el archipiélago.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La invasión civil pacífica organizada por Hassan II de Marruecos sobre la Isleta.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La invasión de Hassan II (Marcha Verde) ocurrió en el Sáhara Occidental en 1975, no en Canarias.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La privatización extraordinaria de las compañías de la carbonera británica Thomas Miller.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Thomas Miller operó en la Restauración decimonónica canaria, anacrónica con el desarrollismo tardío.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La conmutación de todas las multas del REF por mediación de los hermanos León y Castillo.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Los hermanos León y Castillo fueron políticos liberales de la Restauración decimonónica.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+</quiz>

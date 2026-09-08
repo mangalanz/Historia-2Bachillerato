@@ -1,0 +1,1599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/top/Bloque V/Tema 1</text>
+    </category>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T1_Q01_ADN_Ideologico_Franquismo</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué pilares ideológicos definieron el ADN político del régimen de Franco en su primera etapa?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: El franquismo se caracterizó ideológicamente por su anticomunismo radical, el militarismo (ejército como garante del orden), el nacionalismo centralista uniformizador ('Una, Grande y Libre') y el nacionalcatolicismo.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Anticomunismo, militarismo, nacionalismo centralista y nacionalcatolicismo.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Estos cuatro elementos constituyeron la matriz doctrinaria inmutable de la dictadura franquista.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Soberanía popular, laicismo del Estado, Cortes bicamerales y sufragio femenino.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Estos eran los principios democráticos de la Constitución de 1931, derogada por Franco.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Librecambismo, federalismo regional, pluralismo de partidos y divorcio civil.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El régimen persiguió el pluralismo, ilegalizó los partidos, prohibió las lenguas autonómicas e impuso el centralismo.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Racionalismo tecnocrático, tolerancia de cultos y concertación obrera voluntaria.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Los tecnócratas no ascendieron hasta los años cincuenta y no existía tolerancia religiosa ni sindicación libre.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T1_Q02_Nacionalcatolicismo_Fuga</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿En qué consistió el nacionalcatolicismo como base legitimadora de la dictadura?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: El nacionalcatolicismo fusionó de forma absoluta la Iglesia católica con el Estado franquista, declarando a España confesional y concediendo a la Iglesia financiación pública y el monopolio moral y educativo.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>La fusión absoluta de Iglesia y Estado, declarando a España confesional con monopolio moral e institucional católico.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! El régimen se legitimó moralmente presentándose ante el mundo como un baluarte cristiano que libró una Santa Cruzada.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La separación estricta de las diócesis de la administración central de Burgos.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Al contrario, Iglesia y Estado se integraron de forma íntima y coordinada.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El apoyo financiero gubernamental exclusivo al clero regular de la Compañía de Jesús.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Los Jesuitas regresaron y se restauró el presupuesto del clero, pero de forma general para toda la jerarquía católica, no solo una orden.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La sumisión de los obispos a los mandos del Sindicato Vertical falangista.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La Iglesia fue una institución autónoma, con prerrogativas que incluso rivalizaban con Falange.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T1_Q03_FET_JONS_Organizaciones</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué cuatro organizaciones de masas constituyó el partido único de FET y de las JONS?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: FET y de las JONS estructuró el adoctrinamiento civil por medio de cuatro agrupaciones obligatorias: el Frente de Juventudes (jóvenes), la Sección Femenina (mujeres), el SEU (universitarios) y la CNS/OSE (patronos y obreros).</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>El Frente de Juventudes, la Sección Femenina, el Sindicato Español Universitario (SEU) y la Central Nacional Sindicalista (CNS).</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Estas organizaciones encuadraban y adoctrinaban a la sociedad civil bajo los ideales del Movimiento Nacional.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La Junta de Defensa Nacional, la Real Audiencia, el Mando Económico de Canarias y la UCD.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Estos eran órganos de gobierno militar o administrativo, no organizaciones de masas civiles falangistas.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Comisiones Obreras, la UGT, las Brigadas Internacionales y el Partido Comunista.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Estas eran organizaciones obreras y de oposición clandestina perseguidas por la dictadura.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La Comunión Tradicionalista, la CEDA, Acción Española y las Juntas de Ofensiva.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Estos fueron partidos o agrupaciones derechistas previos a la unificación forzosa de 1937.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T1_Q04_Seccion_Femenina_Pilar</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué misión encomendó el régimen a la Sección Femenina dirigida por Pilar Primo de Rivera?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: La Sección Femenina adoctrinaba a la mujer en la sumisión, el patriotismo, la moral ultracatólica y el rol exclusivo de madre y esposa subordinada en el hogar.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Relegar a la mujer al hogar, educándola en la sumisión, el patriotismo y el rol doméstico de madre.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! La doctrina de Pilar Primo de Rivera defendía que el verdadero deber patriótico femenino era formar familias, anulándose sus derechos civiles.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Promover la paridad laboral inmediata en el sector siderometalúrgico de Vizcaya.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El régimen marginó a la mujer del trabajo regular, prohibiendo su contratación general y exigiendo el abandono laboral por matrimonio.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Facilitar el libre acceso de las universitarias al Sindicato de la Comunión Tradicionalista.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Las estudiantes se encuadraban en el SEU falangista y la Sección Femenina operaba de forma general para el adoctrinamiento moral.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Coordinar las campañas electorales para elegir diputadas del Tercio de Familias.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. No existían elecciones libres ni sufragio general en esta etapa.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T1_Q05_Leyes_Fundamentales_Proceso</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué doble objetivo perseguía el régimen al promulgar paulatinamente las Leyes Fundamentales?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Las Leyes Fundamentales (siete textos elaborados entre 1938 y 1967) servían como fachada de legalidad (Democracia Orgánica) de cara al exterior y blindaban y organizaban de forma interna las instituciones del régimen.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Cumplir un objetivo de control interno y dar una apariencia de legalidad y estabilidad ante el exterior.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Buscaban presentar una arquitectura institucional sin permitir un sufragio libre o democrático real.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Declarar la soberanía popular e instaurar el sufragio universal directo bicameral.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La soberanía residía exclusivamente en el Caudillo Franco de forma vitalicia.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Autorizar la libre sindicación obrera y el derecho a la huelga constitucional.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Las huelgas continuaban siendo delitos graves y se exigía integrarse forzosamente en el Sindicato Vertical.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Facilitar el ingreso de España en el Plan Marshall de reconstrucción europea.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El Plan Marshall excluyó a España por su carácter totalitario y fascista, a pesar de las Leyes Fundamentales de 1945.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T1_Q06_Fuero_Trabajo_1938</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué características definen al Fuero del Trabajo promulgado en marzo de 1938?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: El Fuero del Trabajo es la primera ley fundamental, inspirada en la Carta del Lavoro de la Italia fascista de Mussolini. Estableció el nacionalsindicalismo, prohibió las huelgas y creó el Sindicato Vertical obligatorio.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Inspirado en el fascismo italiano, organizaba el mundo laboral bajo el Sindicato Vertical prohibiendo la huelga.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Fue un texto corporativo obligatorio donde obreros y patronos se integraban en una misma central sindical vertical.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Una ley progresista para implantar la jornada laboral de 40 horas agrarias de Largo Caballero.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Esto correspondía a las leyes de la Segunda República que fueron derogadas por Franco.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Un decreto de privatización masiva de las empresas del Instituto Nacional de Industria.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El INI se creó en 1941 como un gran holding público interventor de la economía autárquica.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Un acuerdo bilateral con Estados Unidos para financiar la devaluación de la peseta.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Los acuerdos bilaterales se firmaron en 1953 y el Plan de Estabilización es de 1959.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T1_Q07_Fuero_Españoles_1945</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué limitación presentaba la declaración de derechos del Fuero de los Españoles de 1945?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: El Fuero de los Españoles enumeraba formalmente deberes y derechos de los ciudadanos, pero con la salvedad de que no existía ninguna garantía legal para ejercerlos, pudiendo el Gobierno suspender su vigencia en cualquier momento.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Presentaba una lista formal de derechos que carecían de garantías reales, pudiendo el Gobierno suspenderlos.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Se promulgó tras la derrota del Eje en la II Guerra Mundial para aparentar que en España existían libertades civiles.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Reconocía la soberanía nacional de las Cortes Constituyentes por sufragio directo familiar.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. No reconocía la soberanía nacional y la representación familiar era sumamente restringida e indirecta.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Garantizaba la total libertad de culto religioso y el fin de la censura de prensa.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La religión católica se declaró exclusiva oficial del Estado y la censura de prensa continuó siendo rígida.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Sometía de forma directa el poder militar y ejecutivo a la designación de Don Juan de Borbón.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La ley limitó las pretensiones regias de Don Juan de Borbón, consolidando el poder vitalicio de Franco.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T1_Q08_Ley_Sucesion_1947</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué trascendencia política tuvo la Ley de Sucesión en la Jefatura del Estado de 1947?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: La Ley de Sucesión de 1947 autoproclamó a España como 'reino' y declaró la jefatura vitalicia de Franco, reservándose el derecho exclusivo de designar de forma unipersonal a la persona que le sucedería a título de rey.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Declaró a España reino, autoproclamó a Franco jefe vitalicio y le concedió el derecho de nombrar a su sucesor.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Consolidó la dictadura personalista y rompió con el principio hereditario legítimo de Don Juan de Borbón.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Estableció la vuelta inmediata al trono del exiliado rey Alfonso XIII.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Alfonso XIII había fallecido y la ley retrasó la monarquía de forma indefinida hasta la muerte de Franco.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Obligó al Caudillo a delegar la presidencia del Gobierno en el Opus Dei.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El Opus Dei no formó parte del gabinete de los tecnócratas hasta el año 1957, de forma muy posterior.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Concedió el derecho al sufragio universal directo para elegir procuradores en Cortes.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Las Cortes no eran de representación libre directa y el voto real continuó proscrito.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T1_Q09_Oposicion_Juan_Borbón_Lausana</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Cómo se opuso Don Juan de Borbón a la Ley de Sucesión y al régimen franquista en 1945?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Don Juan de Borbón publicó el Manifiesto de Lausana en 1945, condenando el carácter fascista de la dictadura de Franco y proponiendo una transición pacífica a una monarquía constitucional moderada y democrática.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Publicó el Manifiesto de Lausana en el que pedía la caída de la dictadura y una monarquía constitucional democrática.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! El manifiesto exigía la retirada de Franco y el restablecimiento de las libertades tradicionales y la representatividad regional.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Firmó el Decreto de Unificación forzosa de la Comunión Tradicionalista en el Movimiento.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La unificación forzosa fue obra de Franco en 1937, a la que los monárquicos leales a Don Juan se opusieron en parte.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Apoyó la invasión de los maquis por el Valle de Arán financiando sus operaciones militares.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Don Juan se opuso de forma categórica a la violencia armada de la guerrilla marxista.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Pactó con el presidente de la República en el exilio la cesión del protectorado de Marruecos.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Don Juan defendía sus derechos legítimos dinásticos al trono de España, sin entablar alianzas de cesión territorial.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T1_Q10_Represion_Justicia_Al_Reves</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Por qué se ha definido la Ley de Responsabilidades Políticas de 1939 como la 'justicia al revés'?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: La ley tenía carácter retroactivo y castigaba con penas severas y confiscación de bienes conductas y actividades políticas que eran plenamente legales desde octubre de 1934 bajo la Segunda República.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Por exigir responsabilidades de forma retroactiva por actos que eran legales cuando se cometieron.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Condenaba la lealtad demostrada al gobierno legítimo de la República considerándola un delito de rebelión armada.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Por procesar de forma inmediata a los generales africanistas que asaltaron el Cuartel de la Montaña.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El asalto al Cuartel de la Montaña fracasó en la zona republicana y los tribunales militares de Franco persiguieron a los leales.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Por amnistiar de forma incondicional a todos los presos políticos del trienio bolchevique.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El trienio bolchevique ocurrió de forma previa y la ley no amnistió a ninguna fuerza obrera.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Por sancionar penalmente a los empresarios tabaqueros canarios que cerraron fábricas en 1905.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Las medidas represivas de 1939 se dirigieron a castigar la disidencia de izquierdas, obreros y republicanos.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T1_Q11_Leyes_Represivas_Masoneria</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué otra ley represiva se promulgó en 1940 para purgar la disidencia cultural e intelectual?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Se aprobó la Ley de Represión del Comunismo y la Masonería de 1940, que procesó y depuró a profesores, maestros, intelectuales y opositores mediante tribunales militares (Consejos de Guerra).</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>La Ley de Represión del Comunismo y la Masonería.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Supuso el encarcelamiento o ejecución de la intelectualidad de la Edad de Plata de la cultura española.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La Ley para la Reforma Política y la amnistía general.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Esta fue la ley que desmanteló el franquismo en la Transición en 1976.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La Ley de Convenios Colectivos y Convenio foral de Navarra.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Esta ley laboral se aprobó en 1958 en la etapa final de la primera fase, no para la represión en 1940.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El Decreto-Ley de conmutación de penas del Tribunal de Orden Público.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El TOP se creó en 1963 en la segunda fase del franquismo tardío.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T1_Q12_Represion_Magnitud_Posguerra</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué magnitud alcanzaron los Consejos de Guerra y ejecuciones los primeros años de posguerra?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Se calcula que unas 600.000 personas pasaron por Consejos de Guerra (sin garantías de defensa real) y entre 35.000 y 50.000 fueron ejecutadas sumariamente por el régimen de Franco.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Unos 600.000 procesados en Consejos de Guerra y entre 35.000 y 50.000 ejecutados sumariamente.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! El hacinamiento carcelario, las pésimas condiciones de higiene y el terror institucionalizado marcaron los llamados años del hambre.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Cerca de un millón de refugiados internados en los campos de concentración de Gando.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El campo de Gando operaba en Canarias, pero la cifra de internados fue menor que la general peninsular.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Exclusivamente unos 500 falangistas desterrados por el complot militar de Yagüe.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Los falangistas conformaban el partido del régimen unificado FET y de las JONS y la represión afectó a los vencidos de izquierda.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Alrededor de 1.200 mineros asturianos conmutados por la Ley de Fugas.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La Ley de Fugas se aplicó en el pistolerismo de Barcelona de 1921 para disparar impunemente a los obreros.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T1_Q13_Batallones_Disciplinarios_Canteras</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué destino deparó el régimen a los reclutas calificados de 'desafectos' o sospechosos?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Fueron encuadrados en los Batallones Disciplinarios de Soldados Trabajadores, realizando trabajos forzosos de reconstrucción de infraestructuras, vías férreas, carreteras, presas y canteras de piedra.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Los Batallones Disciplinarios de Soldados Trabajadores, realizando obras públicas y canteras de trabajos forzosos.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Miles de prisioneros trabajaron en la construcción del gran mausoleo del Valle de los Caídos (1939-1959).</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Las milicias paramilitares del Frente de Juventudes enviadas al frente de Extremadura.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El Frente de Juventudes adoctrinaba físicamente a los niños de la retaguardia de forma voluntaria, no a prisioneros.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El embarque voluntario en las escuadras navales pesqueras del banco del Sáhara.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El banco pesquero sahariano era faenado por la flota canaria, sin relación con batallones disciplinarios.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La repatriación inmediata a las colonias de la Guinea Española.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Las colonias de Guinea continuaban bajo estricta administración civil y militar, sin relación con el destino de los reclutas desafectos.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T1_Q14_Segunda_Guerra_Mundial_Fases</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Cómo osciló la posición internacional de España durante la Segunda Guerra Mundial?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: España pasó de la neutralidad (1939) a la 'no beligerancia' (1940, apoyo al Eje con el envío de la División Azul) y retornó con prudencia a la neutralidad estricta en 1943 al ver declinar a Alemania.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Pasó de la neutralidad inicial a la 'no beligerancia' en apoyo del Eje, retornando a la neutralidad en 1943.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Franco se entrevistó en Hendaya (1940) con Hitler y envió a la División Azul al frente ruso contra el comunismo soviético.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Declaró la guerra inmediata a Alemania aliándose de forma oficial con Francia e Inglaterra.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Franco simpatizaba con las potencias fascistas de Hitler y Mussolini y no se alió con las democracias.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Participó activamente en la invasión armada de Portugal a bordo del Dragon Rapide.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El Dragon Rapide era la avioneta civil usada por Franco en 1936, no un avión de guerra en la II Guerra Mundial.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Firmó los Acuerdos Bilaterales del Plan Marshall para devaluar la peseta en el frente de Berlín.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. No formaba parte del Plan Marshall ni de la contienda aliada de forma oficial.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T1_Q15_Condena_ONU_1946</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué condena diplomática impuso la ONU al régimen franquista en diciembre de 1946?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: La resolución 39 de la ONU condenó al franquismo como un régimen de carácter fascista aliado de Hitler y Mussolini, ordenando la retirada inmediata de embajadores y aislando a España del concierto internacional.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Tachó al régimen de fascista, ordenando la retirada de embajadores y decretando el aislamiento internacional.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! España quedó aislada, excluida del Plan Marshall y de la alianza militar de la OTAN en 1949.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Garantizó el ingreso inmediato de las islas de Gran Canaria y Tenerife en el Plan de Cohesión.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Canarias continuó aislada al igual que el conjunto peninsular, suspendiéndose los Puertos Francos.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Declaró nulas las Leyes de Sucesión, obligando a deponer las armas a Franco.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El bloqueo no era militar ni obligó a Franco a dejar el poder, aunque le provocó duras penurias financieras.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Pactó con los opositores maquis la entrega voluntaria de Sidi Ifni a la República en el exilio.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Sidi Ifni continuó bajo soberanía española militar, sin intervención de la ONU.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T1_Q16_Guerra_Fria_Salvacion</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué acontecimiento internacional salvó de la quiebra y aislamiento a la dictadura de Franco?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: El estallido de la Guerra Fría contra el comunismo de la URSS volvió útil el radical discurso anticomunista de Franco y el valor estratégico de la Península para los Estados Unidos.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>La Guerra Fría contra el comunismo soviético, volviéndose útil la posición estratégica de España para EE.UU.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! El anticomunismo de la dictadura facilitó que los norteamericanos levantaran el bloqueo diplomático de la ONU.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La invasión alemana de Polonia que obligó a Franco a firmar la Ley de Principios del Movimiento.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Esto ocurrió en 1939 y la Ley de Principios se promulgó en 1958 en la fase tardía de posguerra.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La unificación armada del protectorado de Marruecos con la provincia de las Palmas en 1927.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Esto es anacrónico, la división provincial canaria se decretó en 1927 bajo la dictadura de Primo de Rivera.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La disolución de los batallones de voluntarios de las Brigadas de No Intervención en Albacete.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Las Brigadas de No Intervención no existían y Albacete fue base en la Guerra Civil.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T1_Q17_Pactos_Exitos_1953</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué dos grandes acuerdos firmó la dictadura en 1953 consolidando su régimen?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: En 1953 se firmaron los Acuerdos Bilaterales con Estados Unidos (concesión de bases militares de Rota, Morón, Torrejón y Zaragoza a cambio de ayuda) y el Concordato con la Santa Sede con enormes privilegios a la Iglesia.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Los Acuerdos Bilaterales con EE.UU. (concesión de bases militares) y el Concordato con el Vaticano.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Ambos éxitos diplomáticos permitieron al franquismo salir del aislamiento, ingresando en la ONU en 1955.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La Ley de Sucesión a título de rey y el Estatuto de Autonomía de Nuria en Cataluña.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La Ley de Sucesión es de 1947 y el Estatuto de Nuria de la Segunda República (1932).</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La devaluación obligatoria de la peseta por el INI y el indulto a los maquis en el exilio.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El INI era interventor autárquico y no devaluó la peseta de forma concertada hasta el Plan de Estabilización de 1959.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El Acuerdo de Madrid y la Marcha Verde sobre los yacimientos de fosfatos de Rota.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El Acuerdo de Madrid y la Marcha Verde ocurrieron al final del franquismo en noviembre de 1975.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T1_Q18_Visita_Eisenhower_1959</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué hito diplomático representó la visita del presidente estadounidense Dwight D. Eisenhower a Madrid en 1959?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: La visita de Eisenhower en diciembre de 1959 supuso la consagración definitiva del régimen de Franco. El abrazo y el paseo de ambos jefes de Estado por Madrid asestaron el golpe final a la oposición.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>La consagración política y aceptación internacional definitiva del régimen de Franco.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! La propaganda del régimen y el NODO mostraron el acontecimiento como una apoteosis nacional de legitimación.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El inicio forzoso de la represión militar contra la guerrilla armada de los maquis.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El maquis ya había sido severamente aplastado y desmantelado hacia el año 1949.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La destitución del ministro Fraga Iribarne de su cargo de presidente del Gobierno de Cortes.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Fraga era ministro de Información y el presidente de las Cortes era un cargo consultivo legislativo.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La firma del protocolo de cesión colonial de Sidi Ifni a Marruecos.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Sidi Ifni continuó bajo administración española hasta su cesión final en 1967.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T1_Q19_Modelo_Economico_Autarquia</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué características definieron al modelo económico de la autarquía en los años 40?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: La autarquía persiguió la autosuficiencia económica aislada sin depender del exterior. El Estado intervino de forma rígida fijando precios de los alimentos, racionando consumos e impulsando la industrialización de cabecera con el INI.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Búsqueda de la autosuficiencia aislada mediante un rígido intervencionismo estatal, fijando precios y racionando consumos.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! El INI (1941) se creó para sustituir la iniciativa privada ausente construyendo industrias básicas.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Apertura total a la inversión del capital extranjero eliminando los monopolios del Estado.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Ese fue el giro del posterior Plan de Estabilización de 1959, la autarquía de los años 40 se cerró al exterior.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Financiación directa a través de las divisas y remesas de los emigrantes en Alemania.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Los emigrantes no marcharon masivamente a Europa hasta la fase de tecnócratas de los años sesenta.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Fijación de los precios agrícolas de la cochinilla concertada con la Real Audiencia.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La cochinilla y la Real Audiencia son del siglo XIX, anacrónicos con el modelo autárquico.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T1_Q20_Consecuencias_Autarquia_Racionamiento</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué desastrosas consecuencias deparó el intervencionismo autárquico a la población?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: La tasación oficial de precios por debajo de su coste deparó desabastecimiento, hambre, mercado negro y el estraperlo de alimentos con cartillas de racionamiento individuales vigentes hasta 1952.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Desabastecimiento, hambre generalizada, cartillas de racionamiento, el mercado negro y el estraperlo.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Los agricultores ocultaban cosechas para venderlas en el estraperlo duplicando los precios del mercado oficial.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La subida de salarios y un boom de consumo de electrodomésticos en los hogares obreros.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La pobreza era extrema y el consumo masivo de electrodomésticos no comenzó hasta los años sesenta.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La concesión de créditos preferenciales del Banco Mundial de Rota y Morón.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El Banco Mundial no intervino hasta fines de la década para evitar la quiebra autárquica.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La erradicación de los aranceles y la reapertura mercantil de los Puertos Francos canarios.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La autarquía canceló las ventajas comerciales de los Puertos Francos en las islas canarias.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T1_Q21_Mando_Economico_Canarias</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué organismo de mando militar se creó en Canarias en 1941 para paliar el hambre de la posguerra?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Ante el desabastecimiento y aislamiento de las islas por la suspensión de los Puertos Francos, el régimen de Franco fundó en 1941 el Mando Económico de Canarias con competencias absolutas de abastecimiento y comercio.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>El Mando Económico de Canarias, dirigido por militares para regular el racionamiento y luchar contra el hambre.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Su férrea gestión intentó paliar las penurias alimentarias y la escasez energética provocada por la autarquía.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La Real Audiencia de la Isleta, para coordinar las operaciones tabaqueras de Eufemiano Fuentes.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Varios de estos nombres son anacrónicos y carecen de relación de mando económico de posguerra.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La Junta Suprema de Canarias aliada de la compañía carbonera alemana Woermann.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La Junta Suprema de Canarias fue de la Guerra de la Independencia de 1808.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La Colonia Agrícola de Tefía en Fuerteventura para cultivar de forma directa la cochinilla.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Tefía fue un penal franquista represivo, no un organismo de mando militar de abastecimiento.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T1_Q22_Operaciones_Militares_Canarias</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué operaciones secretas proyectaron las potencias de la Segunda Guerra Mundial sobre Canarias?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Canarias constituyó un objetivo estratégico vital en el Atlántico. Alemania planificó la invasión de las islas con la 'Operación Félix' y los británicos diseñaron de forma paralela la 'Operación Pilgrim'.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>La alemana 'Operación Félix' y la británica 'Operación Pilgrim' para la invasión y control de las islas.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! El valor geoestratégico del archipiélago hizo temer un conflicto bélico directo, aunque ninguna se materializó.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La 'Operación Ogro' para asesinar a los gobernadores civiles de la Isleta y Triana.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La 'Operación Ogro' fue el atentado de ETA contra Carrero Blanco en diciembre de 1973 en Madrid.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El 'Pacto de San Sebastián' para deponer de inmediato a Franco sustituyéndolo por Don Juan.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El Pacto de San Sebastián es prorrepublicano en 1930, anacrónico con el contexto militar de 1941.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El 'Expediente Picasso' para deponer a las escuadras de buques carboneros ingleses de Elder.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El Expediente Picasso investigó la catástrofe de Annual en 1921, no la Segunda Guerra Mundial.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T1_Q23_Exodo_Canario_Venezuela</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Hacia dónde dirigió Canarias su marea migratoria para escapar del hambre de la posguerra autárquica?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Para escapar del hambre, la miseria y la persecución política, unos 70.000 canarios emigraron de forma clandestina o regular hacia Venezuela ('la octava isla') y Cuba entre 1940 y 1960.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Hacia Venezuela ('la octava isla') y Cuba.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Fue un flujo de emigración doloroso protagonizado fundamentalmente por varones de escasa cualificación para enviar remesas.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Hacia las cuencas mineras de Asturias en busca de puestos fabriles en los altos hornos.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Las medianías y la costa canaria se vieron despobladas hacia América, no hacia el norte peninsular.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Hacia los puertos comerciales de Hamburgo y Berlín en barcos mercantes de la compañía Woermann.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El destino de la emigración canaria fue hispanoamericano, no alemán.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Hacia los enclaves saharianos para faenar en las canteras de fosfatos de Rota.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Los yacimientos de fosfatos del Sáhara Occidental no se descubrieron e industrializaron hasta la segunda etapa tardía.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T1_Q24_Crisis_56_Estudiantes</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué focos de contestación interna sacudieron los cimientos de la dictadura a finales de los años cincuenta?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Se encadenaron huelgas obreras por motivos salariales en empresas del metal y minas de Asturias de 1956, revueltas estudiantiles en las universidades contra el SEU falangista y una inflación económica al borde de la bancarrota.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Huelgas obreras por salarios, revueltas estudiantiles universitarias contra el SEU y una grave crisis económica.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Esta inestabilidad múltiple obligó a Franco a reestructurar el Gobierno en 1957 introduciendo a los tecnócratas.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El secuestro armado del almirante Luis Carrero Blanco en la calle Claudio Coello por el maquis.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El atentado contra Carrero Blanco fue perpetrado por ETA de forma tardía en diciembre de 1973.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La invasión militar pacífica de Sidi Ifni organizada por el Frente Polisario.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Sidi Ifni fue invadido de forma bélica por fuerzas regulares e irregulares de Marruecos en 1957, no por el Polisario.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La unificación forzosa del Partido Socialista Obrero Español de Suresnes en el Movimiento.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El PSOE operaba de forma ilegal y en la clandestinidad y se opuso de forma radical al Movimiento.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T1_Q25_La_Guerrilla_Maquis_Fracaso</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿En qué consistió la resistencia armada del maquis en la década de los cuarenta?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Consistió en partidas de guerrilleros armados refugiados en las montañas (comunistas, socialistas y anarquistas) que realizaban ataques aislados contra cuarteles y consistorios falangistas, siendo duramente aplastados hacia 1949.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Guerrilleros refugiados en montañas que realizaban ataques aislados y que fueron duramente aplastados.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Carecieron de apoyos generalizados en la población atemorizada y no representaron una amenaza real para la supervivencia del régimen.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Un cuerpo militar de mercenarios rifeños reclutados por el general Yagüe para mantener el orden.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Los mercenarios rifeños marroquíes (Regulares) combatían con Franco.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Una brigada de investigadores de la policía secreta de Franco destinada a depurar a los maestros.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Esta fue la Brigada Político-Social, no los guerrilleros del maquis.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Una milicia civil de voluntarios burgueses armados creada por el conde de Romanones.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El conde de Romanones fue un político liberal dinástico del reinado de Alfonso XIII, anacrónico.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T1_Q26_Entrada_Tecnocratas_1957</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué fines perseguía Franco al dar entrada en el gabinete de 1957 a los ministros tecnócratas?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: La economía se encontraba al borde de la quiebra y de la suspensión de pagos por el ineficiente modelo autárquico. Franco nombró ministros a tecnócratas (López Rodó, Navarro Rubio, Ullastres) vinculados al Opus Dei para reformar la economía.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Evitar la inminente quiebra y bancarrota del Estado, reformando y liberalizando la economía de mercado.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Su perfil era técnico y no falangista tradicional y prepararon el Plan de Estabilización de 1959.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Pactar la entrega incondicional del protectorado de Marruecos al Frente Polisario.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Marruecos obtuvo su independencia en 1956 tras huelgas coloniales de forma previa.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Aprobar la amnistía general de todos los presos políticos del campo de Castuera.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Los tecnócratas eran inmovilistas políticos estrictos y no aprobaron amnistías para la oposición leal.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La unificación forzosa de los sindicatos católicos de la CNS en el sindicato vertical de CCOO.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Comisiones Obreras (CCOO) operaba en la clandestinidad y se oponía abiertamente al régimen.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T1_Q27_Ley_Principios_Movimiento_1958</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué valores consagraba la Ley de Principios del Movimiento Nacional de 1958?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: La Ley de Principios de 1958 reafirmó los valores inmutables del régimen (antiliberalismo, nacionalcatolicismo, centralismo) y obligaba a todos los altos cargos y funcionarios a jurarlos antes de tomar posesión.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Los valores tradicionales inmutables del régimen, siendo obligatoria jurarla para todos los funcionarios.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Buscaba unificar a todas las familias del franquismo bajo el partido único del Movimiento Nacional.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El laicismo escolar, la separación de Iglesia y Estado y el voto libre directo familiar.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El texto consagraba el nacionalcatolicismo, declarando la ley de Dios de la Iglesia romana base de su legislación.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La libertad de prensa sin censura previa y el sufragio universal de asamblea única.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Se reafirmaba la censura y se persiguió cualquier asamblea o sufragio de corte liberal.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La disolución forzosa de la Falange de José Antonio Primo de Rivera por herética.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La Falange e ideales falangistas pervivían de adorno doctrinal subordinados a Franco.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T1_Q28_Colonia_Agricola_Tefia</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué finalidad tuvo la Colonia Agrícola Penitenciaria de Tefía en Fuerteventura?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Bajo la represión sistemática franquista, la colonia agrícola de Tefía fue un campo de concentración destinado a recluir a homosexuales y disidentes para someterlos a trabajos forzosos y adoctrinamiento moral católico.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Un campo de reclusión penitenciario franquista para homosexuales y desafectos políticos de posguerra.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Tefía constituye uno de los ejemplos más oscuros de la represión moral y sistemática en Canarias.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Un centro de investigación botánica para aclimatar las semillas exóticas americanas.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Este fue el Jardín de Aclimatación de La Orotava del siglo XVIII, de forma previa.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Una estación pesquera artesanal de la compañía carbonera británica Thomas Miller.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Varios de estos nombres son comerciales e industriales de Gran Canaria, sin relación de reclusión.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Un polígono de adiestramiento militar del Frente de Juventudes para la invasión del Sáhara.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Su carácter era estrictamente penitenciario represivo, no de adiestramiento de juventudes.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T1_Q29_Aparato_Represivo_Checas</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué órgano de jurisdicción especial se encargaba de reprimir los delitos políticos las primeras décadas?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: La represión en los tribunales recaía en los Consejos de Guerra militares bajo la estricta jurisdicción militar ampliada de forma inconstitucional a la población civil desafecta.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Los Consejos de Guerra militares de la jurisdicción militar aplicados de forma sistemática a los civiles.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Los leales, republicanos y sindicalistas padecieron total indefensión jurídica ante estos sumarísimos castigos ejemplicantes.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El Tribunal de Orden Público (TOP) coordinado por los jueces de la Real Audiencia.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El TOP no se creó hasta diciembre de 1963, complementando la represión militar, de forma posterior.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La Brigada Político-Social de asalto dirigida por el conde de Romanones.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Romanones fue del reinado de Alfonso XIII, no intervino en la posguerra.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Las checas clandestinas obreras del Partido Obrero de Unificación Marxista (POUM).</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Las checas clandestinas operaron en la zona republicana en los primeros meses de la Guerra Civil, no en el aparato de Franco.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>B5_T1_Q30_Sindicato_Vertical_CNS</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Cómo organizó el franquismo las relaciones de trabajo en las empresas?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Retroalimentación general: Prohibió de forma categórica los sindicatos tradicionales (UGT, CNT) e impuso de forma obligatoria la integración de patronos y obreros en una única central nacional: el Sindicato Vertical (CNS/OSE).</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>¡Correcto! Excelente análisis histórico.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta. Repasa las fuentes sugeridas para esta unidad.</p>]]></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>La integración obligatoria de patronos y obreros en un sindicato vertical estatal, ilegalizándose las huelgas.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! Buscaba encauzar el obrerismo bajo el control del Movimiento, declarando las huelgas delitos graves contra la patria.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La libre sindicación obrera bajo arbitraje vinculante de jurados mixtos de Largo Caballero.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Estas fueron las avanzadas leyes republicanas que fueron de inmediato derogadas por el bando de Franco.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La conmutación de todas las multas salariales del Mando Económico de Canarias.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El Mando Económico reguló de forma estricta los consumos de posguerra, no las devaluaciones salariales.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>La sindicación universitaria directa en las Juntas de Vocales de los mayores contribuyentes.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Los estudiantes se encuadraban de forma obligatoria en el SEU falangista.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+</quiz>
