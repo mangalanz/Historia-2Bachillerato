@@ -29,7 +29,7 @@
             --bg-factores: #ecfdf5;
         }
 
-        * {
+        <em> {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
@@ -170,7 +170,7 @@
             text-align: justify;
         }
 
-        /<em> CONTENEDOR DE IMAGEN (ANTI-SOLAPAMIENTO) </em>/
+        /* CONTENEDOR DE IMAGEN (ANTI-SOLAPAMIENTO) */
         .tarjeta-imagen {
             background-color: #f8fafc;
             border: 1px solid #e2e8f0;
@@ -202,7 +202,7 @@
             display: block;
         }
 
-        /<em> FILAS DE IMÁGENES COMPATIBLES (ADAPTATIVAS) </em>/
+         /* FILAS DE IMÁGENES COMPATIBLES (ADAPTATIVAS)  */
         .fila-imagenes {
             display: flex;
             gap: 20px;
@@ -283,7 +283,7 @@
             color: #334155;
         }
 
-        /<em> POPUPS INTERACTIVOS </em>/
+        /* POPUPS INTERACTIVOS  */
         .modal {
             display: none;
             position: fixed;
@@ -412,8 +412,7 @@
 </head>
 <body>
 
-    <!-- Navegación Lateral -->
-    <aside>
+        <aside>
         <h1>⚖️ Bloque II: La Restauración</h1>
         <nav>
             <ul>
@@ -423,7 +422,7 @@
                 <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 10px 14px 5px 14px; font-weight: bold; border-bottom: 1px solid #334155; margin-bottom: 8px;">📍 Secciones del Tema 1</li>
                 <li><a href="#origen" class="active">1. El Regreso de los Borbones</a></li>
                 <li><a href="#constitucion">2. La Constitución de 1876</a></li>
-                <li><a href="#turnismo">3. Turnismo y Caciquismo</a></li>
+                <li><a href="#turnismo">3. Turnismo y Caciquismo Canario</a></li>
                 <li><a href="#regencia">4. La Regencia de Mª Cristina</a></li>
                 <li><a href="#crisis_sistema">5. La Crisis del Turnismo</a></li>
                 <li><a href="#dictadura">6. La Dictadura y la República</a></li>
@@ -431,40 +430,49 @@
                 <!-- 📖 Saltos a otros Temas del Bloque II -->
                 <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 20px 14px 5px 14px; font-weight: bold; border-top: 1px solid #475569; margin-top: 25px; border-bottom: 1px solid #334155; margin-bottom: 8px;">📖 Temas del Bloque II</li>
                 <li><a href="bloque2_tema1.html" style="font-weight: bold; color: var(--primary-vibrant);">Tema 1: La Restauración</a></li>
-                <li><a href="bloque2_tema2.html">Tema 2: Los Nacionalismos</a></li>
+                <li><a href="bloque2_tema2.html">Tema 2: Los Nacionalismos y el 98</a></li>
                 <li><a href="bloque2_tema3.html">Tema 3: Industrialización y Obrero</a></li>
             </ul>
         </nav>
     </aside>
 
-    <!-- Contenido Principal -->
     <main>
         <header>
             <h2>Tema 1: El Régimen de la Restauración Borbónica y su Evolución (1875 - 1931)</h2>
-            <p>La vuelta de los Borbones al trono, el diseño de la Constitución de 1876, el caciquismo electoral, el turno de partidos y la crisis definitiva del sistema bajo Alfonso XIII y la dictadura de Primo de Rivera.</p>
+            <p>La estabilidad institucional cimentada en la Constitución de 1876, el turnismo pacífico y el caciquismo electoral, integrando el pleito y caciquismo en Canarias y la evolución hasta la crisis de la monarquía.</p>
         </header>
 
+        <!-- Cabecera ilustrada horizontal -->
         <div class="tarjeta-imagen" style="margin-top: 0;">
             <img src="img/eje-cronologico-restauracion.png" alt="Eje Cronológico de la Restauración Borbónica">
-            <span class="caption">Eje cronológico de la Restauración Borbónica y sus principales hitos gubernamentales</span>
+            <span class="caption">Eje cronológico general de las fases políticas de la Restauración (1875 - 1931)</span>
         </div>
 
         <!-- SECCIÓN 1 -->
         <section id="origen">
             <h2>1. El Regreso de los Borbones al Trono</h2>
-            <p>El término <em>Restauración</em> se aplica al periodo de la historia de España caracterizado por la vuelta de los Borbones al trono de Madrid. Tras la accidentada andadura del Sexenio Democrático, el pronunciamiento militar del general <em>Arsenio Martínez Campos</em> en Sagunto el 29 de diciembre de 1874 proclamó a <em>Alfonso XII</em> como rey de España.</p>
+            <p>El periodo histórico conocido como la <strong>Restauración Borbónica</strong> se inauguró a finales de 1874 y representó la vuelta de la dinastía legítima de los Borbones en la figura del joven príncipe <em>Alfonso XII</em>, hijo de la exiliada Isabel II. Tras el rotundo fracaso y caos institucional del Sexenio Democrático, el bando alfonsino capitalizó el anhelo generalizado de pacificación y orden civil del país.</p>
 
             <div class="tarjeta-imagen">
                 <img src="img/alfonso-xii-oficial.png" alt="Retrato oficial de Alfonso XII" style="max-height: 450px;">
-                <span class="caption">Retrato oficial de S.M. Don Alfonso XII de Borbón</span>
+                <span class="caption">Imagen 1: Retrato oficial de S.M. Don Alfonso XII de Borbón en la academia de Sandhurst</span>
             </div>
 
-            <p>La vuelta de la monarquía fue sumamente rápida y contó con un enorme <strong>deseo de pacificación nacional</strong> debido a la inestabilidad de la Primera República. Días antes, el 1 de diciembre de 1874, el joven monarca había firmado el <em>Manifiesto de Sandhurst</em>, un documento redactado por <em>Antonio Cánovas del Castillo</em> que presentaba la monarquía constitucional, conservadora y católica como la única salida viable.</p>
+            <p>El retorno del rey se preparó de forma pacífica en el terreno diplomático a instancias de <strong>Antonio Cánovas del Castillo</strong>, quien redactó el célebre <strong>Manifiesto de Sandhurst</strong> el 1 de diciembre de 1874. En este manifiesto, firmado por el propio príncipe en el colegio militar británico, se presentaba al país la propuesta de una monarquía verdaderamente liberal, constitucional, estable y tradicionalmente católica.</p>
 
             <!-- BOTÓN INTERACTIVO: MANIFIESTO DE SANDHURST -->
-            <div style="margin: 15px 0;">
+            <div style="margin: 15px 0; text-align: center;">
                 <button class="btn-interactivo btn-texto" onclick="openPopup('pop-sandhurst')">📜 Documento: El Manifiesto de Sandhurst (1 de diciembre de 1874)</button>
             </div>
+
+            <p>A pesar del esfuerzo de Cánovas por una vía civil y parlamentaria, el general <strong>Arsenio Martínez Campos</strong> precipitó el cambio político mediante un pronunciamiento militar directo en Sagunto (Valencia) el 29 de diciembre de 1874. La rebelión armada triunfó de forma fulminante y sin apenas resistencia por todo el país, proclamando rey a Alfonso XII y devolviendo a España al modelo del liberalismo censitario conservador.</p>
+
+            <h3>La Pacificación Militar: El fin de las contiendas</h3>
+            <p>Para legitimarse y ganar la adhesión de la opinión pública, el nuevo gobierno de la Restauración priorizó la pacificación armada del territorio, cerrando de forma rápida los dos grandes frentes de guerra heredados:</p>
+            <ul>
+                <li><strong>El Fin de la Tercera Guerra Carlista (1872-1876):</strong> La movilización masiva del ejército regular dirigida por Martínez Campos arrinconó a los insurgentes carlistas. El conflicto concluyó formalmente en marzo de 1876 tras la rendición foral y la huida al exilio en Francia del pretendiente </em>Carlos VII<em> (Manifiesto de Somorrostro). La consecuencia histórica fue la abolición definitiva del régimen foral tradicional vasco-navarro, que a cambio fue sustituido por el sistema tributario descentralizado de los <strong>Conciertos Económicos</strong>, un pilar diferenciador que cimentó el surgimiento posterior de un nacionalismo vasco de carácter reivindicativo.</li>
+                <li><strong>La Pacificación de Cuba y la Paz de Zanjón (1878):</strong> El fin de la guerra en la península permitió al general Martínez Campos centrar todos los recursos militares de la Corona en sofocar la insurrección en ultramar (</em>Guerra de los Diez Años<em>, 1868-1878). El pacto final de la <strong>Paz de Zanjón (1878)</strong> incluyó la amnistía para los revolucionarios rebeldes, la abolición gradual de la esclavitud y la firme promesa de conceder a Cuba una amplia autonomía administrativa y representación en el parlamento de Madrid. Sin embargo, el retraso sistemático y el posterior incumplimiento de estas promesas por parte de los gobiernos de turno crearon un ambiente de frustración nacional que daría lugar al estallido del nuevo y definitivo conflicto de 1895.</li>
+            </ul>
 
             <!-- VÍDEO EXPLICATIVO DEL COMIENZO DE LA RESTAURACIÓN -->
             <div style="margin: 15px 0; text-align: center;">
@@ -475,68 +483,73 @@
         <!-- SECCIÓN 2 -->
         <section id="constitucion">
             <h2>2. La Constitución de 1876 y las Bases del Sistema</h2>
-            <p>El verdadero cerebro del nuevo sistema político fue <em>Antonio Cánovas del Castillo</em>. El malagueño pretendía asentar las bases del <strong>bipartidismo</strong> y de un orden constitucional estable que impidiera el carácter excluyente de los moderados del reinado anterior y subordinase el ejército al poder civil.</p>
+            <p>La piedra angular del régimen fue la <strong>Constitución de 1876</strong>, sancionada en junio de ese año y redactada con un carácter intencionadamente flexible por una Asamblea de Notables para que sirviera tanto a moderados como a progresistas. Su flexibilidad técnica le permitió gozar de una asombrosa longevidad, manteniéndose en vigor hasta el año 1931.</p>
 
             <div class="fila-imagenes">
                 <div class="tarjeta-imagen">
                     <img src="img/retrato-canovas.png" alt="Retrato de Antonio Cánovas del Castillo">
-                    <span class="caption">Antonio Cánovas del Castillo, líder del Partido Conservador</span>
+                    <span class="caption">Imagen 2: Antonio Cánovas del Castillo, el artífice conservador del sistema de la Restauración</span>
                 </div>
                 <div class="tarjeta-imagen">
                     <img src="img/retrato-sagasta.png" alt="Retrato de Práxedes Mateo Sagasta">
-                    <span class="caption">Práxedes Mateo Sagasta, líder del Partido Liberal</span>
+                    <span class="caption">Imagen 3: Práxedes Mateo Sagasta, el impulsor del liberalismo reformista del turno</span>
                 </div>
             </div>
 
-            <p>El pilar jurídico del régimen fue la <em>Constitución de 1876</em>, la de mayor longevidad en la historia de España. Sus principales rasgos fueron:</p>
+            <p>Sus fundamentos doctrinales y bases organizativas se resumen en los siguientes puntos clave:</p>
             <ul>
-                <li><strong>Soberanía compartida:</strong> Rechazaba la soberanía nacional al establecer que la potestad legislativa residía conjuntamente en las Cortes con el Rey.</li>
-                <li><strong>Amplias prerrogativas reales:</strong> El monarca ostentaba el poder ejecutivo, el mando supremo del ejército, y el derecho de convocar, suspender y disolver las Cortes de forma unilateral.</li>
-                <li><strong>Cortes bicamerales:</strong> Formadas por el Congreso de los Diputados (elegido por sufragio) y el Senado (órgano elitista donde dos tercios eran senadores vitalicios o por derecho propio).</li>
-                <li><strong>Indefinición del sufragio:</strong> La carta constitucional no definía el tipo de sufragio. Así, bajo la Ley Electoral de 1878 se implantó el <strong>sufragio censitario</strong>, hasta que en 1890 los liberales impusieron el <strong>sufragio universal masculino</strong>.</li>
+                <li><strong>Soberanía Compartida Rey-Cortes:</strong> Rompía formalmente con el principio democrático de la soberanía nacional al consagrar que la soberanía histórica residía de forma conjunta en la Corona y en el Parlamento representativo.</li>
+                <li><strong>Amplias Prerrogativas para la Corona:</strong> El monarca ostentaba de forma preeminente el poder ejecutivo, el derecho de veto absoluto sobre las leyes aprobadas por las Cortes, el mando civil y militar del ejército y el poder de nombrar y destituir ministros de manera unilateral, así como convocar, suspender o disolver las cámaras sin consultar al parlamento.</li>
+                <li><strong>Cortes Bicamerales:</strong> El poder legislativo se dividía entre el Congreso de los Diputados (electivo mediante votación de los ciudadanos) y el Senado (órgano elitista y conservador constituido por senadores por derecho propio, senadores vitalicios de designación real, y una minoría elegida por los grandes contribuyentes).</li>
+                <li><strong>Indefinición del Tipo de Sufragio:</strong> Como método para facilitar la alternancia en el poder, la Constitución no fijaba de forma explícita el sistema de voto, delegándolo a las posteriores leyes electorales. Así, la Ley Electoral de 1878 restauró el <strong>sufragio censitario</strong> restrictivo (votaban solo el 5% de los ricos), hasta que en 1890 el Partido Liberal forzó la aprobación del <strong>sufragio universal masculino</strong> para todos los varones mayores de 25 años.</li>
+                <li><strong>Confesionalidad del Estado:</strong> El célebre <strong>Artículo 11</strong> declaró a la religión católica como la única oficial y verdadera del Estado, consagrando la subvención financiera de la Iglesia a través de los presupuestos estatales de </em>Culto y Clero<em>, pero tolerando la libertad de culto y creencias individuales siempre y cuando no se realizase ninguna manifestación pública o ceremonia de carácter no católico en las calles.</li>
+                <li><strong>Subordinación Militar al Poder Civil:</strong> Se puso fin al constante golpismo militar del reinado de Isabel II mediante una Real Orden de 1875 que prohibió de forma taxativa la injerencia de los mandos militares en el juego de partidos políticos, relegando al ejército exclusivamente a la defensa nacional a cambio de un generoso y amplio presupuesto gubernamental.</li>
             </ul>
 
             <div class="tarjeta-imagen">
                 <img src="img/grafico-elecciones-1876.png" alt="Resultados Elecciones de 1876" style="max-height: 250px;">
-                <span class="caption">Composición del Congreso de los Diputados tras las elecciones constituyentes de 1876</span>
+                <span class="caption">Imagen 4: Distribución de diputados tras las elecciones constituyentes de 1876 bajo sufragio universal provisional</span>
             </div>
 
             <!-- BOTÓN INTERACTIVO: EL HUMOR DE CÁNOVAS -->
-            <div style="margin: 15px 0;">
+            <div style="margin: 15px 0; text-align: center;">
                 <button class="btn-interactivo btn-anecdota" onclick="openPopup('pop-humor')">🕵️‍♂️ Curiosidad: El humor caustico de Cánovas y la Constitución</button>
             </div>
         </section>
 
         <!-- SECCIÓN 3 -->
         <section id="turnismo">
-            <h2>3. El Funcionamiento Electoral: Turnismo y Caciquismo</h2>
-            <p>Para asegurar la paz social, se organizó un sistema basado en la <strong>alternancia regular</strong> o <strong>turno pacífico</strong> de dos grandes fuerzas dinásticas, llamadas partidos de turno:</p>
+            <h2>3. El Funcionamiento Electoral: Turnismo y Caciquismo Canario</h2>
+            <p>Para garantizar una alternancia ordenada que cerrara las puertas a las revoluciones populares, Cánovas ideó el modelo del <strong>bipartidismo</strong>. El sistema se sustentaba en el pacto tácito entre dos grandes fuerzas monárquicas burguesas que aceptaban turnarse pacíficamente en el poder y respetar de mutuo acuerdo la obra legislativa de su predecesor:</p>
             <ul>
-                <li><strong>El Partido Conservador:</strong> Liderado por <em>Antonio Cánovas del Castillo</em>, representaba la derecha tradicional y el orden católico, con el respaldo de la alta burguesía y la aristocracia.</li>
-                <li><strong>El Partido Liberal (o Fusionista):</strong> Dirigido por <em>Práxedes Mateo Sagasta</em>, aglutinaba a antiguos progresistas y unionistas de izquierda, defensores de reformas sociales más laicas.</li>
+                <li><strong>El Partido Conservador:</strong> Dirigido de forma indiscutible por <em>Antonio Cánovas del Castillo</em>, agrupaba a los sectores de la aristocracia, los antiguos moderados, y los grandes terratenientes deparando el orden católico riguroso y el proteccionismo económico agrario.</li>
+                <li><strong>El Partido Liberal (Fusionista):</strong> Liderado por <em>Práxedes Mateo Sagasta</em>, aglutinaba a antiguos progresistas, demócratas y unionistas de izquierda que promovían reformas modernizadoras de corte laico (como la libertad de imprenta, la abolición de la esclavitud, el matrimonio civil o la instauración del sufragio universal masculino).</li>
             </ul>
 
-            <p>Este sistema de alternancia pacífica o turno de partidos no era la expresión de la voluntad de los electores, sino el resultado de pactos preestablecidos entre los dirigentes de ambos partidos burgueses [12]. Una vez acordado el cambio, se seguía un mecanismo inverso al democrático: el rey nombraba un nuevo jefe de Gobierno, le otorgaba el decreto de disolución de las Cortes y, seguidamente, el nuevo gobierno convocaba unas elecciones completamente adulteradas [12]. Las elecciones se controlaban desde el Ministerio de la Gobernación a través del <em>encasillado</em> (el reparto previo de escaños acordado por las élites políticas) [12].</p>
-            <p>La clave de la adulteración residía en la complicidad de los gobernadores civiles de cada provincia y la red de <em>caciques</em> locales [12].</p>
+            <p>El funcionamiento real del <strong>turnismo pacífico</strong> constituía una farsa y una completa inversión del sistema democrático. Una vez acordado el cambio, se seguía un mecanismo inverso al democrático: el rey nombraba un nuevo jefe de Gobierno, le otorgaba el <strong>decreto de disolución de las Cortes</strong> y, seguidamente, el nuevo gobierno convocaba unas elecciones completamente deparando el triunfo oficial. Las elecciones se controlaban desde el Ministerio de la Gobernación a través del <strong>encasillado</strong> (la asignación previa de escaños deparando listas con los diputados que obligatoriamente debían resultar ganadores en cada provincia, asegurando la mayoría del partido del turno).</p>
+
+            <p>Para conseguir esa mayoría falsificada, el gobierno movilizaba a los gobernadores civiles y, de forma prioritaria, a la red local de <strong>caciques</strong> (terratenientes o comerciantes ricos que dominaban las comarcas rurales). El cacique intercambiaba favores por votos, valiéndose de la miseria de los campesinos: si votaban al candidato gubernamental, les daba trabajo en el campo, agilizaba papeles o los libraba del sorteo de las </em>quintas<em> militares; de lo contrario, los condenaba al paro. El fraude se completaba el día de la votación mediante el <strong>pucherazo</strong> (la falsificación sistemática de las actas de escrutinio, la compra de sufragios o la inclusión de fallecidos en las urnas).</p>
 
             <div class="fila-imagenes">
                 <div class="tarjeta-imagen">
-                    <img src="img/caricatura-caciquismo-difuntos.png" alt="Caricatura caciquismo de difuntos">
-                    <span class="caption">Caricatura que denuncia la resurrección de fallecidos en el censo electoral</span>
+                    <img src="img/caricatura-caciquismo-difuntos.png" alt="Caricatura de difuntos votando en el pucherazo">
+                    <span class="caption">Imagen 5: Ilustración de la revista satírica El Loro ironizando sobre los fallecidos que votaban en las urnas</span>
                 </div>
                 <div class="tarjeta-imagen">
-                    <img src="img/caricatura-caciquismo-cura.png" alt="Caricatura caciquismo confesional">
-                    <span class="caption">Ilustración satírica sobre la coacción electoral clerical en los pueblos</span>
+                    <img src="img/caricatura-caciquismo-cura.png" alt="Caricatura del caciquismo clerical">
+                    <span class="caption">Imagen 6: Caricatura deparando la influencia y coacción clerical de los curas en los distritos rurales</span>
                 </div>
             </div>
 
             <div class="caja-colores factores">
-                <h4>🗳️ Glosario del Fraude Electoral Canovista</h4>
+                <h4>🏛️ El Caciquismo Canario y las redes del Pleito Insular</h4>
+                <p>En el archipiélago canario, el sistema del turnismo y el fraude electoral canovista se adaptaron con una intensidad y fisionomía singulares debido al histórico conflicto del <strong>pleito insular</strong> motivado por la capitalidad única decretada en 1833 en favor de Santa Cruz de Tenerife.</p>
+                <p>Las redes del poder oligárquico de las islas mayores se organizaron de forma férrea y clientelar a través de los dos grandes partidos del turno:</p>
                 <ul>
-                    <li><strong>El Encasillado:</strong> Asignación previa de los escaños que debían resultar elegidos en cada circunscripción, elaborada mediante cuadrantes y listas desde el Ministerio de la Gobernación con el consenso previo de los partidos del turno. Este plan de diputados "fabricados" se transmitía a los gobernadores civiles y de estos a los caciques locales para asegurar de antemano el triunfo oficial.</li>
-                    <li><strong>El Cacique:</strong> Persona rica e influyente de la España rural (terrateniente, prestamista o comerciante) que controlaba la contratación, los sorteos de las quintas militares y las decisiones de los vecinos del pueblo a cambio de sus votos.</li>
-                    <li><strong>El Pucherazo:</strong> Adulteración sistemática del voto que incluía el falseamiento del censo (con la inclusión de fallecidos o "resurrección de muertos" en las listas), la compra directa de sufragios, el robo de urnas o la inserción fraudulenta de papeletas directamente en el escrutinio.</li>
+                    <li><strong>El Partido Conservador en Tenerife:</strong> Se convirtió en la fuerza política preponderante de la provincia, bajo la dirección del terrateniente e influyente diputado por La Orotava, <strong>Feliciano Pérez Zamora</strong>. Pérez Zamora dominaba el cabildo y las instituciones provinciales con el apoyo de la Iglesia católica y los terratenientes locales, asegurando la capitalidad única y canalizando de forma exclusiva los presupuestos estatales de Madrid hacia las obras públicas tinerfeñas.</li>
+                    <li><strong>El Partido Liberal en Gran Canaria:</strong> Dirigido por la poderosa familia de los hermanos <strong>Juan y Fernando León y Castillo</strong> (este último diputado indiscutible y Ministro de Ultramar). Al frente de la burguesía comercial y mercantil grancanaria, los León y Castillo se aliaron con los intereses de las casas comerciales y navieras británicas para contrarrestar la hegemonía de Tenerife, impulsando de forma temprana un movimiento de reivindicación de la división provincial y canalizando el voto de Las Palmas en pro de los puertos francos.</li>
                 </ul>
+                <p>Los caciques canarios ejercían una implacable dominación señorial sobre una inmensa masa de campesinos pobres en régimen de <strong>medianería</strong> o como jornaleros desposeídos. En una sociedad con altísimas tasas de analfabetismo y hambre periódica en el campo, el cacique controlaba el usufructo de las tierras y el acceso indispensable al agua de riego. La oligarquía y el clero canalizaban el descontento de las masas rurales para evitar cualquier tipo de estallido social, reprimiendo duramente las huelgas o las manifestaciones populares espontáneas nacidas ante la miseria agraria (como los sucesos de la "lucha por las papas y el pan" que asolaron Las Palmas en épocas de sequía).</p>
             </div>
 
             <!-- VÍDEO COMPLEMENTARIO SOBRE EL CACIQUISMO -->
@@ -548,18 +561,26 @@
         <!-- SECCIÓN 4 -->
         <section id="regencia">
             <h2>4. La Regencia de María Cristina y el Pacto del Pardo (1885 - 1902)</h2>
-            <p>La prematura muerte de <em>Alfonso XII</em> por tuberculosis en noviembre de 1885 puso en serio peligro la estabilidad institucional del Estado al dejar como heredero a un niño póstumo. Para blindar el régimen, los líderes de ambos partidos firmaron el <em>Pacto del Pardo (1885)</em>.</p>
+            <p>La estabilidad del sistema canovista se enfrentó a su momento más delicado e incierto en noviembre de 1885 tras el fallecimiento repentino por tuberculosis del rey <em>Alfonso XII</em> con tan solo 28 años de edad. Al no existir un heredero varón vivo, sino únicamente dos infantas y un feto en gestación en el vientre de la reina consorte <em>María Cristina de Habsburgo-Lorena</em>, resurgió el fantasma de un nuevo estallido de la guerra civil carlista o de una insurrección republicana.</p>
 
             <div class="tarjeta-imagen">
-                <img src="img/jura-regente-sorolla.png" alt="Juramento de María Cristina de Habsburgo">
-                <span class="caption">La reina María Cristina de Habsburgo jurando la Regencia ante las Cortes (Joaquín Sorolla)</span>
+                <img src="img/jura-regente-sorolla.png" alt="Juramento de la reina María Cristina por Sorolla">
+                <span class="caption">Imagen 7: La reina María Cristina de Habsburgo jurando la Regencia ante las Cortes Generales (obra de Joaquín Sorolla)</span>
             </div>
 
-            <p>A través de este acuerdo político, se consolidó la regencia de <em>María Cristina de Habsburgo</em> y el "gobierno largo" de los liberales de <em>Sagasta</em> (1885-1890), durante el cual se sacaron adelante de forma pactada la <em>Ley de Asociaciones (1887)</em> y el <strong>sufragio universal masculino (1890)</strong>, cerrando las puertas a cualquier intento de rebelión carlista o republicana.</p>
+            <p>Ante el peligro de colapso, Cánovas y Sagasta sellaron de forma solemne el histórico <strong>Pacto del Pardo (1885)</strong>. Mediante este acuerdo, se decretaba el pleno apoyo político a la regencia de María Cristina y se acordaba la entrega inmediata del gobierno al Partido Liberal de Sagasta para que acometiera sus proyectadas reformas sin oposición conservadora, garantizando la paz civil.</p>
+
+            <p>El resultado del Pacto del Pardo fue el llamado <strong>«Gobierno Largo» de Sagasta (1885-1890)</strong>, un periodo legislativo de extraordinaria estabilidad liberal que sirvió para profundizar en las libertades individuales del país y desactivar la movilización popular mediante leyes deparadoras de libertades:</p>
+            <ul>
+                <li>Se decretó la <strong>Ley de Asociaciones de 1887</strong>, que eliminó la distinción entre partidos legales e ilegales y abrió la vía a la legalización de los sindicatos y partidos obreros contemporáneos (como el PSOE y la UGT).</li>
+                <li>Se redactó el nuevo Código Civil de 1889, unificando la legislación y consolidando el derecho de propiedad privada.</li>
+                <li>Se abolió definitivamente la esclavitud en Cuba y Puerto Rico, cumpliendo lo acordado en Zanjón.</li>
+                <li>Se aprobó la de mayor trascendencia, la <strong>Ley del Sufragio Universal Masculino en 1890</strong>, concediendo el derecho de voto a todos los varones de más de 25 años. No obstante, al mantenerse el caciquismo electoral, el sufragio universal deparó simplemente un censo mayor manipulado por el gobierno.</li>
+            </ul>
 
             <div class="tarjeta-imagen">
-                <img src="img/caricatura-pacto-pardo.png" alt="Caricatura Pacto del Pardo" style="max-height: 350px;">
-                <span class="caption">Caricatura satírica ridiculizando el pacto entre conservadores y liberales para repartirse el pastel estatal</span>
+                <img src="img/caricatura-pacto-pardo.png" alt="Caricatura del reparto del pastel electoral" style="max-height: 350px;">
+                <span class="caption">Imagen 8: Caricatura de la revista El Loro ironizando sobre el turnismo pacífico y el Pacto del Pardo</span>
             </div>
 
             <!-- BOTÓN INTERACTIVO: LA HISTORIA DE AMOR Y LA TRAGEDIA DE MERCEDES -->
@@ -567,79 +588,85 @@
                 <button class="btn-interactivo btn-anecdota" onclick="openPopup('pop-salsarosa')">💖 La Salsa Rosa de la Historia: El trágico idilio de Alfonso y Mercedes</button>
             </div>
         </section>
-    
-        <!-- SECCIÓN 5: LA CRISIS DEL TURNISMO BAJO ALFONSO XIII -->
+
+        <!-- SECCIÓN 5 -->
         <section id="crisis_sistema">
             <h2>5. La Crisis del Turnismo y el Reinado de Alfonso XIII (1902 - 1923)</h2>
-            <p>En 1902, al cumplir los 16 años, <em>Alfonso XIII</em> juró la Constitución e inició su reinado personal [20, 23]. Pese a que el monarca pretendió mantener el sistema de <em>Cánovas</em>, el turno pacífico comenzó a agrietarse debido a la desaparición de los líderes históricos (<em>Cánovas</em> asesinado en 1897, <em>Sagasta</em> fallecido en 1903) y a la incapacidad del régimen para integrar a los nuevos movimientos sociales (republicanismo, obrerismo y nacionalismo) [20, 23, 29].</p>
-            
-            <p>La inestabilidad política fue alarmante (se sucedieron 10 presidentes de gobierno entre 1902 y 1907) [20, 25]. El propio rey se implicó activamente en las crisis gubernamentales, dejándose influir por los sectores militares más conservadores [29].</p>
+            <p>En mayo de 1902, al cumplir la edad constitucional de 16 años, <strong>Alfonso XIII</strong> fue proclamado rey e inició su reinado personal. La etapa estuvo marcada por el desmoronamiento paulatino del sistema del turno pacífico tras la desaparición física de sus dos grandes pilares fundadores (Cánovas fue asesinado en 1897 y Sagasta falleció en 1903), abriendo paso a una profunda crisis de liderazgo político dentro de los dos partidos de turno.</p>
+
+            <p>Los nuevos líderes ensayaron sendos proyectos reformistas conocidos como el <strong>revisionismo político</strong> o regeneracionismo desde el poder:</p>
+            <ul>
+                <li><strong>El Revisionismo Conservador de Antonio Maura (1907-1909):</strong> Promovió su proyecto de "revolución desde arriba" para reformar el sistema administrativo desde el propio gobierno y evitar una revolución violenta del pueblo. Entre sus medidas, impulsó la Ley Electoral de 1907, orientada a erradicar el fraude introduciendo el voto obligatorio, aunque incluyó el polémico <strong>Artículo 29</strong> (por el cual se proclamaba automáticamente diputado al candidato si no se presentaba ningún rival en su circunscripción, lo que reforzó el poder de los caciques en los distritos controlados).</li>
+                <li><strong>La Semana Trágica de Barcelona (julio de 1909):</strong> El de la guerra de Marruecos y el envío de reservistas catalanes a combatir tras el desastre del </em>Barranco del Lobo<em> desataron una huelga general obrera en Barcelona. La huelga derivó en una sangrienta insurrección popular con quema de conventos y barricadas. La represión gubernamental de Maura fue brutal (más de 75 muertos y fusilamientos expeditivos en Montjuic, entre ellos el del pedagogo anarquista <strong>Francisco Ferrer y Guardia</strong>, fundador de la </em>Escuela Moderna<em>, ejecutado sin pruebas sólidas, provocando la caída del gobierno al grito de «¡Maura no!»).
+                    <button class="btn-interactivo btn-texto" onclick="openPopup('pop-semanatragica')">📜 Moción obrera: La protesta de Tarrasa de 1909</button>
+                </li>
+                <li><strong>El Revisionismo Liberal de José Canalejas (1910-1912):</strong> Intentó democratizar el régimen mediante un reformismo social de corte laico. Promulgó la <strong>Ley del Candado (1910)</strong> para frenar la instalación de nuevas congregaciones religiosas y ordenó la abolición del impuesto de consumos (sustituyéndolo por un impuesto progresivo). De igual modo, reguló el trabajo de las mujeres e instauró el servicio militar obligatorio sin exención por pago (aunque creando los soldados de cuota). Su obra reformadora se truncó tras ser asesinado por un anarquista en la Puerta del Sol de Madrid en 1912.</li>
+            </ul>
+
+            <p>La inestabilidad se agudizó tras el estallido de la Primera Guerra Mundial y la <strong>Triple Crisis de 1917</strong>:</p>
+            <ol>
+                <li><strong>La Crisis Militar (Juntas de Defensa):</strong> Las Juntas Militares de mandos intermedios del ejército desafiaron al gobierno exigiendo mejoras salariales y protestando contra los ascensos por méritos de guerra arbitrarios de los "africanistas", deparando una fuerte influencia de las armas sobre el parlamento.</li>
+                <li><strong>La Crisis Política (Asamblea de Parlamentarios):</strong> Parlamentarios de la oposición catalanista de la Lliga, republicanos y socialistas se reunieron en Barcelona exigiendo el fin del turno y la convocatoria de Cortes constituyentes.</li>
+                <li><strong>La Crisis Social (Huelga General Revolucionaria de agosto de 1917):</strong> Convocada de forma conjunta por los sindicatos de la UGT y la CNT en protesta por el disparo desmesurado de la inflación y la carestía de la vida que había deparado la Gran Guerra europea. El de las huelgas fue total en Madrid, Asturias, Vizcaya y Barcelona, hasta que el gobierno militarizó el país y el ejército aplastó la huelga por la fuerza, dejando un centenar de muertos.</li>
+            </ol>
+
+            <p>Tras la crisis de 1917, el turno se hundió por completo, sucediéndose efímeros gobiernos de concentración deparando una inestabilidad absoluta (13 gabinetes ministeriales en seis años). El de la agitación obrera en el sur (</em>Trienio Bolchevique<em>, 1918-1921), el pistolerismo en Cataluña y la Ley de Fugas concluyó en la gran tragedia de la derrota colonial del <strong>Desastre de Annual en julio de 1921</strong> en Marruecos, donde la imprudencia del general Silvestre provocó la muerte de más de 10.000 soldados españoles a manos del líder rifeño Abd el-Krim, desatando la exigencia de responsabilidades en el </em>Expediente Picasso<em>.</p>
 
             <div class="caja-colores factores">
-                <h4>🛠️ Los Dos Intentos de Regeneración Interna</h4>
+                <h4>🇮🇨 Canarias: La visita real de 1906 y los Cabildos de 1912</h4>
+                <p>En el marco de esta crisis general del turnismo, el descontento por el pleito insular canario alcanzó su clímax, deparando dos hitos legislativos históricos:</p>
                 <ul>
-                    <li><strong>Antonio Maura y la "Revolución desde arriba" (1907-1909):</strong> El líder conservador intentó reformar el régimen desde el Gobierno para evitar una revolución popular [29]. Reformó la Ley Electoral de 1907 para hacer más difícil el fraude, aunque su famoso <em>Artículo 29</em> (que nombraba diputados sin votación si solo había un candidato) acabó siendo un instrumento perfecto para el caciquismo [29]. Creó el <em>Instituto Nacional de Previsión (1908)</em> para facilitar seguros obreros y la Ley de Descanso Dominical [29]. No obstante, su intransigencia con el orden público y la brutal represión de la <em>Semana Trágica de Barcelona (1909)</em>, que culminó con el injusto fusilamiento del pedagogo anarquista <em>Francisco Ferrer i Guardia</em> (fundador de la Escuela Moderna), levantaron protestas internacionales y forzaron su dimisión [20, 29].</li>
-                    <li><strong>José Canalejas y el Regeneracionismo Liberal (1910-1912):</strong> Canalejas buscó atraer a los sectores populares limitando el poder de la Iglesia [29]. Promulgó la <em>Ley del Candado (1910)</em> para impedir la creación de nuevas órdenes religiosas, suprimió el impuesto de consumos sustituyéndolo por un impuesto sobre la renta (lo que desató protestas burguesas), y reformó el servicio militar obligatorio eliminando la redención en metálico (aunque mantuvo a los "soldados de cuota") [20, 29]. Sus reformas se truncaron abruptamente cuando fue asesinado por un anarquista en la Puerta del Sol de Madrid en noviembre de 1912 [20, 29].</li>
+                    <li><strong>La visita del rey Alfonso XIII en 1906:</strong> Fue la primera visita oficial de un monarca reinante a las islas. Durante su escala tanto en Tenerife como en Gran Canaria, Alfonso XIII presenció de primera mano las tensiones por el pleito insular, donde la burguesía grancanaria le exigió la división de la provincia única y las islas menores demandaron el fin de su asfixia administrativa.</li>
+                    <li><strong>La histórica Ley de Cabildos Insulares de 1912:</strong> Para resolver el pleito insular, el ministro de Fomento, <strong>Manuel de Cámara</strong>, promovió y promulgó la histórica Ley del 11 de julio de 1912. Esta medida de corte descentralizador abolió el control tinerfeño de las islas periféricas al crear para cada una de las siete islas un <strong>cabildo insular</strong>, una corporación con competencias locales administrativas y fiscales. La Ley de Cabildos pacificó provisionalmente las relaciones regionales, convirtiéndose en el modelo tradicional de autogobierno por excelencia.</li>
                 </ul>
             </div>
 
-            <p>La colonización de la zona norte de Marruecos (El Rif), asignada a España en la <em>Conferencia de Algeciras (1906)</em>, fue justificada por los intereses económicos de la burguesía y el deseo del Ejército de restaurar su prestigio hundido tras el desastre de Cuba [29]. El conflicto rifeño se convirtió en una sangría constante (derrota del <em>Barranco del Lobo</em> en 1909) que exacerbó la conflictividad social en la Península [29].</p>
-
-            <p>El estallido de la <strong>Primera Guerra Mundial (1914-1918)</strong> dividió la opinión pública, pero su declaración de neutralidad reportó un inmenso boom de exportaciones de alimentos y metales a los combatientes [20, 29]. Las reservas del Banco de España se triplicaron y los beneficios textiles se multiplicaron por veinte [29]. Sin embargo, esta inyección económica trajo una altísima inflación que redujo el poder adquisitivo de los trabajadores, estimulando la agitación obrera [20, 29].</p>
-
-            <!-- VÍDEO COMPLEMENTARIO: CRISIS DE 1917 -->
+            <!-- VÍDEO EXPLICATIVO DE LA HUELGA GENERAL Y LA CRISIS DE 1917 -->
             <div style="margin: 15px 0; text-align: center;">
                 <a href="https://youtu.be/24kUhe0pSsA" target="_blank" class="btn-interactivo btn-video">🎬 Vídeo 3: Ver documental sobre la Huelga General de 1917 y la Crisis del Sistema ➡️</a>
             </div>
 
-            <div class="caja-colores factores">
-                <h4>⚡ La Triple Crisis del Verano de 1917</h4>
-                <p>En 1917, la crisis del sistema de la Restauración estalló en tres revoluciones consecutivas:</p>
-                <ul>
-                    <li><strong>La crisis militar:</strong> Ante el favoritismo de los ascensos por mérito de guerra, los oficiales peninsulares crearon las <em>Juntas Militares de Defensa</em> en 1916 [20, 29]. Dato cedió a sus presiones salariales y de ascensos por antigüedad con la Ley del Ejército de 1918, convirtiéndolas en pilar de la monarquía [29].</li>
-                    <li><strong>La crisis política:</strong> Ante el cierre del Parlamento por Dato, en julio de 1917 se reunió en Barcelona una <em>Asamblea de Parlamentarios</em> catalanistas, republicanos y socialistas que exigió un gobierno provisional y Cortes Constituyentes para acabar con el turnismo [20, 29]. Fue disuelta por la Guardia Civil [29].</li>
-                    <li><strong>La crisis social (Huelga General Revolucionaria):</strong> Convocada en agosto de 1917 de forma conjunta por la UGT y la CNT ante la inflación, el paro y la miseria generalizada [20, 29]. La huelga paralizó el país durante una semana pero fue aplastada con dureza por el Ejército (más de 70 muertos y 2.000 detenidos; el comité de huelga integrado por Besteiro, Largo Caballero, Saborit y Anguiano fue condenado a prisión) [20, 29].</li>
-                </ul>
-            </div>
-
-            <p>El fracaso de la crisis de 1917 dio paso a gobiernos de concentración débiles (el <em>Gobierno Nacional</em> de Maura de 1918) que no pudieron frenar la espiral de inestabilidad (10 cambios de gobierno en 5 años) [29]. El golpe de gracia definitivo al sistema lo asestó el <strong>Desastre de Annual (1921)</strong> en Marruecos, donde más de 12.000 soldados españoles de reemplazo fueron masacrados en Monte Arruit por los rifeños de <em>Abd-el-Krim</em> [20, 29]. La comisión de investigación dirigida por el general Picasso (el <em>Expediente Picasso</em>) reveló una corrupción y negligencia generalizada que salpicaba al propio rey, lo que indignó a la opinión pública nacional [29].</p>
-
-            <!-- BOTÓN INTERACTIVO: EL EXPEDIENTE PICASSO -->
-            <div style="margin: 15px 0;">
-                <button class="btn-interactivo btn-texto" onclick="openPopup('pop-picasso')">📜 Documento: El Expediente Picasso y la Masacre de Annual (1921)</button>
+            <!-- BOTONES INTERACTIVOS: EXPEDIENTE PICASSO Y LEY DE FUGAS -->
+            <div style="margin: 15px 0; text-align: center;">
+                <button class="btn-interactivo btn-texto" onclick="openPopup('pop-picasso')">📜 Documento: El Expediente Picasso (1921)</button>
+                <button class="btn-interactivo btn-anecdota" onclick="openPopup('pop-fugas')">🔫 Curiosidad: La Ley de Fugas y el Pistolerismo</button>
             </div>
         </section>
 
-        <!-- SECCIÓN 6: LA DICTADURA DE PRIMO DE RIVERA -->
+        <!-- SECCIÓN 6 -->
         <section id="dictadura">
             <h2>6. La Dictadura de Primo de Rivera y la Caída de la Monarquía (1923 - 1931)</h2>
-            <p>Ante la inminencia de que las Cortes debatieran el <em>Expediente Picasso</em> y la extendida violencia social, el 13 de septiembre de 1923 el Capitán General de Cataluña, <em>Miguel Primo de Rivera</em>, encabezó un pronunciamiento militar con la aprobación implícita del rey <em>Alfonso XIII</em> [20, 29]. El monarca le confió la formación de gobierno, sepultando de manera definitiva el régimen parlamentario de Cánovas [29].</p>
+            <p>Ante la inminencia de que las Cortes debatieran el </em>Expediente Picasso<em> del desastre de Annual, el 13 de septiembre de 1923 el Capitán General de Cataluña, <strong>Miguel Primo de Rivera</strong>, dio un golpe de Estado militar. El rey Alfonso XIII, deseoso de un gobierno de fuerza, aceptó la sublevación y entregó el poder al general, suspendiendo la Constitución.</p>
+
+            <p>La andadura de la dictadura se dividió en dos etapas fundamentales:</p>
+            <ul>
+                <li><strong>El Directorio Militar (1923-1925):</strong> Gobierno constituido por militares que suspendió las libertades constitucionales, clausuró las Cortes y prohibió los partidos. Su mayor éxito fue la resolución definitiva del problema marroquí mediante el exitoso <strong>Desembarco de Alhucemas (septiembre de 1925)</strong>, una operación anfibia coordinada con Francia que forzó la rendición de Abd el-Krim y pacificó el protectorado.</li>
+                <li><strong>El Directorio Civil (1925-1930):</strong> Transición hacia un modelo corporativista inspirado en el fascismo italiano. Primo de Rivera fundó la <strong>Unión Patriótica</strong> (como partido político único de carácter inoperante) y la </em>Asamblea Nacional Consultiva* (con miembros designados directamente para asesorar al dictador pero sin función legislativa real). Se acometió una ambiciosa política de obras públicas (regadíos, carreteras, embalses) apoyada en monopolios estatales como Campsa y Telefónica.</li>
+            </ul>
+
+            <p>La caída del dictador se precipitó en 1929 debido a la ruina financiera (endeudamiento y caída de la peseta) que coincidió con el crack de Nueva York, desatando el descontento de intelectuales y mandos militares. En enero de 1930, Primo de Rivera presentó su dimisión ante el rey y se exilió a París, donde falleció pocas semanas después.</p>
+
+            <p>Para encauzar la caída de la dictadura, Alfonso XIII nombró presidente al general Berenguer (periodo conocido como la <strong>«Dictablanda»</strong>), intentando sin éxito volver a la normalidad de 1876. La oposición firmó el <strong>Pacto de San Sebastián (agosto de 1930)</strong>, un programa común para derrocar la monarquía. Finalmente, el almirante Aznar convocó <strong>elecciones municipales para el 12 de abril de 1931</strong>. El triunfo aplastante de las candidaturas republicanas en casi todas las capitales de provincia fue interpretado como un plebiscito directo contra la corona, forzando la huida del monarca al exilio y la <strong>proclamación de la Segunda República el 14 de abril de 1931</strong>.</p>
 
             <div class="caja-colores factores">
-                <h4>🛡️ Las Dos Etapas de la Dictadura</h4>
-                <ul>
-                    <li><strong>El Directorio Militar (1923-1925):</strong> Integrado exclusivamente por generales, suspendió la Constitución, clausuró las Cortes, estableció el estado de guerra y la censura en la prensa, y reemplazó a los alcaldes y gobernadores civiles por militares [20, 29]. Persiguió con saña al nacionalismo catalán y vasco, prohibiendo sus banderas e idiomas en actos oficiales y liquidando la Mancomunidad en 1925 [29]. Su mayor hito fue poner fin a la guerra de Marruecos mediante el exitoso <strong>Desembarco de Alhucemas (1925)</strong>, una audaz operación conjunta con Francia que forzó la rendición de <em>Abd-el-Krim</em> y pacificó el protectorado [20, 29].</li>
-                    <li><strong>El Directorio Civil (1925-1930):</strong> Primo de Rivera introdujo a ministros civiles de carácter tecnócrata, como <em>José Calvo Sotelo</em> (Hacienda) o <em>Eduardo Aunós</em> (Trabajo) [29]. Se creó un partido único ficticio, la <em>Unión Patriótica (UP)</em>, y una milicia ciudadana auxiliar (el <em>Somatén</em>) [29]. En lo económico, se benefició de la excelente coyuntura de los "felices años veinte", impulsando una ambiciosa política de obras públicas (pantanos, carreteras, ferrocarriles) y decretando monopolios estatales como la Compañía Telefónica (CTNE) y CAMPSA [29]. Esta política se financió a costa de un gravoso aumento de la deuda del Estado y la caída de la peseta [20, 29].</li>
-                </ul>
+                <h4>🇮🇨 Canarias y la división provincial definitiva de 1927</h4>
+                <p>En el plano canario, el acontecimiento más trascendental de este periodo se deparó bajo el gobierno de la Dictadura. El general Miguel Primo de Rivera resolvió de forma definitiva el enconado <strong>pleito insular</strong> de capitalidad única de Javier de Burgos de 1833 mediante la firma del histórico Real Decreto del <strong>21 de septiembre de 1927</strong>.</p>
+                <p>Esta medida de corte descentralizador provincial <strong>dividió el archipiélago canario en dos provincias independientes</strong> y autónomas:</p>
+                <ol>
+                    <li>La provincia de <strong>Las Palmas</strong>, con capital en Las Palmas de Gran Canaria, que agrupaba a las islas orientales (Gran Canaria, Fuerteventura y Lanzarote).</li>
+                    <li>La provincia de <strong>Santa Cruz de Tenerife</strong>, con capital en Santa Cruz de Tenerife, que agrupaba a las islas occidentales (Tenerife, La Palma, La Gomera y El Hierro).</li>
+                </ol>
+                <p>Con esta histórica división se cerró definitivamente la lucha por la hegemonía regional, encauzando la convivencia de las islas y sentando las bases del equilibrio regional bicapitalino canario contemporáneo.</p>
             </div>
 
-            <p>La paz social aparente se obtuvo con la creación de la <em>Organización Corporativa Nacional</em> (comités paritarios de patronos y obreros, que contaron con la colaboración táctica del ala moderada del PSOE/UGT), mientras que la CNT anarquista y el Partido Comunista eran perseguidos con dureza y forzados a la clandestinidad [20, 29].</p>
-
-            <p>La oposición al régimen se intensificó notablemente a partir de 1928, sumando a intelectuales (destierro de <em>Miguel de Unamuno</em>, exilio de <em>Blasco Ibáñez</em> y movilizaciones de la Federación Universitaria Española - FUE), republicanos, nacionalistas catalanes y a sectores del propio Ejército que retiraron su confianza al dictador [29]. El crack financiero de 1929 y la reaparición de las huelgas obligaron a Primo de Rivera a dimitir el 30 de enero de 1930 [20, 29].</p>
-
-            <p>Los intentos de retorno a la normalidad constitucional mediante el general Dámaso Berenguer (la <em>"Dictablanda"</em>) fracasaron rotundamente ante la exigencia de un cambio de régimen [20, 29]. En agosto de 1930, socialistas, republicanos y catalanes firmaron el <strong>Pacto de San Sebastián</strong>, un programa de acción común para derrocar la monarquía y traer la república [20, 29]. Pese al fracaso de la sublevación militar de Jaca en diciembre de 1930, la suerte de Alfonso XIII estaba echada [20, 29].</p>
-
-            <p>Las elecciones municipales del <strong>12 de abril de 1931</strong>, presentadas por la oposición como un plebiscito a favor o en contra de la monarquía, arrojaron una victoria abrumadora de la coalición republicano-socialista en 45 de las 50 capitales de provincia [20, 29]. Ante el clamor popular, Alfonso XIII firmó su histórica <strong>Carta de abdicación el 14 de abril de 1931</strong>, marchando al exilio, lo que dio paso a la proclamación de la <strong>Segunda República</strong> y puso el punto final definitivo a la era de la Restauración [20, 29].</p>
-
-            <!-- VÍDEO EXPLICATIVO: FIN DE LA MONARQUÍA -->
+            <!-- VÍDEO EXPLICATIVO DE LA CAÍDA DE LA MONARQUÍA -->
             <div style="margin: 15px 0; text-align: center;">
                 <a href="https://youtu.be/24kUhe0pSsA" target="_blank" class="btn-interactivo btn-video">🎬 Vídeo 4: Ver la abdicación de Alfonso XIII y la Proclamación de la II República ➡️</a>
             </div>
         </section>
+    </main>
 
-</main>
-
-    <!-- VENTANAS EMERGENTES (POPUPS INTERACTIVOS / MODALS) -->
+<!-- VENTANAS EMERGENTES (POPUPS INTERACTIVOS / MODALS) -->
 
     <!-- POPUP 1: MANIFIESTO DE SANDHURST -->
     <div id="pop-sandhurst" class="modal">
@@ -688,7 +715,9 @@ Sin embargo, la felicidad conyugal duró apenas cinco meses. En junio de ese mis
     </div>
 
     <!-- Script de Navegación -->
-    <script>
+    
+
+<script>
         const links = document.querySelectorAll('aside nav ul li a');
         const sections = document.querySelectorAll('main section');
 
