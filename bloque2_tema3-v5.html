@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloque II - Tema 3: Industrialización y Movimiento Obrero en España</title>
+    <style>
+        :root {
+            --primary-intense: #1e40af;
+            --primary-vibrant: #2563eb;
+            --primary-dark: #0f172a;
+            --primary: #1e293b;
+            --bg-main: #f8fafc;
+            --card-bg: #ffffff;
+            --text-dark: #1e293b;
+            --text-muted: #64748b;
+            
+            --header-bg: #f0fdf4;
+            --header-border: #10b981;
+            --header-text: #065f46;
+
+            --border-glosario: #0ea5e9;
+            --bg-glosario: #f0f9ff;
+            --border-investigacion: #f59e0b;
+            --bg-investigacion: #fffbeb;
+            --border-critica: #ef4444;
+            --bg-critica: #fef2f2;
+            --border-factores: #10b981;
+            --bg-factores: #ecfdf5;
+        }
+
+        <em> {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-dark);
+            min-height: 100vh;
+        }
+
+        /</em> Barra de navegación lateral fija <em>/
+        aside {
+            width: 300px;
+            background-color: var(--primary-dark);
+            color: white;
+            padding: 25px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            overflow-y: auto;
+            border-right: 1px solid #334155;
+            z-index: 100;
+        }
+
+        aside h1 {
+            font-size: 1.25rem;
+            margin-bottom: 25px;
+            color: #f8fafc;
+            border-bottom: 3px solid var(--primary-vibrant);
+            padding-bottom: 12px;
+            text-align: center;
+        }
+
+        aside nav ul {
+            list-style: none;
+        }
+
+        aside nav ul li {
+            margin-bottom: 10px;
+        }
+
+        aside nav ul li a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 0.95rem;
+            display: block;
+            padding: 10px 14px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            font-weight: 500;
+        }
+
+        aside nav ul li .btn-volver {
+            background-color: #334155;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+            border: 1px solid #475569;
+            margin-bottom: 15px;
+            display: block;
+            padding: 10px 14px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            text-decoration: none;
+        }
+
+        aside nav ul li .btn-volver:hover {
+            background-color: var(--primary-vibrant);
+            border-color: var(--primary-vibrant);
+        }
+
+        aside nav ul li a:hover, aside nav ul li a.active {
+            background-color: var(--primary-vibrant);
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(37, 99, 235, 0.15);
+        }
+
+        /</em> Contenido de la Web <em>/
+        main {
+            margin-left: 300px;
+            padding: 40px;
+            max-width: 1100px;
+        }
+
+        header {
+            margin-bottom: 35px;
+            background: linear-gradient(135deg, var(--header-bg), #e6fcf0);
+            border-left: 6px solid var(--header-border);
+            color: var(--header-text);
+            padding: 25px 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(16, 185, 129, 0.08);
+        }
+
+        header h2 {
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+            color: var(--header-text);
+            font-weight: 800;
+        }
+
+        header p {
+            color: #15803d;
+            font-size: 1.05rem;
+            font-weight: 500;
+        }
+
+        section {
+            background: var(--card-bg);
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            margin-bottom: 35px;
+            border-left: 6px solid var(--primary-vibrant);
+        }
+
+        section h2 {
+            color: var(--primary-dark);
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #f1f5f9;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: var(--primary-intense);
+            margin: 25px 0 12px 0;
+            font-size: 1.25rem;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+            color: #334155;
+            text-align: justify;
+        }
+
+        /</em> CONTENEDOR DE IMAGEN (ANTI-SOLAPAMIENTO) <em>/
+        .tarjeta-imagen {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 20px 0 30px 0;
+            text-align: center;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            display: block;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tarjeta-imagen img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            margin-bottom: 12px;
+            display: inline-block;
+        }
+
+        .tarjeta-imagen .caption {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            font-style: italic;
+            margin: 0;
+            line-height: 1.4;
+            display: block;
+        }
+
+        /</em> FILAS DE IMÁGENES COMPATIBLES (ADAPTATIVAS) <em>/
+        .fila-imagenes {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0 30px 0;
+        }
+
+        .fila-imagenes .tarjeta-imagen {
+            flex: 1;
+            min-width: 250px;
+            margin: 0;
+        }
+
+        .caja-colores {
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-size: 1rem;
+        }
+
+        .caja-colores h4 {
+            margin-bottom: 10px;
+            font-size: 1.15rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .factores {
+            background-color: var(--bg-factores);
+            border-left: 5px solid var(--border-factores);
+            color: #047857;
+        }
+
+        .investigacion {
+            background-color: var(--bg-investigacion);
+            border-left: 5px solid var(--border-investigacion);
+            color: #b45309;
+        }
+
+        details {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 14px;
+        }
+
+        details[open] {
+            background-color: white;
+            border-color: var(--primary-vibrant);
+        }
+
+        summary {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--primary-dark);
+            cursor: pointer;
+            outline: none;
+            user-select: none;
+        }
+
+        details .contenido-desplegado {
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px dashed #e2e8f0;
+        }
+
+        ul {
+            padding-left: 25px;
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #334155;
+        }
+
+        /</em> POPUPS INTERACTIVOS (MODALS) <em>/
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(4px);
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal.show {
+            display: flex;
+        }
+
+        .modal-content {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            max-width: 650px;
+            width: 90%;
+            max-height: 85vh;
+            overflow-y: auto;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            border-left: 6px solid var(--border-investigacion);
+            position: relative;
+            animation: modalFadeIn 0.3s ease-out;
+        }
+
+        @keyframes modalFadeIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-muted);
+        }
+
+        .modal-close:hover {
+            color: var(--border-critica);
+        }
+
+        .btn-interactivo {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            margin: 8px 0;
+            border: none;
+        }
+
+        .btn-anecdota {
+            background-color: var(--bg-investigacion);
+            border: 1px solid var(--border-investigacion);
+            color: #b45309;
+        }
+
+        .btn-anecdota:hover {
+            background-color: var(--border-investigacion);
+            color: white;
+        }
+
+        .btn-texto {
+            background-color: var(--bg-factores);
+            border: 1px solid var(--border-factores);
+            color: #047857;
+        }
+
+        .btn-texto:hover {
+            background-color: var(--border-factores);
+            color: white;
+        }
+
+        .btn-video {
+            background-color: var(--bg-glosario);
+            border: 1px solid var(--border-glosario);
+            color: #0369a1;
+        }
+
+        .btn-video:hover {
+            background-color: var(--border-glosario);
+            color: white;
+        }
+
+        .texto-modal {
+            font-size: 0.95rem;
+            color: #334155;
+            background-color: #f8fafc;
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px solid #e2e8f0;
+            white-space: pre-wrap;
+            margin-top: 10px;
+            text-align: justify;
+        }
+
+        @media (max-width: 900px) {
+            aside {
+                width: 100%;
+                height: auto;
+                position: relative;
+                border-right: none;
+                border-bottom: 1px solid #334155;
+            }
+            main {
+                margin-left: 0;
+                width: 100%;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+        <aside>
+        <h1>⚖️ Bloque II: La Restauración</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="btn-volver">🏠 Volver a Portada</a></li>
+                
+                <!-- 📍 Navegación Interna de la Página Activa -->
+                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 10px 14px 5px 14px; font-weight: bold; border-bottom: 1px solid #334155; margin-bottom: 8px;">📍 Secciones del Tema 3</li>
+                <li><a href="#transformaciones" class="active">1. Transformaciones Económicas</a></li>
+                <li><a href="#obrero">2. Sociedad de Clases y Urbano</a></li>
+                <li><a href="#internacionalismo">3. La Llegada de la AIT</a></li>
+                <li><a href="#socialismo-anarquismo">4. Bipartidismo Obrero</a></li>
+                
+                <!-- 📖 Saltos a otros Temas del Bloque II -->
+                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 20px 14px 5px 14px; font-weight: bold; border-top: 1px solid #475569; margin-top: 25px; border-bottom: 1px solid #334155; margin-bottom: 8px;">📖 Temas del Bloque II</li>
+                <li><a href="bloque2_tema1.html">Tema 1: La Restauración</a></li>
+                <li><a href="bloque2_tema2.html">Tema 2: Los Nacionalismos y el 98</a></li>
+                <li><a href="bloque2_tema3.html" style="font-weight: bold; color: var(--primary-vibrant);">Tema 3: Industrialización y Obrero</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main id="tema3">
+        <header>
+            <h2>Tema 3: Industrialización y Orígenes del Movimiento Obrero en España</h2>
+            <p>La tímida revolución industrial española, las transformaciones de las desamortizaciones, el impacto del ferrocarril, el urbanismo de Las Palmas de Gran Canaria, el modelo agro-exportador canario de puertos francos, y el surgimiento del obrerismo socialista y anarquista.</p>
+        </header>
+
+        <!-- SECCIÓN 1 -->
+        <section id="transformaciones">
+            <h2>1. Las Transformaciones Económicas y la Revolución Industrial</h2>
+            <p>El despegue industrial contemporáneo en España se inició a partir de los años cuarenta del siglo XIX, discurriendo de forma paralela a la consolidación del Estado liberal. Sin embargo, a diferencia de potencias europeas como Gran Bretaña o Alemania, el proceso español fue lento, tardío, estuvo geográficamente muy concentrado en la periferia y careció de una planificación estatal integrada.</p>
+
+            <div class="tarjeta-imagen">
+                <img src="img/fabrica-hilados.png" alt="Interior de una fábrica textil algodonera">
+                <span class="caption">Imagen 1: Trabajo infantil y femenino en hilaturas de las colonias industriales textiles de Cataluña</span>
+            </div>
+
+            <h3>La Reforma Agraria Liberal: Las Desamortizaciones de Mendizábal y Madoz</h3>
+            <p>La gran transformación económica del campo vino de la mano de las <strong>desamortizaciones</strong>, que consistieron en la incautación estatal de tierras eclesiásticas y municipales vinculadas en régimen de "manos muertas" para su posterior parcelación y venta en pública subasta a particulares, con el triple objetivo de sanear la Hacienda pública, financiar la guerra carlista y afianzar la base social del liberalismo con los nuevos compradores burgueses:</p>
+            <ul>
+                <li><strong>La Desamortización de Mendizábal (1836):</strong> Expropió y subastó las ricas posesiones agrícolas y urbanas pertenecientes al <strong>clero regular</strong> (órdenes religiosas de monjes y frailes), clausurando un millar de conventos y exclaustrando a más de 30.000 religiosos.</li>
+                <li><strong>La Desamortización de Madoz (1855):</strong> Promulgada mediante una Ley General durante el Bienio Progresista, expropió y vendió los bienes civiles pertenecientes al Estado, órdenes militares, beneficencia y, muy especialmente, los bienes de <strong>propios y comunales</strong> de los ayuntamientos municipales.</li>
+            </ul>
+            <p>La aplicación de estas leyes cambió radicalmente la estructura agraria española al privatizar millones de hectáreas, pero deparó graves secuelas sociales: las subastas fueron acaparadas por la burguesía adinerada y la nobleza terrateniente, perdiéndose la oportunidad de crear una clase media de pequeños agricultores. Para el campesinado pobre, las desamortizaciones fueron una <strong>catástrofe social</strong>, al perder los derechos históricos de explotación libre y recogida de leña de las tierras municipales comunales, viéndose forzados a trabajar en régimen de medianería abusiva o como peones jornaleros con salarios de miseria, alimentando el jornalerismo propenso a las revueltas armadas.</p>
+
+            <h3>El Papel del Ferrocarril y el Ancho de Vía Español</h3>
+            <p>La expansión del ferrocarril fue considerada como el motor indispensable de modernización nacional, regulado por la <strong>Ley General de Ferrocarriles de 1855</strong> que dio amplios incentivos y facilidades arancelarias a las compañías que invirtieran capitales en el tendido férreo.</p>
+
+            <div class="tarjeta-imagen">
+                <img src="img/barcelona-mataro.png" alt="Primer trayecto del ferrocarril en España" style="max-height: 250px;">
+                <span class="caption">Imagen 2: Inauguración histórica del primer ferrocarril peninsular entre Barcelona y Mataró en 1848</span>
+            </div>
+
+            <p>El boom constructor del ferrocarril generó un notable crecimiento económico que duró hasta el estallido de la crisis financiera de 1866 (debida a la escasa rentabilidad inicial de las líneas). Su implantación deparó dos consecuencias estructurales que se arrastran hasta hoy en día:</p>
+            <ul>
+                <li>Se diseñó una <strong>estructura radial de red con centro en Madrid</strong>, lo que dificultó la conexión directa de las regiones periféricas más industrializadas del país.</li>
+                <li>Se adoptó un <strong>ancho de vía superior al europeo</strong> (1,67 metros frente a 1,52 metros). Contrario al mito tradicional de que se hizo por razones militares para evitar invasiones francesas por los Pirineos, la decisión obedeció puramente a causas de adaptación técnica al escarpado y montañoso territorio español, requiriéndose calderas de vapor de mayor potencia y estabilidad para superar fuertes pendientes. Sin embargo, esto desconectó la red ferroviaria española de los flujos de mercado europeos.</li>
+            </ul>
+
+            <h3>Focos de la Industrialización y la Minería de Exportación</h3>
+            <p>A finales de siglo, la España industrializada convivía con una inmensa España interior dedicada a una agricultura de cereal tradicional de bajísimo rendimiento protegida por altos aranceles. Los focos de la Revolución Industrial se concentraron de forma exclusiva en la periferia costera:</p>
+            <ul>
+                <li><strong>La Industria Textil Catalana:</strong> Centrada en Barcelona y en las cuencas de los ríos Ter y Llobregat (colonias industriales que aprovechaban la fuerza hidráulica de los saltos de agua). Al no poseer carbón ni algodón propio, sobrevivió y creció de forma espectacular gracias a la reserva arancelaria proteccionista de los mercados de Cuba y Puerto Rico.</li>
+                <li><strong>La Siderurgia Vasca y Asturiana:</strong> Asturias lideró el sector entre 1860 y 1880 gracias a sus yacimientos de hulla en Mieres y La Felguera, pero fue Vizcaya la que consolidó la industria pesada contemporánea tras fundar los <strong>Altos Hornos de Bilbao en 1882</strong> y renovar su tecnología mediante el convertidor Bessemer. Nació así el eje mercantil <strong>Bilbao-Cardiff</strong>, exportando mineral de hierro vasco de gran calidad a Inglaterra e importando carbón de coque galés de mayor poder calorífico a bajo precio. Vizcaya reinvertía el 56% de sus beneficios industriales en financiar su propia banca (Banco de Bilbao, Vizcaya), cimentando una burguesía pujante y moderna.</li>
+                <li><strong>La Minería Metálica:</strong> El subsuelo español era sumamente rico, pero la Ley de Minas de 1871 desamortizó y subastó las concesiones de Riotinto (cobre y pirita en Huelva) o Almadén (mercurio en Ciudad Real) a compañías extranjeras francesas e inglesas para sanear la deuda pública, convirtiendo la minería en un sector de exportación colonial cuyos beneficios no se reinvertían en el desarrollo de sus comarcas.</li>
+            </ul>
+
+            <div class="tarjeta-imagen">
+                <img src="img/altos-hornos.png" alt="Instalaciones de Altos Hornos de Vizcaya en Bilbao" style="max-height: 250px;">
+                <span class="caption">Imagen 3: Los Altos Hornos de Vizcaya a finales del siglo XIX, el motor de la siderurgia vasca contemporánea</span>
+            </div>
+
+            <div class="caja-colores investigacion">
+                <h4>🚢 Canarias: El ciclo de exportación y la Ley de Puertos Francos de 1852</h4>
+                <p>En el plano socioeconómico del archipiélago canario, la pérdida del mercado de tintes naturales por la comercialización europea de los colorantes químicos provocó la fulminante <strong>crisis de la cochinilla en 1870</strong>. El auge agrícola se reconvirtió de forma masiva hacia los monocultivos de exportación del <strong>plátano, el tomate y el tabaco</strong>.</p>
+                <p>La gran transformación que dinamizó la economía contemporánea canaria fue la promulgación del Real Decreto de los <strong>Puertos Francos de 1852</strong> por Juan Bravo Murillo. Esta medida de corte liberal eliminaba las trabas arancelarias en el archipiélago, convirtiendo a los puertos canarios en depósitos de mercancías y plataformas logísticas atlánticas estratégicas para el abastecimiento, carboneo y reparación de buques de las potencias imperiales en expansión colonial por África y Asia.</p>
+                <p>El sistema atrajo de forma masiva capital internacional, principalmente británico. En 1885, el inglés <strong>Mr. Blisser</strong> introdujo de forma pionera el cultivo del tomate en Telde, y junto con casas de fletes hortofrutícolas de empresarios como Alfredo L. Torres o Thomas Miller y navieras británicas como Elder y Miller, se potenció de manera espectacular el comercio atlántico. Este auge consolidó el asentamiento en las islas mayores de una poderosa e influyente comunidad británica que dejó su impronta residencial, comercial y de ocio en zonas emblemáticas como la </em>Ciudad Jardín<em> de Las Palmas.</p>
+            </div>
+
+            <!-- BOTONES INTERACTIVOS: DECRETO DE BONAPLATA Y PUERTOS FRANCOS -->
+            <div style="margin: 15px 0; text-align: center;">
+                <button class="btn-interactivo btn-texto" onclick="openPopup('pop-bonaplata')">📜 Documento: La innovación industrial del Vapor Bonaplata (1833)</button>
+                <button class="btn-interactivo btn-anecdota" onclick="openPopup('pop-canarias')">🌋 Conoce: El modelo comercial y agrícola de Canarias</button>
+            </div>
+
+            <div style="margin: 15px 0; text-align: center;">
+                <a href="https://www.youtube.com/watch?v=PZXLgGSs4uI" target="_blank" class="btn-interactivo btn-video">🎬 Vídeo 1: Ver explicación del desarrollo del Ferrocarril en España ➡️</a>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2 -->
+        <section id="obrero">
+            <h2>2. La Sociedad de Clases y los Orígenes del Movimiento Obrero</h2>
+            <p>La implantación del liberalismo consolidó la sociedad de clases contemporánea en España. El bloque de poder dominante de la oligarquía estaba constituido por la alianza de la alta burguesía comercial y financiera y los grandes terratenientes feudales compradores de bienes desamortizados. Por el contrario, la clase media era reducida y débil, integrada por funcionarios, pequeños comerciantes y militares. En la base de la pirámide social se situaban las clases trabajadoras, compuestas por una inmensa mayoría de campesinos arrendatarios y jornaleros hambrientos de tierras en el sur, y un proletariado urbano fabril que creció al amparo de la industrialización.</p>
+
+            <h3>La Expansión Demográfica y Urbana: Los Ensanches Burgueses</h3>
+            <p>La población española de la Restauración experimentó un crecimiento continuo pero lento debido al mantenimiento de altas tasas de natalidad acompañadas de una elevada mortalidad (asolada por epidemias de cólera como la de 1885 o la gripe española de 1918). Canarias deparó la mayor tasa de crecimiento real del archipiélago.</p>
+            <p>El intenso éxodo del campo a la ciudad transformó la fisionomía urbana. Para acoger a la nueva población, las ciudades derribaron sus murallas medievales, proyectando amplias avenidas y manzanas cuadrangulares para el asentamiento de los <strong>ensanches burgueses</strong> residenciales (como el célebre Plan Cerdá de Barcelona, o el ensanche madrileño de Arturo Soria), mientras que en la periferia y los márgenes de las fábricas y vías ferroviarias crecieron suburbios y chabolas humildes carentes de saneamiento e higiene elemental. El transporte urbano se modernizó mediante la electricidad con el tranvía eléctrico en Madrid (1892) y Barcelona.</p>
+
+            <h3>Las Primeras Manifestaciones de Protesta</h3>
+            <p>Ante las duras condiciones de vida, jornadas laborales extenuantes de 14 horas en las hilaturas y fábricas textiles, salarios de subsistencia, y el desempleo masivo, los trabajadores recurrieron a las primeras formas de protesta. El movimiento obrero nació a través del <strong>ludismo (1820-1830)</strong> (destrucción violenta de las modernas máquinas textiles que amenazaban con destruir puestos de trabajo), fundándose clandestinamente en los años treinta las primeras </em>sociedades de socorros mutuos<em> por oficios, hasta el estallido de la primera gran huelga general obrera durante el Bienio Progresista (1855) en defensa de las libertades de asociación.</p>
+
+            <div class="caja-colores factores">
+                <h4>🏛️ El Urbanismo Segregado de Las Palmas de Gran Canaria</h4>
+                <p>En el marco del despegue portuario comercial contemporáneo, la fisionomía urbana de la ciudad de Las Palmas de Gran Canaria experimentó una profunda segregación socio-espacial, dividiéndose la trama urbana en dos grandes áreas bien diferenciadas:</p>
+                <ol>
+                    <li><strong>La Zona de Las Palmas (Casco Histórico):</strong> Constituía el núcleo administrativo y residencial burgués por excelencia. Se dividía entre el barrio aristocrático de <strong>Vegueta</strong> (casco histórico donde se asentaban los principales órganos de gobierno civil eclesiástico, el Cabildo, la Audiencia y la Catedral) y el barrio de <strong>Triana</strong> (distrito comercial y de negocios habitado por la pujante burguesía mercantil). En las colinas de los barrancos colindantes crecieron los barrios populares y humildes de autoconstrucción (San José, San Roque, San Juan, San Nicolás) habitados por campesinos jornaleros emigrados del campo.</li>
+                    <li><strong>La Zona del Puerto:</strong> Nacida de la actividad naviera del Puerto de La Luz, integraba el barrio de <strong>El Refugio</strong> (Parque y Muelle de Santa Catalina), volcado en el comercio y el carboneo atlántico, y el barrio obrero y portuario de <strong>La Isleta</strong>, donde vivían hacinados en condiciones humildes los trabajadores portuarios, estibadores y marineros que faenaban en el muelle.</li>
+                </ol>
+                <p>Ambas zonas urbanas distantes de la ciudad de Las Palmas quedaron comunicadas de forma lineal a través de la zona de "La Pepa", el primer tranvía y de carruajes de la capital.</p>
+            </div>
+
+            <div style="margin: 15px 0; text-align: center;">
+                <a href="https://www.youtube.com/watch?v=pIP_k24GOuw" target="_blank" class="btn-interactivo btn-video">🎬 Vídeo 2: Ver explicación de las condiciones de vida y orígenes del movimiento obrero ➡️</a>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 3 -->
+        <section id="internacionalismo">
+            <h2>3. La Llegada de la Internacional (AIT) a España</h2>
+            <p>La revolución democrática de 1868 y la progresista Constitución de 1869 que consagró por primera vez en la historia constitucional el <strong>derecho de asociación y reunión plena</strong> depararon el marco legal óptimo para la llegada e introducción de las ideas internacionalistas de la Asociación Internacional de Trabajadores (AIT) en España, dividiéndose el movimiento obrero peninsular desde sus inicios en dos filosofías y corrientes organizativas enfrentadas:</p>
+
+            <div class="fila-imagenes">
+                <div class="tarjeta-imagen">
+                    <img src="img/giuseppe-fanelli.png" alt="Giuseppe Fanelli, el propagador anarquista">
+                    <span class="caption">Imagen 5: El italiano Giuseppe Fanelli, introductor de las ideas de Bakunin en la AIT española</span>
+                </div>
+                <div class="tarjeta-imagen">
+                    <img src="img/paul-lafargue.png" alt="Paul Lafargue, el yerno de Marx">
+                    <span class="caption">Imagen 6: El francés Paul Lafargue, introductor de la doctrina marxista de la Primera Internacional</span>
+                </div>
+            </div>
+
+            <ul>
+                <li><strong>La Corriente Anarquista de Giuseppe Fanelli (1868):</strong> El italiano Giuseppe Fanelli, enviado a la península por la sección bakuninista de la AIT, fundó los primeros núcleos internacionalistas en Madrid y Barcelona bajo la enseña de la <strong>Federación Regional Española (FRE)</strong>. Su doctrina caló hondo entre el campesinado andaluz y el proletariado textil catalán, basada en el apoliticismo (rechazo absoluto a la participación electoral burguesa), la supresión del Estado, la defensa de la huelga revolucionaria de masas y la colectivización inmediata de los medios de producción agrícola e industrial.</li>
+                <li><strong>La Corriente Marxista de Paul Lafargue (1871):</strong> Tras huir de la represión de la Comuna de París, Paul Lafargue (yerno de Carlos Marx) se instaló en Madrid para propagar la doctrina socialista-marxista. Lafargue fundó la </em>Nueva Federación Madrileña<em>, defendiendo la autoorganización de la clase obrera en un partido político propio e independiente de la burguesía, para participar en el juego electoral, conquistar el poder político del Estado por vía parlamentaria y establecer de forma temporal la dictadura del proletariado socialista.</li>
+            </ul>
+            <p>La inestabilidad y el temor de las clases propietarias tras los sucesos revolucionarios de la Comuna de París en 1871 forzaron al gobierno liberal-conservador a decretar la ilegalización de la AIT en España en 1872, forzando al internacionalismo obrero a organizarse y crecer en el plano clandestino.</p>
+        </section>
+
+        <!-- SECCIÓN 4 -->
+        <section id="socialismo-anarquismo">
+            <h2>4. Bipartidismo Obrero durante la Restauración (1875 - 1902)</h2>
+            <p>Durante el prolongado periodo de la Restauración Borbónica, el movimiento obrero experimentó un espectacular crecimiento organizativo y de masas, amparado tras la promulgación de la Ley de Asociaciones de 1887. En paralelo al bipartidismo dinástico de Cánovas y Sagasta, el obrerismo se estructuró bajo un marcado bipartidismo obrero de dos corrientes doctrinales duraderas:</p>
+
+            <div class="fila-imagenes">
+                <div class="tarjeta-imagen" style="max-width: 250px;">
+                    <img src="img/pablo-iglesias.png" alt="Pablo Iglesias Posse">
+                    <span class="caption">Imagen 7: Pablo Iglesias Posse, tipógrafo gallego fundador del socialismo en España</span>
+                </div>
+                <div class="tarjeta-imagen" style="max-width: 350px;">
+                    <img src="img/casa-labra.png" alt="Restaurante Casa Labra en Madrid">
+                    <span class="caption">Imagen 8: Entrada histórica de Casa Labra, lugar clandestino de fundación del PSOE en 1879</span>
+                </div>
+            </div>
+
+            <h3>A. La Vía Socialista: El PSOE y la UGT</h3>
+            <p>El <strong>2 de mayo de 1879</strong>, en el sótano del bodegón madrileño cercano a la Puerta del Sol (hoy convertido en la célebre taberna-restaurante <strong>Casa Labra</strong>), un grupo de intelectuales y obreros de la imprenta, encabezados por el tipógrafo gallego <strong>Pablo Iglesias Posse</strong>, fundaron de forma clandestina el <strong>Partido Socialista Obrero Español (PSOE)</strong>. Sus fines ideológicos se centraron en la emancipación del proletariado, la abolición de las clases sociales, la transformación de la propiedad privada en propiedad colectiva y la conquista democrática del poder del Estado. De igual manera, en 1888 se fundó en Barcelona la <strong>Unión General de Trabajadores (UGT)</strong>, el sindicato de masas de inspiración socialista vinculado estrechamente al partido.</p>
+            <p>La vía socialista se caracterizó por un crecimiento organizativo lento pero sumamente firme y disciplinado. Su implantación territorial relevante se circunscribió inicialmente a los grandes focos mineros e industriales de Asturias, Vizcaya y el núcleo urbano obrero de Madrid. El PSOE rechazó de forma estricta cualquier tipo de colaboración electoral con los partidos burgueses tradicionales (incluyendo a los republicanos), hasta que tras la represión de la Semana Trágica de 1909 formó la coalición de izquierdas Republicano-Socialista, posibilitando que en 1910 Pablo Iglesias fuera elegido diputado en las Cortes, convirtiéndose en el primer diputado obrero de la historia del Congreso.</p>
+
+            <h3>B. La Vía Anarquista: La FTRE, la Mano Negra y la Acción Directa</h3>
+            <p>A diferencia del socialismo parlamentario, el anarquismo rehusó organizarse en partidos y mantuvo un predominio de masas y una fortísima implantación obrera y sindical en Cataluña y en las zonas rurales del latifundismo andaluz. En 1881, bajo la tolerancia liberal de Sagasta, los anarquistas fundaron la <strong>Federación de Trabajadores de la Región Española (FTRE)</strong>, dividiéndose pronto entre la vía del sindicalismo legal agrario y la corriente clandestina extremista de los sectores andaluces deparando el mito de la <strong>Mano Negra</strong> (una supuesta sociedad secreta criminal a la que la Guardia Civil atribuyó de forma sistemática asaltos e incendios de cosechas, desatando una feroz represión armada policial de torturas y detenciones masivas en el campo andaluz).</p>
+
+            <div class="fila-imagenes">
+                <div class="tarjeta-imagen">
+                    <img src="img/atentado-liceo.png" alt="Grabado del atentado del Liceo de Barcelona">
+                    <span class="caption">Imagen 9: Grabado pictórico del dantesco atentado de Santiago Salvador en el Gran Teatro del Liceo (1893)</span>
+                </div>
+                <div class="tarjeta-imagen">
+                    <img src="img/garrote-vil.png" alt="Pintura Garrote Vil de Ramón Casas" style="max-height: 250px;">
+                    <span class="caption">Imagen 10: Garrote Vil, obra cumbre de Ramón Casas deparando el patetismo de las ejecuciones de anarquistas</span>
+                </div>
+            </div>
+
+            <p>A finales del siglo XIX, las corrientes anarquistas radicales abandonaron la FTRE para abrazar la táctica armada de la <strong>"propaganda por el hecho"</strong> o <strong>"acción directa"</strong>, perpetrando sangrientos atentados terroristas contra las instituciones del Estado y la burguesía:</p>
+            <ul>
+                <li>En 1893, Paulino Pallás arrojó una bomba contra el general Martínez Campos en Barcelona. En venganza por su posterior ejecución, su compañero Santiago Salvador lanzó dos bombas en la platea del <strong>Gran Teatro del Liceo en noviembre de 1893</strong>, causando la muerte instantánea de veinte burgueses en plena función de ópera.</li>
+                <li>La oleada violenta culminó el 8 de agosto de 1897 tras el <strong>asesinato de Antonio Cánovas del Castillo</strong> a manos del anarquista italiano Michele Angiolillo, quien le disparó a quemarropa en el balneario de Santa Águeda (Guipúzcoa) en venganza por las torturas policiales sufridas por los presos anarquistas en los procesos de Montjuic.</li>
+            </ul>
+            <p>La vía anarquista de masas abandonaría finalmente el terrorismo a comienzos de siglo para reestructurarse de forma duradera hacia el anarcosindicalismo de masas mediante la fundación de la confederación de la <strong>CNT (Confederación General del Trabajo) en 1910</strong>.</p>
+
+            <div class="tarjeta-imagen">
+                <img src="img/mano-negra.png" alt="Mano Negra en el agro andaluz" style="max-height: 250px;">
+                <span class="caption">Imagen 11: Grabado satírico de la época representando los procesos de detenciones de jornaleros de la supuesta Mano Negra</span>
+            </div>
+
+            <div class="caja-colores factores">
+                <h4>🇮🇨 Canarias: El despertar obrero y la conflictividad de consumos de 1897</h4>
+                <p>En Canarias, el despertar de la concienciación y autoorganización de las clases populares obreras se inició de forma urbana durante el Sexenio Democrático con el nacimiento de las primeras </em>sociedades de socorros mutuos* (como la Sociedad de Tipógrafos, Portuarios y Panaderos) en las dos grandes capitales insulares, marcando el germen de las futuras sociedades de resistencia de estibadores y cargadores del muelle portuario.</p>
+                <p>Durante la época de la Restauración, la conflictividad obrera y campesina canaria no se centró en las demandas fabriles propiamente dichas, sino en la lucha vecinal popular y agraria contra los impopulares <strong>impuestos de consumos</strong> (los injustos arbitrios indirectos estatales que gravaban e incrementaban drásticamente los precios de los productos alimenticios básicos de primera necesidad, como el pan, las papas y la harina, castigando con saña a las capas populares hambrientas).</p>
+                <p>El clímax de esta conflictividad social estalló en el año <strong>1897</strong> deparando los célebres <strong>motines populares de consumos</strong>: violentas revueltas y protestas obreras campesinas sacudieron los municipios canarios de San Mateo y San Lorenzo en Gran Canaria, El Paso en La Palma, y la zona central de la isla de Fuerteventura, asaltándose las oficinas del cobro municipal y forzando a la movilización de la Guardia Civil y de las milicias de orden para sofocar los tumultos populares de la miseria canaria.</p>
+            </div>
+
+            <!-- BOTONES INTERACTIVOS: MANO NEGRA -->
+            <div style="margin: 15px 0; text-align: center;">
+                <button class="btn-interactivo btn-texto" onclick="openPopup('pop-manonegra')">📜 Documento: La represión de la Mano Negra en Andalucía (1883)</button>
+            </div>
+
+            <div style="margin: 15px 0; text-align: center;">
+                <a href="https://www.youtube.com/watch?v=-vHX1DEdIW0&list=RDLV-vHX1DEdIW0&index=1" target="_blank" class="btn-interactivo btn-video">🎬 Vídeo 3: Ver documental de la fundación clandestina del PSOE en 1879 ➡️</a>
+                <a href="https://www.youtube.com/watch?v=OolEsuX0nJQ" target="_blank" class="btn-interactivo btn-video">🎬 Vídeo 4: Ver el análisis de la historia del Anarquismo en España ➡️</a>
+            </div>
+        </section>
+    </main>
+
+<!-- VENTANAS EMERGENTES (POPUPS INTERACTIVOS / MODALS) -->
+
+    <!-- POPUP 1: BONAPLATA -->
+    <div id="pop-bonaplata" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closePopup('pop-bonaplata')">&times;</span>
+            <h3 style="color: #047857; margin-top: 0;">🕵️‍♂️ El estallido del ludismo: La quema de la fábrica El Vapor</h3>
+            <p>El trágico episodio que inauguró el descontento obrero fabril en la península:</p>
+            <div class="texto-modal">La noche del 5 de agosto de 1835, en pleno clima de agitación civil por las algaradas carlistas y anticlericales, una multitud de obreros asaltó e incendió la fábrica textil de algodón "Bonaplata y Cía" (conocida popularmente como "El Vapor") en Barcelona.
+
+La fábrica era un símbolo del capitalismo naciente: la primera de España que incorporaba la fuerza motriz del vapor para mover los telares mecánicos de hierro importados de Inglaterra. Los trabajadores veían en estas máquinas de hilado automático la causa directa de la devaluación de sus salarios y la destrucción inminente de sus puestos de trabajo tradicionales de hilado manual.
+
+La represión de las autoridades militares barcelonesas fue ejemplarizante, saldándose con la detención y ejecución de varios de los cabecillas del motín. Semejante desenlace inauguró una larga tradición de desconfianza obrera hacia las máquinas que marcaría los brotes de conflictividad fabril de la primera mitad de siglo en Cataluña.</div>
+        </div>
+    </div>
+
+    <!-- POPUP 2: LA MANO NEGRA -->
+    <div id="pop-manonegra" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closePopup('pop-manonegra')">&times;</span>
+            <h3 style="color: #b45309; margin-top: 0;">🕵️‍♂️ El enigma rural: El mito de La Mano Negra</h3>
+            <p>Análisis crítico de uno de los misterios más polémicos de la criminología andaluza del siglo XIX:</p>
+            <div class="texto-modal">A principios de la década de 1880, el campo andaluz se encontraba sumido en una asfixiante crisis social. Las sucesivas desamortizaciones eclesiástica y civil habían privatizado los montes comunes de los ayuntamientos, privando de pastos y recolectas a los jornaleros más humildes, abocándolos a la mendicidad y el paro estacional severo.
+
+En 1882, la Guardia Civil localizó en el campo de Jerez unos misteriosos papeles clandestinos que supuestamente detallaban los estatutos secretos de una organización armada anarquista denominada "La Mano Negra", a la que se le atribuyeron de inmediato varios asesinatos y quemas de pajares de los terratenientes.
+
+A día de hoy, la mayoría de los historiadores coincide en señalar que "La Mano Negra" como banda organizada fue una interesada invención de los jueces civiles y las fuerzas policiales de la Restauración. La supuesta banda sirvió como la perfecta coartada de época para desencadenar una feroz campaña de persecución y represión indiscriminada sobre la FTRE y las pacíficas sociedades obreras de jornaleros andaluces, multiplicando los arrestos y forzando numerosas sentencias de muerte que pacificarían el agro andaluz por el terror estatal.</div>
+        </div>
+    </div>
+
+    
+
+<script>
+        // Funciones para modals (popups)
+        function openPopup(id) {
+            document.getElementById(id).classList.add('show');
+        }
+
+        function closePopup(id) {
+            document.getElementById(id).classList.remove('show');
+        }
+
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.classList.remove('show');
+            }
+        }
+    </script>
+
+    <!-- POPUP 3: CANARIAS Y LOS PUERTOS FRANCOS -->
+    <div id="pop-canarias" class="modal">
+        <div class="modal-content" style="border-left-color: var(--border-investigacion);">
+            <span class="modal-close" onclick="closePopup('pop-canarias')">&times;</span>
+            <h3 style="color: var(--border-investigacion); margin-top: 0;">🌋 Canarias y los Puertos Francos: El despegue hortofrutícola</h3>
+            <p>La adaptación de la economía canaria a las demandas del mercado británico internacional:</p>
+            <div class="texto-modal">"Durante el siglo XIX, la inestabilidad de la cochinilla en las islas Canarias exigió una reestructuración de su modelo económico. En 1852, durante el reinado de Isabel II, el presidente del Gobierno Bravo Murillo decretó el régimen de Puertos Francos de Canarias, eliminando aranceles para fomentar el comercio y los fletes con barcos extranjeros.
+
+Esto atrajo el interés del capital británico. En 1885, Mr. Blisser inició en Telde el cultivo intensivo de tomates para el mercado británico. El despegue del muelle de Santa Catalina y del Puerto de la Luz en Las Palmas de Gran Canaria, con el apoyo de Alfredo L. Torres, Thomas Miller y navieras como Elder, consolidó una fuerte y poderosa burguesía vinculada a la exportación de plátanos, tabaco y tomates. Este régimen, que favoreció la creación de una vibrante comunidad anglófila en las islas, perduró con éxito hasta el año 1986."</div>
+        </div>
+    </div>
+
+</body>
+</html>
