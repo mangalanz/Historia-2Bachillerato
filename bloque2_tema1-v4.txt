@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloque II - Tema 1: El Régimen de la Restauración y su Evolución (1875 - 1931)</title>
+    <style>
+        :root {
+            --primary-intense: #1e40af;
+            --primary-vibrant: #2563eb;
+            --primary-dark: #0f172a;
+            --primary: #1e293b;
+            --bg-main: #f8fafc;
+            --card-bg: #ffffff;
+            --text-dark: #1e293b;
+            --text-muted: #64748b;
+            
+            --header-bg: #f0fdf4;
+            --header-border: #10b981;
+            --header-text: #065f46;
+
+            --border-glosario: #0ea5e9;
+            --bg-glosario: #f0f9ff;
+            --border-investigacion: #f59e0b;
+            --bg-investigacion: #fffbeb;
+            --border-critica: #ef4444;
+            --bg-critica: #fef2f2;
+            --border-factores: #10b981;
+            --bg-factores: #ecfdf5;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-dark);
+            min-height: 100vh;
+        }
+
+        aside {
+            width: 300px;
+            background-color: var(--primary-dark);
+            color: white;
+            padding: 25px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            overflow-y: auto;
+            border-right: 1px solid #334155;
+            z-index: 100;
+        }
+
+        aside h1 {
+            font-size: 1.25rem;
+            margin-bottom: 25px;
+            color: #f8fafc;
+            border-bottom: 3px solid var(--primary-vibrant);
+            padding-bottom: 12px;
+            text-align: center;
+        }
+
+        aside nav ul {
+            list-style: none;
+        }
+
+        aside nav ul li {
+            margin-bottom: 10px;
+        }
+
+        aside nav ul li a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 0.95rem;
+            display: block;
+            padding: 10px 14px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            font-weight: 500;
+        }
+
+        aside nav ul li .btn-volver {
+            background-color: #334155;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+            border: 1px solid #475569;
+            margin-bottom: 15px;
+            display: block;
+            padding: 10px 14px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            text-decoration: none;
+        }
+
+        aside nav ul li .btn-volver:hover {
+            background-color: var(--primary-vibrant);
+            border-color: var(--primary-vibrant);
+        }
+
+        aside nav ul li a:hover, aside nav ul li a.active {
+            background-color: var(--primary-vibrant);
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(37, 99, 235, 0.15);
+        }
+
+        main {
+            margin-left: 300px;
+            padding: 40px;
+            max-width: 1100px;
+        }
+
+        header {
+            margin-bottom: 35px;
+            background: linear-gradient(135deg, var(--header-bg), #e6fcf0);
+            border-left: 6px solid var(--header-border);
+            color: var(--header-text);
+            padding: 25px 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(16, 185, 129, 0.08);
+        }
+
+        header h2 {
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+            color: var(--header-text);
+            font-weight: 800;
+        }
+
+        header p {
+            color: #15803d;
+            font-size: 1.05rem;
+            font-weight: 500;
+        }
+
+        section {
+            background: var(--card-bg);
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            margin-bottom: 35px;
+            border-left: 6px solid var(--primary-vibrant);
+        }
+
+        section h2 {
+            color: var(--primary-dark);
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #f1f5f9;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: var(--primary-intense);
+            margin: 25px 0 12px 0;
+            font-size: 1.25rem;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+            color: #334155;
+            text-align: justify;
+        }
+
+        /<em> CONTENEDOR DE IMAGEN (ANTI-SOLAPAMIENTO) </em>/
+        .tarjeta-imagen {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 20px 0 30px 0;
+            text-align: center;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            display: block;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tarjeta-imagen img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            margin-bottom: 12px;
+            display: inline-block;
+        }
+
+        .tarjeta-imagen .caption {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            font-style: italic;
+            margin: 0;
+            line-height: 1.4;
+            display: block;
+        }
+
+        /<em> FILAS DE IMÁGENES COMPATIBLES (ADAPTATIVAS) </em>/
+        .fila-imagenes {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0 30px 0;
+        }
+
+        .fila-imagenes .tarjeta-imagen {
+            flex: 1;
+            min-width: 250px;
+            margin: 0;
+        }
+
+        .caja-colores {
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-size: 1rem;
+        }
+
+        .caja-colores h4 {
+            margin-bottom: 10px;
+            font-size: 1.15rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .factores {
+            background-color: var(--bg-factores);
+            border-left: 5px solid var(--border-factores);
+            color: #047857;
+        }
+
+        .investigacion {
+            background-color: var(--bg-investigacion);
+            border-left: 5px solid var(--border-investigacion);
+            color: #b45309;
+        }
+
+        details {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 14px;
+        }
+
+        details[open] {
+            background-color: white;
+            border-color: var(--primary-vibrant);
+        }
+
+        summary {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--primary-dark);
+            cursor: pointer;
+            outline: none;
+            user-select: none;
+        }
+
+        details .contenido-desplegado {
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px dashed #e2e8f0;
+        }
+
+        ul {
+            padding-left: 25px;
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #334155;
+        }
+
+        /<em> POPUPS INTERACTIVOS </em>/
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(4px);
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal.show {
+            display: flex;
+        }
+
+        .modal-content {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            max-width: 650px;
+            width: 90%;
+            max-height: 85vh;
+            overflow-y: auto;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            border-left: 6px solid var(--border-investigacion);
+            position: relative;
+            animation: modalFadeIn 0.3s ease-out;
+        }
+
+        @keyframes modalFadeIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-muted);
+        }
+
+        .modal-close:hover {
+            color: var(--border-critica);
+        }
+
+        .btn-interactivo {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            margin: 8px 0;
+            border: none;
+        }
+
+        .btn-anecdota {
+            background-color: var(--bg-investigacion);
+            border: 1px solid var(--border-investigacion);
+            color: #b45309;
+        }
+
+        .btn-anecdota:hover {
+            background-color: var(--border-investigacion);
+            color: white;
+        }
+
+        .btn-texto {
+            background-color: var(--bg-factores);
+            border: 1px solid var(--border-factores);
+            color: #047857;
+        }
+
+        .btn-texto:hover {
+            background-color: var(--border-factores);
+            color: white;
+        }
+
+        .btn-video {
+            background-color: var(--bg-glosario);
+            border: 1px solid var(--border-glosario);
+            color: #0369a1;
+        }
+
+        .btn-video:hover {
+            background-color: var(--border-glosario);
+            color: white;
+        }
+
+        .texto-modal {
+            font-size: 0.95rem;
+            color: #334155;
+            background-color: #f8fafc;
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px solid #e2e8f0;
+            white-space: pre-wrap;
+            margin-top: 10px;
+            text-align: justify;
+        }
+
+        @media (max-width: 900px) {
+            aside {
+                width: 100%;
+                height: auto;
+                position: relative;
+                border-right: none;
+                border-bottom: 1px solid #334155;
+            }
+            main {
+                margin-left: 0;
+                width: 100%;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navegación Lateral -->
+    <aside>
+        <h1>⚖️ Bloque II: La Restauración</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="btn-volver">🏠 Volver a Portada</a></li>
+                
+                <!-- 📍 Navegación Interna de la Página Activa -->
+                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 10px 14px 5px 14px; font-weight: bold; border-bottom: 1px solid #334155; margin-bottom: 8px;">📍 Secciones del Tema 1</li>
+                <li><a href="#origen" class="active">1. El Regreso de los Borbones</a></li>
+                <li><a href="#constitucion">2. La Constitución de 1876</a></li>
+                <li><a href="#turnismo">3. Turnismo y Caciquismo</a></li>
+                <li><a href="#regencia">4. La Regencia de Mª Cristina</a></li>
+                <li><a href="#crisis_sistema">5. La Crisis del Turnismo</a></li>
+                <li><a href="#dictadura">6. La Dictadura y la República</a></li>
+                
+                <!-- 📖 Saltos a otros Temas del Bloque II -->
+                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 20px 14px 5px 14px; font-weight: bold; border-top: 1px solid #475569; margin-top: 25px; border-bottom: 1px solid #334155; margin-bottom: 8px;">📖 Temas del Bloque II</li>
+                <li><a href="bloque2_tema1.html" style="font-weight: bold; color: var(--primary-vibrant);">Tema 1: La Restauración</a></li>
+                <li><a href="bloque2_tema2.html">Tema 2: Los Nacionalismos</a></li>
+                <li><a href="bloque2_tema3.html">Tema 3: Industrialización y Obrero</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Contenido Principal -->
+    <main>
+        <header>
+            <h2>Tema 1: El Régimen de la Restauración Borbónica y su Evolución (1875 - 1931)</h2>
+            <p>La vuelta de los Borbones al trono, el diseño de la Constitución de 1876, el caciquismo electoral, el turno de partidos y la crisis definitiva del sistema bajo Alfonso XIII y la dictadura de Primo de Rivera.</p>
+        </header>
+
+        <div class="tarjeta-imagen" style="margin-top: 0;">
+            <img src="img/eje-cronologico-restauracion.png" alt="Eje Cronológico de la Restauración Borbónica">
+            <span class="caption">Eje cronológico de la Restauración Borbónica y sus principales hitos gubernamentales</span>
+        </div>
+
+        <!-- SECCIÓN 1 -->
+        <section id="origen">
+            <h2>1. El Regreso de los Borbones al Trono</h2>
+            <p>El término <em>Restauración</em> se aplica al periodo de la historia de España caracterizado por la vuelta de los Borbones al trono de Madrid. Tras la accidentada andadura del Sexenio Democrático, el pronunciamiento militar del general <em>Arsenio Martínez Campos</em> en Sagunto el 29 de diciembre de 1874 proclamó a <em>Alfonso XII</em> como rey de España.</p>
+
+            <div class="tarjeta-imagen">
+                <img src="img/alfonso-xii-oficial.png" alt="Retrato oficial de Alfonso XII" style="max-height: 450px;">
+                <span class="caption">Retrato oficial de S.M. Don Alfonso XII de Borbón</span>
+            </div>
+
+            <p>La vuelta de la monarquía fue sumamente rápida y contó con un enorme <strong>deseo de pacificación nacional</strong> debido a la inestabilidad de la Primera República. Días antes, el 1 de diciembre de 1874, el joven monarca había firmado el <em>Manifiesto de Sandhurst</em>, un documento redactado por <em>Antonio Cánovas del Castillo</em> que presentaba la monarquía constitucional, conservadora y católica como la única salida viable.</p>
+
+            <!-- BOTÓN INTERACTIVO: MANIFIESTO DE SANDHURST -->
+            <div style="margin: 15px 0;">
+                <button class="btn-interactivo btn-texto" onclick="openPopup('pop-sandhurst')">📜 Documento: El Manifiesto de Sandhurst (1 de diciembre de 1874)</button>
+            </div>
+
+            <!-- VÍDEO EXPLICATIVO DEL COMIENZO DE LA RESTAURACIÓN -->
+            <div style="margin: 15px 0; text-align: center;">
+                <a href="https://youtu.be/24kUhe0pSsA" target="_blank" class="btn-interactivo btn-video">🎬 Vídeo 1: Ver el Pronunciamiento de Sagunto y la llegada de Alfonso XII ➡️</a>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2 -->
+        <section id="constitucion">
+            <h2>2. La Constitución de 1876 y las Bases del Sistema</h2>
+            <p>El verdadero cerebro del nuevo sistema político fue <em>Antonio Cánovas del Castillo</em>. El malagueño pretendía asentar las bases del <strong>bipartidismo</strong> y de un orden constitucional estable que impidiera el carácter excluyente de los moderados del reinado anterior y subordinase el ejército al poder civil.</p>
+
+            <div class="fila-imagenes">
+                <div class="tarjeta-imagen">
+                    <img src="img/retrato-canovas.png" alt="Retrato de Antonio Cánovas del Castillo">
+                    <span class="caption">Antonio Cánovas del Castillo, líder del Partido Conservador</span>
+                </div>
+                <div class="tarjeta-imagen">
+                    <img src="img/retrato-sagasta.png" alt="Retrato de Práxedes Mateo Sagasta">
+                    <span class="caption">Práxedes Mateo Sagasta, líder del Partido Liberal</span>
+                </div>
+            </div>
+
+            <p>El pilar jurídico del régimen fue la <em>Constitución de 1876</em>, la de mayor longevidad en la historia de España. Sus principales rasgos fueron:</p>
+            <ul>
+                <li><strong>Soberanía compartida:</strong> Rechazaba la soberanía nacional al establecer que la potestad legislativa residía conjuntamente en las Cortes con el Rey.</li>
+                <li><strong>Amplias prerrogativas reales:</strong> El monarca ostentaba el poder ejecutivo, el mando supremo del ejército, y el derecho de convocar, suspender y disolver las Cortes de forma unilateral.</li>
+                <li><strong>Cortes bicamerales:</strong> Formadas por el Congreso de los Diputados (elegido por sufragio) y el Senado (órgano elitista donde dos tercios eran senadores vitalicios o por derecho propio).</li>
+                <li><strong>Indefinición del sufragio:</strong> La carta constitucional no definía el tipo de sufragio. Así, bajo la Ley Electoral de 1878 se implantó el <strong>sufragio censitario</strong>, hasta que en 1890 los liberales impusieron el <strong>sufragio universal masculino</strong>.</li>
+            </ul>
+
+            <div class="tarjeta-imagen">
+                <img src="img/grafico-elecciones-1876.png" alt="Resultados Elecciones de 1876" style="max-height: 250px;">
+                <span class="caption">Composición del Congreso de los Diputados tras las elecciones constituyentes de 1876</span>
+            </div>
+
+            <!-- BOTÓN INTERACTIVO: EL HUMOR DE CÁNOVAS -->
+            <div style="margin: 15px 0;">
+                <button class="btn-interactivo btn-anecdota" onclick="openPopup('pop-humor')">🕵️‍♂️ Curiosidad: El humor caustico de Cánovas y la Constitución</button>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 3 -->
+        <section id="turnismo">
+            <h2>3. El Funcionamiento Electoral: Turnismo y Caciquismo</h2>
+            <p>Para asegurar la paz social, se organizó un sistema basado en la <strong>alternancia regular</strong> o <strong>turno pacífico</strong> de dos grandes fuerzas dinásticas, llamadas partidos de turno:</p>
+            <ul>
+                <li><strong>El Partido Conservador:</strong> Liderado por <em>Antonio Cánovas del Castillo</em>, representaba la derecha tradicional y el orden católico, con el respaldo de la alta burguesía y la aristocracia.</li>
+                <li><strong>El Partido Liberal (o Fusionista):</strong> Dirigido por <em>Práxedes Mateo Sagasta</em>, aglutinaba a antiguos progresistas y unionistas de izquierda, defensores de reformas sociales más laicas.</li>
+            </ul>
+
+            <p>Este sistema de alternancia pacífica o turno de partidos no era la expresión de la voluntad de los electores, sino el resultado de pactos preestablecidos entre los dirigentes de ambos partidos burgueses [12]. Una vez acordado el cambio, se seguía un mecanismo inverso al democrático: el rey nombraba un nuevo jefe de Gobierno, le otorgaba el decreto de disolución de las Cortes y, seguidamente, el nuevo gobierno convocaba unas elecciones completamente adulteradas [12]. Las elecciones se controlaban desde el Ministerio de la Gobernación a través del <em>encasillado</em> (el reparto previo de escaños acordado por las élites políticas) [12].</p>
+            <p>La clave de la adulteración residía en la complicidad de los gobernadores civiles de cada provincia y la red de <em>caciques</em> locales [12].</p>
+
+            <div class="fila-imagenes">
+                <div class="tarjeta-imagen">
+                    <img src="img/caricatura-caciquismo-difuntos.png" alt="Caricatura caciquismo de difuntos">
+                    <span class="caption">Caricatura que denuncia la resurrección de fallecidos en el censo electoral</span>
+                </div>
+                <div class="tarjeta-imagen">
+                    <img src="img/caricatura-caciquismo-cura.png" alt="Caricatura caciquismo confesional">
+                    <span class="caption">Ilustración satírica sobre la coacción electoral clerical en los pueblos</span>
+                </div>
+            </div>
+
+            <div class="caja-colores factores">
+                <h4>🗳️ Glosario del Fraude Electoral Canovista</h4>
+                <ul>
+                    <li><strong>El Encasillado:</strong> Asignación previa de los escaños que debían resultar elegidos en cada circunscripción, elaborada mediante cuadrantes y listas desde el Ministerio de la Gobernación con el consenso previo de los partidos del turno. Este plan de diputados "fabricados" se transmitía a los gobernadores civiles y de estos a los caciques locales para asegurar de antemano el triunfo oficial.</li>
+                    <li><strong>El Cacique:</strong> Persona rica e influyente de la España rural (terrateniente, prestamista o comerciante) que controlaba la contratación, los sorteos de las quintas militares y las decisiones de los vecinos del pueblo a cambio de sus votos.</li>
+                    <li><strong>El Pucherazo:</strong> Adulteración sistemática del voto que incluía el falseamiento del censo (con la inclusión de fallecidos o "resurrección de muertos" en las listas), la compra directa de sufragios, el robo de urnas o la inserción fraudulenta de papeletas directamente en el escrutinio.</li>
+                </ul>
+            </div>
+
+            <!-- VÍDEO COMPLEMENTARIO SOBRE EL CACIQUISMO -->
+            <div style="margin: 15px 0; text-align: center;">
+                <a href="https://youtu.be/l38sOJwO5Dc" target="_blank" class="btn-interactivo btn-video">🎬 Vídeo 2: Ver explicación del mecanismo del caciquismo y el encasillado ➡️</a>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 4 -->
+        <section id="regencia">
+            <h2>4. La Regencia de María Cristina y el Pacto del Pardo (1885 - 1902)</h2>
+            <p>La prematura muerte de <em>Alfonso XII</em> por tuberculosis en noviembre de 1885 puso en serio peligro la estabilidad institucional del Estado al dejar como heredero a un niño póstumo. Para blindar el régimen, los líderes de ambos partidos firmaron el <em>Pacto del Pardo (1885)</em>.</p>
+
+            <div class="tarjeta-imagen">
+                <img src="img/jura-regente-sorolla.png" alt="Juramento de María Cristina de Habsburgo">
+                <span class="caption">La reina María Cristina de Habsburgo jurando la Regencia ante las Cortes (Joaquín Sorolla)</span>
+            </div>
+
+            <p>A través de este acuerdo político, se consolidó la regencia de <em>María Cristina de Habsburgo</em> y el "gobierno largo" de los liberales de <em>Sagasta</em> (1885-1890), durante el cual se sacaron adelante de forma pactada la <em>Ley de Asociaciones (1887)</em> y el <strong>sufragio universal masculino (1890)</strong>, cerrando las puertas a cualquier intento de rebelión carlista o republicana.</p>
+
+            <div class="tarjeta-imagen">
+                <img src="img/caricatura-pacto-pardo.png" alt="Caricatura Pacto del Pardo" style="max-height: 350px;">
+                <span class="caption">Caricatura satírica ridiculizando el pacto entre conservadores y liberales para repartirse el pastel estatal</span>
+            </div>
+
+            <!-- BOTÓN INTERACTIVO: LA HISTORIA DE AMOR Y LA TRAGEDIA DE MERCEDES -->
+            <div style="margin: 15px 0; text-align: center;">
+                <button class="btn-interactivo btn-anecdota" onclick="openPopup('pop-salsarosa')">💖 La Salsa Rosa de la Historia: El trágico idilio de Alfonso y Mercedes</button>
+            </div>
+        </section>
+    
+        <!-- SECCIÓN 5: LA CRISIS DEL TURNISMO BAJO ALFONSO XIII -->
+        <section id="crisis_sistema">
+            <h2>5. La Crisis del Turnismo y el Reinado de Alfonso XIII (1902 - 1923)</h2>
+            <p>En 1902, al cumplir los 16 años, <em>Alfonso XIII</em> juró la Constitución e inició su reinado personal [20, 23]. Pese a que el monarca pretendió mantener el sistema de <em>Cánovas</em>, el turno pacífico comenzó a agrietarse debido a la desaparición de los líderes históricos (<em>Cánovas</em> asesinado en 1897, <em>Sagasta</em> fallecido en 1903) y a la incapacidad del régimen para integrar a los nuevos movimientos sociales (republicanismo, obrerismo y nacionalismo) [20, 23, 29].</p>
+            
+            <p>La inestabilidad política fue alarmante (se sucedieron 10 presidentes de gobierno entre 1902 y 1907) [20, 25]. El propio rey se implicó activamente en las crisis gubernamentales, dejándose influir por los sectores militares más conservadores [29].</p>
+
+            <div class="caja-colores factores">
+                <h4>🛠️ Los Dos Intentos de Regeneración Interna</h4>
+                <ul>
+                    <li><strong>Antonio Maura y la "Revolución desde arriba" (1907-1909):</strong> El líder conservador intentó reformar el régimen desde el Gobierno para evitar una revolución popular [29]. Reformó la Ley Electoral de 1907 para hacer más difícil el fraude, aunque su famoso <em>Artículo 29</em> (que nombraba diputados sin votación si solo había un candidato) acabó siendo un instrumento perfecto para el caciquismo [29]. Creó el <em>Instituto Nacional de Previsión (1908)</em> para facilitar seguros obreros y la Ley de Descanso Dominical [29]. No obstante, su intransigencia con el orden público y la brutal represión de la <em>Semana Trágica de Barcelona (1909)</em>, que culminó con el injusto fusilamiento del pedagogo anarquista <em>Francisco Ferrer i Guardia</em> (fundador de la Escuela Moderna), levantaron protestas internacionales y forzaron su dimisión [20, 29].</li>
+                    <li><strong>José Canalejas y el Regeneracionismo Liberal (1910-1912):</strong> Canalejas buscó atraer a los sectores populares limitando el poder de la Iglesia [29]. Promulgó la <em>Ley del Candado (1910)</em> para impedir la creación de nuevas órdenes religiosas, suprimió el impuesto de consumos sustituyéndolo por un impuesto sobre la renta (lo que desató protestas burguesas), y reformó el servicio militar obligatorio eliminando la redención en metálico (aunque mantuvo a los "soldados de cuota") [20, 29]. Sus reformas se truncaron abruptamente cuando fue asesinado por un anarquista en la Puerta del Sol de Madrid en noviembre de 1912 [20, 29].</li>
+                </ul>
+            </div>
+
+            <p>La colonización de la zona norte de Marruecos (El Rif), asignada a España en la <em>Conferencia de Algeciras (1906)</em>, fue justificada por los intereses económicos de la burguesía y el deseo del Ejército de restaurar su prestigio hundido tras el desastre de Cuba [29]. El conflicto rifeño se convirtió en una sangría constante (derrota del <em>Barranco del Lobo</em> en 1909) que exacerbó la conflictividad social en la Península [29].</p>
+
+            <p>El estallido de la <strong>Primera Guerra Mundial (1914-1918)</strong> dividió la opinión pública, pero su declaración de neutralidad reportó un inmenso boom de exportaciones de alimentos y metales a los combatientes [20, 29]. Las reservas del Banco de España se triplicaron y los beneficios textiles se multiplicaron por veinte [29]. Sin embargo, esta inyección económica trajo una altísima inflación que redujo el poder adquisitivo de los trabajadores, estimulando la agitación obrera [20, 29].</p>
+
+            <!-- VÍDEO COMPLEMENTARIO: CRISIS DE 1917 -->
+            <div style="margin: 15px 0; text-align: center;">
+                <a href="https://youtu.be/24kUhe0pSsA" target="_blank" class="btn-interactivo btn-video">🎬 Vídeo 3: Ver documental sobre la Huelga General de 1917 y la Crisis del Sistema ➡️</a>
+            </div>
+
+            <div class="caja-colores factores">
+                <h4>⚡ La Triple Crisis del Verano de 1917</h4>
+                <p>En 1917, la crisis del sistema de la Restauración estalló en tres revoluciones consecutivas:</p>
+                <ul>
+                    <li><strong>La crisis militar:</strong> Ante el favoritismo de los ascensos por mérito de guerra, los oficiales peninsulares crearon las <em>Juntas Militares de Defensa</em> en 1916 [20, 29]. Dato cedió a sus presiones salariales y de ascensos por antigüedad con la Ley del Ejército de 1918, convirtiéndolas en pilar de la monarquía [29].</li>
+                    <li><strong>La crisis política:</strong> Ante el cierre del Parlamento por Dato, en julio de 1917 se reunió en Barcelona una <em>Asamblea de Parlamentarios</em> catalanistas, republicanos y socialistas que exigió un gobierno provisional y Cortes Constituyentes para acabar con el turnismo [20, 29]. Fue disuelta por la Guardia Civil [29].</li>
+                    <li><strong>La crisis social (Huelga General Revolucionaria):</strong> Convocada en agosto de 1917 de forma conjunta por la UGT y la CNT ante la inflación, el paro y la miseria generalizada [20, 29]. La huelga paralizó el país durante una semana pero fue aplastada con dureza por el Ejército (más de 70 muertos y 2.000 detenidos; el comité de huelga integrado por Besteiro, Largo Caballero, Saborit y Anguiano fue condenado a prisión) [20, 29].</li>
+                </ul>
+            </div>
+
+            <p>El fracaso de la crisis de 1917 dio paso a gobiernos de concentración débiles (el <em>Gobierno Nacional</em> de Maura de 1918) que no pudieron frenar la espiral de inestabilidad (10 cambios de gobierno en 5 años) [29]. El golpe de gracia definitivo al sistema lo asestó el <strong>Desastre de Annual (1921)</strong> en Marruecos, donde más de 12.000 soldados españoles de reemplazo fueron masacrados en Monte Arruit por los rifeños de <em>Abd-el-Krim</em> [20, 29]. La comisión de investigación dirigida por el general Picasso (el <em>Expediente Picasso</em>) reveló una corrupción y negligencia generalizada que salpicaba al propio rey, lo que indignó a la opinión pública nacional [29].</p>
+
+            <!-- BOTÓN INTERACTIVO: EL EXPEDIENTE PICASSO -->
+            <div style="margin: 15px 0;">
+                <button class="btn-interactivo btn-texto" onclick="openPopup('pop-picasso')">📜 Documento: El Expediente Picasso y la Masacre de Annual (1921)</button>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 6: LA DICTADURA DE PRIMO DE RIVERA -->
+        <section id="dictadura">
+            <h2>6. La Dictadura de Primo de Rivera y la Caída de la Monarquía (1923 - 1931)</h2>
+            <p>Ante la inminencia de que las Cortes debatieran el <em>Expediente Picasso</em> y la extendida violencia social, el 13 de septiembre de 1923 el Capitán General de Cataluña, <em>Miguel Primo de Rivera</em>, encabezó un pronunciamiento militar con la aprobación implícita del rey <em>Alfonso XIII</em> [20, 29]. El monarca le confió la formación de gobierno, sepultando de manera definitiva el régimen parlamentario de Cánovas [29].</p>
+
+            <div class="caja-colores factores">
+                <h4>🛡️ Las Dos Etapas de la Dictadura</h4>
+                <ul>
+                    <li><strong>El Directorio Militar (1923-1925):</strong> Integrado exclusivamente por generales, suspendió la Constitución, clausuró las Cortes, estableció el estado de guerra y la censura en la prensa, y reemplazó a los alcaldes y gobernadores civiles por militares [20, 29]. Persiguió con saña al nacionalismo catalán y vasco, prohibiendo sus banderas e idiomas en actos oficiales y liquidando la Mancomunidad en 1925 [29]. Su mayor hito fue poner fin a la guerra de Marruecos mediante el exitoso <strong>Desembarco de Alhucemas (1925)</strong>, una audaz operación conjunta con Francia que forzó la rendición de <em>Abd-el-Krim</em> y pacificó el protectorado [20, 29].</li>
+                    <li><strong>El Directorio Civil (1925-1930):</strong> Primo de Rivera introdujo a ministros civiles de carácter tecnócrata, como <em>José Calvo Sotelo</em> (Hacienda) o <em>Eduardo Aunós</em> (Trabajo) [29]. Se creó un partido único ficticio, la <em>Unión Patriótica (UP)</em>, y una milicia ciudadana auxiliar (el <em>Somatén</em>) [29]. En lo económico, se benefició de la excelente coyuntura de los "felices años veinte", impulsando una ambiciosa política de obras públicas (pantanos, carreteras, ferrocarriles) y decretando monopolios estatales como la Compañía Telefónica (CTNE) y CAMPSA [29]. Esta política se financió a costa de un gravoso aumento de la deuda del Estado y la caída de la peseta [20, 29].</li>
+                </ul>
+            </div>
+
+            <p>La paz social aparente se obtuvo con la creación de la <em>Organización Corporativa Nacional</em> (comités paritarios de patronos y obreros, que contaron con la colaboración táctica del ala moderada del PSOE/UGT), mientras que la CNT anarquista y el Partido Comunista eran perseguidos con dureza y forzados a la clandestinidad [20, 29].</p>
+
+            <p>La oposición al régimen se intensificó notablemente a partir de 1928, sumando a intelectuales (destierro de <em>Miguel de Unamuno</em>, exilio de <em>Blasco Ibáñez</em> y movilizaciones de la Federación Universitaria Española - FUE), republicanos, nacionalistas catalanes y a sectores del propio Ejército que retiraron su confianza al dictador [29]. El crack financiero de 1929 y la reaparición de las huelgas obligaron a Primo de Rivera a dimitir el 30 de enero de 1930 [20, 29].</p>
+
+            <p>Los intentos de retorno a la normalidad constitucional mediante el general Dámaso Berenguer (la <em>"Dictablanda"</em>) fracasaron rotundamente ante la exigencia de un cambio de régimen [20, 29]. En agosto de 1930, socialistas, republicanos y catalanes firmaron el <strong>Pacto de San Sebastián</strong>, un programa de acción común para derrocar la monarquía y traer la república [20, 29]. Pese al fracaso de la sublevación militar de Jaca en diciembre de 1930, la suerte de Alfonso XIII estaba echada [20, 29].</p>
+
+            <p>Las elecciones municipales del <strong>12 de abril de 1931</strong>, presentadas por la oposición como un plebiscito a favor o en contra de la monarquía, arrojaron una victoria abrumadora de la coalición republicano-socialista en 45 de las 50 capitales de provincia [20, 29]. Ante el clamor popular, Alfonso XIII firmó su histórica <strong>Carta de abdicación el 14 de abril de 1931</strong>, marchando al exilio, lo que dio paso a la proclamación de la <strong>Segunda República</strong> y puso el punto final definitivo a la era de la Restauración [20, 29].</p>
+
+            <!-- VÍDEO EXPLICATIVO: FIN DE LA MONARQUÍA -->
+            <div style="margin: 15px 0; text-align: center;">
+                <a href="https://youtu.be/24kUhe0pSsA" target="_blank" class="btn-interactivo btn-video">🎬 Vídeo 4: Ver la abdicación de Alfonso XIII y la Proclamación de la II República ➡️</a>
+            </div>
+        </section>
+
+</main>
+
+    <!-- VENTANAS EMERGENTES (POPUPS INTERACTIVOS / MODALS) -->
+
+    <!-- POPUP 1: MANIFIESTO DE SANDHURST -->
+    <div id="pop-sandhurst" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closePopup('pop-sandhurst')">&times;</span>
+            <h3 style="color: #047857; margin-top: 0;">📜 El Manifiesto de Sandhurst (1 de diciembre de 1874)</h3>
+            <p>El programa político enviado por el príncipe Alfonso desde su academia militar británica:</p>
+            <div class="texto-modal">"Por virtud de la espontánea y solemne abdicación de mi augusta madre, tan generosa como infortunada, soy único representante yo del derecho monárquico en España (...)
+
+Huérfana la nación ahora de todo derecho público e indefinidamente privada de sus libertades, es natural que vuelva los ojos a su acostumbrado régimen constitucional, que la unió a la monarquía con la que ha vivido siempre (...)
+
+No sé yo cuándo o cómo se ha de realizar esa esperanza. Sólo puedo decir que nada omitiré para hacerme digno del difícil encargo de restablecer en nuestra noble nación, al tiempo que la concordia, el orden legal y la libertad política... Sea lo que quiera mi propia suerte, ni dejaré de ser buen español ni, como todos mis antepasados, buen católico, ni, como hombre del siglo, verdaderamente liberal.
+
+Alfonso de Borbón (Sandhurst, 1 de diciembre de 1874)"</div>
+        </div>
+    </div>
+
+    <!-- POPUP 2: EL HUMOR DE CÁNOVAS -->
+    <div id="pop-humor" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closePopup('pop-humor')">&times;</span>
+            <h3 style="color: #b45309; margin-top: 0;">🕵️‍♂️ Cánovas del Castillo y su célebre humor negro</h3>
+            <p>Una muestra de la ácida ironía con la que el presidente malagueño manejaba los asuntos de Estado:</p>
+            <div class="texto-modal">"Antonio Cánovas del Castillo era conocido por su portentosa elocuencia pero también por un humor sumamente corrosivo y cáustico. 
+
+Durante las largas sesiones de debate previas a la redacción definitiva del primer artículo de la Constitución de 1876, los diferentes diputados no lograban ponerse de acuerdo sobre cómo definir legalmente la nacionalidad. Ante el bloqueo parlamentario, Cánovas tomó la palabra en la tribuna y sugirió con sorna redactar la cláusula en los siguientes términos: 
+
+«Son españoles... los que no pueden ser otra cosa». 
+
+La frase despertó risas y quedó inmortalizada como una perfecta muestra del escepticismo canovista respecto a la realidad del país."</div>
+        </div>
+    </div>
+
+    <!-- POPUP 3: LA SALSA ROSA (TRAGEDIA DE MERCEDES) -->
+    <div id="pop-salsarosa" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closePopup('pop-salsarosa')">&times;</span>
+            <h3 style="color: #b45309; margin-top: 0;">💖 La Salsa Rosa de la Historia: El romance trágico del rey</h3>
+            <p>El breve y conmovedor idilio que marcó la vida privada del joven Alfonso XII:</p>
+            <div class="texto-modal">"En enero de 1878, rompiendo con el protocolo diplomático de buscar una alianza real en Europa, el joven Alfonso XII se casó por puro amor con su prima hermana, María de las Mercedes de Orleans y Borbón. Esta insólita boda apasionada, más propia de clases humildes que de reyes, prestigió enormemente a la monarquía entre las clases populares.
+
+Sin embargo, la felicidad conyugal duró apenas cinco meses. En junio de ese mismo año, la joven soberana falleció con tan solo 18 años, víctima de unas fiebres tifoideas. La tragedia caló tan hondo en el pueblo que dio origen a romances, leyendas y coplillas que se cantaron en las calles de todo Madrid, como las conocidas estrofas:
+
+«Te vas camino del cielo / sin un hijo que te herede. / España viste de duelo / y el Rey no tiene consuelo: / María de las Mercedes»."</div>
+        </div>
+    </div>
+
+    <!-- Script de Navegación -->
+    <script>
+        const links = document.querySelectorAll('aside nav ul li a');
+        const sections = document.querySelectorAll('main section');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (window.scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            links.forEach(a => {
+                a.classList.remove('active');
+                if (a.getAttribute('href') === `#${current}`) {
+                    a.classList.add('active');
+                }
+            });
+        });
+
+        function openPopup(id) {
+            document.getElementById(id).classList.add('show');
+        }
+
+        function closePopup(id) {
+            document.getElementById(id).classList.remove('show');
+        }
+
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.classList.remove('show');
+            }
+        }
+    </script>
+
+    <!-- POPUP 4: SEMANA TRÁGICA DE BARCELONA -->
+    <div id="pop-semanatragica" class="modal">
+        <div class="modal-content" style="border-left-color: var(--border-critica);">
+            <span class="modal-close" onclick="closePopup('pop-semanatragica')">&times;</span>
+            <h3 style="color: var(--border-critica); margin-top: 0;">🔥 Moción de la Asamblea Obrera de Tarrasa (21 de julio de 1909)</h3>
+            <p>Protesta de los obreros contra el sistema de reclutamiento militar y la Guerra de Marruecos:</p>
+            <div class="texto-modal">"Considerando que la guerra es una consecuencia fatal del régimen de producción capitalista. Considerando, además, que dado el sistema español de reclutamiento del Ejército, sólo los obreros hacen la guerra que los burgueses declaran. La Asamblea protesta enérgicamente:
+1. Contra la acción del Gobierno español en Marruecos.
+2. Contra los procedimientos de ciertas damas de la aristocracia, que insultaron el dolor de los reservistas, de sus mujeres y de sus hijos, dándoles medallas y escapularios, en vez de proporcionarles los medios de subsistencia que les arrebataban con la marcha del jefe de la familia.
+3. Contra el envío a la guerra de los ciudadanos útiles a la producción, cuando se podían formar regimientos de curas y de frailes (...)."</div>
+        </div>
+    </div>
+
+    <!-- POPUP 5: EL EXPEDIENTE PICASSO -->
+    <div id="pop-picasso" class="modal">
+        <div class="modal-content" style="border-left-color: var(--border-investigacion);">
+            <span class="modal-close" onclick="closePopup('pop-picasso')">&times;</span>
+            <h3 style="color: var(--border-investigacion); margin-top: 0;">📜 El Expediente Picasso: La autopsia de la corrupción militar (1921)</h3>
+            <p>La investigación parlamentaria dirigida por el general Juan Picasso tras el Desastre de Annual:</p>
+            <div class="texto-modal">"El Expediente Picasso reveló un estado de corrupción, abandono e ineficacia absoluto en el seno del ejército colonial de Marruecos. Con más de 13.000 muertos, se detallaban múltiples fallos estratégicos de mandos incompetentes. El informe describía cómo las líneas de abastecimiento se habían extendido de forma temeraria, con tropas de reemplazo que carecían de agua, calzado básico y entrenamiento.
+
+El general Picasso calificó de gravemente negligente la actuación del Alto Comisionado Dámaso Berenguer y de temeraria la ofensiva iniciada por el general Fernández Silvestre. La inminencia de que este demoledor expediente se votase en el Congreso y salpicara directamente a Alfonso XIII fue el detonante principal que llevó a Primo de Rivera a dar su golpe de Estado en septiembre de 1923."</div>
+        </div>
+    </div>
+
+    <!-- POPUP 6: LA LEY DE FUGAS -->
+    <div id="pop-fugas" class="modal">
+        <div class="modal-content" style="border-left-color: var(--border-critica);">
+            <span class="modal-close" onclick="closePopup('pop-fugas')">&times;</span>
+            <h3 style="color: var(--border-critica); margin-top: 0;">🔫 La Ley de Fugas y el Pistolerismo (1919-1923)</h3>
+            <p>La etapa de violencia urbana desatada entre patronos y obreros en Barcelona:</p>
+            <div class="texto-modal">"La tensión acumulada tras la exitosa huelga de La Canadiense en 1919 llevó a la patronal catalana a aplicar el lock-out y a financiar el 'Somatén' y los 'Sindicatos Libres' (organizaciones armadas de extrema derecha). Se inició una ola de pistolerismo, contratando matones a sueldo para asesinar a líderes sindicalistas de la CNT, quienes respondieron con atentados anarquistas individuales.
+
+Bajo la permisividad del gobernador civil Martínez Anido, en 1921 se oficializó de facto la 'Ley de Fugas', una directriz policial que permitía a los guardias disparar a matar contra cualquier sospechoso bajo el pretexto de que 'intentaba huir'. Esta siniestra práctica sirvió para asesinar de forma impune y extrajudicial a cientos de dirigentes sindicales y huelguistas en las calles barcelonesas."</div>
+        </div>
+    </div>
+
+</body>
+</html>

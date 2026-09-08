@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloque V - Tema 1: La Dictadura Franquista - Autarquía y Aislamiento (1939 - 1959)</title>
+    
+    <style>
+        :root {
+            --primary-intense: #1e40af;
+            --primary-vibrant: #2563eb;
+            --primary-dark: #0f172a;
+            --primary: #1e293b;
+            --bg-main: #f8fafc;
+            --card-bg: #ffffff;
+            --text-dark: #1e293b;
+            --text-muted: #64748b;
+            
+            --header-bg: #f0fdf4;
+            --header-border: #10b981;
+            --header-text: #065f46;
+
+            --border-glosario: #0ea5e9;
+            --bg-glosario: #f0f9ff;
+            --border-investigacion: #f59e0b;
+            --bg-investigacion: #fffbeb;
+            --border-critica: #ef4444;
+            --bg-critica: #fef2f2;
+            --border-factores: #10b981;
+            --bg-factores: #ecfdf5;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-dark);
+            min-height: 100vh;
+        }
+
+        aside {
+            width: 300px;
+            background-color: var(--primary-dark);
+            color: white;
+            padding: 25px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            overflow-y: auto;
+            border-right: 1px solid #334155;
+            z-index: 100;
+        }
+
+        aside h1 {
+            font-size: 1.25rem;
+            margin-bottom: 25px;
+            color: #f8fafc;
+            border-bottom: 3px solid var(--primary-vibrant);
+            padding-bottom: 12px;
+            text-align: center;
+        }
+
+        aside nav ul {
+            list-style: none;
+        }
+
+        aside nav ul li {
+            margin-bottom: 10px;
+        }
+
+        aside nav ul li a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 0.95rem;
+            display: block;
+            padding: 10px 14px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            font-weight: 500;
+        }
+
+        aside nav ul li .btn-volver {
+            background-color: #334155;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+            border: 1px solid #475569;
+            margin-bottom: 15px;
+            display: block;
+            padding: 10px 14px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            text-decoration: none;
+        }
+
+        aside nav ul li .btn-volver:hover {
+            background-color: var(--primary-vibrant);
+            border-color: var(--primary-vibrant);
+        }
+
+        aside nav ul li a:hover, aside nav ul li a.active {
+            background-color: var(--primary-vibrant);
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(37, 99, 235, 0.15);
+        }
+
+        main {
+            margin-left: 300px;
+            padding: 40px;
+            max-width: 1100px;
+        }
+
+        header {
+            margin-bottom: 35px;
+            background: linear-gradient(135deg, var(--header-bg), #e6fcf0);
+            border-left: 6px solid var(--header-border);
+            color: var(--header-text);
+            padding: 25px 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(16, 185, 129, 0.08);
+        }
+
+        header h2 {
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+            color: var(--header-text);
+            font-weight: 800;
+        }
+
+        header p {
+            color: #15803d;
+            font-size: 1.05rem;
+            font-weight: 500;
+        }
+
+        section {
+            background: var(--card-bg);
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            margin-bottom: 35px;
+            border-left: 6px solid var(--primary-vibrant);
+        }
+
+        section h2 {
+            color: var(--primary-dark);
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #f1f5f9;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: var(--primary-intense);
+            margin: 25px 0 12px 0;
+            font-size: 1.25rem;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+            color: #334155;
+            text-align: justify;
+        }
+
+        /<em> CONTENEDOR DE IMAGEN (ANTI-SOLAPAMIENTO) </em>/
+        .tarjeta-imagen {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 20px 0 30px 0;
+            text-align: center;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            display: block;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tarjeta-imagen img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            margin-bottom: 12px;
+            display: inline-block;
+        }
+
+        .tarjeta-imagen .caption {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            font-style: italic;
+            margin: 0;
+            line-height: 1.4;
+            display: block;
+        }
+
+        /<em> FILAS DE IMÁGENES COMPATIBLES (ADAPTATIVAS) </em>/
+        .fila-imagenes {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0 30px 0;
+        }
+
+        .fila-imagenes .tarjeta-imagen {
+            flex: 1;
+            min-width: 250px;
+            margin: 0;
+        }
+
+        .caja-colores {
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-size: 1rem;
+        }
+
+        .caja-colores h4 {
+            margin-bottom: 10px;
+            font-size: 1.15rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .factores {
+            background-color: var(--bg-factores);
+            border-left: 5px solid var(--border-factores);
+            color: #047857;
+        }
+
+        .investigacion {
+            background-color: var(--bg-investigacion);
+            border-left: 5px solid var(--border-investigacion);
+            color: #b45309;
+        }
+
+        .critica {
+            background-color: var(--bg-critica);
+            border-left: 5px solid var(--border-critica);
+            color: #b91c1c;
+        }
+
+        ul {
+            padding-left: 25px;
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #334155;
+        }
+
+        /<em> POPUPS INTERACTIVOS </em>/
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(4px);
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal.show {
+            display: flex;
+        }
+
+        .modal-content {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            max-width: 650px;
+            width: 90%;
+            max-height: 85vh;
+            overflow-y: auto;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            border-left: 6px solid var(--border-investigacion);
+            position: relative;
+            animation: modalFadeIn 0.3s ease-out;
+        }
+
+        @keyframes modalFadeIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-muted);
+        }
+
+        .modal-close:hover {
+            color: var(--border-critica);
+        }
+
+        .btn-interactivo {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            margin: 8px 0;
+            border: none;
+        }
+
+        .btn-anecdota {
+            background-color: var(--bg-investigacion);
+            border: 1px solid var(--border-investigacion);
+            color: #b45309;
+        }
+
+        .btn-anecdota:hover {
+            background-color: var(--border-investigacion);
+            color: white;
+        }
+
+        .btn-texto {
+            background-color: var(--bg-factores);
+            border: 1px solid var(--border-factores);
+            color: #047857;
+        }
+
+        .btn-texto:hover {
+            background-color: var(--border-factores);
+            color: white;
+        }
+
+        .btn-video {
+            background-color: var(--bg-glosario);
+            border: 1px solid var(--border-glosario);
+            color: #0369a1;
+        }
+
+        .btn-video:hover {
+            background-color: var(--border-glosario);
+            color: white;
+        }
+
+        .texto-modal {
+            font-size: 0.95rem;
+            color: #334155;
+            background-color: #f8fafc;
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px solid #e2e8f0;
+            white-space: pre-wrap;
+            margin-top: 10px;
+            text-align: justify;
+        }
+
+        @media (max-width: 900px) {
+            aside {
+                width: 100%;
+                height: auto;
+                position: relative;
+                border-right: none;
+                border-bottom: 1px solid #334155;
+            }
+            main {
+                margin-left: 0;
+                width: 100%;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navegación Lateral -->
+    <aside>
+        <h1>🏛️ Bloque V: El Franquismo</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="btn-volver">🏠 Volver a Portada</a></li>
+                
+                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 10px 14px 5px 14px; font-weight: bold; border-bottom: 1px solid #334155; margin-bottom: 8px;">📍 Secciones</li>
+                
+                <li><a href="#bases" class="active">1. ADN y Bases del Régimen</a></li>
+                <li><a href="#represion">2. La Represión Estructural</a></li>
+                <li><a href="#institucionalizacion">3. La Fachada Institucional</a></li>
+                <li><a href="#exteriores">4. Supervivencia Exterior</a></li>
+                <li><a href="#autarquia">5. Autarquía y Racionamiento</a></li>
+
+                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 20px 14px 5px 14px; font-weight: bold; border-top: 1px solid #475569; margin-top: 25px; border-bottom: 1px solid #334155; margin-bottom: 8px;">📖 Temas del Bloque V</li>
+                <li><a href="bloque5_tema1.html" class="active">Tema 1: Autarquía e Isolation</a></li>
+                <li><a href="bloque5_tema2.html">Tema 2: Desarrollismo y Crisis</a></li>
+
+                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 15px 14px 5px 14px; font-weight: bold; border-top: 1px solid #475569; margin-top: 15px; border-bottom: 1px solid #334155; margin-bottom: 8px;">📚 Otros Bloques</li>
+                <li><a href="tema0.html">Tema 0: Introducción</a></li>
+                <li><a href="bloque1_tema1.html">Bloque I: Estado Liberal</a></li>
+                <li><a href="bloque2_tema1.html">Bloque II: La Restauración</a></li>
+                <li><a href="bloque3_tema1.html">Bloque III: Alfonso XIII y Dictadura</a></li>
+                <li><a href="bloque4_tema1.html">Bloque IV: República y Guerra</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Contenido Principal -->
+    <main>
+        
+        <header>
+            <h2>Tema 1: La Dictadura Franquista - Autarquía y Aislamiento (1939 - 1959)</h2>
+            <p>La implantación de un régimen dictatorial de mando único, la violenta represión de posguerra, la farsa corporativa de las Leyes Fundamentales y el dramático estrangulamiento socioeconómico de los años del hambre.</p>
+        </header>
+
+        <div class="tarjeta-imagen" style="margin-top: 0;">
+            <img src="img/eje-cronologico-franquismo1.png" alt="Eje Cronológico del Franquismo: Primera Etapa (1939 - 1959)">
+            <span class="caption">Eje cronológico que resume la fase totalitaria de posguerra, la andadura autárquica y el posterior reconocimiento internacional de los años cincuenta</span>
+        </div>
+
+        <!-- SECCIÓN 1 -->
+        <section id="bases">
+            <h2>1. El ADN del Régimen: Fundamentos Ideológicos y Familias Políticas</h2>
+            <p>El régimen nacido de la Guerra Civil se configuró bajo la forma de una <strong>dictadura personalista de carácter autoritario</strong>, militarista y centralista, legitimada en origen por la victoria bélica de 1939. La concentración absoluta de poder se encarnó en la figura de <em>Francisco Franco</em>, proclamado como el <em>Caudillo</em> e investido de forma vitalicia con la Jefatura del Estado, del Gobierno, de las Fuerzas Armadas como Generalísimo, y de la única formación política permitida.</p>
+
+            <div class="tarjeta-imagen">
+                <img src="img/retrato-franco-caudillo.png" alt="Mural alegórico de Francisco Franco como Caudillo de España en 1939" style="max-height: 400px;">
+                <span class="caption">Mural alegórico de Francisco Franco representado como líder providencial de la patria tras el desenlace militar de 1939</span>
+            </div>
+
+            <p>El ADN ideológico del franquismo no partió de un cuerpo doctrinal estructurado y coherente, sino que consistió en una amalgama de principios procedentes del conservadurismo antiliberal español, el tradicionalismo carlista, el fascismo y la Iglesia católica. Sus principales rasgos definitorios fueron:</p>
+            <ul>
+                <li><strong>El totalitarismo y el anticomunismo radical:</strong> Supresión absoluta de la Constitución de 1931, disolución del Parlamento y prohibición de todos los partidos políticos y sindicatos libres.</li>
+                <li><strong>El nacionalismo centralista:</strong> Bajo el lema imperial de <em>Una, Grande y Libre</em>, el régimen abolió de inmediato todos los estatutos de autonomía de Cataluña, el País Vasco y Galicia. Se centralizaron las diputaciones y se prohibió de forma rígida el uso público de lenguas cooficiales, rebajándolas al rango de meros dialectos.</li>
+                <li><strong>El nacionalsindicalismo:</strong> El Estado intervino activamente en la economía y prohibió las huelgas como delitos de traición. Se creó un estado corporativo donde obreros y empresarios se integraron forzosamente en el <strong>Sindicato Vertical</strong> (OSE - Organización Sindical Española) para anular la lucha de clases.</li>
+                <li><strong>El nacionalcatolicismo:</strong> El rasgo de mayor peso moral. Se produjo una fusión total entre Iglesia y Estado. España se proclamó como Estado confesional católico, devolviéndose de inmediato el presupuesto del clero, concediendo a la Iglesia el monopolio de la censura moral, el control absoluto de las aulas educativas y una financiación preferencial a cambio de legitimar el levantamiento militar como una <em>Santa Cruzada contra el comunismo ateo</em>.</li>
+            </ul>
+
+            <p>Franco gobernó arbitrando un delicado equilibrio entre las denominadas <strong>familias políticas del régimen</strong>, grupos de interés leales a su jefatura que rivalizaban internamente por ganar influencia en los ministerios de la dictadura:</p>
+            <ul>
+                <li><strong>Los militares:</strong> Incondicionales al dictador, ocuparon más del 40% de los ministerios y gobiernos civiles, garantizando la coerción del orden público.</li>
+                <li><strong>Los falangistas (el sector azul):</strong> Dominantes en los años cuarenta. Buscaban un Estado totalitario puro subordinado al partido único, <strong>FET y de las JONS</strong>. Controlaban la propaganda oficial, la prensa, el Sindicato Vertical, el SEU universitario, el adoctrinamiento paramilitar de la infancia en el <em>Frente de Juventudes</em> y el encuadramiento de la mujer en la sumisión del hogar a través de la <em>Sección Femenina</em> de <em>Pilar Primo de Rivera</em>.</li>
+                <li><strong>Los católicos:</strong> Representados por la Asociación Católica Nacional de Propagandistas (ACNDP), aumentaron drásticamente su peso a partir de 1945 para lavar la imagen exterior fascista de la dictadura.</li>
+                <li><strong>Los tradicionalistas y monárquicos:</strong> Esperaban que el dictador restaurase a corto plazo la monarquía borbónica en la persona de <em>Don Juan de Borbón</em>, un anhelo que Franco postergó hábilmente de forma indefinida.</li>
+            </ul>
+
+            <!-- BOTÓN INTERACTIVO: CATECISMO -->
+            <div style="margin: 15px 0; text-align: center;">
+                <button class="btn-interactivo btn-texto" onclick="openPopup('pop-catecismo')">📜 Documento: El Catecismo Patriótico Español (1939)</button>
+            </div>
+
+            <!-- VÍDEO COMPLEMENTARIO SOBRE LAS BASES -->
+            <div style="margin: 20px 0; text-align: center;">
+                <p style="font-size: 0.95rem; color: var(--text-muted); font-style: italic; margin-bottom: 10px;">
+                    ¿Quieres analizar el ADN ideológico, el control moral de la sociedad y los pilares institucionales del franquismo?
+                </p>
+                <a href="https://www.youtube.com/watch?v=vO2sW48YNuk" target="_blank" class="btn-interactivo btn-video">
+                    🎬 Vídeo complementario: Ver el documental doctrinal del Franquismo ➡️
+                </a>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2 -->
+        <section id="represion">
+            <h2>2. La Represión de Posguerra: La "Justicia al Revés"</h2>
+            <p>La consolidación del nuevo Estado fue acompañada de una <strong>represión sistemática, institucionalizada y planificada</strong> por el Ejército y la Falange contra cualquier sospechoso de afinidad con el Frente Popular. El franquismo nunca buscó el perdón o la reconciliación nacional, sino que consagró una sociedad rígidamente dividida entre los vencedores y los vencidos.</p>
+
+            <div class="tarjeta-imagen">
+                <img src="img/campo-concentracion-castuera.png" alt="Plano y barracones del campo de concentración de Castuera (Badajoz)" style="max-height: 350px;">
+                <span class="caption">Reconstrucción documental del campo de concentración de Castuera, una de las múltiples prisiones de posguerra levantadas para la clasificación de los vencidos</span>
+            </div>
+
+            <p>Para dotar de cobertura legal a esta limpieza ideológica, se instauró una asombrosa <strong>justicia al revés</strong> a través de decretos retroactivos de extrema gravedad penados por tribunales militares en Consejos de Guerra carentes de garantías de defensa:</p>
+            <ul>
+                <li><strong>La Ley de Responsabilidades Políticas (1939):</strong> Declaraba punible de forma retroactiva cualquier apoyo o militancia activa en partidos republicanos o sindicatos libres desde el año 1934, multando, encarcelando o expropiando los bienes de miles de familias.</li>
+                <li><strong>La Ley de Represión del Comunismo y la Masonería (1940):</strong> Creó un tribunal especial para perseguir y purgar a los sospechosos de filiación masónica o ideas marxistas, considerando delito la mera sospecha ideológica.</li>
+            </ul>
+
+            <p>El balance demográfico del terror de posguerra fue devastador. Más de 200.000 presos políticos abarrotaron las prisiones del país. Se habilitaron batallones de castigo y <strong>Batallones Disciplinarios de Soldados Trabajadores</strong> para realizar de forma forzosa obras públicas, canteras, minas o la excavación del mausoleo del Valle de los Caídos (Cuelgamuros). Las ejecuciones sumarias de posguerra superaron las 50.000 personas, enterradas mayoritariamente en fosas comunes anónimas, provocando al mismo tiempo el exilio masivo de más de 400.000 refugiados hacia Francia y América.</p>
+
+            <!-- BOTÓN INTERACTIVO: TESTIMONIO REPRESIÓN -->
+            <div style="margin: 15px 0; text-align: center;">
+                <button class="btn-interactivo btn-anecdota" onclick="openPopup('pop-testimonio-represion')">🕵️‍♂️ Testimonio: Heliodoro Villar y la noche del ricino y los fusiles (1940)</button>
+            </div>
+
+            <!-- VÍDEO COMPLEMENTARIO SOBRE LA REPRESIÓN -->
+            <div style="margin: 20px 0; text-align: center;">
+                <p style="font-size: 0.95rem; color: var(--text-muted); font-style: italic; margin-bottom: 10px;">
+                    ¿Deseas analizar las penosas condiciones de los campos de concentración y las fosas comunes que marcaron los años del hambre?
+                </p>
+                <a href="https://www.youtube.com/watch?v=uc5gM3BHsEw" target="_blank" class="btn-interactivo btn-video">
+                    🎬 Vídeo complementario: Ver documental histórico de la represión franquista ➡️
+                </a>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 3 -->
+        <section id="institucionalizacion">
+            <h2>3. La Fachada Institucional: Las Leyes Fundamentales del Reino</h2>
+            <p>El régimen de la dictadura nunca tuvo la intención de redactar una Constitución democrática convencional. Para dotarse de una aparente cobertura legal ante la opinión pública y el extranjero, Franco procedió a la lenta elaboración de un entramado legislativo corporativo bautizado como las <strong>Leyes Fundamentales del Reino</strong>:</p>
+
+            <div class="tarjeta-imagen">
+                <img src="img/organigrama-gobierno-franco.png" alt="Organigrama institucional de la concentración absoluta de poder del franquismo" style="max-height: 480px;">
+                <span class="caption">Organigrama del funcionamiento del Gobierno, reflejando cómo Franco concentraba la potestad ejecutiva, legislativa y de mando sobre las Cortes</span>
+            </div>
+
+            <p>Este cuerpo constitucional de la dictadura se compuso de siete leyes fundamentales promulgadas de forma progresiva a lo largo de tres décadas:</p>
+            <ul>
+                <li><strong>El Fuero del Trabajo (1938):</strong> Redactado en plena contienda civil con influencia de la <em>Carta del Lavoro</em> fascista italiana. Establecía las bases de las relaciones laborales, prohibía los sindicatos de clase sustituyéndolos por el nacionalsindicalismo vertical, e ilegalizaba la huelga como un delito grave contra la producción.</li>
+                <li><strong>La Ley Constitutiva de las Cortes (1942):</strong> Creaba un Parlamento de procuradores sin representación democrática. Las Cortes no poseían poder legislativo real; se limitaban a debatir y aprobar de forma obligada las leyes redactadas por el propio Gobierno y designadas bajo el arbitraje de Franco.</li>
+                <li><strong>El Fuero de los Españoles (1945):</strong> Una farsa de declaración de derechos de la ciudadanía. Ofrecía una lista aparente de libertades que carecían de garantías legales reales, ya que el Artículo 33 disponía que cualquier derecho podía verse suspendido por decisión gubernativa.</li>
+                <li><strong>La Ley del Referéndum Nacional (1945):</strong> Permitía al Jefe del Estado someter de forma directa a consulta popular los textos legales que considerase convenientes, aunque en un marco de férrea censura y absoluto falseamiento electoral.</li>
+                <li><strong>La Ley de Sucesión en la Jefatura del Estado (1947):</strong> Definía formalmente a España como un "Reino", confirmando el carácter vitalicio del poder de Franco e invistiéndole con la prerrogativa regia exclusiva de designar de forma directa a su heredero a título de rey, marginando la legitimidad histórica de <em>Don Juan de Borbón</em>.</li>
+                <li><strong>La Ley de Principios del Movimiento Nacional (1958):</strong> Obligaba a todos los funcionarios públicos a jurar fidelidad al ideario falangista, tradicionalista y católico antes de asumir cualquier plaza.</li>
+            </ul>
+
+            <div class="caja-colores factores">
+                <h4>🗳️ El Referéndum de 1947</h4>
+                <p>La Ley de Sucesión fue sometida a votación en julio de 1947 en un clima de extrema censura, propaganda unánime y total prohibición de cualquier campaña opositora. El <strong>"sí" obtuvo un arrollador 93% de votos</strong>, lo que sirvió al régimen para presentarse en el extranjero como un sistema legitimado popularmente.</p>
+            </div>
+
+            <div class="tarjeta-imagen">
+                <img src="img/referendum-1947.png" alt="Cartel de propaganda oficial para el referéndum de 1947" style="max-height: 350px;">
+                <span class="caption">Cartel propagandístico oficial demandando el voto afirmativo para consagrar la dictadura vitalicia de Franco</span>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 4 -->
+        <section id="exteriores">
+            <h2>4. Supervivencia Exterior: Del Ostracismo al Aliado Anticomunista</h2>
+            <p>La política exterior del franquismo se caracterizó por su asombrosa capacidad de adaptación y camaleonismo diplomático ante las cambiantes coyunturas internacionales:</p>
+            <ul>
+                <li><strong>La tentación fascista (1939 - 1945):</strong> Durante el auge del Eje en la Segunda Guerra Mundial, el régimen abandonó la neutralidad declarándose "no beligerante". Franco se entrevistó con Hitler en Hendaya (octubre de 1940) y ordenó el envío de la <strong>División Azul</strong> al frente de Rusia. Ante el declive nazi, el dictador retornó a la neutralidad en 1943, retiró las tropas y cesó los saludos falangistas de brazo en alto para congraciarse con los aliados.</li>
+                <li><strong>El Ostracismo y el Bloqueo de la ONU (1945 - 1950):</strong> Tras la derrota fascista, las potencias vencedoras aislaron a España. La resolución de la ONU de diciembre de 1946 condenó formalmente el carácter fascista del régimen, ordenó la retirada unánime de los embajadores en Madrid y excluyó al país del plan de rescate del <em>Plan Marshall</em> y del tendido de la <em>OTAN</em>. Sólo la dictadura de Salazar en Portugal y el gobierno peronista de Argentina mantuvieron lazos reales.</li>
+                <li><strong>La Salvación de la Guerra Fría (1950 - 1959):</strong> El estallido del choque mundial entre EE.UU. y la URSS convirtió al franquismo en un peón útil. Su acérrimo anticomunismo rompió el aislamiento. En <strong>1953 se firmaron los Acuerdos Bilaterales con EE.UU.</strong> (bases conjuntas de Rota, Morón, Torrejón y Zaragoza) y el <strong>Concordato con la Santa Sede</strong> otorgando plenos privilegios a la Iglesia. Finalmente, España ingresó en la <strong>ONU en 1955</strong>, consolidándose de forma definitiva en 1959 con la apoteósica visita a Madrid de <em>Dwight D. Eisenhower</em>.</li>
+            </ul>
+
+            <!-- BOTÓN INTERACTIVO: RESOLUCIÓN ONU -->
+            <div style="margin: 15px 0; text-align: center;">
+                <button class="btn-interactivo btn-texto" onclick="openPopup('pop-resolucion-onu')">📜 Documento: La Resolución 39 de la ONU contra el Régimen de Franco (1946)</button>
+            </div>
+
+            <!-- BOTÓN INTERACTIVO: MANIFIESTO LAUSANA -->
+            <div style="margin: 15px 0; text-align: center;">
+                <button class="btn-interactivo btn-texto" onclick="openPopup('pop-lausana')">📜 Documento: El Manifiesto de Lausana de Don Juan de Borbón (1945)</button>
+            </div>
+
+            <!-- VÍDEO COMPLEMENTARIO SOBRE EISENHOWER -->
+            <div style="margin: 20px 0; text-align: center;">
+                <p style="font-size: 0.95rem; color: var(--text-muted); font-style: italic; margin-bottom: 10px;">
+                    ¿Quieres revivir el momento histórico del abrazo entre Franco y Eisenhower en las calles de Madrid, que selló el fin del aislamiento?
+                </p>
+                <a href="https://www.youtube.com/watch?v=vB_NE61nyJ0" target="_blank" class="btn-interactivo btn-video">
+                    🎬 Vídeo complementario: Ver el reportaje del NODO del viaje de Eisenhower en 1959 ➡️
+                </a>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 5 -->
+        <section id="autarquia">
+            <h2>5. Años Cuarenta: Autarquía, Racionamiento y el Mando Económico Canario</h2>
+            <p>La posguerra española estuvo dominada por el hambre, el estancamiento y la miseria extrema. Franco impuso un modelo de <strong>autarquía de inspiración fascista</strong> basado en la pretensión de aislar la economía nacional, conseguir el autoabastecimiento absoluto y regular de forma rígida la producción agraria e industrial.</p>
+
+            <div class="tarjeta-imagen">
+                <img src="img/cartilla-racionamiento-franquista.png" alt="Cartilla de racionamiento de posguerra" style="max-height: 400px;">
+                <span class="caption">Cartilla de racionamiento oficial distribuida por la Comisaría General de Abastecimientos en los duros años de posguerra</span>
+            </div>
+
+            <p>La fijación artificial de precios fijos agrarios por debajo de los costes de producción por parte del Servicio Nacional del Trigo desencadenó el desastre: los labradores ocultaron las cosechas para venderlas en el mercado negro, lo que dio origen al <strong>estraperlo</strong>. El estraperlo sumió en la desnutrición sistemática y la carestía a la clase obrera mientras permitía enriquecerse de forma ilícita a caciques y funcionarios afectos. El Estado racionó de forma estricta el pan, la leche, el aceite y el carbón mediante la obligatoriedad de las <strong>cartillas de racionamiento (1939-1952)</strong>, sufriendo de forma periódica restricciones eléctricas generalizadas hasta el año 1954.</p>
+            
+            <p>Para encauzar la raquítica producción industrial, se fundó en 1941 el <strong>Instituto Nacional de Industria (INI)</strong>, de corte italiano corporativo, nacionalizando el ferrocarril con la creación de <strong>RENFE (1941)</strong>.</p>
+
+            <div class="caja-colores factores">
+                <h4>🌋 El Mando Económico y el Drama en Canarias</h4>
+                <p>La autarquía golpeó con extrema virulencia a las islas al suspender de golpe los beneficios históricos de la <strong>Ley de Puertos Francos</strong>, estrangulando el comercio exterior platanero de exportación con Europa. Ante la amenaza real de hambruna y el desabastecimiento absoluto de harinas y combustibles, el Gobierno decretó en 1941 la creación del <strong>Mando Económico de Canarias</strong>, un organismo en manos militares presidido por el general jefe del archipiélago con plenas competencias sobre comercio, aranceles, transporte y requisa de víveres.</p>
+                <p>Las penurias forzaron a una dramática oleada migratoria clandestina clandestina: más de <strong>70.000 canarios emigraron de forma desesperada a Venezuela y Cuba</strong> a bordo de "veleros fantasma". De forma paralela, el archipiélago se convirtió en un objetivo militar estratégico para las potencias de la Segunda Guerra Mundial, diseñándose planes de invasión preventivos que afortunadamente no se materializaron: la alemana <em>Operación Félix</em> y la británica <em>Operación Pilgrim</em> (para tomar Gran Canaria y Tenerife en caso de caída de Gibraltar).</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- POPUPS INTERACTIVOS (MODALS) -->
+
+    <!-- POPUP 1: CATECISMO -->
+    <div id="pop-catecismo" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closePopup('pop-catecismo')">&times;</span>
+            <h3 style="color: #1e40af; margin-top: 0;">📜 El Catecismo Patriótico Español (Edición de 1939)</h3>
+            <p>Extractos de los textos escolares oficiales utilizados para el adoctrinamiento escolar de posguerra:</p>
+            <div class="texto-modal">"El Estado español es la nación misma organizada en funciones de derecho y para el mejor cumplimiento de sus fines, en un régimen corporativo nacional-sindicalista, bajo la suprema autoridad del Caudillo Generalísimo Franco.
+
+En España no hay división de poderes, sino unidad de mando y de dirección, bajo el orden y la jerarquía.
+
+Don Francisco Franco Bahamonde es el Jefe del Estado español. Él, ganando la guerra de liberación, libró a España del yugo extranjero. Pero él también ha sabido ganar la batalla de la paz, convirtiendo en realidad el lema: España Una, Grande y Libre.
+
+España Una, porque acabó con los partidos políticos y los separatismos que enfrentaban a los españoles en lucha fratricida. España Grande, porque ha progresado en la industria y la agricultura. España Libre, porque gracias a él los españoles disponen de sus destinos sin ceder nunca a las presiones extranjeras."</div>
+        </div>
+    </div>
+
+    <!-- POPUP 2: TESTIMONIO REPRESIÓN -->
+    <div id="pop-testimonio-represion" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closePopup('pop-testimonio-represion')">&times;</span>
+            <h3 style="color: #b45309; margin-top: 0;">🕵️‍♂️ El testomonio de la represión de posguerra</h3>
+            <p>El crudo testimonio de Heliodoro Villar (recogido en 2003), militante de las Juventudes Socialistas, sobre el terror de los pelotones de fusilamiento informales de la Falange:</p>
+            <div class="texto-modal">"La noche del 16 de agosto, fueron a buscarme un grupo de falangistas. Después de tres días de palos y ricino, a las 11 de la noche me sacaron de Valderas en dirección a Villanueva del Campo. Íbamos a pie. (...)
+
+Me llevaban entre siete. Fue rápido. Momentos antes de que me dispararan se acercó uno y me dijo: 'no lo puedo evitar, te matan'.
+
+Al momento de separarse llegó la descarga. Caí al suelo. Creí que estaba muerto. Me alumbraron con una linterna. Dijo uno:
+- ¿Le damos el tiro de gracia?
+- Ya tiene bastante - respondieron.
+
+Yo, a pesar de mi estado, oía el murmullo. Me di cuenta de que estaba vivo."</div>
+        </div>
+    </div>
+
+    <!-- POPUP 3: RESOLUCIÓN ONU -->
+    <div id="pop-resolucion-onu" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closePopup('pop-resolucion-onu')">&times;</span>
+            <h3 style="color: #ef4444; margin-top: 0;">📜 La Resolución 39 de la Asamblea General de la ONU (12 de diciembre de 1946)</h3>
+            <p>El texto de condena internacional que impuso el ostracismo diplomático a la dictadura franquista:</p>
+            <div class="texto-modal">"En origen, naturaleza, estructura y conducta general, el régimen de Franco es un régimen de carácter fascista, establecido en gran parte gracias a la ayuda recibida de la Alemania nazi de Hitler y de la Italia fascista de Mussolini.
+
+Durante la prolongada lucha de las Naciones Unidas contra Hitler y Mussolini, Franco, a pesar de las continuas protestas de los Aliados, prestó una ayuda considerable a las potencias enemigas...
+
+Recomienda que se excluya al Gobierno español de Franco como miembro de los organismos internacionales establecidos por las Naciones Unidas (...) hasta que se instaure en España un gobierno nuevo y aceptable. (...)
+
+Recomienda que todos los miembros de las Naciones Unidas retiren inmediatamente a sus embajadores y ministros plenipotenciarios acreditados en Madrid."</div>
+        </div>
+    </div>
+
+    <!-- POPUP 4: MANIFIESTO LAUSANA -->
+    <div id="pop-lausana" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closePopup('pop-lausana')">&times;</span>
+            <h3 style="color: #047857; margin-top: 0;">📜 El Manifiesto de Lausana (19 de marzo de 1945)</h3>
+            <p>La proclama del pretendiente al trono Don Juan de Borbón demandando el fin de la dictadura fascista tras el desenlace aliado:</p>
+            <div class="texto-modal">"Españoles:
+
+El régimen implantado por el general Franco, inspirado en los modelos totalitarios de las potencias del Eje, es incompatible con la paz de Europa y con el ordenamiento constitucional democrático que España necesita.
+
+La monarquía tradicional debe restaurarse en mi persona, no como un retorno a lo pasado, sino como una corona constitucional abierta a todos los españoles, que garantice la reconciliación sin represalias, el pluralismo político, la separación de poderes y la autonomía territorial regional de nuestros pueblos, con olvido de las pasadas responsabilidades de nuestra guerra civil."</div>
+        </div>
+    </div>
+
+    <script>
+        const links = document.querySelectorAll('aside nav ul li a');
+        const sections = document.querySelectorAll('main section');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (window.scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            links.forEach(a => {
+                const href = a.getAttribute('href');
+                if (href && href.startsWith('#')) {
+                    a.classList.remove('active');
+                    if (href === `#${current}`) {
+                        a.classList.add('active');
+                    }
+                }
+            });
+        });
+
+        function openPopup(id) {
+            document.getElementById(id).classList.add('show');
+        }
+
+        function closePopup(id) {
+            document.getElementById(id).classList.remove('show');
+        }
+
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.classList.remove('show');
+            }
+        }
+    </script>
+</body>
+</html>

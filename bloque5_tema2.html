@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloque V - Tema 2: Desarrollismo Tecnócrata y tardofranquismo (1959 - 1975)</title>
+    
+    <style>
+        :root {
+            --primary-intense: #1e40af;
+            --primary-vibrant: #2563eb;
+            --primary-dark: #0f172a;
+            --primary: #1e293b;
+            --bg-main: #f8fafc;
+            --card-bg: #ffffff;
+            --text-dark: #1e293b;
+            --text-muted: #64748b;
+            
+            --header-bg: #f0fdf4;
+            --header-border: #10b981;
+            --header-text: #065f46;
+
+            --border-glosario: #0ea5e9;
+            --bg-glosario: #f0f9ff;
+            --border-investigacion: #f59e0b;
+            --bg-investigacion: #fffbeb;
+            --border-critica: #ef4444;
+            --bg-critica: #fef2f2;
+            --border-factores: #10b981;
+            --bg-factores: #ecfdf5;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-dark);
+            min-height: 100vh;
+        }
+
+        aside {
+            width: 300px;
+            background-color: var(--primary-dark);
+            color: white;
+            padding: 25px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            overflow-y: auto;
+            border-right: 1px solid #334155;
+            z-index: 100;
+        }
+
+        aside h1 {
+            font-size: 1.25rem;
+            margin-bottom: 25px;
+            color: #f8fafc;
+            border-bottom: 3px solid var(--primary-vibrant);
+            padding-bottom: 12px;
+            text-align: center;
+        }
+
+        aside nav ul {
+            list-style: none;
+        }
+
+        aside nav ul li {
+            margin-bottom: 10px;
+        }
+
+        aside nav ul li a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 0.95rem;
+            display: block;
+            padding: 10px 14px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            font-weight: 500;
+        }
+
+        aside nav ul li .btn-volver {
+            background-color: #334155;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+            border: 1px solid #475569;
+            margin-bottom: 15px;
+            display: block;
+            padding: 10px 14px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            text-decoration: none;
+        }
+
+        aside nav ul li .btn-volver:hover {
+            background-color: var(--primary-vibrant);
+            border-color: var(--primary-vibrant);
+        }
+
+        aside nav ul li a:hover, aside nav ul li a.active {
+            background-color: var(--primary-vibrant);
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(37, 99, 235, 0.15);
+        }
+
+        main {
+            margin-left: 300px;
+            padding: 40px;
+            max-width: 1100px;
+        }
+
+        header {
+            margin-bottom: 35px;
+            background: linear-gradient(135deg, var(--header-bg), #e6fcf0);
+            border-left: 6px solid var(--header-border);
+            color: var(--header-text);
+            padding: 25px 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(16, 185, 129, 0.08);
+        }
+
+        header h2 {
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+            color: var(--header-text);
+            font-weight: 800;
+        }
+
+        header p {
+            color: #15803d;
+            font-size: 1.05rem;
+            font-weight: 500;
+        }
+
+        section {
+            background: var(--card-bg);
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            margin-bottom: 35px;
+            border-left: 6px solid var(--primary-vibrant);
+        }
+
+        section h2 {
+            color: var(--primary-dark);
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #f1f5f9;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: var(--primary-intense);
+            margin: 25px 0 12px 0;
+            font-size: 1.25rem;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+            color: #334155;
+            text-align: justify;
+        }
+
+        /<em> CONTENEDOR DE IMAGEN (ANTI-SOLAPAMIENTO) </em>/
+        .tarjeta-imagen {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 20px 0 30px 0;
+            text-align: center;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            display: block;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tarjeta-imagen img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            margin-bottom: 12px;
+            display: inline-block;
+        }
+
+        .tarjeta-imagen .caption {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            font-style: italic;
+            margin: 0;
+            line-height: 1.4;
+            display: block;
+        }
+
+        /<em> FILAS DE IMÁGENES COMPATIBLES (ADAPTATIVAS) </em>/
+        .fila-imagenes {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0 30px 0;
+        }
+
+        .fila-imagenes .tarjeta-imagen {
+            flex: 1;
+            min-width: 250px;
+            margin: 0;
+        }
+
+        .caja-colores {
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-size: 1rem;
+        }
+
+        .caja-colores h4 {
+            margin-bottom: 10px;
+            font-size: 1.15rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .factores {
+            background-color: var(--bg-factores);
+            border-left: 5px solid var(--border-factores);
+            color: #047857;
+        }
+
+        .investigacion {
+            background-color: var(--bg-investigacion);
+            border-left: 5px solid var(--border-investigacion);
+            color: #b45309;
+        }
+
+        .critica {
+            background-color: var(--bg-critica);
+            border-left: 5px solid var(--border-critica);
+            color: #b91c1c;
+        }
+
+        ul {
+            padding-left: 25px;
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #334155;
+        }
+
+        /<em> POPUPS INTERACTIVOS </em>/
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(4px);
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal.show {
+            display: flex;
+        }
+
+        .modal-content {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            max-width: 650px;
+            width: 90%;
+            max-height: 85vh;
+            overflow-y: auto;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            border-left: 6px solid var(--border-investigacion);
+            position: relative;
+            animation: modalFadeIn 0.3s ease-out;
+        }
+
+        @keyframes modalFadeIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-muted);
+        }
+
+        .modal-close:hover {
+            color: var(--border-critica);
+        }
+
+        .btn-interactivo {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            margin: 8px 0;
+            border: none;
+        }
+
+        .btn-anecdota {
+            background-color: var(--bg-investigacion);
+            border: 1px solid var(--border-investigacion);
+            color: #b45309;
+        }
+
+        .btn-anecdota:hover {
+            background-color: var(--border-investigacion);
+            color: white;
+        }
+
+        .btn-texto {
+            background-color: var(--bg-factores);
+            border: 1px solid var(--border-factores);
+            color: #047857;
+        }
+
+        .btn-texto:hover {
+            background-color: var(--border-factores);
+            color: white;
+        }
+
+        .btn-video {
+            background-color: var(--bg-glosario);
+            border: 1px solid var(--border-glosario);
+            color: #0369a1;
+        }
+
+        .btn-video:hover {
+            background-color: var(--border-glosario);
+            color: white;
+        }
+
+        .texto-modal {
+            font-size: 0.95rem;
+            color: #334155;
+            background-color: #f8fafc;
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px solid #e2e8f0;
+            white-space: pre-wrap;
+            margin-top: 10px;
+            text-align: justify;
+        }
+
+        @media (max-width: 900px) {
+            aside {
+                width: 100%;
+                height: auto;
+                position: relative;
+                border-right: none;
+                border-bottom: 1px solid #334155;
+            }
+            main {
+                margin-left: 0;
+                width: 100%;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navegación Lateral -->
+    <aside>
+        <h1>🏛️ Bloque V: El Franquismo</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="btn-volver">🏠 Volver a Portada</a></li>
+                
+                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 10px 14px 5px 14px; font-weight: bold; border-bottom: 1px solid #334155; margin-bottom: 8px;">📍 Secciones</li>
+                
+                <li><a href="#estabilizacion" class="active">1. El Plan de Estabilización</a></li>
+                <li><a href="#planes-desarrollo">2. Los Planes de Desarrollo</a></li>
+                <li><a href="#matesa">3. Apertura y Escándalo Matesa</a></li>
+                <li><a href="#oposicion">4. Despertar de la Oposición</a></li>
+                <li><a href="#tardofranquismo">5. Crisis y Marcha Verde</a></li>
+                <li><a href="#canarias-desarrollo">6. Desarrollismo en Canarias</a></li>
+
+                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 20px 14px 5px 14px; font-weight: bold; border-top: 1px solid #475569; margin-top: 25px; border-bottom: 1px solid #334155; margin-bottom: 8px;">📖 Temas del Bloque V</li>
+                <li><a href="bloque5_tema1.html">Tema 1: Autarquía e Isolation</a></li>
+                <li><a href="bloque5_tema2.html" class="active">Tema 2: Desarrollismo y Crisis</a></li>
+
+                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 15px 14px 5px 14px; font-weight: bold; border-top: 1px solid #475569; margin-top: 15px; border-bottom: 1px solid #334155; margin-bottom: 8px;">📚 Otros Bloques</li>
+                <li><a href="tema0.html">Tema 0: Introducción</a></li>
+                <li><a href="bloque1_tema1.html">Bloque I: Estado Liberal</a></li>
+                <li><a href="bloque2_tema1.html">Bloque II: La Restauración</a></li>
+                <li><a href="bloque3_tema1.html">Bloque III: Alfonso XIII y Dictadura</a></li>
+                <li><a href="bloque4_tema1.html">Bloque IV: República y Guerra</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Contenido Principal -->
+    <main>
+        
+        <header>
+            <h2>Tema 2: El Desarrollismo Tecnócrata y la Crisis del Franquismo (1959 - 1975)</h2>
+            <p>La definitiva apertura de la dictadura a los mercados capitalistas, el rápido proceso de industrialización y éxodo rural, las contradicciones de una sociedad de consumo desprovista de libertades y el desmoronamiento final del régimen.</p>
+        </header>
+
+        <div class="tarjeta-imagen" style="margin-top: 0;">
+            <img src="img/eje-cronologico-franquismo2.png" alt="Eje Cronológico del Franquismo: Segunda Etapa (1959 - 1975)">
+            <span class="caption">Eje temporal que delimita la era tecnócrata desarrollista, la reorganización de la retaguardia de la oposición y el derrumbe institucional del tardofranquismo</span>
+        </div>
+
+        <!-- SECCIÓN 1 -->
+        <section id="estabilizacion">
+            <h2>1. El Giro Tecnócrata y el Plan de Estabilización de 1959</h2>
+            <p>A finales de la década de los cincuenta, las posibilidades del aislamiento y el control autárquico de la economía nacional se hallaban agotadas por completo. Con las reservas de divisas del Banco de España bajo mínimos, una inflación descontrolada y al borde de la suspensión internacional de pagos, Franco se vio obligado a realizar una profunda remodelación gubernamental en 1957.</p>
+
+            <div class="tarjeta-imagen">
+                <img src="img/franco-tecnocratas.png" alt="Franco rodeado de los ministros tecnócratas del Opus Dei" style="max-height: 350px;">
+                <span class="caption">El dictador Francisco Franco despachando con los tecnócratas del Opus Dei, encargados de sanear las finanzas del Estado</span>
+            </div>
+
+            <p>La dirección económica de la dictadura fue entregada a una nueva generación de políticos, los llamados <strong>tecnócratas</strong>, muchos de ellos pertenecientes al <em>Opus Dei</em> (como <em>Mariano Navarro Rubio</em> en Hacienda, <em>Alberto Ullastres</em> en Comercio y <em>Laureano López Rodó</em> en la Secretaría General de Presidencia). Su perfil era más técnico y pragmático que ideológico, y propugnaban de forma prioritaria la liberalización económica para garantizar la supervivencia del propio régimen.</p>
+
+            <p>La pieza jurídica fundamental de esta reforma fue el histórico <strong>Plan de Estabilización Nacional (1959)</strong>. Su finalidad fue acabar con la autarquía y reinsertar la economía española en los mercados internacionales capitalistas por medio de tres grandes ejes:</p>
+            <ul>
+                <li><strong>Estabilización económica interior:</strong> Recortes drásticos del gasto público para reducir el déficit del Estado, elevación de tipos de interés y congelación temporal de los salarios reales.</li>
+                <li><strong>Liberalización comercial interior:</strong> Abolición de los rígidos reglamentos estatales y fin del control de los precios fijos de consumo de posguerra.</li>
+                <li><strong>Liberalización exterior de la economía:</strong> Eliminación de las trabas arancelarias a las importaciones, fomento de la entrada masiva de capitales de inversión extranjeros y una <strong>devaluación de la peseta de casi el 50%</strong> (fijándose una tasa de cambio única de 60 pesetas por dólar) para incentivar las exportaciones.</li>
+            </ul>
+
+            <div class="tarjeta-imagen">
+                <img src="img/esquema-plan-estabilizacion.png" alt="Esquema estructural de los tres ejes de actuación del Plan de Estabilización de 1959">
+                <span class="caption">Cuadro didáctico de síntesis que resume el saneamiento económico y los procesos de liberalización comercial interior y exterior del Plan de 1959</span>
+            </div>
+
+            <p>La dictadura superó el estrangulamiento gracias a créditos de rescate del Fondo Monetario Internacional (FMI) y la OCDE, abriendo paso al denominado <em>Milagro Económico Español</em> de los años sesenta, sustentado en tres fundamentales <strong>motores de divisas extranjeras</strong>:</p>
+            <ul>
+                <li><strong>El auge del turismo de masas:</strong> Millones de turistas europeos invadieron las costas atraídos por los bajos precios y el clima, inyectando ingentes cantidades de divisas.</li>
+                <li><strong>Las remesas de los emigrantes:</strong> El envío masivo de dinero de cientos de miles de trabajadores españoles emigrados de forma forzosa a Francia, Suiza y Alemania Occidental.</li>
+                <li><strong>La inversión industrial extranjera:</strong> Atraída por los ínfimos salarios obreros y la férrea disciplina patronal garantizada por la dictadura.</li>
+            </ul>
+        </section>
+
+        <!-- SECCIÓN 2 -->
+        <section id="planes-desarrollo">
+            <h2>2. Los Planes de Desarrollo y la Gran Transformación Demográfica</h2>
+            <p>Bajo la dirección del ministro del Plan de Desarrollo, <em>Laureano López Rodó</em>, se implantaron tres <strong>Planes de Desarrollo Económico y Social (1964-1975)</strong> de vigencia cuatrienal. Consistieron en una planificación indicativa estatal para subvencionar, dar ventajas fiscales o rebajas tributarias a las empresas privadas seleccionadas y promover el establecimiento de <strong>polos de desarrollo industrial</strong> en provincias atrasadas (como Zaragoza, Burgos, Valladolid, Huelva, Sevilla o Granada) para reducir las desigualdades regionales.</p>
+
+            <p>Aunque la planificación fue ineficaz y muchos recursos se dilapidaron por corruptelas burocráticas, España experimentó un <strong>intenso crecimiento industrial superior al 10% anual</strong>, diversificando la siderurgia, la petroquímica y la industria metalúrgica de bienes de consumo.</p>
+
+            <div class="tarjeta-imagen">
+                <img src="img/seat-600.png" alt="Cadena de montaje y popularidad del Seat 600" style="max-height: 350px;">
+                <span class="caption">La cadena de montaje de la factoría SEAT, cuyo modelo Seat 600 se convirtió en el icono indiscutible del nacimiento de la nueva clase media de consumo</span>
+            </div>
+
+            <p>Este vertiginoso desarrollismo reconfiguró de forma irreversible el mapa sociodemográfico del país, provocando un colosal <strong>éxodo rural</strong>: más de 2,5 millones de campesinos abandonaron la miseria agraria de Andalucía, Extremadura y el interior peninsular para convertirse en proletariado urbano en los ensanches industriales de Barcelona, el País Vasco y Madrid. Este despoblamiento dio origen a la llamada <em>España vaciada</em> y propició un crecimiento urbanístico caótico y superpoblado en las periferias de las grandes urbes (aparición de las <em>ciudades dormitorio</em>).</p>
+            <p>Simultáneamente, coincidiendo con el estallido de natalidad del <strong>baby boom</strong> (que elevó la población a 34 millones en 1970), se consolidó la <strong>sociedad de consumo</strong>, generalizándose en los hogares de clase media urbana la adquisición del frigorífico, el televisor y el utilitario <strong>Seat 600</strong>.</p>
+        </section>
+
+        <!-- SECCIÓN 3 -->
+        <section id="matesa">
+            <h2>3. Apertura Limitada y el Escándalo Matesa (1969)</h2>
+            <p>Ante las transformaciones sociológicas del país, la dictadura intentó una cautelosa apertura institucional para lavar su imagen totalitaria sin alterar en absoluto el inmovilismo político. El ministro de Información y Turismo, <em>Manuel Fraga Iribarne</em>, promovió la <strong>Ley de Prensa de 1966</strong> (conocida como la <em>Ley Fraga</em>), que suprimía la censura previa gubernativa, aunque mantenía la potestad judicial de multar de forma severa y decretar el secuestro de publicaciones críticas.</p>
+            <p>Se promulgó también la <strong>Ley Orgánica del Estado (1967)</strong>, aprobada en un plebiscito controlado, que regulaba la representatividad de la <em>democracia orgánica</em> basada en los tres "cauces naturales" (familia, municipio y sindicato), separaba la presidencia del Gobierno de la Jefatura del Estado y culminaba en julio de 1969 con la designación del príncipe <strong>Juan Carlos de Borbón como sucesor de Franco</strong> a título de rey.</p>
+
+            <div class="tarjeta-imagen">
+                <img src="img/retrato-fraga-padrino.png" alt="Caricatura del ministro Fraga Iribarne en la revista satírica La Codorniz de 1969" style="max-height: 250px;">
+                <span class="caption">La célebre caricatura de Manuel Fraga en la prensa satírica de la época, reflejando el clima de tímida libertad de prensa de finales de los sesenta</span>
+            </div>
+
+            <p>Sin embargo, las tensiones de poder entre las diferentes familias franquistas estallaron de forma estrepitosa con el <strong>Escándalo Matesa (1969)</strong>. La empresa de maquinaria textil <em>Matesa</em> de <em>Juan Vilá Reyes</em>, apoyada de forma preferente con subvenciones de los ministerios tecnócratas por su labor exportadora, fue objeto de una investigación policial que destapó una escandalosa trama de exportaciones ficticias y malversación de créditos públicos por más de 9.000 millones de pesetas.</p>
+            <p>El ala falangista de la dictadura (el sector azul) aprovechó el escándalo para emprender una demoledora campaña de prensa y exigir la dimisión de los ministros tecnócratas del Opus Dei. Franco zanjó la pugna con un expeditivo cambio de Gobierno en octubre de 1969, destituyendo a Fraga y al falangista Solís, y formando un <strong>Gobierno monocolor</strong> dominado de forma absoluta por los tecnócratas leales a <em>Luis Carrero Blanco</em>.</p>
+
+            <!-- BOTÓN INTERACTIVO: MATESA -->
+            <div style="margin: 15px 0; text-align: center;">
+                <button class="btn-interactivo btn-anecdota" onclick="openPopup('pop-matesa')">🕵️‍♂️ Descubre: Las Cortes franquistas ante el sumario judicial de Matesa (1970)</button>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 4 -->
+        <section id="oposicion">
+            <h2>4. El Despertar de la Oposición Social y el Contubernio de Múnich</h2>
+            <p>La modernización del país contrastó con la parálisis autoritaria, desatando una creciente contestación social y el renacimiento clandestino de la oposición política:</p>
+            <ul>
+                <li><strong>El movimiento obrero clandestino:</strong> El rechazo al Sindicato Vertical oficial se canalizó a partir de las elecciones de 1966 por las <strong>Comisiones Obreras (CCOO)</strong> de <em>Marcelino Camacho</em> y del Partido Comunista de España (PCE), organizando asambleas de fábrica, boicots y huelgas ilegales reprimidas con dureza por la Brigada Político-Social.</li>
+                <li><strong>El Contubernio de Múnich (1962):</strong> Un hito en la unificación opositora. Un grupo de 118 delegados españoles de la oposición moderada interior (monárquicos, democristianos y liberales) y del exilio republicano y socialista se reunió en el IV Congreso del Movimiento Europeo en Múnich para firmar una resolución conjunta exigiendo libertades democráticas antes de admitir a España en la CEE. La dictadura los tachó de traidores y desterró a los participantes.</li>
+                <li><strong>La reorganización del socialismo:</strong> El histórico PSOE, debilitado en el interior, sufrió una renovación generacional en su Congreso de Suresnes (Francia, 1974) eligiendo como secretario general al joven abogado sevillano <em>Felipe González</em>.</li>
+                <li><strong>El rebrote de los nacionalismos y el terrorismo de ETA:</strong> En Cataluña nació el partido moderado <em>Convergencia Democrática de Cataluña</em> de <em>Jordi Pujol</em>. En el País Vasco, una escisión de las juventudes del PNV fundó en 1959 la banda armada <strong>ETA (Euskadi ta Askatasuna)</strong>, que inició en 1968 una campaña sistemática de atentados terroristas que provocó una extrema respuesta represiva del Estado en el <em>Proceso de Burgos (1970)</em>.</li>
+            </ul>
+
+            <!-- BOTÓN INTERACTIVO: MUNICH -->
+            <div style="margin: 15px 0; text-align: center;">
+                <button class="btn-interactivo btn-texto" onclick="openPopup('pop-munich')">📜 Documento: La Declaración del Contubernio de Múnich (junio de 1962)</button>
+            </div>
+
+            <!-- BOTÓN INTERACTIVO: RECONCILIACIÓN PCE -->
+            <div style="margin: 15px 0; text-align: center;">
+                <button class="btn-interactivo btn-texto" onclick="openPopup('pop-reconciliacion-pce')">📜 Documento: Declaración de Reconciliación Nacional del PCE (1956)</button>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 5 -->
+        <section id="tardofranquismo">
+            <h2>5. El Colapso del Tardofraquismo: Del Magnicidio a la Marcha Verde</h2>
+            <p>La fase final del franquismo estuvo marcada por la crisis económica internacional de 1973 (el encarecimiento del petróleo que detuvo el milagro desarrollista), la senilidad del dictador y el enfrentamiento armado entre <em>aperturistas</em> e <em>inmovilistas</em> (el búnker).</p>
+
+            <div class="tarjeta-imagen">
+                <img src="img/atentado-carrero-blanco.png" alt="Lugar del atentado del almirante Luis Carrero Blanco" style="max-height: 350px;">
+                <span class="caption">El cráter y el vehículo oficial destrozado en el patio del edificio de los Jesuitas tras el magnicidio de Claudio Coello el 20 de diciembre de 1973</span>
+            </div>
+
+            <p>El golpe de gracia a la continuidad de la dictadura se produjo el <strong>20 de diciembre de 1973</strong>, cuando un comando de ETA ejecutó la <em>Operación Ogro</em>, haciendo estallar una potente bomba subterránea de dinamita en la calle madrileña de Claudio Coello al paso del vehículo del recién nombrado presidente del Gobierno, el <strong>almirante Luis Carrero Blanco</strong>. El magnicidio destruyó el cerebro militar destinado a heredar la dictadura y asegurar el franquismo sin Franco.</p>
+            <p>El nuevo Gobierno presidido por <em>Carlos Arias Navarro</em> anunció un tímido aperturismo (el <em>espíritu del 12 de febrero</em>), rápidamente asfixiado por el inmovilismo del búnker. Ante el incremento de atentados de ETA y del FRAP, el régimen decretó el estado de excepción permanente y firmó las <strong>ejecuciones a muerte de cinco militantes en septiembre de 1975</strong>, desatando una unánime ola de condena internacional, la quema de embajadas españolas y la retirada en cadena de embajadores europeos.</p>
+
+            <p>La debilidad extrema de la dictadura fue aprovechada por el rey <em>Hassan II</em> de Marruecos para forzar la entrega del Sáhara Español organizando la <strong>Marcha Verde (noviembre de 1975)</strong>, una invasión civil pacífica de más de 350.000 marroquíes armados con el Corán. Arias Navarro claudicó firmando los <strong>Acuerdos de Madrid (14 de noviembre de 1975)</strong>, entregando la administración del Sáhara a Marruecos y Mauritania y traicionando la promesa de referéndum contraída con el pueblo saharaui.</p>
+            <p>Finalmente, tras una penosa agonía clínica, <strong>Francisco Franco falleció el 20 de noviembre de 1975</strong> a los 83 años de edad. En cumplimiento de la ley de sucesión, <em>Juan Carlos I de Borbón</em> fue proclamado Rey, abriéndose de forma imprevista para el búnker el camino hacia la Transición democrática.</p>
+
+            <!-- BOTÓN INTERACTIVO: ATENTADO CARRERO -->
+            <div style="margin: 15px 0; text-align: center;">
+                <button class="btn-interactivo btn-anecdota" onclick="openPopup('pop-carrero')">🕵️‍♂️ Descubre: Los detalles de Claudio Coello y la muerte de Carrero Blanco (1973)</button>
+            </div>
+
+            <!-- BOTÓN INTERACTIVO: JUNTA DEMOCRÁTICA -->
+            <div style="margin: 15px 0; text-align: center;">
+                <button class="btn-interactivo btn-texto" onclick="openPopup('pop-junta-democratica')">📜 Documento: Los 12 Puntos del Manifiesto de la Junta Democrática (1974)</button>
+            </div>
+
+            <!-- VÍDEO COMPLEMENTARIO SOBRE LA CRISIS FINAL -->
+            <div style="margin: 20px 0; text-align: center;">
+                <p style="font-size: 0.95rem; color: var(--text-muted); font-style: italic; margin-bottom: 10px;">
+                    ¿Deseas profundizar en las maniobras militares de la Marcha Verde y el pánico del gobierno de Madrid ante el Sáhara en 1975?
+                </p>
+                <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                    <a href="https://www.youtube.com/watch?v=5XhfPgoCqgk" target="_blank" class="btn-interactivo btn-video">
+                        🎬 Vídeo complementario: El asesinato de Luis Carrero Blanco ➡️
+                    </a>
+                    <a href="https://www.youtube.com/watch="g2rvSrrH3iA" target="_blank" class="btn-interactivo btn-video">
+                        🎬 Vídeo complementario: La Marcha Verde sobre el Sáhara Occidental ➡️
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 6 -->
+        <section id="canarias-desarrollo">
+            <h2>6. El Desarrollismo en Canarias: Boom Turístico y Sindicatos Clandestinos</h2>
+            <p>La segunda fase del franquismo tuvo en el archipiélago canario una expresión singular caracterizada por una profunda mutación del paisaje costero, la reactivación mercantil y la andadura de los movimientos nacionalistas:</p>
+
+            <div class="tarjeta-imagen">
+                <img src="img/turismo-martianez.png" alt="Evolución turística del Puerto de la Cruz en Tenerife (1950 vs 1964)" style="max-height: 380px;">
+                <span class="caption">Comparativa del Puerto de la Cruz: de caleta de pescadores en los años cincuenta a baluarte del despegue turístico del monteverde</span>
+            </div>
+
+            <ul>
+                <li><strong>La reapertura de los Puertos Francos (1960):</strong> Atendiendo a las demandas de la burguesía insular expuestas a Franco en su visita de 1950, el Gobierno reestableció las franquicias comerciales en 1960, revitalizando de inmediato la actividad portuaria y la importación de bienes de equipo.</li>
+                <li><strong>El brutal Boom Turístico de Masas:</strong> El sector servicios y la construcción experimentaron un crecimiento colosal. Se urbanizaron de forma desenfrenada parajes naturales del litoral canario (como el sur de Gran Canaria con Playa del Inglés, el sur de Tenerife, o el Puerto de la Cruz con el complejo de ocio diseñado por <em>César Manrique</em> en el Lago Martiánez), atrayendo a millones de turistas alemanes y británicos y duplicando la población activa dedicada a la terciarización. La población del archipiélago se duplicó en pocos años, pasando de algo menos de 700.000 habitantes en 1939 a casi 1,3 millones en 1975.</li>
+                <li><strong>El despertar obrero y los Sucesos de Sardina (1966):</strong> En 1966, las clandestinas Comisiones Obreras (CCOO) vinculadas al PCE y a grupos católicos se consolidaron como la fuerza dirigente de la resistencia, organizando huelgas portuarias y el célebre choque obrero con la policía en los <em>Sucesos de Sardina del Norte</em> en Gran Canaria.</li>
+                <li><strong>El independentismo canario:</strong> Nació la organización clandestina <em>Canarias Libre</em> (1959) del activista <em>Fernando Sagaseta</em>. En 1964, el abogado exiliado en Argelia <em>Antonio Cubillo</em> fundó el <strong>MPAIAC (Movimiento Para la Autodeterminación e Independencia del Archipiélago Canario)</strong>, que con su bandera tricolor de las siete estrellas verdes y el soporte radiofónico de <em>La Voz de Canarias Libre</em> desde Argel comenzó a orientar su actividad hacia la lucha armada a finales del franquismo.</li>
+                <li><strong>El colapso de la entrega del Sáhara (1975):</strong> El abandono vergonzoso del Sáhara Occidental supuso un golpe traumático en las islas orientales: forzó la repatriación desordenada de miles de familias canarias residentes en la colonia africana y desmanteló de inmediato la actividad pesquera de la flota artesanal canaria, privada de faenar de golpe en el rico banco sahariano por la hostilidad del reino alauita.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- POPUPS INTERACTIVOS (MODALS) -->
+
+    <!-- POPUP 1: CASO MATESA -->
+    <div id="pop-matesa" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closePopup('pop-matesa')">&times;</span>
+            <h3 style="color: #1e40af; margin-top: 0;">📜 El Dictamen de las Cortes sobre el Caso Matesa (Pleno Secreto de Julio de 1970)</h3>
+            <p>Las actas de la comisión de investigación de las Cortes franquistas que destaparon la negligencia del Gobierno tecnócrata:</p>
+            <div class="texto-modal">"El sumario instruido por las irregularidades de la firma Maquinaria Textil del Norte de España, S.A. (Matesa) de don Juan Vilá Reyes revela una colosal negligencia y absoluta falta de control en la concesión de créditos a la exportación concedidos preferentemente por el Banco de Crédito Industrial.
+
+La empresa percibió créditos oficiales por valor de más de 9.000 millones de pesetas para exportaciones de telares que resultaron ficticias, ya que los telares eran almacenados en puertos extranjeros o devueltos en secreto sin haber sido vendidos.
+
+La comisión de las Cortes acuerda elevar al Tribunal Supremo la propuesta de encausamiento de los exministros de Hacienda, don Mariano Navarro Rubio, y de Comercio, don Alberto Ullastres, por grave abandono y negligencia en sus funciones de control presupuestario y de divisas oficiales del Estado.
+
+(Nota: Franco concedió un oportuno indulto general a los exministros tecnócratas indultados de facto para enterrar la campaña del sector azul falangista)."</div>
+        </div>
+    </div>
+
+    <!-- POPUP 2: ATENTADO CARRERO -->
+    <div id="pop-carrero" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closePopup('pop-carrero')">&times;</span>
+            <h3 style="color: #ef4444; margin-top: 0;">🩸 El Magnicidio de Claudio Coello y la Muerte de Carrero Blanco (1973)</h3>
+            <p>Los pormenores de la Operación Ogro, el atentado que destruyó la línea de sucesión del régimen franquista:</p>
+            <div class="texto-modal">"El jueves 20 de diciembre de 1973, a las 9:30 de la mañana, tras haber asistido a misa en la iglesia de San Francisco de Borja, el presidente del Gobierno, el almirante Luis Carrero Blanco, subió a su automóvil oficial Dodge Dart.
+
+Al llegar a la altura del número 104 de la calle Claudio Coello, esquina con Maldonado, los miembros del comando de ETA activaron desde un semisótano cercano un detonador que hizo estallar una inmensa mina cargada con 100 kilogramos de dinamita colocada en un túnel excavado bajo el asfalto.
+
+La potencia de la explosión fue tan tremenda que lanzó al vehículo, de dos toneladas de peso, a una altura de más de veinte metros por los aires. El automóvil voló por encima del edificio de los Jesuitas y cayó dentro del patio interior, quedando sepultado.
+
+El almirante Carrero Blanco, su escolta don Juan Antonio Bueno Fernández y el conductor don José Luis Pérez Mogena fallecieron en el acto, abriendo una insalvable crisis de liderazgo en el seno del búnker."</div>
+        </div>
+    </div>
+
+    <!-- POPUP 3: CONGRESO MÚNICH -->
+    <div id="pop-munich" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closePopup('pop-munich')">&times;</span>
+            <h3 style="color: #047857; margin-top: 0;">📜 La Declaración de los 118 Delegados Españoles en Múnich (IV Congreso del Movimiento Europeo, junio de 1962)</h3>
+            <p>La histórica resolución de concordia firmada conjuntamente por la oposición interior y del exilio que la prensa de Franco tachó de 'Contubernio':</p>
+            <div class="texto-modal">"El IV Congreso del Movimiento Europeo, reunido en la ciudad de Múnich, considera de forma unánime que no es lícito integrar en el proceso de unificación europea a ningún Estado cuyas instituciones no garanticen la democracia y las libertades ciudadanas fundamentales.
+
+Por ello, los delegados españoles de la oposición del interior y del exilio firman el compromiso común de exigir al régimen español de Franco las siguientes bases democráticas:
+
+1.º La instauración de instituciones auténticamente representativas y democráticas electas.
+2.º La efectiva garantía de los derechos de las personas, en especial los de libertad personal, de reunión y de expresión, con supresión absoluta de la censura previa gubernativa.
+3.º El reconocimiento de la personalidad y particularidades de las distintas comunidades regionales.
+4.º El ejercicio de las libertades sindicales sobre bases democráticas, y de la defensa por los trabajadores de sus derechos mediante el ejercicio del derecho a huelga."</div>
+        </div>
+    </div>
+
+    <!-- POPUP 4: JUNTA DEMOCRÁTICA -->
+    <div id="pop-junta-democratica" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closePopup('pop-junta-democratica')">&times;</span>
+            <h3 style="color: #1e293b; margin-top: 0;">📜 El Manifiesto de la Junta Democrática de España (Julio de 1974)</h3>
+            <p>Los doce puntos programáticos unitarios propuestos por la oposición liderada por el PCE para una transición democrática pacífica:</p>
+            <div class="texto-modal">"Declaramos la voluntad común de las fuerzas democráticas unificadas en la Junta de España para proponer al país las siguientes bases de acuerdo nacional:
+
+1.º La formación de un gobierno provisional de concentración nacional para devolver a todos los españoles su plena ciudadanía.
+2.º La amnistía absoluta de todas las responsabilidades por hechos de naturaleza política.
+3.º La legalización de todos los partidos políticos, sin exclusiones ideológicas.
+4.º La libertad sindical y restitución al movimiento obrero de todo el patrimonio acumulado por el Sindicato Vertical.
+5.º El reconocimiento, bajo la unidad del Estado español, de la personalidad política y autonomía de los pueblos catalán, vasco, gallego y de las comunidades que lo decidan democráticamente.
+6.º La separación de la Iglesia y el Estado.
+7.º La integración plena de España en las Comunidades Europeas.
+8.º La celebración de una consulta popular o referéndum para que la nación elija de forma libre y soberana la forma definitiva de su Estado."</div>
+        </div>
+    </div>
+
+    <script>
+        const links = document.querySelectorAll('aside nav ul li a');
+        const sections = document.querySelectorAll('main section');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (window.scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            links.forEach(a => {
+                const href = a.getAttribute('href');
+                if (href && href.startsWith('#')) {
+                    a.classList.remove('active');
+                    if (href === `#${current}`) {
+                        a.classList.add('active');
+                    }
+                }
+            });
+        });
+
+        function openPopup(id) {
+            document.getElementById(id).classList.add('show');
+        }
+
+        function closePopup(id) {
+            document.getElementById(id).classList.remove('show');
+        }
+
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.classList.remove('show');
+            }
+        }
+    </script>
+</body>
+</html>
