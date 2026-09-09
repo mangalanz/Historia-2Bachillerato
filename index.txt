@@ -46,61 +46,75 @@
             min-height: 100vh;
         }
 
-        /* Barra de navegación lateral fija a la izquierda */
-        aside {
-            width: 300px;
-            background-color: var(--primary-dark);
-            color: white;
-            padding: 25px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 100vh;
-            overflow-y: auto;
-            border-right: 1px solid #334155;
-            z-index: 100;
-        }
-
-        aside h1 {
-            font-size: 1.25rem;
-            margin-bottom: 25px;
-            color: #f8fafc;
-            border-bottom: 3px solid var(--primary-vibrant);
-            padding-bottom: 12px;
-            text-align: center;
-        }
-
-        aside nav ul {
-            list-style: none;
-        }
-
-        aside nav ul li {
-            margin-bottom: 10px;
-        }
-
-        aside nav ul li a {
-            color: #cbd5e1;
-            text-decoration: none;
-            font-size: 0.95rem;
-            display: block;
-            padding: 10px 14px;
-            border-radius: 6px;
-            transition: all 0.2s ease;
-            font-weight: 500;
-        }
-
-        aside nav ul li a:hover, aside nav ul li a.active {
-            background-color: var(--primary-vibrant);
-            color: white;
-            font-weight: bold;
-            box-shadow: 0 4px 10px rgba(37, 99, 235, 0.15);
-        }
-
-        /* Contenido de la Web */
+        /* Contenido de la Web sin Barra Lateral */
         main {
-            margin-left: 300px;
-            padding: 40px;
-            max-width: 1100px;
+            margin-left: 0;
+            padding: 30px 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        /* EJE DE NAVEGACIÓN SUPERIOR POR BLOQUES */
+        .grid-bloques-superior {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 16px;
+            margin-bottom: 35px;
+            width: 100%;
+        }
+
+        .tarjeta-bloque-superior {
+            position: relative;
+            background-color: var(--primary-dark);
+            border: 2px solid #cbd5e1;
+            border-radius: 12px;
+            overflow: hidden;
+            text-decoration: none;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            aspect-ratio: 4 / 3;
+        }
+
+        .tarjeta-bloque-superior:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-vibrant);
+            box-shadow: 0 12px 20px -3px rgba(37, 99, 235, 0.3);
+        }
+
+        .tarjeta-bloque-superior img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .tarjeta-bloque-superior:hover img {
+            transform: scale(1.08);
+        }
+
+        .tarjeta-bloque-superior .etiqueta-bloque {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.7) 70%, transparent 100%);
+            color: #ffffff;
+            padding: 10px 6px 8px 6px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 0.88rem;
+            line-height: 1.2;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.9);
+            transition: background 0.3s ease;
+        }
+
+        .tarjeta-bloque-superior:hover .etiqueta-bloque {
+            background: linear-gradient(to top, rgba(37, 99, 235, 0.98) 0%, rgba(30, 64, 175, 0.85) 100%);
         }
 
         /* Encabezado Alegre con tonos suaves en verde */
@@ -381,294 +395,56 @@
 
         /* Responsive */
         @media (max-width: 900px) {
-            aside {
-                width: 100%;
-                height: auto;
-                position: relative;
-                border-right: none;
-                border-bottom: 1px solid #334155;
-            }
             main {
-                margin-left: 0;
-                width: 100%;
-                padding: 20px;
+                padding: 15px;
+            }
+            .grid-bloques-superior {
+                grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+                gap: 10px;
             }
         }
-    
-        /* --- NAVEGACIÓN DOBLE EJE: EJE HORIZONTAL SUPERIOR --- */
-        .eje-horizontal-contenedor {
-            background-color: var(--card-bg);
-            border: 1px solid #e2e8f0;
-            border-radius: 12px;
-            padding: 20px 22px;
-            margin-bottom: 35px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
-        }
-
-        .eje-horizontal-encabezado {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 16px;
-            border-bottom: 2px solid #f1f5f9;
-            padding-bottom: 10px;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .eje-horizontal-titulo {
-            font-size: 1.12rem;
-            font-weight: 800;
-            color: var(--primary-dark);
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .eje-horizontal-subtitulo {
-            font-size: 0.85rem;
-            color: var(--text-muted);
-            font-style: italic;
-        }
-
-        .eje-horizontal-galeria {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-            gap: 14px;
-            width: 100%;
-        }
-
-        .tarjeta-bloque-eje {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            text-decoration: none;
-            border-radius: 10px;
-            overflow: hidden;
-            background: var(--primary-dark);
-            border: 1px solid #cbd5e1;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
-            transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
-        }
-
-        .tarjeta-bloque-eje:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 10px 22px rgba(37, 99, 235, 0.22);
-            border-color: var(--primary-vibrant);
-        }
-
-        .tarjeta-bloque-eje.active {
-            border: 2px solid var(--primary-vibrant);
-            box-shadow: 0 0 12px rgba(37, 99, 235, 0.35);
-        }
-
-        .imagen-contenedor-bloque {
-            position: relative;
-            width: 100%;
-            height: 100px;
-            overflow: hidden;
-            background-color: #1e293b;
-        }
-
-        .imagen-contenedor-bloque img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            opacity: 0.72;
-            transition: opacity 0.3s ease, transform 0.3s ease;
-        }
-
-        .tarjeta-bloque-eje:hover .imagen-contenedor-bloque img {
-            opacity: 0.95;
-            transform: scale(1.08);
-        }
-
-        /* Texto incrustado dentro de la imagen */
-        .insignia-bloque {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: rgba(15, 23, 42, 0.85);
-            color: #ffffff;
-            padding: 6px 10px;
-            border-radius: 6px;
-            font-weight: 800;
-            font-size: 0.8rem;
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
-            border: 1px solid rgba(255, 255, 255, 0.25);
-            backdrop-filter: blur(4px);
-            text-align: center;
-            width: 88%;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-        }
-
-        .tarjeta-bloque-eje.active .insignia-bloque {
-            background: var(--primary-vibrant);
-            border-color: #ffffff;
-        }
-
-        /* Desplegable del título por debajo al pasar el ratón por la imagen */
-        .desplegable-titulo-bloque {
-            max-height: 0;
-            opacity: 0;
-            overflow: hidden;
-            background-color: var(--primary-dark);
-            color: #ffffff;
-            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-            font-size: 0.78rem;
-            font-weight: 600;
-            line-height: 1.35;
-            text-align: center;
-            padding: 0 6px;
-        }
-
-        .tarjeta-bloque-eje:hover .desplegable-titulo-bloque {
-            max-height: 85px;
-            opacity: 1;
-            padding: 10px 6px;
-            border-top: 2px solid var(--primary-vibrant);
-        }
-
-        .submenu-bloque {
-            padding-left: 12px;
-            margin-top: 6px;
-            border-left: 2px solid var(--primary-vibrant);
-            list-style: none;
-        }
-
-        .submenu-bloque li {
-            margin-bottom: 6px;
-        }
-
-        .submenu-bloque li a {
-            font-size: 0.85rem;
-            padding: 6px 10px;
-            color: #94a3b8;
-        }
-
-        .submenu-bloque li a:hover, .submenu-bloque li a.active {
-            color: #ffffff;
-            background-color: rgba(255,255,255,0.08);
-        }
-
     </style>
 </head>
 <body>
 
-    <!-- Navegación Lateral -->
-    <aside>
-        <h1>🏛️ Portada: Historia</h1>
-        <nav>
-            <ul>
-                <li><a href="#bienvenida" class="active">🏠 Inicio de la Web</a></li>
-                
-                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 15px 14px 5px 14px; font-weight: bold; border-bottom: 1px solid #334155; margin-bottom: 8px;">📖 Bloque I</li>
-                <li><a href="bloque1_tema1.html">Tema 1: Cortes de Cádiz</a></li>
-                <li><a href="bloque1_tema2.html">Tema 2: Estado Liberal</a></li>
-                <li><a href="bloque1_tema3.html">Tema 3: El Sexenio</a></li>
-                
-                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 15px 14px 5px 14px; font-weight: bold; border-bottom: 1px solid #334155; margin-bottom: 8px;">📖 Bloque II</li>
-                <li><a href="bloque2_tema1.html">Tema 1: La Restauración</a></li>
-            </ul>
-        </nav>
-    </aside>
-
-    <!-- Contenido Principal -->
+    <!-- Contenido Principal (Sin Barra Lateral) -->
     <main>
+        <!-- EJE DE NAVEGACIÓN SUPERIOR POR BLOQUES -->
+        <nav class="grid-bloques-superior">
+            <a href="tema0.html" class="tarjeta-bloque-superior">
+                <img src="arbol-fuentes.png" alt="Introducción / Tema 0">
+                <span class="etiqueta-bloque">Intro / Tema 0</span>
+            </a>
+            <a href="bloque1_tema1.html" class="tarjeta-bloque-superior">
+                <img src="img/eje-cronologico-sexenio.png" alt="Bloque I: Estado Liberal">
+                <span class="etiqueta-bloque">Bloque I</span>
+            </a>
+            <a href="bloque2_tema1.html" class="tarjeta-bloque-superior">
+                <img src="img/eje-cronologico-restauracion.png" alt="Bloque II: La Restauración">
+                <span class="etiqueta-bloque">Bloque II</span>
+            </a>
+            <a href="bloque3_tema1.html" class="tarjeta-bloque-superior">
+                <img src="img/boda-real.png" alt="Bloque III: Crisis & Dictadura">
+                <span class="etiqueta-bloque">Bloque III</span>
+            </a>
+            <a href="bloque4_tema1.html" class="tarjeta-bloque-superior">
+                <img src="img/eje-cronologico-republica.png" alt="Bloque IV: Segunda República & Guerra">
+                <span class="etiqueta-bloque">Bloque IV</span>
+            </a>
+            <a href="bloque5_tema1.html" class="tarjeta-bloque-superior">
+                <img src="img/eje-cronologico-franquismo1.png" alt="Bloque V: El Franquismo">
+                <span class="etiqueta-bloque">Bloque V</span>
+            </a>
+            <a href="bloque6_tema1.html" class="tarjeta-bloque-superior">
+                <img src="img/eje-cronologico-transicion.png" alt="Bloque VI: Transición & Democracia">
+                <span class="etiqueta-bloque">Bloque VI</span>
+            </a>
+        </nav>
+
         <header>
             <h2>Geografía e Historia: Historia de España</h2>
             <p>Recurso Didáctico Interactivo adaptado para 2º de Bachillerato bajo metodologías de accesibilidad cognitiva y Lectura Fácil.</p>
         </header>
-
-        
-        <!-- NAVEGACIÓN DOBLE EJE: EJE HORIZONTAL SUPERIOR -->
-        <div class="eje-horizontal-contenedor">
-            <div class="eje-horizontal-encabezado">
-                <span class="eje-horizontal-titulo">🧭 NAVEGACIÓN DE DOBLE EJE: GALERÍA SUPERIOR DE BLOQUES</span>
-                <span class="eje-horizontal-subtitulo">Pasa el ratón sobre cada bloque para desplegar el título por debajo o haz clic para acceder</span>
-            </div>
-
-            <div class="eje-horizontal-galeria">
-                <!-- INTRODUCCIÓN -->
-                <a href="tema0.html" class="tarjeta-bloque-eje active">
-                    <div class="imagen-contenedor-bloque">
-                        <img src="linea-tiempo.png" alt="Introducción">
-                        <span class="insignia-bloque">INTRO</span>
-                    </div>
-                    <div class="desplegable-titulo-bloque">
-                        Introducción a la Historia, Fuentes y Tiempos
-                    </div>
-                </a>
-
-                <!-- BLOQUE I -->
-                <a href="bloque1_tema1.html" class="tarjeta-bloque-eje">
-                    <div class="imagen-contenedor-bloque">
-                        <img src="img/eje-cronologico-isabel.png" alt="Bloque I">
-                        <span class="insignia-bloque">BLOQUE I</span>
-                    </div>
-                    <div class="desplegable-titulo-bloque">
-                        El Estado Liberal (1833 - 1874)
-                    </div>
-                </a>
-
-                <!-- BLOQUE II -->
-                <a href="bloque2_tema1.html" class="tarjeta-bloque-eje">
-                    <div class="imagen-contenedor-bloque">
-                        <img src="img/eje-cronologico-restauracion.png" alt="Bloque II">
-                        <span class="insignia-bloque">BLOQUE II</span>
-                    </div>
-                    <div class="desplegable-titulo-bloque">
-                        La Restauración (1875 - 1902)
-                    </div>
-                </a>
-
-                <!-- BLOQUE III -->
-                <a href="bloque3_tema1.html" class="tarjeta-bloque-eje">
-                    <div class="imagen-contenedor-bloque">
-                        <img src="img/boda-real.png" alt="Bloque III">
-                        <span class="insignia-bloque">BLOQUE III</span>
-                    </div>
-                    <div class="desplegable-titulo-bloque">
-                        Crisis & Dictadura (1902 - 1931)
-                    </div>
-                </a>
-
-                <!-- BLOQUE IV -->
-                <a href="bloque4_tema1.html" class="tarjeta-bloque-eje">
-                    <div class="imagen-contenedor-bloque">
-                        <img src="img/eje-cronologico-republica.png" alt="Bloque IV">
-                        <span class="insignia-bloque">BLOQUE IV</span>
-                    </div>
-                    <div class="desplegable-titulo-bloque">
-                        II República & Guerra Civil (1931 - 1939)
-                    </div>
-                </a>
-
-                <!-- BLOQUE V -->
-                <a href="bloque5_tema1.html" class="tarjeta-bloque-eje">
-                    <div class="imagen-contenedor-bloque">
-                        <img src="img/eje-cronologico-franquismo1.png" alt="Bloque V">
-                        <span class="insignia-bloque">BLOQUE V</span>
-                    </div>
-                    <div class="desplegable-titulo-bloque">
-                        La Dictadura Franquista (1939 - 1975)
-                    </div>
-                </a>
-
-                <!-- BLOQUE VI -->
-                <a href="bloque6_tema1.html" class="tarjeta-bloque-eje">
-                    <div class="imagen-contenedor-bloque">
-                        <img src="img/eje-cronologico-transicion.png" alt="Bloque VI">
-                        <span class="insignia-bloque">BLOQUE VI</span>
-                    </div>
-                    <div class="desplegable-titulo-bloque">
-                        Transición & Democracia (1975 - 2023)
-                    </div>
-                </a>
-            </div>
-        </div>
 
         <!-- SECCIÓN 1: BIENVENIDA -->
         <section id="bienvenida">
@@ -737,7 +513,6 @@
 
             <h3>📖 Bloque II: La España de la Restauración y su Oposición (1875 - 1902)</h3>
             <div class="grid-temas">
-                <!-- ENLACE NUEVO AL BLOQUE II TEMA 1 -->
                 <div class="tarjeta-tema" style="border-left: 4px solid var(--header-border);">
                     <div>
                         <h4>Tema 1: El Régimen de la Restauración y el Sistema Canovista</h4>
@@ -751,7 +526,7 @@
                         <h4>Tema 2: Industrialización y Movimiento Obrero</h4>
                         <p>El despegue industrial catalán y vasco, el auge ferroviario, y la aparición de la AIT, el socialismo de Pablo Iglesias y el anarquismo español.</p>
                     </div>
-                    <span class="btn-deshabilitado">⌛ Próximamente</span>
+                    <a href="bloque2_tema2.html" class="btn-acceder">📖 Acceder al Tema</a>
                 </div>
 
                 <div class="tarjeta-tema" style="opacity: 0.85;">
@@ -759,7 +534,75 @@
                         <h4>Tema 3: El Nacimiento de los Nacionalismos y la Crisis de 1898</h4>
                         <p>El surgimiento de la identidad política catalana, vasca y gallega, la Guerra de Cuba y Filipinas, y el impacto moral del Desastre del 98.</p>
                     </div>
-                    <span class="btn-deshabilitado">⌛ Próximamente</span>
+                    <a href="bloque2_tema3.html" class="btn-acceder">📖 Acceder al Tema</a>
+                </div>
+            </div>
+
+            <h3>📖 Bloque III: La Quiebra de la Restauración y la Dictadura de Primo de Rivera (1902 - 1931)</h3>
+            <div class="grid-temas">
+                <div class="tarjeta-tema">
+                    <div>
+                        <h4>Tema 1: El Reinado de Alfonso XIII y la Crisis de la Restauración</h4>
+                        <p>La Semana Trágica de 1909, el regeneracionismo de Maura y Canalejas, la Triple Crisis de 1917, el desastre de Annual y el colapso del turno.</p>
+                    </div>
+                    <a href="bloque3_tema1.html" class="btn-acceder">📖 Acceder al Tema</a>
+                </div>
+
+                <div class="tarjeta-tema">
+                    <div>
+                        <h4>Tema 2: La Dictadura de Primo de Rivera y el Fin de la Monarquía</h4>
+                        <p>El golpe de Estado de 1923, el Desembarco de Alhucemas, el Directorio Civil, las Grandes Exposiciones de 1929 y la caída hacia la República.</p>
+                    </div>
+                    <a href="bloque3_tema2.html" class="btn-acceder">📖 Acceder al Tema</a>
+                </div>
+            </div>
+
+            <h3>📖 Bloque IV: La Segunda República y la Guerra Civil (1931 - 1939)</h3>
+            <div class="grid-temas">
+                <div class="tarjeta-tema">
+                    <div>
+                        <h4>Tema 1: La Segunda República Española (1931 - 1936)</h4>
+                        <p>La Constitución de 1931, el sufragio femenino, el Bienio Reformista de Azaña, Casas Viejas, la Revolución de 1934 y el Frente Popular.</p>
+                    </div>
+                    <a href="bloque4_tema1.html" class="btn-acceder">📖 Acceder al Tema</a>
+                </div>
+
+                <div class="tarjeta-tema">
+                    <div>
+                        <h4>Tema 2: La Guerra Civil Española (1936 - 1939)</h4>
+                        <p>El golpe de Estado de julio de 1936, las retaguardias, la dimensión internacional, Guernica, la Batalla del Ebro y las consecuencias de la contienda.</p>
+                    </div>
+                    <a href="bloque4_tema2.html" class="btn-acceder">📖 Acceder al Tema</a>
+                </div>
+            </div>
+
+            <h3>📖 Bloque V: La Dictadura Franquista (1939 - 1975)</h3>
+            <div class="grid-temas">
+                <div class="tarjeta-tema">
+                    <div>
+                        <h4>Tema 1: La Postguerra y la Consolidación del Franquismo (1939 - 1959)</h4>
+                        <p>Nacionalcatolicismo, autarquía, estraperlo, la Segunda Guerra Mundial, aislamiento diplomático y los acuerdos de 1953 con EE.UU.</p>
+                    </div>
+                    <a href="bloque5_tema1.html" class="btn-acceder">📖 Acceder al Tema</a>
+                </div>
+
+                <div class="tarjeta-tema">
+                    <div>
+                        <h4>Tema 2: Desarrollismo y Crisis del Régimen (1959 - 1975)</h4>
+                        <p>El Plan de Estabilización de 1959, los tecnócratas, el boom turístico, los cambios sociales, el asesinato de Carrero Blanco y la muerte de Franco.</p>
+                    </div>
+                    <a href="bloque5_tema2.html" class="btn-acceder">📖 Acceder al Tema</a>
+                </div>
+            </div>
+
+            <h3>📖 Bloque VI: La España Democrática (1975 - Actualidad)</h3>
+            <div class="grid-temas">
+                <div class="tarjeta-tema">
+                    <div>
+                        <h4>Tema 1: La Transición Política y la Consolidación Democrática (1975 - 1986)</h4>
+                        <p>El rey Juan Carlos I, Adolfo Suárez, la Ley para la Reforma Política, los Pactos de la Moncloa, la Constitución de 1978, el 23-F y el ingreso en la CEE.</p>
+                    </div>
+                    <a href="bloque6_tema1.html" class="btn-acceder">📖 Acceder al Tema</a>
                 </div>
             </div>
         </section>
