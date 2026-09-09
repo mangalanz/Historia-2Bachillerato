@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia de España - Portada Principal (2º de Bachillerato)</title>
+    <style>
+        :root {
+            /* Paleta de colores vibrante y alegre */
+            --primary-intense: #1e40af; /* Azul real oscuro */
+            --primary-vibrant: #2563eb; /* Azul brillante */
+            --primary-dark: #0f172a;
+            --primary: #1e293b;
+            --bg-main: #f8fafc;
+            --card-bg: #ffffff;
+            --text-dark: #1e293b;
+            --text-muted: #64748b;
+            
+            /* Tonos suaves en verde para el encabezado */
+            --header-bg: #f0fdf4; /* Fondo verde menta muy suave */
+            --header-border: #10b981; /* Borde verde esmeralda */
+            --header-text: #065f46; /* Texto verde bosque oscuro */
+
+            /* Cajas didácticas */
+            --border-glosario: #0ea5e9;
+            --bg-glosario: #f0f9ff;
+            --border-investigacion: #f59e0b;
+            --bg-investigacion: #fffbeb;
+            --border-critica: #ef4444;
+            --bg-critica: #fef2f2;
+            --border-factores: #10b981;
+            --bg-factores: #ecfdf5;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-dark);
+            min-height: 100vh;
+        }
+
+        /* Barra de navegación lateral fija a la izquierda */
+        aside {
+            width: 300px;
+            background-color: var(--primary-dark);
+            color: white;
+            padding: 25px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            overflow-y: auto;
+            border-right: 1px solid #334155;
+            z-index: 100;
+        }
+
+        aside h1 {
+            font-size: 1.25rem;
+            margin-bottom: 25px;
+            color: #f8fafc;
+            border-bottom: 3px solid var(--primary-vibrant);
+            padding-bottom: 12px;
+            text-align: center;
+        }
+
+        aside nav ul {
+            list-style: none;
+        }
+
+        aside nav ul li {
+            margin-bottom: 10px;
+        }
+
+        aside nav ul li a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 0.95rem;
+            display: block;
+            padding: 10px 14px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            font-weight: 500;
+        }
+
+        aside nav ul li a:hover, aside nav ul li a.active {
+            background-color: var(--primary-vibrant);
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(37, 99, 235, 0.15);
+        }
+
+        /* Contenido de la Web */
+        main {
+            margin-left: 300px;
+            padding: 40px;
+            max-width: 1100px;
+        }
+
+        /* Encabezado Alegre con tonos suaves en verde */
+        header {
+            margin-bottom: 35px;
+            background: linear-gradient(135deg, var(--header-bg), #e6fcf0);
+            border-left: 6px solid var(--header-border);
+            color: var(--header-text);
+            padding: 25px 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(16, 185, 129, 0.08);
+        }
+
+        header h2 {
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+            color: var(--header-text);
+            font-weight: 800;
+        }
+
+        header p {
+            color: #15803d;
+            font-size: 1.05rem;
+            font-weight: 500;
+        }
+
+        section {
+            background: var(--card-bg);
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            margin-bottom: 35px;
+        }
+
+        section h2 {
+            color: var(--primary-dark);
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #f1f5f9;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: var(--primary-intense);
+            margin: 25px 0 12px 0;
+            font-size: 1.25rem;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+            color: #334155;
+            text-align: justify;
+        }
+
+        /* CONTENEDOR DE IMAGEN (ANTI-SOLAPAMIENTO) */
+        .tarjeta-imagen {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 20px 0 30px 0;
+            text-align: center;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            display: block;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tarjeta-imagen img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            margin-bottom: 12px;
+            display: inline-block;
+        }
+
+        .tarjeta-imagen .caption {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            font-style: italic;
+            margin: 0;
+            line-height: 1.4;
+            display: block;
+        }
+
+        /* FILAS DE IMÁGENES COMPATIBLES (ADAPTATIVAS) */
+        .fila-imagenes {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0 30px 0;
+        }
+
+        .fila-imagenes .tarjeta-imagen {
+            flex: 1;
+            min-width: 250px;
+            margin: 0;
+        }
+
+        /* Grid de Temas */
+        .grid-temas {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 25px;
+            margin: 25px 0;
+        }
+
+        .tarjeta-tema {
+            background: var(--card-bg);
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 24px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .tarjeta-tema:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05);
+            border-color: var(--primary-vibrant);
+        }
+
+        .tarjeta-tema h4 {
+            font-size: 1.15rem;
+            color: var(--primary-dark);
+            margin-bottom: 10px;
+        }
+
+        .tarjeta-tema p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+
+        .btn-acceder {
+            align-self: flex-start;
+            background-color: var(--primary-vibrant);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: bold;
+            transition: background-color 0.2s;
+        }
+
+        .btn-acceder:hover {
+            background-color: var(--primary-intense);
+        }
+
+        .btn-deshabilitado {
+            align-self: flex-start;
+            background-color: #e2e8f0;
+            color: #94a3b8;
+            padding: 8px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: bold;
+            cursor: not-allowed;
+        }
+
+        .caja-colores {
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-size: 1rem;
+        }
+
+        .caja-colores h4 {
+            margin-bottom: 10px;
+            font-size: 1.15rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .factores {
+            background-color: var(--bg-factores);
+            border-left: 5px solid var(--border-factores);
+            color: #047857;
+        }
+
+        /* POPUPS INTERACTIVOS (MODALS) */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(4px);
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal.show {
+            display: flex;
+        }
+
+        .modal-content {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            max-width: 650px;
+            width: 90%;
+            max-height: 85vh;
+            overflow-y: auto;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            border-left: 6px solid var(--border-investigacion);
+            position: relative;
+            animation: modalFadeIn 0.3s ease-out;
+        }
+
+        @keyframes modalFadeIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-muted);
+        }
+
+        .modal-close:hover {
+            color: var(--border-critica);
+        }
+
+        .btn-interactivo {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            margin: 8px 0;
+            border: none;
+        }
+
+        .btn-anecdota {
+            background-color: var(--bg-investigacion);
+            border: 1px solid var(--border-investigacion);
+            color: #b45309;
+        }
+
+        .btn-anecdota:hover {
+            background-color: var(--border-investigacion);
+            color: white;
+        }
+
+        .texto-modal {
+            font-size: 0.95rem;
+            color: #334155;
+            background-color: #f8fafc;
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px solid #e2e8f0;
+            white-space: pre-wrap;
+            margin-top: 10px;
+            text-align: justify;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            aside {
+                width: 100%;
+                height: auto;
+                position: relative;
+                border-right: none;
+                border-bottom: 1px solid #334155;
+            }
+            main {
+                margin-left: 0;
+                width: 100%;
+                padding: 20px;
+            }
+        }
+    
+        /* --- NAVEGACIÓN DOBLE EJE: EJE HORIZONTAL SUPERIOR --- */
+        .eje-horizontal-contenedor {
+            background-color: var(--card-bg);
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 20px 22px;
+            margin-bottom: 35px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+        }
+
+        .eje-horizontal-encabezado {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+            border-bottom: 2px solid #f1f5f9;
+            padding-bottom: 10px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .eje-horizontal-titulo {
+            font-size: 1.12rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .eje-horizontal-subtitulo {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        .eje-horizontal-galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 14px;
+            width: 100%;
+        }
+
+        .tarjeta-bloque-eje {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            border-radius: 10px;
+            overflow: hidden;
+            background: var(--primary-dark);
+            border: 1px solid #cbd5e1;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+            transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+        }
+
+        .tarjeta-bloque-eje:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 22px rgba(37, 99, 235, 0.22);
+            border-color: var(--primary-vibrant);
+        }
+
+        .tarjeta-bloque-eje.active {
+            border: 2px solid var(--primary-vibrant);
+            box-shadow: 0 0 12px rgba(37, 99, 235, 0.35);
+        }
+
+        .imagen-contenedor-bloque {
+            position: relative;
+            width: 100%;
+            height: 100px;
+            overflow: hidden;
+            background-color: #1e293b;
+        }
+
+        .imagen-contenedor-bloque img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.72;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .tarjeta-bloque-eje:hover .imagen-contenedor-bloque img {
+            opacity: 0.95;
+            transform: scale(1.08);
+        }
+
+        /* Texto incrustado dentro de la imagen */
+        .insignia-bloque {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(15, 23, 42, 0.85);
+            color: #ffffff;
+            padding: 6px 10px;
+            border-radius: 6px;
+            font-weight: 800;
+            font-size: 0.8rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(4px);
+            text-align: center;
+            width: 88%;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+        }
+
+        .tarjeta-bloque-eje.active .insignia-bloque {
+            background: var(--primary-vibrant);
+            border-color: #ffffff;
+        }
+
+        /* Desplegable del título por debajo al pasar el ratón por la imagen */
+        .desplegable-titulo-bloque {
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            background-color: var(--primary-dark);
+            color: #ffffff;
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            font-size: 0.78rem;
+            font-weight: 600;
+            line-height: 1.35;
+            text-align: center;
+            padding: 0 6px;
+        }
+
+        .tarjeta-bloque-eje:hover .desplegable-titulo-bloque {
+            max-height: 85px;
+            opacity: 1;
+            padding: 10px 6px;
+            border-top: 2px solid var(--primary-vibrant);
+        }
+
+        .submenu-bloque {
+            padding-left: 12px;
+            margin-top: 6px;
+            border-left: 2px solid var(--primary-vibrant);
+            list-style: none;
+        }
+
+        .submenu-bloque li {
+            margin-bottom: 6px;
+        }
+
+        .submenu-bloque li a {
+            font-size: 0.85rem;
+            padding: 6px 10px;
+            color: #94a3b8;
+        }
+
+        .submenu-bloque li a:hover, .submenu-bloque li a.active {
+            color: #ffffff;
+            background-color: rgba(255,255,255,0.08);
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navegación Lateral -->
+    <aside>
+        <h1>🏛️ Portada: Historia</h1>
+        <nav>
+            <ul>
+                <li><a href="#bienvenida" class="active">🏠 Inicio de la Web</a></li>
+                
+                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 15px 14px 5px 14px; font-weight: bold; border-bottom: 1px solid #334155; margin-bottom: 8px;">📖 Bloque I</li>
+                <li><a href="bloque1_tema1.html">Tema 1: Cortes de Cádiz</a></li>
+                <li><a href="bloque1_tema2.html">Tema 2: Estado Liberal</a></li>
+                <li><a href="bloque1_tema3.html">Tema 3: El Sexenio</a></li>
+                
+                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 15px 14px 5px 14px; font-weight: bold; border-bottom: 1px solid #334155; margin-bottom: 8px;">📖 Bloque II</li>
+                <li><a href="bloque2_tema1.html">Tema 1: La Restauración</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Contenido Principal -->
+    <main>
+        <header>
+            <h2>Geografía e Historia: Historia de España</h2>
+            <p>Recurso Didáctico Interactivo adaptado para 2º de Bachillerato bajo metodologías de accesibilidad cognitiva y Lectura Fácil.</p>
+        </header>
+
+        
+        <!-- NAVEGACIÓN DOBLE EJE: EJE HORIZONTAL SUPERIOR -->
+        <div class="eje-horizontal-contenedor">
+            <div class="eje-horizontal-encabezado">
+                <span class="eje-horizontal-titulo">🧭 NAVEGACIÓN DE DOBLE EJE: GALERÍA SUPERIOR DE BLOQUES</span>
+                <span class="eje-horizontal-subtitulo">Pasa el ratón sobre cada bloque para desplegar el título por debajo o haz clic para acceder</span>
+            </div>
+
+            <div class="eje-horizontal-galeria">
+                <!-- INTRODUCCIÓN -->
+                <a href="tema0.html" class="tarjeta-bloque-eje active">
+                    <div class="imagen-contenedor-bloque">
+                        <img src="linea-tiempo.png" alt="Introducción">
+                        <span class="insignia-bloque">INTRO</span>
+                    </div>
+                    <div class="desplegable-titulo-bloque">
+                        Introducción a la Historia, Fuentes y Tiempos
+                    </div>
+                </a>
+
+                <!-- BLOQUE I -->
+                <a href="bloque1_tema1.html" class="tarjeta-bloque-eje">
+                    <div class="imagen-contenedor-bloque">
+                        <img src="img/eje-cronologico-isabel.png" alt="Bloque I">
+                        <span class="insignia-bloque">BLOQUE I</span>
+                    </div>
+                    <div class="desplegable-titulo-bloque">
+                        El Estado Liberal (1833 - 1874)
+                    </div>
+                </a>
+
+                <!-- BLOQUE II -->
+                <a href="bloque2_tema1.html" class="tarjeta-bloque-eje">
+                    <div class="imagen-contenedor-bloque">
+                        <img src="img/eje-cronologico-restauracion.png" alt="Bloque II">
+                        <span class="insignia-bloque">BLOQUE II</span>
+                    </div>
+                    <div class="desplegable-titulo-bloque">
+                        La Restauración (1875 - 1902)
+                    </div>
+                </a>
+
+                <!-- BLOQUE III -->
+                <a href="bloque3_tema1.html" class="tarjeta-bloque-eje">
+                    <div class="imagen-contenedor-bloque">
+                        <img src="img/boda-real.png" alt="Bloque III">
+                        <span class="insignia-bloque">BLOQUE III</span>
+                    </div>
+                    <div class="desplegable-titulo-bloque">
+                        Crisis & Dictadura (1902 - 1931)
+                    </div>
+                </a>
+
+                <!-- BLOQUE IV -->
+                <a href="bloque4_tema1.html" class="tarjeta-bloque-eje">
+                    <div class="imagen-contenedor-bloque">
+                        <img src="img/eje-cronologico-republica.png" alt="Bloque IV">
+                        <span class="insignia-bloque">BLOQUE IV</span>
+                    </div>
+                    <div class="desplegable-titulo-bloque">
+                        II República & Guerra Civil (1931 - 1939)
+                    </div>
+                </a>
+
+                <!-- BLOQUE V -->
+                <a href="bloque5_tema1.html" class="tarjeta-bloque-eje">
+                    <div class="imagen-contenedor-bloque">
+                        <img src="img/eje-cronologico-franquismo1.png" alt="Bloque V">
+                        <span class="insignia-bloque">BLOQUE V</span>
+                    </div>
+                    <div class="desplegable-titulo-bloque">
+                        La Dictadura Franquista (1939 - 1975)
+                    </div>
+                </a>
+
+                <!-- BLOQUE VI -->
+                <a href="bloque6_tema1.html" class="tarjeta-bloque-eje">
+                    <div class="imagen-contenedor-bloque">
+                        <img src="img/eje-cronologico-transicion.png" alt="Bloque VI">
+                        <span class="insignia-bloque">BLOQUE VI</span>
+                    </div>
+                    <div class="desplegable-titulo-bloque">
+                        Transición & Democracia (1975 - 2023)
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- SECCIÓN 1: BIENVENIDA -->
+        <section id="bienvenida">
+            <h2>¡Hola! Te damos la bienvenida al aula digital</h2>
+            <p>Este espacio digital interactivo está diseñado especialmente para ayudarte a repasar, asimilar y comprender de forma amena los contenidos curriculares oficiales de <strong>Historia de España</strong> de 2º de Bachillerato y prepararte de forma sobresaliente para las pruebas de acceso a la universidad (<strong>EBAU / EvAU</strong>).</p>
+            <p>Aquí encontrarás resúmenes estructurados, esquemas visuales adaptados para evitar la fatiga visual, vídeos explicativos de apoyo para cada etapa histórica y pop-ups interactivos con curiosidades y documentos históricos clave.</p>
+
+            <div class="caja-colores factores">
+                <h4>🧠 Nuestro Método: Accesibilidad y Claridad</h4>
+                <p>La información está jerarquizada de forma limpia. Hemos evitado códigos desordenados, textos flotantes que tapen las imágenes o tipografías de difícil lectura. Además, al final de cada tema dispones de un banco de preguntas XML para practicar en tus aulas virtuales.</p>
+            </div>
+
+            <!-- BOTÓN INTERACTIVO: EL VALOR DE LA HISTORIA -->
+            <div style="margin: 15px 0;">
+                <button class="btn-interactivo btn-anecdota" onclick="openPopup('pop-metodo')">🕵️‍♂️ Descubre: ¿Por qué estudiamos las fuentes históricas?</button>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: HERRAMIENTAS DEL HISTORIADOR -->
+        <section id="herramientas">
+            <h2>Herramientas del Historiador: Fuentes y Líneas Temporales</h2>
+            <p>Antes de sumergirte en los bloques históricos, recuerda que para comprender el pasado debemos aprender a clasificar las <strong>fuentes de información</strong> y situar los acontecimientos cronológicamente de forma correcta.</p>
+
+            <div class="tarjeta-imagen">
+                <img src="arbol-fuentes.png" alt="Árbol de Clasificación de las Fuentes Históricas">
+                <span class="caption">Esquema didáctico e interactivo sobre la división y tipología de las fuentes históricas</span>
+            </div>
+
+            <div class="tarjeta-imagen">
+                <img src="linea-tiempo.png" alt="Línea del tiempo y Grandes Edades Históricas">
+                <span class="caption">Eje cronológico de las grandes edades de la humanidad desde la Prehistoria</span>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 3: TEMARIO DEL CURSO -->
+        <section id="temario">
+            <h2>Temario Interactivo del Curso</h2>
+            <p>Haz clic en el botón de cualquiera de los temas disponibles para acceder directamente a sus apuntes multimedia:</p>
+
+            <h3>📖 Bloque I: La Construcción del Estado Liberal (1833 - 1874)</h3>
+            <div class="grid-temas">
+                <div class="tarjeta-tema">
+                    <div>
+                        <h4>Tema 1: La Crisis del Antiguo Régimen y las Cortes de Cádiz</h4>
+                        <p>La ocupación napoleónica, la gloriosa Guerra de la Independencia de 1808 y la redacción de nuestra primera Constitución: "La Pepa" de 1812.</p>
+                    </div>
+                    <a href="bloque1_tema1.html" class="btn-acceder">📖 Acceder al Tema</a>
+                </div>
+
+                <div class="tarjeta-tema">
+                    <div>
+                        <h4>Tema 2: La Conflictiva Construcción del Estado Liberal</h4>
+                        <p>El accidentado reinado de Isabel II, las guerras carlistas, las drásticas desamortizaciones de Mendizábal y Madoz, y el papel de las regencias.</p>
+                    </div>
+                    <a href="bloque1_tema2.html" class="btn-acceder">📖 Acceder al Tema</a>
+                </div>
+
+                <div class="tarjeta-tema">
+                    <div>
+                        <h4>Tema 3: El Sexenio Revolucionario (1868 - 1874)</h4>
+                        <p>Del destronamiento de Isabel II a través de "La Gloriosa" y el breve reinado de Amadeo de Saboya, hasta la proclamación de la Primera República.</p>
+                    </div>
+                    <a href="bloque1_tema3.html" class="btn-acceder">📖 Acceder al Tema</a>
+                </div>
+            </div>
+
+            <h3>📖 Bloque II: La España de la Restauración y su Oposición (1875 - 1902)</h3>
+            <div class="grid-temas">
+                <!-- ENLACE NUEVO AL BLOQUE II TEMA 1 -->
+                <div class="tarjeta-tema" style="border-left: 4px solid var(--header-border);">
+                    <div>
+                        <h4>Tema 1: El Régimen de la Restauración y el Sistema Canovista</h4>
+                        <p>El regreso de Alfonso XII al trono, las bases constitucionales de 1876, el caciquismo electoral, el turno de partidos y el Pacto del Pardo.</p>
+                    </div>
+                    <a href="bloque2_tema1.html" class="btn-acceder" style="background-color: var(--header-border);">📖 Acceder al Tema</a>
+                </div>
+
+                <div class="tarjeta-tema" style="opacity: 0.85;">
+                    <div>
+                        <h4>Tema 2: Industrialización y Movimiento Obrero</h4>
+                        <p>El despegue industrial catalán y vasco, el auge ferroviario, y la aparición de la AIT, el socialismo de Pablo Iglesias y el anarquismo español.</p>
+                    </div>
+                    <span class="btn-deshabilitado">⌛ Próximamente</span>
+                </div>
+
+                <div class="tarjeta-tema" style="opacity: 0.85;">
+                    <div>
+                        <h4>Tema 3: El Nacimiento de los Nacionalismos y la Crisis de 1898</h4>
+                        <p>El surgimiento de la identidad política catalana, vasca y gallega, la Guerra de Cuba y Filipinas, y el impacto moral del Desastre del 98.</p>
+                    </div>
+                    <span class="btn-deshabilitado">⌛ Próximamente</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- VENTANAS EMERGENTES (POPUPS INTERACTIVOS / MODALS) -->
+
+    <!-- POPUP: EL VALOR DE LAS FUENTES -->
+    <div id="pop-metodo" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closePopup('pop-metodo')">&times;</span>
+            <h3 style="color: #b45309; margin-top: 0;">🕵️‍♂️ Las huellas del pasado: ¿Qué son las fuentes históricas?</h3>
+            <p>La base científica sobre la que trabaja el investigador para reconstruir la verdad:</p>
+            <div class="texto-modal">"Un historiador no puede inventar el pasado ni basarse en meras suposiciones subjetivas; cada afirmación debe estar estrictamente demostrada y fundamentada.
+
+Las fuentes históricas son todos los objetos, documentos, testimonios, imágenes y restos materiales que nos han llegado de épocas pasadas y que contienen información valiosa sobre cómo vivían las personas de aquel tiempo.
+
+Se dividen de forma clásica en:
+- Fuentes Primarias: Aquellas elaboradas de forma simultánea a los acontecimientos históricos que narran (por ejemplo, la Constitución de 1812 o una carta original firmada por Cánovas del Castillo).
+- Fuentes Secundarias: Aquellas redactadas con posterioridad a los hechos utilizando fuentes primarias (por ejemplo, el manual de texto escolar, una enciclopedia moderna o el análisis de un historiador actual)."</div>
+        </div>
+    </div>
+
+    <!-- Script de Popups -->
+    <script>
+        function openPopup(id) {
+            document.getElementById(id).classList.add('show');
+        }
+
+        function closePopup(id) {
+            document.getElementById(id).classList.remove('show');
+        }
+
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.classList.remove('show');
+            }
+        }
+    </script>
+</body>
+</html>

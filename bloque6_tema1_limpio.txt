@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloque VI: Conquista y Consolidación de la Democracia (1975 - 2026)</title>
+    
+    <style>
+        :root {
+            --primary-intense: #1e40af;
+            --primary-vibrant: #2563eb;
+            --primary-dark: #0f172a;
+            --primary: #1e293b;
+            --bg-main: #f8fafc;
+            --card-bg: #ffffff;
+            --text-dark: #1e293b;
+            --text-muted: #64748b;
+            
+            --header-bg: #f0fdf4;
+            --header-border: #10b981;
+            --header-text: #065f46;
+
+            --border-glosario: #0ea5e9;
+            --bg-glosario: #f0f9ff;
+            --border-investigacion: #f59e0b;
+            --bg-investigacion: #fffbeb;
+            --border-critica: #ef4444;
+            --bg-critica: #fef2f2;
+            --border-factores: #10b981;
+            --bg-factores: #ecfdf5;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-dark);
+            min-height: 100vh;
+        }
+
+        aside {
+            width: 300px;
+            background-color: var(--primary-dark);
+            color: white;
+            padding: 25px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            overflow-y: auto;
+            border-right: 1px solid #334155;
+            z-index: 100;
+        }
+
+        aside h1 {
+            font-size: 1.25rem;
+            margin-bottom: 25px;
+            color: #f8fafc;
+            border-bottom: 3px solid var(--primary-vibrant);
+            padding-bottom: 12px;
+            text-align: center;
+        }
+
+        aside nav ul {
+            list-style: none;
+        }
+
+        aside nav ul li {
+            margin-bottom: 10px;
+        }
+
+        aside nav ul li a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 0.95rem;
+            display: block;
+            padding: 10px 14px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            font-weight: 500;
+        }
+
+        aside nav ul li .btn-volver {
+            background-color: #334155;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+            border: 1px solid #475569;
+            margin-bottom: 15px;
+            display: block;
+            padding: 10px 14px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            text-decoration: none;
+        }
+
+        aside nav ul li .btn-volver:hover {
+            background-color: var(--primary-vibrant);
+            border-color: var(--primary-vibrant);
+        }
+
+        aside nav ul li a:hover, aside nav ul li a.active {
+            background-color: var(--primary-vibrant);
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(37, 99, 235, 0.15);
+        }
+
+        main {
+            margin-left: 300px;
+            padding: 40px;
+            max-width: 1100px;
+        }
+
+        header {
+            margin-bottom: 35px;
+            background: linear-gradient(135deg, var(--header-bg), #e6fcf0);
+            border-left: 6px solid var(--header-border);
+            color: var(--header-text);
+            padding: 25px 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(16, 185, 129, 0.08);
+        }
+
+        header h2 {
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+            color: var(--header-text);
+            font-weight: 800;
+        }
+
+        header p {
+            color: #15803d;
+            font-size: 1.05rem;
+            font-weight: 500;
+        }
+
+        section {
+            background: var(--card-bg);
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            margin-bottom: 35px;
+            border-left: 6px solid var(--primary-vibrant);
+        }
+
+        section h2 {
+            color: var(--primary-dark);
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #f1f5f9;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: var(--primary-intense);
+            margin: 25px 0 12px 0;
+            font-size: 1.25rem;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+            color: #334155;
+            text-align: justify;
+        }
+
+        /<em> CONTENEDOR DE IMAGEN (ANTI-SOLAPAMIENTO) </em>/
+        .tarjeta-imagen {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 20px 0 30px 0;
+            text-align: center;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            display: block;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tarjeta-imagen img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            margin-bottom: 12px;
+            display: inline-block;
+        }
+
+        .tarjeta-imagen .caption {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            font-style: italic;
+            margin: 0;
+            line-height: 1.4;
+            display: block;
+        }
+
+        /<em> FILAS DE IMÁGENES COMPATIBLES (ADAPTATIVAS) </em>/
+        .fila-imagenes {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0 30px 0;
+        }
+
+        .fila-imagenes .tarjeta-imagen {
+            flex: 1;
+            min-width: 250px;
+            margin: 0;
+        }
+
+        .caja-colores {
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-size: 1rem;
+        }
+
+        .caja-colores h4 {
+            margin-bottom: 10px;
+            font-size: 1.15rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .factores {
+            background-color: var(--bg-factores);
+            border-left: 5px solid var(--border-factores);
+            color: #047857;
+        }
+
+        .investigacion {
+            background-color: var(--bg-investigacion);
+            border-left: 5px solid var(--border-investigacion);
+            color: #b45309;
+        }
+
+        .critica {
+            background-color: var(--bg-critica);
+            border-left: 5px solid var(--border-critica);
+            color: #b91c1c;
+        }
+
+        ul {
+            padding-left: 25px;
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #334155;
+        }
+
+        /<em> POPUPS INTERACTIVOS </em>/
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(4px);
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal.show {
+            display: flex;
+        }
+
+        .modal-content {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            max-width: 650px;
+            width: 90%;
+            max-height: 85vh;
+            overflow-y: auto;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            border-left: 6px solid var(--border-investigacion);
+            position: relative;
+            animation: modalFadeIn 0.3s ease-out;
+        }
+
+        @keyframes modalFadeIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-muted);
+        }
+
+        .modal-close:hover {
+            color: var(--border-critica);
+        }
+
+        .btn-interactivo {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            margin: 8px 0;
+            border: none;
+        }
+
+        .btn-anecdota {
+            background-color: var(--bg-investigacion);
+            border: 1px solid var(--border-investigacion);
+            color: #b45309;
+        }
+
+        .btn-anecdota:hover {
+            background-color: var(--border-investigacion);
+            color: white;
+        }
+
+        .btn-texto {
+            background-color: var(--bg-factores);
+            border: 1px solid var(--border-factores);
+            color: #047857;
+        }
+
+        .btn-texto:hover {
+            background-color: var(--border-factores);
+            color: white;
+        }
+
+        .btn-video {
+            background-color: var(--bg-glosario);
+            border: 1px solid var(--border-glosario);
+            color: #0369a1;
+        }
+
+        .btn-video:hover {
+            background-color: var(--border-glosario);
+            color: white;
+        }
+
+        .texto-modal {
+            font-size: 0.95rem;
+            color: #334155;
+            background-color: #f8fafc;
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px solid #e2e8f0;
+            white-space: pre-wrap;
+            margin-top: 10px;
+            text-align: justify;
+        }
+
+        @media (max-width: 900px) {
+            aside {
+                width: 100%;
+                height: auto;
+                position: relative;
+                border-right: none;
+                border-bottom: 1px solid #334155;
+            }
+            main {
+                margin-left: 0;
+                width: 100%;
+                padding: 20px;
+            }
+        }
+    
+        /* --- NAVEGACIÓN DOBLE EJE: EJE HORIZONTAL SUPERIOR --- */
+        .eje-horizontal-contenedor {
+            background-color: var(--card-bg);
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 20px 22px;
+            margin-bottom: 35px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+        }
+
+        .eje-horizontal-encabezado {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+            border-bottom: 2px solid #f1f5f9;
+            padding-bottom: 10px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .eje-horizontal-titulo {
+            font-size: 1.12rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .eje-horizontal-subtitulo {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        .eje-horizontal-galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 14px;
+            width: 100%;
+        }
+
+        .tarjeta-bloque-eje {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            border-radius: 10px;
+            overflow: hidden;
+            background: var(--primary-dark);
+            border: 1px solid #cbd5e1;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+            transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+        }
+
+        .tarjeta-bloque-eje:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 22px rgba(37, 99, 235, 0.22);
+            border-color: var(--primary-vibrant);
+        }
+
+        .tarjeta-bloque-eje.active {
+            border: 2px solid var(--primary-vibrant);
+            box-shadow: 0 0 12px rgba(37, 99, 235, 0.35);
+        }
+
+        .imagen-contenedor-bloque {
+            position: relative;
+            width: 100%;
+            height: 100px;
+            overflow: hidden;
+            background-color: #1e293b;
+        }
+
+        .imagen-contenedor-bloque img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.72;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .tarjeta-bloque-eje:hover .imagen-contenedor-bloque img {
+            opacity: 0.95;
+            transform: scale(1.08);
+        }
+
+        /* Texto incrustado dentro de la imagen */
+        .insignia-bloque {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(15, 23, 42, 0.85);
+            color: #ffffff;
+            padding: 6px 10px;
+            border-radius: 6px;
+            font-weight: 800;
+            font-size: 0.8rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(4px);
+            text-align: center;
+            width: 88%;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+        }
+
+        .tarjeta-bloque-eje.active .insignia-bloque {
+            background: var(--primary-vibrant);
+            border-color: #ffffff;
+        }
+
+        /* Desplegable del título por debajo al pasar el ratón por la imagen */
+        .desplegable-titulo-bloque {
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            background-color: var(--primary-dark);
+            color: #ffffff;
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            font-size: 0.78rem;
+            font-weight: 600;
+            line-height: 1.35;
+            text-align: center;
+            padding: 0 6px;
+        }
+
+        .tarjeta-bloque-eje:hover .desplegable-titulo-bloque {
+            max-height: 85px;
+            opacity: 1;
+            padding: 10px 6px;
+            border-top: 2px solid var(--primary-vibrant);
+        }
+
+        .submenu-bloque {
+            padding-left: 12px;
+            margin-top: 6px;
+            border-left: 2px solid var(--primary-vibrant);
+            list-style: none;
+        }
+
+        .submenu-bloque li {
+            margin-bottom: 6px;
+        }
+
+        .submenu-bloque li a {
+            font-size: 0.85rem;
+            padding: 6px 10px;
+            color: #94a3b8;
+        }
+
+        .submenu-bloque li a:hover, .submenu-bloque li a.active {
+            color: #ffffff;
+            background-color: rgba(255,255,255,0.08);
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navegación Lateral -->
+    <aside>
+        <h1>🏛️ Bloque VI: Transición & Democracia</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="btn-volver">🏠 Volver a Portada</a></li>
+                
+                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 10px 10px 4px 10px; font-weight: bold; border-bottom: 1px solid #334155;">📖 Temas del Bloque VI</li>
+                
+                <li>
+                    <a href="bloque6_tema1.html" class="active">Tema 1: Transición & Democracia</a>
+                    <ul class="submenu-bloque">
+                        <li><a href="#transicion">• 1. La Ley de Reforma Política</a></li>
+                        <li><a href="#constitucion">• 2. La Constitución de 1978</a></li>
+                        <li><a href="#golpe23f">• 3. El 23-F y la Democracia</a></li>
+                        <li><a href="#consolidacion">• 4. Alternancia y Modernización</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Contenido Principal -->
+    <main>
+        
+        <header>
+            <h2>Bloque VI: Conquista y Consolidación de la Democracia (1975 - Actualidad)</h2>
+            <p>La liquidación de las estructuras franquistas, el proceso constituyente de 1978, la alternancia política y la plena inserción internacional de España.</p>
+        </header>
+
+        <!-- NAVEGACIÓN DOBLE EJE: EJE HORIZONTAL SUPERIOR -->
+        <div class="eje-horizontal-contenedor">
+            <div class="eje-horizontal-encabezado">
+                <span class="eje-horizontal-titulo">🧭 NAVEGACIÓN DE DOBLE EJE: GALERÍA SUPERIOR DE BLOQUES</span>
+                <span class="eje-horizontal-subtitulo">Pasa el ratón sobre cada bloque para desplegar el título por debajo o haz clic para acceder</span>
+            </div>
+
+            <div class="eje-horizontal-galeria">
+                <!-- INTRODUCCIÓN -->
+                <a href="tema0.html" class="tarjeta-bloque-eje">
+                    <div class="imagen-contenedor-bloque">
+                        <img src="linea-tiempo.png" alt="Introducción">
+                        <span class="insignia-bloque">INTRO</span>
+                    </div>
+                    <div class="desplegable-titulo-bloque">
+                        Introducción a la Historia, Fuentes y Tiempos
+                    </div>
+                </a>
+
+                <!-- BLOQUE I -->
+                <a href="bloque1_tema1.html" class="tarjeta-bloque-eje">
+                    <div class="imagen-contenedor-bloque">
+                        <img src="img/eje-cronologico-isabel.png" alt="Bloque I">
+                        <span class="insignia-bloque">BLOQUE I</span>
+                    </div>
+                    <div class="desplegable-titulo-bloque">
+                        El Estado Liberal (1833 - 1874)
+                    </div>
+                </a>
+
+                <!-- BLOQUE II -->
+                <a href="bloque2_tema1.html" class="tarjeta-bloque-eje">
+                    <div class="imagen-contenedor-bloque">
+                        <img src="img/eje-cronologico-restauracion.png" alt="Bloque II">
+                        <span class="insignia-bloque">BLOQUE II</span>
+                    </div>
+                    <div class="desplegable-titulo-bloque">
+                        La Restauración (1875 - 1902)
+                    </div>
+                </a>
+
+                <!-- BLOQUE III -->
+                <a href="bloque3_tema1.html" class="tarjeta-bloque-eje">
+                    <div class="imagen-contenedor-bloque">
+                        <img src="img/boda-real.png" alt="Bloque III">
+                        <span class="insignia-bloque">BLOQUE III</span>
+                    </div>
+                    <div class="desplegable-titulo-bloque">
+                        Crisis & Dictadura (1902 - 1931)
+                    </div>
+                </a>
+
+                <!-- BLOQUE IV -->
+                <a href="bloque4_tema1.html" class="tarjeta-bloque-eje">
+                    <div class="imagen-contenedor-bloque">
+                        <img src="img/eje-cronologico-republica.png" alt="Bloque IV">
+                        <span class="insignia-bloque">BLOQUE IV</span>
+                    </div>
+                    <div class="desplegable-titulo-bloque">
+                        II República & Guerra Civil (1931 - 1939)
+                    </div>
+                </a>
+
+                <!-- BLOQUE V -->
+                <a href="bloque5_tema1.html" class="tarjeta-bloque-eje">
+                    <div class="imagen-contenedor-bloque">
+                        <img src="img/eje-cronologico-franquismo1.png" alt="Bloque V">
+                        <span class="insignia-bloque">BLOQUE V</span>
+                    </div>
+                    <div class="desplegable-titulo-bloque">
+                        La Dictadura Franquista (1939 - 1975)
+                    </div>
+                </a>
+
+                <!-- BLOQUE VI -->
+                <a href="bloque6_tema1.html" class="tarjeta-bloque-eje active">
+                    <div class="imagen-contenedor-bloque">
+                        <img src="img/eje-cronologico-transicion.png" alt="Bloque VI">
+                        <span class="insignia-bloque">BLOQUE VI</span>
+                    </div>
+                    <div class="desplegable-titulo-bloque">
+                        Transición & Democracia (1975 - 2023)
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="tarjeta-imagen" style="margin-top: 0;">
+            <img src="img/eje-cronologico-transicion.png" alt="Eje Cronológico de la Transición y la Consolidación Democrática">
+            <span class="caption">Eje cronológico que resume las grandes fases de la transición política y los gabinetes democráticos de España</span>
+        </div>
+
+        <!-- SECCIÓN 1 -->
+        <section id="transicion">
+            <h2>1. La Transición Democrática y el Gobierno de Adolfo Suárez (1975 - 1982)</h2>
+            <p>Tras la muerte de <em>Francisco Franco</em> el 20 de noviembre de 1975, se inició en España un complejo y modélico proceso de transformación política, conocido históricamente como la <strong>Transición</strong>, que condujo al país de un régimen dictatorial de poder absoluto a un sistema democrático homologable a las democracias de la Europa occidental. El 22 de noviembre, <em>Juan Carlos I de Borbón</em> fue oficialmente proclamado rey de España de acuerdo con lo estipulado en la Ley de Sucesión, comprometiéndose inicialmente a respetar la legalidad vigente.</p>
+
+            <div class="tarjeta-imagen">
+                <img src="img/abrazo-genoves.png" alt="El Abrazo de Juan Genovés">
+                <span class="caption">Imagen: El Abrazo, lienzo pintado por Juan Genovés en 1976, convertido en el gran símbolo artístico del anhelo de reconciliación nacional de los españoles</span>
+            </div>
+
+            <p>La primera andadura política se desarrolló bajo la presidencia del franquista inmovilista <em>Carlos Arias Navarro</em> (noviembre de 1975 - julio de 1976), cuyo gobierno pretendía realizar tímidas reformas administrativas pero manteniendo intacto el chiringuito del régimen. Este intento de "franquismo sin Franco" chocó frontalmente con el auge de la <strong>conflictividad social</strong> en las calles. Una masiva oleada de huelgas obreras, manifestaciones estudiantiles y campañas ciudadanas por la amnistía y las libertades pusieron a prueba la firmeza del Estado, alcanzando su clímax dramático en los trágicos sucesos de Vitoria en marzo de 1976, donde la represión policial de una asamblea obrera se saldó con cinco trabajadores fallecidos y más de 150 heridos.</p>
+
+            <div class="tarjeta-imagen">
+                <img src="img/huelga-vitoria-1976.png" alt="Sucesos de Vitoria de marzo de 1976">
+                <span class="caption">Imagen: Intervención militar en Vitoria durante los violentos enfrentamientos de marzo de 1976 que aceleraron el cese de Carlos Arias Navarro</span>
+            </div>
+
+            <p>Ante la evidencia del fracaso represivo de Arias Navarro, el monarca forzó su destitución en julio de 1976 y nombró de forma imprevista como nuevo presidente del Gobierno a <em>Adolfo Suárez</em>, un joven y ambicioso político procedente del Movimiento Nacional. Suárez comprendió de inmediato que la única forma de consolidar la monarquía y garantizar la estabilidad era pilotar una <strong>ruptura pactada</strong> desde la propia legalidad del régimen franquista, siguiendo la famosa fórmula del jurista <em>Torcuato Fernández-Miranda</em> de avanzar "de la ley a la ley".</p>
+
+            <p>El pilar fundamental de este cambio fue la promulgación de la <strong>Ley para la Reforma Política</strong> en noviembre de 1976. Esta norma clave reconocía la soberanía popular como órgano supremo, garantizaba los derechos fundamentales de las personas y proponía la creación de unas Cortes bicamerales elegidas por sufragio universal para redactar una Constitución. Para asombro general, Suárez logró que las propias Cortes franquistas aprobaran la ley (lo que se conoció de forma metafórica como su "harakiri" corporativo), siendo posteriormente ratificada por la ciudadanía en referéndum en diciembre de 1976 con un arrollador 94% de votos afirmativos.</p>
+
+            <div class="tarjeta-imagen">
+                <img src="img/suarez-time.png" alt="Portada de la revista TIME dedicada a Adolfo Suárez">
+                <span class="caption">Imagen: Portada de la prestigiosa revista norteamericana TIME en 1977, retratando a Adolfo Suárez bajo el título 'Spain: Democracy Wins'</span>
+            </div>
+
+            <p>A lo largo del convulso año 1977, el Gobierno se apresuró a desmantelar los resortes del franquismo mediante la disolución del Movimiento Nacional, la supresión de la censura de prensa y la promulgación de decretos de <strong>amnistía general</strong> para excarcelar a todos los presos políticos. Asimismo, se dio un paso crucial para la paz social legalizando las centrales sindicales tradicionales (UGT y CCOO) y los partidos políticos, incluyendo al histórico <em>Partido Comunista de España</em> de <em>Santiago Carrillo</em> el Sábado Santo de 1977, una audaz medida de Suárez que generó una altísima tensión en los sectores militares más derechistas del generalato.</p>
+
+            <p>El clímax de la agitación ultraizquierdista y el terrorismo de extrema derecha golpeó de forma trágica la capital en enero de 1977 con la pavorosa <strong>matanza de Atocha</strong>, donde pistoleros falangistas asesinaron a cinco abogados laboralistas afiliados al PCE. La respuesta popular fue una masiva y silenciosa manifestación de repulsa en las calles de Madrid que demostró la voluntad de reconciliación nacional de los españoles.</p>
+
+            <div class="tarjeta-imagen">
+                <img src="img/atentado-atocha-1977.png" alt="Atentado del bufete laboralista de Atocha">
+                <span class="caption">Imagen: El entierro multitudinario y silencioso de los abogados laboralistas de Atocha en 1977, hito decisivo en la pacificación civil de la Transición</span>
+            </div>
+
+            <p>El 15 de junio de 1977 se celebraron las primeras <strong>elecciones generales democráticas</strong> desde la Segunda República. La consulta electoral arrojó el triunfo mayoritario de la coalición del centro-derecha reformista organizada por Suárez, la <strong>Unión de Centro Democrático (UCD)</strong>, seguida muy de cerca por el PSOE de un joven abogado sevillano, <em>Felipe González</em>, que se consolidó como líder hegemónico de la izquierda por delante del debilitado PCE.</p>
+
+            <div class="tarjeta-imagen">
+                <img src="img/elecciones-1977.png" alt="Mapa Electoral de las Elecciones Generales de junio de 1977">
+                <span class="caption">Distribución provincial de los partidos políticos mayoritarios tras los comicios generales constituyentes de 1977</span>
+            </div>
+
+            <p>Para estabilizar la dramática situación económica del país (aquejado por las réplicas mundiales de la <strong>crisis del petróleo de 1973</strong>, con una inflación galopante superior al 26%, paro creciente y desabastecimiento energético), Suárez impulsó un histórico ejercicio de concertación social firmando en octubre de 1977 los <strong>Pactos de la Moncloa</strong>. En estos acuerdos, las principales fuerzas políticas, empresariales y sindicales aceptaron duros sacrificios colectivos (moderación salarial, devaluación de la peseta, control del gasto público) a cambio de una profunda reforma fiscal progresiva que dio luz al <strong>Impuesto sobre la Renta de las Personas Físicas (IRPF)</strong> y a la universalización de la Seguridad Social.</p>
+
+            <div class="tarjeta-imagen">
+                <img src="img/pactos-moncloa.png" alt="Líderes políticos firmando los Pactos de la Moncloa">
+                <span class="caption">Imagen: Adolfo Suárez, Felipe González, Santiago Carrillo y Manuel Fraga en la firma del pacto socioeconómico de la Moncloa en 1977</span>
+            </div>
+
+            <!-- VÍDEO COMPLEMENTARIO SOBRE LA TRANSICIÓN -->
+            <div style="margin: 20px 0; text-align: center;">
+                <p style="font-size: 0.95rem; color: var(--text-muted); font-style: italic; margin-bottom: 10px;">
+                    ¿Quieres analizar el proceso político que desmontó la legalidad del franquismo de forma pacífica entre 1975 y 1977?
+                </p>
+                <a href="https://www.youtube.com/watch?v=vDCjvkS_yUw" target="_blank" class="btn-interactivo btn-video">
+                    🎬 Vídeo complementario: Documental sobre la Transición Política Española ➡️
+                </a>
+            </div>
+
+            <!-- BOTÓN INTERACTIVO: DON JUAN DE BORBON -->
+            <div style="margin: 15px 0; text-align: center;">
+                <button class="btn-interactivo btn-texto" onclick="openPopup('pop-don-juan')">📜 Documento: La Declaración de renuncia de Don Juan de Borbón (1977)</button>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2 -->
+        <section id="bipartidismo">
+            <h2>2. La Consolidación Democrática y la Dinámica del Bipartidismo (1982 - 2011)</h2>
+            <p>La UCD sufrió un rápido proceso de deterioro interno debido a las disensiones entre sus familias ideológicas, el acoso de la oposición, la escalada sangrienta de los atentados terroristas de la banda radical vasca <em>ETA</em> (que cometió sus peores masacres entre 1979 y 1980) y el descontento militar, lo que forzó la dimisión de <em>Adolfo Suárez</em> en enero de 1981. Durante el pleno de investidura de su sucesor, <em>Leopoldo Calvo-Sotelo</em>, un comando de la Guardia Civil dirigido por el teniente coronel <em>Antonio Tejero</em> asaltó el Congreso de los Diputados el <strong>23 de febrero de 1981 (23-F)</strong> en un intento fallido de golpe de Estado militar.</p>
+
+            <div class="tarjeta-imagen">
+                <img src="img/tejero-23f.png" alt="Asalto al Congreso el 23-F de 1981">
+                <span class="caption">Imagen: El teniente coronel Antonio Tejero pistola en mano interrumpiendo la investidura en las Cortes del 23 de febrero de 1981</span>
+            </div>
+
+            <p>La firme actitud en defensa de la legalidad constitucional del rey <em>Juan Carlos I</em>, dirigiéndose en directo a la nación de madrugada como Capitán General de los tres Ejércitos, desbarató la sublevación. Tras un brevísimo gobierno de Calvo-Sotelo, lastrado por la aprobación de la polémica ley de divorcio y la tragedia sanitaria de envenenamiento por aceite de colza desnaturalizado, se disolvieron las Cortes.</p>
+
+            <p>Las elecciones generales de octubre de 1982 dieron un triunfo arrollador al <strong>Partido Socialista Obrero Español (PSOE)</strong>, que obtuvo más de diez millones de votos y la mayoría absoluta bajo el liderazgo de <em>Felipe González</em>. Se consolidó así un sólido modelo de <strong>bipartidismo</strong> imperfecto en el que el PSOE y el refundado <strong>Partido Popular (PP)</strong> se alternarían cómodamente en la gobernabilidad:</p>
+
+            <div class="tarjeta-imagen">
+                <img src="img/felipe-gonzalez-1982.png" alt="Victoria electoral del PSOE en octubre de 1982">
+                <span class="caption">Imagen: Felipe González y Alfonso Guerra en el balcón del hotel Palace celebrando el histórico triunfo de la mayoría absoluta de 1982</span>
+            </div>
+
+            <ul>
+                <li><strong>Los años de gobierno socialista (1982 - 1996):</strong> Marcados por un ambicioso plan de modernización de las infraestructuras, educación y sanidad pública para fraguar el moderno <strong>estado del bienestar</strong>. Para sanear las cuentas ante las directrices europeas, se aplicó un doloroso proceso de <strong>reconversión industrial</strong> que cerró fábricas obsoletas y minas, desatando huelgas generales de gran calado convocadas por los sindicatos, como la célebre huelga general del 14-D en 1988 liderada por la propia UGT socialista. Su declive final se aceleró por la revelación de escandalosos casos de corrupción (Roldán, Rubio) y la revelación de la "guerra sucia" estatal contra ETA coordinada por los grupos armados ilegales <em>GAL</em>.</li>
+                <li><strong>Los gobiernos del Partido Popular de José María Aznar (1996 - 2004):</strong> Centrados en el saneamiento fiscal, la privatización de monopolios estatales para equilibrar el déficit público y cumplir los requisitos de la moneda única, logrando la implantación del <strong>euro en 2002</strong>. Sufrió una profunda contestación civil por su implicación directa en la invasión de Irak de 2003 y el desastre ecológico del Prestige en Galicia. Su ciclo concluyó tras los dramáticos <strong>atentados yihadistas del 11-M de 2004</strong> en los trenes de cercanías de Madrid, que provocaron la muerte de 193 ciudadanos.</li>
+                <li><strong>El retorno del PSOE con José Luis Rodríguez Zapatero (2004 - 2011):</strong> Iniciado con la inmediata retirada de las tropas de Irak. Su mandato se caracterizó por la ampliación de los derechos civiles (matrimonio homosexual, Ley de Dependencia, Ley de Igualdad de Género) y la reforma de Estatutos regionales, pero se vio gravemente truncado por el impacto devastador de la <strong>crisis financiera mundial de 2007</strong> (desencadenada por las hipotecas subprime y el estallido del boom inmobiliario nacional). El paro se disparó por encima de los cuatro millones y el Gobierno se vio obligado a decretar drásticos planes de recortes y austeridad exigidos por la Eurozona, lo que desató la protesta civil masiva de los indignados en las plazas con el histórico <strong>movimiento del 15-M en 2011</strong>.</li>
+            </ul>
+
+            <!-- VÍDEOS COMPLEMENTARIOS DEL BIPARTIDISMO -->
+            <div style="margin: 20px 0; text-align: center;">
+                <p style="font-size: 0.95rem; color: var(--text-muted); font-style: italic; margin-bottom: 10px;">
+                    ¿Deseas profundizar en las principales reformas estructurales y las grandes fases del bipartidismo en España?
+                </p>
+                <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                    <a href="https://www.youtube.com/watch?v=YdGx5SiLimw" target="_blank" class="btn-interactivo btn-video">
+                        🎬 Vídeo complementario: Resumen de la Consolidación Democrática ➡️
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=ENN-eCs19F8" target="_blank" class="btn-interactivo btn-video">
+                        🎬 Vídeo complementario: El Golpe de Estado fallido del 23-F ➡️
+                    </a>
+                </div>
+            </div>
+
+            <!-- BOTÓN INTERACTIVO: DIMISION SUAREZ -->
+            <div style="margin: 15px 0; text-align: center;">
+                <button class="btn-interactivo btn-texto" onclick="openPopup('pop-dimision-suarez')">🕵️‍♂️ Analiza: El discurso de dimisión de Adolfo Suárez en enero de 1981</button>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 3 -->
+        <section id="constitucion78">
+            <h2>3. La Constitución de 1978 y el Modelo de Estado de las Autonomías</h2>
+            <p>La Carta Magna de 1978 representa el hito más perdurable del proceso de consenso y acuerdo de la Transición. Redactada de forma secreta y plural por una comisión de siete ponentes parlamentarios (conocidos como los <strong>"padres de la Constitución"</strong>): <em>Gabriel Cisneros</em>, <em>Miguel Herrero de Miñón</em> y <em>Pedro Pérez-Llorca</em> por la UCD; <em>Gregorio Peces-Barba</em> por el PSOE; <em>Manuel Fraga</em> por AP; <em>Jordi Solé Tura</em> por el PCE; y <em>Miquel Roca</em> por la minoría catalana. Fue ampliamente refrendada por el pueblo español el <strong>6 de diciembre de 1978</strong> con un 87% de apoyos en las urnas.</p>
+
+            <div class="tarjeta-imagen">
+                <img src="img/padres-constitucion.png" alt="Los Padres de la Constitución de 1978">
+                <span class="caption">Imagen: Los siete redactores constitucionales representantes de la pluralidad ideológica que forjó el consenso de 1978</span>
+            </div>
+
+            <p>Sus rasgos institucionales definen de forma irrevocable la estructura política de España contemporánea:</p>
+            <ul>
+                <li><strong>La forma política del Estado:</strong> España se constituye formalmente como una <strong>monarquía parlamentaria</strong>, donde el monarca ostenta el papel de Jefe del Estado con funciones meramente simbólicas y de representación internacional. La Corona queda desprovista de cualquier potestad legislativa o ejecutiva.</li>
+                <li><strong>El origen de la soberanía:</strong> Se proclama la <strong>soberanía popular</strong>, residiendo el poder de forma exclusiva en el conjunto de los ciudadanos de los que emanan los poderes constitucionales.</li>
+                <li><strong>La separación de poderes:</strong>
+                    <ul>
+                        <li>El poder legislativo reside en unas Cortes bicamerales elegidas por sufragio universal: el <strong>Congreso de los Diputados</strong> y el <strong>Senado</strong>.</li>
+                        <li>El poder ejecutivo es ejercido de forma directa por el Gobierno de la Nación.</li>
+                        <li>El poder judicial reside en un cuerpo de jueces independientes y se crea el <strong>Tribunal Constitucional</strong> para velar por las garantías legales.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="tarjeta-imagen">
+                <img src="img/referendum-constitucion.png" alt="Campaña del referéndum constitucional de 1978" style="max-height: 400px;">
+                <span class="caption">Imagen: Cartel publicitario institucional editado por el Gobierno de España que invitaba al voto afirmativo bajo el lema "A favor de todos"</span>
+            </div>
+
+            <h3>El Modelo Territorial: El Estado de las Autonomías</h3>
+            <p>El título VIII de la Constitución, "De la Organización Territorial del Estado", resolvió uno de los mayores problemas históricos de España sustituyendo el centralismo franquista por un modelo de amplia descentralización político-administrativa denominado <strong>Estado de las Autonomías</strong>. El texto constitucional compatibiliza la indisoluble unidad de la nación con el reconocimiento y garantía del derecho a la autonomía de las diversas nacionalidades y regiones.</p>
+
+            <div class="tarjeta-imagen">
+                <img src="img/mapa-autonomias.png" alt="Mapa de las Comunidades Autónomas de España">
+                <span class="caption">Estructura autonómica resultante de las diecisiete comunidades y dos ciudades autónomas reguladas por sus respectivos Estatutos</span>
+            </div>
+
+            <p>A través de un complejo proceso legislativo desarrollado entre 1979 y 1983, España quedó estructurada en <strong>17 comunidades autónomas y dos ciudades autónomas</strong> (Ceuta y Melilla en 1995). Cada territorio cuenta con su propia Asamblea Legislativa, presidente regional, Gobierno autonómico y un <strong>Estatuto de Autonomía</strong> aprobado por las Cortes Generales que delimita las competencias transferidas (educación, sanidad, ordenación del territorio) frente a las competencias que la Constitución reserva de forma exclusiva para el Estado (defensa, política exterior, hacienda general).</p>
+        </section>
+
+        <!-- SECCIÓN 4 -->
+        <section id="europa">
+            <h2>4. El Impacto de la Integración Europea e Internacional de España</h2>
+            <p>Uno de los mayores éxitos de consolidación democrática residió en romper el aislamiento diplomático del franquismo e insertar plenamente a España en la arquitectura institucional occidental. Este proceso se completó en la década de los ochenta a través de dos grandes hitos:</p>
+
+            <div class="tarjeta-imagen">
+                <img src="img/adhesion-cee.png" alt="Firma del Tratado de Adhesión a la CEE en 1985">
+                <span class="caption">Imagen: El presidente Felipe González firmando el Tratado de Adhesión en el Palacio de Oriente de Madrid, formalizando el ingreso español en Europa</span>
+            </div>
+
+            <ul>
+                <li><strong>La entrada en la OTAN y el Referéndum de 1986:</strong> El gabinete conservador de <em>Leopoldo Calvo-Sotelo</em> formalizó en 1982 el ingreso de España en la Alianza Atlántica (OTAN), una medida que contó con la frontal y activa oposición de los partidos de izquierda dirigidos por el PSOE. Sin embargo, al asumir la presidencia, <em>Felipe González</em> modificó pragmáticamente su postura comprendiendo que la permanencia en la OTAN facilitaría la modernización de las Fuerzas Armadas y consolidaría el prestigio internacional. Para legitimarlo, convocó el histórico <strong>referéndum de la OTAN en marzo de 1986</strong>. Bajo una intensa campaña gubernamental pidiendo el "sí" bajo ciertas condiciones (no integración militar, no almacenamiento de armas nucleares), el Gobierno obtuvo una indiscutible victoria en las urnas.</li>
+                <li><strong>La adhesión a la Comunidad Económica Europea (CEE) en 1986:</strong> El 12 de junio de 1985 se firmó de forma solemne el <strong>Tratado de Adhesión a las Comunidades Europeas</strong>, entrando en vigor de pleno derecho el 1 de enero de 1986. Esta adhesión, respaldada de forma unánime por todas las fuerzas políticas del país, obligó a España a acogerse a directrices fiscales y monetarias comunes (creando el IVA) y a modernizar el sector productivo para integrarse en la Eurozona con la devaluación inicial de la peseta.</li>
+            </ul>
+
+            <p>A cambio de estos compromisos de ajuste fiscal y control del déficit, España se convirtió en receptora de masivas inyecciones de <strong>fondos europeos de cohesión</strong> y estructurales, lo que financió una enorme modernización de las autovías, telecomunicaciones y proyectos de innovación, consolidando un crecimiento récord del PIB y acelerando la homogeneización social de España con sus socios comunitarios.</p>
+
+            <!-- VÍDEO COMPLEMENTARIO SOBRE LA INTEGRACIÓN EUROPEA -->
+            <div style="margin: 20px 0; text-align: center;">
+                <p style="font-size: 0.95rem; color: var(--text-muted); font-style: italic; margin-bottom: 10px;">
+                    ¿Quieres conocer el momento solemne y los detalles de las negociaciones de adhesión de España a la CEE en 1986?
+                </p>
+                <a href="https://www.youtube.com/watch?v=h2havkD6c4o" target="_blank" class="btn-interactivo btn-video">
+                    🎬 Vídeo complementario: Retrospectiva del Ingreso de España en la Comunidad Europea ➡️
+                </a>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 5 -->
+        <section id="canarias-vi">
+            <h2>5. Singularidad del Proceso en la Comunidad Autónoma de Canarias</h2>
+            <p>La Transición política y el posterior desarrollo autonómico y de inserción europea adquirieron en el archipiélago canario unos perfiles de extraordinaria singularidad histórica, condicionados por su lejanía geográfica, su fragilidad de frontera y sus tradicionales desequilibrios socioeconómicos:</p>
+
+            <ul>
+                <li><strong>El pleito insular y la solución provincial:</strong> La histórica rivalidad entre la burguesía comercial de Las Palmas y de Santa Cruz de Tenerife se vio contenida gracias a las bases de equilibrio fijadas por la dictadura de Primo de Rivera en 1927 con la división provincial en dos circunscripciones, pero reapareció con fuerza durante el proceso preautonómico de 1978. La Transición solucionó de forma pionera este foco de división con la declaración de la <strong>capitalidad compartida</strong> (alternándose los periodos presidenciales y manteniendo el Parlamento fijo en Tenerife y la delegación del Gobierno en Gran Canaria) y la pervivencia e importancia de los Cabildos insulares en la gestión de cada territorio.</li>
+                <li><strong>La amenaza terrorista del independentismo (MPAIAC):</strong> Frente a la vía pacífica, el independentista canario <em>Antonio Cubillo</em> dirigió desde su exilio en Argelia el <strong>MPAIAC</strong>, una organización de extrema izquierda de corte terrorista que en los años setenta recurrió a la propaganda por radio ("La Voz de Canarias Libre") y a atentados armados, provocando finalmente el pánico en las islas y su posterior descrédito civil e inoperancia total.</li>
+                <li><strong>El impacto del Referéndum de la OTAN en Canarias:</strong> La consulta de la OTAN de 1986 generó una movilización social sin parangón en el archipiélago. Las fuerzas nacionalistas y la izquierda radical agitaron el rechazo militar por temor a que las islas se convirtieran en una base de operaciones bélicas en África. El "no" venció en el archipiélago canario de forma espectacular, lo que forzó al Estado a salvaguardar de inmediato la no militarización ofensiva de las islas.</li>
+                <li><strong>Las reformas del REF y el Estatuto de Autonomía de 1982:</strong> Tras una década de complejos debates parlamentarios, el Estatuto de Autonomía de Canarias fue aprobado por las Cortes en <strong>agosto de 1982</strong>, siendo posteriormente reformado y ampliado en 1996. Para proteger las singularidades canarias, se blindó de forma paralela la Ley de Transferencias Orgánicas y el <strong>Régimen Económico y Fiscal (REF)</strong>, garantizando la exención arancelaria, la Reserva para Inversiones en Canarias (RIC) y la creación de la Zona Especial Canaria (ZEC) de bajísima tributación societaria.</li>
+                <li><strong>La compleja integración en Europa (De los Puertos Francos al Protocolo 2):</strong> La entrada en la CEE en 1986 desató una fuerte alarma en el agro canario. Para no destruir el comercio de exportación de tomates y plátanos, inicialmente Canarias negoció su exclusión de la unión aduanera común mediante el <strong>Protocolo 2</strong>. Sin embargo, las pérdidas de ayudas forzaron en 1991 al paso a una integración plena europea, aunque logrando el reconocimiento legal definitivo de Canarias como <strong>Región Ultraperiférica (RUP)</strong> por el Tratado de Ámsterdam en 1999, compensando la lejanía.</li>
+            </ul>
+        </section>
+
+        <!-- SECCIÓN 6 -->
+        <section id="actualidad">
+            <h2>6. España en la Actualidad (2011 - 2026): Retos y Realidad Sociopolítica</h2>
+            <p>El ciclo del bipartidismo imperfecto entró en una profunda crisis de representación a partir del año 2015 con la irrupción de nuevas fuerzas parlamentarias estatales (<em>Podemos</em> en el ala de la izquierda alternativa y <em>Ciudadanos</em> en el centro liberal), fragmentando la composición del Congreso de los Diputados. Tras la abdicación forzada de <em>Juan Carlos I</em> en su hijo el rey <em>Felipe VI</em> en junio de 2014, el gabinete conservador de <em>Mariano Rajoy</em> (2011 - 2018) tuvo que hacer frente a la crisis soberanista de Cataluña, aplicando por primera vez el <strong>artículo 155 de la Constitución</strong> en 2017 para suspender el autogobierno catalán tras la celebración ilegal de un referéndum de autodeterminación promovido por <em>Carles Puigdemont</em>.</p>
+
+            <div class="tarjeta-imagen">
+                <img src="img/manifestacion-miguel-angel-blanco.png" alt="Rebelión civil y el espíritu de Ermua contra ETA en 1997">
+                <span class="caption">Imagen: El asesinato de Miguel Ángel Blanco en 1997 unificó a la sociedad civil española en un rechazo unánime contra el terrorismo, debilitando a ETA</span>
+            </div>
+
+            <p>En el año 2018, la condena por tramas de corrupción del PP motivó una histórica moción de censura presentada con éxito por el líder socialista <em>Pedro Sánchez</em>, quien conformó el primer Gobierno de coalición (PSOE - Unidas Podemos) de la andadura contemporánea. El nuevo Gobierno debió coordinar la severa gestión sanitaria de la pandemia de COVID-19 decretando el estado de alarma nacional en marzo de 2020, asumiendo posteriormente los reajustes energéticos de la guerra de Ucrania de 2022.</p>
+
+            <div class="tarjeta-imagen">
+                <img src="img/manifestacion-15m.png" alt="Movimiento de los indignados del 15-M en la Puerta del Sol">
+                <span class="caption">Imagen: Miles de jóvenes acampados en Sol en mayo de 2011 protestando contra las medidas de recortes e inaugurando un cambio estructural en el mapa de partidos</span>
+            </div>
+
+            <div class="tarjeta-imagen">
+                <img src="img/proclamacion-felipe-vi.png" alt="Proclamación del rey Felipe VI ante las Cortes Generales en 2014">
+                <span class="caption">Imagen: El juramento solemne de Felipe VI ante el Congreso en junio de 2014 tras firmarse el cese de funciones del rey emérito Juan Carlos I</span>
+            </div>
+
+            <div class="caja-colores factores" style="border-left: 5px solid var(--primary-vibrant);">
+                <h4>⚖️ Síntesis Forense: España en la Actualidad (2026)</h4>
+                <p>La gobernabilidad de España en el horizonte de 2026 continúa caracterizada por una profunda fragmentación parlamentaria y bloques polarizados, bajo el liderazgo del gobierno de coalición presidido por <em>Pedro Sánchez</em>. Socialmente, el país afronta grandes desafíos estructurales como el progresivo envejecimiento demográfico, la gestión de los flujos migratorios y el encarecimiento crónico de la vivienda, catalizando nuevas oleadas de contestación cívica y debates en torno al modelo de cohesión intergeneracional.</p>
+                <p>Desde el punto de vista económico, tras superar las distorsiones inflacionarias derivadas de las tensiones geopolíticas en Ucrania y Oriente Medio, España muestra una notable resiliencia en su PIB, impulsada por el dinamismo de las exportaciones de servicios y el turismo de masas, que registra récords históricos en regiones clave como Canarias. Sin embargo, persisten debilidades históricas estructurales, tales como una elevada deuda pública y tasas de desempleo juvenil que doblan la media comunitaria, lo que obliga a optimizar la canalización de los fondos europeos de recuperación e impulsar la transición ecológica y digital.</p>
+            </div>
+
+            <!-- VÍDEOS COMPLEMENTARIOS DE LA ESPAÑA ACTUAL -->
+            <div style="margin: 20px 0; text-align: center;">
+                <p style="font-size: 0.95rem; color: var(--text-muted); font-style: italic; margin-bottom: 10px;">
+                    ¿Deseas analizar la reestructuración del panorama político español tras los atentados de 2004 y la crisis de 2011?
+                </p>
+                <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                    <a href="https://www.youtube.com/watch?v=-_2NbUSp_PU" target="_blank" class="btn-interactivo btn-video">
+                        🎬 Vídeo complementario: El impacto y consecuencias de los atentados del 11-M ➡️
+                    </a>
+                    <a href="https://www.youtube.com/watch" target="_blank" class="btn-interactivo btn-video">
+                        🎬 Vídeo complementario: Análisis y repercusiones del movimiento del 15-M ➡️
+                    </a>
+                </div>
+            </div>
+
+            <!-- BOTÓN INTERACTIVO: 15-M -->
+            <div style="margin: 15px 0; text-align: center;">
+                <button class="btn-interactivo btn-anecdota" onclick="openPopup('pop-manifiesto-15m')">🕵️‍♂️ Analiza: El Manifiesto oficial del Movimiento 15-M (2011)</button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- VENTANAS EMERGENTES (POPUPS INTERACTIVOS / MODALS) -->
+
+    <!-- POPUP 1: DON JUAN -->
+    <div id="pop-don-juan" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closePopup('pop-don-juan')">&times;</span>
+            <h3 style="color: #b45309; margin-top: 0;">📜 La Declaración de Don Juan de Borbón (14 de mayo de 1977)</h3>
+            <p>El histórico discurso de renuncia dinástica que legitimó democráticamente a la Corona:</p>
+            <div class="texto-modal">"Majestad, querido hijo: En presencia de mi augusta madre, la reina Doña Victoria, y de las personas que componen el consejo privado de la Corona, quiero hacer hoy una declaración de trascendental importancia sobre los derechos dinásticos históricos.
+
+Por voluntad de mi difunto padre, el rey Alfonso XIII, asumí la jefatura de la Casa Real española en el exilio en 1941, defendiendo desde entonces una monarquía constitucional fundamentada en la soberanía popular y el pluralismo político frente a cualquier fórmula de poder dictatorial.
+
+Instaurado el régimen constitucional bajo vuestra jefatura real de acuerdo con las leyes fundamentales de España aprobadas por referéndum, creo llegado el momento de evitar cualquier confusión de legitimidad sucesoria.
+
+Por tanto, renuncio de forma expresa y definitiva a favor de mi hijo, el rey Juan Carlos I, a todos los derechos históricos de la dinastía monárquica que de forma ininterrumpida he custodiado, reconociéndole como único depositario de los destinos de España."</div>
+        </div>
+    </div>
+
+    <!-- POPUP 2: DIMISION SUAREZ -->
+    <div id="pop-dimision-suarez" class="modal">
+        <div class="modal-content" style="border-left: 6px solid var(--border-factores);">
+            <span class="modal-close" onclick="closePopup('pop-dimision-suarez')">&times;</span>
+            <h3 style="color: #047857; margin-top: 0;">📜 Discurso de dimisión de Adolfo Suárez (29 de enero de 1981)</h3>
+            <p>La alocución televisada en la que el presidente de la UCD anunció su cese ante el acoso político y militar:</p>
+            <div class="texto-modal">"Españoles: Me dirijo a vosotros en directo a través de la televisión nacional para comunicaros mi firme decisión de presentar al rey mi dimisión irrevocable como presidente del Gobierno de España.
+
+No presento mi dimisión por temor personal ni por cansancio físico ante el acoso parlamentario de las últimas semanas, sino porque considero que mi permanencia al frente del Ejecutivo es utilizada de forma interesada por determinados sectores inmovilistas del generalato y de la política como una excusa para desestabilizar la monarquía constitucional y atacar la existencia de nuestra joven democracia.
+
+Yo no quiero que el sistema democrático sea una vez más un paréntesis en nuestra larga, violenta e infame historia civil. El consenso y la reconciliación nacional exigen generosidad y altura de miras.
+
+Por eso, me aparto voluntariamente de la presidencia para abrir el camino a un nuevo liderazgo político que desactive las tensiones golpistas de los cuarteles y blinde definitivamente la paz y la convivencia de los españoles."</div>
+        </div>
+    </div>
+
+    <!-- POPUP 3: MANIFIESTO 15-M -->
+    <div id="pop-manifiesto-15m" class="modal">
+        <div class="modal-content" style="border-left: 6px solid var(--border-critica);">
+            <span class="modal-close" onclick="closePopup('pop-manifiesto-15m')">&times;</span>
+            <h3 style="color: #ef4444; margin-top: 0;">📜 Manifiesto de la Puerta del Sol (Movimiento 15-M, mayo de 2011)</h3>
+            <p>La proclama cívica de los indignados contra el desempleo, los recortes y el dominio financiero:</p>
+            <div class="texto-modal">"Nosotros, los ciudadanos despolitizados, los estudiantes precarios, los desempleados, los subcontratados, los jubilados, los jóvenes sin futuro... nos hemos reunido de forma espontánea en la Puerta del Sol de Madrid y en las plazas de toda España para gritar enérgicamente que ¡Ya está bien!.
+
+Estamos profundamente indignados ante el estado de la política nacional, dominada por unas élites parlamentarias insensibles a las necesidades de la gente común, que han aprobado leyes antisociales y recortes drásticos en sanidad y educación para rescatar con dinero público a los bancos que han provocado esta crisis, dejándonos en el paro y subiendo las hipotecas para quedarse con nuestras viviendas.
+
+No somos mercancías en manos de políticos y banqueros que limitan nuestras libertades fundamentales en beneficio exclusivo de los poderosos financieros.
+
+Reclamamos una democracia real y un cambio drástico del modelo productivo y electoral, donde el voto valga más que mil gritos y los ciudadanos recuperen de forma soberana el control de sus destinos."</div>
+        </div>
+    </div>
+
+    <!-- POPUP 4: CESE ETA -->
+    <div id="pop-cese-eta" class="modal">
+        <div class="modal-content" style="border-left: 6px solid var(--primary-vibrant);">
+            <span class="modal-close" onclick="closePopup('pop-cese-eta')">&times;</span>
+            <h3 style="color: #1e40af; margin-top: 0;">📜 Declaración de cese definitivo de la actividad armada de ETA (2011)</h3>
+            <p>El histórico y trascendental comunicado emitido por la banda terrorista vasca decretando el fin de la violencia:</p>
+            <div class="texto-modal">"Euskadi ta Askatasuna (ETA), ante las resoluciones de la Conferencia de Paz de San Sebastián y los profundos cambios históricos experimentados por la sociedad vasca en los últimos años, declara de forma formal e irrevocable el cese definitivo de su actividad armada.
+
+ETA considera que es el momento de abrir una nueva fase política fundamentada en el diálogo y la negociación pacífica entre todas las partes, para superar décadas de enfrentamiento civil armado en el que tantas personas han derramado sangre por sus ideales.
+
+La lucha armada ha concluido. Hacemos un llamamiento a los gobiernos de España y Francia para iniciar conversaciones directas encaminadas a resolver las consecuencias de este largo conflicto y regular la situación de los presos políticos."</div>
+        </div>
+    </div>
+
+    <script>
+        const links = document.querySelectorAll('aside nav ul li a');
+        const sections = document.querySelectorAll('main section');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (window.scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            links.forEach(a => {
+                const href = a.getAttribute('href');
+                if (href && href.startsWith('#')) {
+                    a.classList.remove('active');
+                    if (href === `#${current}`) {
+                        a.classList.add('active');
+                    }
+                }
+            });
+        });
+
+        function openPopup(id) {
+            document.getElementById(id).classList.add('show');
+        }
+
+        function closePopup(id) {
+            document.getElementById(id).classList.remove('show');
+        }
+
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.classList.remove('show');
+            }
+        }
+    </script>
+
+</body>
+</html>

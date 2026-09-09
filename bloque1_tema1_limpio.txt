@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloque I - Tema 1: La Crisis del Antiguo Régimen y las Cortes de Cádiz (1808 - 1833)</title>
+    <style>
+        :root {
+            --primary-intense: #1e40af;
+            --primary-vibrant: #2563eb;
+            --primary-dark: #0f172a;
+            --primary: #1e293b;
+            --bg-main: #f8fafc;
+            --card-bg: #ffffff;
+            --text-dark: #1e293b;
+            --text-muted: #64748b;
+            
+            --header-bg: #f0fdf4;
+            --header-border: #10b981;
+            --header-text: #065f46;
+
+            --border-glosario: #0ea5e9;
+            --bg-glosario: #f0f9ff;
+            --border-investigacion: #f59e0b;
+            --bg-investigacion: #fffbeb;
+            --border-critica: #ef4444;
+            --bg-critica: #fef2f2;
+            --border-factores: #10b981;
+            --bg-factores: #ecfdf5;
+        }
+
+        <em> {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-dark);
+            min-height: 100vh;
+        }
+
+        aside {
+            width: 300px;
+            background-color: var(--primary-dark);
+            color: white;
+            padding: 25px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            overflow-y: auto;
+            border-right: 1px solid #334155;
+            z-index: 100;
+        }
+
+        aside h1 {
+            font-size: 1.25rem;
+            margin-bottom: 25px;
+            color: #f8fafc;
+            border-bottom: 3px solid var(--primary-vibrant);
+            padding-bottom: 12px;
+            text-align: center;
+        }
+
+        aside nav ul {
+            list-style: none;
+        }
+
+        aside nav ul li {
+            margin-bottom: 10px;
+        }
+
+        aside nav ul li a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 0.95rem;
+            display: block;
+            padding: 10px 14px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            font-weight: 500;
+        }
+
+        aside nav ul li .btn-volver {
+            background-color: #334155;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+            border: 1px solid #475569;
+            margin-bottom: 15px;
+            display: block;
+            padding: 10px 14px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            text-decoration: none;
+        }
+
+        aside nav ul li .btn-volver:hover {
+            background-color: var(--primary-vibrant);
+            border-color: var(--primary-vibrant);
+        }
+
+        aside nav ul li a:hover, aside nav ul li a.active {
+            background-color: var(--primary-vibrant);
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(37, 99, 235, 0.15);
+        }
+
+        main {
+            margin-left: 300px;
+            padding: 40px;
+            max-width: 1100px;
+        }
+
+        header {
+            margin-bottom: 35px;
+            background: linear-gradient(135deg, var(--header-bg), #e6fcf0);
+            border-left: 6px solid var(--header-border);
+            color: var(--header-text);
+            padding: 25px 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(16, 185, 129, 0.08);
+        }
+
+        header h2 {
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+            color: var(--header-text);
+            font-weight: 800;
+        }
+
+        header p {
+            color: #15803d;
+            font-size: 1.05rem;
+            font-weight: 500;
+        }
+
+        section {
+            background: var(--card-bg);
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            margin-bottom: 35px;
+            border-left: 6px solid var(--primary-vibrant);
+        }
+
+        section h2 {
+            color: var(--primary-dark);
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #f1f5f9;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: var(--primary-intense);
+            margin: 25px 0 12px 0;
+            font-size: 1.25rem;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+            color: #334155;
+            text-align: justify;
+        }
+
+        /</em> CONTENEDOR DE IMAGEN (ANTI-SOLAPAMIENTO) <em>/
+        .tarjeta-imagen {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 20px 0 30px 0;
+            text-align: center;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            display: block;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tarjeta-imagen img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            margin-bottom: 12px;
+            display: inline-block;
+        }
+
+        .tarjeta-imagen .caption {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            font-style: italic;
+            margin: 0;
+            line-height: 1.4;
+            display: block;
+        }
+
+        /</em> FILAS DE IMÁGENES COMPATIBLES (ADAPTATIVAS) <em>/
+        .fila-imagenes {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0 30px 0;
+        }
+
+        .fila-imagenes .tarjeta-imagen {
+            flex: 1;
+            min-width: 250px;
+            margin: 0;
+        }
+
+        .caja-colores {
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-size: 1rem;
+        }
+
+        .caja-colores h4 {
+            margin-bottom: 10px;
+            font-size: 1.15rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .factores {
+            background-color: var(--bg-factores);
+            border-left: 5px solid var(--border-factores);
+            color: #047857;
+        }
+
+        .investigacion {
+            background-color: var(--bg-investigacion);
+            border-left: 5px solid var(--border-investigacion);
+            color: #b45309;
+        }
+
+        .critica {
+            background-color: var(--bg-critica);
+            border-left: 5px solid var(--border-critica);
+            color: #b91c1c;
+        }
+
+        ul {
+            padding-left: 25px;
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #334155;
+        }
+
+        /</em> POPUPS INTERACTIVOS (MODALS) */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(4px);
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal.show {
+            display: flex;
+        }
+
+        .modal-content {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            max-width: 650px;
+            width: 90%;
+            max-height: 85vh;
+            overflow-y: auto;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            border-left: 6px solid var(--border-investigacion);
+            position: relative;
+            animation: modalFadeIn 0.3s ease-out;
+        }
+
+        @keyframes modalFadeIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-muted);
+        }
+
+        .modal-close:hover {
+            color: var(--border-critica);
+        }
+
+        .btn-interactivo {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            margin: 8px 0;
+            border: none;
+        }
+
+        .btn-anecdota {
+            background-color: var(--bg-investigacion);
+            border: 1px solid var(--border-investigacion);
+            color: #b45309;
+        }
+
+        .btn-anecdota:hover {
+            background-color: var(--border-investigacion);
+            color: white;
+        }
+
+        .btn-texto {
+            background-color: var(--bg-factores);
+            border: 1px solid var(--border-factores);
+            color: #047857;
+        }
+
+        .btn-texto:hover {
+            background-color: var(--border-factores);
+            color: white;
+        }
+
+        .btn-video {
+            background-color: var(--bg-glosario);
+            border: 1px solid var(--border-glosario);
+            color: #0369a1;
+        }
+
+        .btn-video:hover {
+            background-color: var(--border-glosario);
+            color: white;
+        }
+
+        .texto-modal {
+            font-size: 0.95rem;
+            color: #334155;
+            background-color: #f8fafc;
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px solid #e2e8f0;
+            white-space: pre-wrap;
+            margin-top: 10px;
+            text-align: justify;
+        }
+
+        @media (max-width: 900px) {
+            aside {
+                width: 100%;
+                height: auto;
+                position: relative;
+                border-right: none;
+                border-bottom: 1px solid #334155;
+            }
+            main {
+                margin-left: 0;
+                width: 100%;
+                padding: 20px;
+            }
+        }
+    
+        /* --- NAVEGACIÓN DOBLE EJE: EJE HORIZONTAL SUPERIOR --- */
+        .eje-horizontal-contenedor {
+            background-color: var(--card-bg);
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 20px 22px;
+            margin-bottom: 35px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+        }
+
+        .eje-horizontal-encabezado {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+            border-bottom: 2px solid #f1f5f9;
+            padding-bottom: 10px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .eje-horizontal-titulo {
+            font-size: 1.12rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .eje-horizontal-subtitulo {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        .eje-horizontal-galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 14px;
+            width: 100%;
+        }
+
+        .tarjeta-bloque-eje {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            border-radius: 10px;
+            overflow: hidden;
+            background: var(--primary-dark);
+            border: 1px solid #cbd5e1;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+            transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+        }
+
+        .tarjeta-bloque-eje:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 22px rgba(37, 99, 235, 0.22);
+            border-color: var(--primary-vibrant);
+        }
+
+        .tarjeta-bloque-eje.active {
+            border: 2px solid var(--primary-vibrant);
+            box-shadow: 0 0 12px rgba(37, 99, 235, 0.35);
+        }
+
+        .imagen-contenedor-bloque {
+            position: relative;
+            width: 100%;
+            height: 100px;
+            overflow: hidden;
+            background-color: #1e293b;
+        }
+
+        .imagen-contenedor-bloque img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.72;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .tarjeta-bloque-eje:hover .imagen-contenedor-bloque img {
+            opacity: 0.95;
+            transform: scale(1.08);
+        }
+
+        /* Texto incrustado dentro de la imagen */
+        .insignia-bloque {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(15, 23, 42, 0.85);
+            color: #ffffff;
+            padding: 6px 10px;
+            border-radius: 6px;
+            font-weight: 800;
+            font-size: 0.8rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(4px);
+            text-align: center;
+            width: 88%;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+        }
+
+        .tarjeta-bloque-eje.active .insignia-bloque {
+            background: var(--primary-vibrant);
+            border-color: #ffffff;
+        }
+
+        /* Desplegable del título por debajo al pasar el ratón por la imagen */
+        .desplegable-titulo-bloque {
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            background-color: var(--primary-dark);
+            color: #ffffff;
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            font-size: 0.78rem;
+            font-weight: 600;
+            line-height: 1.35;
+            text-align: center;
+            padding: 0 6px;
+        }
+
+        .tarjeta-bloque-eje:hover .desplegable-titulo-bloque {
+            max-height: 85px;
+            opacity: 1;
+            padding: 10px 6px;
+            border-top: 2px solid var(--primary-vibrant);
+        }
+
+        .submenu-bloque {
+            padding-left: 12px;
+            margin-top: 6px;
+            border-left: 2px solid var(--primary-vibrant);
+            list-style: none;
+        }
+
+        .submenu-bloque li {
+            margin-bottom: 6px;
+        }
+
+        .submenu-bloque li a {
+            font-size: 0.85rem;
+            padding: 6px 10px;
+            color: #94a3b8;
+        }
+
+        .submenu-bloque li a:hover, .submenu-bloque li a.active {
+            color: #ffffff;
+            background-color: rgba(255,255,255,0.08);
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navegación Lateral -->
+    <aside>
+        <h1>🏛️ Bloque I: Estado Liberal</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="btn-volver">🏠 Volver a Portada</a></li>
+                
+                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 10px 10px 4px 10px; font-weight: bold; border-bottom: 1px solid #334155;">📖 Temas del Bloque I</li>
+                
+                <li>
+                    <a href="bloque1_tema1.html" class="active">Tema 1: Cortes de Cádiz</a>
+                    <ul class="submenu-bloque">
+                        <li><a href="#tema1">• 1. Crisis y Guerra de 1808</a></li>
+                        <li><a href="#cortescadiz">• 2. Cortes y Constitución 1812</a></li>
+                        <li><a href="#fernandovii">• 3. Reinado de Fernando VII</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="bloque1_tema2.html">Tema 2: Estado Liberal</a>
+                    <ul class="submenu-bloque">
+                        <li><a href="bloque1_tema2.html#isabelii">• 1. Reinado de Isabel II</a></li>
+                        <li><a href="bloque1_tema2.html#desamortiza">• 2. Desamortizaciones</a></li>
+                        <li><a href="bloque1_tema2.html#puertosfrancos">• 3. Puertos Francos</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="bloque1_tema3.html">Tema 3: Sexenio Revolucionario</a>
+                    <ul class="submenu-bloque">
+                        <li><a href="bloque1_tema3.html#tema1">• 1. La Revolución del 68</a></li>
+                        <li><a href="bloque1_tema3.html#tema2">• 2. Gobierno Provisional</a></li>
+                        <li><a href="bloque1_tema3.html#tema3">• 3. Reinado de Amadeo I</a></li>
+                        <li><a href="bloque1_tema3.html#tema4">• 4. Primera República</a></li>
+                        <li><a href="bloque1_tema3.html#sexenio-canarias">• 5. Sexenio en Canarias</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Contenido Principal -->
+    <main>
+        <header>
+            <h2>Tema 1: La Crisis del Antiguo Régimen y las Cortes de Cádiz (1808 - 1833)</h2>
+            <p>La quiebra de la monarquía absoluta, la gloriosa Guerra de la Independencia, la obra legislativa y revolucionaria de Cádiz y el accidentado reinado de Fernando VII.</p>
+        </header>
+
+        <!-- NAVEGACIÓN DOBLE EJE: EJE HORIZONTAL SUPERIOR -->
+        <div class="eje-horizontal-contenedor">
+            <div class="eje-horizontal-encabezado">
+                <span class="eje-horizontal-titulo">🧭 NAVEGACIÓN DE DOBLE EJE: GALERÍA SUPERIOR DE BLOQUES</span>
+                <span class="eje-horizontal-subtitulo">Pasa el ratón sobre cada bloque para desplegar el título por debajo o haz clic para acceder</span>
+            </div>
+
+            <div class="eje-horizontal-galeria">
+                <!-- INTRODUCCIÓN -->
+                <a href="tema0.html" class="tarjeta-bloque-eje">
+                    <div class="imagen-contenedor-bloque">
+                        <img src="linea-tiempo.png" alt="Introducción">
+                        <span class="insignia-bloque">INTRO</span>
+                    </div>
+                    <div class="desplegable-titulo-bloque">
+                        Introducción a la Historia, Fuentes y Tiempos
+                    </div>
+                </a>
+
+                <!-- BLOQUE I -->
+                <a href="bloque1_tema1.html" class="tarjeta-bloque-eje active">
+                    <div class="imagen-contenedor-bloque">
+                        <img src="img/eje-cronologico-isabel.png" alt="Bloque I">
+                        <span class="insignia-bloque">BLOQUE I</span>
+                    </div>
+                    <div class="desplegable-titulo-bloque">
+                        El Estado Liberal (1833 - 1874)
+                    </div>
+                </a>
+
+                <!-- BLOQUE II -->
+                <a href="bloque2_tema1.html" class="tarjeta-bloque-eje">
+                    <div class="imagen-contenedor-bloque">
+                        <img src="img/eje-cronologico-restauracion.png" alt="Bloque II">
+                        <span class="insignia-bloque">BLOQUE II</span>
+                    </div>
+                    <div class="desplegable-titulo-bloque">
+                        La Restauración (1875 - 1902)
+                    </div>
+                </a>
+
+                <!-- BLOQUE III -->
+                <a href="bloque3_tema1.html" class="tarjeta-bloque-eje">
+                    <div class="imagen-contenedor-bloque">
+                        <img src="img/boda-real.png" alt="Bloque III">
+                        <span class="insignia-bloque">BLOQUE III</span>
+                    </div>
+                    <div class="desplegable-titulo-bloque">
+                        Crisis & Dictadura (1902 - 1931)
+                    </div>
+                </a>
+
+                <!-- BLOQUE IV -->
+                <a href="bloque4_tema1.html" class="tarjeta-bloque-eje">
+                    <div class="imagen-contenedor-bloque">
+                        <img src="img/eje-cronologico-republica.png" alt="Bloque IV">
+                        <span class="insignia-bloque">BLOQUE IV</span>
+                    </div>
+                    <div class="desplegable-titulo-bloque">
+                        II República & Guerra Civil (1931 - 1939)
+                    </div>
+                </a>
+
+                <!-- BLOQUE V -->
+                <a href="bloque5_tema1.html" class="tarjeta-bloque-eje">
+                    <div class="imagen-contenedor-bloque">
+                        <img src="img/eje-cronologico-franquismo1.png" alt="Bloque V">
+                        <span class="insignia-bloque">BLOQUE V</span>
+                    </div>
+                    <div class="desplegable-titulo-bloque">
+                        La Dictadura Franquista (1939 - 1975)
+                    </div>
+                </a>
+
+                <!-- BLOQUE VI -->
+                <a href="bloque6_tema1.html" class="tarjeta-bloque-eje">
+                    <div class="imagen-contenedor-bloque">
+                        <img src="img/eje-cronologico-transicion.png" alt="Bloque VI">
+                        <span class="insignia-bloque">BLOQUE VI</span>
+                    </div>
+                    <div class="desplegable-titulo-bloque">
+                        Transición & Democracia (1975 - 2023)
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+        <!-- SECCIÓN 1 -->
+        <section id="crisis1808">
+            <h2>1. La Crisis de 1808 y la Guerra de la Independencia</h2>
+            <p>El reinado de <em>Carlos IV</em> (1788-1808) marcó el inicio de la crisis del Antiguo Régimen en España. La política exterior española estuvo condicionada por el estallido de la Revolución Francesa y la posterior ascensión de <em>Napoleón Bonaparte</em>. El todopoderoso valido <em>Manuel Godoy</em> firmó en 1807 el <em>Tratado de Fontainebleau</em>, que autorizaba el paso de las tropas francesas por el territorio peninsular con el pretexto de invadir de forma conjunta el reino de Portugal.</p>
+            
+            <p>Sin embargo, la presencia del ejército imperial francés fue percibida pronto como una invasión real. El descontento de los sectores aristocráticos y del propio príncipe de Asturias desembocó en el <strong>Motín de Aranjuez</strong> en marzo de 1808, que forzó la destitución de Godoy y la abdicación de Carlos IV en su hijo <em>Fernando VII</em>. Aprovechando las disensiones de la familia real, Napoleón los atrajo a territorio francés, forzando de forma expeditiva las célebres <strong>Abdicaciones de Bayona</strong> en mayo de 1808, por las que el trono de España fue entregado a su hermano <em>José I Bonaparte</em>.</p>
+            <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; margin: 25px 0;">
+                <div style="flex: 1; min-width: 250px; max-width: 350px;">
+                    <img src="img/motin-aranjuez.png" alt="El Motín de Aranjuez" class="imagen-educativa">
+                    <p class="caption"><em>Imagen 1: Grabado histórico del Motín de Aranjuez (marzo de 1808)</em></p>
+                </div>
+                <div style="flex: 1; min-width: 250px; max-width: 350px;">
+                    <img src="img/fusilamientos-3-mayo.png" alt="Los fusilamientos del 3 de mayo" class="imagen-educativa">
+                    <p class="caption"><em>Imagen 2: El 3 de mayo en Madrid o Los fusilamientos, obra de Francisco de Goya</em></p>
+                </div>
+            </div>
+
+
+            <p>Ante la ocupación extranjera y el secuestro de las instituciones, el <strong>2 de mayo de 1808</strong> estalló un violento levantamiento popular en Madrid que fue reprimido con extrema dureza por el general Murat. Este acontecimiento supuso el estallido de la <strong>Guerra de la Independencia (1808-1814)</strong>. La resistencia civil frente al invasor francés se vertebró de forma revolucionaria a través de la creación de múltiples <em>Juntas Locales y Provinciales</em> que asumieron la soberanía civil y militar ante la acefalía estatal.</p>
+            <div style="margin: 15px 0; text-align: center;">
+                <a href="https://www.youtube.com/watch?v=vDCjvkS_yUw" target="_blank" class="btn-interactivo btn-video">🎬 Vídeo 1: Ver explicación resumen de la Guerra de la Independencia ➡️</a>
+            </div>
+
+
+            <div class="caja-colores factores">
+                <h4>🇮🇨 Canarias ante la Crisis de 1808: La Junta Suprema de Canarias</h4>
+                <p>El archipiélago canario no llegó a ser ocupado militarmente por las tropas de Napoleón, pero al conocerse los trágicos sucesos de la península en el verano de 1808, se reaccionó con idéntico espíritu patriótico de resistencia. En San Cristóbal de La Laguna (Tenerife) se constituyó la histórica <strong>Junta Suprema de Canarias</strong>, con el fin de organizar la defensa militar, mantener el orden civil e institucional y asegurar la lealtad al rey cautivo Fernando VII.</p>
+                <p>La constitución de la Junta Suprema de Canarias no estuvo exenta de fuertes tensiones geopolíticas internas. Inicialmente, la Junta fue reconocida por casi la totalidad de los cabildos insulares, con la marcada excepción del cabildo de Gran Canaria, que optó de forma insumisa por organizarse por su cuenta creando un cabildo independiente (el Cabildo Permanente de Gran Canaria) en 1809, avivando de forma temprana las disputas y rivalidades territoriales del enconado <strong>pleito insular</strong>, aunque finalmente terminó unificándose al resto en la Junta común para salvaguardar la causa nacional.</p>
+                <p>Asimismo, cabe resaltar la participación activa de <strong>numerosos voluntarios canarios</strong> que marcharon a combatir en los diversos frentes armados de la península. De igual manera, tras la resonante victoria española en la <em>Batalla de Bailén</em> en julio de 1808, un importante contingente de <strong>soldados franceses hechos prisioneros</strong> fueron enviados y confinados en Canarias, distribuyéndose entre Gran Canaria y Tenerife, donde muchos de ellos permanecieron de forma pacífica y decidieron establecerse definitivamente en las islas una vez finalizada la contienda.</p>
+            </div>
+
+            <!-- BOTÓN INTERACTIVO: JUNTA SUPREMA CANARIAS -->
+            <div style="margin: 15px 0; text-align: center;">
+                <button class="btn-interactivo btn-texto" onclick="openPopup('pop-junta-canarias')">📜 Documento: El Manifiesto de la Junta Suprema de Canarias (1808)</button>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2 -->
+        <section id="cortescadiz">
+            <h2>2. Las Cortes de Cádiz y la Constitución de 1812</h2>
+            <p>La asunción de la soberanía por parte de las Juntas Provinciales culminó en la formación de la <em>Junta Suprema Central</em>, que asumió el gobierno provisional del país. Ante el empuje militar francés, la Junta Suprema Central se refugió en la sitiada ciudad de Cádiz y traspasó el poder a un <em>Consejo de Regencia</em>, el cual convocó la reunión de unas <strong>Cortes Generales y Extraordinarias</strong> en 1810.</p>
+            
+            <p>A diferencia de las tradicionales Cortes estamentales del Antiguo Régimen, la asamblea reunida en Cádiz se constituyó de forma unicameral como un órgano representativo de la nación española, asumiendo la <strong>soberanía nacional</strong> y declarando la igualdad de derechos de todos los ciudadanos de ambos hemisferios. En las Cortes de Cádiz convivieron tres grandes tendencias ideológicas:</p>
+            <ul>
+                <li><strong>Los absolutistas o "serviles":</strong> Partidarios de mantener intacto el poder absoluto del rey y la estructura estamental tradicional.</li>
+                <li><strong>Los jovellanistas:</strong> Defensores de un reformismo moderado basado en la tradición histórica y las antiguas leyes medievales españolas.</li>
+                <li><strong>Los liberales:</strong> Partidarios de una ruptura revolucionaria con el Antiguo Régimen, promoviendo libertades individuales, la limitación constitucional de la Corona y la creación de un nuevo marco democrático representativo.</li>
+            </ul>
+
+            <p>El mayor logro legislativo de esta asamblea revolucionaria fue la redacción y aprobación de la primera carta magna de nuestra historia contemporánea: la <strong>Constitución de 1812</strong>, solemnemente proclamada el 19 de marzo de 1812 y popularmente bautizada como "La Pepa". Sus principios fundamentales fueron:</p>
+            <ul>
+                <li><strong>Soberanía nacional y monarquía parlamentaria:</strong> El poder supremo residía en la nación de ciudadanos libres, reduciendo de forma irreversible las prerrogativas legislativas y ejecutivas de la Corona.</li>
+                <li><strong>División de poderes estricta:</strong> El poder legislativo correspondía de forma exclusiva a las Cortes Unicamerales; el ejecutivo recaía en el rey y sus ministros; y el judicial se confiaba a tribunales independientes.</li>
+                <li><strong>Confesionalidad católica del Estado:</strong> Como concesión a los sectores eclesiásticos conservadores, la Constitución declaró a la religión católica como la única oficial y verdadera de la nación española.</li>
+                <li><strong>Declaración amplia de derechos:</strong> Reconocimiento de la igualdad ante la ley, abolición de los señoríos feudales, inviolabilidad del domicilio, derecho de propiedad, supresión de la tortura y libertad de prensa.</li>
+                <li><strong>Sufragio universal masculino indirecto:</strong> Todos los varones mayores de edad disponían del derecho al voto a través de juntas de parroquia, de partido y de provincia.</li>
+            </ul>
+            <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; margin: 25px 0;">
+                <div style="flex: 1; min-width: 250px; max-width: 400px;">
+                    <img src="img/proclamacion-constitucion-1812.png" alt="Proclamación de la Constitución de 1812" class="imagen-educativa">
+                    <p class="caption"><em>Imagen 3: La promulgación de la Constitución de 1812, obra de Salvador Viniegra</em></p>
+                </div>
+            </div>
+            <div style="margin: 15px 0; text-align: center;">
+                <a href="https://www.youtube.com/watch?v=YdGx5SiLimw" target="_blank" class="btn-interactivo btn-video">🎬 Vídeo 2: Ver documental explicativo sobre las Cortes de Cádiz ➡️</a>
+            </div>
+
+        </section>
+
+        <!-- SECCIÓN 3 -->
+        <section id="fernandovii">
+            <h2>3. El Reinado de Fernando VII (1814 - 1833)</h2>
+            <p>Tras la firma del <em>Tratado de Valençay</em> en 1813, Napoleón devolvió el trono a <em>Fernando VII</em>. Su reinado supuso un constante conflicto entre las fuerzas absolutistas y las corrientes liberales que pugnaban por implantar el nuevo modelo constitucional, dividiéndose en tres etapas cronológicas:</p>
+            
+            <h3>A. El Sexenio Absolutista (1814-1820)</h3>
+            <p>Al regresar a España, Fernando VII recibió el apoyo del general Elío y de un centenar de diputados absolutistas plasmado en el <em>Manifiesto de los Persas</em>. El monarca promulgó el Real Decreto del 4 de mayo de 1814, por el cual abolió la Constitución de 1812 y toda la obra legislativa de Cádiz, restaurando de inmediato el <strong>absolutismo</strong>. Los liberales y reformistas fueron perseguidos, encarcelados o forzados al exilio. Ante la parálisis del Gobierno, los opositores recurrieron a la vía del <strong>pronunciamiento militar</strong>, una insurrección armada de mandos liberales apoyada por sociedades secretas.</p>
+            <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; margin: 25px 0;">
+                <div style="flex: 1; min-width: 200px; max-width: 250px;">
+                    <img src="img/retrato-fernando-vii.png" alt="Retrato de Fernando VII" class="imagen-educativa">
+                    <p class="caption"><em>Imagen 4: Retrato oficial del rey Fernando VII de España</em></p>
+                </div>
+            </div>
+            <div style="margin: 15px 0; text-align: center;">
+                <button class="btn-interactivo btn-texto" onclick="openPopup('pop-persas')">📜 Documento: El Manifiesto de los Persas (1814)</button>
+            </div>
+
+
+            <h3>B. El Trienio Liberal (1820-1823)</h3>
+            <p>En enero de 1820, el pronunciamiento del teniente coronel <em>Rafael del Riego</em> en Cabezas de San Juan (Sevilla) triunfó gracias al apoyo de las juntas constituidas en las principales ciudades. Fernando VII se vio obligado a jurar de forma célebre la Constitución de 1812. Durante este periodo de libertades, el liberalismo se dividió entre los moderados o "doceañistas" (partidarios de reformas lentas con la Corona) y los exaltados o "veinteañistas" (partidarios de reformas radicales). Las potencias europeas unificadas en la <em>Santa Alianza</em> decidieron intervenir en España para restaurar el orden tradicional absoluto, encomendando la campaña al ejército francés de los <strong>Cien Mil Hijos de San Luis (1823)</strong>.</p>
+
+            <h3>C. La Década Ominosa y la Crisis Sucesoria (1823-1833)</h3>
+            <p>La restauración del absolutismo militar abrió paso a una cruenta represión de los liberales y oficiales insurrectos (fusilamiento de Torrijos y ejecución de Riego). El final del periodo estuvo marcado por el drama sucesorio. El rey derogó la tradicional Ley Sálica francesa mediante la <strong>Pragmática Sanción de 1830</strong>, permitiendo que su hija <em>Isabel II</em> heredase el trono. Los sectores ultraabsolutistas rechazaron la Pragmática agrupándose en torno al infante <em>Carlos María Isidro</em>, hermano del rey, dando nacimiento al movimiento bélico del <strong>carlismo</strong> tras el fallecimiento de Fernando VII en septiembre de 1833.</p>
+            <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; margin: 25px 0;">
+                <div style="flex: 1; min-width: 250px; max-width: 400px;">
+                    <img src="img/fusilamiento-torrijos.png" alt="Fusilamiento de Torrijos" class="imagen-educativa">
+                    <p class="caption"><em>Imagen 5: El fusilamiento de Torrijos y sus compañeros en las playas de Málaga, obra de Antonio Gisbert</em></p>
+                </div>
+            </div>
+            <div style="margin: 15px 0; text-align: center;">
+                <button class="btn-interactivo btn-texto" onclick="openPopup('pop-decreto')">📜 Documento: Real Decreto del 4 de mayo de 1814</button>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- POPUPS INTERACTIVOS -->
+    
+    <!-- POPUP TEMA 1.1: MANIFIESTO DE LOS PERSAS -->
+    <div id="pop-persas" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closePopup('pop-persas')">&times;</span>
+            <h3 style="color: #047857; margin-top: 0;">📜 El Manifiesto de los Persas (12 de abril de 1814)</h3>
+            <p>El escrito en el que los realistas incitaron a <em>Fernando VII</em> a suspender el orden constitucional:</p>
+            <div class="texto-modal">"La monarquía absoluta es una obra de la razón y de la inteligencia; está subordinada a la ley divina, a la justicia y a las reglas fundamentales del Estado; fue establecida por derechos de conquista o por la sumisión voluntaria de los primeros hombres que eligieron a sus Reyes (...). Ha sido necesario que el poder soberano fuera absoluto para prescribir a los súbditos todo lo que mira al interés común y obligar a la obediencia a los que se niegan a ella.\n\nEl deseo que debemos pedir es que se proceda a celebrar Cortes con la solemnidad y en la forma en la que se celebraron las antiguas, que se suspendan los efectos de la Constitución y decretos dictados en Cádiz, y que las nuevas Cortes tomen en consideración su nulidad."</div>
+        </div>
+    </div>
+
+    <!-- POPUP TEMA 1.2: REAL DECRETO DE 4 DE MAYO DE 1814 -->
+    <div id="pop-decreto" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closePopup('pop-decreto')">&times;</span>
+            <h3 style="color: #047857; margin-top: 0;">📜 Real Decreto del 4 de mayo de 1814</h3>
+            <p>El decreto mediante el cual <em>Fernando VII</em> declaró nula la labor legislativa de Cádiz y restableció el absolutismo:</p>
+            <div class="texto-modal">"Declaro que mi Real ánimo es no solamente no jurar ni acceder a dicha Constitución ni a Decreto alguno de las Cortes (...) sino el de declarar aquella Constitución y tales decretos nulos y de ningún valor y efecto, ahora, ni en tiempo alguno, como si no hubiesen pasado jamás tales actos y se quitasen de en medio del tiempo.\n\nY como el que quisiese sostenerlos atentaría contra las prerrogativas de mi soberanía (...) declaro reo de lesa majestad a quien osare o intentase, y que como a tal, se le imponga la pena de vida (...)."</div>
+        </div>
+    </div>
+
+    <!-- POPUP TEMA 1.3: LA CARTA DE JAMAICA (1815) -->
+    <div id="pop-jamaica" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closePopup('pop-jamaica')">&times;</span>
+            <h3 style="color: #047857; margin-top: 0;">📜 La Carta de Jamaica de Simón Bolívar (1815)</h3>
+            <p>La proclama del Libertador justificando la ruptura definitiva con la corona española:</p>
+            <div class="texto-modal">"El lazo que unía a España y América está cortado (...). Más grande es el odio que nos inspira la Península que el mar que nos separa de ella (...). No somos indios ni europeos, sino una especie media entre los legítimos propietarios del país y los usurpadores españoles: en suma, siendo nosotros americanos por nacimiento y nuestros derechos los de Europa, tenemos que disputar éstos a los del país y mantenernos en él contra la invasión de los invasores."</div>
+        </div>
+    </div>
+
+    <div id="pop-junta-canarias" class="modal
+        <div class="modal-content">
+            <span class="modal-close" onclick="closePopup('pop-junta-canarias')">&times;</span>
+            <h3 style="color: #b45309; margin-top: 0;">📜 El Manifiesto de la Junta Suprema de Canarias (1808)</h3>
+            <p>Proclama y llamamiento patriótico a la unificación civil y militar emitido desde San Cristóbal de La Laguna ante la invasión napoleónica:</p>
+            <div class="texto-modal">"Canarios: el sagrado e indisoluble deber de defender a nuestra Patria y la soberanía del amado rey don Fernando VII ha unificado los corazones de todos los habitantes del Archipiélago. La Junta Suprema de Canarias, constituida en esta ciudad de La Laguna con el consenso unánime de los representantes de las islas, asume la sagrada responsabilidad de gobernar y organizar las fuerzas militares para repeler al tirano usurpador que asola el suelo patrio.\n\nEspañoles de Canarias: no reconozcáis otra autoridad que la legítima de las leyes de este reino. Aunque distantes de la lucha en la península, nuestras islas no cejarán en sus sacrificios comunes. No permitáis que el insularismo o las disensiones de cabildo dividan lo que el honor nacional y el peligro común exigen mantener en férrea unión."</div>
+        </div>
+    </div>
+
+    <script>
+        const links = document.querySelectorAll('aside nav ul li a');
+        const sections = document.querySelectorAll('main section');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (window.scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            links.forEach(a => {
+                const href = a.getAttribute('href');
+                if (href && href.startsWith('#')) {
+                    a.classList.remove('active');
+                    if (href === `#${current}`) {
+                        a.classList.add('active');
+                    }
+                }
+            });
+        });
+
+        function openPopup(id) {
+            document.getElementById(id).classList.add('show');
+        }
+
+        function closePopup(id) {
+            document.getElementById(id).classList.remove('show');
+        }
+
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.classList.remove('show');
+            }
+        }
+    </script>
+</body>
+</html>

@@ -383,35 +383,199 @@
                 padding: 20px;
             }
         }
+    
+        /* --- NAVEGACIÓN DOBLE EJE: EJE HORIZONTAL SUPERIOR --- */
+        .eje-horizontal-contenedor {
+            background-color: var(--card-bg);
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 20px 22px;
+            margin-bottom: 35px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+        }
+
+        .eje-horizontal-encabezado {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+            border-bottom: 2px solid #f1f5f9;
+            padding-bottom: 10px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .eje-horizontal-titulo {
+            font-size: 1.12rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .eje-horizontal-subtitulo {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        .eje-horizontal-galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 14px;
+            width: 100%;
+        }
+
+        .tarjeta-bloque-eje {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            border-radius: 10px;
+            overflow: hidden;
+            background: var(--primary-dark);
+            border: 1px solid #cbd5e1;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+            transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+        }
+
+        .tarjeta-bloque-eje:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 22px rgba(37, 99, 235, 0.22);
+            border-color: var(--primary-vibrant);
+        }
+
+        .tarjeta-bloque-eje.active {
+            border: 2px solid var(--primary-vibrant);
+            box-shadow: 0 0 12px rgba(37, 99, 235, 0.35);
+        }
+
+        .imagen-contenedor-bloque {
+            position: relative;
+            width: 100%;
+            height: 100px;
+            overflow: hidden;
+            background-color: #1e293b;
+        }
+
+        .imagen-contenedor-bloque img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.72;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .tarjeta-bloque-eje:hover .imagen-contenedor-bloque img {
+            opacity: 0.95;
+            transform: scale(1.08);
+        }
+
+        /* Texto incrustado dentro de la imagen */
+        .insignia-bloque {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(15, 23, 42, 0.85);
+            color: #ffffff;
+            padding: 6px 10px;
+            border-radius: 6px;
+            font-weight: 800;
+            font-size: 0.8rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(4px);
+            text-align: center;
+            width: 88%;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+        }
+
+        .tarjeta-bloque-eje.active .insignia-bloque {
+            background: var(--primary-vibrant);
+            border-color: #ffffff;
+        }
+
+        /* Desplegable del título por debajo al pasar el ratón por la imagen */
+        .desplegable-titulo-bloque {
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            background-color: var(--primary-dark);
+            color: #ffffff;
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            font-size: 0.78rem;
+            font-weight: 600;
+            line-height: 1.35;
+            text-align: center;
+            padding: 0 6px;
+        }
+
+        .tarjeta-bloque-eje:hover .desplegable-titulo-bloque {
+            max-height: 85px;
+            opacity: 1;
+            padding: 10px 6px;
+            border-top: 2px solid var(--primary-vibrant);
+        }
+
+        .submenu-bloque {
+            padding-left: 12px;
+            margin-top: 6px;
+            border-left: 2px solid var(--primary-vibrant);
+            list-style: none;
+        }
+
+        .submenu-bloque li {
+            margin-bottom: 6px;
+        }
+
+        .submenu-bloque li a {
+            font-size: 0.85rem;
+            padding: 6px 10px;
+            color: #94a3b8;
+        }
+
+        .submenu-bloque li a:hover, .submenu-bloque li a.active {
+            color: #ffffff;
+            background-color: rgba(255,255,255,0.08);
+        }
+
     </style>
 </head>
 <body>
 
     <!-- Navegación Lateral -->
     <aside>
-        <h1>🏛️ Bloque III: Crisis Restauración</h1>
+        <h1>🏛️ Bloque III: Crisis & Dictadura</h1>
         <nav>
             <ul>
                 <li><a href="index.html" class="btn-volver">🏠 Volver a Portada</a></li>
                 
-                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 10px 14px 5px 14px; font-weight: bold; border-bottom: 1px solid #334155; margin-bottom: 8px;">📍 Secciones del Tema 1</li>
-                <li><a href="#origen" class="active">1. Alfonso XIII (1902-1909)</a></li>
-                <li><a href="#maura">2. Maura y Semana Trágica</a></li>
-                <li><a href="#canalejas">3. Canalejas y Regeneración</a></li>
-                <li><a href="#crisis1917">4. I Guerra Mundial y Crisis 1917</a></li>
-                <li><a href="#colapso">5. Colapso del Turno y Annual</a></li>
-
-                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 20px 14px 5px 14px; font-weight: bold; border-top: 1px solid #475569; margin-top: 25px; border-bottom: 1px solid #334155; margin-bottom: 8px;">📖 Temas del Bloque III</li>
-                <li><a href="bloque3_tema1.html" style="font-weight: bold; color: var(--primary-vibrant);">Tema 1: Crisis de la Restauración (1902-1923)</a></li>
-                <li><a href="bloque3_tema2.html">Tema 2: Dictadura y Fin de la Restauración (1923-1931)</a></li>
-
-                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 15px 14px 5px 14px; font-weight: bold; border-top: 1px solid #475569; margin-top: 15px; border-bottom: 1px solid #334155; margin-bottom: 8px;">📚 Otros Bloques</li>
-                <li><a href="tema0.html">Tema 0: Introducción</a></li>
-                <li><a href="bloque1_tema1.html">Bloque I: Estado Liberal</a></li>
-                <li><a href="bloque2_tema1.html">Bloque II: La Restauración</a></li>
-                <li><a href="bloque4_tema1.html">Bloque IV: Segunda República y Guerra</a></li>
-                <li><a href="bloque5_tema1.html">Bloque V: Franquismo</a></li>
-                <li><a href="bloque6_tema1.html">Bloque VI: Transición y Democracia</a></li>
+                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 10px 10px 4px 10px; font-weight: bold; border-bottom: 1px solid #334155;">📖 Temas del Bloque III</li>
+                
+                <li>
+                    <a href="bloque3_tema1.html" class="active">Tema 1: Crisis de Restauración</a>
+                    <ul class="submenu-bloque">
+                        <li><a href="#origen">• 1. Alfonso XIII & Maura</a></li>
+                        <li><a href="#maura">• 2. Semana Trágica (1909)</a></li>
+                        <li><a href="#canalejas">• 3. Canalejas & Ley Candado</a></li>
+                        <li><a href="#crisis1917">• 4. Triple Crisis de 1917</a></li>
+                        <li><a href="#colapso">• 5. Annual & Desastre</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="bloque3_tema2.html">Tema 2: Primo de Rivera</a>
+                    <ul class="submenu-bloque">
+                        <li><a href="bloque3_tema2.html#origen">• 1. Golpe y Directorio Militar</a></li>
+                        <li><a href="bloque3_tema2.html#marruecos">• 2. Alhucemas (1925)</a></li>
+                        <li><a href="bloque3_tema2.html#directoriciov">• 3. Directorio Civil</a></li>
+                        <li><a href="bloque3_tema2.html#oposicion">• 4. Caída y Dictablanda</a></li>
+                        <li><a href="bloque3_tema2.html#republica">• 5. Proclamación II República</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </aside>
@@ -422,6 +586,94 @@
             <h2>Tema 1: El Reinado de Alfonso XIII y la Crisis de la Restauración (1902 - 1923)</h2>
             <p>La quiebra del sistema canovista, las tensiones sociales y coloniales, la intervención del Ejército en la vida política y el colapso definitivo del parlamentarismo de la Restauración.</p>
         </header>
+
+        <!-- NAVEGACIÓN DOBLE EJE: EJE HORIZONTAL SUPERIOR -->
+        <div class="eje-horizontal-contenedor">
+            <div class="eje-horizontal-encabezado">
+                <span class="eje-horizontal-titulo">🧭 NAVEGACIÓN DE DOBLE EJE: GALERÍA SUPERIOR DE BLOQUES</span>
+                <span class="eje-horizontal-subtitulo">Pasa el ratón sobre cada bloque para desplegar el título por debajo o haz clic para acceder</span>
+            </div>
+
+            <div class="eje-horizontal-galeria">
+                <!-- INTRODUCCIÓN -->
+                <a href="tema0.html" class="tarjeta-bloque-eje">
+                    <div class="imagen-contenedor-bloque">
+                        <img src="linea-tiempo.png" alt="Introducción">
+                        <span class="insignia-bloque">INTRO</span>
+                    </div>
+                    <div class="desplegable-titulo-bloque">
+                        Introducción a la Historia, Fuentes y Tiempos
+                    </div>
+                </a>
+
+                <!-- BLOQUE I -->
+                <a href="bloque1_tema1.html" class="tarjeta-bloque-eje">
+                    <div class="imagen-contenedor-bloque">
+                        <img src="img/eje-cronologico-isabel.png" alt="Bloque I">
+                        <span class="insignia-bloque">BLOQUE I</span>
+                    </div>
+                    <div class="desplegable-titulo-bloque">
+                        El Estado Liberal (1833 - 1874)
+                    </div>
+                </a>
+
+                <!-- BLOQUE II -->
+                <a href="bloque2_tema1.html" class="tarjeta-bloque-eje">
+                    <div class="imagen-contenedor-bloque">
+                        <img src="img/eje-cronologico-restauracion.png" alt="Bloque II">
+                        <span class="insignia-bloque">BLOQUE II</span>
+                    </div>
+                    <div class="desplegable-titulo-bloque">
+                        La Restauración (1875 - 1902)
+                    </div>
+                </a>
+
+                <!-- BLOQUE III -->
+                <a href="bloque3_tema1.html" class="tarjeta-bloque-eje active">
+                    <div class="imagen-contenedor-bloque">
+                        <img src="img/boda-real.png" alt="Bloque III">
+                        <span class="insignia-bloque">BLOQUE III</span>
+                    </div>
+                    <div class="desplegable-titulo-bloque">
+                        Crisis & Dictadura (1902 - 1931)
+                    </div>
+                </a>
+
+                <!-- BLOQUE IV -->
+                <a href="bloque4_tema1.html" class="tarjeta-bloque-eje">
+                    <div class="imagen-contenedor-bloque">
+                        <img src="img/eje-cronologico-republica.png" alt="Bloque IV">
+                        <span class="insignia-bloque">BLOQUE IV</span>
+                    </div>
+                    <div class="desplegable-titulo-bloque">
+                        II República & Guerra Civil (1931 - 1939)
+                    </div>
+                </a>
+
+                <!-- BLOQUE V -->
+                <a href="bloque5_tema1.html" class="tarjeta-bloque-eje">
+                    <div class="imagen-contenedor-bloque">
+                        <img src="img/eje-cronologico-franquismo1.png" alt="Bloque V">
+                        <span class="insignia-bloque">BLOQUE V</span>
+                    </div>
+                    <div class="desplegable-titulo-bloque">
+                        La Dictadura Franquista (1939 - 1975)
+                    </div>
+                </a>
+
+                <!-- BLOQUE VI -->
+                <a href="bloque6_tema1.html" class="tarjeta-bloque-eje">
+                    <div class="imagen-contenedor-bloque">
+                        <img src="img/eje-cronologico-transicion.png" alt="Bloque VI">
+                        <span class="insignia-bloque">BLOQUE VI</span>
+                    </div>
+                    <div class="desplegable-titulo-bloque">
+                        Transición & Democracia (1975 - 2023)
+                    </div>
+                </a>
+            </div>
+        </div>
+
 
         <div class="tarjeta-imagen" style="margin-top: 0;">
             <img src="img/boda-real.png" alt="Boda real de Alfonso XIII">
