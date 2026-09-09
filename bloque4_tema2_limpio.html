@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloque IV - Tema 2: La Guerra Civil Española (1936 - 1939)</title>
+    
+    <style>
+        :root {
+            --primary-intense: #1e40af;
+            --primary-vibrant: #2563eb;
+            --primary-dark: #0f172a;
+            --primary: #1e293b;
+            --bg-main: #f8fafc;
+            --card-bg: #ffffff;
+            --text-dark: #1e293b;
+            --text-muted: #64748b;
+            
+            --header-bg: #f0fdf4;
+            --header-border: #10b981;
+            --header-text: #065f46;
+
+            --border-glosario: #0ea5e9;
+            --bg-glosario: #f0f9ff;
+            --border-investigacion: #f59e0b;
+            --bg-investigacion: #fffbeb;
+            --border-critica: #ef4444;
+            --bg-critica: #fef2f2;
+            --border-factores: #10b981;
+            --bg-factores: #ecfdf5;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-dark);
+            min-height: 100vh;
+        }
+
+        aside {
+            width: 300px;
+            background-color: var(--primary-dark);
+            color: white;
+            padding: 25px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            overflow-y: auto;
+            border-right: 1px solid #334155;
+            z-index: 100;
+        }
+
+        aside h1 {
+            font-size: 1.25rem;
+            margin-bottom: 25px;
+            color: #f8fafc;
+            border-bottom: 3px solid var(--primary-vibrant);
+            padding-bottom: 12px;
+            text-align: center;
+        }
+
+        aside nav ul {
+            list-style: none;
+        }
+
+        aside nav ul li {
+            margin-bottom: 10px;
+        }
+
+        aside nav ul li a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 0.95rem;
+            display: block;
+            padding: 10px 14px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            font-weight: 500;
+        }
+
+        aside nav ul li .btn-volver {
+            background-color: #334155;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+            border: 1px solid #475569;
+            margin-bottom: 15px;
+            display: block;
+            padding: 10px 14px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            text-decoration: none;
+        }
+
+        aside nav ul li .btn-volver:hover {
+            background-color: var(--primary-vibrant);
+            border-color: var(--primary-vibrant);
+        }
+
+        aside nav ul li a:hover, aside nav ul li a.active {
+            background-color: var(--primary-vibrant);
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(37, 99, 235, 0.15);
+        }
+
+        main {
+            margin-left: 300px;
+            padding: 40px;
+            max-width: 1100px;
+        }
+
+        header {
+            margin-bottom: 35px;
+            background: linear-gradient(135deg, var(--header-bg), #e6fcf0);
+            border-left: 6px solid var(--header-border);
+            color: var(--header-text);
+            padding: 25px 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(16, 185, 129, 0.08);
+        }
+
+        header h2 {
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+            color: var(--header-text);
+            font-weight: 800;
+        }
+
+        header p {
+            color: #15803d;
+            font-size: 1.05rem;
+            font-weight: 500;
+        }
+
+        section {
+            background: var(--card-bg);
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            margin-bottom: 35px;
+            border-left: 6px solid var(--primary-vibrant);
+        }
+
+        section h2 {
+            color: var(--primary-dark);
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #f1f5f9;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: var(--primary-intense);
+            margin: 25px 0 12px 0;
+            font-size: 1.25rem;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+            color: #334155;
+            text-align: justify;
+        }
+
+        .tarjeta-imagen {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 20px 0 30px 0;
+            text-align: center;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            display: block;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tarjeta-imagen img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            margin-bottom: 12px;
+            display: inline-block;
+        }
+
+        .tarjeta-imagen .caption {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            font-style: italic;
+            margin: 0;
+            line-height: 1.4;
+            display: block;
+        }
+
+        .fila-imagenes {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0 30px 0;
+        }
+
+        .fila-imagenes .tarjeta-imagen {
+            flex: 1;
+            min-width: 250px;
+            margin: 0;
+        }
+
+        .caja-colores {
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-size: 1rem;
+        }
+
+        .caja-colores h4 {
+            margin-bottom: 10px;
+            font-size: 1.15rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .factores {
+            background-color: var(--bg-factores);
+            border-left: 5px solid var(--border-factores);
+            color: #047857;
+        }
+
+        .investigacion {
+            background-color: var(--bg-investigacion);
+            border-left: 5px solid var(--border-investigacion);
+            color: #b45309;
+        }
+
+        .critica {
+            background-color: var(--bg-critica);
+            border-left: 5px solid var(--border-critica);
+            color: #b91c1c;
+        }
+
+        ul {
+            padding-left: 25px;
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #334155;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(4px);
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal.show {
+            display: flex;
+        }
+
+        .modal-content {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            max-width: 650px;
+            width: 90%;
+            max-height: 85vh;
+            overflow-y: auto;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            border-left: 6px solid var(--border-investigacion);
+            position: relative;
+            animation: modalFadeIn 0.3s ease-out;
+        }
+
+        @keyframes modalFadeIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-muted);
+        }
+
+        .modal-close:hover {
+            color: var(--border-critica);
+        }
+
+        .btn-interactivo {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            margin: 8px 0;
+            border: none;
+        }
+
+        .btn-anecdota {
+            background-color: var(--bg-investigacion);
+            border: 1px solid var(--border-investigacion);
+            color: #b45309;
+        }
+
+        .btn-anecdota:hover {
+            background-color: var(--border-investigacion);
+            color: white;
+        }
+
+        .btn-texto {
+            background-color: var(--bg-factores);
+            border: 1px solid var(--border-factores);
+            color: #047857;
+        }
+
+        .btn-texto:hover {
+            background-color: var(--border-factores);
+            color: white;
+        }
+
+        .btn-video {
+            background-color: var(--bg-glosario);
+            border: 1px solid var(--border-glosario);
+            color: #0369a1;
+        }
+
+        .btn-video:hover {
+            background-color: var(--border-glosario);
+            color: white;
+        }
+
+        .texto-modal {
+            font-size: 0.95rem;
+            color: #334155;
+            background-color: #f8fafc;
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px solid #e2e8f0;
+            white-space: pre-wrap;
+            margin-top: 10px;
+            text-align: justify;
+        }
+
+        @media (max-width: 900px) {
+            aside {
+                width: 100%;
+                height: auto;
+                position: relative;
+                border-right: none;
+                border-bottom: 1px solid #334155;
+            }
+            main {
+                margin-left: 0;
+                width: 100%;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navegación Lateral -->
+    <aside>
+        <h1>🏛️ Bloque IV: República y Guerra</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="btn-volver">🏠 Volver a Portada</a></li>
+                
+                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 10px 14px 5px 14px; font-weight: bold; border-bottom: 1px solid #334155; margin-bottom: 8px;">📍 Secciones del Tema 2</li>
+                <li><a href="#estallido" class="active">1. Estallido y División</a></li>
+                <li><a href="#retaguardia">2. Las Dos Españas</a></li>
+                <li><a href="#internacional">3. Dimensión Internacional</a></li>
+                <li><a href="#fases-militares">4. Fases Militares</a></li>
+                <li><a href="#consecuencias">5. Consecuencias y Heridas</a></li>
+                <li><a href="#guerra-canarias">6. La Guerra en Canarias</a></li>
+
+                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 20px 14px 5px 14px; font-weight: bold; border-top: 1px solid #475569; margin-top: 25px; border-bottom: 1px solid #334155; margin-bottom: 8px;">📖 Temas del Bloque IV</li>
+                <li><a href="bloque4_tema1.html" id="nav-b4t1">Tema 1: La II República</a></li>
+                <li><a href="bloque4_tema2.html" id="nav-b4t2" class="active">Tema 2: La Guerra Civil</a></li>
+
+                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 15px 14px 5px 14px; font-weight: bold; border-top: 1px solid #475569; margin-top: 15px; border-bottom: 1px solid #334155; margin-bottom: 8px;">📚 Otros Bloques</li>
+                <li><a href="tema0.html">Tema 0: Introducción</a></li>
+                <li><a href="bloque1_tema1.html">Bloque I: Estado Liberal</a></li>
+                <li><a href="bloque2_tema1.html">Bloque II: La Restauración</a></li>
+                <li><a href="bloque3_tema1.html">Bloque III: Alfonso XIII y Dictadura</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Contenido Principal -->
+    <main>
+        <header>
+            <h2>Tema 2: La Guerra Civil Española (1936 - 1939)</h2>
+            <p>El conflicto más trágico del siglo XX español: el golpe de Estado de julio de 1936, las dos zonas en contienda, la internacionalización del conflicto, las grandes fases militares y las traumáticas consecuencias de la posguerra.</p>
+        </header>
+
+        <!-- Cabecera ilustrada horizontal -->
+        <div class="tarjeta-imagen" style="margin-top: 0;">
+            <img src="img/eje-cronologico-guerra.png" alt="Eje Cronológico de la Guerra Civil Española">
+            <span class="caption">Eje cronológico con las grandes fases bélicas y políticas de la Guerra Civil Española (1936 - 1939)</span>
+        </div>
+
+        <!-- SECCIÓN 1 -->
+        <section id="estallido">
+            <h2>1. El Estallido del Conflicto y la División de España</h2>
+            <p>El golpe de Estado militar contra la Segunda República se venía gestando desde el triunfo electoral del Frente Popular en febrero de 1936. La conspiración estuvo articulada técnicamente por el general <strong>Emilio Mola</strong> (apodado <em>«El Director»</em>), quien diseñó un plan de alzamiento simultáneo y coordinado en todas las guarniciones militares de la Península, Marruecos y los archipiélagos. El objetivo inicial era un golpe rápido para derrocar al Gobierno e instaurar una dictadura militar temporal, pero la desigual respuesta social y armada derivó en una sangrienta contienda civil de tres años.</p>
+
+            <div class="fila-imagenes">
+                <div class="tarjeta-imagen">
+                    <img src="img/plan-inicial-mola.png" alt="Mapa del plan inicial de operaciones militares del general Mola">
+                    <span class="caption">Imagen 1: Esquema cartográfico del plan estratégico del general Emilio Mola para tomar Madrid</span>
+                </div>
+                <div class="tarjeta-imagen">
+                    <img src="img/camino-sublevacion.png" alt="Mapa del trayecto del general Franco en el avión Dragon Rapide">
+                    <span class="caption">Imagen 2: El recorrido del avión Dragon Rapide trasladando a Franco desde Canarias a Marruecos</span>
+                </div>
+            </div>
+
+            <!-- BOTÓN INTERACTIVO: MANIFIESTO JONS -->
+            <div style="margin: 15px 0; text-align: center;">
+                <button class="btn-interactivo btn-texto" onclick="openPopup('pop-jons-manifiesto')">📜 Documento: Bando de Proclamación del Estado de Guerra (18 de julio de 1936)</button>
+            </div>
+
+            <p>La sublevación dio comienzo el <strong>17 de julio de 1936 en Melilla, Ceuta y Tetuán</strong>, extendiéndose al día siguiente por la Península. Sin embargo, la inesperada muerte accidental del jefe designado de los sublevados, el general <em>José Sanjurjo</em>, al estrellarse su avión en Portugal cuando volaba hacia España el 20 de julio, dejó al bando golpista acéfalo en sus primeros días.</p>
+
+            <div class="tarjeta-imagen">
+                <img src="img/restos-avion-sanjurjo.png" alt="Fotografía de los restos del avión estrellado del general Sanjurjo">
+                <span class="caption">Imagen 3: Los restos de la avioneta siniestrada en Portugal en la que falleció el general José Sanjurjo</span>
+            </div>
+
+            <!-- VÍDEO COMPLEMENTARIO: COMUNICADOS DE GUERRA -->
+            <div style="margin: 15px 0; text-align: center;">
+                <a href="https://www.youtube.com/watch?v=2o7VDF2wwvg" target="_blank" class="btn-interactivo btn-video">🎬 Vídeo 1: Ver comunicados de radio históricos emitidos por ambos bandos el 18 de julio de 1936 ➡️</a>
+            </div>
+
+            <p>El fracaso del golpe en las principales urbes industriales (Madrid, Barcelona, Valencia, Bilbao) dividió geográficamente a España en dos zonas enfrentadas:</p>
+
+            <div class="tarjeta-imagen">
+                <img src="img/cuartel-montaña-madrid.png" alt="Asalto popular al Cuartel de la Montaña en Madrid">
+                <span class="caption">Imagen 4: Las milicias populares y la Guardia de Asalto reducen la insurrección en el Cuartel de la Montaña de Madrid</span>
+            </div>
+
+            <!-- BOTÓN INTERACTIVO: INSTRUCCIONES MOLA -->
+            <div style="margin: 15px 0; text-align: center;">
+                <button class="btn-interactivo btn-anecdota" onclick="openPopup('pop-circular-mola')">🕵️‍♂️ Curiosidad: Las Instrucciones Reservadas Secretas del General Mola</button>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2 -->
+        <section id="retaguardia">
+            <h2>2. Las Dos Españas: Retaguardia y Políticas de Guerra</h2>
+            <p>El conflicto transformó radicalmente las estructuras políticas, sociales y económicas en cada uno de los territorios controlados por los bandos en contienda:</p>
+
+            <h3>A. La Zona Republicana: Revolución, Fragmentación y Sucesos de Mayo</h3>
+            <p>En la zona gubernamental, el Estado colapsó en los primeros meses. La disolución inicial del ejército regular por el Gobierno de <em>José Giral</em> entregó el control de las calles a los sindicatos (CNT y UGT) y partidos de izquierda, quienes crearon milicias populares e iniciaron una profunda <strong>revolución social</strong> (colectivización de tierras e industrias). En la retaguardia se desató un «terror caliente» con checas y ejecuciones incontroladas de religiosos, empresarios y personas de derecha (Paracuellos del Jarama).</p>
+
+            <div class="tarjeta-imagen">
+                <img src="img/mapa-division-inicial.png" alt="Mapa de la división territorial de España en agosto de 1936">
+                <span class="caption">Imagen 5: Mapa de la división inicial del territorio español entre la zona republicana y la zona sublevada</span>
+            </div>
+
+            <!-- VÍDEO COMPLEMENTARIO: REVOLUCIÓN SOCIAL -->
+            <div style="margin: 15px 0; text-align: center;">
+                <a href="https://www.youtube.com/watch?v=rxyo7w_uhTo" target="_blank" class="btn-interactivo btn-video">🎬 Vídeo 2: Ver documental sobre la colectivización agraria y la revolución social en la zona republicana ➡️</a>
+            </div>
+
+            <p>Para encauzar el desorden, se formó el Gobierno de coalición de <em>Francisco Largo Caballero</em> (septiembre de 1936), que creó el <strong>Ejército Popular de la República</strong> bajo la jefatura del general <em>Vicente Rojo</em>. Sin embargo, las tensiones internas estallaron en los sangrientos <strong>Sucesos de Mayo de 1937 en Barcelona</strong> (guerra civil interna entre el Gobierno/PCE contra los anarquistas de la CNT y el POUM de Andreu Nin). Tras la crisis, asumió la Presidencia del Gobierno el socialista <strong>Juan Negrín</strong>, respaldado por el PCE y apostando por la resistencia armada a ultranza (<em>«Resistir es vencer»</em>).</p>
+
+            <h3>B. La Zona Sublevada: Mando Único, Disciplina y Totalitarismo</h3>
+            <p>En el bando golpista imperó desde el primer momento una rígida jerarquía militar. En septiembre de 1936, los generales crearon la Junta de Defensa Nacional en Burgos y proclamaron al general <strong>Francisco Franco</strong> como <em>«Generalísimo de los Ejércitos»</em> y <em>«Jefe del Gobierno del Estado español»</em> (1 de octubre de 1836). Se promulgó el <strong>Decreto de Unificación de abril de 1937</strong>, obligando a la fusión de Falange y los carlistas requetés en un único partido oficial: <strong>FET y de las JONS</strong>. Se ejerció una represión represiva e institucionalizada desde el mando militar para limpiar la retaguardia.</p>
+
+            <div class="tarjeta-imagen">
+                <img src="img/fuerzas-iniciales.png" alt="Gráfico comparativo del balance de recursos y fuerzas militares en 1936">
+                <span class="caption">Imagen 6: Balance comparativo de efectivos militares y recursos económicos entre ambos bandos al inicio de la contienda</span>
+            </div>
+
+            <!-- BOTÓN INTERACTIVO: DECRETO DE UNIFICACIÓN -->
+            <div style="margin: 15px 0; text-align: center;">
+                <button class="btn-interactivo btn-texto" onclick="openPopup('pop-decreto-unificacion')">📜 Documento: El Decreto de Unificación de Fuerzas Políticas de Franco (1937)</button>
+            </div>
+
+            <!-- VÍDEO COMPLEMENTARIO: ESTADO FRANQUISTA -->
+            <div style="margin: 15px 0; text-align: center;">
+                <a href="https://www.youtube.com/watch?v=e-k1oRtovhs" target="_blank" class="btn-interactivo btn-video">🎬 Vídeo 3: Ver explicación didáctica sobre la creación del Estado Unificado Franquista en la Guerra ➡️</a>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 3 -->
+        <section id="internacional">
+            <h2>3. La Dimensión Internacional de la Guerra</h2>
+            <p>La Guerra Civil Española se convirtió de inmediato en un acontecimiento internacional decisivo, actuando como prólogo y campo de pruebas táctico para la Segunda Guerra Mundial. Las potencias democráticas occidentales (Francia y Gran Bretaña) promovieron el acuerdo del <strong>Comité de No Intervención</strong> en Londres para evitar la extensión del conflicto por Europa. Sin embargo, este embargo de armas perjudicó gravemente a la República mientras que el pacto fue vulnerado sistemáticamente por las potencias del Eje.</p>
+
+            <div class="tarjeta-imagen">
+                <img src="img/ayuda-internacional.png" alt="Gráfico de la ayuda militar y diplomática extranjera recibida por cada bando">
+                <span class="caption">Imagen 7: Cuadro estadístico del volumen de material bélico y contingentes enviados por las potencias extranjeras</span>
+            </div>
+
+            <div class="caja-colores factores">
+                <h4>🌍 La Intervención de las Potencias Extranjeras</h4>
+                <ul>
+                    <li><strong>Apoyo al Bando Sublevado:</strong> La Alemania nazi de Hitler envió la temible <strong>Legión Cóndor</strong> (con más de 200 aviones modernos) y carros de combate. La Italia fascista de Mussolini aportó el <strong>CTV (Corpo Truppe Volontarie)</strong> con más de 70.000 soldados y abundante artillería. Portugal envió a los «Viriatos».</li>
+                    <li><strong>Apoyo a la República:</strong> La Unión Soviética (URSS) de Stalin envió tanques T-26, aviones «Moscas» y «Chatos» y asesores militares, financiados mediante el traslado de las reservas del <strong>«Oro de Moscú»</strong>. Asimismo, la Komintern organized las <strong>Brigadas Internacionales</strong>, un cuerpo de más de 40.000 voluntarios civiles antifascistas procedentes de más de 50 países que tuvieron su base central en Albacete.</li>
+                </ul>
+            </div>
+
+            <!-- BOTÓN INTERACTIVO: ORO DE MOSCÚ -->
+            <div style="margin: 15px 0; text-align: center;">
+                <button class="btn-interactivo btn-texto" onclick="openPopup('pop-oro-moscu')">📜 Documento: El Envío de las Reservas de Oro del Banco de España a la URSS (1936)</button>
+            </div>
+
+            <!-- BOTÓN INTERACTIVO: DISCURSO AZAÑA VALENCIA -->
+            <div style="margin: 15px 0; text-align: center;">
+                <button class="btn-interactivo btn-texto" onclick="openPopup('pop-discurso-valencia')">📜 Documento: Discurso de Manuel Azaña sobre la Intervención Extranjera (1937)</button>
+            </div>
+
+            <!-- VÍDEO COMPLEMENTARIO: BRIGADAS INTERNACIONALES -->
+            <div style="margin: 15px 0; text-align: center;">
+                <a href="https://www.youtube.com/watch?v=k-28ry7ajmY" target="_blank" class="btn-interactivo btn-video">🎬 Vídeo 4: Ver documental sobre las Brigadas Internacionales y el papel de las potencias en la Guerra ➡️</a>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 4 -->
+        <section id="fases-militares">
+            <h2>4. Las Fases Militares de la Guerra Civil (1936 - 1939)</h2>
+            <p>La contienda bélica se desarrolló a lo largo de cuatro grandes etapas estratégicas bien diferenciadas:</p>
+
+            <h3>A. Fase 1: El Avance hacia Madrid (julio de 1936 - marzo de 1937)</h3>
+            <p>Tras cruzar el Estrecho de Gibraltar con ayuda aérea alemana e italiana, las columnas del Ejército de África dirigidas por Yagüe marcharon implacablemente por Extremadura (Toma de Badajoz) y tomaron Toledo. A las puertas de Madrid, la capital resistió heroicamente bajo el lema <em>«¡No pasarán!»</em> gracias a las milicias populares, la dirección del general Miaja y la llegada de las primeras Brigadas Internacionales. Franco intentó envolver la capital sufriendo sonoros reveses en la <strong>Batalla del Jarama</strong> (febrero de 1937) y la <strong>Batalla de Guadalajara</strong> (marzo de 1937, donde las tropas republicanas derrotaron al CTV italiano).</p>
+
+            <div class="tarjeta-imagen">
+                <img src="img/mapa-fases-guerra.png" alt="Mapa cronológico con las cuatro grandes etapas militares de la Guerra Civil">
+                <span class="caption">Imagen 8: Evolución cartográfica del frente bélico desde el estallido militar en 1936 hasta la caída de Cataluña</span>
+            </div>
+
+            <h3>B. Fase 2: La Campaña del Norte y la Guerra de Desgaste (abril - octubre de 1937)</h3>
+            <p>Ante la imposibilidad de tomar Madrid, Franco desplazó su esfuerzo bélico hacia la franja industrial del Cantábrico. El <strong>26 de abril de 1937, la Legión Cóndor alemana devastó la villa foral de Guernica</strong> en un trágico ensayo de bombardeo masivo sobre población civil indefensa (inmortalizado universalmente por Pablo Picasso). En junio falleció el general Mola al estrellarse su avión en Burgos. El ejército de Franco rompió el Cinturón de Hierro y tomó Bilbao, Santander y Asturias, apoderándose de los recursos mineros y siderúrgicos norteños a pesar de las ofensivas republicanas de distracción en Brunete y Belchite.</p>
+
+            <div class="tarjeta-imagen">
+                <img src="img/restos-avion-mola.png" alt="Fotografía del siniestro aéreo del general Emilio Mola en junio de 1937">
+                <span class="caption">Imagen 9: Los restos del avión siniestrado en Alcocero (Burgos) en el que falleció el general Emilio Mola</span>
+            </div>
+
+            <!-- BOTÓN INTERACTIVO: GUERNICA -->
+            <div style="margin: 15px 0; text-align: center;">
+                <button class="btn-interactivo btn-anecdota" onclick="openPopup('pop-guernica')">🕵️‍♂️ Curiosidad: La Tragedia Forense e Histórica del Bombardeo de Guernica</button>
+            </div>
+
+            <h3>C. Fase 3: La Ofensiva del Este y la Batalla del Ebro (diciembre de 1937 - noviembre de 1938)</h3>
+            <p>El general republicano Vicente Rojo tomó por sorpresa Teruel bajo temperaturas extremas en invierno, pero las tropas franquistas la recuperaron semanas después y lanzaron la gran Ofensiva de Aragón, alcanzando el Mediterráneo por Vinaroz en abril de 1938 y <strong>partiendo en dos el territorio de la República</strong> (aislando a Cataluña del centro-sur).</p>
+
+            <div class="tarjeta-imagen">
+                <img src="img/mapa-guerra-1938.png" alt="Mapa de la partición de la zona republicana en dos tras la llegada de Franco a Vinaroz">
+                <span class="caption">Imagen 10: Situación de los frentes de combate en abril de 1938 tras la división del territorio republicano</span>
+            </div>
+
+            <p>Para volver a unir ambas zonas, el Ejército Popular lanzó el 25 de julio de 1938 la <strong>Batalla del Ebro</strong>, la operación militar más ambiciosa y sangrienta de toda la guerra. Tras 115 días de lucha encarnizada de desgaste en las tierras de Tarragona, las fuerzas republicanas sufrieron una derrota aplastante que selló el destino de la contienda.</p>
+
+            <h3>D. Fase 4: El Colapso de la República y el Fin de la Guerra (enero - abril de 1939)</h3>
+            <p>En enero de 1939, Franco ocupó Barcelona sin apenas resistencia, provocando un colosal éxodo de más de 400.000 refugiados e instituciones republicanas hacia el exilio francés por los pasos pirenaicos. Manuel Azaña dimitió en Francia. En marzo de 1939, el coronel Segismundo Casado dio un golpe de Estado en Madrid contra el Gobierno de Negrín buscando una negociación de paz, pero Franco exigió la rendición incondicional. Las tropas franquistas entraron en Madrid el 28 de marzo y el <strong>1 de abril de 1939 Franco firmó en Burgos el último parte de guerra</strong>.</p>
+        </section>
+
+        <!-- SECCIÓN 5 -->
+        <section id="consecuencias">
+            <h2>5. Las Consecuencias y las Heridas Abiertas de la Posguerra</h2>
+            <p>El fin de la guerra no trajo la reconciliación, sino la victoria absoluta de los sublevados y el inicio de una larga y durísima dictadura personalista:</p>
+
+            <div class="fila-imagenes">
+                <div class="tarjeta-imagen">
+                    <img src="img/muerte-miliciano-capa.png" alt="Icono fotográfico Muerte de un miliciano de Robert Capa">
+                    <span class="caption">Imagen 11: Muerte de un miliciano, la célebre e icónica fotografía de Robert Capa en Cerro Muriano</span>
+                </div>
+                <div class="tarjeta-imagen">
+                    <img src="img/cartilla-racionamiento.png" alt="Ejemplar de cartilla de racionamiento de la posguerra española">
+                    <span class="caption">Imagen 12: Cartilla de racionamiento de productos básicos instaurada en los años del hambre de la posguerra</span>
+                </div>
+            </div>
+
+            <div class="caja-colores critica">
+                <h4>⚠️ El Balance Traumático de la Guerra Civil</h4>
+                <ul>
+                    <li><strong>Pérdidas Humanas y Exilio:</strong> Cerca de 500.000 fallecidos entre caídos en combate, víctimas de bombardeos y represalias en ambas retaguardias. Más de 400.000 exiliados políticos rumbo a Francia, México y América Latina (desarticulando la intelectualidad de la Edad de Plata).</li>
+                    <li><strong>Ruina Económica y Autarquía:</strong> Destrucción masiva de carreteras, puentes y viviendas, caída del PIB del 30% e hiperinflación. La pérdida de las reservas de oro forzó un regreso a la economía autárquica de supervivencia y el uso de <em>cartillas de racionamiento</em> hasta 1952.</li>
+                    <li><strong>Represión Sistémica:</strong> Se aprobaron la <em>Ley de Responsabilidades Políticas (1939)</em> y la <em>Ley de Represión del Comunismo y la Masonería (1940)</em>. Más de 250.000 presos políticos fueron encarcelados o encuadrados en Batallones Disciplinarios de Soldados Trabajadores. Se depuró al magisterio y a la burocracia estatal.</li>
+                </ul>
+            </div>
+
+            <div class="tarjeta-imagen">
+                <img src="img/depuracion-profesores-albacete.png" alt="Documento administrativo oficial de la depuración de profesores en Albacete">
+                <span class="caption">Imagen 13: Expediente administrativo de depuración y sanción ideológica del profesorado escolar de posguerra</span>
+            </div>
+
+            <!-- BOTÓN INTERACTIVO: DECRETO DE DEPURACIÓN -->
+            <div style="margin: 15px 0; text-align: center;">
+                <button class="btn-interactivo btn-texto" onclick="openPopup('pop-depuracion')">📜 Documento: Decreto de Depuración Ideológica del Magisterio y Funcionarismo (1939)</button>
+            </div>
+
+            <!-- VÍDEO COMPLEMENTARIO: EXILIO Y POSGUERRA -->
+            <div style="margin: 15px 0; text-align: center;">
+                <a href="https://www.youtube.com/watch?v=daens6pCdzw" target="_blank" class="btn-interactivo btn-video">🎬 Vídeo 5: Ver documental sobre las trágicas consecuencias humanas, el exilio y la represión de la posguerra ➡️</a>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 6 -->
+        <section id="guerra-canarias">
+            <h2>6. La Guerra Civil en Canarias: La Semana Roja de La Palma, los Almacenes Fyffes y la Represión</h2>
+            <p>Dado que el general Francisco Franco desempeñaba el cargo de Comandante General de Canarias desde marzo de 1936, el archipiélago se convirtió en una pieza logística fundamental para la preparación de la conspiración militar. El 17 de julio de 1936, Franco embarcó en Santa Cruz de Tenerife rumbo a Gran Canaria bajo el pretexto de asistir al sepelio del general Amado Balmes. El 18 de julio a las 14:30 horas, Franco despegó desde el aeropuerto de Gando a bordo del avión británico <strong>Dragon Rapide</strong> para ponerse al frente del Ejército de África en Tetuán.</p>
+
+            <div class="caja-colores factores">
+                <h4>🇨🇦 La Resistencia de la «Semana Roja» de La Palma (julio de 1936)</h4>
+                <p>En el conjunto insular, la resistencia armada a la sublevación militar fue desigual. Mientras que en Gran Canaria y Tenerife la jerarquía militar y la Guardia Civil tomaron rápidamente los edificios oficiales proclamando el estado de guerra, en la isla de <strong>La Palma</strong> la población y las autoridades leales a la República (dirigidas por el delegado del Gobierno Tomás Yanes) mantuvieron una heroica resistencia democrática conocida como la <strong>«Semana Roja»</strong>.</p>
+                <p>Entre el 18 y el 25 de julio de 1936, la isla de La Palma permaneció fiel a la Constitución republicana, desarmando a la guarnición militar insular y organizando milicias populares. La resistencia concluyó el 25 de julio con la llegada del cañonero <em>Canalejas</em> repleto de tropas sublevadas, desatando una feroz venganza represiva contra los dirigentes palmeros.</p>
+            </div>
+
+            <p>Al quedar todo el archipiélago bajo el control absoluto del bando sublevado desde los primeros días de la contienda, en Canarias no hubo frentes bélicos activos, pero la población civil sufrió una <strong>terrible violencia de retaguardia</strong>. Se desencadenó una cacería sistemática contra alcaldes, sindicalistas de la UGT/CNT, masones y maestros republicanos (destacando las ejecuciones en las fosas de la Marciega, los pozos de Arucas y los lanzamientos de prisioneros atados a la sima de Jinámar y al mar en los "barcos de medianoche").</p>
+
+            <p>Para recluir a los miles de prisioneros políticos, las autoridades militares reconvirtieron los grandes almacenes de empaquetado de plátanos de la compañía británica en Tenerife en el infame campo de concentración de los <strong>Almacenes Fyffes</strong> en Santa Cruz de Tenerife. Asimismo, se utilizaron como prisiones flotantes el vapor <em>Porto Pi</em>, el Castillo de Paso Alto y el campo de concentración de Gando en Gran Canaria. Durante la contienda, el Mando Económico de Canarias dirigió la autarquía alimentaria insular, mientras más de 60.000 jóvenes reclutas canarios eran enviados forzosamente a combatir en los sangrientos frentes de la Península.</p>
+
+            <!-- BOTÓN INTERACTIVO: SEMANA ROJA Y FYFFES -->
+            <div style="margin: 15px 0; text-align: center;">
+                <button class="btn-interactivo btn-texto" onclick="openPopup('pop-semana-roja')">📜 Documento: La Semana Roja de La Palma y los Prisioneros de los Almacenes Fyffes (1936)</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- POPUPS INTERACTIVOS (MODALS) -->
+
+    <!-- POPUP 1: MANIFIESTO JONS -->
+    <div id="pop-jons-manifiesto" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closePopup('pop-jons-manifiesto')">&times;</span>
+            <h3 style="color: #047857; margin-top: 0;">📜 Bando de Proclamación del Estado de Guerra (18 de julio de 1936)</h3>
+            <p>Extracto de la proclama radiada por el general Gonzalo Queipo de Llano en Sevilla:</p>
+            <div class="texto-modal">"Españoles: las circunstancias extraordinarias y críticas por las que atraviesa España entera; la anarquía que se ha apoderado de las ciudades y los campos, con riesgo evidente para la Patria amenazada por el enemigo exterior, hacen imprescindible que el Ejército (...) tome a su cargo la dirección del país, para entregarlo más tarde, cuando la tranquilidad y el orden estén restablecidos, a los elementos civiles preparados para ello...
+
+ORDENO Y MANDO: Queda declarado el Estado de Guerra en todo el territorio de esta división. Quedan prohibidas las manifestaciones, huelgas y reuniones. Los delitos de rebelión y desacato a la autoridad militar serán juzgados por procedimiento sumarísimo de guerra."</div>
+        </div>
+    </div>
+
+    <!-- POPUP 2: CIRCULAR MOLA -->
+    <div id="pop-circular-mola" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closePopup('pop-circular-mola')">&times;</span>
+            <h3 style="color: #b45309; margin-top: 0;">🕵️‍♂️ Las Instrucciones Reservadas Secretas del General Mola («El Director»)</h3>
+            <p>Instrucción Reservada Nº 1 emitida clandestinamente por Emilio Mola en mayo de 1936:</p>
+            <div class="texto-modal">"Se tendrá en cuenta que la acción ha de ser en extremo violenta para reducir lo antes posible al enemigo, que es fuerte y bien organizado. Desde luego, serán encarcelados todos los directivos de los partidos políticos, sociedades o sindicatos no adictos al movimiento, aplicándoles castigos ejemplares a dichos individuos para estrangular los movimientos de huelga o insurrección...
+
+Es necesario dejar una impresión de dominio eliminando sin escrúpulos ni vacilación a todos los que no piensen como nosotros. Todo aquel que sea abierta o secretamente defensor del Frente Popular debe ser detenido y juzgado sumariamente."</div>
+        </div>
+    </div>
+
+    <!-- POPUP 3: DECRETO DE UNIFICACIÓN -->
+    <div id="pop-decreto-unificacion" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closePopup('pop-decreto-unificacion')">&times;</span>
+            <h3 style="color: #047857; margin-top: 0;">📜 El Decreto de Unificación de Fuerzas Políticas (19 de abril de 1937)</h3>
+            <p>Decreto promulgado por el general Franco creando el partido único de la zona sublevada:</p>
+            <div class="texto-modal">"Una guerra como la que sostenemos (...) exige la unificación de todas las fuerzas políticas y sociales patrióticas que luchan en nuestro bando. Falange Española y el Requeté carlista han sido los dos grandes exponentes del ardor patriótico de la juventud española...
+
+Llegó la hora de sintetizar en una sola entidad sus afanes. Por ello, en mi calidad de Jefe del Estado y Comandante en Jefe de las Fuerzas Armadas, dispongo: Falange Española y el Requeté se integran bajo mi jefatura en una sola entidad política nacional que se denominará Falange Española Tradicionalista y de las JONS. Quedan disueltas las demás organizaciones y partidos políticos."</div>
+        </div>
+    </div>
+
+    <!-- POPUP 4: ORO DE MOSCÚ -->
+    <div id="pop-oro-moscu" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closePopup('pop-oro-moscu')">&times;</span>
+            <h3 style="color: #047857; margin-top: 0;">📜 El Envío del Oro del Banco de España a la URSS (1936)</h3>
+            <p>La controvertida decisión del Gobierno de Largo Caballero y Juan Negrín para costear la guerra:</p>
+            <div class="texto-modal">"En septiembre de 1936, ante la inminente amenaza de la toma de Madrid por las tropas de Franco, el ministro de Hacienda Juan Negrín y el presidente del Gobierno Francisco Largo Caballero firmaron un decreto reservado autorizando el traslado de las reservas de oro depositadas en los sótanos del Banco de España hacia un lugar seguro.
+
+En octubre de 1936, 510 toneladas de oro en lingotes y monedas (el 72% de las reservas nacionales españolas) fueron embarcadas en el puerto de Cartagena rumbo al puerto soviético de Odesa en cuatro buques rusos. El «Oro de Moscú» sirvió como depósito bancario para financiar la compra masiva de armamento, aviones y suministros militares entregados por la Unión Soviética a la República a lo largo de toda la contienda."</div>
+        </div>
+    </div>
+
+    <!-- POPUP 5: DISCURSO AZAÑA VALENCIA -->
+    <div id="pop-discurso-valencia" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closePopup('pop-discurso-valencia')">&times;</span>
+            <h3 style="color: #047857; margin-top: 0;">📜 Discurso de Manuel Azaña sobre la Intervención Extranjera (18 de julio de 1937)</h3>
+            <p>Proclama del Presidente de la República en la Universidad de Valencia al cumplirse un año de guerra:</p>
+            <div class="texto-modal">"En el mes de julio de 1936 había en España un régimen político legítimo, reconocido por todas las potencias del mundo. A estas alturas, a esta distancia del origen, no creo que quede una sola persona en el mundo que pueda negar que sin el auxilio masivo de las potencias fascistas extranjeras, la rebelión militar española habría fracasado...
+
+La guerra de España no es ya una mera contienda civil interna, sino una guerra mantenida, pura y exclusivamente, por potencias extranjeras invasoras que sostienen una agresión clandestina contra la soberanía de la República Española para adueñarse de nuestras posiciones estratégicas en el Mediterráneo y el Atlántico."</div>
+        </div>
+    </div>
+
+    <!-- POPUP 6: GUERNICA -->
+    <div id="pop-guernica" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closePopup('pop-guernica')">&times;</span>
+            <h3 style="color: #b45309; margin-top: 0;">🕵️‍♂️ El Bombardeo de la Villa Foral de Guernica (26 de abril de 1937)</h3>
+            <p>La trágica destrucción de la ciudad vasca a manos de la aviación alemana e italiana:</p>
+            <div class="texto-modal">"La tarde del lunes 26 de abril de 1937, día de mercado tradicional, los aviones de la Legión Cóndor alemana y de la Aviazione Legionaria italiana atacaron ininterrumpidamente durante más de tres horas la villa vasca de Guernica. Se lanzaron toneladas de bombas explosivas e incendiarias sobre el casco urbano indefenso, destruyendo el 85% de los edificios y matando a cientos de civiles pacíficos.
+
+Guernica constituía el símbolo espiritual de los fueros e libertades vascas (alberagando el árbol de Guernica y la Casa de Juntas). El ataque sirvió como experimento táctico de guerra psicológica de terror aéreo y destrucción urbana para la aviación nazi de Göring antes del estallido de la Segunda Guerra Mundial, inspirando el célebre e inmortal lienzo del «Guernica» encargado por el Gobierno de la República a Pablo Picasso para la Exposición Internacional de París de 1937."</div>
+        </div>
+    </div>
+
+    <!-- POPUP 7: DEPURACIÓN -->
+    <div id="pop-depuracion" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closePopup('pop-depuracion')">&times;</span>
+            <h3 style="color: #ef4444; margin-top: 0;">📜 Decreto de Depuración Ideológica del Magisterio y Funcionarismo (1939)</h3>
+            <p>La purga administrativa e ideológica implantada tras la victoria franquista:</p>
+            <div class="texto-modal">"La reconstrucción de la Patria exige de forma inexorable la erradicación de todas las doctrinas de izquierda, marxistas y separatistas que infectaron la administración pública y muy especialmente las escuelas y las universidades...
+
+Se dispone la apertura de expedientes de depuración a todo el personal docente, jueces, catedráticos y funcionarios estatales. Todo aquel que haya mostrado simpatías o colaborado activa o pasivamente con las autoridades del Frente Popular será suspendido de empleo y sueldo, inhabilitado o expulsado definitivamente del servicio público, garantizando que la educación de la juventud quede en manos de maestros de probada adhesión patriótica y católica al Nuevo Estado."</div>
+        </div>
+    </div>
+
+    <!-- POPUP 8: SEMANA ROJA Y FYFFES (CANARIAS) -->
+    <div id="pop-semana-roja" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closePopup('pop-semana-roja')">&times;</span>
+            <h3 style="color: #047857; margin-top: 0;">📜 La Semana Roja de La Palma y los Prisioneros de los Almacenes Fyffes (1936)</h3>
+            <p>La memoria histórica de la resistencia democrática y la represión en el archipiélago canario:</p>
+            <div class="texto-modal">"Tras el alzamiento militar del 18 de julio de 1936, mientras Tenerife y Gran Canaria caían de inmediato bajo el control de las fuerzas rebeldes de Franco, la isla de La Palma escribió una página histórica de lealtad constitucional conocida como la «Semana Roja». Entre el 18 y el 25 de julio de 1936, las autoridades republicanas palmeras (con el delegado del Gobierno Tomás Yanes a la cabeza) y las organizaciones populares mantuvieron el control democrático de la isla, desarmando a la guarnición golpista hasta la llegada del buque de guerra Canalejas.
+
+Consumada la ocupación militar de todo el archipiélago, se desató una violenta persecución en la retaguardia insular. Ante el colapso de las prisiones ordinarias, los grandes almacenes de empaquetado de plátanos de la firma británica Fyffes en Santa Cruz de Tenerife fueron acondicionados como el principal campo de concentración político de las islas, por donde pasaron más de 1.500 prisioneros republicanos, sindicados y maestros que sufrieron trabajos forzados, hacinamiento y ejecuciones sumarias."</div>
+        </div>
+    </div>
+
+    <!-- Script de Navegación Dinámica y Popups -->
+    <script>
+        const links = document.querySelectorAll('aside nav ul li a');
+        const sections = document.querySelectorAll('main section');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (window.scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            links.forEach(a => {
+                const href = a.getAttribute('href');
+                if (href && href.startsWith('#')) {
+                    a.classList.remove('active');
+                    if (href === ) {
+                        a.classList.add('active');
+                    }
+                }
+            });
+        });
+
+        function openPopup(id) {
+            document.getElementById(id).classList.add('show');
+        }
+
+        function closePopup(id) {
+            document.getElementById(id).classList.remove('show');
+        }
+
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.classList.remove('show');
+            }
+        }
+    </script>
+</body>
+</html>
