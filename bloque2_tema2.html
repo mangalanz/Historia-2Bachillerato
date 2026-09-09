@@ -29,7 +29,7 @@
             --bg-factores: #ecfdf5;
         }
 
-        * {
+         {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
@@ -43,27 +43,30 @@
             min-height: 100vh;
         }
 
+        /* --- BARRA LATERAL EN TONO CREMA MENTA (LECTURA CLARA Y CÓMODA) --- */
         aside {
             width: 300px;
-            background-color: var(--primary-dark);
-            color: white;
-            padding: 25px;
+            background-color: #fcfbfa; /* Tono crema cálido muy suave */
+            color: #1e293b;
+            padding: 25px 18px;
             position: fixed;
             top: 0;
             left: 0;
             height: 100vh;
             overflow-y: auto;
-            border-right: 1px solid #334155;
+            border-right: 2px solid #e2e8f0;
+            box-shadow: 2px 0 12px rgba(0, 0, 0, 0.03);
             z-index: 100;
         }
 
         aside h1 {
-            font-size: 1.25rem;
-            margin-bottom: 25px;
-            color: #f8fafc;
-            border-bottom: 3px solid var(--primary-vibrant);
-            padding-bottom: 12px;
+            font-size: 1.3rem;
+            margin-bottom: 22px;
+            color: #065f46; /* Verde bosque coordinado con el encabezado */
+            border-bottom: 3px solid #10b981; /* Borde verde esmeralda */
+            padding-bottom: 10px;
             text-align: center;
+            font-weight: 800;
         }
 
         aside nav ul {
@@ -71,37 +74,53 @@
         }
 
         aside nav ul li {
-            margin-bottom: 10px;
+            margin-bottom: 6px;
         }
 
         aside nav ul li a {
-            color: #cbd5e1;
+            color: #334155; /* Texto oscuro de fácil lectura */
             text-decoration: none;
-            font-size: 0.95rem;
+            font-size: 0.98rem; /* Tipo de letra un poco más grande y claro */
             display: block;
-            padding: 10px 14px;
-            border-radius: 6px;
+            padding: 10px 12px;
+            border-radius: 8px;
             transition: all 0.2s ease;
-            font-weight: 500;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        aside nav ul li a:hover {
+            background-color: #e6fcf0; /* Destacado verde menta al pasar el ratón */
+            color: #065f46;
+            transform: translateX(3px);
+        }
+
+        aside nav ul li a.active {
+            background-color: #10b981; /* Botón activo en verde esmeralda */
+            color: #ffffff;
+            font-weight: 700;
+            box-shadow: 0 4px 10px rgba(16, 185, 129, 0.25);
         }
 
         aside nav ul li .btn-volver {
-            background-color: #334155;
-            color: #ffffff;
-            font-weight: bold;
+            background-color: #f1f5f9;
+            color: #0f172a;
+            font-weight: 700;
             text-align: center;
-            border: 1px solid #475569;
+            border: 1px solid #cbd5e1;
             margin-bottom: 15px;
             display: block;
-            padding: 10px 14px;
-            border-radius: 6px;
+            padding: 11px 14px;
+            border-radius: 8px;
             transition: all 0.2s ease;
             text-decoration: none;
+            font-size: 0.95rem;
         }
 
         aside nav ul li .btn-volver:hover {
-            background-color: var(--primary-vibrant);
-            border-color: var(--primary-vibrant);
+            background-color: #10b981;
+            color: #ffffff;
+            border-color: #10b981;
         }
 
         aside nav ul li a:hover, aside nav ul li a.active {
@@ -244,32 +263,10 @@
             color: #b45309;
         }
 
-        details {
-            background-color: #f8fafc;
-            border: 1px solid #e2e8f0;
-            border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 14px;
-        }
-
-        details[open] {
-            background-color: white;
-            border-color: var(--primary-vibrant);
-        }
-
-        summary {
-            font-weight: 600;
-            font-size: 1.1rem;
-            color: var(--primary-dark);
-            cursor: pointer;
-            outline: none;
-            user-select: none;
-        }
-
-        details .contenido-desplegado {
-            margin-top: 12px;
-            padding-top: 12px;
-            border-top: 1px dashed #e2e8f0;
+        .critica {
+            background-color: var(--bg-critica);
+            border-left: 5px solid var(--border-critica);
+            color: #b91c1c;
         }
 
         ul {
@@ -283,7 +280,7 @@
             color: #334155;
         }
 
-        /* POPUPS INTERACTIVOS */
+        /+ POPUPS INTERACTIVOS (MODALS) */
         .modal {
             display: none;
             position: fixed;
@@ -408,6 +405,67 @@
                 padding: 20px;
             }
         }
+    
+        /* --- ESTILOS NAVEGACIÓN SUPERIOR DE BLOQUES CON IMÁGENES --- */
+        .grid-bloques-superior {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-bottom: 35px;
+            width: 100%;
+        }
+
+        .tarjeta-bloque-grande {
+            position: relative;
+            background: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            border: 2px solid #e2e8f0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .tarjeta-bloque-grande:hover {
+            transform: translateY(-6px) scale(1.02);
+            box-shadow: 0 12px 24px rgba(37, 99, 235, 0.18);
+            border-color: #2563eb;
+        }
+
+        .tarjeta-bloque-grande .contenedor-img {
+            width: 100%;
+            height: 180px;
+            overflow: hidden;
+            position: relative;
+            background-color: #0f172a;
+        }
+
+        .tarjeta-bloque-grande .contenedor-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease, opacity 0.3s ease;
+            opacity: 0.9;
+        }
+
+        .tarjeta-bloque-grande:hover .contenedor-img img {
+            transform: scale(1.08);
+            opacity: 1;
+        }
+
+        .tarjeta-bloque-grande .etiqueta-bloque {
+            background-color: #0f172a;
+            color: #ffffff;
+            text-align: center;
+            padding: 12px 10px;
+            font-weight: 800;
+            font-size: 0.95rem;
+            letter-spacing: 0.03em;
+            border-top: 3px solid #2563eb;
+            text-transform: uppercase;
+        }
     </style>
 </head>
 <body>
@@ -416,21 +474,20 @@
     <aside>
         <h1>⚖️ Bloque II: La Restauración</h1>
         <nav>
-              <ul>
+             <ul>
                 <li><a href="index.html" class="btn-volver">🏠 Volver a Portada</a></li>
                 
                 <!-- 📍 Navegación Interna de la Página Activa (Sincronizada con el Scroll) -->
-                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 10px 14px 5px 14px; font-weight: bold; border-bottom: 1px solid #334155; margin-bottom: 8px;">📍 Secciones del Tema 2</li>
-                <li><a href="#origen" class="active">1. Origen de Nacionalismos</a></li>
-                <li><a href="#catalanismo">2. Nacionalismo Catalán</a></li>
-                <li><a href="#vasquismo">3. Nacionalismo Vasco</a></li>
-                <li><a href="#gallego">4. Regionalismo Gallego</a></li>
-                <li><a href="#crisis98">5. La Crisis de 1898</a></li>
+                <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 10px 14px 5px 14px; font-weight: bold; border-bottom: 1px solid #334155; margin-bottom: 8px;">📍 Secciones del Tema 1</li>
+                <li><a href="#origen" class="active">1. El Regreso de los Borbones</a></li>
+                <li><a href="#constitucion">2. La Constitución de 1876</a></li>
+                <li><a href="#turnismo">3. Turnismo y Caciquismo</a></li>
+                <li><a href="#regencia">4. La Regencia de Mª Cristina</a></li>
                 
                 <!-- 📖 Saltos a otros Temas del Bloque II -->
                 <li style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 20px 14px 5px 14px; font-weight: bold; border-top: 1px solid #475569; margin-top: 25px; border-bottom: 1px solid #334155; margin-bottom: 8px;">📖 Temas del Bloque II</li>
-                <li><a href="bloque2_tema1.html">Tema 1: La Restauración</a></li>
-                <li><a href="bloque2_tema2.html" style="font-weight: bold; color: var(--primary-vibrant);">Tema 2: Los Nacionalismos</a></li>
+                <li><a href="bloque2_tema1.html" style="font-weight: bold; color: var(--primary-vibrant);">Tema 1: La Restauración</a></li>
+                <li><a href="bloque2_tema2.html">Tema 2: Los Nacionalismos</a></li>
                 <li><a href="bloque2_tema3.html">Tema 3: Industrialización y Obrero</a></li>
             </ul>
         </nav>
@@ -438,6 +495,57 @@
 
     <!-- Contenido Principal -->
     <main>
+         <!-- 🚀 EJE DE NAVEGACIÓN HORIZONTAL SUPERIOR CON IMÁGENES -->
+        <div class="grid-bloques-superior">
+            <a href="tema0.html" class="tarjeta-bloque-grande">
+                <div class="contenedor-img">
+                    <img src="img/libros-antiguos.png" alt="Tema 0: Introducción">
+                </div>
+                <div class="etiqueta-bloque">Tema 0: Introducción</div>
+            </a>
+
+            <a href="bloque1_tema1.html" class="tarjeta-bloque-grande">
+                <div class="contenedor-img">
+                    <img src="img/guerradeindepe_3fy_sz1.jpg" alt="Bloque I: Estado Liberal">
+                </div>
+                <div class="etiqueta-bloque">Bloque I: Estado Liberal</div>
+            </a>
+
+            <a href="bloque2_tema1.html" class="tarjeta-bloque-grande">
+                <div class="contenedor-img">
+                    <img src="img/restauracion_borbonica.png" alt="Bloque II: La Restauración">
+                </div>
+                <div class="etiqueta-bloque">Bloque II: La Restauración</div>
+            </a>
+
+            <a href="bloque3_tema1.html" class="tarjeta-bloque-grande">
+                <div class="contenedor-img">
+                    <img src="img/semana-tragica.jpg" alt="Bloque III: Crisis Restauración">
+                </div>
+                <div class="etiqueta-bloque">Bloque III: Crisis y Dictadura</div>
+            </a>
+
+            <a href="bloque4_tema1.html" class="tarjeta-bloque-grande">
+                <div class="contenedor-img">
+                    <img src="img/Milicianas.jpg" alt="Bloque IV: II República y Guerra">
+                </div>
+                <div class="etiqueta-bloque">Bloque IV: República y Guerra</div>
+            </a>
+
+            <a href="bloque5_tema1.html" class="tarjeta-bloque-grande">
+                <div class="contenedor-img">
+                    <img src="img/francanarias.jpg" alt="Bloque V: El Franquismo">
+                </div>
+                <div class="etiqueta-bloque">Bloque V: El Franquismo</div>
+            </a>
+
+            <a href="bloque6_tema1.html" class="tarjeta-bloque-grande">
+                <div class="contenedor-img">
+                    <img src="img/juan-carlos-firma-constitucion.jpg" alt="Bloque VI: Transición y Democracia">
+                </div>
+                <div class="etiqueta-bloque">Bloque VI: Transición</div>
+            </a>
+        </div>
         <header>
             <h2>Tema 2: El Nacimiento de los Nacionalismos y la Crisis de 1898</h2>
             <p>La articulación de las identidades políticas catalana, vasca y gallega frente al centralismo del sistema, y el trauma moral de la pérdida de Ultramar.</p>
