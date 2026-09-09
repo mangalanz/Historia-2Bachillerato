@@ -170,36 +170,60 @@
             text-align: justify;
         }
 
-        /* CONTENEDOR DE IMAGEN (ANTI-SOLAPAMIENTO) */
-        .tarjeta-imagen {
+       
+        /* CONTENEDOR DE IMAGEN CENTRAL (ANTI-SOLAPAMIENTO, AHORA MÁS GRANDE) */
+        .tarjeta-imagen-central {
             background-color: #f8fafc;
             border: 1px solid #e2e8f0;
-            border-radius: 8px;
-            padding: 16px;
-            margin: 20px 0 30px 0;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 25px auto 35px auto;
+            max-width: 950px;
             text-align: center;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
             display: block;
             position: relative;
             overflow: hidden;
         }
 
-        .tarjeta-imagen img {
-            max-width: 100%;
+        .tarjeta-imagen-central img {
+            width: 100%;
             height: auto;
-            border-radius: 6px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-            margin-bottom: 12px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            margin-bottom: 15px;
             display: inline-block;
         }
 
-        .tarjeta-imagen .caption {
+        .tarjeta-imagen-central .caption {
             font-size: 0.95rem;
             color: var(--text-muted);
             font-style: italic;
             margin: 0;
             line-height: 1.4;
             display: block;
+        }
+
+        .caja-colores {
+            padding: 22px;
+            border-radius: 8px;
+            margin: 25px 0;
+            font-size: 1.05rem;
+            text-align: left;
+        }
+
+        .caja-colores h4 {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .factores {
+            background-color: var(--bg-factores);
+            border-left: 5px solid var(--border-factores);
+            color: #047857;
         }
 
         /* FILAS DE IMÁGENES COMPATIBLES (ADAPTATIVAS) */
@@ -442,170 +466,16 @@
         </nav>
 
         <header>
-            <h2>Geografía e Historia: Historia de España</h2>
-            <p>Recurso Didáctico Interactivo adaptado para 2º de Bachillerato bajo metodologías de accesibilidad cognitiva y Lectura Fácil.</p>
+              <h2>Geografía e Historia: Historia de España</h2>
+            <p>Recurso Didáctico Interactivo </p>
+        </header>
+ <div class="tarjeta-imagen-central">
+                <img src="img/portada-historia.png" alt="Portada">
+              
+            </div>
         </header>
 
-        <!-- SECCIÓN 1: BIENVENIDA -->
-        <section id="bienvenida">
-            <h2>¡Hola! Te damos la bienvenida al aula digital</h2>
-            <p>Este espacio digital interactivo está diseñado especialmente para ayudarte a repasar, asimilar y comprender de forma amena los contenidos curriculares oficiales de <strong>Historia de España</strong> de 2º de Bachillerato y prepararte de forma sobresaliente para las pruebas de acceso a la universidad (<strong>EBAU / EvAU</strong>).</p>
-            <p>Aquí encontrarás resúmenes estructurados, esquemas visuales adaptados para evitar la fatiga visual, vídeos explicativos de apoyo para cada etapa histórica y pop-ups interactivos con curiosidades y documentos históricos clave.</p>
-
-            <div class="caja-colores factores">
-                <h4>🧠 Nuestro Método: Accesibilidad y Claridad</h4>
-                <p>La información está jerarquizada de forma limpia. Hemos evitado códigos desordenados, textos flotantes que tapen las imágenes o tipografías de difícil lectura. Además, al final de cada tema dispones de un banco de preguntas XML para practicar en tus aulas virtuales.</p>
-            </div>
-
-            <!-- BOTÓN INTERACTIVO: EL VALOR DE LA HISTORIA -->
-            <div style="margin: 15px 0;">
-                <button class="btn-interactivo btn-anecdota" onclick="openPopup('pop-metodo')">🕵️‍♂️ Descubre: ¿Por qué estudiamos las fuentes históricas?</button>
-            </div>
-        </section>
-
-        <!-- SECCIÓN 2: HERRAMIENTAS DEL HISTORIADOR -->
-        <section id="herramientas">
-            <h2>Herramientas del Historiador: Fuentes y Líneas Temporales</h2>
-            <p>Antes de sumergirte en los bloques históricos, recuerda que para comprender el pasado debemos aprender a clasificar las <strong>fuentes de información</strong> y situar los acontecimientos cronológicamente de forma correcta.</p>
-
-            <div class="tarjeta-imagen">
-                <img src="arbol-fuentes.png" alt="Árbol de Clasificación de las Fuentes Históricas">
-                <span class="caption">Esquema didáctico e interactivo sobre la división y tipología de las fuentes históricas</span>
-            </div>
-
-            <div class="tarjeta-imagen">
-                <img src="linea-tiempo.png" alt="Línea del tiempo y Grandes Edades Históricas">
-                <span class="caption">Eje cronológico de las grandes edades de la humanidad desde la Prehistoria</span>
-            </div>
-        </section>
-
-        <!-- SECCIÓN 3: TEMARIO DEL CURSO -->
-        <section id="temario">
-            <h2>Temario Interactivo del Curso</h2>
-            <p>Haz clic en el botón de cualquiera de los temas disponibles para acceder directamente a sus apuntes multimedia:</p>
-
-            <h3>📖 Bloque I: La Construcción del Estado Liberal (1833 - 1874)</h3>
-            <div class="grid-temas">
-                <div class="tarjeta-tema">
-                    <div>
-                        <h4>Tema 1: La Crisis del Antiguo Régimen y las Cortes de Cádiz</h4>
-                        <p>La ocupación napoleónica, la gloriosa Guerra de la Independencia de 1808 y la redacción de nuestra primera Constitución: "La Pepa" de 1812.</p>
-                    </div>
-                    <a href="bloque1_tema1.html" class="btn-acceder">📖 Acceder al Tema</a>
-                </div>
-
-                <div class="tarjeta-tema">
-                    <div>
-                        <h4>Tema 2: La Conflictiva Construcción del Estado Liberal</h4>
-                        <p>El accidentado reinado de Isabel II, las guerras carlistas, las drásticas desamortizaciones de Mendizábal y Madoz, y el papel de las regencias.</p>
-                    </div>
-                    <a href="bloque1_tema2.html" class="btn-acceder">📖 Acceder al Tema</a>
-                </div>
-
-                <div class="tarjeta-tema">
-                    <div>
-                        <h4>Tema 3: El Sexenio Revolucionario (1868 - 1874)</h4>
-                        <p>Del destronamiento de Isabel II a través de "La Gloriosa" y el breve reinado de Amadeo de Saboya, hasta la proclamación de la Primera República.</p>
-                    </div>
-                    <a href="bloque1_tema3.html" class="btn-acceder">📖 Acceder al Tema</a>
-                </div>
-            </div>
-
-            <h3>📖 Bloque II: La España de la Restauración y su Oposición (1875 - 1902)</h3>
-            <div class="grid-temas">
-                <div class="tarjeta-tema" style="border-left: 4px solid var(--header-border);">
-                    <div>
-                        <h4>Tema 1: El Régimen de la Restauración y el Sistema Canovista</h4>
-                        <p>El regreso de Alfonso XII al trono, las bases constitucionales de 1876, el caciquismo electoral, el turno de partidos y el Pacto del Pardo.</p>
-                    </div>
-                    <a href="bloque2_tema1.html" class="btn-acceder" style="background-color: var(--header-border);">📖 Acceder al Tema</a>
-                </div>
-
-                <div class="tarjeta-tema" style="opacity: 0.85;">
-                    <div>
-                        <h4>Tema 2: Industrialización y Movimiento Obrero</h4>
-                        <p>El despegue industrial catalán y vasco, el auge ferroviario, y la aparición de la AIT, el socialismo de Pablo Iglesias y el anarquismo español.</p>
-                    </div>
-                    <a href="bloque2_tema2.html" class="btn-acceder">📖 Acceder al Tema</a>
-                </div>
-
-                <div class="tarjeta-tema" style="opacity: 0.85;">
-                    <div>
-                        <h4>Tema 3: El Nacimiento de los Nacionalismos y la Crisis de 1898</h4>
-                        <p>El surgimiento de la identidad política catalana, vasca y gallega, la Guerra de Cuba y Filipinas, y el impacto moral del Desastre del 98.</p>
-                    </div>
-                    <a href="bloque2_tema3.html" class="btn-acceder">📖 Acceder al Tema</a>
-                </div>
-            </div>
-
-            <h3>📖 Bloque III: La Quiebra de la Restauración y la Dictadura de Primo de Rivera (1902 - 1931)</h3>
-            <div class="grid-temas">
-                <div class="tarjeta-tema">
-                    <div>
-                        <h4>Tema 1: El Reinado de Alfonso XIII y la Crisis de la Restauración</h4>
-                        <p>La Semana Trágica de 1909, el regeneracionismo de Maura y Canalejas, la Triple Crisis de 1917, el desastre de Annual y el colapso del turno.</p>
-                    </div>
-                    <a href="bloque3_tema1.html" class="btn-acceder">📖 Acceder al Tema</a>
-                </div>
-
-                <div class="tarjeta-tema">
-                    <div>
-                        <h4>Tema 2: La Dictadura de Primo de Rivera y el Fin de la Monarquía</h4>
-                        <p>El golpe de Estado de 1923, el Desembarco de Alhucemas, el Directorio Civil, las Grandes Exposiciones de 1929 y la caída hacia la República.</p>
-                    </div>
-                    <a href="bloque3_tema2.html" class="btn-acceder">📖 Acceder al Tema</a>
-                </div>
-            </div>
-
-            <h3>📖 Bloque IV: La Segunda República y la Guerra Civil (1931 - 1939)</h3>
-            <div class="grid-temas">
-                <div class="tarjeta-tema">
-                    <div>
-                        <h4>Tema 1: La Segunda República Española (1931 - 1936)</h4>
-                        <p>La Constitución de 1931, el sufragio femenino, el Bienio Reformista de Azaña, Casas Viejas, la Revolución de 1934 y el Frente Popular.</p>
-                    </div>
-                    <a href="bloque4_tema1.html" class="btn-acceder">📖 Acceder al Tema</a>
-                </div>
-
-                <div class="tarjeta-tema">
-                    <div>
-                        <h4>Tema 2: La Guerra Civil Española (1936 - 1939)</h4>
-                        <p>El golpe de Estado de julio de 1936, las retaguardias, la dimensión internacional, Guernica, la Batalla del Ebro y las consecuencias de la contienda.</p>
-                    </div>
-                    <a href="bloque4_tema2.html" class="btn-acceder">📖 Acceder al Tema</a>
-                </div>
-            </div>
-
-            <h3>📖 Bloque V: La Dictadura Franquista (1939 - 1975)</h3>
-            <div class="grid-temas">
-                <div class="tarjeta-tema">
-                    <div>
-                        <h4>Tema 1: La Postguerra y la Consolidación del Franquismo (1939 - 1959)</h4>
-                        <p>Nacionalcatolicismo, autarquía, estraperlo, la Segunda Guerra Mundial, aislamiento diplomático y los acuerdos de 1953 con EE.UU.</p>
-                    </div>
-                    <a href="bloque5_tema1.html" class="btn-acceder">📖 Acceder al Tema</a>
-                </div>
-
-                <div class="tarjeta-tema">
-                    <div>
-                        <h4>Tema 2: Desarrollismo y Crisis del Régimen (1959 - 1975)</h4>
-                        <p>El Plan de Estabilización de 1959, los tecnócratas, el boom turístico, los cambios sociales, el asesinato de Carrero Blanco y la muerte de Franco.</p>
-                    </div>
-                    <a href="bloque5_tema2.html" class="btn-acceder">📖 Acceder al Tema</a>
-                </div>
-            </div>
-
-            <h3>📖 Bloque VI: La España Democrática (1975 - Actualidad)</h3>
-            <div class="grid-temas">
-                <div class="tarjeta-tema">
-                    <div>
-                        <h4>Tema 1: La Transición Política y la Consolidación Democrática (1975 - 1986)</h4>
-                        <p>El rey Juan Carlos I, Adolfo Suárez, la Ley para la Reforma Política, los Pactos de la Moncloa, la Constitución de 1978, el 23-F y el ingreso en la CEE.</p>
-                    </div>
-                    <a href="bloque6_tema1.html" class="btn-acceder">📖 Acceder al Tema</a>
-                </div>
-            </div>
-        </section>
+     
     </main>
 
     <!-- VENTANAS EMERGENTES (POPUPS INTERACTIVOS / MODALS) -->
