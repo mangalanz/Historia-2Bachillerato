@@ -396,21 +396,29 @@
             padding: 20px;
         }
     }
-    /* --- CONTENEDOR DEL MENÚ GLOBAL CENTRADO --- */
+  /* --- CONTENEDOR DEL MENÚ GLOBAL CENTRADO --- */
 .barra-global {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: stretch;
-    gap: 16px;
-    max-width: 1050px; /* Alineado con el ancho de la portada central */
-    margin: 0 auto 35px auto; /* Centrado horizontalmente en la página */
-    padding: 20px;
+    gap: 18px;
+
+    max-width: 1050px;
+
+    margin: 0 auto 38px auto;
+
+    padding: 22px;
+
     background-color: #ffffff;
+
     border: 2px solid #e2e8f0;
-    border-radius: 14px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 24px rgba(0, 0, 0, 0.08);
 }
+
 
 /* --- TARJETA RECTANGULAR PARA CADA APARTADO --- */
 .boton-global {
@@ -418,33 +426,165 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    flex: 1 1 180px; /* Tamaño rectangular uniforme */
-    min-width: 160px;
-    max-width: 200px;
-    padding: 16px 12px;
-    background-color: #f8fafc;
-    border: 2px solid #e2e8f0;
-    border-radius: 10px; /* Esquinas ligeramente redondeadas */
+
+    gap: 11px;
+
+    flex: 1 1 180px;
+
+    min-width: 165px;
+    max-width: 205px;
+
+    min-height: 115px;
+
+    padding: 18px 14px;
+
+    box-sizing: border-box;
+
+    background: linear-gradient(
+        145deg,
+        #ffffff 0%,
+        #f5f7fa 100%
+    );
+
+    border: 2px solid #dce2e8;
+
+    border-radius: 14px;
+
     color: #0f172a;
-    font-size: 0.95rem;
+
+    font-size: 1.05rem;
     font-weight: 700;
+
     text-decoration: none;
+
     text-align: center;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
-    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, background-color 0.25s ease;
+
+    box-shadow:
+        0 3px 8px rgba(0, 0, 0, 0.07);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease,
+        background 0.25s ease,
+        color 0.25s ease;
 }
 
-.boton-global:hover {
-    background-color: #ffffff;
-    border-color: #2563eb;
-    color: #2563eb;
-    transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.15);
-}
 
+/* --- ICONOS --- */
 .boton-global .icono-menu {
-    font-size: 1.5rem;
+    display: block;
+
+    font-size: 2.15rem;
+
+    line-height: 1;
+
+    margin-bottom: 2px;
+
+    transition:
+        transform 0.25s ease;
+}
+
+
+/* --- TEXTO --- */
+.boton-global span:not(.icono-menu) {
+    font-size: 1.05rem;
+    line-height: 1.2;
+}
+
+
+/* --- EFECTO AL PASAR EL RATÓN --- */
+.boton-global:hover {
+    background: linear-gradient(
+        145deg,
+        #ffffff 0%,
+        #eef4ff 100%
+    );
+
+    border-color: #2563eb;
+
+    color: #2563eb;
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 24px rgba(37, 99, 235, 0.18);
+}
+
+
+/* --- ANIMACIÓN DEL ICONO --- */
+.boton-global:hover .icono-menu {
+    transform: scale(1.15);
+}
+
+
+/* --- EFECTO AL PULSAR --- */
+.boton-global:active {
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 4px 10px rgba(37, 99, 235, 0.12);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 850px) {
+
+    .barra-global {
+        gap: 14px;
+        padding: 18px;
+    }
+
+    .boton-global {
+        min-width: 150px;
+        max-width: 190px;
+        min-height: 105px;
+    }
+
+    .boton-global .icono-menu {
+        font-size: 2rem;
+    }
+
+    .boton-global span:not(.icono-menu) {
+        font-size: 1rem;
+    }
+}
+
+
+/* =========================================================
+   MÓVIL
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .barra-global {
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 12px;
+
+        padding: 14px;
+
+        margin-bottom: 28px;
+    }
+
+    .boton-global {
+        min-width: 0;
+        max-width: none;
+        min-height: 100px;
+    }
+
+    .boton-global .icono-menu {
+        font-size: 1.9rem;
+    }
+
+    .boton-global span:not(.icono-menu) {
+        font-size: 0.95rem;
+    }
 }
 
     /* --- NAVEGACIÓN SUPERIOR DE BLOQUES CON IMÁGENES --- */
