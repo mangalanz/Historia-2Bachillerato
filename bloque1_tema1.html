@@ -396,6 +396,56 @@
             padding: 20px;
         }
     }
+    /* --- CONTENEDOR DEL MENÚ GLOBAL CENTRADO --- */
+.barra-global {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 16px;
+    max-width: 1050px; /* Alineado con el ancho de la portada central */
+    margin: 0 auto 35px auto; /* Centrado horizontalmente en la página */
+    padding: 20px;
+    background-color: #ffffff;
+    border: 2px solid #e2e8f0;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+/* --- TARJETA RECTANGULAR PARA CADA APARTADO --- */
+.boton-global {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex: 1 1 180px; /* Tamaño rectangular uniforme */
+    min-width: 160px;
+    max-width: 200px;
+    padding: 16px 12px;
+    background-color: #f8fafc;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px; /* Esquinas ligeramente redondeadas */
+    color: #0f172a;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, background-color 0.25s ease;
+}
+
+.boton-global:hover {
+    background-color: #ffffff;
+    border-color: #2563eb;
+    color: #2563eb;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.15);
+}
+
+.boton-global .icono-menu {
+    font-size: 1.5rem;
+}
 
     /* --- NAVEGACIÓN SUPERIOR DE BLOQUES CON IMÁGENES --- */
     .grid-bloques-superior {
@@ -504,16 +554,31 @@
 
     <!-- Contenido Principal -->
     <main>
-        <!-- Menú de navegación global -->
+       <!-- Menú de navegación global en formato tarjetas rectangulares -->
     <div class="exe-text-template">
         <div class="textIdeviceContent">
             <div class="exe-text-activity">
                 <nav class="barra-global">
-                    <a href="https://www3.gobiernodecanarias.org/medusa/evagd/telde/blocks/quickmail/compose.php?courseid=12137" class="boton-global" id="link_1" target="_blank" rel="noopener">📧 Correo</a>
-                    <a href="https://www3.gobiernodecanarias.org/medusa/evagd/telde/message/output/popup/notifications.php" class="boton-global" id="link_3" target="_blank" rel="noopener">💬 Mensajería</a>
-                    <a href="index.html" class="boton-global" id="link_7">📚 Índice general</a>
-                    <a href="https://www3.gobiernodecanarias.org/medusa/evagd/telde/calendar/view.php?view=upcoming&course=12137" class="boton-global" id="link_2" target="_blank" rel="noopener">🗓 Calendario de tareas</a>
-                    <a href="https://www3.gobiernodecanarias.org/medusa/evagd/telde/grade/report/index.php?id=12137" class="boton-global" id="link_8" target="_blank" rel="noopener">📊 Calificaciones</a>
+                    <a href="https://www3.gobiernodecanarias.org/medusa/evagd/telde/blocks/quickmail/compose.php?courseid=19340" class="boton-global" id="link_1" target="_blank" rel="noopener">
+                        <span class="icono-menu">📧</span>
+                        <span>Correo</span>
+                    </a>
+                    <a href="https://www3.gobiernodecanarias.org/medusa/evagd/telde/message/output/popup/notifications.php" class="boton-global" id="link_3" target="_blank" rel="noopener">
+                        <span class="icono-menu">💬</span>
+                        <span>Mensajería</span>
+                    </a>
+                    <a href="index.html" class="boton-global" id="link_7">
+                        <span class="icono-menu">📚</span>
+                        <span>Índice general</span>
+                    </a>
+                    <a href="https://www3.gobiernodecanarias.org/medusa/evagd/telde/calendar/view.php?view=upcoming&course=19340" class="boton-global" id="link_2" target="_blank" rel="noopener">
+                        <span class="icono-menu">🗓</span>
+                        <span>Calendario</span>
+                    </a>
+                    <a href="https://www3.gobiernodecanarias.org/medusa/evagd/telde/grade/report/index.php?id=19340" class="boton-global" id="link_8" target="_blank" rel="noopener">
+                        <span class="icono-menu">📊</span>
+                        <span>Calificaciones</span>
+                    </a>
                 </nav>
             </div>
         </div>
