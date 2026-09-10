@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bloque I - Tema 1: La Crisis del Antiguo Régimen y las Cortes de Cádiz (1808 - 1833)</title>
-   <style>
+  <style>
     :root {
         --primary-intense: #1e40af;
         --primary-vibrant: #2563eb;
@@ -400,11 +400,17 @@
     /* --- NAVEGACIÓN SUPERIOR DE BLOQUES CON IMÁGENES --- */
     .grid-bloques-superior {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: column;
         gap: 20px;
         margin-bottom: 35px;
         width: 100%;
+    }
+
+    .fila-nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
     }
 
     .tarjeta-bloque-grande {
@@ -418,10 +424,7 @@
         text-decoration: none;
         display: flex;
         flex-direction: column;
-
-        /* 4 tarjetas por fila (con 20px de gap entre ellas) */
-        flex: 0 1 calc(25% - 15px);
-        min-width: 220px;
+        width: 280px;
     }
 
     .tarjeta-bloque-grande:hover {
@@ -465,13 +468,13 @@
 
     @media (max-width: 900px) {
         .tarjeta-bloque-grande {
-            flex: 0 1 calc(50% - 10px);
+            width: 45%;
         }
     }
 
     @media (max-width: 500px) {
         .tarjeta-bloque-grande {
-            flex: 0 1 100%;
+            width: 100%;
         }
     }
 </style>
@@ -495,63 +498,67 @@
                 <li><a href="bloque1_tema2.html">Tema 2: Estado Liberal</a></li>
                 <li><a href="bloque1_tema3.html">Tema 3: El Sexenio</a></li>
 
-                </ul>
+            </ul>
         </nav>
     </aside>
 
     <!-- Contenido Principal -->
     <main>
-               <!-- 🚀 EJE DE NAVEGACIÓN HORIZONTAL SUPERIOR CON IMÁGENES -->
-        <div class="grid-bloques-superior">
-            <a href="tema0.html" class="tarjeta-bloque-grande">
-                <div class="contenedor-img">
-                    <img src="img/libros-antiguos.png" alt="Tema 0: Introducción">
-                </div>
-                <div class="etiqueta-bloque">Tema 0: Introducción</div>
-            </a>
+     <!-- 🚀 EJE DE NAVEGACIÓN HORIZONTAL SUPERIOR CON IMÁGENES -->
+<div class="grid-bloques-superior">
 
-            <a href="bloque1_tema1.html" class="tarjeta-bloque-grande">
-                <div class="contenedor-img">
-                    <img src="img/guerradeindepe_3fy_sz1.jpg" alt="Bloque I: Estado Liberal">
-                </div>
-                <div class="etiqueta-bloque">Bloque I: Estado Liberal</div>
-            </a>
+    <div class="fila-nav">
+        <a href="tema0.html" class="tarjeta-bloque-grande">
+            <div class="contenedor-img">
+                <img src="img/libros-antiguos.png" alt="Tema 0: Introducción">
+            </div>
+            <div class="etiqueta-bloque">Tema 0: Introducción</div>
+        </a>
 
-            <a href="bloque2_tema1.html" class="tarjeta-bloque-grande">
-                <div class="contenedor-img">
-                    <img src="img/restauracion_borbonica.png" alt="Bloque II: La Restauración">
-                </div>
-                <div class="etiqueta-bloque">Bloque II: La Restauración</div>
-            </a>
+        <a href="bloque1_tema1.html" class="tarjeta-bloque-grande">
+            <div class="contenedor-img">
+                <img src="img/guerradeindepe_3fy_sz1.jpg" alt="Bloque I: Estado Liberal">
+            </div>
+            <div class="etiqueta-bloque">Bloque I: Estado Liberal</div>
+        </a>
 
-            <a href="bloque3_tema1.html" class="tarjeta-bloque-grande">
-                <div class="contenedor-img">
-                    <img src="img/semana-tragica.jpg" alt="Bloque III: Crisis Restauración">
-                </div>
-                <div class="etiqueta-bloque">Bloque III: Crisis y Dictadura</div>
-            </a>
+        <a href="bloque2_tema1.html" class="tarjeta-bloque-grande">
+            <div class="contenedor-img">
+                <img src="img/restauracion_borbonica.png" alt="Bloque II: La Restauración">
+            </div>
+            <div class="etiqueta-bloque">Bloque II: La Restauración</div>
+        </a>
 
-            <a href="bloque4_tema1.html" class="tarjeta-bloque-grande">
-                <div class="contenedor-img">
-                    <img src="img/Milicianas.jpg" alt="Bloque IV: II República y Guerra">
-                </div>
-                <div class="etiqueta-bloque">Bloque IV: República y Guerra</div>
-            </a>
+        <a href="bloque3_tema1.html" class="tarjeta-bloque-grande">
+            <div class="contenedor-img">
+                <img src="img/semana-tragica.jpg" alt="Bloque III: Crisis Restauración">
+            </div>
+            <div class="etiqueta-bloque">Bloque III: Crisis y Dictadura</div>
+        </a>
+    </div>
 
-            <a href="bloque5_tema1.html" class="tarjeta-bloque-grande">
-                <div class="contenedor-img">
-                    <img src="img/francanarias.jpg" alt="Bloque V: El Franquismo">
-                </div>
-                <div class="etiqueta-bloque">Bloque V: El Franquismo</div>
-            </a>
+    <div class="fila-nav">
+        <a href="bloque4_tema1.html" class="tarjeta-bloque-grande">
+            <div class="contenedor-img">
+                <img src="img/Milicianas.jpg" alt="Bloque IV: II República y Guerra">
+            </div>
+            <div class="etiqueta-bloque">Bloque IV: República y Guerra</div>
+        </a>
 
-            <a href="bloque6_tema1.html" class="tarjeta-bloque-grande">
-                <div class="contenedor-img">
-                    <img src="img/juan-carlos-firma-constitucion.jpg" alt="Bloque VI: Transición y Democracia">
-                </div>
-                <div class="etiqueta-bloque">Bloque VI: Transición</div>
-            </a>
-        </div>
+        <a href="bloque5_tema1.html" class="tarjeta-bloque-grande">
+            <div class="contenedor-img">
+                <img src="img/francanarias.jpg" alt="Bloque V: El Franquismo">
+            </div>
+            <div class="etiqueta-bloque">Bloque V: El Franquismo</div>
+        </a>
+
+        <a href="bloque6_tema1.html" class="tarjeta-bloque-grande">
+            <div class="contenedor-img">
+                <img src="img/juan-carlos-firma-constitucion.jpg" alt="Bloque VI: Transición y Democracia">
+            </div>
+            <div class="etiqueta-bloque">Bloque VI: Transición</div>
+        </a>
+    </div>
  <header>
             <h2>Tema 2: La Construcción del Estado Liberal (1833 - 1868)</h2>
             <p>La consolidación del parlamentarismo en España: el tortuoso reinado de Isabel II bajo la alternancia de las facciones liberales.</p>
